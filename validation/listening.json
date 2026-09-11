@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "status": "partial_human_review",
+  "reviews": [
+    {
+      "id": "matched_acoustic_pair",
+      "listener": "maintainer",
+      "method": "manual playback of the matched reference and port recordings",
+      "recorded_at": "2026-09-11T15:12:50.706Z",
+      "assessment": {
+        "overall": "sounds correct",
+        "perceptual_comparison": "sounds identical; no audible difference reported"
+      },
+      "artifacts": [
+        {
+          "role": "reference",
+          "audio_sha256": "342e7055e415de49f4306cdd8ee1384a07ad85e1d6ddf1e0b698df72c9e298fd"
+        },
+        {
+          "role": "port",
+          "audio_sha256": "adf0c3be52cd56967bf58959e6693fada0dd187eba0913c7a7135d42b340dc7f"
+        }
+      ],
+      "audio_seconds": 15.998666666666667,
+      "semantic_truncated": true,
+      "scope": "Matched prefix, ABC, semantic IDs and initial noise; NAR plus default FP32 MPS decoder comparison. This is a perceptual assessment, not a claim of bit-identical audio.",
+      "criterion_detail": "An overall correctness and perceptual-equivalence assessment was recorded, not separate criterion-by-criterion notes.",
+      "not_covered": [
+        "independently sampled AR output equivalence",
+        "complete-song quality and long-form continuity",
+        "BF16 versus 8-bit versus 4-bit listening"
+      ]
+    }
+  ],
+  "remaining": [
+    "Review the retained complete BF16 song(s).",
+    "Review the matched-request BF16, then 8-bit, then 4-bit mode clips."
+  ]
+}

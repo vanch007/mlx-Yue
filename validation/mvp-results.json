@@ -1,0 +1,92 @@
+{
+  "schema": 1,
+  "release": "0.1.0",
+  "status": "experimental_bf16_mvp",
+  "hardware": {
+    "machine": "MacBook Air (M5)",
+    "unified_memory_gib": 32
+  },
+  "workload": {
+    "mode": "full",
+    "precision": "bf16",
+    "nar_ode_steps": 32,
+    "nar_solver": "midpoint",
+    "decoder": "default YuE2-Vae, FP32 MPS",
+    "sequential_runs_in_one_process": 3,
+    "corpus_case": "tonight_awake",
+    "corpus_sha256": "cd647dd12d051ee338385f38052bc0e79599531ffc6cb3a7578f89b79f2c7792"
+  },
+  "runs": [
+    {
+      "id": "tonight_awake_1",
+      "request_sha256": "7167602734f51e637858dd647387215c0da55b9c3db82aa38bb18f15bfaa30a0",
+      "audio_seconds": 179.71866666666668,
+      "semantic_frames": 4493,
+      "truncated": {
+        "abc": false,
+        "semantic": false
+      },
+      "abc_seconds": 71.2399315420189,
+      "semantic_seconds": 166.1856242089998,
+      "nar_seconds": 561.1915005000192,
+      "vae_seconds": 19.301403999998,
+      "e2e_seconds": 818.90461925001,
+      "listening_status": "not_evaluated"
+    },
+    {
+      "id": "tonight_awake_2",
+      "request_sha256": "fce33457fb849199faac0309b27cbdb5cdf260814021f9f77edb8e4055d29188",
+      "audio_seconds": 179.71866666666668,
+      "semantic_frames": 4493,
+      "truncated": {
+        "abc": false,
+        "semantic": false
+      },
+      "abc_seconds": 88.74179162501241,
+      "semantic_seconds": 188.251967624994,
+      "nar_seconds": 601.083041417005,
+      "vae_seconds": 18.909856165992096,
+      "e2e_seconds": 897.0111396659922,
+      "listening_status": "not_evaluated"
+    },
+    {
+      "id": "tonight_awake_3",
+      "request_sha256": "d994acc9e8e09871e509d22ff02b13c3c92c860ff15a2758b4b6e83c3cb3cb72",
+      "audio_seconds": 179.71866666666668,
+      "semantic_frames": 4493,
+      "truncated": {
+        "abc": false,
+        "semantic": false
+      },
+      "abc_seconds": 88.52994558398495,
+      "semantic_seconds": 195.29870829198626,
+      "nar_seconds": 600.0498560000269,
+      "vae_seconds": 19.222393041010946,
+      "e2e_seconds": 903.125520542002,
+      "listening_status": "not_evaluated"
+    }
+  ],
+  "resources": {
+    "sampled_peak_process_footprint_bytes": 13564124120,
+    "process_lifetime_peak_footprint_bytes": 13741743064,
+    "additional_system_swap_out_bytes": 0,
+    "interpretation": "Sampled process footprint and process lifetime peak are distinct. Zero additional swap-outs does not mean that historical swap space was empty or that no swap-ins occurred."
+  },
+  "strict_duration_gate": {
+    "minimum_audio_seconds": 180,
+    "passed": false,
+    "interpretation": "Songs ended naturally at 179.718667 seconds, without truncation or padding. This is approximately three minutes but does not pass the retained strict 180-second harness gate."
+  },
+  "open_quality_gates": [
+    "Four strict AR numerical comparisons remain outside current empirical bounds; not waived for publication.",
+    "Matched complete-song reference comparison and human listening remain pending.",
+    "8-bit and 4-bit listening and supported-precision selection remain pending."
+  ],
+  "provenance": {
+    "upstream_repository": "https://github.com/multimodal-art-projection/YuE",
+    "upstream_commit": "92a73cc7652fcc1f937855e4b765e0a0edd7ff2e",
+    "model_revision": "1a96eca688d6ae5d7f0feb88573fec89920fcd19",
+    "retained_report_sha256": "641470cb5c6b85ead6743c7323f764944a3c6eb6fc1e37369fbe0027ee870aab",
+    "note": "Curated summary extracted from retained local measurements. Raw tensor captures, model weights and full resource logs are not bundled."
+  }
+}

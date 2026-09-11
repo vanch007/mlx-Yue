@@ -1,0 +1,90 @@
+[build-system]
+requires = ["hatchling==1.29.0"]
+build-backend = "hatchling.build"
+
+[project]
+name = "lyra-yue2"
+version = "0.1.0"
+description = "BF16-first YuE2 music generation on Apple Silicon with MLX and MPS"
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+license = "Apache-2.0"
+license-files = ["LICENSE"]
+keywords = ["apple-silicon", "mlx", "music-generation", "yue2"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Environment :: Console",
+  "Intended Audience :: Developers",
+  "Operating System :: MacOS :: MacOS X",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "Topic :: Multimedia :: Sound/Audio :: Sound Synthesis",
+]
+dependencies = [
+  "mlx==0.32.2",
+  "mlx-lm==0.31.3",
+  "torch==2.10.0",
+  "transformers==5.0.0",
+  "safetensors==0.7.0",
+  "tiktoken==0.12.0",
+  "numpy==2.2.6",
+  "soundfile==0.13.1",
+  "psutil==7.2.2",
+]
+
+[project.urls]
+Homepage = "https://github.com/daig/yue2-mlx"
+Source = "https://github.com/daig/yue2-mlx"
+Issues = "https://github.com/daig/yue2-mlx/issues"
+
+[dependency-groups]
+dev = ["pytest==9.0.3", "ruff==0.15.7"]
+
+[project.scripts]
+lyra = "lyra.cli:main"
+
+[tool.hatch.build.targets.sdist]
+only-include = [
+  ".gitignore",
+  "LICENSE",
+  "PORTING.md",
+  "README.md",
+  "docs",
+  "examples",
+  "oracle/requirements.in",
+  "oracle/requirements.txt",
+  "pyproject.toml",
+  "src/lyra",
+  "tests",
+  "tools",
+  "uv.lock",
+  "validation",
+  "vendor/yue/LICENSE",
+  "vendor/yue/MODEL_LICENSE",
+  "vendor/yue/THIRD_PARTY_NOTICES.md",
+  "vendor/yue/licenses",
+  "vendor/yue/src/yue2",
+]
+exclude = [
+  "**/__pycache__",
+  "**/*.py[cod]",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/lyra", "vendor/yue/src/yue2"]
+
+[tool.hatch.build.targets.wheel.force-include]
+"vendor/yue/LICENSE" = "lyra/licenses/UPSTREAM_APACHE.txt"
+"vendor/yue/MODEL_LICENSE" = "lyra/licenses/MODEL_LICENSE.txt"
+"vendor/yue/THIRD_PARTY_NOTICES.md" = "lyra/licenses/THIRD_PARTY_NOTICES.md"
+"vendor/yue/licenses" = "lyra/licenses/third-party"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+target-version = "py312"
+line-length = 100
+exclude = ["vendor"]

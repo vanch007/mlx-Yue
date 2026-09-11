@@ -1,0 +1,19 @@
+{
+  "valid_conversion": true,
+  "source_revision": "1a96eca688d6ae5d7f0feb88573fec89920fcd19",
+  "missing_weights": {
+    "rejected": true,
+    "error_type": "ValueError",
+    "error": "Converted directory has missing or unexpected files: missing=['nar-bf16.safetensors'], unexpected=[]"
+  },
+  "changed_config": {
+    "rejected": true,
+    "error_type": "ValueError",
+    "error": "Converted file size mismatch: config.json"
+  },
+  "partial_ar_strict_load": {
+    "rejected": true,
+    "error_type": "ValueError",
+    "error": "Missing 310 parameters: \nlm_head.weight,\nmodel.embed_tokens.weight,\nmodel.layers.0.input_layernorm.weight,\nmodel.layers.0.mlp.down_proj.weight,\nmodel.layers.0.mlp.gate_proj.weight,\nmodel.layers.0.mlp.up_proj.weight,\nmodel.layers.0.post_attention_layernorm.weight,\nmodel.layers.0.self_attn.k_norm.weight,\nmodel.layers.0.self_attn.k_proj.weight,\nmodel.layers.0.self_attn.o_proj.weight,\nmodel.layers.0.self_attn.q_norm.weight,\nmodel.layers.0.self_attn.q_proj.weight,\nmodel.layers.0.self_attn.v_proj.weig"
+  }
+}

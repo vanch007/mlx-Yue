@@ -1,0 +1,43 @@
+.venv/
+.oracle/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+models/
+outputs/
+.cache/
+dist/
+*.egg-info/
+.DS_Store
+
+# Local environments and credentials
+.venv*/
+venv/
+env/
+.env
+.env.*
+!.env.example
+.netrc
+.pypirc
+*.key
+*.pem
+credentials.json
+secrets.json
+
+# Build, coverage, and tool caches
+build/
+wheelhouse/
+.hatch/
+.hypothesis/
+.mypy_cache/
+.pyright/
+.tox/
+.nox/
+.coverage
+.coverage.*
+htmlcov/
+.ipynb_checkpoints/
+
+# Internal project brief
+/goal.md
