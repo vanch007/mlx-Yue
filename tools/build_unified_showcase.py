@@ -94,8 +94,8 @@ def prepare_case(case):
             row['actual_score'] = score_path.read_text()
 
     # 8-step fast mode audio & metadata
-    fast_meas_path = destination / 'fast_8step/measurement.json'
-    fast_audio_path = destination / 'fast_8step/audio.flac'
+    fast_meas_path = destination / 'fast_8step/measurement.json' if (destination / 'fast_8step/measurement.json').is_file() else (OUT / cid / 'fast_8step/measurement.json')
+    fast_audio_path = destination / 'fast_8step/audio.flac' if (destination / 'fast_8step/audio.flac').is_file() else (OUT / cid / 'fast_8step/audio.flac')
     if fast_meas_path.is_file() and fast_audio_path.is_file():
         m8 = read(fast_meas_path)
         row['measurement_8step'] = m8

@@ -269,5 +269,122 @@
   },
   "official_player": "audio/fullsong/4201bc6f26587da253ca.mp3",
   "local_player_32step": "audio/fullsong/bc71fd78a2fb6cc3fb7e.mp3",
-  "local_player": "audio/fullsong/bc71fd78a2fb6cc3fb7e.mp3"
+  "local_player": "audio/fullsong/bc71fd78a2fb6cc3fb7e.mp3",
+  "measurement_8step": {
+    "id": "off_direct",
+    "mode": "fast_8step",
+    "ode_steps": 8,
+    "status": "complete",
+    "audio_seconds": 251.12,
+    "e2e_seconds": 282.7,
+    "rtf": 1.126,
+    "speed_multiplier": 0.89,
+    "timing": {
+      "abc": {},
+      "semantic": {
+        "seconds": 188.53203529200982,
+        "prefill_seconds": 0.27864099998259917,
+        "ttft_seconds": 0.2826585419825278,
+        "output_tokens": 6279,
+        "content_tokens": 6278,
+        "output_tps": 33.30468474641302,
+        "prefix_tokens": 604,
+        "cfg_branches": 2,
+        "execution": "eager",
+        "attention": "sdpa",
+        "backend": "mlx"
+      },
+      "nar_seconds": 79.92,
+      "vae_seconds": 9.04,
+      "load_seconds": 5.21,
+      "transcription_seconds": 0,
+      "e2e_seconds": 282.7,
+      "32step_nar_seconds": 355.03,
+      "nar_speedup": 4.44
+    },
+    "audio_sha256": "37692cb77dcaac0bd096e072c124b37909e0ba45e73a6de252c808d90c0b0bf1",
+    "audio_quality": {
+      "sample_rate": 48000,
+      "channels": 2,
+      "finite": true,
+      "rms": 0.1421124804535521,
+      "peak": 0.9784667491912842,
+      "clipping_fraction": 0.0
+    },
+    "resources": {
+      "memory_counter_schema": 2,
+      "swap_counter_source": "host_statistics64.swapins/swapouts",
+      "sampling_interval_seconds": 0.1,
+      "power_sampling_interval_seconds": 5.0,
+      "metadata": {},
+      "power_start": {
+        "ac_connected": true,
+        "pmset": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=37224547)\t95%; AC attached; not charging present: true"
+      },
+      "power_end": {
+        "ac_connected": true,
+        "pmset": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=37224547)\t95%; AC attached; not charging present: true"
+      },
+      "start": {
+        "elapsed_seconds": 0.012283875024877489,
+        "rss_bytes": 8487583744,
+        "system_swap_used_bytes": 12365725696,
+        "system_swap_in_bytes": 56345296896,
+        "system_swap_out_bytes": 83892617216,
+        "system_available_bytes": 64158646272,
+        "system_total_bytes": 137438953472,
+        "system_memory_pressure_level": 1,
+        "system_free_bytes": 3320397824,
+        "system_wired_bytes": 7932329984,
+        "system_compressor_bytes": 2730819584,
+        "system_file_backed_bytes": 28630089728,
+        "physical_footprint_bytes": 8815172664,
+        "process_lifetime_peak_footprint_bytes": 12427844616,
+        "mlx_active_bytes": 7526793954,
+        "mlx_cache_bytes": 163420712,
+        "mlx_peak_bytes": 11256166614,
+        "ac_connected": true
+      },
+      "end": {
+        "elapsed_seconds": 88.97905654204078,
+        "rss_bytes": 8493056000,
+        "system_swap_used_bytes": 12365725696,
+        "system_swap_in_bytes": 56345296896,
+        "system_swap_out_bytes": 83892617216,
+        "system_available_bytes": 62953586688,
+        "system_total_bytes": 137438953472,
+        "system_memory_pressure_level": 1,
+        "system_free_bytes": 1449410560,
+        "system_wired_bytes": 9355214848,
+        "system_compressor_bytes": 2730803200,
+        "system_file_backed_bytes": 28695805952,
+        "physical_footprint_bytes": 9175669816,
+        "process_lifetime_peak_footprint_bytes": 12427844616,
+        "mlx_active_bytes": 7526793954,
+        "mlx_cache_bytes": 147456544,
+        "mlx_peak_bytes": 11256166614,
+        "ac_connected": true
+      },
+      "sampled_maxima": {
+        "mlx_active_bytes": 11196716606,
+        "mlx_cache_bytes": 163420712,
+        "mlx_peak_bytes": 11256166614,
+        "physical_footprint_bytes": 11491580984,
+        "process_lifetime_peak_footprint_bytes": 12427844616,
+        "rss_bytes": 8493056000,
+        "system_available_bytes": 64688013312,
+        "system_compressor_bytes": 2730819584,
+        "system_file_backed_bytes": 28698525696,
+        "system_free_bytes": 3333636096,
+        "system_swap_in_bytes": 56345296896,
+        "system_swap_out_bytes": 83892617216,
+        "system_swap_used_bytes": 12365725696,
+        "system_total_bytes": 137438953472,
+        "system_wired_bytes": 10533879808
+      },
+      "monitor_error": null,
+      "exception": null
+    }
+  },
+  "local_player_8step": "audio/fullsong/37692cb77dcaac0bd096.mp3"
 }
