@@ -1,0 +1,1629 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>mlx-Yue · 交互式音频试听对比与性能展台</title>
+    <link rel="icon" href="https://github.com/vanch007/mlx-Yue/raw/main/static/brand/yue-mark.svg" type="image/svg+xml">
+    <style>
+        :root {
+            --bg: #0b0f19;
+            --surface: #121826;
+            --surface-card: #182234;
+            --surface-hover: #1f2b42;
+            --border: #26354d;
+            --text: #cbd5e1;
+            --text-heading: #f8fafc;
+            --primary: #38bdf8;
+            --primary-glow: rgba(56, 189, 248, 0.15);
+            --accent: #4ade80;
+            --gold: #fbbf24;
+            --pill-bg: #1e293b;
+        }
+        * { box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        .hero {
+            background: radial-gradient(circle at 50% 0%, #1e293b 0%, var(--bg) 75%);
+            border-bottom: 1px solid var(--border);
+            padding: 48px 20px 36px;
+            text-align: center;
+        }
+        .hero-badge {
+            display: inline-block;
+            background: var(--primary-glow);
+            color: var(--primary);
+            border: 1px solid rgba(56, 189, 248, 0.3);
+            padding: 4px 14px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+        h1 {
+            color: var(--text-heading);
+            font-size: 2.5rem;
+            margin: 0 0 12px;
+            letter-spacing: -0.02em;
+        }
+        .hero-sub {
+            max-width: 820px;
+            margin: 0 auto 24px;
+            color: #94a3b8;
+            font-size: 1.05rem;
+        }
+        .hero-links {
+            display: flex;
+            justify-content: center;
+            gap: 14px;
+            flex-wrap: wrap;
+        }
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 8px 18px;
+            border-radius: 8px;
+            font-size: 0.92rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+        .btn-primary {
+            background: #0284c7;
+            color: #fff;
+        }
+        .btn-primary:hover { background: #0369a1; }
+        .btn-secondary {
+            background: var(--surface);
+            color: var(--text);
+            border: 1px solid var(--border);
+        }
+        .btn-secondary:hover { background: var(--surface-hover); }
+        
+        .container {
+            max-width: 1180px;
+            margin: 0 auto;
+            padding: 32px 16px;
+        }
+        .stat-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+            gap: 16px;
+            margin-bottom: 36px;
+        }
+        .stat-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+        }
+        .stat-card .val {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+        .stat-card .lbl {
+            color: #94a3b8;
+            font-size: 0.88rem;
+            margin-top: 4px;
+        }
+        
+        /* Tabs */
+        .tabs-nav {
+            display: flex;
+            gap: 8px;
+            border-bottom: 2px solid var(--border);
+            margin-bottom: 28px;
+        }
+        .tab-btn {
+            background: transparent;
+            border: none;
+            color: #94a3b8;
+            font-size: 1.05rem;
+            font-weight: 600;
+            padding: 12px 20px;
+            cursor: pointer;
+            border-bottom: 2px solid transparent;
+            margin-bottom: -2px;
+            transition: all 0.2s ease;
+        }
+        .tab-btn:hover { color: var(--text-heading); }
+        .tab-btn.active {
+            color: var(--primary);
+            border-bottom-color: var(--primary);
+        }
+        .tab-pane { display: none; }
+        .tab-pane.active { display: block; }
+        
+        /* Table */
+        .summary-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            overflow: hidden;
+            margin-bottom: 36px;
+        }
+        .summary-table th, .summary-table td {
+            padding: 12px 16px;
+            text-align: left;
+            border-bottom: 1px solid var(--border);
+            font-size: 0.92rem;
+        }
+        .summary-table th {
+            background: #1a2333;
+            color: var(--text-heading);
+            font-weight: 600;
+        }
+        
+        /* Cards */
+        .case-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            padding: 24px;
+            margin-bottom: 24px;
+            transition: border-color 0.2s ease;
+        }
+        .case-card:hover {
+            border-color: #3b82f644;
+        }
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-bottom: 14px;
+        }
+        .card-title-group {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+        .card-title-group h3 {
+            margin: 0;
+            color: var(--text-heading);
+            font-size: 1.25rem;
+        }
+        .badge {
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+        .badge-accent {
+            background: rgba(56, 189, 248, 0.15);
+            color: var(--primary);
+            border: 1px solid rgba(56, 189, 248, 0.3);
+        }
+        .metrics-pill {
+            background: var(--pill-bg);
+            border: 1px solid var(--border);
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.88rem;
+        }
+        .style-prompt {
+            font-size: 0.92rem;
+            color: #94a3b8;
+            background: #080c14;
+            padding: 10px 14px;
+            border-radius: 8px;
+            border-left: 3px solid var(--primary);
+            margin: 12px 0 20px;
+        }
+        .comparison-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 20px;
+            margin-bottom: 16px;
+        }
+        .audio-panel {
+            background: #080c14;
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 18px;
+            position: relative;
+        }
+        .panel-tag {
+            display: inline-block;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 6px;
+        }
+        .official-panel .panel-tag { color: var(--gold); }
+        .mlx-panel .panel-tag { color: var(--accent); }
+        .audio-panel h4 {
+            margin: 0 0 10px;
+            font-size: 1.05rem;
+            color: var(--text-heading);
+        }
+        audio {
+            width: 100%;
+            margin-top: 6px;
+        }
+        .meta-note {
+            font-size: 0.82rem;
+            color: #64748b;
+            margin-top: 8px;
+        }
+        .meta-note a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+        .lyrics-details {
+            margin-top: 14px;
+        }
+        .lyrics-details summary {
+            cursor: pointer;
+            color: var(--primary);
+            font-size: 0.9rem;
+        }
+        .details-content {
+            margin-top: 12px;
+            padding-top: 12px;
+            border-top: 1px dashed var(--border);
+        }
+        .timing-chips {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 12px;
+        }
+        .timing-chips span {
+            background: var(--pill-bg);
+            border: 1px solid var(--border);
+            padding: 4px 10px;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            color: #94a3b8;
+        }
+        .lyrics-pre {
+            background: #05080e;
+            padding: 14px;
+            border-radius: 8px;
+            font-family: inherit;
+            font-size: 0.9rem;
+            white-space: pre-wrap;
+            color: #94a3b8;
+            max-height: 220px;
+            overflow-y: auto;
+        }
+    </style>
+</head>
+<body>
+
+<div class="hero">
+    <div class="hero-badge">Apple Silicon Native · MLX 0.32.2</div>
+    <h1>mlx-Yue · 官方案例全模式试听展台</h1>
+    <p class="hero-sub">
+        测试案例 100% 对齐官方 <a href="https://map-yue2.github.io/" target="_blank" style="color:var(--primary);text-decoration:none;">YuE2 Demo</a>。包含 <code>REPORT.zh-CN.md</code> 签署验收的<strong>五大生成模式与翻唱链路</strong>，以及 Genre Explorer <strong>全部 6 种官方语言</strong>。本机运行于 Apple M3 Max，采用 8-bit AR 量化模型与 Metal Steel SDPA 加速。
+    </p>
+    <div class="hero-links">
+        <a class="btn btn-primary" href="https://github.com/vanch007/mlx-Yue" target="_blank">
+            <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+            GitHub 源码 (vanch007/mlx-Yue)
+        </a>
+        <a class="btn btn-secondary" href="https://huggingface.co/vanch007/mlx-Yue2-3B" target="_blank">
+            🤗 Hugging Face 模型权重 (8-bit / BF16)
+        </a>
+    </div>
+</div>
+
+<div class="container">
+    <div class="stat-grid">
+        <div class="stat-card">
+            <div class="val">2.13</div>
+            <div class="lbl">平均 RTF (生成耗时 / 音频时长)</div>
+        </div>
+        <div class="stat-card">
+            <div class="val">0.54x</div>
+            <div class="lbl">平均实时生成倍速</div>
+        </div>
+        <div class="stat-card">
+            <div class="val">59.5</div>
+            <div class="lbl">平均 AR 解码速率 (tokens/s)</div>
+        </div>
+        <div class="stat-card">
+            <div class="val">8.12 GiB</div>
+            <div class="lbl">采样峰值物理内存开销</div>
+        </div>
+    </div>
+
+    <!-- Tab 导航 -->
+    <div class="tabs-nav">
+        <button class="tab-btn active" onclick="switchTab('modes')">🎹 核心验收模式测试 (5大模式 + Cover)</button>
+        <button class="tab-btn" onclick="switchTab('genres')">🌍 官方 6 大语言分类测试 (Genre Explorer)</button>
+    </div>
+
+    <!-- Tab 1: 验收模式 -->
+    <div id="tab-modes" class="tab-pane active">
+        <table class="summary-table">
+            <thead>
+                <tr>
+                    <th>验收模式 (Mode)</th>
+                    <th>对应流派 / 案例</th>
+                    <th>音频时长</th>
+                    <th>生成耗时</th>
+                    <th>RTF / 实时倍速</th>
+                    <th>峰值内存</th>
+                    <th>AR 速率</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+        <tr>
+            <td><strong>Full + Generated Score (全自动乐谱规划)</strong></td>
+            <td>Comedy / Upbeat Pop</td>
+            <td>32.0s</td>
+            <td><strong>93.8s</strong></td>
+            <td><strong style="color:var(--accent);">2.93</strong> (0.34x)</td>
+            <td>7.78 GiB</td>
+            <td>53.7 tps</td>
+        </tr>
+        
+
+        <tr>
+            <td><strong>Full + Supplied Score (外部指定完整多声部谱)</strong></td>
+            <td>Easy Listening</td>
+            <td>32.0s</td>
+            <td><strong>42.6s</strong></td>
+            <td><strong style="color:var(--accent);">1.33</strong> (0.75x)</td>
+            <td>7.80 GiB</td>
+            <td>63.6 tps</td>
+        </tr>
+        
+
+        <tr>
+            <td><strong>Melody + Generated Score (自动主旋律规划)</strong></td>
+            <td>Modern R&B</td>
+            <td>32.0s</td>
+            <td><strong>60.1s</strong></td>
+            <td><strong style="color:var(--accent);">1.88</strong> (0.53x)</td>
+            <td>7.81 GiB</td>
+            <td>68.7 tps</td>
+        </tr>
+        
+
+        <tr>
+            <td><strong>Melody + Supplied Score (外部指定主旋律谱)</strong></td>
+            <td>Jazz-Funk</td>
+            <td>32.0s</td>
+            <td><strong>40.2s</strong></td>
+            <td><strong style="color:var(--accent);">1.26</strong> (0.80x)</td>
+            <td>7.81 GiB</td>
+            <td>68.6 tps</td>
+        </tr>
+        
+
+        <tr>
+            <td><strong>Off / Direct Generation (直接端到端生成 / 无乐谱)</strong></td>
+            <td>Enka / Retro Pop</td>
+            <td>32.0s</td>
+            <td><strong>43.9s</strong></td>
+            <td><strong style="color:var(--accent);">1.37</strong> (0.73x)</td>
+            <td>7.83 GiB</td>
+            <td>47.9 tps</td>
+        </tr>
+        
+
+        <tr>
+            <td><strong>Cover & Arrangement (音频转谱 + 风格重排翻唱)</strong></td>
+            <td>Brass-Funk Cover</td>
+            <td>44.9s</td>
+            <td><strong>84.5s</strong></td>
+            <td><strong style="color:var(--accent);">1.88</strong> (0.53x)</td>
+            <td>8.12 GiB</td>
+            <td>58.2 tps</td>
+        </tr>
+        
+            </tbody>
+        </table>
+        
+        
+    <div class="case-card">
+        <div class="card-header">
+            <div class="card-title-group">
+                <span class="badge badge-accent">Full + Generated Score (全自动乐谱规划)</span>
+                <h3>Thanksgiving Comedy · 欢快流行叙事</h3>
+            </div>
+            <div class="metrics-pill">
+                RTF: <strong>2.93</strong> (0.34x 实时) | 总耗时: <strong>93.8s</strong> | 时长: <strong>32.0s</strong>
+            </div>
+        </div>
+        
+        <p class="style-prompt"><strong>风格提示词:</strong> Pop genre, Happy mood, Live vocal style, Upbeat production</p>
+        
+        <div class="comparison-grid">
+            <div class="audio-panel official-panel">
+                <div class="panel-tag">官方原版 Demo</div>
+                <h4>Official Reference</h4>
+                <audio controls preload="none" src="audio/full_generated_official.mp3"></audio>
+                <div class="meta-note"><a href="https://map-yue2.github.io/" target="_blank">官网对应发布页 ↗</a></div>
+            </div>
+            <div class="audio-panel mlx-panel">
+                <div class="panel-tag">Apple Silicon mlx-Yue (8-bit)</div>
+                <h4>Local MLX Native Build</h4>
+                <audio controls preload="none" src="audio/full_generated_mlx.mp3"></audio>
+                <div class="meta-note">采样率: 48kHz | 32步求解 | 峰值内存: 7.78 GiB</div>
+            </div>
+        </div>
+        
+        <details class="lyrics-details">
+            <summary>展开详细分阶段耗时与歌词</summary>
+            <div class="details-content">
+                <div class="timing-chips">
+                    <span>乐谱阶段: 43.92s</span>
+                    <span>AR生成: 14.89s (53.7 tok/s)</span>
+                    <span>NAR求解: 31.94s</span>
+                    <span>VAE解码: 1.40s</span>
+                    <span>峰值内存: 7.78 GiB</span>
+                </div>
+                
+                <pre class="lyrics-pre">[Verse 1]
+Thanksgiving morning, sun begins to gleam
+The family&#x27;s gathering, living out a dream
+Turkey in the oven, pies all lined up neat
+But something&#x27;s brewing, can&#x27;t be beat
+Sierra Zemke&#x27;s got a story, whispers in the hall
+About a Jedi master, standing proud and tall
+Obi-Wan in jail, the news has spread so far
+While Kirk Cameron&#x27;s preaching, playing his guitar
+
+[Chorus]
+Oh, Thanksgiving day, a feast for all to see
+With secret farts on YouTube, for the world to agree
+Jar Jar Binks is laughing, from a galaxy away
+It&#x27;s a bizarre holiday, in every single way
+
+[Verse 2]
+Dinner&#x27;s on the table, laughter fills the air
+Gravy on the mashed potatoes, without a care
+Uncle Bob tells stories, of birds that fly in jail
+And a gun that shot no bullets, an unbelievable tale
+We&#x27;re watching viral videos, a screen aglow and bright
+Someone caught a moment, a comedic sight
+Of gas escaping quickly, a sound both deep and low
+And everyone&#x27;s just giggling, because they know, they know
+
+[Chorus]
+Oh, Thanksgiving day, a feast for all to see
+With secret farts on YouTube, for the world to agree
+Jar Jar Binks is laughing, from a galaxy away
+It&#x27;s a bizarre holiday, in every single way
+
+[Bridge]
+From Hollywood to kitchens, the strange tales intertwine
+Of movie stars and flatulence, a truly wild design
+Who knew that these odd pieces, would fit into one day?
+But on Thanksgiving, anything can go astray
+
+[Chorus]
+Oh, Thanksgiving day, a feast for all to see
+With secret farts on YouTube, for the world to agree
+Jar Jar Binks is laughing, from a galaxy away
+It&#x27;s a bizarre holiday, in every single way
+
+[Outro]
+So pass the cranberry sauce, and don&#x27;t forget the pie
+Another year of weirdness, as the hours fly by
+Happy Thanksgiving, everyone, let the good times roll
+With YouTube farts and Jedi tales, reaching every soul.</pre>
+            </div>
+        </details>
+    </div>
+    
+
+    <div class="case-card">
+        <div class="card-header">
+            <div class="card-title-group">
+                <span class="badge badge-accent">Full + Supplied Score (外部指定完整多声部谱)</span>
+                <h3>Easy Listening · 治愈系长笛钢琴日文歌</h3>
+            </div>
+            <div class="metrics-pill">
+                RTF: <strong>1.33</strong> (0.75x 实时) | 总耗时: <strong>42.6s</strong> | 时长: <strong>32.0s</strong>
+            </div>
+        </div>
+        
+        <p class="style-prompt"><strong>风格提示词:</strong> A gentle and melancholic piece beginning with a delicate piano melody and a breathy, expressive flute line. A soft, clear female vocal enters, singing in a gentle, almost lullaby-like style. The arrangement gradually builds, introducing a subtle, downtempo lo-fi hip-hop beat with a soft kick and snare, complemented by a warm bassline and atmospheric synth pads. The track maintains a tranquil and introspective mood throughout, with the piano and flute weaving in and out, creating a serene soundscape perfect for relaxation or contemplation. The song concludes with a beautiful instrumental outro featuring the piano and flute, fading into silence.</p>
+        
+        <div class="comparison-grid">
+            <div class="audio-panel official-panel">
+                <div class="panel-tag">官方原版 Demo</div>
+                <h4>Official Reference</h4>
+                <audio controls preload="none" src="audio/full_supplied_official.mp3"></audio>
+                <div class="meta-note"><a href="https://map-yue2.github.io/" target="_blank">官网对应发布页 ↗</a></div>
+            </div>
+            <div class="audio-panel mlx-panel">
+                <div class="panel-tag">Apple Silicon mlx-Yue (8-bit)</div>
+                <h4>Local MLX Native Build</h4>
+                <audio controls preload="none" src="audio/full_supplied_mlx.mp3"></audio>
+                <div class="meta-note">采样率: 48kHz | 32步求解 | 峰值内存: 7.80 GiB</div>
+            </div>
+        </div>
+        
+        <details class="lyrics-details">
+            <summary>展开详细分阶段耗时与歌词</summary>
+            <div class="details-content">
+                <div class="timing-chips">
+                    <span>乐谱阶段: 0.00s</span>
+                    <span>AR生成: 12.58s (63.6 tok/s)</span>
+                    <span>NAR求解: 28.64s</span>
+                    <span>VAE解码: 1.16s</span>
+                    <span>峰值内存: 7.80 GiB</span>
+                </div>
+                <pre class="lyrics-pre" style="color:#79c0ff;margin-bottom:10px;"><strong>输入乐谱 (ABC Notation):</strong>
+X:1
+T:
+M:4/4
+L:1/16
+Q:1/4=85
+V: Vocal clef=treble name=&quot;Vocal Melody&quot; snm=&quot;Vocal&quot;
+V: Ins clef=treble name=&quot;Ins Melody&quot; snm=&quot;Inst.&quot;
+K:D#m
+% intro
+V: Vocal
+z8&quot;Bmaj7&quot;z8|&quot;Bmaj7&quot;z16|&quot;C#&quot;z16|&quot;D#m7&quot;z16|
+V: Ins
+z12z3a|a3c&#x27;3g6f2a2|g3c&#x27;3e8z2|e3f3c8Ac|
+V: Vocal
+&quot;D#m7&quot;z16|&quot;Bmaj7&quot;z16|&quot;C#&quot;z16|&quot;D#m7&quot;z16|
+V: Ins
+e3f3c4f2e2c2|a3c&#x27;3g6f2a2|g3c&#x27;3e4f2e2c2|e3f3c8Ac|
+V: Vocal
+&quot;D#m7&quot;z8z2d2f2g2|
+V: Ins
+e3f3c4z6|
+% verse
+V: Vocal
+&quot;Bmaj7&quot;a2dd3z4d2f2a2|&quot;C#&quot;g3c3z4c2d2e2|&quot;D#m7&quot;e2fe2c2cc2AA3GA-|&quot;D#m7&quot;A2z8d2f2g2|
+V: Ins
+Z4|
+V:...</pre>
+                <pre class="lyrics-pre">[Intro: Piano &amp; Flute]
+
+[Verse 1]
+静かな森 歩み寄る
+木々のざわめき 聞こえる音
+陽射しが揺れて 影踊る
+心は軽く 自由になる
+
+[Verse 2]
+風が通り 抱きしめるように
+葉は止ま 語る古い物語
+小鳥の歌が 空を仰ぎ
+その音色だけ 生きている
+
+[Chorus]
+森の中で 消えてゆく
+小さな悩み 風に乗る
+心地良い緑 包まれて
+私は癒され 生まれ変わる
+
+[Instrumental Break: Piano, Flute, Drums]
+
+[Verse 3]
+土の匂いが 深く染みる
+地球の鼓動 感じている
+目を閉じ夜明けを 夢見て
+自然と溶ける 虚無する
+
+[Verse 4]
+月の光が ゆっくりと
+静けさ抱え 手ら知ってる
+心がささやく 小さな声
+森のリズムで 調和化する
+
+[Chorus]
+森の中で 消えてゆく
+小さな悩み 風に乗る
+心地良い緑 包まれて
+私は癒され 生まれ変わる
+
+[Outro: Piano &amp; Flute]</pre>
+            </div>
+        </details>
+    </div>
+    
+
+    <div class="case-card">
+        <div class="card-header">
+            <div class="card-title-group">
+                <span class="badge badge-accent">Melody + Generated Score (自动主旋律规划)</span>
+                <h3>当代都市 R&B · 律动合成器流行</h3>
+            </div>
+            <div class="metrics-pill">
+                RTF: <strong>1.88</strong> (0.53x 实时) | 总耗时: <strong>60.1s</strong> | 时长: <strong>32.0s</strong>
+            </div>
+        </div>
+        
+        <p class="style-prompt"><strong>风格提示词:</strong> Modern Chinese pop R&amp;B with synth-pop influence, emotional and intimate atmosphere, Intro starts with a clear and emotional lead synth melody, simple and memorable, soft and slightly fragile, close-mic, expressive and melodic, Clean pop drum groove, tight punchy kick, natural snare with soft room reverb, minimal hi-hat pattern, smooth R&amp;B bounce, Warm melodic synth bass with smooth movement, Analog-style synths with slight detune, warm tone, gentle filter movement, soft low-pass, subtle chorus width, Lead synth is smooth and rounded, emotional and expressive, High-frequency bell-like pluck synth in the background, soft and bright, short notes with light delay and reverb, adding sparkle and rhythmic detail, Wide atmospheric pads with slow attack and breathing movement, Minimal and clean arrangement, layered but spacious, focusing on melody and texture, Wide stereo image, airy reverb and delay, polished and warm, Pop music, Well-defined rhythm , Well-defined rhythm</p>
+        
+        <div class="comparison-grid">
+            <div class="audio-panel official-panel">
+                <div class="panel-tag">官方原版 Demo</div>
+                <h4>Official Reference</h4>
+                <audio controls preload="none" src="audio/melody_generated_official.mp3"></audio>
+                <div class="meta-note"><a href="https://map-yue2.github.io/" target="_blank">官网对应发布页 ↗</a></div>
+            </div>
+            <div class="audio-panel mlx-panel">
+                <div class="panel-tag">Apple Silicon mlx-Yue (8-bit)</div>
+                <h4>Local MLX Native Build</h4>
+                <audio controls preload="none" src="audio/melody_generated_mlx.mp3"></audio>
+                <div class="meta-note">采样率: 48kHz | 32步求解 | 峰值内存: 7.81 GiB</div>
+            </div>
+        </div>
+        
+        <details class="lyrics-details">
+            <summary>展开详细分阶段耗时与歌词</summary>
+            <div class="details-content">
+                <div class="timing-chips">
+                    <span>乐谱阶段: 19.63s</span>
+                    <span>AR生成: 11.65s (68.7 tok/s)</span>
+                    <span>NAR求解: 27.46s</span>
+                    <span>VAE解码: 1.19s</span>
+                    <span>峰值内存: 7.81 GiB</span>
+                </div>
+                
+                <pre class="lyrics-pre">[Intro]
+
+[Verse 1]
+交易命运的改变 源头在起心动念
+这是改变的关键 但很多人视而不见
+大赚大亏踏空卖飞 内在秩序不要乱
+保持平和的心念 净值弹指间改变
+当你大赚庆幸时 请你安静想想看
+这笔盈利隐含多少潜在代价来交换
+当你清楚知晓每次交易对应的代价
+策略的赔率带给你先胜后战的心安
+
+[Pre-Chorus]
+当你选择策略保守会避开一些风险
+模式内机会出现时进攻必然受限
+当你选择激进策略博弈猛干一段
+大赚的概率提升 大面概率也提升
+
+[Chorus]
+当你大亏懊悔时 请你冷静想想看
+当下的首要任务是稳住还是继续猛干
+如果内心秩序混乱还想力挽狂澜
+连续重仓猛干会让你连续吃大面
+此时赶紧降低期待调整心中的不甘
+要警惕出其不意博弈小概率事件
+
+[Verse 2]
+因为赌性会在不顺之时出来作乱
+回头发现 努力回血反而不如摆烂
+当你交易卖飞时
+请你转念想想看 后续行情是否出现一个更好的答案
+其实时间拉长看 每条净值的曲线
+那是模式画的图
+更是心性的变现
+
+[Bridge]
+世间 一切都是万物因缘合和的结果
+很多事
+都不是我们想怎样就怎样的
+走势无常才是交易基本的常态
+于是先要接纳它 否则痛苦一直在
+所有绊脚石
+换个角度也是垫脚石
+在你主动站上去看更高的风景时
+
+[Verse 3]
+当你后悔当初时 请你转念想想看
+难道当初不那样 做现在真的会更棒 不那样现在会怎样
+都是你的想象
+况且日子还很长 不要过早下判</pre>
+            </div>
+        </details>
+    </div>
+    
+
+    <div class="case-card">
+        <div class="card-header">
+            <div class="card-title-group">
+                <span class="badge badge-accent">Melody + Supplied Score (外部指定主旋律谱)</span>
+                <h3>Jazz-Funk · 律动放克与人声旋律线</h3>
+            </div>
+            <div class="metrics-pill">
+                RTF: <strong>1.26</strong> (0.80x 实时) | 总耗时: <strong>40.2s</strong> | 时长: <strong>32.0s</strong>
+            </div>
+        </div>
+        
+        <p class="style-prompt"><strong>风格提示词:</strong> funk</p>
+        
+        <div class="comparison-grid">
+            <div class="audio-panel official-panel">
+                <div class="panel-tag">官方原版 Demo</div>
+                <h4>Official Reference</h4>
+                <audio controls preload="none" src="audio/melody_supplied_official.mp3"></audio>
+                <div class="meta-note"><a href="https://map-yue2.github.io/" target="_blank">官网对应发布页 ↗</a></div>
+            </div>
+            <div class="audio-panel mlx-panel">
+                <div class="panel-tag">Apple Silicon mlx-Yue (8-bit)</div>
+                <h4>Local MLX Native Build</h4>
+                <audio controls preload="none" src="audio/melody_supplied_mlx.mp3"></audio>
+                <div class="meta-note">采样率: 48kHz | 32步求解 | 峰值内存: 7.81 GiB</div>
+            </div>
+        </div>
+        
+        <details class="lyrics-details">
+            <summary>展开详细分阶段耗时与歌词</summary>
+            <div class="details-content">
+                <div class="timing-chips">
+                    <span>乐谱阶段: 0.00s</span>
+                    <span>AR生成: 11.67s (68.6 tok/s)</span>
+                    <span>NAR求解: 27.13s</span>
+                    <span>VAE解码: 1.22s</span>
+                    <span>峰值内存: 7.81 GiB</span>
+                </div>
+                <pre class="lyrics-pre" style="color:#79c0ff;margin-bottom:10px;"><strong>输入乐谱 (ABC Notation):</strong>
+X:1
+T:
+M:4/4
+L:1/32
+Q:1/4=116
+V: Vocal clef=treble name=&quot;Vocal Melody&quot; snm=&quot;Vocal&quot;
+V: Ins clef=treble name=&quot;Ins Melody&quot; snm=&quot;Inst.&quot;
+K:Em
+% intro
+V: Vocal
+z24z4&quot;Em&quot;z4|&quot;Em&quot;z32|&quot;Em&quot;z32|&quot;Em&quot;z32|
+V: Ins
+z24z4E4|E8G6A6^A4B4d2e2|E8G6A6^A4B4d2e2|E8G6A6^A4B4d2e2|
+V: Vocal
+&quot;Em&quot;z32|&quot;Em&quot;z16&quot;G6&quot;z16|&quot;Am7&quot;z16&quot;C&quot;z8&quot;B7&quot;z8|&quot;Em&quot;z16&quot;G6&quot;z16|
+V: Ins
+e4d4^A2=A2G4E4D4E8|E8z4D4G6G2z8|A6A2z8c4c4B2B6|E8z4D4G6G2z8|
+V: Vocal
+&quot;Am7&quot;z16&quot;C&quot;z8&quot;B7&quot;z8|&quot;Em&quot;z16&quot;G6&quot;z16|&quot;Am7&quot;z16&quot;C&quot;z8&quot;B7&quot;z8|&quot;Em&quot;z16&quot;G6&quot;z16|
+V: Ins
+A6A2z8c4c4B2B6|e8e2d2B...</pre>
+                <pre class="lyrics-pre">[Verse]
+姉が玉子焼き用の四角いフライパンで
+目玉焼きを焼いている
+合う蓋はないので
+横から湯気は洩れるが
+面白い発想に見えた
+
+僕は丸い小さめの普通のフライパンで
+目玉焼きを焼く
+
+[Pre-Chorus]
+かように遠くで暮らしていると
+癖やメソッドや好みが違う
+
+[Chorus]
+当たり前、当たり前、当たり前
+これはAが優れてBが劣るというような
+問題ではないのだ
+
+[Bridge]
+君の一本道の進歩観を
+多々野辺のどこへともない道に
+考え直してみてはどうだろう</pre>
+            </div>
+        </details>
+    </div>
+    
+
+    <div class="case-card">
+        <div class="card-header">
+            <div class="card-title-group">
+                <span class="badge badge-accent">Off / Direct Generation (直接端到端生成 / 无乐谱)</span>
+                <h3>Enka · 经典复古演歌 (Direct Generation)</h3>
+            </div>
+            <div class="metrics-pill">
+                RTF: <strong>1.37</strong> (0.73x 实时) | 总耗时: <strong>43.9s</strong> | 时长: <strong>32.0s</strong>
+            </div>
+        </div>
+        
+        <p class="style-prompt"><strong>风格提示词:</strong> retro,city pop,中森明菜,Japanese</p>
+        
+        <div class="comparison-grid">
+            <div class="audio-panel official-panel">
+                <div class="panel-tag">官方原版 Demo</div>
+                <h4>Official Reference</h4>
+                <audio controls preload="none" src="audio/off_direct_official.mp3"></audio>
+                <div class="meta-note"><a href="https://map-yue2.github.io/" target="_blank">官网对应发布页 ↗</a></div>
+            </div>
+            <div class="audio-panel mlx-panel">
+                <div class="panel-tag">Apple Silicon mlx-Yue (8-bit)</div>
+                <h4>Local MLX Native Build</h4>
+                <audio controls preload="none" src="audio/off_direct_mlx.mp3"></audio>
+                <div class="meta-note">采样率: 48kHz | 32步求解 | 峰值内存: 7.83 GiB</div>
+            </div>
+        </div>
+        
+        <details class="lyrics-details">
+            <summary>展开详细分阶段耗时与歌词</summary>
+            <div class="details-content">
+                <div class="timing-chips">
+                    <span>乐谱阶段: 0.00s</span>
+                    <span>AR生成: 16.69s (47.9 tok/s)</span>
+                    <span>NAR求解: 25.71s</span>
+                    <span>VAE解码: 1.28s</span>
+                    <span>峰值内存: 7.83 GiB</span>
+                </div>
+                
+                <pre class="lyrics-pre">风が麦浪をなびかせ 稲の花が香る
+黒い土地が われらの父母を育てる
+毎年冬には 大雪が舞い散る
+暖かい炬燵の上で 世間話をする
+
+青い空に 白い雲がゆらゆら
+清らかな小川が せせらぎながら流れる
+東北の人は ザワーキャベツと血腸が好き
+ヤンコ踊りを踊れば 人々は喜びそう
+
+大東北は わたしの故郷だ
+ソナが奏でる 素敵な姿
+仲間が集まれば 必ずお酒を二杯飲む
+月を酔わせ わたしの心を温める
+
+大東北は わたしの故郷だ
+わたしはこの地で 生まれ育った
+東北人の情 東北人の愛
+この故郷を 心から愛してる
+
+风が麦浪をなびかせ 稲の花が香る
+黒い土地が われらの父母を育てる
+毎年冬には 大雪が舞い散る
+暖かい炬燵の上で 世間話をする
+
+青い空に 白い雲がゆらゆら
+清らかな小川が せせらぎながら流れる
+東北の人は ザワーキャベツと血腸が好き
+ヤンコ踊りを踊れば 人々は喜びそう
+
+大東北は わたしの故郷だ
+ソナが奏でる 素敵な姿
+仲間が集まれば 必ずお酒を二杯飲む
+月を酔わせ わたしの心を温める
+
+大東北は わたしの故郷だ
+わたしはこの地で 生まれ育った
+東北人の情 東北人の愛
+この故郷を 心から愛してる
+
+大東北は わたしの故郷だ
+ソナが奏でる 素敵な姿
+仲間が集まれば 必ずお酒を二杯飲む
+月を酔わせ わたしの心を温める
+
+大東北は わたしの故郷だ
+わたしはこの地で 生まれ育った
+東北人の情 東北人の愛
+この故郷を 心から愛してる
+この故郷を 心から愛してる</pre>
+            </div>
+        </details>
+    </div>
+    
+
+    <div class="case-card">
+        <div class="card-header">
+            <div class="card-title-group">
+                <span class="badge badge-accent">Cover & Arrangement (音频转谱 + 风格重排翻唱)</span>
+                <h3>大狗叫 · 新奥尔良铜管放克 (Cover Workflow)</h3>
+            </div>
+            <div class="metrics-pill">
+                RTF: <strong>1.88</strong> (0.53x 实时) | 总耗时: <strong>84.5s</strong> | 时长: <strong>44.9s</strong>
+            </div>
+        </div>
+        
+        <p class="style-prompt"><strong>风格提示词:</strong> New Orleans brass-funk, second-line drums, sousaphone, honky-tonk piano, trombone and baritone sax, playful Mandarin duet, 115 BPM</p>
+        
+        <div class="comparison-grid">
+            <div class="audio-panel official-panel">
+                <div class="panel-tag">官方原版 Demo</div>
+                <h4>Official Reference</h4>
+                <audio controls preload="none" src="https://map-yue2.github.io/assets/covers/dagoujiao-chord/dagoujiao-chord.mp3"></audio>
+                <div class="meta-note"><a href="https://map-yue2.github.io/#cover" target="_blank">官网对应发布页 ↗</a></div>
+            </div>
+            <div class="audio-panel mlx-panel">
+                <div class="panel-tag">Apple Silicon mlx-Yue (8-bit)</div>
+                <h4>Local MLX Native Build</h4>
+                <audio controls preload="none" src="audio/complete_cover_dagoujiao_mlx.mp3"></audio>
+                <div class="meta-note">采样率: 48kHz | 32步求解 | 峰值内存: 8.12 GiB</div>
+            </div>
+        </div>
+        
+        <details class="lyrics-details">
+            <summary>展开详细分阶段耗时与歌词</summary>
+            <div class="details-content">
+                <div class="timing-chips">
+                    <span>乐谱阶段: 14.20s</span>
+                    <span>AR生成: 28.30s (58.2 tok/s)</span>
+                    <span>NAR求解: 39.80s</span>
+                    <span>VAE解码: 2.20s</span>
+                    <span>峰值内存: 8.12 GiB</span>
+                </div>
+                
+                <pre class="lyrics-pre">[Chorus]
+我们一起学狗叫 一起汪汪汪汪汪
+在你门前摇尾巴 快来汪汪汪汪汪
+我的脚步咚咚响 追着飞盘满街跑
+不带我出门我就汪汪汪
+</pre>
+            </div>
+        </details>
+    </div>
+    
+    </div>
+
+    <!-- Tab 2: 全语种 -->
+    <div id="tab-genres" class="tab-pane">
+        <table class="summary-table">
+            <thead>
+                <tr>
+                    <th>语种 (Language)</th>
+                    <th>音乐风格 (Genre)</th>
+                    <th>音频时长</th>
+                    <th>生成耗时</th>
+                    <th>RTF / 实时倍速</th>
+                    <th>峰值内存</th>
+                    <th>AR 速率</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+        <tr>
+            <td><strong>Japanese (JA)</strong></td>
+            <td>Easy Listening</td>
+            <td>32.0s</td>
+            <td><strong>54.4s</strong></td>
+            <td><strong style="color:var(--accent);">1.70</strong> (0.59x)</td>
+            <td>7.77 GiB</td>
+            <td>74.6 tps</td>
+        </tr>
+        
+
+        <tr>
+            <td><strong>Russian (RU)</strong></td>
+            <td>Folktronica</td>
+            <td>32.0s</td>
+            <td><strong>48.5s</strong></td>
+            <td><strong style="color:var(--accent);">1.52</strong> (0.66x)</td>
+            <td>7.80 GiB</td>
+            <td>80.1 tps</td>
+        </tr>
+        
+
+        <tr>
+            <td><strong>Spanish (ES)</strong></td>
+            <td>Flamenco</td>
+            <td>32.0s</td>
+            <td><strong>67.8s</strong></td>
+            <td><strong style="color:var(--accent);">2.12</strong> (0.47x)</td>
+            <td>7.81 GiB</td>
+            <td>70.1 tps</td>
+        </tr>
+        
+
+        <tr>
+            <td><strong>Chinese (ZH)</strong></td>
+            <td>R&B</td>
+            <td>32.0s</td>
+            <td><strong>74.6s</strong></td>
+            <td><strong style="color:var(--accent);">2.33</strong> (0.43x)</td>
+            <td>7.81 GiB</td>
+            <td>54.7 tps</td>
+        </tr>
+        
+
+        <tr>
+            <td><strong>Korean (KO)</strong></td>
+            <td>Emo</td>
+            <td>32.0s</td>
+            <td><strong>161.3s</strong></td>
+            <td><strong style="color:var(--accent);">5.04</strong> (0.20x)</td>
+            <td>7.82 GiB</td>
+            <td>22.1 tps</td>
+        </tr>
+        
+
+        <tr>
+            <td><strong>English (EN)</strong></td>
+            <td>Rock & Roll</td>
+            <td>32.0s</td>
+            <td><strong>71.0s</strong></td>
+            <td><strong style="color:var(--accent);">2.22</strong> (0.45x)</td>
+            <td>7.84 GiB</td>
+            <td>52.2 tps</td>
+        </tr>
+        
+            </tbody>
+        </table>
+        
+        
+    <div class="case-card">
+        <div class="card-header">
+            <div class="card-title-group">
+                <span class="badge badge-accent">Japanese (JA) · Easy Listening</span>
+                <h3>Easy Listening</h3>
+            </div>
+            <div class="metrics-pill">
+                RTF: <strong>1.70</strong> (0.59x 实时) | 总耗时: <strong>54.4s</strong> | 时长: <strong>32.0s</strong>
+            </div>
+        </div>
+        
+        <p class="style-prompt"><strong>风格提示词:</strong> A gentle and melancholic piece beginning with a delicate piano melody and a breathy, expressive flute line. A soft, clear female vocal enters, singing in a gentle, almost lullaby-like style. The arrangement gradually builds, introducing a subtle, downtempo lo-fi hip-hop beat with a soft kick and snare, complemented by a warm bassline and atmospheric synth pads. The track maintains a tranquil and introspective mood throughout, with the piano and flute weaving in and out, creating a serene soundscape perfect for relaxation or contemplation. The song concludes with a beautiful instrumental outro featuring the piano and flute, fading into silence.</p>
+        
+        <div class="comparison-grid">
+            <div class="audio-panel official-panel">
+                <div class="panel-tag">官方原版 Demo</div>
+                <h4>Official Reference</h4>
+                <audio controls preload="none" src="audio/ja_easy_listening_official.mp3"></audio>
+                <div class="meta-note"><a href="https://map-yue2.github.io/#special-prompt-control" target="_blank">官网对应发布页 ↗</a></div>
+            </div>
+            <div class="audio-panel mlx-panel">
+                <div class="panel-tag">Apple Silicon mlx-Yue (8-bit)</div>
+                <h4>Local MLX Native Build</h4>
+                <audio controls preload="none" src="audio/ja_easy_listening_mlx.mp3"></audio>
+                <div class="meta-note">采样率: 48kHz | 32步求解 | 峰值内存: 7.77 GiB</div>
+            </div>
+        </div>
+        
+        <details class="lyrics-details">
+            <summary>展开详细分阶段耗时与歌词</summary>
+            <div class="details-content">
+                <div class="timing-chips">
+                    <span>乐谱阶段: 17.71s</span>
+                    <span>AR生成: 10.72s (74.6 tok/s)</span>
+                    <span>NAR求解: 23.30s</span>
+                    <span>VAE解码: 1.26s</span>
+                    <span>峰值内存: 7.77 GiB</span>
+                </div>
+                
+                <pre class="lyrics-pre">[Intro: Piano &amp; Flute]
+
+[Verse 1]
+静かな森 歩み寄る
+木々のざわめき 聞こえる音
+陽射しが揺れて 影踊る
+心は軽く 自由になる
+
+[Verse 2]
+風が通り 抱きしめるように
+葉は止ま 語る古い物語
+小鳥の歌が 空を仰ぎ
+その音色だけ 生きている
+
+[Chorus]
+森の中で 消えてゆく
+小さな悩み 風に乗る
+心地良い緑 包まれて
+私は癒され 生まれ変わる
+
+[Instrumental Break: Piano, Flute, Drums]
+
+[Verse 3]
+土の匂いが 深く染みる
+地球の鼓動 感じている
+目を閉じ夜明けを 夢見て
+自然と溶ける 虚無する
+
+[Verse 4]
+月の光が ゆっくりと
+静けさ抱え 手ら知ってる
+心がささやく 小さな声
+森のリズムで 調和化する
+
+[Chorus]
+森の中で 消えてゆく
+小さな悩み 風に乗る
+心地良い緑 包まれて
+私は癒され 生まれ変わる
+
+[Outro: Piano &amp; Flute]</pre>
+            </div>
+        </details>
+    </div>
+    
+
+    <div class="case-card">
+        <div class="card-header">
+            <div class="card-title-group">
+                <span class="badge badge-accent">Russian (RU) · Folktronica</span>
+                <h3>Folktronica</h3>
+            </div>
+            <div class="metrics-pill">
+                RTF: <strong>1.52</strong> (0.66x 实时) | 总耗时: <strong>48.5s</strong> | 时长: <strong>32.0s</strong>
+            </div>
+        </div>
+        
+        <p class="style-prompt"><strong>风格提示词:</strong> Dance Pop, Storytelling, Groovy, Anthemic, Dance, Folk, Melodic, Danceable, Electronic, female vocals</p>
+        
+        <div class="comparison-grid">
+            <div class="audio-panel official-panel">
+                <div class="panel-tag">官方原版 Demo</div>
+                <h4>Official Reference</h4>
+                <audio controls preload="none" src="audio/ru_folktronica_official.mp3"></audio>
+                <div class="meta-note"><a href="https://map-yue2.github.io/#special-prompt-control" target="_blank">官网对应发布页 ↗</a></div>
+            </div>
+            <div class="audio-panel mlx-panel">
+                <div class="panel-tag">Apple Silicon mlx-Yue (8-bit)</div>
+                <h4>Local MLX Native Build</h4>
+                <audio controls preload="none" src="audio/ru_folktronica_mlx.mp3"></audio>
+                <div class="meta-note">采样率: 48kHz | 32步求解 | 峰值内存: 7.80 GiB</div>
+            </div>
+        </div>
+        
+        <details class="lyrics-details">
+            <summary>展开详细分阶段耗时与歌词</summary>
+            <div class="details-content">
+                <div class="timing-chips">
+                    <span>乐谱阶段: 13.56s</span>
+                    <span>AR生成: 9.99s (80.1 tok/s)</span>
+                    <span>NAR求解: 23.78s</span>
+                    <span>VAE解码: 0.96s</span>
+                    <span>峰值内存: 7.80 GiB</span>
+                </div>
+                
+                <pre class="lyrics-pre">Ах вы, сени мои, сени
+Сени новые мои
+Сени новые, кленовые
+Решетчатые!
+Выходила молода
+За новые ворота
+Выпускала сокола
+Из правого рукава
+На полетике соколику наказывала
+«Ты лети, лети, соколик
+высоко и далеко».
+И высоко и далеко
+На родиму сторону
+На родимой на сторонке
+Грозен батюшка живёт.
+Он и грозен, сударь, грозен
+Да не милостив
+Не пускает молоду
+Поздно вечером одну.
+Не велит поздно ходить
+С молодцами говорить.
+Не послушаю отца
+Эх, потешу молодца.
+Ах вы, сени мои, сени
+Сени новые мои
+Сени новые, кленовые
+Решетчатые!</pre>
+            </div>
+        </details>
+    </div>
+    
+
+    <div class="case-card">
+        <div class="card-header">
+            <div class="card-title-group">
+                <span class="badge badge-accent">Spanish (ES) · Flamenco</span>
+                <h3>Flamenco</h3>
+            </div>
+            <div class="metrics-pill">
+                RTF: <strong>2.12</strong> (0.47x 实时) | 总耗时: <strong>67.8s</strong> | 时长: <strong>32.0s</strong>
+            </div>
+        </div>
+        
+        <p class="style-prompt"><strong>风格提示词:</strong> flamenco gipsy female vocals, deep male spanish rap voice, hip hop beat with cajón and bass, flamenco guitar, palmas, 95 bpm, joyful energy, andalusian accent, fusion, bright tone, no melancholy, festive rhythm, call and response vocals, uplifting and emotional, warm analog texture, street spirit, modern flamenco rap fusion, mediterranean vibe, vibrant and organic production.</p>
+        
+        <div class="comparison-grid">
+            <div class="audio-panel official-panel">
+                <div class="panel-tag">官方原版 Demo</div>
+                <h4>Official Reference</h4>
+                <audio controls preload="none" src="audio/es_flamenco_official.mp3"></audio>
+                <div class="meta-note"><a href="https://map-yue2.github.io/#special-prompt-control" target="_blank">官网对应发布页 ↗</a></div>
+            </div>
+            <div class="audio-panel mlx-panel">
+                <div class="panel-tag">Apple Silicon mlx-Yue (8-bit)</div>
+                <h4>Local MLX Native Build</h4>
+                <audio controls preload="none" src="audio/es_flamenco_mlx.mp3"></audio>
+                <div class="meta-note">采样率: 48kHz | 32步求解 | 峰值内存: 7.81 GiB</div>
+            </div>
+        </div>
+        
+        <details class="lyrics-details">
+            <summary>展开详细分阶段耗时与歌词</summary>
+            <div class="details-content">
+                <div class="timing-chips">
+                    <span>乐谱阶段: 25.86s</span>
+                    <span>AR生成: 11.41s (70.1 tok/s)</span>
+                    <span>NAR求解: 28.99s</span>
+                    <span>VAE解码: 1.38s</span>
+                    <span>峰值内存: 7.81 GiB</span>
+                </div>
+                
+                <pre class="lyrics-pre">[Intro – female flamenco vocals, slow compás, soft palmas, flamenco guitar intro]
+Ay, Jaén, tierra de fuego
+donde el sol besa el suelo
+entre olivos se levanta
+tu corazón verdadero.
+
+
+
+[Beat drops – male rap enters, groovy hip-hop rhythm, cajón + bass, 95 BPM]
+Jaén despierta, con fuerza y con arte
+la gente sonríe, la vida reparte
+en cada calle hay historia que late
+orgullo en el alma, raíces que arden.
+
+Subo la cuesta, la brisa me guía
+Santa Catalina me da compañía
+el barrio murmura con algarabía
+la tapa, la risa, la buena energía.
+
+
+
+[Chorus – female flamenco vocals, upbeat rhythm with hand claps and guitar strums]
+Ay, Jaén, qué bonito suena
+tu cante vuela, tu luz me llena
+del valle al monte, la voz resuena
+Jaén se alegra, Jaén resuena.
+
+
+
+[Verse 2 – male rap with female ad-libs, syncopated rhythm]
+Tierra sincera, mirada clara
+trabajo y coraje, palabra rara
+desde el casco viejo hasta la Almenara
+Jaén no espera, Jaén dispara.
+
+[Female ad-libs – flamenco “jaleos” style]
+¡Ole mi gente buena! ¡Ay qué alegría más sana!
+
+[Male rap continues]
+Por el Paseo de la Estación suena el alma
+ni el tiempo ni el miedo aquí tienen calma
+Jaén respira verdad y palma
+cada esquina suena a jarana.
+
+
+
+[Bridge – vocal duel, flamenco and rap call &amp; response, energetic palmas]
+Tierra bendita, no hay quien te iguale
+Aquí el corazón se mide en el vale.
+Deja que el cante reviente la calle
+Que en cada compás la vida estalle.
+
+
+
+[Final Chorus – both voices together, full festive energy, strong compás]
+Ay, Jaén, qué bonito suena
+tu cante vuela, tu luz me llena
+del valle al monte, la voz resuena
+Jaén se alegra, Jaén resuena.
+
+
+
+[Outro – female flamenco vocals, slow fade with guitar and cajón]
+Ay, mi Jaén, mi tierra buena
+mi gente canta, la vida suena
+Jaén resuena, Jaén resuena...</pre>
+            </div>
+        </details>
+    </div>
+    
+
+    <div class="case-card">
+        <div class="card-header">
+            <div class="card-title-group">
+                <span class="badge badge-accent">Chinese (ZH) · R&B</span>
+                <h3>R&B</h3>
+            </div>
+            <div class="metrics-pill">
+                RTF: <strong>2.33</strong> (0.43x 实时) | 总耗时: <strong>74.6s</strong> | 时长: <strong>32.0s</strong>
+            </div>
+        </div>
+        
+        <p class="style-prompt"><strong>风格提示词:</strong> Modern Chinese pop R&amp;B with synth-pop influence, emotional and intimate atmosphere, Intro starts with a clear and emotional lead synth melody, simple and memorable, soft and slightly fragile, close-mic, expressive and melodic, Clean pop drum groove, tight punchy kick, natural snare with soft room reverb, minimal hi-hat pattern, smooth R&amp;B bounce, Warm melodic synth bass with smooth movement, Analog-style synths with slight detune, warm tone, gentle filter movement, soft low-pass, subtle chorus width, Lead synth is smooth and rounded, emotional and expressive, High-frequency bell-like pluck synth in the background, soft and bright, short notes with light delay and reverb, adding sparkle and rhythmic detail, Wide atmospheric pads with slow attack and breathing movement, Minimal and clean arrangement, layered but spacious, focusing on melody and texture, Wide stereo image, airy reverb and delay, polished and warm, Pop music, Well-defined rhythm , Well-defined rhythm</p>
+        
+        <div class="comparison-grid">
+            <div class="audio-panel official-panel">
+                <div class="panel-tag">官方原版 Demo</div>
+                <h4>Official Reference</h4>
+                <audio controls preload="none" src="audio/zh_randb_official.mp3"></audio>
+                <div class="meta-note"><a href="https://map-yue2.github.io/#special-prompt-control" target="_blank">官网对应发布页 ↗</a></div>
+            </div>
+            <div class="audio-panel mlx-panel">
+                <div class="panel-tag">Apple Silicon mlx-Yue (8-bit)</div>
+                <h4>Local MLX Native Build</h4>
+                <audio controls preload="none" src="audio/zh_randb_mlx.mp3"></audio>
+                <div class="meta-note">采样率: 48kHz | 32步求解 | 峰值内存: 7.81 GiB</div>
+            </div>
+        </div>
+        
+        <details class="lyrics-details">
+            <summary>展开详细分阶段耗时与歌词</summary>
+            <div class="details-content">
+                <div class="timing-chips">
+                    <span>乐谱阶段: 16.81s</span>
+                    <span>AR生成: 14.62s (54.7 tok/s)</span>
+                    <span>NAR求解: 40.22s</span>
+                    <span>VAE解码: 2.75s</span>
+                    <span>峰值内存: 7.81 GiB</span>
+                </div>
+                
+                <pre class="lyrics-pre">[Intro]
+
+[Verse 1]
+交易命运的改变 源头在起心动念
+这是改变的关键 但很多人视而不见
+大赚大亏踏空卖飞 内在秩序不要乱
+保持平和的心念 净值弹指间改变
+当你大赚庆幸时 请你安静想想看
+这笔盈利隐含多少潜在代价来交换
+当你清楚知晓每次交易对应的代价
+策略的赔率带给你先胜后战的心安
+
+[Pre-Chorus]
+当你选择策略保守会避开一些风险
+模式内机会出现时进攻必然受限
+当你选择激进策略博弈猛干一段
+大赚的概率提升 大面概率也提升
+
+[Chorus]
+当你大亏懊悔时 请你冷静想想看
+当下的首要任务是稳住还是继续猛干
+如果内心秩序混乱还想力挽狂澜
+连续重仓猛干会让你连续吃大面
+此时赶紧降低期待调整心中的不甘
+要警惕出其不意博弈小概率事件
+
+[Verse 2]
+因为赌性会在不顺之时出来作乱
+回头发现 努力回血反而不如摆烂
+当你交易卖飞时
+请你转念想想看 后续行情是否出现一个更好的答案
+其实时间拉长看 每条净值的曲线
+那是模式画的图
+更是心性的变现
+
+[Bridge]
+世间 一切都是万物因缘合和的结果
+很多事
+都不是我们想怎样就怎样的
+走势无常才是交易基本的常态
+于是先要接纳它 否则痛苦一直在
+所有绊脚石
+换个角度也是垫脚石
+在你主动站上去看更高的风景时
+
+[Verse 3]
+当你后悔当初时 请你转念想想看
+难道当初不那样 做现在真的会更棒 不那样现在会怎样
+都是你的想象
+况且日子还很长 不要过早下判</pre>
+            </div>
+        </details>
+    </div>
+    
+
+    <div class="case-card">
+        <div class="card-header">
+            <div class="card-title-group">
+                <span class="badge badge-accent">Korean (KO) · Emo</span>
+                <h3>Emo</h3>
+            </div>
+            <div class="metrics-pill">
+                RTF: <strong>5.04</strong> (0.20x 实时) | 总耗时: <strong>161.3s</strong> | 时长: <strong>32.0s</strong>
+            </div>
+        </div>
+        
+        <p class="style-prompt"><strong>风格提示词:</strong> A melancholic yet energetic Emo Hip-hop track with Pop Punk influences. Heavy distorted electric guitar riffs combined with fast-paced trap drum beats (808 bass, crisp snare). Dark, emotional, and cinematic atmosphere. Melodic Rap beat featuring a lonely acoustic guitar intro transitioning into an explosive chorus with heavy rock guitars. Deep, distorted 808 bass and sharp hi-hats. Sad, longing melody. Fast-paced Emo Rock and Hip-hop fusion. High-energy electric guitar loops, upbeat but sad melody, 140 BPM ~ 160 BPM, driving drum rhythm. A female vocal with a husky, raspy tone and heavy auto-tune. The singing style is emotional melodic rap. Add high reverb to create a lonely, atmospheric vibe. The voice should sound raw yet polished with metallic pitch correction.</p>
+        
+        <div class="comparison-grid">
+            <div class="audio-panel official-panel">
+                <div class="panel-tag">官方原版 Demo</div>
+                <h4>Official Reference</h4>
+                <audio controls preload="none" src="audio/ko_emo_official.mp3"></audio>
+                <div class="meta-note"><a href="https://map-yue2.github.io/#special-prompt-control" target="_blank">官网对应发布页 ↗</a></div>
+            </div>
+            <div class="audio-panel mlx-panel">
+                <div class="panel-tag">Apple Silicon mlx-Yue (8-bit)</div>
+                <h4>Local MLX Native Build</h4>
+                <audio controls preload="none" src="audio/ko_emo_mlx.mp3"></audio>
+                <div class="meta-note">采样率: 48kHz | 32步求解 | 峰值内存: 7.82 GiB</div>
+            </div>
+        </div>
+        
+        <details class="lyrics-details">
+            <summary>展开详细分阶段耗时与歌词</summary>
+            <div class="details-content">
+                <div class="timing-chips">
+                    <span>乐谱阶段: 39.78s</span>
+                    <span>AR生成: 36.21s (22.1 tok/s)</span>
+                    <span>NAR求解: 82.26s</span>
+                    <span>VAE解码: 2.87s</span>
+                    <span>峰值内存: 7.82 GiB</span>
+                </div>
+                
+                <pre class="lyrics-pre">[Verse 1]
+늦은 밤 텅 빈 버스 안
+창문에 비친 너와 내 얼굴
+목적지는 아직 안 정해도
+너만 있으면 되는 것 같아
+
+[Pre-Chorus]
+사실 난 겁이 많아서
+길을 잃을까 봐 두려워
+근데 네 손 한 번만 잡으면
+지도 따윈 필요 없을 것 같아 (알잖아)
+
+[Chorus]
+나랑 어디든 간다고 해줘
+길 끝이 어딘지 몰라도
+나와 어디든 좋다고 해줘
+창문 밖 풍경은 변해도
+나만 있으면 그 어디든 괜찮다고
+작게라도 말해줘
+그 한마디면 돼
+
+[Verse 2]
+비 오는 빨래 냄새 나는 골목
+우산 하나 나눠 쓰는 우리
+비틀비틀 맞지 않는 보폭도
+웃으면서 맞춰 가는 게 좋아
+
+[Pre-Chorus]
+가끔은 말이 안 통해도
+표정만 봐도 다 알잖아
+서툰 얘길 이어 붙이다가
+그냥 네 이름만 부르게 돼 (왜 이렇게)
+
+[Chorus]
+나랑 어디든 간다고 해줘
+길 끝이 어딘지 몰라도
+나와 어디든 좋다고 해줘
+창문 밖 풍경은 변해도
+나만 있으면 그 어디든 괜찮다고
+조용하게 말해줘
+그 한마디면 돼
+내일도 난 버틸 수 있어
+
+[Bridge]
+약속 같은 건 없어도
+네 옆에 서 있는 지금이
+나에게는 다야
+멀리 안 가도 좋아
+편의점 앞 구석자리라도
+너면 돼 너면 돼 (너면 돼)
+
+[Chorus]
+나랑 어디든 간다고 해줘
+잠깐 밖에 못 나가도
+나와 어디든 좋다고 해줘
+네 방 안 좁은 소파여도
+나만 있으면 그 어디든 괜찮다고
+다시 한 번 말해줘
+그 한마디 듣고
+영원까지 걸어가 볼래</pre>
+            </div>
+        </details>
+    </div>
+    
+
+    <div class="case-card">
+        <div class="card-header">
+            <div class="card-title-group">
+                <span class="badge badge-accent">English (EN) · Rock & Roll</span>
+                <h3>Rock & Roll</h3>
+            </div>
+            <div class="metrics-pill">
+                RTF: <strong>2.22</strong> (0.45x 实时) | 总耗时: <strong>71.0s</strong> | 时长: <strong>32.0s</strong>
+            </div>
+        </div>
+        
+        <p class="style-prompt"><strong>风格提示词:</strong> Joyful happy 50s male powerful</p>
+        
+        <div class="comparison-grid">
+            <div class="audio-panel official-panel">
+                <div class="panel-tag">官方原版 Demo</div>
+                <h4>Official Reference</h4>
+                <audio controls preload="none" src="audio/en_rock_and_roll_official.mp3"></audio>
+                <div class="meta-note"><a href="https://map-yue2.github.io/#special-prompt-control" target="_blank">官网对应发布页 ↗</a></div>
+            </div>
+            <div class="audio-panel mlx-panel">
+                <div class="panel-tag">Apple Silicon mlx-Yue (8-bit)</div>
+                <h4>Local MLX Native Build</h4>
+                <audio controls preload="none" src="audio/en_rock_and_roll_mlx.mp3"></audio>
+                <div class="meta-note">采样率: 48kHz | 32步求解 | 峰值内存: 7.84 GiB</div>
+            </div>
+        </div>
+        
+        <details class="lyrics-details">
+            <summary>展开详细分阶段耗时与歌词</summary>
+            <div class="details-content">
+                <div class="timing-chips">
+                    <span>乐谱阶段: 16.98s</span>
+                    <span>AR生成: 15.33s (52.2 tok/s)</span>
+                    <span>NAR求解: 36.47s</span>
+                    <span>VAE解码: 1.92s</span>
+                    <span>峰值内存: 7.84 GiB</span>
+                </div>
+                
+                <pre class="lyrics-pre">[Verse]
+Snow is falling thick and bright
+Reindeer footprints in the night
+Cookies vanish
+Milk is gone
+Who&#x27;s that laughing till the dawn
+
+[Prechorus]
+Chimneys whisper
+Magic flows
+Candy canes in secret rows
+
+[Chorus]
+Christmas time with Santa Claus
+Sliding rooftops
+No time to pause
+Ho ho ho
+He’s on his way
+Bringing joy to Christmas Day
+
+[Verse 2]
+Stockings hang by the fire’s glow
+Toys and dreams in a sack to go
+Elves are dancing
+Wrapping fast
+Every wish will make it past
+
+[Prechorus]
+Midnight sparkles
+Sleigh bells sing
+Feel the joy that he will bring
+
+[Chorus]
+Christmas time with Santa Claus
+Sliding rooftops
+No time to pause
+Ho ho ho
+He’s on his way
+Bringing joy to Christmas Day</pre>
+            </div>
+        </details>
+    </div>
+    
+    </div>
+</div>
+
+<script>
+function switchTab(tabId) {
+    document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+    document.querySelectorAll('.tab-pane').forEach(pane => pane.classList.remove('active'));
+    
+    if (tabId === 'modes') {
+        document.querySelectorAll('.tab-btn')[0].classList.add('active');
+        document.getElementById('tab-modes').classList.add('active');
+    } else {
+        document.querySelectorAll('.tab-btn')[1].classList.add('active');
+        document.getElementById('tab-genres').classList.add('active');
+    }
+}
+
+// 自动暂停其他正在播放的音频
+document.addEventListener('play', function(e) {
+    var audios = document.getElementsByTagName('audio');
+    for (var i = 0; i < audios.length; i++) {
+        if (audios[i] != e.target) {
+            audios[i].pause();
+        }
+    }
+}, true);
+</script>
+
+</body>
+</html>

@@ -3,6 +3,7 @@
 Native Apple Silicon (MLX) port for [YuE2-3B](https://huggingface.co/m-a-p/YuE2-3B) music generation and audio transcription.
 
 [![GitHub](https://img.shields.io/badge/GitHub-vanch007%2Fmlx--Yue-blue?logo=github)](https://github.com/vanch007/mlx-Yue)
+[![Demo](https://img.shields.io/badge/%F0%9F%8E%A7%20Demo-Audio%20Showcase-orange)](https://vanch007.github.io/mlx-Yue/)
 [![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-vanch007%2Fmlx--Yue2--3B-yellow)](https://huggingface.co/vanch007/mlx-Yue2-3B)
 [![Platform](https://img.shields.io/badge/Platform-macOS%20Apple%20Silicon-lightgrey?logo=apple)](https://github.com/vanch007/mlx-Yue)
 [![License](https://img.shields.io/badge/License-Apache%202.0-green.svg)](LICENSE)
@@ -11,6 +12,9 @@ Native Apple Silicon (MLX) port for [YuE2-3B](https://huggingface.co/m-a-p/YuE2-
 
 Pre-converted model weights (BF16 & 8-bit quantized) are available on Hugging Face:
 👉 **[vanch007/mlx-Yue2-3B](https://huggingface.co/vanch007/mlx-Yue2-3B)**
+
+Interactive Audio Showcase (Official Demos vs mlx-Yue Side-by-Side):
+👉 **[https://vanch007.github.io/mlx-Yue/](https://vanch007.github.io/mlx-Yue/)**
 
 ---
 
@@ -243,4 +247,3 @@ mlx-Yue/
 - [MLX](https://github.com/ml-explore/mlx) by Apple Machine Learning Research.
 - [stable-audio-tools](https://github.com/Stability-AI/stable-audio-tools) by Stability AI (Oobleck VAE architecture).
 - [SheetSage](https://github.com/chrisdonahue/sheetsage) & [MERT](https://github.com/m-a-p/MERT) for transcription foundation models.
-
