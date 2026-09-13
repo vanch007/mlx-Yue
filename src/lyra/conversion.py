@@ -894,11 +894,13 @@ def _validate_conversion(
         )
 
     actual_files, actual_directories = _actual_tree(directory)
-    if actual_files != expected_files | {"conversion.json"}:
+    allowed_optional = {"README.md"}
+    required_files = expected_files | {"conversion.json"}
+    if not (required_files <= actual_files <= required_files | allowed_optional):
         raise ValueError(
             "Converted directory has missing or unexpected files: "
-            f"missing={sorted((expected_files | {'conversion.json'}) - actual_files)}, "
-            f"unexpected={sorted(actual_files - (expected_files | {'conversion.json'}))}"
+            f"missing={sorted(required_files - actual_files)}, "
+            f"unexpected={sorted(actual_files - (required_files | allowed_optional))}"
         )
     expected_directories = {
         PurePosixPath(name).parent.as_posix()
