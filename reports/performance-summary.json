@@ -1,0 +1,67 @@
+{
+  "baseline": {
+    "attention": "baseline",
+    "memory_budget_gib": 16,
+    "device": {
+      "device_name": "Apple M3 Max",
+      "max_recommended_working_set_size": 115448725504,
+      "memory_size": 137438953472,
+      "architecture": "applegpu_g15s",
+      "max_buffer_length": 86586540032,
+      "resource_limit": 499000
+    },
+    "source": "/Users/vanch/yue2-mlx/outputs/precision-comparison/full-song-bf16",
+    "source_result_sha256": "4b09dcc6df0db986670cbde9b0306f4429667a2c1d8d92e19743ab874ee5f813",
+    "frames": 4249,
+    "steps": 32,
+    "query_chunk_size": 256,
+    "prefill_seconds": 3.5262194160022773,
+    "solve_seconds": 359.56435091700405,
+    "acoustic_seconds": 363.0905703330063,
+    "conditioning_cache_sha256": "7b1b8046b56516b86cfaac3241fdb556cf3a1b5f2ee90973ff3e21b2473201ed",
+    "max_abs_vs_saved": 0.0,
+    "equal_fraction_vs_saved": 1.0,
+    "relative_rms_vs_saved": 0.0,
+    "mlx_peak_gib": 8.508810993283987,
+    "code_sha256": {
+      "ar.py": "4f2f5ce2ff812fa6057bc51518522e585db205e13424b8f77d61c88c7415c61d",
+      "nar.py": "da2e525d0cb65ce8790b2c53bc1ad77576a1a2d512faaf506e1c259391b4cfc9"
+    },
+    "sampled_peak_footprint_gib": 9.019399955868721,
+    "new_swap_out_bytes": 0
+  },
+  "optimized": {
+    "attention": "auto",
+    "memory_budget_gib": 16,
+    "device": {
+      "device_name": "Apple M3 Max",
+      "max_recommended_working_set_size": 115448725504,
+      "memory_size": 137438953472,
+      "architecture": "applegpu_g15s",
+      "max_buffer_length": 86586540032,
+      "resource_limit": 499000
+    },
+    "source": "/Users/vanch/yue2-mlx/outputs/precision-comparison/full-song-bf16",
+    "source_result_sha256": "4b09dcc6df0db986670cbde9b0306f4429667a2c1d8d92e19743ab874ee5f813",
+    "frames": 4249,
+    "steps": 32,
+    "query_chunk_size": 256,
+    "prefill_seconds": 2.6472424170351587,
+    "solve_seconds": 184.289505291963,
+    "acoustic_seconds": 186.93674770899815,
+    "conditioning_cache_sha256": "7b1b8046b56516b86cfaac3241fdb556cf3a1b5f2ee90973ff3e21b2473201ed",
+    "max_abs_vs_saved": 0.0,
+    "equal_fraction_vs_saved": 1.0,
+    "relative_rms_vs_saved": 0.0,
+    "mlx_peak_gib": 8.386542301625013,
+    "code_sha256": {
+      "ar.py": "4f2f5ce2ff812fa6057bc51518522e585db205e13424b8f77d61c88c7415c61d",
+      "nar.py": "da2e525d0cb65ce8790b2c53bc1ad77576a1a2d512faaf506e1c259391b4cfc9"
+    },
+    "sampled_peak_footprint_gib": 8.796773999929428,
+    "new_swap_out_bytes": 0
+  },
+  "acoustic_speedup": 1.9423177881441716,
+  "time_reduction_percent": 48.515119096166494,
+  "scope": "One same-input 169.959-second song; 32 steps, full attention, 16 GiB budget, no quantization or VAE changes. One full solve per variant, not a universal speed guarantee."
+}

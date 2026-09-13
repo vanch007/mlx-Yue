@@ -1,0 +1,8 @@
+{
+  "sample_rate": 48000,
+  "seconds": 169.95866666666666,
+  "exact_pcm_match": true,
+  "max_abs_pcm_error": 0.0,
+  "vae_seconds": 4.907416332978755,
+  "audio": "/Users/vanch/yue2-mlx/outputs/nar-optimized-16/audio.flac"
+}

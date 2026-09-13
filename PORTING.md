@@ -1,5 +1,11 @@
 # M5 port — architecture and provenance
 
+> Historical design record from the original M5 port. The local `full-mlx` branch
+> now uses a native MLX FP32 VAE, NumPy PCG64 acoustic noise, native
+> SheetSage2/MERT2 transcription and expanded CLI workflows on M3 Max.
+> See [local implementation](docs/IMPLEMENTATION.md) for current scope and evidence.
+> Historical measurements and unresolved strict AR bounds below are preserved.
+
 The BF16-first MVP implements the complete generation pipeline. Core paths and sustained full-song execution have been exercised; strict AR numerical comparisons, complete-song listening and quantized quality acceptance remain open. See the [release instructions](README.md) and [current validation status](validation/README.md).
 
 The invariants below originated in the initial investigation and remain design constraints. The explicitly historical random-weight probes are not release benchmarks or acceptance evidence.

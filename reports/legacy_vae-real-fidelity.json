@@ -1,0 +1,55 @@
+{
+  "stage": "vae",
+  "precision": "float32",
+  "invocation_sha256": "3d6bf44044cb34f544de1fc8f2c12fb973275a0cdf26efc5c5cc490934e6ba60",
+  "oracle_sha256": "bc4a5844d67ab4a18297b9fba654a707d9bc12381d5cfb9ad671cbf11fec5a38",
+  "conversion_sha256": "48fa8aa551c1a33eb57e52c1a91453b2e8f4d39cd2f28d41ab8030b320f47012",
+  "limits": null,
+  "status": "measured_not_accepted",
+  "execution": {
+    "outputs": [
+      "core_64",
+      "core_1024",
+      "full",
+      "core_256"
+    ],
+    "frames": 40,
+    "decoder_dtype": "float32"
+  },
+  "metrics": {
+    "core_64": {
+      "max_abs": 2.5704503059387207e-06,
+      "rms_error": 2.6909028436134686e-07,
+      "reference_rms": 0.16480301920685764,
+      "relative_rms_error": 1.6327994818079748e-06,
+      "cosine": 0.9999999999986771,
+      "p99_abs": 8.195638656616211e-07
+    },
+    "core_1024": {
+      "max_abs": 2.5704503059387207e-06,
+      "rms_error": 2.6909028436134686e-07,
+      "reference_rms": 0.16480301920685764,
+      "relative_rms_error": 1.6327994818079748e-06,
+      "cosine": 0.9999999999986771,
+      "p99_abs": 8.195638656616211e-07
+    },
+    "full": {
+      "max_abs": 2.5704503059387207e-06,
+      "rms_error": 2.6909028436134686e-07,
+      "reference_rms": 0.16480301920685764,
+      "relative_rms_error": 1.6327994818079748e-06,
+      "cosine": 0.9999999999986771,
+      "p99_abs": 8.195638656616211e-07
+    },
+    "core_256": {
+      "max_abs": 2.5704503059387207e-06,
+      "rms_error": 2.6909028436134686e-07,
+      "reference_rms": 0.16480301920685764,
+      "relative_rms_error": 1.6327994818079748e-06,
+      "cosine": 0.9999999999986771,
+      "p99_abs": 8.195638656616211e-07
+    }
+  },
+  "actual_sha256": "d6f96d6af45b1f605ab1662b6c4b6cb49036a014ee7d5364046e3a935bdf8c03",
+  "failures": []
+}

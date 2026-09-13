@@ -102,3 +102,46 @@ def batch(args):
     failed = sum(r["status"] == "failed" for r in receipts)
     print(json.dumps({"output": str(args.output), "requests": len(rows), "failed": failed}))
     return int(failed > 0)
+
+
+def cover(args):
+    """Transcribe the complete recording, then render the retained score in MLX."""
+    import gc
+    import mlx.core as mx
+    from .cli import _pipeline, _request, _resource_monitor, _save
+    from .measure import GPUExecution
+    from .transcription.pipeline import transcribe
+
+    request = _request(args)
+    if request.get("abc") is not None or args.resume:
+        raise ValueError("Cover takes source audio and a fresh output; use generate for an existing ABC")
+    mode = "full" if args.task == "full" else "melody"
+    if request.get("cot", mode) != mode:
+        raise ValueError("Cover mode must match the transcription task")
+    request["cot"] = mode
+    generation = GenerationConfig.from_dict(request.pop("generation_config", {}))
+    # Validate text, seed and mode before spending time on transcription.
+    SongRequest(**{k: v for k, v in request.items() if k not in {"abc_sampling", "semantic_sampling"}})
+    if args.output.exists() and any(args.output.iterdir()):
+        raise FileExistsError("Cover requires a fresh output directory")
+    with _resource_monitor(args):
+        with GPUExecution(memory_budget_gib=args.memory_budget_gib):
+            transcription = transcribe(
+                args.audio, args.output / "transcription", model_path=args.transcription_model,
+                base_model=args.base_model, offline=args.offline, cache_dir=args.cache_dir, task=args.task,
+            )
+        gc.collect()
+        mx.clear_cache()
+        if transcription["status"] != "complete" or transcription["truncated"]:
+            raise ValueError("Transcription is incomplete; inspect its artifacts before using the score")
+        request["abc"] = (args.output / "transcription" / "score.abc").read_bytes().decode("utf-8")
+        write_json(args.output / "request.json", request)
+        with _pipeline(args, generation) as pipe:
+            result = pipe(**request)
+        _save(result, args.output / "song")
+    write_json(args.output / "cover.json", {
+        "source_audio_sha256": transcription["source_audio_sha256"],
+        "transcription": "transcription/result.json", "song": "song/result.json",
+        "backend": "mlx", "truncated": result.truncated,
+    })
+    return int(any(result.truncated.values()))

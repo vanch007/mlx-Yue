@@ -1,0 +1,10 @@
+.................s.......................... [ 57%]
+................................                                         [100%]
+=============================== warnings summary ===============================
+tests/test_vae_mlx.py::test_native_decoder_matches_official_convolutions[True]
+tests/test_vae_mlx.py::test_native_decoder_matches_official_convolutions[False]
+  /Users/vanch/yue2-mlx/.venv/lib/python3.12/site-packages/torch/nn/utils/weight_norm.py:144: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
+    WeightNorm.apply(module, name, dim)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+75 passed, 1 skipped, 2 warnings, 28 subtests passed in 8.03s

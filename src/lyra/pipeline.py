@@ -182,11 +182,13 @@ class YuE2Pipeline(ReferencePipeline):
     @classmethod
     def from_pretrained(
         cls, model=MODEL_REPO, *, vae=VAE_REPO, converted_dir="models/converted",
-        revision=MODEL_REVISION, vae_revision=VAE_REVISION,
+        revision=MODEL_REVISION, vae_revision=None,
         cache_dir=None, local_files_only=False, precision="bf16", progress=True,
         **kwargs,
     ):
         start = time.perf_counter()
+        if str(vae) == VAE_REPO and vae_revision is None:
+            vae_revision = VAE_REVISION
         model = Path(model).expanduser() if Path(model).expanduser().is_dir() else model
         saved = Path(model) / "pipeline.json"
         if saved.is_file():
@@ -397,11 +399,13 @@ class YuE2Pipeline(ReferencePipeline):
         return np.clip(result, -1, 1)
 
     def effective_config(self, request, abc_sampling=None, semantic_sampling=None):
+        from .ar import _full_attention_requires_promotion
         config = super().effective_config(request, abc_sampling, semantic_sampling)
         config.update(
             vae_backend="mlx", backend="mlx", ar_precision=self.precision, kv_dtype="bfloat16",
             nar_dtype="bfloat16", conditioning_precision="bf16",
             attention_opmath="float32", mlx_tf32_enabled=False,
+            attention_inputs="promoted_float32" if _full_attention_requires_promotion() else "native_steel_bfloat16",
             query_chunk_size=self.query_chunk_size, runtime=self.runtime,
             upstream_commit=UPSTREAM_COMMIT, execution_guard="GPUExecution",
             rng={"ar": "request_local_mlx", "acoustic": "numpy_pcg64_fp32_full_song_v1"},

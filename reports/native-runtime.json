@@ -1,0 +1,17 @@
+{
+  "platform": "macOS-27.0-arm64-arm-64bit",
+  "memory_gib": 128.0,
+  "backend": "mlx",
+  "vae_backend": "mlx",
+  "torch_required": false,
+  "versions": {
+    "lyra-yue2": "0.1.0",
+    "mlx": "0.32.2",
+    "mlx-lm": "0.31.3"
+  },
+  "checks": {
+    "macos": true,
+    "metal": true
+  },
+  "status": "pass"
+}

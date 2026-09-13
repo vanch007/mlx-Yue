@@ -9,9 +9,11 @@ is the next physical slot and the RoPE offset used by MLX-LM.
 from __future__ import annotations
 
 from collections.abc import Mapping, Sequence
-from functools import partial
+from functools import lru_cache, partial
+from importlib.metadata import version
 import json
 import math
+import re
 from operator import index
 from pathlib import Path
 import time
@@ -128,14 +130,34 @@ class SourceMLP(nn.Module):
         return self.down_proj((gate * up).astype(x.dtype))
 
 
+def _steel_attention_verified(architecture: str, mlx_version: str) -> bool:
+    """Only enable BF16 operands for the reviewed pre-NAX Metal kernels.
+
+    MLX v0.32.2 Steel attention uses float MMA tiles for QK, softmax and PV.
+    NAX starts at generation 17 (18 for 'p'); unknown/new kernels retain the
+    original promotion until reviewed. Real-checkpoint evidence: M3 Max g15s.
+    """
+    return mlx_version == "0.32.2" and re.fullmatch(r"applegpu_g1[3-6][a-z]", architecture) is not None
+
+
+@lru_cache(maxsize=1)
+def _full_attention_requires_promotion() -> bool:
+    try:
+        architecture = mx.device_info().get("architecture", "")
+    except RuntimeError:
+        return True
+    return not _steel_attention_verified(architecture, version("mlx"))
+
+
 def _source_sdpa(query, key, value, *, scale, mask=None):
     """FP32 attention opmath, with BF16 storage outside the operation.
 
     M5 BF16 full SDPA uses NAX's reduced-precision mixed P@V path even with
     TF32 disabled. FP32 operands select precise Steel SDPA under Lyra's verified
-    process policy. The short unmasked vector kernel already uses FP32 opmath.
+    process policy. Reviewed pre-NAX Steel kernels and the short unmasked vector
+    kernel already use FP32 opmath with BF16 operands, avoiding this conversion.
     """
-    if query.shape[2] <= 8 and mask is None:
+    if (query.shape[2] <= 8 and mask is None) or not _full_attention_requires_promotion():
         return mx.fast.scaled_dot_product_attention(
             query, key, value, scale=scale, mask=mask
         )

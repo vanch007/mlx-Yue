@@ -16,9 +16,8 @@ import time
 
 import mlx.core as mx
 import numpy as np
-import torch
 
-from yue2.nar import Chunk
+from lyra.nar import Chunk, _logit
 from yue2.storage import identity, sha256_file, write_json
 
 from lyra.ar import load_ar, make_cache
@@ -90,11 +89,11 @@ def _invocation(args):
             "macos": platform.mac_ver()[0],
             **{
                 name: version(name)
-                for name in ("mlx", "mlx-lm", "torch", "transformers", "numpy")
+                for name in ("mlx", "mlx-lm", "transformers", "numpy")
             },
         },
         "execution_config": {
-            "backend": "mps" if args.stage == "vae" else "mlx",
+            "backend": "mlx",
             "memory_budget_gib": args.memory_budget_gib,
             "ar_prefill_chunk_size": args.prefill_chunk_size if args.stage == "ar" else None,
             "selected_ar_lengths": args.lengths if args.stage == "ar" else None,
@@ -277,7 +276,7 @@ def compare_nar(args, guard, persist):
 
             chunk = Chunk(
                 prefix + [token + CODEC_OFFSET for token in codec] + [MUSIC_END],
-                torch.from_numpy(reference["noise"].copy()),
+                reference["noise"].copy(),
             )
             engine = CachedNAR(
                 model,
@@ -317,7 +316,7 @@ def compare_nar(args, guard, persist):
                     ),
                 ):
                     guard.check()
-                    raw = torch.logit(torch.tensor(t, dtype=torch.float64)).clamp(-20, 20).item()
+                    raw = _logit(t)
                     fixed = mx.array(reference[state_name], dtype=mx.bfloat16)
                     key = f"fixed_{name}"
                     actual[key] = as_numpy(engine.velocity(fixed, raw))
@@ -334,7 +333,7 @@ def compare_nar(args, guard, persist):
                     actual[state_name] = as_numpy(state)
                     report[state_name] = metrics(reference[state_name], actual[state_name])
                 t = 1.0 - step * dt
-                raw = torch.logit(torch.tensor(t, dtype=torch.float64)).clamp(-20, 20).item()
+                raw = _logit(t)
                 guard.check()
                 first = engine.velocity(state, raw)
                 mx.eval(first)
@@ -349,9 +348,7 @@ def compare_nar(args, guard, persist):
                 if mid_name in reference.files:
                     actual[mid_name] = as_numpy(midpoint)
                     report[mid_name] = metrics(reference[mid_name], actual[mid_name])
-                raw_mid = torch.logit(
-                    torch.tensor(t - dt / 2.0, dtype=torch.float64)
-                ).clamp(-20, 20).item()
+                raw_mid = _logit(t - dt / 2.0)
                 guard.check()
                 velocity = engine.velocity(midpoint, raw_mid)
                 mx.eval(velocity)
@@ -464,22 +461,17 @@ def compare_nar(args, guard, persist):
 
 
 def compare_vae(args, guard, persist):
-    from yue2.modeling_vae import YuE2VAE
+    from lyra.vae import load_decoder
 
     guard.check()
-    model = YuE2VAE.from_pretrained(
-        args.vae,
-        decoder_only=True,
-        device="mps",
-        local_files_only=True,
-    )
+    model = load_decoder(args.vae)
     try:
         if args.latents.endswith(".npz"):
             with np.load(args.latents, allow_pickle=False) as data:
                 latents = data["latents"].copy()
         else:
             latents = np.load(args.latents, allow_pickle=False)
-        z = torch.from_numpy(latents.T[None])
+        z = latents.T[None]
         report, actual_outputs = {}, {}
         partial = args.output / "vae-actual.partial.npz"
         with np.load(args.oracle / "vae.npz", allow_pickle=False) as reference:
@@ -492,15 +484,15 @@ def compare_vae(args, guard, persist):
             for key in cases:
                 guard.check()
                 if key == "full":
-                    actual = model.decode(z).cpu().numpy()
+                    actual = model.decode(z, full=True).T[None]
                 else:
                     core = int(key.split("_")[1])
-                    actual = model.decode_tiled(
+                    actual = model.decode(
                         z,
                         core_frames=core,
                         halo_frames=16,
                         on_progress=lambda _completed, _total: guard.check(),
-                    ).numpy()
+                    ).T[None]
                 guard.check()
                 expected = reference[key] if key in reference.files else reference["full"]
                 actual_outputs[key] = actual
@@ -517,7 +509,7 @@ def compare_vae(args, guard, persist):
         }
     finally:
         del model
-        torch.mps.empty_cache()
+        mx.clear_cache()
 
 
 def _metric_group(name):
@@ -812,7 +804,7 @@ def main():
             "metrics": {},
         },
     )
-    backend = "mps" if args.stage == "vae" else "mlx"
+    backend = "mlx"
     base_report = {
         "stage": args.stage,
         "precision": precision,

@@ -1,0 +1,11 @@
+{
+  "frames": 400,
+  "seconds_median": {
+    "fp32_inputs": 0.20028410450322554,
+    "bf16_inputs": 0.17807110399007797
+  },
+  "velocity_speedup": 1.124742308074786,
+  "samples_per_policy": 6,
+  "all_exact": true,
+  "scope": "Same-process alternating policy; warm-up per policy; one velocity state, not end-to-end generation"
+}

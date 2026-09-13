@@ -96,6 +96,11 @@ def _render_plan(pipe, plan, semantic_sampling=None):
 def parser():
     parser = argparse.ArgumentParser(description=__doc__)
     commands = parser.add_subparsers(dest="command", required=True)
+    for name, help_text in (("music", "Agent generation/planning helper"),
+                            ("abc", "Inspect, compare or strip chords from ABC"),
+                            ("listen", "Build a local listening comparison page"),
+                            ("transcribe", "Transcribe source audio with SheetSage2")):
+        commands.add_parser(name, help=help_text, add_help=False).add_argument("arguments", nargs=argparse.REMAINDER)
     prep = commands.add_parser("prepare", help="Fetch pinned checkpoints and convert the generator")
     prep.add_argument("--source")
     prep.add_argument("--output", default="models/converted")
@@ -110,10 +115,16 @@ def parser():
     batch = commands.add_parser("batch", help="Generate serial JSONL requests with verified resume")
     batch.add_argument("--input", required=True, type=Path)
     batch.add_argument("--concurrency", type=int, choices=[1], default=1)
-    for name in ("generate", "plan", "render-plan", "replay"):
+    for name in ("generate", "plan", "render-plan", "replay", "cover"):
         command = commands.add_parser(name)
         command.add_argument("request", nargs="?", help="Request JSON, saved plan or song directory")
-    for name in ("generate", "plan", "render-plan", "replay", "batch"):
+    cover = commands.choices["cover"]
+    cover.add_argument("--audio", required=True, type=Path)
+    cover.add_argument("--transcription-model", default="m-a-p/SheetSage2")
+    cover.add_argument("--base-model", default="m-a-p/MERT-v2-FullSong")
+    cover.add_argument("--cache-dir", default="models/hf-cache")
+    cover.add_argument("--task", choices=("full", "melody-full", "melody-vocal"), default="melody-full")
+    for name in ("generate", "plan", "render-plan", "replay", "batch", "cover"):
         command = commands.choices[name]
         command.add_argument("--output", required=True, type=Path)
         command.add_argument("--model", help="Converted directory or pinned source checkpoint")
@@ -126,7 +137,7 @@ def parser():
         command.add_argument("--vae-core-frames", type=int, default=256)
         command.add_argument("--require-ac", action="store_true")
         command.add_argument("--resume", action="store_true", help="Verify and reuse a completed song")
-        if name in {"generate", "plan"}:
+        if name in {"generate", "plan", "cover"}:
             command.add_argument("--request", dest="request_file")
             command.add_argument("--abc", "--abc-file", help="Supplied ABC file; bytes are preserved")
             command.add_argument("--mode", "--cot", choices=("full", "melody", "off"))
@@ -143,6 +154,17 @@ def parser():
 
 
 def main(argv=None):
+    argv = list(sys.argv[1:] if argv is None else argv)
+    helpers = {"music": "run_yue2", "abc": "abc_tools", "listen": "listen", "transcribe": "transcribe"}
+    if argv and argv[0] in helpers:
+        import importlib
+        module = importlib.import_module(".music_tools." + helpers[argv[0]], __package__)
+        previous = sys.argv
+        try:
+            sys.argv = ["yue2-mlx " + argv[0], *argv[1:]]
+            return module.main() or 0
+        finally:
+            sys.argv = previous
     cli = parser()
     args = cli.parse_args(argv)
     if args.command == "doctor":
@@ -151,6 +173,9 @@ def main(argv=None):
     if args.command == "batch":
         from .commands import batch
         return batch(args)
+    if args.command == "cover":
+        from .commands import cover
+        return cover(args)
     if args.command == "prepare":
         from .conversion import fetch_models, prepare
         model, vae = fetch_models(cache_dir=args.cache_dir, local_files_only=args.offline)

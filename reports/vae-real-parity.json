@@ -1,0 +1,12 @@
+{
+  "frames": 40,
+  "samples": 76736,
+  "max_abs_error": 3.3080577850341797e-06,
+  "relative_max_error": 5.071008217782946e-06,
+  "rmse": 2.8203572810525657e-07,
+  "snr_db": 115.40213775634766,
+  "finite": true,
+  "seconds": 1.576401291997172,
+  "reference": "official FP32 MPS VAE; identical cached latents; 17-frame cores, 16-frame halo",
+  "status": "pass"
+}

@@ -22,6 +22,7 @@ from mlx.utils import tree_flatten
 from mlx_lm.models import qwen3
 
 from yue2.protocol import CODEC_OFFSET, CODEC_SIZE, CONTEXT, MUSIC_END, chunk_ranges
+from . import ar as ar_backend
 from .ar import SourceMLP, SourceRMSNorm, SourceRoPE, _source_sdpa, _source_silu
 
 _LATENT_DIM = 64
@@ -472,7 +473,7 @@ def _attention(
     block = query.shape[2] if query_chunk_size is None else query_chunk_size
     # Convert temporary operands once per layer, not once per query tile. The
     # retained conditioning cache and the solver state remain BF16.
-    needs_fp32 = causal or min(block, query.shape[2]) > 8
+    needs_fp32 = ar_backend._full_attention_requires_promotion() and (causal or min(block, query.shape[2]) > 8)
     precise_key = key.astype(mx.float32) if needs_fp32 else key
     precise_value = value.astype(mx.float32) if needs_fp32 else value
     outputs = []

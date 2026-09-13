@@ -1,0 +1,25 @@
+{
+  "wheel": "dist/lyra_yue2-0.1.0-py3-none-any.whl",
+  "torch_installed": false,
+  "native_modules": {
+    "lyra/vae.py": true,
+    "lyra/transcription/model.py": true,
+    "lyra/music_tools/abc_tools.py": true
+  },
+  "dependencies": [
+    "Requires-Dist: mlx-lm==0.31.3",
+    "Requires-Dist: mlx==0.32.2",
+    "Requires-Dist: numpy==2.2.6",
+    "Requires-Dist: psutil==7.2.2",
+    "Requires-Dist: safetensors==0.7.0",
+    "Requires-Dist: soundfile==0.13.1",
+    "Requires-Dist: tiktoken==0.12.0",
+    "Requires-Dist: transformers==5.0.0",
+    "Requires-Dist: mido==1.3.3; extra == 'transcription'",
+    "Requires-Dist: mir-eval==0.8.2; extra == 'transcription'",
+    "Requires-Dist: pretty-midi==0.2.10; extra == 'transcription'",
+    "Requires-Dist: scipy<2,>=1.13; extra == 'transcription'",
+    "Requires-Dist: setuptools==78.1.1; extra == 'transcription'"
+  ],
+  "files": 61
+}

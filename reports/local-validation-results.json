@@ -1,0 +1,315 @@
+[
+  {
+    "name": "final-tests",
+    "command": [
+      "/Users/vanch/yue2-mlx/.venv/bin/pytest",
+      "-q"
+    ],
+    "returncode": 0,
+    "seconds": 5.5861055420245975,
+    "log": "reports/final-tests.log",
+    "status": "pass"
+  },
+  {
+    "name": "precision-optimized",
+    "command": [
+      "/Users/vanch/yue2-mlx/.runtime/bin/python",
+      "tools/compare_precision.py",
+      "reports/precision-requests/fixed-budget-1.json",
+      "reports/precision-requests/fixed-budget-2.json",
+      "reports/precision-requests/fixed-budget-3.json",
+      "--output",
+      "outputs/precision-controlled-optimized",
+      "--model",
+      "/Users/vanch/yue2-mlx/models/converted",
+      "--vae",
+      "/Users/vanch/yue2-mlx/models/hf-cache/models--m-a-p--YuE2-Vae/snapshots/95535e72a97bc0f09b8ada125d26b4009428c0e8"
+    ],
+    "returncode": 0,
+    "seconds": 165.7925562080345,
+    "log": "reports/precision-optimized.log",
+    "status": "pass"
+  },
+  {
+    "name": "native-five-modes",
+    "command": [
+      "/Users/vanch/yue2-mlx/.runtime/bin/python",
+      "tools/acceptance.py",
+      "modes",
+      "--model",
+      "/Users/vanch/yue2-mlx/models/converted",
+      "--vae",
+      "/Users/vanch/yue2-mlx/models/hf-cache/models--m-a-p--YuE2-Vae/snapshots/95535e72a97bc0f09b8ada125d26b4009428c0e8",
+      "--output",
+      "outputs/native-five-modes",
+      "--require-ac"
+    ],
+    "returncode": 0,
+    "seconds": 141.58531120803673,
+    "log": "reports/native-five-modes.log",
+    "status": "pass"
+  },
+  {
+    "name": "native-cover",
+    "command": [
+      "/Users/vanch/yue2-mlx/.runtime/bin/python",
+      "-m",
+      "lyra.cli",
+      "cover",
+      "reports/precision-requests/cover-smoke.json",
+      "--audio",
+      "outputs/native-quickstart/audio.flac",
+      "--output",
+      "outputs/native-cover",
+      "--model",
+      "/Users/vanch/yue2-mlx/models/converted",
+      "--vae",
+      "/Users/vanch/yue2-mlx/models/hf-cache/models--m-a-p--YuE2-Vae/snapshots/95535e72a97bc0f09b8ada125d26b4009428c0e8",
+      "--offline",
+      "--require-ac"
+    ],
+    "returncode": 1,
+    "seconds": 64.56487549998565,
+    "log": "reports/native-cover.log",
+    "status": "pass_smoke_with_truncation"
+  },
+  {
+    "name": "native-plan",
+    "command": [
+      "/Users/vanch/yue2-mlx/.runtime/bin/python",
+      "-m",
+      "lyra.cli",
+      "plan",
+      "reports/staged-request.json",
+      "--output",
+      "outputs/native-plan",
+      "--model",
+      "/Users/vanch/yue2-mlx/models/converted",
+      "--vae",
+      "/Users/vanch/yue2-mlx/models/hf-cache/models--m-a-p--YuE2-Vae/snapshots/95535e72a97bc0f09b8ada125d26b4009428c0e8",
+      "--offline",
+      "--require-ac"
+    ],
+    "returncode": 0,
+    "seconds": 6.117806084046606,
+    "log": "reports/native-plan.log",
+    "status": "pass"
+  },
+  {
+    "name": "native-render-plan",
+    "command": [
+      "/Users/vanch/yue2-mlx/.runtime/bin/python",
+      "-m",
+      "lyra.cli",
+      "render-plan",
+      "outputs/native-plan",
+      "--output",
+      "outputs/native-render-plan",
+      "--model",
+      "/Users/vanch/yue2-mlx/models/converted",
+      "--vae",
+      "/Users/vanch/yue2-mlx/models/hf-cache/models--m-a-p--YuE2-Vae/snapshots/95535e72a97bc0f09b8ada125d26b4009428c0e8",
+      "--offline",
+      "--require-ac"
+    ],
+    "returncode": 0,
+    "seconds": 11.948285708960611,
+    "log": "reports/native-render-plan.log",
+    "status": "pass"
+  },
+  {
+    "name": "native-replay",
+    "command": [
+      "/Users/vanch/yue2-mlx/.runtime/bin/python",
+      "-m",
+      "lyra.cli",
+      "replay",
+      "outputs/native-render-plan",
+      "--stage",
+      "synthesize",
+      "--output",
+      "outputs/native-replay",
+      "--model",
+      "/Users/vanch/yue2-mlx/models/converted",
+      "--vae",
+      "/Users/vanch/yue2-mlx/models/hf-cache/models--m-a-p--YuE2-Vae/snapshots/95535e72a97bc0f09b8ada125d26b4009428c0e8",
+      "--offline",
+      "--require-ac"
+    ],
+    "returncode": 0,
+    "seconds": 10.64455841697054,
+    "log": "reports/native-replay.log",
+    "status": "pass"
+  },
+  {
+    "name": "native-batch",
+    "command": [
+      "/Users/vanch/yue2-mlx/.runtime/bin/python",
+      "-m",
+      "lyra.cli",
+      "batch",
+      "--input",
+      "reports/batch-requests.jsonl",
+      "--output",
+      "outputs/native-batch",
+      "--model",
+      "/Users/vanch/yue2-mlx/models/converted",
+      "--vae",
+      "/Users/vanch/yue2-mlx/models/hf-cache/models--m-a-p--YuE2-Vae/snapshots/95535e72a97bc0f09b8ada125d26b4009428c0e8",
+      "--offline",
+      "--require-ac"
+    ],
+    "returncode": 0,
+    "seconds": 17.869884332991205,
+    "log": "reports/native-batch.log",
+    "status": "pass"
+  },
+  {
+    "name": "native-batch-resume",
+    "command": [
+      "/Users/vanch/yue2-mlx/.runtime/bin/python",
+      "-m",
+      "lyra.cli",
+      "batch",
+      "--input",
+      "reports/batch-requests.jsonl",
+      "--output",
+      "outputs/native-batch",
+      "--resume",
+      "--model",
+      "/Users/vanch/yue2-mlx/models/converted",
+      "--vae",
+      "/Users/vanch/yue2-mlx/models/hf-cache/models--m-a-p--YuE2-Vae/snapshots/95535e72a97bc0f09b8ada125d26b4009428c0e8",
+      "--offline",
+      "--require-ac"
+    ],
+    "returncode": 0,
+    "seconds": 6.060448375006672,
+    "log": "reports/native-batch-resume.log",
+    "status": "pass"
+  },
+  {
+    "name": "oracle-legacy",
+    "command": [
+      "/Users/vanch/yue2-mlx/.oracle/bin/python",
+      "tools/oracle.py",
+      "vae",
+      "--model",
+      "/Users/vanch/yue2-mlx/models/hf-cache/models--m-a-p--YuE2-3B/snapshots/1a96eca688d6ae5d7f0feb88573fec89920fcd19",
+      "--vae",
+      "/Users/vanch/yue2-mlx/models/hf-cache/models--m-a-p--YuE2-Vae-legacy/snapshots/5ddd12f79acb90d24b3a672dcd2ebf88da7c92a9",
+      "--latents",
+      "outputs/vae-parity-input.npy",
+      "--output",
+      "outputs/oracle-legacy",
+      "--require-ac"
+    ],
+    "returncode": 0,
+    "seconds": 4.379331334028393,
+    "log": "reports/oracle-legacy.log",
+    "status": "pass"
+  },
+  {
+    "name": "fidelity-legacy",
+    "command": [
+      "/Users/vanch/yue2-mlx/.runtime/bin/python",
+      "tools/fidelity.py",
+      "vae",
+      "--model",
+      "/Users/vanch/yue2-mlx/models/converted",
+      "--vae",
+      "/Users/vanch/yue2-mlx/models/hf-cache/models--m-a-p--YuE2-Vae-legacy/snapshots/5ddd12f79acb90d24b3a672dcd2ebf88da7c92a9",
+      "--latents",
+      "outputs/vae-parity-input.npy",
+      "--oracle",
+      "outputs/oracle-legacy",
+      "--output",
+      "outputs/fidelity-legacy"
+    ],
+    "returncode": 0,
+    "seconds": 1.0709147910238244,
+    "log": "reports/fidelity-legacy.log",
+    "status": "pass"
+  },
+  {
+    "name": "transcription-torch",
+    "command": [
+      "/Users/vanch/yue2-mlx/.oracle/bin/python",
+      "tools/transcription_oracle.py",
+      "torch",
+      "--model",
+      "/Users/vanch/yue2-mlx/models/hf-cache/models--m-a-p--SheetSage2/snapshots/eab522a8168e8b8b8c4856bf8609cd86198f01fe",
+      "--parent",
+      "/Users/vanch/yue2-mlx/models/hf-cache/models--m-a-p--MERT-v2-FullSong/snapshots/d8ba1c745e733b3908ce6ad16ebeb17ac7600a42",
+      "--input",
+      "outputs/transcription-oracle-input.npz",
+      "--output",
+      "outputs/transcription-oracle-torch"
+    ],
+    "returncode": 0,
+    "seconds": 24.553610625036526,
+    "log": "reports/transcription-torch.log",
+    "status": "pass"
+  },
+  {
+    "name": "transcription-mlx",
+    "command": [
+      "/Users/vanch/yue2-mlx/.runtime/bin/python",
+      "tools/transcription_oracle.py",
+      "mlx",
+      "--model",
+      "/Users/vanch/yue2-mlx/models/hf-cache/models--m-a-p--SheetSage2/snapshots/eab522a8168e8b8b8c4856bf8609cd86198f01fe",
+      "--parent",
+      "/Users/vanch/yue2-mlx/models/hf-cache/models--m-a-p--MERT-v2-FullSong/snapshots/d8ba1c745e733b3908ce6ad16ebeb17ac7600a42",
+      "--input",
+      "outputs/transcription-oracle-input.npz",
+      "--output",
+      "outputs/transcription-oracle-mlx"
+    ],
+    "returncode": 0,
+    "seconds": 6.384102999989409,
+    "log": "reports/transcription-mlx.log",
+    "status": "pass"
+  },
+  {
+    "name": "oracle-nar",
+    "command": [
+      "/Users/vanch/yue2-mlx/.oracle/bin/python",
+      "tools/oracle.py",
+      "nar",
+      "--model",
+      "/Users/vanch/yue2-mlx/models/hf-cache/models--m-a-p--YuE2-3B/snapshots/1a96eca688d6ae5d7f0feb88573fec89920fcd19",
+      "--vae",
+      "/Users/vanch/yue2-mlx/models/hf-cache/models--m-a-p--YuE2-Vae/snapshots/95535e72a97bc0f09b8ada125d26b4009428c0e8",
+      "--source",
+      "outputs/native-quickstart",
+      "--frames",
+      "64",
+      "--output",
+      "outputs/oracle-nar-local",
+      "--require-ac"
+    ],
+    "returncode": 0,
+    "seconds": 13.65465545799816,
+    "log": "reports/oracle-nar.log",
+    "status": "pass"
+  },
+  {
+    "name": "fidelity-nar",
+    "command": [
+      "/Users/vanch/yue2-mlx/.runtime/bin/python",
+      "tools/fidelity.py",
+      "nar",
+      "--model",
+      "/Users/vanch/yue2-mlx/models/converted",
+      "--oracle",
+      "outputs/oracle-nar-local",
+      "--output",
+      "outputs/fidelity-nar-local"
+    ],
+    "returncode": 0,
+    "seconds": 19.817333749961108,
+    "log": "reports/fidelity-nar.log",
+    "status": "pass"
+  }
+]

@@ -115,7 +115,6 @@ def main():
                     "lyra-yue2",
                     "mlx",
                     "mlx-lm",
-                    "torch",
                     "transformers",
                     "numpy",
                 )

@@ -1,0 +1,23 @@
+{
+  "repository": "m-a-p/SheetSage2",
+  "revision": "eab522a8168e8b8b8c4856bf8609cd86198f01fe",
+  "license": "CC-BY-NC-4.0 (upstream model repository declaration)",
+  "original_sha256": {
+    "durations_sheetsage2.py": "abbc297b70b63a86f8509b1db74d0e85d7b46dcb83867cf33741c43f9d49db83",
+    "labels_sheetsage2.py": "4a80870695dd91da6070e7d8d0ce6b50f3bf71c3f629417a86cf12f4ef4f97e0",
+    "schema_sheetsage2.py": "3ee069f0d4dcfb8080f730c43676318d471ab6b3cfef86c6c225aa63a9db182f",
+    "tokenization_sheetsage2.py": "b8cc6792eda99994ab7e1be4e7afcd8760fe7f25ad2886639306cc1dfe63b75d",
+    "exports_sheetsage2.py": "8c50cf9f71a4dc0dea13a9a4341345f7f9e02844fb32631888cb0f7b7bb6e815",
+    "notation_sheetsage2.py": "f75f0e8b268cd9e9c622d791d3fd77d2e68ad355a4e67018c7e15aeb2bc05af7",
+    "io_sheetsage2.py": "afb5b4d4a52b513b11cfdad40e7b9d2286dd4ff6585b89688dbb31b3d5376da6",
+    "midi_sheetsage2.py": "32f80d13592c669e56683ebb4c415f13bf8278c8ad1fe43afa500347bed35099",
+    "generation_sheetsage2.py": "b58dbbfaebfba2a441a79b8c36183f0e4956acdd3aaf7c655c559933b4c20afd",
+    "pipeline_sheetsage2.py": "0ae572554ca375323e2aa4ea1fb25ba27e7f4d520c0ba5b101d74930c0a66c33"
+  },
+  "adaptations": [
+    "generation grammar boolean masks use NumPy",
+    "model execution wrappers excluded",
+    "window planning extracted unchanged",
+    "trailing blank lines normalized in durations and LICENSE"
+  ]
+}

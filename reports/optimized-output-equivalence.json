@@ -1,0 +1,56 @@
+[
+  {
+    "case": "fixed-budget-2-8bit",
+    "arrays_equal": {
+      "semantic.npy": true,
+      "noise.npy": true,
+      "latent.npy": true
+    },
+    "decoded_audio_equal": true
+  },
+  {
+    "case": "fixed-budget-3-8bit",
+    "arrays_equal": {
+      "semantic.npy": true,
+      "noise.npy": true,
+      "latent.npy": true
+    },
+    "decoded_audio_equal": true
+  },
+  {
+    "case": "fixed-budget-1-bf16",
+    "arrays_equal": {
+      "semantic.npy": true,
+      "noise.npy": true,
+      "latent.npy": true
+    },
+    "decoded_audio_equal": true
+  },
+  {
+    "case": "fixed-budget-2-bf16",
+    "arrays_equal": {
+      "semantic.npy": true,
+      "noise.npy": true,
+      "latent.npy": true
+    },
+    "decoded_audio_equal": true
+  },
+  {
+    "case": "fixed-budget-3-bf16",
+    "arrays_equal": {
+      "semantic.npy": true,
+      "noise.npy": true,
+      "latent.npy": true
+    },
+    "decoded_audio_equal": true
+  },
+  {
+    "case": "fixed-budget-1-8bit",
+    "arrays_equal": {
+      "semantic.npy": true,
+      "noise.npy": true,
+      "latent.npy": true
+    },
+    "decoded_audio_equal": true
+  }
+]

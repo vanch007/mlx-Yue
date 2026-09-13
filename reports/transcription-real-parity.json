@@ -1,0 +1,30 @@
+{
+  "memory": {
+    "max_abs": 0.00017011165618896484,
+    "rms_error": 2.4504643868129766e-06,
+    "reference_rms": 0.18983459417275633,
+    "relative_rms_error": 1.2908418497120527e-05,
+    "cosine": 0.9999999999166932,
+    "p99_abs": 8.054077625274658e-06
+  },
+  "logits": {
+    "max_abs": 0.00012683868408203125,
+    "rms_error": 8.826909455402839e-06,
+    "reference_rms": 2.5567606062406028,
+    "relative_rms_error": 3.452380107022107e-06,
+    "cosine": 0.9999999999940541,
+    "p99_abs": 2.956390380859375e-05,
+    "argmax_agreement": 1.0
+  },
+  "cached": {
+    "max_abs": 2.7418136596679688e-05,
+    "rms_error": 6.913305208080455e-06,
+    "reference_rms": 2.526645359008704,
+    "relative_rms_error": 2.7361597002251237e-06,
+    "cosine": 0.9999999999962631,
+    "p99_abs": 1.7881393432617188e-05,
+    "argmax_agreement": 1.0
+  },
+  "status": "measured_not_accepted",
+  "scope": "Real SheetSage2/MERT2 checkpoints, same 16-second waveform padded to official 300-second encoder context, same 20 decoder tokens, FP32; no calibrated pretrained limits."
+}

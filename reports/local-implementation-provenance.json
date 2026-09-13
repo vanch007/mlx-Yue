@@ -1,0 +1,13 @@
+{
+  "original_fork_commit": "c0f0229df07daba14923627e9d78e084d82b7dc8",
+  "official_audit_commit": "88da114a67df892af0329472073b96a5ef700b93",
+  "mlx_attention_source_commit": "1f8e74e3f12f31365464a6867c6579f0e9b29d85",
+  "machine": "Apple M3 Max, 128 GiB, macOS 27.0",
+  "runtime": ".runtime (Python 3.12, no Torch)",
+  "reference": ".oracle (Torch 2.11, Transformers 4.57.6)",
+  "feature_evidence": "docs/IMPLEMENTATION.md",
+  "attention_evidence": "outputs/nar-optimized-16/report.json",
+  "precision_evidence": "outputs/precision-comparison/REPORT.zh-CN.md",
+  "strict_ar_acceptance": "pending; historical failures not waived",
+  "musical_quality_equivalence": "human listening pending"
+}
