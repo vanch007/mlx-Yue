@@ -1,0 +1,269 @@
+{
+  "id": "ru_score",
+  "official_id": "43fc3aa38700252b8d63982b",
+  "title": "Folktronica",
+  "genre": "Folktronica",
+  "language": "ru",
+  "score_mode": "supplied",
+  "request": {
+    "id": "ru_score",
+    "style": "Dance Pop, Storytelling, Groovy, Anthemic, Dance, Folk, Melodic, Danceable, Electronic, female vocals",
+    "lyrics": "Ах вы, сени мои, сени\nСени новые мои\nСени новые, кленовые\nРешетчатые!\nВыходила молода\nЗа новые ворота\nВыпускала сокола\nИз правого рукава\nНа полетике соколику наказывала\n«Ты лети, лети, соколик\nвысоко и далеко».\nИ высоко и далеко\nНа родиму сторону\nНа родимой на сторонке\nГрозен батюшка живёт.\nОн и грозен, сударь, грозен\nДа не милостив\nНе пускает молоду\nПоздно вечером одну.\nНе велит поздно ходить\nС молодцами говорить.\nНе послушаю отца\nЭх, потешу молодца.\nАх вы, сени мои, сени\nСени новые мои\nСени новые, кленовые\nРешетчатые!",
+    "cot": "full",
+    "seed": 2026,
+    "abc": "X:1\nT:\nM:4/4\nL:1/16\nQ:1/4=126\nV: Vocal clef=treble name=\"Vocal Melody\" snm=\"Vocal\"\nV: Ins clef=treble name=\"Ins Melody\" snm=\"Inst.\"\nK:Am\n% intro\nV: Vocal\nz12\"Am\"z4|\"Am\"e2z2e2z2e2f2e2d2|\"Dm\"d2z2d2z2d2e2d2c2|\"F\"c2z2c2z2c2d2c2B2|\nV: Ins\nZ4|\nV: Vocal\n\"G\"B4z12|\"Am\"e2z2e2z2e2f2e2d2|\"Dm\"d2z2d2z2d2e2d2c2|\"F\"c4z12|\nV: Ins\nZ3|z4c4c4c4|\nV: Vocal\n\"G\"z16|\nV: Ins\nc4c4c4c4|\n% verse\nV: Vocal\n\"Am\"e4A4e2e2e2d2|\"Dm\"d4A4z8|\"F\"c4A4c2d2c2B2|\"G\"B4z12|\nV: Ins\nZ4|\nV: Vocal\n\"Am\"e4A4e2f2e2d2|\"Dm\"d2d2d2c2d2e2d2c2|\"F\"c4z12|\"G\"z16|\nV: Ins\nZ2|z6c'2z2b2c'2b2|c'3b3c'2z2b2c'2g2|\nV: Vocal\n\"Am\"e4A4e2f2e2d2|\"Dm\"d4z12|\"F\"c4A4c2d2c2B2|\"G\"B4z12|\nV: Ins\nZ4|\nV: Vocal\n\"Am\"e4A4e2f2e2d2|\"Dm\"d4z8z2A2|\"F\"c4A2A4d2c2B2|\"G\"B4z12|\nV: Ins\nZ4|\nV: Vocal\n\"Am\"a4e4a2a2e4|\"Dm\"f2f2f2f2f2e2d2c2|\"F\"c2c2c2c2c2d2c2B2|\"G\"B2B2B2B2B2B2A4|\nV: Ins\nZ4|\nV: Vocal\n\"Am\"z16|\"Am\"z16|\nV: Ins\nA4A4A4A4|A2A2A2A2AAAAAAAA|\n% chorus\nV: Vocal\n\"Am\"e4e4e2f2e2d2|\"Dm\"d4d4d2e2d2c2|\"F\"c4c4c2d2c2B2|\"G\"B4z12|\nV: Ins\nZ4|\nV: Vocal\n\"Am\"e4e4e2f2e2d2|\"Dm\"d4d4d2e2d2c2|\"F\"c4c4c2d2c2B2|\"G\"B4z12|\nV: Ins\nZ4|\n% verse\nV: Vocal\n\"Am\"e4A4e2f2e2d2|\"Dm\"d4z12|\"F\"c4A4c2d2c2B2|\"G\"B4z12|\nV: Ins\nZ4|\nV: Vocal\n\"Am\"e4A4e2f2e2d2|\"Dm\"d4z12|\"F\"c4A4c2d2c2B2|\"G\"B4z12|\nV: Ins\nZ4|\n% interlude\nV: Vocal\n\"Am\"a4e4a2a2e2e2|\"Dm\"f4z12|\"F\"a4e4a2a2e2e2|\"G\"f4z12|\nV: Ins\nZ4|\nV: Vocal\n\"Am\"a4e4a2a2e2e2|\"Dm\"f4z12|\"F\"c4z2c2c2d2c2B2|\"G\"B4z12|\nV: Ins\nZ4|\n% chorus\nV: Vocal\n\"Am\"e4A4e2f2e2d2|\"Dm\"d4A4z8|\"F\"c4A4c2d2c2B2|\"G\"B4z12|\nV: Ins\nZ4|\nV: Vocal\n\"Am\"e4A4e2f2e2d2|\"Dm\"d2d2d2c2d2e2d2c2|\"F\"c4z12|\"G\"z16|\nV: Ins\nZ2|z6c'2z2b2c'2b2|c'3b3c'4b2c'2b2|\nV: Vocal\nZ|\nV: Ins\nc'4z12|\n"
+  },
+  "official_mode": "planned",
+  "source": {
+    "id": "43fc3aa38700252b8d63982b",
+    "order": 14,
+    "collection": "genre",
+    "title": "Folktronica",
+    "genre": "Folktronica",
+    "genrePath": [
+      "Electronic",
+      "Folktronica"
+    ],
+    "language": "ru",
+    "languageLabel": "Russian",
+    "mode": "planned",
+    "tags": "Dance Pop, Storytelling, Groovy, Anthemic, Dance, Folk, Melodic, Danceable, Electronic, female vocals",
+    "lyrics": "Ах вы, сени мои, сени\nСени новые мои\nСени новые, кленовые\nРешетчатые!\nВыходила молода\nЗа новые ворота\nВыпускала сокола\nИз правого рукава\nНа полетике соколику наказывала\n«Ты лети, лети, соколик\nвысоко и далеко».\nИ высоко и далеко\nНа родиму сторону\nНа родимой на сторонке\nГрозен батюшка живёт.\nОн и грозен, сударь, грозен\nДа не милостив\nНе пускает молоду\nПоздно вечером одну.\nНе велит поздно ходить\nС молодцами говорить.\nНе послушаю отца\nЭх, потешу молодца.\nАх вы, сени мои, сени\nСени новые мои\nСени новые, кленовые\nРешетчатые!",
+    "abc": "X:1\nT:\nM:4/4\nL:1/16\nQ:1/4=126\nV: Vocal clef=treble name=\"Vocal Melody\" snm=\"Vocal\"\nV: Ins clef=treble name=\"Ins Melody\" snm=\"Inst.\"\nK:Am\n% intro\nV: Vocal\nz12\"Am\"z4|\"Am\"e2z2e2z2e2f2e2d2|\"Dm\"d2z2d2z2d2e2d2c2|\"F\"c2z2c2z2c2d2c2B2|\nV: Ins\nZ4|\nV: Vocal\n\"G\"B4z12|\"Am\"e2z2e2z2e2f2e2d2|\"Dm\"d2z2d2z2d2e2d2c2|\"F\"c4z12|\nV: Ins\nZ3|z4c4c4c4|\nV: Vocal\n\"G\"z16|\nV: Ins\nc4c4c4c4|\n% verse\nV: Vocal\n\"Am\"e4A4e2e2e2d2|\"Dm\"d4A4z8|\"F\"c4A4c2d2c2B2|\"G\"B4z12|\nV: Ins\nZ4|\nV: Vocal\n\"Am\"e4A4e2f2e2d2|\"Dm\"d2d2d2c2d2e2d2c2|\"F\"c4z12|\"G\"z16|\nV: Ins\nZ2|z6c'2z2b2c'2b2|c'3b3c'2z2b2c'2g2|\nV: Vocal\n\"Am\"e4A4e2f2e2d2|\"Dm\"d4z12|\"F\"c4A4c2d2c2B2|\"G\"B4z12|\nV: Ins\nZ4|\nV: Vocal\n\"Am\"e4A4e2f2e2d2|\"Dm\"d4z8z2A2|\"F\"c4A2A4d2c2B2|\"G\"B4z12|\nV: Ins\nZ4|\nV: Vocal\n\"Am\"a4e4a2a2e4|\"Dm\"f2f2f2f2f2e2d2c2|\"F\"c2c2c2c2c2d2c2B2|\"G\"B2B2B2B2B2B2A4|\nV: Ins\nZ4|\nV: Vocal\n\"Am\"z16|\"Am\"z16|\nV: Ins\nA4A4A4A4|A2A2A2A2AAAAAAAA|\n% chorus\nV: Vocal\n\"Am\"e4e4e2f2e2d2|\"Dm\"d4d4d2e2d2c2|\"F\"c4c4c2d2c2B2|\"G\"B4z12|\nV: Ins\nZ4|\nV: Vocal\n\"Am\"e4e4e2f2e2d2|\"Dm\"d4d4d2e2d2c2|\"F\"c4c4c2d2c2B2|\"G\"B4z12|\nV: Ins\nZ4|\n% verse\nV: Vocal\n\"Am\"e4A4e2f2e2d2|\"Dm\"d4z12|\"F\"c4A4c2d2c2B2|\"G\"B4z12|\nV: Ins\nZ4|\nV: Vocal\n\"Am\"e4A4e2f2e2d2|\"Dm\"d4z12|\"F\"c4A4c2d2c2B2|\"G\"B4z12|\nV: Ins\nZ4|\n% interlude\nV: Vocal\n\"Am\"a4e4a2a2e2e2|\"Dm\"f4z12|\"F\"a4e4a2a2e2e2|\"G\"f4z12|\nV: Ins\nZ4|\nV: Vocal\n\"Am\"a4e4a2a2e2e2|\"Dm\"f4z12|\"F\"c4z2c2c2d2c2B2|\"G\"B4z12|\nV: Ins\nZ4|\n% chorus\nV: Vocal\n\"Am\"e4A4e2f2e2d2|\"Dm\"d4A4z8|\"F\"c4A4c2d2c2B2|\"G\"B4z12|\nV: Ins\nZ4|\nV: Vocal\n\"Am\"e4A4e2f2e2d2|\"Dm\"d2d2d2c2d2e2d2c2|\"F\"c4z12|\"G\"z16|\nV: Ins\nZ2|z6c'2z2b2c'2b2|c'3b3c'4b2c'2b2|\nV: Vocal\nZ|\nV: Ins\nc'4z12|\n",
+    "abcUrl": "assets/genre/43fc3aa38700252b8d63982b/score.abc",
+    "audio": "assets/genre/43fc3aa38700252b8d63982b/43fc3aa38700252b8d63982b_music.mp3",
+    "scoreAudio": "assets/genre/43fc3aa38700252b8d63982b/43fc3aa38700252b8d63982b_score.mp3",
+    "sheets": [
+      "assets/genre/43fc3aa38700252b8d63982b/sheet_01.svg",
+      "assets/genre/43fc3aa38700252b8d63982b/sheet_02.svg",
+      "assets/genre/43fc3aa38700252b8d63982b/sheet_03.svg"
+    ]
+  },
+  "official_audio_url": "https://map-yue2.github.io/assets/genre/43fc3aa38700252b8d63982b/43fc3aa38700252b8d63982b_music.mp3",
+  "official_audio_path": "outputs/official_fullsong/reference/43fc3aa38700252b8d63982b.mp3",
+  "official_audio_sha256": "43629268f69c7519046ec0d87ddae2736e633a42edd4cc291a0ecfaff7ea761d",
+  "official_seconds": 119.96,
+  "input_hashes": {
+    "style": "a4a18338d01bcf22150c586d122a71215f8f8c285c24998d58488de4bf7df1d2",
+    "lyrics": "fdd620456b6c1f0d7973980cd3d4a5100815f24691483613c962f8963cd53e75",
+    "abc": "c5b4e6a0e92b448b7c01f4c3fe4d8e3ecdce2a01d8a871213d1952782669c7bb"
+  },
+  "measurement": {
+    "id": "ru_score",
+    "status": "complete",
+    "case_sha256": "b8e8dc58ee5f6c88305f86733815138bbb81f039aabb33d1ba7c7f5556b4cad9",
+    "truncated": {
+      "abc": false,
+      "semantic": false
+    },
+    "audio_seconds": 119.95866666666667,
+    "official_seconds": 119.96,
+    "duration_ratio": 0.9999888851839503,
+    "e2e_seconds": 195.10311070800526,
+    "rtf": 1.6264194670498053,
+    "speed_multiplier": 0.6148475348822035,
+    "load_seconds": 5.187667417048942,
+    "transcription_seconds": 0,
+    "save_seconds": 0.468616625003051,
+    "timing": {
+      "abc": {
+        "seconds": 0.0,
+        "output_tokens": 0,
+        "external_prefix_tokens": 1158
+      },
+      "semantic": {
+        "seconds": 49.4814189170138,
+        "prefill_seconds": 0.9020838750293478,
+        "ttft_seconds": 0.907485292002093,
+        "output_tokens": 3000,
+        "content_tokens": 2999,
+        "output_tps": 60.62881917415011,
+        "prefix_tokens": 1450,
+        "cfg_branches": 1,
+        "execution": "eager",
+        "attention": "sdpa",
+        "backend": "mlx"
+      },
+      "nar_seconds": 133.82474104198627,
+      "vae_seconds": 5.876439166953787,
+      "load": {
+        "resolve_conversion_integrity_seconds": 5.187611332978122,
+        "ar_load_events_seconds": [
+          0.11997312499443069
+        ],
+        "ar_load_seconds": 0.11997312499443069,
+        "conditioning_load_events_seconds": [
+          0.2336275419802405
+        ],
+        "conditioning_load_seconds": 0.2336275419802405,
+        "nar_load_events_seconds": [
+          0.11692583403782919
+        ],
+        "nar_load_seconds": 0.11692583403782919,
+        "vae_load_events_seconds": [
+          0.10771866701543331
+        ],
+        "vae_load_seconds": 0.10771866701543331
+      },
+      "e2e_seconds": 189.32758395798737
+    },
+    "configuration": {
+      "generation": {
+        "abc": {
+          "temperature": 0.7,
+          "top_p": 0.9,
+          "top_k": 30,
+          "repetition_penalty": 1.005,
+          "penalty_window": 100,
+          "min_tokens": 32,
+          "max_tokens": 4096
+        },
+        "semantic": {
+          "temperature": 1.0,
+          "top_p": 0.95,
+          "top_k": 100,
+          "repetition_penalty": 1.2,
+          "penalty_window": 50,
+          "min_tokens": 200,
+          "max_tokens": 9000
+        },
+        "ode_steps": 32,
+        "ode_method": "midpoint",
+        "context": 24576,
+        "version": "yue2-native-v1"
+      },
+      "overrides": {},
+      "cot": "full",
+      "cfg_scale": 1.0,
+      "cfg_negative": "same_instruction_and_exact_abc",
+      "backend": "mlx",
+      "quantization": "8bit",
+      "model_dtype": "bfloat16",
+      "vae_dtype": "float32",
+      "vae_decode": "halo_crop",
+      "vae_core_frames": 256,
+      "vae_halo_frames": 16,
+      "device": "DeviceType.gpu",
+      "memory_budget_gib": 16.0,
+      "offload_ar": false,
+      "runtime_sha256": "ff4829d01380a2ac98fbc0aa0aed90f9b2bbe9c0a3473f1d62ed8ee3abc8efa9",
+      "decoder_release": "standard",
+      "validation_status": "unvalidated",
+      "vae_backend": "mlx",
+      "ar_precision": "8bit",
+      "kv_dtype": "bfloat16",
+      "nar_dtype": "bfloat16",
+      "conditioning_precision": "bf16",
+      "attention_opmath": "float32",
+      "mlx_tf32_enabled": false,
+      "attention_inputs": "native_steel_bfloat16",
+      "query_chunk_size": 256,
+      "runtime": {
+        "lyra-yue2": "0.1.0",
+        "mlx": "0.32.2",
+        "mlx-lm": "0.31.3",
+        "transformers": "5.0.0",
+        "numpy": "2.2.6",
+        "python": "3.12.10",
+        "macos": "27.0"
+      },
+      "upstream_commit": "92a73cc7652fcc1f937855e4b765e0a0edd7ff2e",
+      "execution_guard": "GPUExecution",
+      "rng": {
+        "ar": "request_local_mlx",
+        "acoustic": "numpy_pcg64_fp32_full_song_v1"
+      }
+    },
+    "identity": "be5e899886c562e66d297bf0700174cb3dac682b4ca3d2ba523c89384c3cd5bb",
+    "audio_sha256": "a4235afa6365faeeb9a4a4cd8e52b9abd196d71e8e114087cf703e45b4fac42a",
+    "result_sha256": "84b536bb5fe4e872adba3455ae38949b12fe8dc0145653938d7e1a0be7d6bd25",
+    "audio_quality": {
+      "sample_rate": 48000,
+      "channels": 2,
+      "finite": true,
+      "rms": 0.130880053446391,
+      "peak": 0.822986364364624,
+      "clipping_fraction": 0.0
+    },
+    "musical_quality_acceptance": "pending human listening; not established by duration or EOS",
+    "resources": {
+      "memory_counter_schema": 2,
+      "swap_counter_source": "host_statistics64.swapins/swapouts",
+      "sampling_interval_seconds": 0.1,
+      "power_sampling_interval_seconds": 5.0,
+      "metadata": {},
+      "power_start": {
+        "ac_connected": true,
+        "pmset": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=37224547)\t95%; AC attached; not charging present: true"
+      },
+      "power_end": {
+        "ac_connected": true,
+        "pmset": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=37224547)\t95%; AC attached; not charging present: true"
+      },
+      "start": {
+        "elapsed_seconds": 0.00960112496977672,
+        "rss_bytes": 51675136,
+        "system_swap_used_bytes": 12390891520,
+        "system_swap_in_bytes": 56321720320,
+        "system_swap_out_bytes": 83892617216,
+        "system_available_bytes": 69813141504,
+        "system_total_bytes": 137438953472,
+        "system_memory_pressure_level": 1,
+        "system_free_bytes": 12734529536,
+        "system_wired_bytes": 6374260736,
+        "system_compressor_bytes": 2902540288,
+        "system_file_backed_bytes": 35071262720,
+        "physical_footprint_bytes": 31802064,
+        "process_lifetime_peak_footprint_bytes": 31802064,
+        "mlx_active_bytes": 0,
+        "mlx_cache_bytes": 0,
+        "mlx_peak_bytes": 0,
+        "ac_connected": true
+      },
+      "end": {
+        "elapsed_seconds": 195.62312208296498,
+        "rss_bytes": 942751744,
+        "system_swap_used_bytes": 12382502912,
+        "system_swap_in_bytes": 56328011776,
+        "system_swap_out_bytes": 83892617216,
+        "system_available_bytes": 68005363712,
+        "system_total_bytes": 137438953472,
+        "system_memory_pressure_level": 1,
+        "system_free_bytes": 10946576384,
+        "system_wired_bytes": 8721760256,
+        "system_compressor_bytes": 2908192768,
+        "system_file_backed_bytes": 33731592192,
+        "physical_footprint_bytes": 1247185224,
+        "process_lifetime_peak_footprint_bytes": 11869936240,
+        "mlx_active_bytes": 8,
+        "mlx_cache_bytes": 0,
+        "mlx_peak_bytes": 11256150230,
+        "ac_connected": true
+      },
+      "sampled_maxima": {
+        "mlx_active_bytes": 11196716606,
+        "mlx_cache_bytes": 156781600,
+        "mlx_peak_bytes": 11256150230,
+        "physical_footprint_bytes": 11774040688,
+        "process_lifetime_peak_footprint_bytes": 11869936240,
+        "rss_bytes": 8236990464,
+        "system_available_bytes": 69813141504,
+        "system_compressor_bytes": 2908487680,
+        "system_file_backed_bytes": 36293132288,
+        "system_free_bytes": 12734529536,
+        "system_swap_in_bytes": 56328011776,
+        "system_swap_out_bytes": 83892617216,
+        "system_swap_used_bytes": 12390891520,
+        "system_total_bytes": 137438953472,
+        "system_wired_bytes": 12710789120
+      },
+      "monitor_error": null,
+      "exception": null
+    },
+    "artifact_directory": "outputs/official_fullsong/ru_score",
+    "prior_attempts": []
+  },
+  "official_player": "audio/fullsong/43629268f69c7519046e.mp3",
+  "local_player": "audio/fullsong/a4235afa6365faeeb9a4.mp3",
+  "actual_score": "X:1\nT:\nM:4/4\nL:1/16\nQ:1/4=126\nV: Vocal clef=treble name=\"Vocal Melody\" snm=\"Vocal\"\nV: Ins clef=treble name=\"Ins Melody\" snm=\"Inst.\"\nK:Am\n% intro\nV: Vocal\nz12\"Am\"z4|\"Am\"e2z2e2z2e2f2e2d2|\"Dm\"d2z2d2z2d2e2d2c2|\"F\"c2z2c2z2c2d2c2B2|\nV: Ins\nZ4|\nV: Vocal\n\"G\"B4z12|\"Am\"e2z2e2z2e2f2e2d2|\"Dm\"d2z2d2z2d2e2d2c2|\"F\"c4z12|\nV: Ins\nZ3|z4c4c4c4|\nV: Vocal\n\"G\"z16|\nV: Ins\nc4c4c4c4|\n% verse\nV: Vocal\n\"Am\"e4A4e2e2e2d2|\"Dm\"d4A4z8|\"F\"c4A4c2d2c2B2|\"G\"B4z12|\nV: Ins\nZ4|\nV: Vocal\n\"Am\"e4A4e2f2e2d2|\"Dm\"d2d2d2c2d2e2d2c2|\"F\"c4z12|\"G\"z16|\nV: Ins\nZ2|z6c'2z2b2c'2b2|c'3b3c'2z2b2c'2g2|\nV: Vocal\n\"Am\"e4A4e2f2e2d2|\"Dm\"d4z12|\"F\"c4A4c2d2c2B2|\"G\"B4z12|\nV: Ins\nZ4|\nV: Vocal\n\"Am\"e4A4e2f2e2d2|\"Dm\"d4z8z2A2|\"F\"c4A2A4d2c2B2|\"G\"B4z12|\nV: Ins\nZ4|\nV: Vocal\n\"Am\"a4e4a2a2e4|\"Dm\"f2f2f2f2f2e2d2c2|\"F\"c2c2c2c2c2d2c2B2|\"G\"B2B2B2B2B2B2A4|\nV: Ins\nZ4|\nV: Vocal\n\"Am\"z16|\"Am\"z16|\nV: Ins\nA4A4A4A4|A2A2A2A2AAAAAAAA|\n% chorus\nV: Vocal\n\"Am\"e4e4e2f2e2d2|\"Dm\"d4d4d2e2d2c2|\"F\"c4c4c2d2c2B2|\"G\"B4z12|\nV: Ins\nZ4|\nV: Vocal\n\"Am\"e4e4e2f2e2d2|\"Dm\"d4d4d2e2d2c2|\"F\"c4c4c2d2c2B2|\"G\"B4z12|\nV: Ins\nZ4|\n% verse\nV: Vocal\n\"Am\"e4A4e2f2e2d2|\"Dm\"d4z12|\"F\"c4A4c2d2c2B2|\"G\"B4z12|\nV: Ins\nZ4|\nV: Vocal\n\"Am\"e4A4e2f2e2d2|\"Dm\"d4z12|\"F\"c4A4c2d2c2B2|\"G\"B4z12|\nV: Ins\nZ4|\n% interlude\nV: Vocal\n\"Am\"a4e4a2a2e2e2|\"Dm\"f4z12|\"F\"a4e4a2a2e2e2|\"G\"f4z12|\nV: Ins\nZ4|\nV: Vocal\n\"Am\"a4e4a2a2e2e2|\"Dm\"f4z12|\"F\"c4z2c2c2d2c2B2|\"G\"B4z12|\nV: Ins\nZ4|\n% chorus\nV: Vocal\n\"Am\"e4A4e2f2e2d2|\"Dm\"d4A4z8|\"F\"c4A4c2d2c2B2|\"G\"B4z12|\nV: Ins\nZ4|\nV: Vocal\n\"Am\"e4A4e2f2e2d2|\"Dm\"d2d2d2c2d2e2d2c2|\"F\"c4z12|\"G\"z16|\nV: Ins\nZ2|z6c'2z2b2c'2b2|c'3b3c'4b2c'2b2|\nV: Vocal\nZ|\nV: Ins\nc'4z12|\n"
+}

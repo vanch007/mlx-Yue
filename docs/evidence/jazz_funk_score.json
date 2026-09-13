@@ -1,0 +1,272 @@
+{
+  "id": "jazz_funk_score",
+  "official_id": "e3d76e66a92637ebb46e61ed",
+  "title": "Jazz-Funk",
+  "genre": "Jazz-Funk",
+  "language": "ja",
+  "score_mode": "supplied",
+  "request": {
+    "id": "jazz_funk_score",
+    "style": "funk",
+    "lyrics": "[Verse]\n姉が玉子焼き用の四角いフライパンで\n目玉焼きを焼いている\n合う蓋はないので\n横から湯気は洩れるが\n面白い発想に見えた\n\n僕は丸い小さめの普通のフライパンで\n目玉焼きを焼く\n\n[Pre-Chorus]\nかように遠くで暮らしていると\n癖やメソッドや好みが違う\n\n[Chorus]\n当たり前、当たり前、当たり前\nこれはAが優れてBが劣るというような\n問題ではないのだ\n\n[Bridge]\n君の一本道の進歩観を\n多々野辺のどこへともない道に\n考え直してみてはどうだろう",
+    "cot": "full",
+    "seed": 2026,
+    "abc": "X:1\nT:\nM:4/4\nL:1/32\nQ:1/4=116\nV: Vocal clef=treble name=\"Vocal Melody\" snm=\"Vocal\"\nV: Ins clef=treble name=\"Ins Melody\" snm=\"Inst.\"\nK:Em\n% intro\nV: Vocal\nz24z4\"Em\"z4|\"Em\"z32|\"Em\"z32|\"Em\"z32|\nV: Ins\nz24z4E4|E8G6A6^A4B4d2e2|E8G6A6^A4B4d2e2|E8G6A6^A4B4d2e2|\nV: Vocal\n\"Em\"z32|\"Em\"z16\"G6\"z16|\"Am7\"z16\"C\"z8\"B7\"z8|\"Em\"z16\"G6\"z16|\nV: Ins\ne4d4^A2=A2G4E4D4E8|E8z4D4G6G2z8|A6A2z8c4c4B2B6|E8z4D4G6G2z8|\nV: Vocal\n\"Am7\"z16\"C\"z8\"B7\"z8|\"Em\"z16\"G6\"z16|\"Am7\"z16\"C\"z8\"B7\"z8|\"Em\"z16\"G6\"z16|\nV: Ins\nA6A2z8c4c4B2B6|e8e2d2B2d4e12z2|A6A2z8c4c4B2B6|E8e2d2B2d4e12z2|\nV: Vocal\n\"Am7\"z16\"C\"z8\"B7\"z8|\nV: Ins\nA6A2z8c4c4B2B6|\n% verse\nV: Vocal\n\"Em\"e4d4B4A4\"G6\"A4G4E4D4|\"Am7\"E4D4E4D4\"C\"E4G4-\"B7\"G4E4|\"Em\"z4e4d4B4\"G6\"A4G4E4A4-|\"Am7\"A8G2G2B4-\"C\"B8\"B7\"z8|\nV: Ins\nZ4|\nV: Vocal\n\"Em\"e8B2B2B2A2-\"G6\"A2G2G8E2D2|\"Am7\"E2D2E2D2E4D2E2-\"C\"E2E2G4-\"B7\"G4z4|\"Em\"E4D4E4D4\"G6\"E4z4G8|\"Am7\"A4G4A4G4\"C\"B8\"B7\"z8|\nV: Ins\nZ4|\n% pre-chorus\nV: Vocal\n\"Cmaj7\"z8e8g8a8|\"B7\"z8e8g8a8|\"Em7\"b8a4g4a8g4a4-|\"A7\"a8g4e12z4B4|\nV: Ins\nZ4|\nV: Vocal\n\"Cmaj7\"c8d8e8g8|\"B7\"f16^d16|\"Em\"e8z24|\"Em\"z32|\nV: Ins\nZ2|z8G6A6^A4B4d2e2|E8G6A6^A4B4d2e2|\n% chorus\nV: Vocal\n\"Cmaj7\"b16a4g4g4a4-|\"B7\"a8g4b12z8|\"Em7\"a16a4g4g4a4-|\"A7\"a8g4e8z8d4|\nV: Ins\nZ4|\nV: Vocal\n\"Cmaj7\"e8g8f8g8|\"B7\"f8^d8B8A8|\"Em7\"B16d16|\"Em7\"e16g16|\nV: Ins\nZ4|\nV: Vocal\n\"Cmaj7\"z4b4a2g2g2a6b4a2g2g2a2-|\"B7\"a4b4a2g2g2a6b4a4g4|\"Em7\"a4g4a4g4a4g4a4g4|\"A7\"a2g2a2g2a2g2b8e8z4|\nV: Ins\nZ4|\nV: Vocal\n\"Cmaj7\"e16g16|\"B7\"f8^d8B8A8|\"Em7\"B16d16|\"Em7\"e16g16|\nV: Ins\nZ4|\nV: Vocal\n\"Cmaj7\"z4e4e4e4e8b8|\"B7\"a4g4a4g4a2g2a8b4|\"Em7\"z4e4e4e4e4e4b8|\"A7\"a2g2a2g2a4g2a4g2b8z4|\nV: Ins\nZ4|\nV: Vocal\n\"Cmaj7\"e16g16|\"B7\"f16^d16|\"Em7\"e16d16|\"Em7\"B8A8G8A6G2|\nV: Ins\nZ4|\nV: Vocal\n\"Em\"E16z16|\nV: Ins\nz16e4e4e4z4|\n% outro\nV: Vocal\n\"Em\"z16\"G6\"z16|\"A7\"z16\"C\"z8\"B7\"z8|\"Em\"z16\"G6\"z16|\"A7\"z16\"C\"z8\"B7\"z8|\nV: Ins\ne8e2d2B2d4e6z8|A6A2z8c4c4B8|E8e2d2B2d4e6z8|A6A2z8c4c4B8|\nV: Vocal\n\"Em\"z16\"G6\"z16|\"A7\"z16\"C\"z8\"B7\"z8|\"Em\"z16\"G6\"z16|\"A7\"z16\"C\"z8\"B7\"z8|\nV: Ins\nE8e2d2B2d4e6z8|A6A2z8c4c4B8|E8e2d2B2d4e6z8|A6A2z8c4c4B8|\nV: Vocal\n\"Em\"z32|\"Em\"z32|\nV: Ins\nE8G6A6^A4B4d2e2|e8z24|\n"
+  },
+  "official_mode": "planned",
+  "source": {
+    "id": "e3d76e66a92637ebb46e61ed",
+    "order": 2,
+    "collection": "genre",
+    "title": "Jazz-Funk",
+    "genre": "Jazz-Funk",
+    "genrePath": [
+      "Jazz",
+      "Jazz-Funk"
+    ],
+    "language": "ja",
+    "languageLabel": "Japanese",
+    "mode": "planned",
+    "tags": "funk",
+    "lyrics": "[Verse]\n姉が玉子焼き用の四角いフライパンで\n目玉焼きを焼いている\n合う蓋はないので\n横から湯気は洩れるが\n面白い発想に見えた\n\n僕は丸い小さめの普通のフライパンで\n目玉焼きを焼く\n\n[Pre-Chorus]\nかように遠くで暮らしていると\n癖やメソッドや好みが違う\n\n[Chorus]\n当たり前、当たり前、当たり前\nこれはAが優れてBが劣るというような\n問題ではないのだ\n\n[Bridge]\n君の一本道の進歩観を\n多々野辺のどこへともない道に\n考え直してみてはどうだろう",
+    "abc": "X:1\nT:\nM:4/4\nL:1/32\nQ:1/4=116\nV: Vocal clef=treble name=\"Vocal Melody\" snm=\"Vocal\"\nV: Ins clef=treble name=\"Ins Melody\" snm=\"Inst.\"\nK:Em\n% intro\nV: Vocal\nz24z4\"Em\"z4|\"Em\"z32|\"Em\"z32|\"Em\"z32|\nV: Ins\nz24z4E4|E8G6A6^A4B4d2e2|E8G6A6^A4B4d2e2|E8G6A6^A4B4d2e2|\nV: Vocal\n\"Em\"z32|\"Em\"z16\"G6\"z16|\"Am7\"z16\"C\"z8\"B7\"z8|\"Em\"z16\"G6\"z16|\nV: Ins\ne4d4^A2=A2G4E4D4E8|E8z4D4G6G2z8|A6A2z8c4c4B2B6|E8z4D4G6G2z8|\nV: Vocal\n\"Am7\"z16\"C\"z8\"B7\"z8|\"Em\"z16\"G6\"z16|\"Am7\"z16\"C\"z8\"B7\"z8|\"Em\"z16\"G6\"z16|\nV: Ins\nA6A2z8c4c4B2B6|e8e2d2B2d4e12z2|A6A2z8c4c4B2B6|E8e2d2B2d4e12z2|\nV: Vocal\n\"Am7\"z16\"C\"z8\"B7\"z8|\nV: Ins\nA6A2z8c4c4B2B6|\n% verse\nV: Vocal\n\"Em\"e4d4B4A4\"G6\"A4G4E4D4|\"Am7\"E4D4E4D4\"C\"E4G4-\"B7\"G4E4|\"Em\"z4e4d4B4\"G6\"A4G4E4A4-|\"Am7\"A8G2G2B4-\"C\"B8\"B7\"z8|\nV: Ins\nZ4|\nV: Vocal\n\"Em\"e8B2B2B2A2-\"G6\"A2G2G8E2D2|\"Am7\"E2D2E2D2E4D2E2-\"C\"E2E2G4-\"B7\"G4z4|\"Em\"E4D4E4D4\"G6\"E4z4G8|\"Am7\"A4G4A4G4\"C\"B8\"B7\"z8|\nV: Ins\nZ4|\n% pre-chorus\nV: Vocal\n\"Cmaj7\"z8e8g8a8|\"B7\"z8e8g8a8|\"Em7\"b8a4g4a8g4a4-|\"A7\"a8g4e12z4B4|\nV: Ins\nZ4|\nV: Vocal\n\"Cmaj7\"c8d8e8g8|\"B7\"f16^d16|\"Em\"e8z24|\"Em\"z32|\nV: Ins\nZ2|z8G6A6^A4B4d2e2|E8G6A6^A4B4d2e2|\n% chorus\nV: Vocal\n\"Cmaj7\"b16a4g4g4a4-|\"B7\"a8g4b12z8|\"Em7\"a16a4g4g4a4-|\"A7\"a8g4e8z8d4|\nV: Ins\nZ4|\nV: Vocal\n\"Cmaj7\"e8g8f8g8|\"B7\"f8^d8B8A8|\"Em7\"B16d16|\"Em7\"e16g16|\nV: Ins\nZ4|\nV: Vocal\n\"Cmaj7\"z4b4a2g2g2a6b4a2g2g2a2-|\"B7\"a4b4a2g2g2a6b4a4g4|\"Em7\"a4g4a4g4a4g4a4g4|\"A7\"a2g2a2g2a2g2b8e8z4|\nV: Ins\nZ4|\nV: Vocal\n\"Cmaj7\"e16g16|\"B7\"f8^d8B8A8|\"Em7\"B16d16|\"Em7\"e16g16|\nV: Ins\nZ4|\nV: Vocal\n\"Cmaj7\"z4e4e4e4e8b8|\"B7\"a4g4a4g4a2g2a8b4|\"Em7\"z4e4e4e4e4e4b8|\"A7\"a2g2a2g2a4g2a4g2b8z4|\nV: Ins\nZ4|\nV: Vocal\n\"Cmaj7\"e16g16|\"B7\"f16^d16|\"Em7\"e16d16|\"Em7\"B8A8G8A6G2|\nV: Ins\nZ4|\nV: Vocal\n\"Em\"E16z16|\nV: Ins\nz16e4e4e4z4|\n% outro\nV: Vocal\n\"Em\"z16\"G6\"z16|\"A7\"z16\"C\"z8\"B7\"z8|\"Em\"z16\"G6\"z16|\"A7\"z16\"C\"z8\"B7\"z8|\nV: Ins\ne8e2d2B2d4e6z8|A6A2z8c4c4B8|E8e2d2B2d4e6z8|A6A2z8c4c4B8|\nV: Vocal\n\"Em\"z16\"G6\"z16|\"A7\"z16\"C\"z8\"B7\"z8|\"Em\"z16\"G6\"z16|\"A7\"z16\"C\"z8\"B7\"z8|\nV: Ins\nE8e2d2B2d4e6z8|A6A2z8c4c4B8|E8e2d2B2d4e6z8|A6A2z8c4c4B8|\nV: Vocal\n\"Em\"z32|\"Em\"z32|\nV: Ins\nE8G6A6^A4B4d2e2|e8z24|\n",
+    "abcUrl": "assets/genre/e3d76e66a92637ebb46e61ed/score.abc",
+    "audio": "assets/genre/e3d76e66a92637ebb46e61ed/e3d76e66a92637ebb46e61ed_music.mp3",
+    "scoreAudio": "assets/genre/e3d76e66a92637ebb46e61ed/e3d76e66a92637ebb46e61ed_score.mp3",
+    "sheets": [
+      "assets/genre/e3d76e66a92637ebb46e61ed/sheet_01.svg",
+      "assets/genre/e3d76e66a92637ebb46e61ed/sheet_02.svg",
+      "assets/genre/e3d76e66a92637ebb46e61ed/sheet_03.svg"
+    ]
+  },
+  "official_audio_url": "https://map-yue2.github.io/assets/genre/e3d76e66a92637ebb46e61ed/e3d76e66a92637ebb46e61ed_music.mp3",
+  "official_audio_path": "outputs/official_fullsong/reference/e3d76e66a92637ebb46e61ed.mp3",
+  "official_audio_sha256": "210b9d92adb1bb58165b685a7db0b007622f66508558813fa14a3110eab1f08f",
+  "official_seconds": 129.96,
+  "input_hashes": {
+    "style": "22ddc25aa854579f9c3405eb1fa24993f14878fbb4999bf2f0eeb0faaae7e51c",
+    "lyrics": "28daf78829536ffd428dab56a17612a330ba236319b0977c6b9942c2c0f1c814",
+    "abc": "84bab1c8c9dbcf8dfffc511ec31240e045a629eb11d99c3157a201534f59a2ae"
+  },
+  "measurement": {
+    "id": "jazz_funk_score",
+    "status": "complete",
+    "case_sha256": "d40f44a1b959680ae81011c7207830384050d24c9ec83495892201c941c5f796",
+    "attempt": 1,
+    "benchmark_script_sha256": "2c5868ef28d74bb713079a0c1cf886d419a4e3a73cce34be2413e4cda7ec9449",
+    "retry_policy": "Only interrupted/failed execution, identical input and seed; no quality reroll",
+    "truncated": {
+      "abc": false,
+      "semantic": false
+    },
+    "audio_seconds": 130.43866666666668,
+    "official_seconds": 129.96,
+    "duration_ratio": 1.0036831845696113,
+    "e2e_seconds": 201.32383604202187,
+    "rtf": 1.5434367828712998,
+    "speed_multiplier": 0.6479047351325081,
+    "load_seconds": 5.2746187500306405,
+    "transcription_seconds": 0,
+    "save_seconds": 0.3200644159805961,
+    "timing": {
+      "abc": {
+        "seconds": 0.0,
+        "output_tokens": 0,
+        "external_prefix_tokens": 1549
+      },
+      "semantic": {
+        "seconds": 49.57729250000557,
+        "prefill_seconds": 0.9960394580266438,
+        "ttft_seconds": 1.0004081249935552,
+        "output_tokens": 3262,
+        "content_tokens": 3261,
+        "output_tps": 65.79625137858494,
+        "prefix_tokens": 1738,
+        "cfg_branches": 1,
+        "execution": "eager",
+        "attention": "sdpa",
+        "backend": "mlx"
+      },
+      "nar_seconds": 140.20773391699186,
+      "vae_seconds": 5.536092333029956,
+      "load": {
+        "resolve_conversion_integrity_seconds": 5.274542875005864,
+        "ar_load_events_seconds": [
+          0.12086416594684124
+        ],
+        "ar_load_seconds": 0.12086416594684124,
+        "conditioning_load_events_seconds": [
+          0.18636520800646394
+        ],
+        "conditioning_load_seconds": 0.18636520800646394,
+        "nar_load_events_seconds": [
+          0.13901312503730878
+        ],
+        "nar_load_seconds": 0.13901312503730878,
+        "vae_load_events_seconds": [
+          0.10589120798977092
+        ],
+        "vae_load_seconds": 0.10589120798977092
+      },
+      "e2e_seconds": 195.45785833301488
+    },
+    "configuration": {
+      "generation": {
+        "abc": {
+          "temperature": 0.7,
+          "top_p": 0.9,
+          "top_k": 30,
+          "repetition_penalty": 1.005,
+          "penalty_window": 100,
+          "min_tokens": 32,
+          "max_tokens": 4096
+        },
+        "semantic": {
+          "temperature": 1.0,
+          "top_p": 0.95,
+          "top_k": 100,
+          "repetition_penalty": 1.2,
+          "penalty_window": 50,
+          "min_tokens": 200,
+          "max_tokens": 9000
+        },
+        "ode_steps": 32,
+        "ode_method": "midpoint",
+        "context": 24576,
+        "version": "yue2-native-v1"
+      },
+      "overrides": {},
+      "cot": "full",
+      "cfg_scale": 1.0,
+      "cfg_negative": "same_instruction_and_exact_abc",
+      "backend": "mlx",
+      "quantization": "8bit",
+      "model_dtype": "bfloat16",
+      "vae_dtype": "float32",
+      "vae_decode": "halo_crop",
+      "vae_core_frames": 256,
+      "vae_halo_frames": 16,
+      "device": "DeviceType.gpu",
+      "memory_budget_gib": 16.0,
+      "offload_ar": false,
+      "runtime_sha256": "ff4829d01380a2ac98fbc0aa0aed90f9b2bbe9c0a3473f1d62ed8ee3abc8efa9",
+      "decoder_release": "standard",
+      "validation_status": "unvalidated",
+      "vae_backend": "mlx",
+      "ar_precision": "8bit",
+      "kv_dtype": "bfloat16",
+      "nar_dtype": "bfloat16",
+      "conditioning_precision": "bf16",
+      "attention_opmath": "float32",
+      "mlx_tf32_enabled": false,
+      "attention_inputs": "native_steel_bfloat16",
+      "query_chunk_size": 256,
+      "runtime": {
+        "lyra-yue2": "0.1.0",
+        "mlx": "0.32.2",
+        "mlx-lm": "0.31.3",
+        "transformers": "5.0.0",
+        "numpy": "2.2.6",
+        "python": "3.12.10",
+        "macos": "27.0"
+      },
+      "upstream_commit": "92a73cc7652fcc1f937855e4b765e0a0edd7ff2e",
+      "execution_guard": "GPUExecution",
+      "rng": {
+        "ar": "request_local_mlx",
+        "acoustic": "numpy_pcg64_fp32_full_song_v1"
+      }
+    },
+    "identity": "3f218561eac2134fff51f3d807ff4e4683b4d88ca4eff5f99842f5ba6a4e8b60",
+    "audio_sha256": "0ee90a8fbd7398b8fcd36af5975d5d98d9af45864efc72c9720bfbe4b6bac5fb",
+    "result_sha256": "cb8afe79b78df5c0b02a74454295b5435126cf9b5a087a13688052bdc46da8ef",
+    "audio_quality": {
+      "sample_rate": 48000,
+      "channels": 2,
+      "finite": true,
+      "rms": 0.16763944066473796,
+      "peak": 0.9980323910713196,
+      "clipping_fraction": 0.0
+    },
+    "musical_quality_acceptance": "pending human listening; not established by duration or EOS",
+    "resources": {
+      "memory_counter_schema": 2,
+      "swap_counter_source": "host_statistics64.swapins/swapouts",
+      "sampling_interval_seconds": 0.1,
+      "power_sampling_interval_seconds": 5.0,
+      "metadata": {},
+      "power_start": {
+        "ac_connected": true,
+        "pmset": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=37224547)\t95%; AC attached; not charging present: true"
+      },
+      "power_end": {
+        "ac_connected": true,
+        "pmset": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=37224547)\t95%; AC attached; not charging present: true"
+      },
+      "start": {
+        "elapsed_seconds": 0.013879666046705097,
+        "rss_bytes": 52789248,
+        "system_swap_used_bytes": 12374114304,
+        "system_swap_in_bytes": 56335728640,
+        "system_swap_out_bytes": 83892617216,
+        "system_available_bytes": 65310294016,
+        "system_total_bytes": 137438953472,
+        "system_memory_pressure_level": 1,
+        "system_free_bytes": 3876765696,
+        "system_wired_bytes": 7238205440,
+        "system_compressor_bytes": 2733244416,
+        "system_file_backed_bytes": 31557681152,
+        "physical_footprint_bytes": 32932584,
+        "process_lifetime_peak_footprint_bytes": 32932584,
+        "mlx_active_bytes": 0,
+        "mlx_cache_bytes": 0,
+        "mlx_peak_bytes": 0,
+        "ac_connected": true
+      },
+      "end": {
+        "elapsed_seconds": 201.7050155000179,
+        "rss_bytes": 956547072,
+        "system_swap_used_bytes": 12365725696,
+        "system_swap_in_bytes": 56340054016,
+        "system_swap_out_bytes": 83892617216,
+        "system_available_bytes": 63562334208,
+        "system_total_bytes": 137438953472,
+        "system_memory_pressure_level": 1,
+        "system_free_bytes": 2313764864,
+        "system_wired_bytes": 8933703680,
+        "system_compressor_bytes": 2734473216,
+        "system_file_backed_bytes": 31645499392,
+        "physical_footprint_bytes": 1265600840,
+        "process_lifetime_peak_footprint_bytes": 11908111032,
+        "mlx_active_bytes": 8,
+        "mlx_cache_bytes": 0,
+        "mlx_peak_bytes": 11256150230,
+        "ac_connected": true
+      },
+      "sampled_maxima": {
+        "mlx_active_bytes": 11196716606,
+        "mlx_cache_bytes": 170590586,
+        "mlx_peak_bytes": 11256150230,
+        "physical_footprint_bytes": 11763456696,
+        "process_lifetime_peak_footprint_bytes": 11908111032,
+        "rss_bytes": 8251392000,
+        "system_available_bytes": 70759759872,
+        "system_compressor_bytes": 2734473216,
+        "system_file_backed_bytes": 31645515776,
+        "system_free_bytes": 12762710016,
+        "system_swap_in_bytes": 56340054016,
+        "system_swap_out_bytes": 83892617216,
+        "system_swap_used_bytes": 12374114304,
+        "system_total_bytes": 137438953472,
+        "system_wired_bytes": 11263492096
+      },
+      "monitor_error": null,
+      "exception": null
+    },
+    "artifact_directory": "outputs/official_fullsong/jazz_funk_score",
+    "prior_attempts": []
+  },
+  "official_player": "audio/fullsong/210b9d92adb1bb58165b.mp3",
+  "local_player": "audio/fullsong/0ee90a8fbd7398b8fcd3.mp3",
+  "actual_score": "X:1\nT:\nM:4/4\nL:1/32\nQ:1/4=116\nV: Vocal clef=treble name=\"Vocal Melody\" snm=\"Vocal\"\nV: Ins clef=treble name=\"Ins Melody\" snm=\"Inst.\"\nK:Em\n% intro\nV: Vocal\nz24z4\"Em\"z4|\"Em\"z32|\"Em\"z32|\"Em\"z32|\nV: Ins\nz24z4E4|E8G6A6^A4B4d2e2|E8G6A6^A4B4d2e2|E8G6A6^A4B4d2e2|\nV: Vocal\n\"Em\"z32|\"Em\"z16\"G6\"z16|\"Am7\"z16\"C\"z8\"B7\"z8|\"Em\"z16\"G6\"z16|\nV: Ins\ne4d4^A2=A2G4E4D4E8|E8z4D4G6G2z8|A6A2z8c4c4B2B6|E8z4D4G6G2z8|\nV: Vocal\n\"Am7\"z16\"C\"z8\"B7\"z8|\"Em\"z16\"G6\"z16|\"Am7\"z16\"C\"z8\"B7\"z8|\"Em\"z16\"G6\"z16|\nV: Ins\nA6A2z8c4c4B2B6|e8e2d2B2d4e12z2|A6A2z8c4c4B2B6|E8e2d2B2d4e12z2|\nV: Vocal\n\"Am7\"z16\"C\"z8\"B7\"z8|\nV: Ins\nA6A2z8c4c4B2B6|\n% verse\nV: Vocal\n\"Em\"e4d4B4A4\"G6\"A4G4E4D4|\"Am7\"E4D4E4D4\"C\"E4G4-\"B7\"G4E4|\"Em\"z4e4d4B4\"G6\"A4G4E4A4-|\"Am7\"A8G2G2B4-\"C\"B8\"B7\"z8|\nV: Ins\nZ4|\nV: Vocal\n\"Em\"e8B2B2B2A2-\"G6\"A2G2G8E2D2|\"Am7\"E2D2E2D2E4D2E2-\"C\"E2E2G4-\"B7\"G4z4|\"Em\"E4D4E4D4\"G6\"E4z4G8|\"Am7\"A4G4A4G4\"C\"B8\"B7\"z8|\nV: Ins\nZ4|\n% pre-chorus\nV: Vocal\n\"Cmaj7\"z8e8g8a8|\"B7\"z8e8g8a8|\"Em7\"b8a4g4a8g4a4-|\"A7\"a8g4e12z4B4|\nV: Ins\nZ4|\nV: Vocal\n\"Cmaj7\"c8d8e8g8|\"B7\"f16^d16|\"Em\"e8z24|\"Em\"z32|\nV: Ins\nZ2|z8G6A6^A4B4d2e2|E8G6A6^A4B4d2e2|\n% chorus\nV: Vocal\n\"Cmaj7\"b16a4g4g4a4-|\"B7\"a8g4b12z8|\"Em7\"a16a4g4g4a4-|\"A7\"a8g4e8z8d4|\nV: Ins\nZ4|\nV: Vocal\n\"Cmaj7\"e8g8f8g8|\"B7\"f8^d8B8A8|\"Em7\"B16d16|\"Em7\"e16g16|\nV: Ins\nZ4|\nV: Vocal\n\"Cmaj7\"z4b4a2g2g2a6b4a2g2g2a2-|\"B7\"a4b4a2g2g2a6b4a4g4|\"Em7\"a4g4a4g4a4g4a4g4|\"A7\"a2g2a2g2a2g2b8e8z4|\nV: Ins\nZ4|\nV: Vocal\n\"Cmaj7\"e16g16|\"B7\"f8^d8B8A8|\"Em7\"B16d16|\"Em7\"e16g16|\nV: Ins\nZ4|\nV: Vocal\n\"Cmaj7\"z4e4e4e4e8b8|\"B7\"a4g4a4g4a2g2a8b4|\"Em7\"z4e4e4e4e4e4b8|\"A7\"a2g2a2g2a4g2a4g2b8z4|\nV: Ins\nZ4|\nV: Vocal\n\"Cmaj7\"e16g16|\"B7\"f16^d16|\"Em7\"e16d16|\"Em7\"B8A8G8A6G2|\nV: Ins\nZ4|\nV: Vocal\n\"Em\"E16z16|\nV: Ins\nz16e4e4e4z4|\n% outro\nV: Vocal\n\"Em\"z16\"G6\"z16|\"A7\"z16\"C\"z8\"B7\"z8|\"Em\"z16\"G6\"z16|\"A7\"z16\"C\"z8\"B7\"z8|\nV: Ins\ne8e2d2B2d4e6z8|A6A2z8c4c4B8|E8e2d2B2d4e6z8|A6A2z8c4c4B8|\nV: Vocal\n\"Em\"z16\"G6\"z16|\"A7\"z16\"C\"z8\"B7\"z8|\"Em\"z16\"G6\"z16|\"A7\"z16\"C\"z8\"B7\"z8|\nV: Ins\nE8e2d2B2d4e6z8|A6A2z8c4c4B8|E8e2d2B2d4e6z8|A6A2z8c4c4B8|\nV: Vocal\n\"Em\"z32|\"Em\"z32|\nV: Ins\nE8G6A6^A4B4d2e2|e8z24|\n"
+}

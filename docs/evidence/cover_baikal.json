@@ -1,0 +1,270 @@
+{
+  "id": "cover_baikal",
+  "official_id": "baikal-lake-jazz",
+  "title": "Lake Baikal · Chinese Jazz Version",
+  "genre": "Jazz Ballad · 60 BPM",
+  "language": "zh",
+  "score_mode": "supplied",
+  "request": {
+    "id": "cover_baikal",
+    "style": "Jazz ballad, brushed drums, upright bass, warm piano, muted trumpet, intimate Mandarin male vocal, 60 BPM\n",
+    "lyrics": "[Verse]\n在我的怀里\n在你的眼里\n那里春风沉醉\n那里绿草如茵\n月光把爱恋\n洒满了湖面\n两个人的篝火\n照亮整个夜晚\n\n[Chorus]\n多少年以后\n如云般游走\n那变换的脚步\n让我们难牵手\n这一生一世\n有多少你我\n被吞没在月光\n如水的夜里\n\n[Post-Chorus]\n多想某一天\n往日又重现\n我们流连忘返\n在贝加尔湖畔\n\n[Chorus]\n多少年以后\n往事随云走\n那纷飞的冰雪\n容不下那温柔\n这一生一世\n这时间太少\n不够证明融化\n冰雪的深情\n\n[Post-Chorus]\n就在某一天\n你忽然出现\n你清澈又神秘\n在贝加尔湖畔\n你清澈又神秘\n像贝加尔湖畔\n",
+    "cot": "full",
+    "seed": 2026,
+    "abc": "X:1\nT:\nM:2/4\nL:1/16\nQ:1/4=60\nV: Vocal clef=treble name=\"Vocal Melody\" snm=\"Vocal\"\nV: Ins clef=treble name=\"Ins Melody\" snm=\"Inst.\"\nK:F\n% intro\nV: Vocal\nZ2|\"Gm\"z8|\"C\"z8|\nV: Ins\nZ|z2def2c'2|b8|z2cde2b2|\nV: Vocal\n\"Fmaj7\"z8|\"D\"z8|\"Gm\"z8|\"A7\"z8|\nV: Ins\na8|z2A2d2c2|B3AG4|G2E2A2G2|\nV: Vocal\n\"Dm\"z8|\nV: Ins\nd8|\n% verse\nV: Vocal\n\"Dm\"z2DEF2c2|\nV: Ins\nZ|\nV: Vocal\n\"Gm\"B4z4|\"C\"z2CDE2B2|\"Fmaj7\"A4z4|\"D\"z2AAd2c2|\nV: Ins\nZ4|\nV: Vocal\n\"Gm\"B2G2z3F|\"C\"E2FG3B2|\"Fmaj7\"A4z4|\"Dm\"z2DEF2c2|\nV: Ins\nZ4|\nV: Vocal\n\"Gm\"B4z4|\"C\"z2CDE2B2|\"Fmaj7\"A4z4|\"D\"z2AAd2c2|\nV: Ins\nZ4|\nV: Vocal\n\"Gm\"B2G2z3F|\"A7\"E2AG3FE|\"Dm\"D2DDD2d2|\nV: Ins\nZ3|\n% chorus\nV: Vocal\n\"Bb\"d6z2|\"Bb\"z2Ddc2dc|\"Fmaj7\"A4z4|\"Fmaj7\"z2AAd2c2|\nV: Ins\nZ4|\nV: Vocal\n\"Gm\"B2G2z3F|\"C\"E2FG3B2|\"Fmaj7\"A6z2|\"Fmaj7\"z2DDD2d2|\nV: Ins\nZ4|\nV: Vocal\n\"Bb\"d8|\"Bb\"z2deggf2|\"Fmaj7\"A6z2|\"Fmaj7\"z2AAd2c2|\nV: Ins\nZ4|\nV: Vocal\n\"Gm\"B2G4z2|\"C\"c2de3e2|\"Fmaj7\"a8|\"A\"e8|\nV: Ins\nZ4|\nV: Vocal\n\"A\"z8|\"Dm\"z2DEF2c2|\nV: Ins\nZ2|\n% post-chorus\nV: Vocal\n\"Gm\"B4z4|\"C\"z2CDE2B2|\"Fmaj7\"A4z4|\"D\"z2AAd2cB-|\nV: Ins\nZ4|\nV: Vocal\n\"Gm\"BGG2z3E|\"A\"E2AG3F2|\"Dm\"D4z4|\"Dm\"z8|\nV: Ins\nZ2|z4fdAF|D2DEF2c2|\n% interlude\nV: Vocal\n\"Gm\"z8|\"C\"z8|\"Fmaj7\"z8|\"D\"z8|\nV: Ins\nB8|z2cde2b2|a8|z2AAB2a^g|\nV: Vocal\n\"Gm\"z8|\"C\"z8|\"Fmaj7\"z8|\"A\"z8|\nV: Ins\ng6f2|e2fg3c'=b|a8|z2dfad'2^c'|\nV: Vocal\n\"Gm\"z8|\"C\"z8|\"Fmaj7\"z8|\"D\"z8|\nV: Ins\nd'2DGBd2^c|d3d'e'4|c'8|z2d^fad'2c'|\nV: Vocal\n\"Gm\"z8|\"A7\"z8|\"Dm\"z8|\nV: Ins\nb6a2|g2e2a2g2|d'd'^c'd'a'f'd'a|\n% chorus\nV: Vocal\n\"Dm\"z2DD\"Dm7/C\"D2d2|\nV: Ins\nf^cz6|\nV: Vocal\n\"Bb\"d6z2|\"Bb\"z2Ddc2e2-|\"Fmaj7\"e2A4z2|\"Fmaj7\"z2AAd2c2|\nV: Ins\nZ4|\nV: Vocal\n\"Gm\"B2G2z3F|\"C\"E2FG3B2|\"Fmaj7\"A6z2|\"Fmaj7\"z2DDD2d2|\nV: Ins\nZ4|\nV: Vocal\n\"Bb\"d6z2|\"Bb\"z2deggf2|\"Fmaj7\"A6z2|\"Fmaj7\"z2AAd2c2|\nV: Ins\nZ4|\nV: Vocal\n\"Gm\"B2G4z2|\"C\"c2de3e2|\"Fmaj7\"a6gf|\"A7\"e8|\nV: Ins\nZ4|\nV: Vocal\n\"A7\"z8|\"A7\"z2DEF2c2|\nV: Ins\nZ2|\n% post-chorus\nV: Vocal\n\"Gm\"B4z4|\"C\"z2CDE2B2|\"Fmaj7\"A4z4|\"Dm7\"z2AA\"D7\"d2c2|\nV: Ins\nZ4|\nV: Vocal\n\"Gm\"B2G2z3E|\"A7\"E2AG3E2|\"Dm\"D4z4|\"Dm\"z2AAd2c2|\nV: Ins\nZ2|z4fdAF|D2z6|\nV: Vocal\n\"Gm\"B2G2z3E|\"A7\"EE2GG4|\"A7\"z4FF3-|\"Dm\"FDD4z2|\nV: Ins\nZ4|\n% outro\nV: Vocal\n\"Dm\"z8|\"Dm\"z8|\"Dm\"z4\"D\"z4|\nV: Ins\nZ3|\nV: Vocal\n\"D\"z4\"Dsus2\"z4|\"Dsus2\"z4\"Dm\"z4|\"Dm\"z8|\"Dm\"z8|\nV: Ins\nZ4|\nV: Vocal\n\"Dm\"z8|\"Dm\"z8|\"Dm\"z8|\nV: Ins\nZ3|\n"
+  },
+  "official_mode": "cover/edit",
+  "source": {
+    "id": "baikal-lake-jazz",
+    "title": "Lake Baikal · Chinese Jazz Version",
+    "genre": "Jazz Ballad · 60 BPM",
+    "source": "Adapted from Li Jian's Lake Baikal",
+    "editType": "Style rearrangement",
+    "audio": "assets/covers/baikal-lake-jazz/baikal-lake-jazz.mp3",
+    "abcUrl": "assets/covers/baikal-lake-jazz/baikal-lake-jazz.abc",
+    "abc": "X:1\nT:\nM:2/4\nL:1/16\nQ:1/4=60\nV: Vocal clef=treble name=\"Vocal Melody\" snm=\"Vocal\"\nV: Ins clef=treble name=\"Ins Melody\" snm=\"Inst.\"\nK:F\n% intro\nV: Vocal\nZ2|\"Gm\"z8|\"C\"z8|\nV: Ins\nZ|z2def2c'2|b8|z2cde2b2|\nV: Vocal\n\"Fmaj7\"z8|\"D\"z8|\"Gm\"z8|\"A7\"z8|\nV: Ins\na8|z2A2d2c2|B3AG4|G2E2A2G2|\nV: Vocal\n\"Dm\"z8|\nV: Ins\nd8|\n% verse\nV: Vocal\n\"Dm\"z2DEF2c2|\nV: Ins\nZ|\nV: Vocal\n\"Gm\"B4z4|\"C\"z2CDE2B2|\"Fmaj7\"A4z4|\"D\"z2AAd2c2|\nV: Ins\nZ4|\nV: Vocal\n\"Gm\"B2G2z3F|\"C\"E2FG3B2|\"Fmaj7\"A4z4|\"Dm\"z2DEF2c2|\nV: Ins\nZ4|\nV: Vocal\n\"Gm\"B4z4|\"C\"z2CDE2B2|\"Fmaj7\"A4z4|\"D\"z2AAd2c2|\nV: Ins\nZ4|\nV: Vocal\n\"Gm\"B2G2z3F|\"A7\"E2AG3FE|\"Dm\"D2DDD2d2|\nV: Ins\nZ3|\n% chorus\nV: Vocal\n\"Bb\"d6z2|\"Bb\"z2Ddc2dc|\"Fmaj7\"A4z4|\"Fmaj7\"z2AAd2c2|\nV: Ins\nZ4|\nV: Vocal\n\"Gm\"B2G2z3F|\"C\"E2FG3B2|\"Fmaj7\"A6z2|\"Fmaj7\"z2DDD2d2|\nV: Ins\nZ4|\nV: Vocal\n\"Bb\"d8|\"Bb\"z2deggf2|\"Fmaj7\"A6z2|\"Fmaj7\"z2AAd2c2|\nV: Ins\nZ4|\nV: Vocal\n\"Gm\"B2G4z2|\"C\"c2de3e2|\"Fmaj7\"a8|\"A\"e8|\nV: Ins\nZ4|\nV: Vocal\n\"A\"z8|\"Dm\"z2DEF2c2|\nV: Ins\nZ2|\n% post-chorus\nV: Vocal\n\"Gm\"B4z4|\"C\"z2CDE2B2|\"Fmaj7\"A4z4|\"D\"z2AAd2cB-|\nV: Ins\nZ4|\nV: Vocal\n\"Gm\"BGG2z3E|\"A\"E2AG3F2|\"Dm\"D4z4|\"Dm\"z8|\nV: Ins\nZ2|z4fdAF|D2DEF2c2|\n% interlude\nV: Vocal\n\"Gm\"z8|\"C\"z8|\"Fmaj7\"z8|\"D\"z8|\nV: Ins\nB8|z2cde2b2|a8|z2AAB2a^g|\nV: Vocal\n\"Gm\"z8|\"C\"z8|\"Fmaj7\"z8|\"A\"z8|\nV: Ins\ng6f2|e2fg3c'=b|a8|z2dfad'2^c'|\nV: Vocal\n\"Gm\"z8|\"C\"z8|\"Fmaj7\"z8|\"D\"z8|\nV: Ins\nd'2DGBd2^c|d3d'e'4|c'8|z2d^fad'2c'|\nV: Vocal\n\"Gm\"z8|\"A7\"z8|\"Dm\"z8|\nV: Ins\nb6a2|g2e2a2g2|d'd'^c'd'a'f'd'a|\n% chorus\nV: Vocal\n\"Dm\"z2DD\"Dm7/C\"D2d2|\nV: Ins\nf^cz6|\nV: Vocal\n\"Bb\"d6z2|\"Bb\"z2Ddc2e2-|\"Fmaj7\"e2A4z2|\"Fmaj7\"z2AAd2c2|\nV: Ins\nZ4|\nV: Vocal\n\"Gm\"B2G2z3F|\"C\"E2FG3B2|\"Fmaj7\"A6z2|\"Fmaj7\"z2DDD2d2|\nV: Ins\nZ4|\nV: Vocal\n\"Bb\"d6z2|\"Bb\"z2deggf2|\"Fmaj7\"A6z2|\"Fmaj7\"z2AAd2c2|\nV: Ins\nZ4|\nV: Vocal\n\"Gm\"B2G4z2|\"C\"c2de3e2|\"Fmaj7\"a6gf|\"A7\"e8|\nV: Ins\nZ4|\nV: Vocal\n\"A7\"z8|\"A7\"z2DEF2c2|\nV: Ins\nZ2|\n% post-chorus\nV: Vocal\n\"Gm\"B4z4|\"C\"z2CDE2B2|\"Fmaj7\"A4z4|\"Dm7\"z2AA\"D7\"d2c2|\nV: Ins\nZ4|\nV: Vocal\n\"Gm\"B2G2z3E|\"A7\"E2AG3E2|\"Dm\"D4z4|\"Dm\"z2AAd2c2|\nV: Ins\nZ2|z4fdAF|D2z6|\nV: Vocal\n\"Gm\"B2G2z3E|\"A7\"EE2GG4|\"A7\"z4FF3-|\"Dm\"FDD4z2|\nV: Ins\nZ4|\n% outro\nV: Vocal\n\"Dm\"z8|\"Dm\"z8|\"Dm\"z4\"D\"z4|\nV: Ins\nZ3|\nV: Vocal\n\"D\"z4\"Dsus2\"z4|\"Dsus2\"z4\"Dm\"z4|\"Dm\"z8|\"Dm\"z8|\nV: Ins\nZ4|\nV: Vocal\n\"Dm\"z8|\"Dm\"z8|\"Dm\"z8|\nV: Ins\nZ3|\n",
+    "tags": "Jazz ballad, brushed drums, upright bass, warm piano, muted trumpet, intimate Mandarin male vocal, 60 BPM\n",
+    "lyrics": "[Verse]\n在我的怀里\n在你的眼里\n那里春风沉醉\n那里绿草如茵\n月光把爱恋\n洒满了湖面\n两个人的篝火\n照亮整个夜晚\n\n[Chorus]\n多少年以后\n如云般游走\n那变换的脚步\n让我们难牵手\n这一生一世\n有多少你我\n被吞没在月光\n如水的夜里\n\n[Post-Chorus]\n多想某一天\n往日又重现\n我们流连忘返\n在贝加尔湖畔\n\n[Chorus]\n多少年以后\n往事随云走\n那纷飞的冰雪\n容不下那温柔\n这一生一世\n这时间太少\n不够证明融化\n冰雪的深情\n\n[Post-Chorus]\n就在某一天\n你忽然出现\n你清澈又神秘\n在贝加尔湖畔\n你清澈又神秘\n像贝加尔湖畔\n",
+    "titleZh": "贝加尔湖畔",
+    "sourceTitleZh": "贝加尔湖畔",
+    "sourceUrl": "https://www.youtube.com/watch?v=G6ZS7ho5PXM"
+  },
+  "official_audio_url": "https://map-yue2.github.io/assets/covers/baikal-lake-jazz/baikal-lake-jazz.mp3",
+  "official_audio_path": "outputs/official_fullsong/reference/baikal-lake-jazz.mp3",
+  "official_audio_sha256": "7c173f2ac175464ce6e79a00ce04d9129d9952a4f259d7db34bd9fd460ad0f31",
+  "official_seconds": 216.91866666666667,
+  "input_hashes": {
+    "style": "a00129bd207df13d9d9332960b753841ace01f20795f2638247a52766fd5ea35",
+    "lyrics": "19f39390ce308f17fada15d875b87b82fca0dfcd3e05f0dd80332fff7fdc76ac",
+    "abc": "7a27f36d4b5eac197e11596233c29a20f960095dc95302e1d06a84c87533f3c8"
+  },
+  "measurement": {
+    "id": "cover_baikal",
+    "status": "complete",
+    "case_sha256": "5e16e6ddaf10453f9c76aa556f8cd495b10f656dafebba79fbd24da51885aef4",
+    "attempt": 2,
+    "benchmark_script_sha256": "2c5868ef28d74bb713079a0c1cf886d419a4e3a73cce34be2413e4cda7ec9449",
+    "retry_policy": "Only interrupted/failed execution, identical input and seed; no quality reroll",
+    "truncated": {
+      "abc": false,
+      "semantic": false
+    },
+    "audio_seconds": 212.27866666666668,
+    "official_seconds": 216.91866666666667,
+    "duration_ratio": 0.978609494188298,
+    "e2e_seconds": 372.6630877080024,
+    "rtf": 1.7555371604683265,
+    "speed_multiplier": 0.5696262218301485,
+    "load_seconds": 5.270500749989878,
+    "transcription_seconds": 0,
+    "save_seconds": 0.46892104198923334,
+    "timing": {
+      "abc": {
+        "seconds": 0.0,
+        "output_tokens": 0,
+        "external_prefix_tokens": 1455
+      },
+      "semantic": {
+        "seconds": 81.14225450000959,
+        "prefill_seconds": 0.984601583040785,
+        "ttft_seconds": 0.9880465830210596,
+        "output_tokens": 5308,
+        "content_tokens": 5307,
+        "output_tps": 65.4159787980672,
+        "prefix_tokens": 1702,
+        "cfg_branches": 1,
+        "execution": "eager",
+        "attention": "sdpa",
+        "backend": "mlx"
+      },
+      "nar_seconds": 274.79719120799564,
+      "vae_seconds": 10.727858000027481,
+      "load": {
+        "resolve_conversion_integrity_seconds": 5.270408125012182,
+        "ar_load_events_seconds": [
+          0.11972937500104308
+        ],
+        "ar_load_seconds": 0.11972937500104308,
+        "conditioning_load_events_seconds": [
+          0.16321333398809657
+        ],
+        "conditioning_load_seconds": 0.16321333398809657,
+        "nar_load_events_seconds": [
+          0.13335404195822775
+        ],
+        "nar_load_seconds": 0.13335404195822775,
+        "vae_load_events_seconds": [
+          0.10133187501924112
+        ],
+        "vae_load_seconds": 0.10133187501924112
+      },
+      "e2e_seconds": 366.80124545795843
+    },
+    "configuration": {
+      "generation": {
+        "abc": {
+          "temperature": 0.7,
+          "top_p": 0.9,
+          "top_k": 30,
+          "repetition_penalty": 1.005,
+          "penalty_window": 100,
+          "min_tokens": 32,
+          "max_tokens": 4096
+        },
+        "semantic": {
+          "temperature": 1.0,
+          "top_p": 0.95,
+          "top_k": 100,
+          "repetition_penalty": 1.2,
+          "penalty_window": 50,
+          "min_tokens": 200,
+          "max_tokens": 9000
+        },
+        "ode_steps": 32,
+        "ode_method": "midpoint",
+        "context": 24576,
+        "version": "yue2-native-v1"
+      },
+      "overrides": {},
+      "cot": "full",
+      "cfg_scale": 1.0,
+      "cfg_negative": "same_instruction_and_exact_abc",
+      "backend": "mlx",
+      "quantization": "8bit",
+      "model_dtype": "bfloat16",
+      "vae_dtype": "float32",
+      "vae_decode": "halo_crop",
+      "vae_core_frames": 256,
+      "vae_halo_frames": 16,
+      "device": "DeviceType.gpu",
+      "memory_budget_gib": 16.0,
+      "offload_ar": false,
+      "runtime_sha256": "ff4829d01380a2ac98fbc0aa0aed90f9b2bbe9c0a3473f1d62ed8ee3abc8efa9",
+      "decoder_release": "standard",
+      "validation_status": "unvalidated",
+      "vae_backend": "mlx",
+      "ar_precision": "8bit",
+      "kv_dtype": "bfloat16",
+      "nar_dtype": "bfloat16",
+      "conditioning_precision": "bf16",
+      "attention_opmath": "float32",
+      "mlx_tf32_enabled": false,
+      "attention_inputs": "native_steel_bfloat16",
+      "query_chunk_size": 256,
+      "runtime": {
+        "lyra-yue2": "0.1.0",
+        "mlx": "0.32.2",
+        "mlx-lm": "0.31.3",
+        "transformers": "5.0.0",
+        "numpy": "2.2.6",
+        "python": "3.12.10",
+        "macos": "27.0"
+      },
+      "upstream_commit": "92a73cc7652fcc1f937855e4b765e0a0edd7ff2e",
+      "execution_guard": "GPUExecution",
+      "rng": {
+        "ar": "request_local_mlx",
+        "acoustic": "numpy_pcg64_fp32_full_song_v1"
+      }
+    },
+    "identity": "e7b3263aec42b7863d934c3a09e582a76c5d7404071d068fb83206758e9ff3f3",
+    "audio_sha256": "4d1dc12e8de200850fc5d7feae9b189bd02b9ee8584f8bd73f18ab29015422d7",
+    "result_sha256": "2df9efe0b7a1dac21fea66831b611e54d484af4de0c940a13bc5010951c5fad1",
+    "audio_quality": {
+      "sample_rate": 48000,
+      "channels": 2,
+      "finite": true,
+      "rms": 0.14606263065109223,
+      "peak": 1.0,
+      "clipping_fraction": 9.814143672782317e-08
+    },
+    "musical_quality_acceptance": "pending human listening; not established by duration or EOS",
+    "resources": {
+      "memory_counter_schema": 2,
+      "swap_counter_source": "host_statistics64.swapins/swapouts",
+      "sampling_interval_seconds": 0.1,
+      "power_sampling_interval_seconds": 5.0,
+      "metadata": {},
+      "power_start": {
+        "ac_connected": true,
+        "pmset": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=37224547)\t95%; AC attached; not charging present: true"
+      },
+      "power_end": {
+        "ac_connected": true,
+        "pmset": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=37224547)\t95%; AC attached; not charging present: true"
+      },
+      "start": {
+        "elapsed_seconds": 0.010612874990329146,
+        "rss_bytes": 51970048,
+        "system_swap_used_bytes": 12374114304,
+        "system_swap_in_bytes": 56333025280,
+        "system_swap_out_bytes": 83892617216,
+        "system_available_bytes": 71012450304,
+        "system_total_bytes": 137438953472,
+        "system_memory_pressure_level": 1,
+        "system_free_bytes": 14900953088,
+        "system_wired_bytes": 6432079872,
+        "system_compressor_bytes": 2737373184,
+        "system_file_backed_bytes": 29603938304,
+        "physical_footprint_bytes": 32129792,
+        "process_lifetime_peak_footprint_bytes": 32129792,
+        "mlx_active_bytes": 0,
+        "mlx_cache_bytes": 0,
+        "mlx_peak_bytes": 0,
+        "ac_connected": true
+      },
+      "end": {
+        "elapsed_seconds": 373.2065921250032,
+        "rss_bytes": 817364992,
+        "system_swap_used_bytes": 12374114304,
+        "system_swap_in_bytes": 56333713408,
+        "system_swap_out_bytes": 83892617216,
+        "system_available_bytes": 69842173952,
+        "system_total_bytes": 137438953472,
+        "system_memory_pressure_level": 1,
+        "system_free_bytes": 13065633792,
+        "system_wired_bytes": 7090126848,
+        "system_compressor_bytes": 2734948352,
+        "system_file_backed_bytes": 29652516864,
+        "physical_footprint_bytes": 974997760,
+        "process_lifetime_peak_footprint_bytes": 12148841216,
+        "mlx_active_bytes": 8,
+        "mlx_cache_bytes": 0,
+        "mlx_peak_bytes": 11256150230,
+        "ac_connected": true
+      },
+      "sampled_maxima": {
+        "mlx_active_bytes": 11196718142,
+        "mlx_cache_bytes": 197296128,
+        "mlx_peak_bytes": 11256150230,
+        "physical_footprint_bytes": 11975809792,
+        "process_lifetime_peak_footprint_bytes": 12148841216,
+        "rss_bytes": 8187363328,
+        "system_available_bytes": 71012450304,
+        "system_compressor_bytes": 2737537024,
+        "system_file_backed_bytes": 29652516864,
+        "system_free_bytes": 14900953088,
+        "system_swap_in_bytes": 56333713408,
+        "system_swap_out_bytes": 83892617216,
+        "system_swap_used_bytes": 12374114304,
+        "system_total_bytes": 137438953472,
+        "system_wired_bytes": 11743920128
+      },
+      "monitor_error": null,
+      "exception": null
+    },
+    "artifact_directory": "outputs/official_fullsong/cover_baikal/attempt-2",
+    "prior_attempts": [
+      {
+        "attempt": 1,
+        "status": "failed",
+        "error": "RuntimeError: AC power is required for an acceptance benchmark",
+        "receipt_path": "outputs/official_fullsong/cover_baikal/measurement.json",
+        "receipt_sha256": "ca348f4fd8706a3364bb84fa36f426316bf933acff192e50b9c3fa35d01598c2"
+      }
+    ]
+  },
+  "official_player": "audio/fullsong/7c173f2ac175464ce6e7.mp3",
+  "local_player": "audio/fullsong/4d1dc12e8de200850fc5.mp3",
+  "actual_score": "X:1\nT:\nM:2/4\nL:1/16\nQ:1/4=60\nV: Vocal clef=treble name=\"Vocal Melody\" snm=\"Vocal\"\nV: Ins clef=treble name=\"Ins Melody\" snm=\"Inst.\"\nK:F\n% intro\nV: Vocal\nZ2|\"Gm\"z8|\"C\"z8|\nV: Ins\nZ|z2def2c'2|b8|z2cde2b2|\nV: Vocal\n\"Fmaj7\"z8|\"D\"z8|\"Gm\"z8|\"A7\"z8|\nV: Ins\na8|z2A2d2c2|B3AG4|G2E2A2G2|\nV: Vocal\n\"Dm\"z8|\nV: Ins\nd8|\n% verse\nV: Vocal\n\"Dm\"z2DEF2c2|\nV: Ins\nZ|\nV: Vocal\n\"Gm\"B4z4|\"C\"z2CDE2B2|\"Fmaj7\"A4z4|\"D\"z2AAd2c2|\nV: Ins\nZ4|\nV: Vocal\n\"Gm\"B2G2z3F|\"C\"E2FG3B2|\"Fmaj7\"A4z4|\"Dm\"z2DEF2c2|\nV: Ins\nZ4|\nV: Vocal\n\"Gm\"B4z4|\"C\"z2CDE2B2|\"Fmaj7\"A4z4|\"D\"z2AAd2c2|\nV: Ins\nZ4|\nV: Vocal\n\"Gm\"B2G2z3F|\"A7\"E2AG3FE|\"Dm\"D2DDD2d2|\nV: Ins\nZ3|\n% chorus\nV: Vocal\n\"Bb\"d6z2|\"Bb\"z2Ddc2dc|\"Fmaj7\"A4z4|\"Fmaj7\"z2AAd2c2|\nV: Ins\nZ4|\nV: Vocal\n\"Gm\"B2G2z3F|\"C\"E2FG3B2|\"Fmaj7\"A6z2|\"Fmaj7\"z2DDD2d2|\nV: Ins\nZ4|\nV: Vocal\n\"Bb\"d8|\"Bb\"z2deggf2|\"Fmaj7\"A6z2|\"Fmaj7\"z2AAd2c2|\nV: Ins\nZ4|\nV: Vocal\n\"Gm\"B2G4z2|\"C\"c2de3e2|\"Fmaj7\"a8|\"A\"e8|\nV: Ins\nZ4|\nV: Vocal\n\"A\"z8|\"Dm\"z2DEF2c2|\nV: Ins\nZ2|\n% post-chorus\nV: Vocal\n\"Gm\"B4z4|\"C\"z2CDE2B2|\"Fmaj7\"A4z4|\"D\"z2AAd2cB-|\nV: Ins\nZ4|\nV: Vocal\n\"Gm\"BGG2z3E|\"A\"E2AG3F2|\"Dm\"D4z4|\"Dm\"z8|\nV: Ins\nZ2|z4fdAF|D2DEF2c2|\n% interlude\nV: Vocal\n\"Gm\"z8|\"C\"z8|\"Fmaj7\"z8|\"D\"z8|\nV: Ins\nB8|z2cde2b2|a8|z2AAB2a^g|\nV: Vocal\n\"Gm\"z8|\"C\"z8|\"Fmaj7\"z8|\"A\"z8|\nV: Ins\ng6f2|e2fg3c'=b|a8|z2dfad'2^c'|\nV: Vocal\n\"Gm\"z8|\"C\"z8|\"Fmaj7\"z8|\"D\"z8|\nV: Ins\nd'2DGBd2^c|d3d'e'4|c'8|z2d^fad'2c'|\nV: Vocal\n\"Gm\"z8|\"A7\"z8|\"Dm\"z8|\nV: Ins\nb6a2|g2e2a2g2|d'd'^c'd'a'f'd'a|\n% chorus\nV: Vocal\n\"Dm\"z2DD\"Dm7/C\"D2d2|\nV: Ins\nf^cz6|\nV: Vocal\n\"Bb\"d6z2|\"Bb\"z2Ddc2e2-|\"Fmaj7\"e2A4z2|\"Fmaj7\"z2AAd2c2|\nV: Ins\nZ4|\nV: Vocal\n\"Gm\"B2G2z3F|\"C\"E2FG3B2|\"Fmaj7\"A6z2|\"Fmaj7\"z2DDD2d2|\nV: Ins\nZ4|\nV: Vocal\n\"Bb\"d6z2|\"Bb\"z2deggf2|\"Fmaj7\"A6z2|\"Fmaj7\"z2AAd2c2|\nV: Ins\nZ4|\nV: Vocal\n\"Gm\"B2G4z2|\"C\"c2de3e2|\"Fmaj7\"a6gf|\"A7\"e8|\nV: Ins\nZ4|\nV: Vocal\n\"A7\"z8|\"A7\"z2DEF2c2|\nV: Ins\nZ2|\n% post-chorus\nV: Vocal\n\"Gm\"B4z4|\"C\"z2CDE2B2|\"Fmaj7\"A4z4|\"Dm7\"z2AA\"D7\"d2c2|\nV: Ins\nZ4|\nV: Vocal\n\"Gm\"B2G2z3E|\"A7\"E2AG3E2|\"Dm\"D4z4|\"Dm\"z2AAd2c2|\nV: Ins\nZ2|z4fdAF|D2z6|\nV: Vocal\n\"Gm\"B2G2z3E|\"A7\"EE2GG4|\"A7\"z4FF3-|\"Dm\"FDD4z2|\nV: Ins\nZ4|\n% outro\nV: Vocal\n\"Dm\"z8|\"Dm\"z8|\"Dm\"z4\"D\"z4|\nV: Ins\nZ3|\nV: Vocal\n\"D\"z4\"Dsus2\"z4|\"Dsus2\"z4\"Dm\"z4|\"Dm\"z8|\"Dm\"z8|\nV: Ins\nZ4|\nV: Vocal\n\"Dm\"z8|\"Dm\"z8|\"Dm\"z8|\nV: Ins\nZ3|\n"
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "id": "ko_score",
+    "status": "pass",
+    "artifact_manifest": true,
+    "full_decode_frames": 7489856
+  },
+  {
+    "id": "ja_score",
+    "status": "pass",
+    "artifact_manifest": true,
+    "full_decode_frames": 10669376
+  },
+  {
+    "id": "en_score",
+    "status": "pass",
+    "artifact_manifest": true,
+    "full_decode_frames": 4559936
+  },
+  {
+    "id": "es_score",
+    "status": "pass",
+    "artifact_manifest": true,
+    "full_decode_frames": 8689856
+  },
+  {
+    "id": "zh_score",
+    "status": "pass",
+    "artifact_manifest": true,
+    "full_decode_frames": 7309376
+  },
+  {
+    "id": "ru_score",
+    "status": "pass",
+    "artifact_manifest": true,
+    "full_decode_frames": 5758016
+  }
+]

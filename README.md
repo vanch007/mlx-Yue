@@ -13,8 +13,10 @@ Native Apple Silicon (MLX) port for [YuE2-3B](https://huggingface.co/m-a-p/YuE2-
 Pre-converted model weights (BF16 & 8-bit quantized) are available on Hugging Face:
 👉 **[vanch007/mlx-Yue2-3B](https://huggingface.co/vanch007/mlx-Yue2-3B)**
 
-Interactive Audio Showcase (Official Demos vs mlx-Yue Side-by-Side):
+Full-song Audio Showcase (official complete inputs, local outputs, and measured resources):
 👉 **[https://vanch007.github.io/mlx-Yue/](https://vanch007.github.io/mlx-Yue/)**
+
+The earlier 32-second demo report is withdrawn as quality evidence: all 11 language/mode clips hit an 800-token cap, and the cover card used mismatched audio and hard-coded metrics. The replacement uses complete official lyrics, style prompts and scores, records truncation explicitly, and separates score-conditioned comparisons from newly composed songs. Natural termination does **not** establish official quality equivalence; human listening and numerical acceptance remain open. See [the corrected test report](reports/official-fullsong/REPORT.zh-CN.md).
 
 ---
 
@@ -27,7 +29,7 @@ Interactive Audio Showcase (Official Demos vs mlx-Yue Side-by-Side):
   2. **Full + Supplied ABC Score**: Compose songs conditioned on user-supplied ABC notation.
   3. **Melody + Generated Score**: Automatic lead-sheet generation and vocal/melody arrangement.
   4. **Melody + Supplied ABC Score**: Condition acoustic synthesis on an exact melody line.
-  5. **Off (Pure Accompaniment / Instrumental)**: Generate backing tracks or instrumental music without vocal scores.
+  5. **Off (Direct Generation)**: Generate music from style and lyrics without a symbolic score. This mode can include vocals; it is not an instrumental-only switch.
 - 🎙️ **Full Audio Transcription & Cover Chain**:
   - Native SheetSage2 + MERT2 music transcription in MLX (Audio $\to$ ABC notation / MIDI / LAB).
   - Multi-window stitching supporting arbitrarily long source tracks.
@@ -247,3 +249,27 @@ mlx-Yue/
 - [MLX](https://github.com/ml-explore/mlx) by Apple Machine Learning Research.
 - [stable-audio-tools](https://github.com/Stability-AI/stable-audio-tools) by Stability AI (Oobleck VAE architecture).
 - [SheetSage](https://github.com/chrisdonahue/sheetsage) & [MERT](https://github.com/m-a-p/MERT) for transcription foundation models.
+
+## Reproduce the official full-song listening comparison
+
+Use the installed project environment with the converted models and VAE paths in
+`models/paths.json`. The benchmark preserves the official input text and ABC,
+uses the native 9,000 semantic-token ceiling and 32 midpoint steps, and keeps
+failed/truncated attempts. It does not force song duration or select the best seed.
+
+```bash
+python tools/prepare_fullsong_benchmark.py
+MLX_ENABLE_TF32=0 python tools/run_fullsong_benchmark.py
+python tools/build_unified_showcase.py
+# After reconnecting AC power, resume only failed attempts (same input and seed):
+MLX_ENABLE_TF32=0 python tools/run_fullsong_benchmark.py --retry-failed
+```
+
+All 15 cases share one page, `docs/index.html`: six languages, all five generation
+modes, official cover/edit scores, and a real score-recording-to-transcription-to-song
+workflow. The latter is a pipeline test, not an exact-ABC comparison. Genre Explorer scores are official outputs reused as local conditioning, so those
+comparisons test score-conditioned resynthesis rather than identical text-to-score
+execution. The official
+seed, per-demo sampling parameters and candidate selection are unknown. Local
+FLAC recordings and full resource traces stay under `outputs/official_fullsong/`;
+the published page contains full-length MP3 listening copies and JSON evidence.

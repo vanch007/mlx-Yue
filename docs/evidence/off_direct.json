@@ -1,0 +1,272 @@
+{
+  "id": "off_direct",
+  "official_id": "bdfc142ef136070839953ffa",
+  "title": "Enka",
+  "genre": "Enka",
+  "language": "ja",
+  "score_mode": "none",
+  "request": {
+    "id": "off_direct",
+    "style": "retro,city pop,中森明菜,Japanese",
+    "lyrics": "风が麦浪をなびかせ 稲の花が香る\n黒い土地が われらの父母を育てる\n毎年冬には 大雪が舞い散る\n暖かい炬燵の上で 世間話をする\n\n青い空に 白い雲がゆらゆら\n清らかな小川が せせらぎながら流れる\n東北の人は ザワーキャベツと血腸が好き\nヤンコ踊りを踊れば 人々は喜びそう\n\n大東北は わたしの故郷だ\nソナが奏でる 素敵な姿\n仲間が集まれば 必ずお酒を二杯飲む\n月を酔わせ わたしの心を温める\n\n大東北は わたしの故郷だ\nわたしはこの地で 生まれ育った\n東北人の情 東北人の愛\nこの故郷を 心から愛してる\n\n风が麦浪をなびかせ 稲の花が香る\n黒い土地が われらの父母を育てる\n毎年冬には 大雪が舞い散る\n暖かい炬燵の上で 世間話をする\n\n青い空に 白い雲がゆらゆら\n清らかな小川が せせらぎながら流れる\n東北の人は ザワーキャベツと血腸が好き\nヤンコ踊りを踊れば 人々は喜びそう\n\n大東北は わたしの故郷だ\nソナが奏でる 素敵な姿\n仲間が集まれば 必ずお酒を二杯飲む\n月を酔わせ わたしの心を温める\n\n大東北は わたしの故郷だ\nわたしはこの地で 生まれ育った\n東北人の情 東北人の愛\nこの故郷を 心から愛してる\n\n大東北は わたしの故郷だ\nソナが奏でる 素敵な姿\n仲間が集まれば 必ずお酒を二杯飲む\n月を酔わせ わたしの心を温める\n\n大東北は わたしの故郷だ\nわたしはこの地で 生まれ育った\n東北人の情 東北人の愛\nこの故郷を 心から愛してる\nこの故郷を 心から愛してる",
+    "cot": "off",
+    "seed": 2026
+  },
+  "official_mode": "direct",
+  "source": {
+    "id": "bdfc142ef136070839953ffa",
+    "order": 1,
+    "collection": "genre",
+    "title": "Enka",
+    "genre": "Enka",
+    "genrePath": [
+      "Regional Music",
+      "Asian Music",
+      "East Asian Music",
+      "Japanese Music",
+      "Enka"
+    ],
+    "language": "ja",
+    "languageLabel": "Japanese",
+    "mode": "direct",
+    "tags": "retro,city pop,中森明菜,Japanese",
+    "lyrics": "风が麦浪をなびかせ 稲の花が香る\n黒い土地が われらの父母を育てる\n毎年冬には 大雪が舞い散る\n暖かい炬燵の上で 世間話をする\n\n青い空に 白い雲がゆらゆら\n清らかな小川が せせらぎながら流れる\n東北の人は ザワーキャベツと血腸が好き\nヤンコ踊りを踊れば 人々は喜びそう\n\n大東北は わたしの故郷だ\nソナが奏でる 素敵な姿\n仲間が集まれば 必ずお酒を二杯飲む\n月を酔わせ わたしの心を温める\n\n大東北は わたしの故郷だ\nわたしはこの地で 生まれ育った\n東北人の情 東北人の愛\nこの故郷を 心から愛してる\n\n风が麦浪をなびかせ 稲の花が香る\n黒い土地が われらの父母を育てる\n毎年冬には 大雪が舞い散る\n暖かい炬燵の上で 世間話をする\n\n青い空に 白い雲がゆらゆら\n清らかな小川が せせらぎながら流れる\n東北の人は ザワーキャベツと血腸が好き\nヤンコ踊りを踊れば 人々は喜びそう\n\n大東北は わたしの故郷だ\nソナが奏でる 素敵な姿\n仲間が集まれば 必ずお酒を二杯飲む\n月を酔わせ わたしの心を温める\n\n大東北は わたしの故郷だ\nわたしはこの地で 生まれ育った\n東北人の情 東北人の愛\nこの故郷を 心から愛してる\n\n大東北は わたしの故郷だ\nソナが奏でる 素敵な姿\n仲間が集まれば 必ずお酒を二杯飲む\n月を酔わせ わたしの心を温める\n\n大東北は わたしの故郷だ\nわたしはこの地で 生まれ育った\n東北人の情 東北人の愛\nこの故郷を 心から愛してる\nこの故郷を 心から愛してる",
+    "abc": "",
+    "abcUrl": null,
+    "audio": "assets/genre/bdfc142ef136070839953ffa/bdfc142ef136070839953ffa_music.mp3",
+    "scoreAudio": null,
+    "sheets": []
+  },
+  "official_audio_url": "https://map-yue2.github.io/assets/genre/bdfc142ef136070839953ffa/bdfc142ef136070839953ffa_music.mp3",
+  "official_audio_path": "outputs/official_fullsong/reference/bdfc142ef136070839953ffa.mp3",
+  "official_audio_sha256": "4201bc6f26587da253ca8303e943b3a8216e932008a46e3544ec72a7d5f35db2",
+  "official_seconds": 243.28,
+  "input_hashes": {
+    "style": "8ead6106d7852eb72a2106d2ae5bda3d6721f122c4d8f20db218b2bab89c9d8d",
+    "lyrics": "5816106e2a8c0ab898ba91623a38c10e396ca212064951c4cd32acccca5febc9"
+  },
+  "measurement": {
+    "id": "off_direct",
+    "status": "complete",
+    "case_sha256": "088ab9b8b866dce7532e5ecc6ed6aec999e48e744ed1dbcf6340b8f68a66f97d",
+    "attempt": 2,
+    "benchmark_script_sha256": "2c5868ef28d74bb713079a0c1cf886d419a4e3a73cce34be2413e4cda7ec9449",
+    "retry_policy": "Only interrupted/failed execution, identical input and seed; no quality reroll",
+    "truncated": {
+      "abc": false,
+      "semantic": false
+    },
+    "audio_seconds": 251.11866666666666,
+    "official_seconds": 243.28,
+    "duration_ratio": 1.0322207607146772,
+    "e2e_seconds": 562.6601044579875,
+    "rtf": 2.2406144151954224,
+    "speed_multiplier": 0.44630615299901205,
+    "load_seconds": 5.205297333013732,
+    "transcription_seconds": 0,
+    "save_seconds": 0.5658685420057736,
+    "timing": {
+      "abc": {},
+      "semantic": {
+        "seconds": 188.53203529200982,
+        "prefill_seconds": 0.27864099998259917,
+        "ttft_seconds": 0.2826585419825278,
+        "output_tokens": 6279,
+        "content_tokens": 6278,
+        "output_tps": 33.30468474641302,
+        "prefix_tokens": 604,
+        "cfg_branches": 2,
+        "execution": "eager",
+        "attention": "sdpa",
+        "backend": "mlx"
+      },
+      "nar_seconds": 355.02819666598225,
+      "vae_seconds": 13.176016915997025,
+      "load": {
+        "resolve_conversion_integrity_seconds": 5.205235541972797,
+        "ar_load_events_seconds": [
+          0.12122329202247784
+        ],
+        "ar_load_seconds": 0.12122329202247784,
+        "conditioning_load_events_seconds": [
+          0.17318866698769853
+        ],
+        "conditioning_load_seconds": 0.17318866698769853,
+        "nar_load_events_seconds": [
+          0.11944195796968415
+        ],
+        "nar_load_seconds": 0.11944195796968415,
+        "vae_load_events_seconds": [
+          0.09848862502258271
+        ],
+        "vae_load_seconds": 0.09848862502258271
+      },
+      "e2e_seconds": 556.8740691249841
+    },
+    "configuration": {
+      "generation": {
+        "abc": {
+          "temperature": 0.7,
+          "top_p": 0.9,
+          "top_k": 30,
+          "repetition_penalty": 1.005,
+          "penalty_window": 100,
+          "min_tokens": 32,
+          "max_tokens": 4096
+        },
+        "semantic": {
+          "temperature": 1.0,
+          "top_p": 0.95,
+          "top_k": 100,
+          "repetition_penalty": 1.2,
+          "penalty_window": 50,
+          "min_tokens": 200,
+          "max_tokens": 9000
+        },
+        "ode_steps": 32,
+        "ode_method": "midpoint",
+        "context": 24576,
+        "version": "yue2-native-v1"
+      },
+      "overrides": {},
+      "cot": "off",
+      "cfg_scale": 1.01,
+      "cfg_negative": "instruction_only",
+      "backend": "mlx",
+      "quantization": "8bit",
+      "model_dtype": "bfloat16",
+      "vae_dtype": "float32",
+      "vae_decode": "halo_crop",
+      "vae_core_frames": 256,
+      "vae_halo_frames": 16,
+      "device": "DeviceType.gpu",
+      "memory_budget_gib": 16.0,
+      "offload_ar": false,
+      "runtime_sha256": "ff4829d01380a2ac98fbc0aa0aed90f9b2bbe9c0a3473f1d62ed8ee3abc8efa9",
+      "decoder_release": "standard",
+      "validation_status": "unvalidated",
+      "vae_backend": "mlx",
+      "ar_precision": "8bit",
+      "kv_dtype": "bfloat16",
+      "nar_dtype": "bfloat16",
+      "conditioning_precision": "bf16",
+      "attention_opmath": "float32",
+      "mlx_tf32_enabled": false,
+      "attention_inputs": "native_steel_bfloat16",
+      "query_chunk_size": 256,
+      "runtime": {
+        "lyra-yue2": "0.1.0",
+        "mlx": "0.32.2",
+        "mlx-lm": "0.31.3",
+        "transformers": "5.0.0",
+        "numpy": "2.2.6",
+        "python": "3.12.10",
+        "macos": "27.0"
+      },
+      "upstream_commit": "92a73cc7652fcc1f937855e4b765e0a0edd7ff2e",
+      "execution_guard": "GPUExecution",
+      "rng": {
+        "ar": "request_local_mlx",
+        "acoustic": "numpy_pcg64_fp32_full_song_v1"
+      }
+    },
+    "identity": "004582111a9d836a10ccb2cc7e31bb54cfe515a1b5936539b6c4e4763455c269",
+    "audio_sha256": "bc71fd78a2fb6cc3fb7ed40ff8933e623a50c944fb2a7a09e7b5df59391b1d53",
+    "result_sha256": "8d2e8a74360591e3b3c468b48bddd6a4b6c8c7aa62c8d52ba02a3e705705536e",
+    "audio_quality": {
+      "sample_rate": 48000,
+      "channels": 2,
+      "finite": true,
+      "rms": 0.14199334393344099,
+      "peak": 0.9785663485527039,
+      "clipping_fraction": 0.0
+    },
+    "musical_quality_acceptance": "pending human listening; not established by duration or EOS",
+    "resources": {
+      "memory_counter_schema": 2,
+      "swap_counter_source": "host_statistics64.swapins/swapouts",
+      "sampling_interval_seconds": 0.1,
+      "power_sampling_interval_seconds": 5.0,
+      "metadata": {},
+      "power_start": {
+        "ac_connected": true,
+        "pmset": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=37224547)\t95%; AC attached; not charging present: true"
+      },
+      "power_end": {
+        "ac_connected": true,
+        "pmset": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=37224547)\t95%; AC attached; not charging present: true"
+      },
+      "start": {
+        "elapsed_seconds": 0.01051108300453052,
+        "rss_bytes": 52101120,
+        "system_swap_used_bytes": 12374114304,
+        "system_swap_in_bytes": 56332566528,
+        "system_swap_out_bytes": 83892617216,
+        "system_available_bytes": 65943896064,
+        "system_total_bytes": 137438953472,
+        "system_memory_pressure_level": 1,
+        "system_free_bytes": 5339480064,
+        "system_wired_bytes": 7147044864,
+        "system_compressor_bytes": 2742632448,
+        "system_file_backed_bytes": 30022123520,
+        "physical_footprint_bytes": 32244456,
+        "process_lifetime_peak_footprint_bytes": 32244456,
+        "mlx_active_bytes": 0,
+        "mlx_cache_bytes": 0,
+        "mlx_peak_bytes": 0,
+        "ac_connected": true
+      },
+      "end": {
+        "elapsed_seconds": 563.3207151250099,
+        "rss_bytes": 1106231296,
+        "system_swap_used_bytes": 12374114304,
+        "system_swap_in_bytes": 56332828672,
+        "system_swap_out_bytes": 83892617216,
+        "system_available_bytes": 64992411648,
+        "system_total_bytes": 137438953472,
+        "system_memory_pressure_level": 1,
+        "system_free_bytes": 4838768640,
+        "system_wired_bytes": 8458977280,
+        "system_compressor_bytes": 2738896896,
+        "system_file_backed_bytes": 29403021312,
+        "physical_footprint_bytes": 1411549368,
+        "process_lifetime_peak_footprint_bytes": 12590766728,
+        "mlx_active_bytes": 8,
+        "mlx_cache_bytes": 0,
+        "mlx_peak_bytes": 11256150230,
+        "ac_connected": true
+      },
+      "sampled_maxima": {
+        "mlx_active_bytes": 11196716606,
+        "mlx_cache_bytes": 180060168,
+        "mlx_peak_bytes": 11256150230,
+        "physical_footprint_bytes": 12035414688,
+        "process_lifetime_peak_footprint_bytes": 12590766728,
+        "rss_bytes": 8207761408,
+        "system_available_bytes": 70676021248,
+        "system_compressor_bytes": 2742779904,
+        "system_file_backed_bytes": 30050975744,
+        "system_free_bytes": 13948567552,
+        "system_swap_in_bytes": 56332828672,
+        "system_swap_out_bytes": 83892617216,
+        "system_swap_used_bytes": 12374114304,
+        "system_total_bytes": 137438953472,
+        "system_wired_bytes": 12477759488
+      },
+      "monitor_error": null,
+      "exception": null
+    },
+    "artifact_directory": "outputs/official_fullsong/off_direct/attempt-2",
+    "prior_attempts": [
+      {
+        "attempt": 1,
+        "status": "failed",
+        "error": "RuntimeError: AC power is required for an acceptance benchmark",
+        "receipt_path": "outputs/official_fullsong/off_direct/measurement.json",
+        "receipt_sha256": "72176fb435f5c6546a2315df5c1a98d8b51af2d2f7fbc8d77d30326c8987ef16"
+      }
+    ]
+  },
+  "official_player": "audio/fullsong/4201bc6f26587da253ca.mp3",
+  "local_player": "audio/fullsong/bc71fd78a2fb6cc3fb7e.mp3"
+}

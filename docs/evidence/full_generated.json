@@ -1,0 +1,277 @@
+{
+  "id": "full_generated",
+  "official_id": "2998556d4b082ca29c856652",
+  "title": "Comedy",
+  "genre": "Comedy",
+  "language": "en",
+  "score_mode": "generated",
+  "request": {
+    "id": "full_generated",
+    "style": "Pop genre, Happy mood, Live vocal style, Upbeat production",
+    "lyrics": "[Verse 1]\nThanksgiving morning, sun begins to gleam\nThe family's gathering, living out a dream\nTurkey in the oven, pies all lined up neat\nBut something's brewing, can't be beat\nSierra Zemke's got a story, whispers in the hall\nAbout a Jedi master, standing proud and tall\nObi-Wan in jail, the news has spread so far\nWhile Kirk Cameron's preaching, playing his guitar\n\n[Chorus]\nOh, Thanksgiving day, a feast for all to see\nWith secret farts on YouTube, for the world to agree\nJar Jar Binks is laughing, from a galaxy away\nIt's a bizarre holiday, in every single way\n\n[Verse 2]\nDinner's on the table, laughter fills the air\nGravy on the mashed potatoes, without a care\nUncle Bob tells stories, of birds that fly in jail\nAnd a gun that shot no bullets, an unbelievable tale\nWe're watching viral videos, a screen aglow and bright\nSomeone caught a moment, a comedic sight\nOf gas escaping quickly, a sound both deep and low\nAnd everyone's just giggling, because they know, they know\n\n[Chorus]\nOh, Thanksgiving day, a feast for all to see\nWith secret farts on YouTube, for the world to agree\nJar Jar Binks is laughing, from a galaxy away\nIt's a bizarre holiday, in every single way\n\n[Bridge]\nFrom Hollywood to kitchens, the strange tales intertwine\nOf movie stars and flatulence, a truly wild design\nWho knew that these odd pieces, would fit into one day?\nBut on Thanksgiving, anything can go astray\n\n[Chorus]\nOh, Thanksgiving day, a feast for all to see\nWith secret farts on YouTube, for the world to agree\nJar Jar Binks is laughing, from a galaxy away\nIt's a bizarre holiday, in every single way\n\n[Outro]\nSo pass the cranberry sauce, and don't forget the pie\nAnother year of weirdness, as the hours fly by\nHappy Thanksgiving, everyone, let the good times roll\nWith YouTube farts and Jedi tales, reaching every soul.",
+    "cot": "full",
+    "seed": 2026
+  },
+  "official_mode": "planned",
+  "source": {
+    "id": "2998556d4b082ca29c856652",
+    "order": 3,
+    "collection": "genre",
+    "title": "Comedy",
+    "genre": "Comedy",
+    "genrePath": [
+      "Comedy"
+    ],
+    "language": "en",
+    "languageLabel": "English",
+    "mode": "planned",
+    "tags": "Pop genre, Happy mood, Live vocal style, Upbeat production",
+    "lyrics": "[Verse 1]\nThanksgiving morning, sun begins to gleam\nThe family's gathering, living out a dream\nTurkey in the oven, pies all lined up neat\nBut something's brewing, can't be beat\nSierra Zemke's got a story, whispers in the hall\nAbout a Jedi master, standing proud and tall\nObi-Wan in jail, the news has spread so far\nWhile Kirk Cameron's preaching, playing his guitar\n\n[Chorus]\nOh, Thanksgiving day, a feast for all to see\nWith secret farts on YouTube, for the world to agree\nJar Jar Binks is laughing, from a galaxy away\nIt's a bizarre holiday, in every single way\n\n[Verse 2]\nDinner's on the table, laughter fills the air\nGravy on the mashed potatoes, without a care\nUncle Bob tells stories, of birds that fly in jail\nAnd a gun that shot no bullets, an unbelievable tale\nWe're watching viral videos, a screen aglow and bright\nSomeone caught a moment, a comedic sight\nOf gas escaping quickly, a sound both deep and low\nAnd everyone's just giggling, because they know, they know\n\n[Chorus]\nOh, Thanksgiving day, a feast for all to see\nWith secret farts on YouTube, for the world to agree\nJar Jar Binks is laughing, from a galaxy away\nIt's a bizarre holiday, in every single way\n\n[Bridge]\nFrom Hollywood to kitchens, the strange tales intertwine\nOf movie stars and flatulence, a truly wild design\nWho knew that these odd pieces, would fit into one day?\nBut on Thanksgiving, anything can go astray\n\n[Chorus]\nOh, Thanksgiving day, a feast for all to see\nWith secret farts on YouTube, for the world to agree\nJar Jar Binks is laughing, from a galaxy away\nIt's a bizarre holiday, in every single way\n\n[Outro]\nSo pass the cranberry sauce, and don't forget the pie\nAnother year of weirdness, as the hours fly by\nHappy Thanksgiving, everyone, let the good times roll\nWith YouTube farts and Jedi tales, reaching every soul.",
+    "abc": "X:1\nT:\nM:2/4\nL:1/32\nQ:1/4=98\nV: Vocal clef=treble name=\"Vocal Melody\" snm=\"Vocal\"\nV: Ins clef=treble name=\"Ins Melody\" snm=\"Inst.\"\nK:C\n% intro\nV: Vocal\nz12\"C\"z4|\"C\"z4e4e4d2c2|\"C\"d2c2A2c6A2G2|\"C\"z4e4e4d2c2|\nV: Ins\nZ4|\nV: Vocal\n\"C\"d2c2A2c6e4|\"C\"z4e4e4d2c2|\"C\"d2c2A2c6A2G2|\"F\"A8\"G\"c6d2|\nV: Ins\nZ4|\nV: Vocal\n\"G\"z16|\nV: Ins\nZ|\n% verse\nV: Vocal\n\"C\"z4c4c4A2c2-|\"C\"c4A4z8|\"G\"d4d2d4d4e2-|\"G\"e2d4z8z2|\nV: Ins\nZ4|\nV: Vocal\n\"Am\"z6A2e4e4|\"Am\"d2c2A4z8|\"F\"A2c4c6A2c2-|\"F\"c6z8z2|\nV: Ins\nZ4|\nV: Vocal\n\"C\"e4g4g4e2g2-|\"C\"g4e4z8|\"G\"d4d4d2c4e2-|\"G\"e2d6z8|\nV: Ins\nZ4|\nV: Vocal\n\"Am\"z6A2e4e4|\"Am\"d2c6z8|\"F\"A8c6c2-|\"F\"c2z4A2e4g2g2-|\nV: Ins\nZ4|\nV: Vocal\n\"C\"g2e6d4c2c2-|\"C\"c4A4z8|\"G\"d4d4d4c2e2-|\"G\"e2d6z6A2|\nV: Ins\nZ4|\nV: Vocal\n\"Am\"e4g2g4e6|\"Am\"d4c4z8|\"F\"A4c2c6A2c2-|\"F\"c6z8z2|\nV: Ins\nZ4|\nV: Vocal\n\"C\"e2g4g4g4a2-|\"C\"a4e2z6c2d2-|\"G\"d4d4d4c4|\"G\"e8z4c4|\nV: Ins\nZ4|\nV: Vocal\n\"Am\"e6g6e4|\"Am\"d4c4z8|\"F\"A2c4c6A2c2-|\"F\"c4z4e8|\nV: Ins\nZ4|\n% chorus\nV: Vocal\n\"C\"e8e2d4d2-|\"G\"d6z8G2|\"Am\"A4c2c6A2e2-|\"F\"e4z8G4|\nV: Ins\nZ4|\nV: Vocal\n\"C\"G4c2c6e4|\"G\"d4d4z4c2A2|\"F\"c8c2A4c2-|\"F\"c4z8z2e2-|\nV: Ins\nZ4|\nV: Vocal\n\"C\"e4g4g4e2g2-|\"G\"g4e4z4d2c2|\"Am\"d2c4c6A2e2-|\"F\"e4z6G2A2G2|\nV: Ins\nZ4|\nV: Vocal\n\"C\"c8c4A2d2-|\"G\"d4z8c4|\"F\"f8e8|d6c6c4|\nV: Ins\nZ4|\nV: Vocal\n\"C\"z4e4e4d2c2|\"C\"d2c2A2c6A2G2|\"F\"z4e4e4d2c2|\"G\"d2c2A2c6e4|\nV: Ins\nZ4|\nV: Vocal\n\"C\"z4e4e4d2c2|\"C\"d2c2A2c6A2G2|\"F\"A8c6d2-|\"G\"d4z12|\nV: Ins\nZ4|\n% verse\nV: Vocal\n\"C\"A2c4c6A2c2-|\"C\"c4A4z8|\"G\"d4d4d4c2e2-|\"G\"e2d6z6e2-|\nV: Ins\nZ4|\nV: Vocal\n\"Am\"e4g2g6e2a2-|\"Am\"a4e2d4c6|\"F\"z4A2c6A2c2-|\"F\"c4z12|\nV: Ins\nZ4|\nV: Vocal\n\"C\"e2g4g4g4g2-|\"C\"g4e4z4c2d2-|\"G\"d4d4d2c4e2-|\"G\"e2d6z4c2d2|\nV: Ins\nZ4|\nV: Vocal\n\"Am\"e4g4g4e4|\"Am\"d2c6z6G2|\"F\"A4c2c4A2c4|\"F\"c8z4g4|\nV: Ins\nZ4|\nV: Vocal\n\"C\"g4e4d4c4|\"C\"c2A2c8z2A2|\"G\"d6c2d2c4e2-|\"G\"e2d6z8|\nV: Ins\nZ4|\nV: Vocal\n\"Am\"e2g6g4e2g2-|\"Am\"g4a4z8|\"F\"z4A2c4c6|\"F\"c4z8z2c2|\nV: Ins\nZ4|\nV: Vocal\n\"C\"e4g2g4g4g2-|\"C\"g2e6z6c2|\"G\"d4d4d2c4e2-|\"G\"e2d6z6c2|\nV: Ins\nZ4|\nV: Vocal\n\"Am\"e4g2g6e4|\"Am\"d2c2c4z6G2|\"F\"A2c4c6c4|G4z4e8|\nV: Ins\nZ4|\n% chorus\nV: Vocal\n\"C\"e8e2d4d2-|\"G\"d6z8A2|\"Am\"c4c2c6A2e2-|\"F\"e4z8G4|\nV: Ins\nZ4|\nV: Vocal\n\"C\"c4c2c6e4|\"G\"d4d4z4c2A2|\"F\"c8c2A4c2-|\"F\"c4z8z2e2|\nV: Ins\nZ4|\nV: Vocal\n\"C\"e4g4g4e2g2-|\"G\"g4e4z4d2c2|\"Am\"d2c4c6A2e2-|\"F\"e4z6G2A2G2|\nV: Ins\nZ4|\nV: Vocal\n\"C\"c8c4A2d2-|\"G\"d4z8c4|\"F\"f8e8|d6c6c4|\nV: Ins\nZ4|\n% interlude\nV: Vocal\n\"C\"z16|\"C\"z16|\"C\"z16|\"C\"z12c4|\nV: Ins\nc4c4z2c4z2|c4z2c4z2c4|z4c4z2c6|c4z2c6z4|\n% bridge\nV: Vocal\n\"C\"e4g2g6e2g2-|\"C\"g2e6z6c2|\"G\"d4d4d2c4e2-|\"G\"e2d6z6c2|\nV: Ins\nZ4|\nV: Vocal\n\"Am\"e4g2g6e4|\"Am\"a4g2e6z2G2|\"F\"A2c4c6A2c2-|\"F\"c6z6e4|\nV: Ins\nZ4|\nV: Vocal\n\"C\"e4d2d4c4c2-|\"C\"c4A4z6A2|\"G\"d2d4d4d6|\"G\"e8z6c2|\nV: Ins\nZ4|\nV: Vocal\n\"Am\"e8g8|\"Am\"g2a6z8|\"F\"a2g4g6e4|a2g4g8z2|\nV: Ins\nZ4|\n% chorus\nV: Vocal\n\"C\"e8e2d4d2-|\"G\"d4z8z2A2|\"Am\"c4c2c6A2e2-|\"F\"e4z8G4|\nV: Ins\nZ4|\nV: Vocal\n\"C\"c4c2c6e4|\"G\"d4d4z4c2A2|\"F\"c8c2A4c2-|\"F\"c4z8z2e2|\nV: Ins\nZ4|\nV: Vocal\n\"C\"e4g4g4e2g2-|\"G\"g4e4z4d2c2|\"Am\"d2c4c6A2e2-|\"F\"e4z6G2A2G2|\nV: Ins\nZ4|\nV: Vocal\n\"C\"c8c4A2d2-|\"G\"d4z8c4|\"F\"f8e8|d6c6c4|\nV: Ins\nZ4|\n% outro\nV: Vocal\n\"C\"z2A2e2d2e4d2c2|\"C\"c8z8|\"F\"z2A2e2d2e4d2d2-|\"G\"d6z8z2|\nV: Ins\nZ4|\nV: Vocal\n\"C\"z2c2e2d2e4d2e2-|\"C\"e4c4z4A2G2|\"F\"A6c4c6|\"G\"d8z8|\nV: Ins\nZ4|\nV: Vocal\n\"C\"e6g4g6|\"C\"g2e6d2c2c4|\"F\"z4e2d2e4d4|\"G\"d8z4c4|\nV: Ins\nZ4|\nV: Vocal\n\"Am\"e8g8|\"Am\"g6e2d2c6|\"F\"c8z8|\"G\"d4d2e2-e4c4|\nV: Ins\nZ4|\nV: Vocal\n\"C\"c16-|\"C\"c16|\"C\"z16|\"C\"z16|\nV: Ins\nZ4|\n",
+    "abcUrl": "assets/genre/2998556d4b082ca29c856652/score.abc",
+    "audio": "assets/genre/2998556d4b082ca29c856652/2998556d4b082ca29c856652_music.mp3",
+    "scoreAudio": "assets/genre/2998556d4b082ca29c856652/2998556d4b082ca29c856652_score.mp3",
+    "sheets": [
+      "assets/genre/2998556d4b082ca29c856652/sheet_01.svg",
+      "assets/genre/2998556d4b082ca29c856652/sheet_02.svg",
+      "assets/genre/2998556d4b082ca29c856652/sheet_03.svg",
+      "assets/genre/2998556d4b082ca29c856652/sheet_04.svg",
+      "assets/genre/2998556d4b082ca29c856652/sheet_05.svg",
+      "assets/genre/2998556d4b082ca29c856652/sheet_06.svg"
+    ]
+  },
+  "official_audio_url": "https://map-yue2.github.io/assets/genre/2998556d4b082ca29c856652/2998556d4b082ca29c856652_music.mp3",
+  "official_audio_path": "outputs/official_fullsong/reference/2998556d4b082ca29c856652.mp3",
+  "official_audio_sha256": "221f7f7e55a1fab9adf0a9e7891b6d47eeeaf05bc132436ce4a4cb19285e2cca",
+  "official_seconds": 204.88,
+  "input_hashes": {
+    "style": "70604881f6fc967ee25f94c5602e458a139ae0f1d954bcec6518f8c6cae505cb",
+    "lyrics": "ceddf1fcf7f603ce103bb0f2e8da3b2f7524b9b141b3005c958f5d3d065c80d5"
+  },
+  "measurement": {
+    "id": "full_generated",
+    "status": "complete",
+    "case_sha256": "72df4bb21da03afede40459e879fbfc99af8fb70b5af98cceb9358134aaf3b86",
+    "truncated": {
+      "abc": false,
+      "semantic": false
+    },
+    "audio_seconds": 209.91866666666667,
+    "official_seconds": 204.88,
+    "duration_ratio": 1.0245932578419887,
+    "e2e_seconds": 504.1577927910257,
+    "rtf": 2.401681569326973,
+    "speed_multiplier": 0.4163749319524618,
+    "load_seconds": 5.259764832968358,
+    "transcription_seconds": 0,
+    "save_seconds": 0.6404737089760602,
+    "timing": {
+      "abc": {
+        "seconds": 44.032045375031885,
+        "prefill_seconds": 0.2251760830404237,
+        "ttft_seconds": 0.22886995802400634,
+        "output_tokens": 2627,
+        "content_tokens": 2626,
+        "output_tps": 59.66109404242268,
+        "prefix_tokens": 497,
+        "cfg_branches": 1,
+        "execution": "eager",
+        "attention": "sdpa",
+        "backend": "mlx"
+      },
+      "semantic": {
+        "seconds": 84.81278020801255,
+        "prefill_seconds": 1.7360337499994785,
+        "ttft_seconds": 1.7377602080232464,
+        "output_tokens": 5249,
+        "content_tokens": 5248,
+        "output_tps": 61.88925757564199,
+        "prefix_tokens": 3125,
+        "cfg_branches": 1,
+        "execution": "eager",
+        "attention": "sdpa",
+        "backend": "mlx"
+      },
+      "nar_seconds": 356.23452941601863,
+      "vae_seconds": 13.093939333048183,
+      "load": {
+        "resolve_conversion_integrity_seconds": 5.259697625006083,
+        "ar_load_events_seconds": [
+          0.12291249999543652
+        ],
+        "ar_load_seconds": 0.12291249999543652,
+        "conditioning_load_events_seconds": [
+          0.20717633399181068
+        ],
+        "conditioning_load_seconds": 0.20717633399181068,
+        "nar_load_events_seconds": [
+          0.1273670409573242
+        ],
+        "nar_load_seconds": 0.1273670409573242,
+        "vae_load_events_seconds": [
+          0.10023258399451151
+        ],
+        "vae_load_seconds": 0.10023258399451151
+      },
+      "e2e_seconds": 498.31734858301934
+    },
+    "configuration": {
+      "generation": {
+        "abc": {
+          "temperature": 0.7,
+          "top_p": 0.9,
+          "top_k": 30,
+          "repetition_penalty": 1.005,
+          "penalty_window": 100,
+          "min_tokens": 32,
+          "max_tokens": 4096
+        },
+        "semantic": {
+          "temperature": 1.0,
+          "top_p": 0.95,
+          "top_k": 100,
+          "repetition_penalty": 1.2,
+          "penalty_window": 50,
+          "min_tokens": 200,
+          "max_tokens": 9000
+        },
+        "ode_steps": 32,
+        "ode_method": "midpoint",
+        "context": 24576,
+        "version": "yue2-native-v1"
+      },
+      "overrides": {},
+      "cot": "full",
+      "cfg_scale": 1.0,
+      "cfg_negative": "same_instruction_and_exact_abc",
+      "backend": "mlx",
+      "quantization": "8bit",
+      "model_dtype": "bfloat16",
+      "vae_dtype": "float32",
+      "vae_decode": "halo_crop",
+      "vae_core_frames": 256,
+      "vae_halo_frames": 16,
+      "device": "DeviceType.gpu",
+      "memory_budget_gib": 16.0,
+      "offload_ar": false,
+      "runtime_sha256": "ff4829d01380a2ac98fbc0aa0aed90f9b2bbe9c0a3473f1d62ed8ee3abc8efa9",
+      "decoder_release": "standard",
+      "validation_status": "unvalidated",
+      "vae_backend": "mlx",
+      "ar_precision": "8bit",
+      "kv_dtype": "bfloat16",
+      "nar_dtype": "bfloat16",
+      "conditioning_precision": "bf16",
+      "attention_opmath": "float32",
+      "mlx_tf32_enabled": false,
+      "attention_inputs": "native_steel_bfloat16",
+      "query_chunk_size": 256,
+      "runtime": {
+        "lyra-yue2": "0.1.0",
+        "mlx": "0.32.2",
+        "mlx-lm": "0.31.3",
+        "transformers": "5.0.0",
+        "numpy": "2.2.6",
+        "python": "3.12.10",
+        "macos": "27.0"
+      },
+      "upstream_commit": "92a73cc7652fcc1f937855e4b765e0a0edd7ff2e",
+      "execution_guard": "GPUExecution",
+      "rng": {
+        "ar": "request_local_mlx",
+        "acoustic": "numpy_pcg64_fp32_full_song_v1"
+      }
+    },
+    "identity": "5a8691af20b1d67888c9786f71fae99740b711fd612538cfc7fcafb58f0348da",
+    "audio_sha256": "f9764eca715115d42d63fbc7e0872f565e6f4780911252efd551a7cfb24050d4",
+    "result_sha256": "80a6d4b4f7e5a3c037b42237c583a35f632203facbe90473ad5a2449911f4566",
+    "audio_quality": {
+      "sample_rate": 48000,
+      "channels": 2,
+      "finite": true,
+      "rms": 0.15009467599607557,
+      "peak": 0.9160799980163574,
+      "clipping_fraction": 0.0
+    },
+    "musical_quality_acceptance": "pending human listening; not established by duration or EOS",
+    "resources": {
+      "memory_counter_schema": 2,
+      "swap_counter_source": "host_statistics64.swapins/swapouts",
+      "sampling_interval_seconds": 0.1,
+      "power_sampling_interval_seconds": 5.0,
+      "metadata": {},
+      "power_start": {
+        "ac_connected": true,
+        "pmset": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=37224547)\t95%; AC attached; not charging present: true"
+      },
+      "power_end": {
+        "ac_connected": true,
+        "pmset": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=37224547)\t95%; AC attached; not charging present: true"
+      },
+      "start": {
+        "elapsed_seconds": 0.011119750037323684,
+        "rss_bytes": 51658752,
+        "system_swap_used_bytes": 12382502912,
+        "system_swap_in_bytes": 56330141696,
+        "system_swap_out_bytes": 83892617216,
+        "system_available_bytes": 63983616000,
+        "system_total_bytes": 137438953472,
+        "system_memory_pressure_level": 1,
+        "system_free_bytes": 2658271232,
+        "system_wired_bytes": 8259878912,
+        "system_compressor_bytes": 2903408640,
+        "system_file_backed_bytes": 35047292928,
+        "physical_footprint_bytes": 31785680,
+        "process_lifetime_peak_footprint_bytes": 31785680,
+        "mlx_active_bytes": 0,
+        "mlx_cache_bytes": 0,
+        "mlx_peak_bytes": 0,
+        "ac_connected": true
+      },
+      "end": {
+        "elapsed_seconds": 504.8804157920531,
+        "rss_bytes": 1056571392,
+        "system_swap_used_bytes": 12382502912,
+        "system_swap_in_bytes": 56331911168,
+        "system_swap_out_bytes": 83892617216,
+        "system_available_bytes": 68778950656,
+        "system_total_bytes": 137438953472,
+        "system_memory_pressure_level": 1,
+        "system_free_bytes": 10470260736,
+        "system_wired_bytes": 7700496384,
+        "system_compressor_bytes": 2761113600,
+        "system_file_backed_bytes": 34686304256,
+        "physical_footprint_bytes": 1373898888,
+        "process_lifetime_peak_footprint_bytes": 12140796600,
+        "mlx_active_bytes": 8,
+        "mlx_cache_bytes": 0,
+        "mlx_peak_bytes": 11256150230,
+        "ac_connected": true
+      },
+      "sampled_maxima": {
+        "mlx_active_bytes": 11196718142,
+        "mlx_cache_bytes": 267354112,
+        "mlx_peak_bytes": 11256150230,
+        "physical_footprint_bytes": 12018440888,
+        "process_lifetime_peak_footprint_bytes": 12140796600,
+        "rss_bytes": 8189100032,
+        "system_available_bytes": 70283558912,
+        "system_compressor_bytes": 2903949312,
+        "system_file_backed_bytes": 35142369280,
+        "system_free_bytes": 12560564224,
+        "system_swap_in_bytes": 56331911168,
+        "system_swap_out_bytes": 83892617216,
+        "system_swap_used_bytes": 12382502912,
+        "system_total_bytes": 137438953472,
+        "system_wired_bytes": 11424907264
+      },
+      "monitor_error": null,
+      "exception": null
+    },
+    "artifact_directory": "outputs/official_fullsong/full_generated",
+    "prior_attempts": []
+  },
+  "official_player": "audio/fullsong/221f7f7e55a1fab9adf0.mp3",
+  "local_player": "audio/fullsong/f9764eca715115d42d63.mp3",
+  "actual_score": "X:1\nT:\nM:4/4\nL:1/32\nQ:1/4=186\nV: Vocal clef=treble name=\"Vocal Melody\" snm=\"Vocal\"\nV: Ins clef=treble name=\"Ins Melody\" snm=\"Inst.\"\nK:D\n% intro\nV: Vocal\nz24z4\"D\"z4|\"D\"z32|\"A\"z32|\"Bm\"z32|\nV: Ins\nZ|z8d'8d'4e'4f'4a'4|z16f'8e'8|d'8b8d'4e'4f'4b4|\nV: Vocal\n\"G\"z32|\"D\"z32|\"A\"z32|\"Bm\"z32|\nV: Ins\nZ|z8d'8d'4e'4f'4a'4|z16f'8e'8|d'8b8d'4e'4f'4b4|\nV: Vocal\n\"G\"z32|\nV: Ins\nZ|\n% verse\nV: Vocal\n\"D\"z8d8d4A8A4-|\"A\"A4F8z16z4|\"Bm\"B8B4B8A8F4-|\"G\"F8z24|\nV: Ins\nf8z24|Z3|\nV: Vocal\n\"D\"z8d4d8A8A4-|\"A\"A4F4E8z16|\"Bm\"B4d8d8e8d4-|\"G\"d12z16f4-|\nV: Ins\nZ4|\nV: Vocal\n\"D\"f4f8f8e8e4-|\"A\"e4d12z12f4-|\"Bm\"f4f8f8d8B4-|\"G\"B8z24|\nV: Ins\nZ4|\nV: Vocal\n\"D\"z8d8d4A8A4-|\"A\"A4F8z16z4|\"Bm\"B16d12d4-|\"G\"d4z8B4d4B8d4-|\nV: Ins\nZ4|\nV: Vocal\n\"D\"d4B8d8B8d4-|\"A\"d4B8z16f4-|\"Bm\"f4e8e8d8B4-|\"G\"B8z16z4A4|\nV: Ins\nZ4|\nV: Vocal\n\"D\"d4B8d8B8d4-|\"A\"d4B8z16f4-|\"Bm\"f4e8e8d8d4-|\"G\"d8z16z4a4-|\nV: Ins\nZ4|\nV: Vocal\n\"D\"a4f8f8e8e4-|\"A\"e12z12d4a4-|\"Bm\"a4f8f8e8e4|\"G\"d16z12f4-|\nV: Ins\nZ4|\nV: Vocal\n\"D\"f4f8f8e8e4-|\"A\"e4d12z16|\"Bm\"f4f8f8d8d4-|\"G\"d12z4e16|\nV: Ins\nZ4|\n% chorus\nV: Vocal\n\"D\"f16a4f8e4-|\"A\"e8z16d4f4-|\"Bm\"f8e4f8d8B4-|\"G\"B8z16A8|\nV: Ins\nZ4|\nV: Vocal\n\"D\"f8f8a8f8|\"A\"e8d12d4d4f4-|\"Bm\"f12z4f4d8d4-|\"G\"d8z16z4f4-|\nV: Ins\nZ4|\nV: Vocal\n\"D\"f4f8f8e8e4-|\"A\"e4d12z4d4d4a4-|\"Bm\"a4f8f8e8e4|\"G\"d16z8A8|\nV: Ins\nZ4|\nV: Vocal\n\"D\"f4f4f8a4f8e4-|\"A\"e12z12d4f4-|\"Bm\"f8e8f4d8d4-|\"G\"d12z16z4|\nV: Ins\nZ4|\n% verse\nV: Vocal\n\"D\"d4d8d8A8A4-|\"A\"A4F8z16z4|\"Bm\"B8A4B8A8F4-|\"G\"F8z16z4d4-|\nV: Ins\nZ4|\nV: Vocal\n\"D\"d4d8d12A4A4-|\"A\"A8F4A8B12|\"Bm\"z8d4d8e8d4-|\"G\"d12z16f4|\nV: Ins\nZ4|\nV: Vocal\n\"D\"f4f8f8e8e4-|\"A\"e4d12z8d4f4-|\"Bm\"f8f4f8d8B4-|\"G\"B12z8d4d4f4-|\nV: Ins\nZ4|\nV: Vocal\n\"D\"f4f8f8e8e4|\"A\"d8z16d4f4-|\"Bm\"f8f4f8d4d4d4-|\"G\"d8z16d8|\nV: Ins\nZ4|\nV: Vocal\n\"D\"d4B8d8B8d4|\"A\"B4A12z8A4f4-|\"Bm\"f8e4e8d8B4-|\"G\"B8z24|\nV: Ins\nZ4|\nV: Vocal\n\"D\"d4B8d12B4d4-|\"A\"d4B8z16f4-|\"Bm\"f8e4e8d8d4-|\"G\"d12z12d4a4-|\nV: Ins\nZ4|\nV: Vocal\n\"D\"a8f4f8e8e4-|\"A\"e4d12z8d4a4-|\"Bm\"a4f8f8e8e4|\"G\"d16z8d4f4-|\nV: Ins\nZ4|\nV: Vocal\n\"D\"f4f8f8e8e4|\"A\"d4d12z8d4f4-|\"Bm\"f8f8f8f8|\"G\"f16e16|\nV: Ins\nZ4|\n% chorus\nV: Vocal\n\"D\"f16a4f8e4-|\"A\"e12z12d4f4-|\"Bm\"f8f4f8d8B4-|\"G\"B8z16A8|\nV: Ins\nZ4|\nV: Vocal\n\"D\"f8f8a8f8|\"A\"e8d12d4d4f4-|\"Bm\"f12z4f4d8d4-|\"G\"d12z16f4-|\nV: Ins\nZ4|\nV: Vocal\n\"D\"f4f8f8e8e4-|\"A\"e4d12z4d4d4a4-|\"Bm\"a4f8f8e8e4|\"G\"d16z8A8|\nV: Ins\nZ4|\nV: Vocal\n\"D\"f4f4f8a4f8e4-|\"A\"e12z12d4f4-|\"Bm\"f8f8f4d8d4-|\"G\"d12z12d8|\nV: Ins\nZ4|\n% bridge\nV: Vocal\n\"D\"d4B8d12B4d4-|\"A\"d4B8z12A4f4-|\"Bm\"f8e8e4d8B4-|\"G\"B8z16z4A4|\nV: Ins\nZ4|\nV: Vocal\n\"D\"d4B8d12B4d4-|\"A\"d4B4A8z12A4|\"Bm\"f8e4e12d4d4-|\"G\"d12z12a8|\nV: Ins\nZ4|\nV: Vocal\n\"D\"a4f8f8e8e4-|\"A\"e4d12z8d8|\"Bm\"a4f8f8e8e4|\"G\"d16z8d4f4|\nV: Ins\nZ4|\nV: Vocal\n\"D\"f16f16|\"A\"f4e12f4e8f4-|\"Bm\"f8f8f8f8|\"G\"f32|\nV: Ins\nZ4|\nV: Vocal\n\"G\"e32|\nV: Ins\nZ|\n% chorus\nV: Vocal\n\"D\"f16a4f8e4-|\"A\"e8z16d4f4-|\"Bm\"f8f4f8d8B4-|\"G\"B8z16A8|\nV: Ins\nZ4|\nV: Vocal\n\"D\"f8f8a8f8|\"A\"e8d12d4d4f4-|\"Bm\"f12z4f4d8d4-|\"G\"d8z16z4f4|\nV: Ins\nZ4|\nV: Vocal\n\"D\"f4f8f8e8e4-|\"A\"e4d12z4d4d4a4-|\"Bm\"a4f8f8e8e4|\"G\"d16z8A8|\nV: Ins\nZ4|\nV: Vocal\n\"D\"f4f4f8a4f8e4-|\"A\"e12z12d4f4-|\"Bm\"f8f8f4d8d4-|\"G\"d8z16d8|\nV: Ins\nZ4|\n% outro\nV: Vocal\n\"D\"d8B4d8d4B4d4-|\"A\"d8z16d4f4-|\"Bm\"f8e4e8d8B4-|\"G\"B8z16z4A4|\nV: Ins\nZ4|\nV: Vocal\n\"D\"d4B8d12B4d4-|\"A\"d4B8z12A4A4|\"Bm\"f12e8d12|\"G\"d16z16|\nV: Ins\nZ4|\nV: Vocal\n\"D\"a12f8e8e4|\"A\"d4d12d4d4d8|\"Bm\"a8f4f8e12|\"G\"e4d16z4d8|\nV: Ins\nZ4|\nV: Vocal\n\"D\"f8f8f8e8|\"A\"e4d8d16z4|\"Bm\"f16f16|\"G\"f16f16|\nV: Ins\nZ4|\nV: Vocal\n\"D\"f32|\"A\"e32|\"Bm\"d32-|\"G\"d32|\nV: Ins\nZ4|\nV: Vocal\n\"D\"z32|\"A\"z32|\"Bm\"z32|\"G\"z32|\nV: Ins\nz8d'4z4d'4e'4f'4a'4|z16f'8e'8|d'8b8d'4e'4f'4b4|Z|\nV: Vocal\n\"D\"z32|\"D\"z32|\nV: Ins\nd'32|Z|\n"
+}

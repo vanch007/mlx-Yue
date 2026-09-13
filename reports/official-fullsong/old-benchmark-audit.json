@@ -1,0 +1,123 @@
+[
+  {
+    "path": "outputs/genre_explorer/ko_emo/result.json",
+    "audio_seconds": 31.998666666666665,
+    "truncated": {
+      "abc": false,
+      "semantic": true
+    },
+    "request_lyrics_chars": 709,
+    "cot": "melody",
+    "max_tokens": 800
+  },
+  {
+    "path": "outputs/genre_explorer/ru_folktronica/result.json",
+    "audio_seconds": 31.998666666666665,
+    "truncated": {
+      "abc": false,
+      "semantic": true
+    },
+    "request_lyrics_chars": 525,
+    "cot": "melody",
+    "max_tokens": 800
+  },
+  {
+    "path": "outputs/genre_explorer/ja_easy_listening/result.json",
+    "audio_seconds": 31.998666666666665,
+    "truncated": {
+      "abc": false,
+      "semantic": true
+    },
+    "request_lyrics_chars": 440,
+    "cot": "melody",
+    "max_tokens": 800
+  },
+  {
+    "path": "outputs/genre_explorer/en_rock_and_roll/result.json",
+    "audio_seconds": 31.998666666666665,
+    "truncated": {
+      "abc": false,
+      "semantic": true
+    },
+    "request_lyrics_chars": 685,
+    "cot": "melody",
+    "max_tokens": 800
+  },
+  {
+    "path": "outputs/genre_explorer/es_flamenco/result.json",
+    "audio_seconds": 31.998666666666665,
+    "truncated": {
+      "abc": false,
+      "semantic": true
+    },
+    "request_lyrics_chars": 1776,
+    "cot": "melody",
+    "max_tokens": 800
+  },
+  {
+    "path": "outputs/genre_explorer/zh_randb/result.json",
+    "audio_seconds": 31.998666666666665,
+    "truncated": {
+      "abc": false,
+      "semantic": true
+    },
+    "request_lyrics_chars": 614,
+    "cot": "melody",
+    "max_tokens": 800
+  },
+  {
+    "path": "outputs/acceptance_modes_benchmark/full_generated/result.json",
+    "audio_seconds": 31.998666666666665,
+    "truncated": {
+      "abc": false,
+      "semantic": true
+    },
+    "request_lyrics_chars": 1809,
+    "cot": "full",
+    "max_tokens": 800
+  },
+  {
+    "path": "outputs/acceptance_modes_benchmark/melody_supplied/result.json",
+    "audio_seconds": 31.998666666666665,
+    "truncated": {
+      "abc": false,
+      "semantic": true
+    },
+    "request_lyrics_chars": 238,
+    "cot": "melody",
+    "max_tokens": 800
+  },
+  {
+    "path": "outputs/acceptance_modes_benchmark/melody_generated/result.json",
+    "audio_seconds": 31.998666666666665,
+    "truncated": {
+      "abc": false,
+      "semantic": true
+    },
+    "request_lyrics_chars": 614,
+    "cot": "melody",
+    "max_tokens": 800
+  },
+  {
+    "path": "outputs/acceptance_modes_benchmark/off_direct/result.json",
+    "audio_seconds": 31.998666666666665,
+    "truncated": {
+      "abc": false,
+      "semantic": true
+    },
+    "request_lyrics_chars": 634,
+    "cot": "off",
+    "max_tokens": 800
+  },
+  {
+    "path": "outputs/acceptance_modes_benchmark/full_supplied/result.json",
+    "audio_seconds": 31.998666666666665,
+    "truncated": {
+      "abc": false,
+      "semantic": true
+    },
+    "request_lyrics_chars": 440,
+    "cot": "full",
+    "max_tokens": 800
+  }
+]

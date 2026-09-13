@@ -1,0 +1,271 @@
+{
+  "id": "ko_score",
+  "official_id": "df64fef4d0ba5a18670f6c19",
+  "title": "Emo",
+  "genre": "Emo",
+  "language": "ko",
+  "score_mode": "supplied",
+  "request": {
+    "id": "ko_score",
+    "style": "A melancholic yet energetic Emo Hip-hop track with Pop Punk influences. Heavy distorted electric guitar riffs combined with fast-paced trap drum beats (808 bass, crisp snare). Dark, emotional, and cinematic atmosphere. Melodic Rap beat featuring a lonely acoustic guitar intro transitioning into an explosive chorus with heavy rock guitars. Deep, distorted 808 bass and sharp hi-hats. Sad, longing melody. Fast-paced Emo Rock and Hip-hop fusion. High-energy electric guitar loops, upbeat but sad melody, 140 BPM ~ 160 BPM, driving drum rhythm. A female vocal with a husky, raspy tone and heavy auto-tune. The singing style is emotional melodic rap. Add high reverb to create a lonely, atmospheric vibe. The voice should sound raw yet polished with metallic pitch correction.",
+    "lyrics": "[Verse 1]\n늦은 밤 텅 빈 버스 안\n창문에 비친 너와 내 얼굴\n목적지는 아직 안 정해도\n너만 있으면 되는 것 같아\n\n[Pre-Chorus]\n사실 난 겁이 많아서\n길을 잃을까 봐 두려워\n근데 네 손 한 번만 잡으면\n지도 따윈 필요 없을 것 같아 (알잖아)\n\n[Chorus]\n나랑 어디든 간다고 해줘\n길 끝이 어딘지 몰라도\n나와 어디든 좋다고 해줘\n창문 밖 풍경은 변해도\n나만 있으면 그 어디든 괜찮다고\n작게라도 말해줘\n그 한마디면 돼\n\n[Verse 2]\n비 오는 빨래 냄새 나는 골목\n우산 하나 나눠 쓰는 우리\n비틀비틀 맞지 않는 보폭도\n웃으면서 맞춰 가는 게 좋아\n\n[Pre-Chorus]\n가끔은 말이 안 통해도\n표정만 봐도 다 알잖아\n서툰 얘길 이어 붙이다가\n그냥 네 이름만 부르게 돼 (왜 이렇게)\n\n[Chorus]\n나랑 어디든 간다고 해줘\n길 끝이 어딘지 몰라도\n나와 어디든 좋다고 해줘\n창문 밖 풍경은 변해도\n나만 있으면 그 어디든 괜찮다고\n조용하게 말해줘\n그 한마디면 돼\n내일도 난 버틸 수 있어\n\n[Bridge]\n약속 같은 건 없어도\n네 옆에 서 있는 지금이\n나에게는 다야\n멀리 안 가도 좋아\n편의점 앞 구석자리라도\n너면 돼 너면 돼 (너면 돼)\n\n[Chorus]\n나랑 어디든 간다고 해줘\n잠깐 밖에 못 나가도\n나와 어디든 좋다고 해줘\n네 방 안 좁은 소파여도\n나만 있으면 그 어디든 괜찮다고\n다시 한 번 말해줘\n그 한마디 듣고\n영원까지 걸어가 볼래",
+    "cot": "full",
+    "seed": 2026,
+    "abc": "X:1\nT:\nM:4/4\nL:1/16\nQ:1/4=170\nV: Vocal clef=treble name=\"Vocal Melody\" snm=\"Vocal\"\nV: Ins clef=treble name=\"Ins Melody\" snm=\"Inst.\"\nK:Bb\n% intro\nV: Vocal\nz4B2B2B4f4|\"Eb\"f4d4d4c4|\"Eb\"c4B2B2B4f4|\"Gm\"f2d2d2d2d4c4|\nV: Ins\nZ4|\nV: Vocal\n\"Gm\"z4B2B2B2B2B2B2|\"Eb\"f4d2d4c2c4|\"Eb\"BzB6A4B2B2|\"Gm\"A4A2A4B4B2-|\nV: Ins\nZ4|\nV: Vocal\n\"Gm\"B4z12|\nV: Ins\nZ|\n% verse\nV: Vocal\n\"Eb\"z2B2d2d2d2c2c2c2-|\"Eb\"c2B6z8|\"Gm\"z2B2d2d2d2c2c2c2-|\"Gm\"c2B4B4B2B2B2|\nV: Ins\nZ4|\nV: Vocal\n\"Eb\"f4d2d4c4c2-|\"Eb\"c2B4B4z2B2B2|\"Gm\"f4d2d4c4c2-|\"Gm\"c2d4c4B4B2-|\nV: Ins\nZ4|\nV: Vocal\n\"Eb\"B2z6f8|\"Eb\"d8c8|\"F\"z16|\nV: Ins\nZ3|\n% chorus\nV: Vocal\nz2b2b2b2b2b2f'4|\"Eb\"f'2d'zd'4d'4c'4|\"Eb\"z2b2b2b2b2b2f'4|\"Gm\"f'4d'4d'4c'4|\nV: Ins\nZ4|\nV: Vocal\n\"Gm\"z2b2b2b2b2b2f'4|\"F\"f'4d'4d'4c'4|\"F\"z2b2b2b2b2b2f'4|\"Dm\"f'6a6b4-|\nV: Ins\nZ4|\nV: Vocal\n\"Dm\"b2z6d'2d'2d'2d'2-|\"Eb\"d'2c'zc'4d'2d'2d'2d'2-|\"Eb\"d'2c'4c'4b6|\"Gm\"d'4c'4d'4c'2d'2-|\nV: Ins\nZ4|\nV: Vocal\n\"Gm\"d'2c'4c'4b6|\"F\"a16|\"F\"f16|\"Dm\"z8d4d4|\nV: Ins\nZ4|\nV: Vocal\n\"Dm\"e6d6B4|\nV: Ins\nZ|\n% verse\nV: Vocal\n\"Eb\"z2B2d2d2d2c2c2c2|\"Eb\"c2B2B4B4z4|\"Gm\"d2d2d2d2d2c2c2c2|\"Gm\"c4d4z8|\nV: Ins\nZ4|\nV: Vocal\n\"Eb\"d2d2d2d2d2c2c2c2|\"Eb\"c4B4B4B2B2|\"Gm\"d4d2d4c4e2-|\"Gm\"e2d4d2c4B4|\nV: Ins\nZ4|\nV: Vocal\n\"Eb\"z2f2f2f2f2f2f2g2-|\"Eb\"g2d4d6c4|\"Gm\"z2f2f2f2f2f2f2g2-|\"Gm\"g2d4d6c4|\nV: Ins\nZ4|\nV: Vocal\n\"Eb\"z4f2f2f2f2f2f2|\"Eb\"g4d2d4c4c2|\"Gm\"d4d4d4d4|\"Gm\"e4d4c4B4|\nV: Ins\nZ4|\nV: Vocal\nz8B4z4|\nV: Ins\nZ|\n% chorus\nV: Vocal\nz2b2b2b2b2b2f'4|\"Eb\"f'4d'4d'4c'4|\"Eb\"z2b2b2b2b2b2f'4|\"Gm\"f'4d'4d'4c'4|\nV: Ins\nZ4|\nV: Vocal\n\"Gm\"z2b2b2b2b2b2f'4|\"F\"f'4d'4d'4c'4|\"F\"z2b2b2b2b2b2f'4|\"Dm\"f'6a6b4-|\nV: Ins\nZ4|\nV: Vocal\n\"Dm\"b4z4d'2d'2d'2d'2-|\"Eb\"d'2c'zc'4d'2d'2d'2d'2-|\"Eb\"d'2c'4c'4b6|\"Gm\"d'4c'4d'4c'2d'2-|\nV: Ins\nZ4|\nV: Vocal\n\"Gm\"d'2c'4c'4b6|\"F\"a16|\"F\"f16|\"Dm\"z8d4d4|\nV: Ins\nZ4|\nV: Vocal\n\"Dm\"e6d6B4|\nV: Ins\nZ|\n% bridge\nV: Vocal\n\"Eb\"z16|\"Eb\"f6d6c4-|\"Gm\"c4z8B4|\"Gm\"f4f2d4c2c4-|\nV: Ins\nZ4|\nV: Vocal\n\"F\"c4z12|\"F\"z16|\"F\"z16|\"F\"z16|\nV: Ins\nz4A2A2A2A2A2A2|A2A2A2A2A2A2A2A2|A2A2A2A2A2A2A2A2|A2A2A2A2A2A2A2c2|\nV: Vocal\n\"Eb\"z4f4f4f4|\"Eb\"f4d4c4B4|\"Gm\"B4f4f4f4|\"Gm\"f4d4c4B4|\nV: Ins\nZ4|\nV: Vocal\n\"F\"B4c12-|\"F\"c16-|\"F\"c16-|\"F\"c2b2b2b2b2b2f'4|\nV: Ins\nZ4|\n% chorus\nV: Vocal\n\"Eb\"f'2d'zd'4d'4c'4|\"Eb\"z2b2b2b2b2b2f'4|\"Gm\"f'2d'zd'4d'4c'4|\"Gm\"z2b2b2b2b2b2f'4|\nV: Ins\nZ4|\nV: Vocal\n\"F\"f'4d'4d'4c'4|\"F\"z2b2b2b2b2b2f'4|\"Dm\"f'6a6b4-|\"Dm\"b2z6d'2d'2d'2d'2-|\nV: Ins\nZ4|\nV: Vocal\n\"Eb\"d'2c'zc'4d'2d'2d'2d'2-|\"Eb\"d'2c'4c'4b6|\"Gm\"d'4c'4d'4c'2d'2-|\"Gm\"d'2c'4c'4b6|\nV: Ins\nZ4|\nV: Vocal\n\"F\"a16|\"F\"f16|\"Dm\"z8d4d4|\"Dm\"e6d6B4|\nV: Ins\nZ4|\n% outro\nV: Vocal\n\"Eb\"z16|\"Eb\"z16|\"Gm\"z12d2d2|\"Gm\"d2d2d2d2e4d4|\nV: Ins\nB2B2B2B2B2B2B2B2|B2B2B2B2B2B2B2B2|G2G2G2G2G2B2z4|Z|\nV: Vocal\n\"F\"d4c12-|\"F\"c16-|\"F\"c16-|\"F\"c4z4z8|\nV: Ins\nZ4|\n"
+  },
+  "official_mode": "planned",
+  "source": {
+    "id": "df64fef4d0ba5a18670f6c19",
+    "order": 74,
+    "collection": "genre",
+    "title": "Emo",
+    "genre": "Emo",
+    "genrePath": [
+      "Punk",
+      "Emo"
+    ],
+    "language": "ko",
+    "languageLabel": "Korean",
+    "mode": "planned",
+    "tags": "A melancholic yet energetic Emo Hip-hop track with Pop Punk influences. Heavy distorted electric guitar riffs combined with fast-paced trap drum beats (808 bass, crisp snare). Dark, emotional, and cinematic atmosphere. Melodic Rap beat featuring a lonely acoustic guitar intro transitioning into an explosive chorus with heavy rock guitars. Deep, distorted 808 bass and sharp hi-hats. Sad, longing melody. Fast-paced Emo Rock and Hip-hop fusion. High-energy electric guitar loops, upbeat but sad melody, 140 BPM ~ 160 BPM, driving drum rhythm. A female vocal with a husky, raspy tone and heavy auto-tune. The singing style is emotional melodic rap. Add high reverb to create a lonely, atmospheric vibe. The voice should sound raw yet polished with metallic pitch correction.",
+    "lyrics": "[Verse 1]\n늦은 밤 텅 빈 버스 안\n창문에 비친 너와 내 얼굴\n목적지는 아직 안 정해도\n너만 있으면 되는 것 같아\n\n[Pre-Chorus]\n사실 난 겁이 많아서\n길을 잃을까 봐 두려워\n근데 네 손 한 번만 잡으면\n지도 따윈 필요 없을 것 같아 (알잖아)\n\n[Chorus]\n나랑 어디든 간다고 해줘\n길 끝이 어딘지 몰라도\n나와 어디든 좋다고 해줘\n창문 밖 풍경은 변해도\n나만 있으면 그 어디든 괜찮다고\n작게라도 말해줘\n그 한마디면 돼\n\n[Verse 2]\n비 오는 빨래 냄새 나는 골목\n우산 하나 나눠 쓰는 우리\n비틀비틀 맞지 않는 보폭도\n웃으면서 맞춰 가는 게 좋아\n\n[Pre-Chorus]\n가끔은 말이 안 통해도\n표정만 봐도 다 알잖아\n서툰 얘길 이어 붙이다가\n그냥 네 이름만 부르게 돼 (왜 이렇게)\n\n[Chorus]\n나랑 어디든 간다고 해줘\n길 끝이 어딘지 몰라도\n나와 어디든 좋다고 해줘\n창문 밖 풍경은 변해도\n나만 있으면 그 어디든 괜찮다고\n조용하게 말해줘\n그 한마디면 돼\n내일도 난 버틸 수 있어\n\n[Bridge]\n약속 같은 건 없어도\n네 옆에 서 있는 지금이\n나에게는 다야\n멀리 안 가도 좋아\n편의점 앞 구석자리라도\n너면 돼 너면 돼 (너면 돼)\n\n[Chorus]\n나랑 어디든 간다고 해줘\n잠깐 밖에 못 나가도\n나와 어디든 좋다고 해줘\n네 방 안 좁은 소파여도\n나만 있으면 그 어디든 괜찮다고\n다시 한 번 말해줘\n그 한마디 듣고\n영원까지 걸어가 볼래",
+    "abc": "X:1\nT:\nM:4/4\nL:1/16\nQ:1/4=170\nV: Vocal clef=treble name=\"Vocal Melody\" snm=\"Vocal\"\nV: Ins clef=treble name=\"Ins Melody\" snm=\"Inst.\"\nK:Bb\n% intro\nV: Vocal\nz4B2B2B4f4|\"Eb\"f4d4d4c4|\"Eb\"c4B2B2B4f4|\"Gm\"f2d2d2d2d4c4|\nV: Ins\nZ4|\nV: Vocal\n\"Gm\"z4B2B2B2B2B2B2|\"Eb\"f4d2d4c2c4|\"Eb\"BzB6A4B2B2|\"Gm\"A4A2A4B4B2-|\nV: Ins\nZ4|\nV: Vocal\n\"Gm\"B4z12|\nV: Ins\nZ|\n% verse\nV: Vocal\n\"Eb\"z2B2d2d2d2c2c2c2-|\"Eb\"c2B6z8|\"Gm\"z2B2d2d2d2c2c2c2-|\"Gm\"c2B4B4B2B2B2|\nV: Ins\nZ4|\nV: Vocal\n\"Eb\"f4d2d4c4c2-|\"Eb\"c2B4B4z2B2B2|\"Gm\"f4d2d4c4c2-|\"Gm\"c2d4c4B4B2-|\nV: Ins\nZ4|\nV: Vocal\n\"Eb\"B2z6f8|\"Eb\"d8c8|\"F\"z16|\nV: Ins\nZ3|\n% chorus\nV: Vocal\nz2b2b2b2b2b2f'4|\"Eb\"f'2d'zd'4d'4c'4|\"Eb\"z2b2b2b2b2b2f'4|\"Gm\"f'4d'4d'4c'4|\nV: Ins\nZ4|\nV: Vocal\n\"Gm\"z2b2b2b2b2b2f'4|\"F\"f'4d'4d'4c'4|\"F\"z2b2b2b2b2b2f'4|\"Dm\"f'6a6b4-|\nV: Ins\nZ4|\nV: Vocal\n\"Dm\"b2z6d'2d'2d'2d'2-|\"Eb\"d'2c'zc'4d'2d'2d'2d'2-|\"Eb\"d'2c'4c'4b6|\"Gm\"d'4c'4d'4c'2d'2-|\nV: Ins\nZ4|\nV: Vocal\n\"Gm\"d'2c'4c'4b6|\"F\"a16|\"F\"f16|\"Dm\"z8d4d4|\nV: Ins\nZ4|\nV: Vocal\n\"Dm\"e6d6B4|\nV: Ins\nZ|\n% verse\nV: Vocal\n\"Eb\"z2B2d2d2d2c2c2c2|\"Eb\"c2B2B4B4z4|\"Gm\"d2d2d2d2d2c2c2c2|\"Gm\"c4d4z8|\nV: Ins\nZ4|\nV: Vocal\n\"Eb\"d2d2d2d2d2c2c2c2|\"Eb\"c4B4B4B2B2|\"Gm\"d4d2d4c4e2-|\"Gm\"e2d4d2c4B4|\nV: Ins\nZ4|\nV: Vocal\n\"Eb\"z2f2f2f2f2f2f2g2-|\"Eb\"g2d4d6c4|\"Gm\"z2f2f2f2f2f2f2g2-|\"Gm\"g2d4d6c4|\nV: Ins\nZ4|\nV: Vocal\n\"Eb\"z4f2f2f2f2f2f2|\"Eb\"g4d2d4c4c2|\"Gm\"d4d4d4d4|\"Gm\"e4d4c4B4|\nV: Ins\nZ4|\nV: Vocal\nz8B4z4|\nV: Ins\nZ|\n% chorus\nV: Vocal\nz2b2b2b2b2b2f'4|\"Eb\"f'4d'4d'4c'4|\"Eb\"z2b2b2b2b2b2f'4|\"Gm\"f'4d'4d'4c'4|\nV: Ins\nZ4|\nV: Vocal\n\"Gm\"z2b2b2b2b2b2f'4|\"F\"f'4d'4d'4c'4|\"F\"z2b2b2b2b2b2f'4|\"Dm\"f'6a6b4-|\nV: Ins\nZ4|\nV: Vocal\n\"Dm\"b4z4d'2d'2d'2d'2-|\"Eb\"d'2c'zc'4d'2d'2d'2d'2-|\"Eb\"d'2c'4c'4b6|\"Gm\"d'4c'4d'4c'2d'2-|\nV: Ins\nZ4|\nV: Vocal\n\"Gm\"d'2c'4c'4b6|\"F\"a16|\"F\"f16|\"Dm\"z8d4d4|\nV: Ins\nZ4|\nV: Vocal\n\"Dm\"e6d6B4|\nV: Ins\nZ|\n% bridge\nV: Vocal\n\"Eb\"z16|\"Eb\"f6d6c4-|\"Gm\"c4z8B4|\"Gm\"f4f2d4c2c4-|\nV: Ins\nZ4|\nV: Vocal\n\"F\"c4z12|\"F\"z16|\"F\"z16|\"F\"z16|\nV: Ins\nz4A2A2A2A2A2A2|A2A2A2A2A2A2A2A2|A2A2A2A2A2A2A2A2|A2A2A2A2A2A2A2c2|\nV: Vocal\n\"Eb\"z4f4f4f4|\"Eb\"f4d4c4B4|\"Gm\"B4f4f4f4|\"Gm\"f4d4c4B4|\nV: Ins\nZ4|\nV: Vocal\n\"F\"B4c12-|\"F\"c16-|\"F\"c16-|\"F\"c2b2b2b2b2b2f'4|\nV: Ins\nZ4|\n% chorus\nV: Vocal\n\"Eb\"f'2d'zd'4d'4c'4|\"Eb\"z2b2b2b2b2b2f'4|\"Gm\"f'2d'zd'4d'4c'4|\"Gm\"z2b2b2b2b2b2f'4|\nV: Ins\nZ4|\nV: Vocal\n\"F\"f'4d'4d'4c'4|\"F\"z2b2b2b2b2b2f'4|\"Dm\"f'6a6b4-|\"Dm\"b2z6d'2d'2d'2d'2-|\nV: Ins\nZ4|\nV: Vocal\n\"Eb\"d'2c'zc'4d'2d'2d'2d'2-|\"Eb\"d'2c'4c'4b6|\"Gm\"d'4c'4d'4c'2d'2-|\"Gm\"d'2c'4c'4b6|\nV: Ins\nZ4|\nV: Vocal\n\"F\"a16|\"F\"f16|\"Dm\"z8d4d4|\"Dm\"e6d6B4|\nV: Ins\nZ4|\n% outro\nV: Vocal\n\"Eb\"z16|\"Eb\"z16|\"Gm\"z12d2d2|\"Gm\"d2d2d2d2e4d4|\nV: Ins\nB2B2B2B2B2B2B2B2|B2B2B2B2B2B2B2B2|G2G2G2G2G2B2z4|Z|\nV: Vocal\n\"F\"d4c12-|\"F\"c16-|\"F\"c16-|\"F\"c4z4z8|\nV: Ins\nZ4|\n",
+    "abcUrl": "assets/genre/df64fef4d0ba5a18670f6c19/score.abc",
+    "audio": "assets/genre/df64fef4d0ba5a18670f6c19/df64fef4d0ba5a18670f6c19_music.mp3",
+    "scoreAudio": "assets/genre/df64fef4d0ba5a18670f6c19/df64fef4d0ba5a18670f6c19_score.mp3",
+    "sheets": [
+      "assets/genre/df64fef4d0ba5a18670f6c19/sheet_01.svg",
+      "assets/genre/df64fef4d0ba5a18670f6c19/sheet_02.svg",
+      "assets/genre/df64fef4d0ba5a18670f6c19/sheet_03.svg",
+      "assets/genre/df64fef4d0ba5a18670f6c19/sheet_04.svg",
+      "assets/genre/df64fef4d0ba5a18670f6c19/sheet_05.svg"
+    ]
+  },
+  "official_audio_url": "https://map-yue2.github.io/assets/genre/df64fef4d0ba5a18670f6c19/df64fef4d0ba5a18670f6c19_music.mp3",
+  "official_audio_path": "outputs/official_fullsong/reference/df64fef4d0ba5a18670f6c19.mp3",
+  "official_audio_sha256": "5f662ec975e05bf477a74424d174d2114ee24eda29141b551200870470df35ff",
+  "official_seconds": 156.92,
+  "input_hashes": {
+    "style": "a36c54aa9a7be97ca5f98ec1b88bb04110b97dd004999c5c9436acfe32728e50",
+    "lyrics": "6acf9a1ecb9742e92a44ba5d3b2375300bae8cc46ae4478631804248fdf38aaf",
+    "abc": "bf67722dd8162985b955dfa48371d1728b83e47423e3e558d611e426432cbe8a"
+  },
+  "measurement": {
+    "id": "ko_score",
+    "status": "complete",
+    "case_sha256": "2d38527bb49dbc4dc16afee14e020c4aff37f3b8bcef24c781ba69c1fcb92fbb",
+    "truncated": {
+      "abc": false,
+      "semantic": false
+    },
+    "audio_seconds": 156.03866666666667,
+    "official_seconds": 156.92,
+    "duration_ratio": 0.9943835500042486,
+    "e2e_seconds": 299.78041066700825,
+    "rtf": 1.921193105984467,
+    "speed_multiplier": 0.5205098836160851,
+    "load_seconds": 5.164946083037648,
+    "transcription_seconds": 0,
+    "save_seconds": 0.3679583329940215,
+    "timing": {
+      "abc": {
+        "seconds": 0.0,
+        "output_tokens": 0,
+        "external_prefix_tokens": 1980
+      },
+      "semantic": {
+        "seconds": 65.99044629203854,
+        "prefill_seconds": 1.376692042045761,
+        "ttft_seconds": 1.3849018750479445,
+        "output_tokens": 3902,
+        "content_tokens": 3901,
+        "output_tps": 59.12977134192771,
+        "prefix_tokens": 2692,
+        "cfg_branches": 1,
+        "execution": "eager",
+        "attention": "sdpa",
+        "backend": "mlx"
+      },
+      "nar_seconds": 219.74767066596542,
+      "vae_seconds": 8.172454458952416,
+      "load": {
+        "resolve_conversion_integrity_seconds": 5.164890291984193,
+        "ar_load_events_seconds": [
+          0.11963616701541469
+        ],
+        "ar_load_seconds": 0.11963616701541469,
+        "conditioning_load_events_seconds": [
+          0.16252879198873416
+        ],
+        "conditioning_load_seconds": 0.16252879198873416,
+        "nar_load_events_seconds": [
+          0.11841804103460163
+        ],
+        "nar_load_seconds": 0.11841804103460163,
+        "vae_load_events_seconds": [
+          0.10575899999821559
+        ],
+        "vae_load_seconds": 0.10575899999821559
+      },
+      "e2e_seconds": 294.04429254104616
+    },
+    "configuration": {
+      "generation": {
+        "abc": {
+          "temperature": 0.7,
+          "top_p": 0.9,
+          "top_k": 30,
+          "repetition_penalty": 1.005,
+          "penalty_window": 100,
+          "min_tokens": 32,
+          "max_tokens": 4096
+        },
+        "semantic": {
+          "temperature": 1.0,
+          "top_p": 0.95,
+          "top_k": 100,
+          "repetition_penalty": 1.2,
+          "penalty_window": 50,
+          "min_tokens": 200,
+          "max_tokens": 9000
+        },
+        "ode_steps": 32,
+        "ode_method": "midpoint",
+        "context": 24576,
+        "version": "yue2-native-v1"
+      },
+      "overrides": {},
+      "cot": "full",
+      "cfg_scale": 1.0,
+      "cfg_negative": "same_instruction_and_exact_abc",
+      "backend": "mlx",
+      "quantization": "8bit",
+      "model_dtype": "bfloat16",
+      "vae_dtype": "float32",
+      "vae_decode": "halo_crop",
+      "vae_core_frames": 256,
+      "vae_halo_frames": 16,
+      "device": "DeviceType.gpu",
+      "memory_budget_gib": 16.0,
+      "offload_ar": false,
+      "runtime_sha256": "ff4829d01380a2ac98fbc0aa0aed90f9b2bbe9c0a3473f1d62ed8ee3abc8efa9",
+      "decoder_release": "standard",
+      "validation_status": "unvalidated",
+      "vae_backend": "mlx",
+      "ar_precision": "8bit",
+      "kv_dtype": "bfloat16",
+      "nar_dtype": "bfloat16",
+      "conditioning_precision": "bf16",
+      "attention_opmath": "float32",
+      "mlx_tf32_enabled": false,
+      "attention_inputs": "native_steel_bfloat16",
+      "query_chunk_size": 256,
+      "runtime": {
+        "lyra-yue2": "0.1.0",
+        "mlx": "0.32.2",
+        "mlx-lm": "0.31.3",
+        "transformers": "5.0.0",
+        "numpy": "2.2.6",
+        "python": "3.12.10",
+        "macos": "27.0"
+      },
+      "upstream_commit": "92a73cc7652fcc1f937855e4b765e0a0edd7ff2e",
+      "execution_guard": "GPUExecution",
+      "rng": {
+        "ar": "request_local_mlx",
+        "acoustic": "numpy_pcg64_fp32_full_song_v1"
+      }
+    },
+    "identity": "0910f50d377d92b9633239791464579defbe4346888068ffa1726ac493ea6806",
+    "audio_sha256": "530de8ebe1df332844f86b9854b8e62c5f8e319e591d0427be5bf76ea16c0058",
+    "result_sha256": "f9a6bfe7694b7507d96f28ee065a0b64065437736e4d36c7c136c9745fb8919f",
+    "audio_quality": {
+      "sample_rate": 48000,
+      "channels": 2,
+      "finite": true,
+      "rms": 0.15526236099207205,
+      "peak": 1.0,
+      "clipping_fraction": 2.6702783070862776e-07
+    },
+    "musical_quality_acceptance": "pending human listening; not established by duration or EOS",
+    "resources": {
+      "memory_counter_schema": 2,
+      "swap_counter_source": "host_statistics64.swapins/swapouts",
+      "sampling_interval_seconds": 0.1,
+      "power_sampling_interval_seconds": 5.0,
+      "metadata": {},
+      "power_start": {
+        "ac_connected": true,
+        "pmset": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=37224547)\t95%; AC attached; not charging present: true"
+      },
+      "power_end": {
+        "ac_connected": true,
+        "pmset": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=37224547)\t95%; AC attached; not charging present: true"
+      },
+      "start": {
+        "elapsed_seconds": 0.009647957980632782,
+        "rss_bytes": 51838976,
+        "system_swap_used_bytes": 12382502912,
+        "system_swap_in_bytes": 56329125888,
+        "system_swap_out_bytes": 83892617216,
+        "system_available_bytes": 63939657728,
+        "system_total_bytes": 137438953472,
+        "system_memory_pressure_level": 1,
+        "system_free_bytes": 2698018816,
+        "system_wired_bytes": 8543420416,
+        "system_compressor_bytes": 2905391104,
+        "system_file_backed_bytes": 35016163328,
+        "physical_footprint_bytes": 31965904,
+        "process_lifetime_peak_footprint_bytes": 31965904,
+        "mlx_active_bytes": 0,
+        "mlx_cache_bytes": 0,
+        "mlx_peak_bytes": 0,
+        "ac_connected": true
+      },
+      "end": {
+        "elapsed_seconds": 300.20517570798984,
+        "rss_bytes": 752517120,
+        "system_swap_used_bytes": 12382502912,
+        "system_swap_in_bytes": 56329289728,
+        "system_swap_out_bytes": 83892617216,
+        "system_available_bytes": 64987594752,
+        "system_total_bytes": 137438953472,
+        "system_memory_pressure_level": 1,
+        "system_free_bytes": 3830333440,
+        "system_wired_bytes": 7345537024,
+        "system_compressor_bytes": 2903179264,
+        "system_file_backed_bytes": 35064840192,
+        "physical_footprint_bytes": 910821464,
+        "process_lifetime_peak_footprint_bytes": 12118252192,
+        "mlx_active_bytes": 8,
+        "mlx_cache_bytes": 0,
+        "mlx_peak_bytes": 11256150230,
+        "ac_connected": true
+      },
+      "sampled_maxima": {
+        "mlx_active_bytes": 11196716606,
+        "mlx_cache_bytes": 156781600,
+        "mlx_peak_bytes": 11256150230,
+        "physical_footprint_bytes": 11969518216,
+        "process_lifetime_peak_footprint_bytes": 12118252192,
+        "rss_bytes": 8162607104,
+        "system_available_bytes": 69856018432,
+        "system_compressor_bytes": 2905407488,
+        "system_file_backed_bytes": 35064840192,
+        "system_free_bytes": 12392005632,
+        "system_swap_in_bytes": 56329289728,
+        "system_swap_out_bytes": 83892617216,
+        "system_swap_used_bytes": 12382502912,
+        "system_total_bytes": 137438953472,
+        "system_wired_bytes": 11378753536
+      },
+      "monitor_error": null,
+      "exception": null
+    },
+    "artifact_directory": "outputs/official_fullsong/ko_score",
+    "prior_attempts": []
+  },
+  "official_player": "audio/fullsong/5f662ec975e05bf477a7.mp3",
+  "local_player": "audio/fullsong/530de8ebe1df332844f8.mp3",
+  "actual_score": "X:1\nT:\nM:4/4\nL:1/16\nQ:1/4=170\nV: Vocal clef=treble name=\"Vocal Melody\" snm=\"Vocal\"\nV: Ins clef=treble name=\"Ins Melody\" snm=\"Inst.\"\nK:Bb\n% intro\nV: Vocal\nz4B2B2B4f4|\"Eb\"f4d4d4c4|\"Eb\"c4B2B2B4f4|\"Gm\"f2d2d2d2d4c4|\nV: Ins\nZ4|\nV: Vocal\n\"Gm\"z4B2B2B2B2B2B2|\"Eb\"f4d2d4c2c4|\"Eb\"BzB6A4B2B2|\"Gm\"A4A2A4B4B2-|\nV: Ins\nZ4|\nV: Vocal\n\"Gm\"B4z12|\nV: Ins\nZ|\n% verse\nV: Vocal\n\"Eb\"z2B2d2d2d2c2c2c2-|\"Eb\"c2B6z8|\"Gm\"z2B2d2d2d2c2c2c2-|\"Gm\"c2B4B4B2B2B2|\nV: Ins\nZ4|\nV: Vocal\n\"Eb\"f4d2d4c4c2-|\"Eb\"c2B4B4z2B2B2|\"Gm\"f4d2d4c4c2-|\"Gm\"c2d4c4B4B2-|\nV: Ins\nZ4|\nV: Vocal\n\"Eb\"B2z6f8|\"Eb\"d8c8|\"F\"z16|\nV: Ins\nZ3|\n% chorus\nV: Vocal\nz2b2b2b2b2b2f'4|\"Eb\"f'2d'zd'4d'4c'4|\"Eb\"z2b2b2b2b2b2f'4|\"Gm\"f'4d'4d'4c'4|\nV: Ins\nZ4|\nV: Vocal\n\"Gm\"z2b2b2b2b2b2f'4|\"F\"f'4d'4d'4c'4|\"F\"z2b2b2b2b2b2f'4|\"Dm\"f'6a6b4-|\nV: Ins\nZ4|\nV: Vocal\n\"Dm\"b2z6d'2d'2d'2d'2-|\"Eb\"d'2c'zc'4d'2d'2d'2d'2-|\"Eb\"d'2c'4c'4b6|\"Gm\"d'4c'4d'4c'2d'2-|\nV: Ins\nZ4|\nV: Vocal\n\"Gm\"d'2c'4c'4b6|\"F\"a16|\"F\"f16|\"Dm\"z8d4d4|\nV: Ins\nZ4|\nV: Vocal\n\"Dm\"e6d6B4|\nV: Ins\nZ|\n% verse\nV: Vocal\n\"Eb\"z2B2d2d2d2c2c2c2|\"Eb\"c2B2B4B4z4|\"Gm\"d2d2d2d2d2c2c2c2|\"Gm\"c4d4z8|\nV: Ins\nZ4|\nV: Vocal\n\"Eb\"d2d2d2d2d2c2c2c2|\"Eb\"c4B4B4B2B2|\"Gm\"d4d2d4c4e2-|\"Gm\"e2d4d2c4B4|\nV: Ins\nZ4|\nV: Vocal\n\"Eb\"z2f2f2f2f2f2f2g2-|\"Eb\"g2d4d6c4|\"Gm\"z2f2f2f2f2f2f2g2-|\"Gm\"g2d4d6c4|\nV: Ins\nZ4|\nV: Vocal\n\"Eb\"z4f2f2f2f2f2f2|\"Eb\"g4d2d4c4c2|\"Gm\"d4d4d4d4|\"Gm\"e4d4c4B4|\nV: Ins\nZ4|\nV: Vocal\nz8B4z4|\nV: Ins\nZ|\n% chorus\nV: Vocal\nz2b2b2b2b2b2f'4|\"Eb\"f'4d'4d'4c'4|\"Eb\"z2b2b2b2b2b2f'4|\"Gm\"f'4d'4d'4c'4|\nV: Ins\nZ4|\nV: Vocal\n\"Gm\"z2b2b2b2b2b2f'4|\"F\"f'4d'4d'4c'4|\"F\"z2b2b2b2b2b2f'4|\"Dm\"f'6a6b4-|\nV: Ins\nZ4|\nV: Vocal\n\"Dm\"b4z4d'2d'2d'2d'2-|\"Eb\"d'2c'zc'4d'2d'2d'2d'2-|\"Eb\"d'2c'4c'4b6|\"Gm\"d'4c'4d'4c'2d'2-|\nV: Ins\nZ4|\nV: Vocal\n\"Gm\"d'2c'4c'4b6|\"F\"a16|\"F\"f16|\"Dm\"z8d4d4|\nV: Ins\nZ4|\nV: Vocal\n\"Dm\"e6d6B4|\nV: Ins\nZ|\n% bridge\nV: Vocal\n\"Eb\"z16|\"Eb\"f6d6c4-|\"Gm\"c4z8B4|\"Gm\"f4f2d4c2c4-|\nV: Ins\nZ4|\nV: Vocal\n\"F\"c4z12|\"F\"z16|\"F\"z16|\"F\"z16|\nV: Ins\nz4A2A2A2A2A2A2|A2A2A2A2A2A2A2A2|A2A2A2A2A2A2A2A2|A2A2A2A2A2A2A2c2|\nV: Vocal\n\"Eb\"z4f4f4f4|\"Eb\"f4d4c4B4|\"Gm\"B4f4f4f4|\"Gm\"f4d4c4B4|\nV: Ins\nZ4|\nV: Vocal\n\"F\"B4c12-|\"F\"c16-|\"F\"c16-|\"F\"c2b2b2b2b2b2f'4|\nV: Ins\nZ4|\n% chorus\nV: Vocal\n\"Eb\"f'2d'zd'4d'4c'4|\"Eb\"z2b2b2b2b2b2f'4|\"Gm\"f'2d'zd'4d'4c'4|\"Gm\"z2b2b2b2b2b2f'4|\nV: Ins\nZ4|\nV: Vocal\n\"F\"f'4d'4d'4c'4|\"F\"z2b2b2b2b2b2f'4|\"Dm\"f'6a6b4-|\"Dm\"b2z6d'2d'2d'2d'2-|\nV: Ins\nZ4|\nV: Vocal\n\"Eb\"d'2c'zc'4d'2d'2d'2d'2-|\"Eb\"d'2c'4c'4b6|\"Gm\"d'4c'4d'4c'2d'2-|\"Gm\"d'2c'4c'4b6|\nV: Ins\nZ4|\nV: Vocal\n\"F\"a16|\"F\"f16|\"Dm\"z8d4d4|\"Dm\"e6d6B4|\nV: Ins\nZ4|\n% outro\nV: Vocal\n\"Eb\"z16|\"Eb\"z16|\"Gm\"z12d2d2|\"Gm\"d2d2d2d2e4d4|\nV: Ins\nB2B2B2B2B2B2B2B2|B2B2B2B2B2B2B2B2|G2G2G2G2G2B2z4|Z|\nV: Vocal\n\"F\"d4c12-|\"F\"c16-|\"F\"c16-|\"F\"c4z4z8|\nV: Ins\nZ4|\n"
+}

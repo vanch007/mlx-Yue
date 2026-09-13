@@ -1,0 +1,156 @@
+{
+  "status": "pass",
+  "scope": "Artifact integrity, full decode, input matching, native budget, RTF, no truncation. Not perceptual quality.",
+  "cases": [
+    {
+      "id": "ja_score",
+      "status": "pass",
+      "audio_seconds": 222.27866666666668,
+      "decoded_frames": 10669376,
+      "rms": 0.1431942900400167,
+      "peak": 0.8744819164276123,
+      "duration_ratio": 1.002338864838865,
+      "musical_quality": "pending"
+    },
+    {
+      "id": "ru_score",
+      "status": "pass",
+      "audio_seconds": 119.95866666666667,
+      "decoded_frames": 5758016,
+      "rms": 0.13088005345821918,
+      "peak": 0.822986364364624,
+      "duration_ratio": 0.9999888851839503,
+      "musical_quality": "pending"
+    },
+    {
+      "id": "es_score",
+      "status": "pass",
+      "audio_seconds": 181.03866666666667,
+      "decoded_frames": 8689856,
+      "rms": 0.14357905450789588,
+      "peak": 0.9590508937835693,
+      "duration_ratio": 0.9897149938042132,
+      "musical_quality": "pending"
+    },
+    {
+      "id": "zh_score",
+      "status": "pass",
+      "audio_seconds": 152.27866666666668,
+      "decoded_frames": 7309376,
+      "rms": 0.15860733541175187,
+      "peak": 1.0,
+      "duration_ratio": 0.9971101798498342,
+      "musical_quality": "pending"
+    },
+    {
+      "id": "ko_score",
+      "status": "pass",
+      "audio_seconds": 156.03866666666667,
+      "decoded_frames": 7489856,
+      "rms": 0.1552623609864537,
+      "peak": 1.0,
+      "duration_ratio": 0.9943835500042486,
+      "musical_quality": "pending"
+    },
+    {
+      "id": "en_score",
+      "status": "pass",
+      "audio_seconds": 94.99866666666667,
+      "decoded_frames": 4559936,
+      "rms": 0.14440628758960297,
+      "peak": 0.9149165153503418,
+      "duration_ratio": 0.9920495683653577,
+      "musical_quality": "pending"
+    },
+    {
+      "id": "full_generated",
+      "status": "pass",
+      "audio_seconds": 209.91866666666667,
+      "decoded_frames": 10076096,
+      "rms": 0.1500946759898185,
+      "peak": 0.9160799980163574,
+      "duration_ratio": 1.0245932578419887,
+      "musical_quality": "pending"
+    },
+    {
+      "id": "melody_generated",
+      "status": "pass",
+      "audio_seconds": 181.03866666666667,
+      "decoded_frames": 8689856,
+      "rms": 0.17611676890821168,
+      "peak": 0.8792818784713745,
+      "duration_ratio": 1.1854286712065654,
+      "musical_quality": "pending"
+    },
+    {
+      "id": "melody_supplied",
+      "status": "pass",
+      "audio_seconds": 106.95866666666667,
+      "decoded_frames": 5134016,
+      "rms": 0.14550125703443406,
+      "peak": 0.9999998807907104,
+      "duration_ratio": 0.9962741713136031,
+      "musical_quality": "pending"
+    },
+    {
+      "id": "off_direct",
+      "status": "pass",
+      "audio_seconds": 251.11866666666666,
+      "decoded_frames": 12053696,
+      "rms": 0.14199334393349902,
+      "peak": 0.9785664081573486,
+      "duration_ratio": 1.0322207607146772,
+      "musical_quality": "pending"
+    },
+    {
+      "id": "cover_dagoujiao",
+      "status": "pass",
+      "audio_seconds": 207.91866666666667,
+      "decoded_frames": 9980096,
+      "rms": 0.17102370423208543,
+      "peak": 0.950627326965332,
+      "duration_ratio": 0.9902838018911659,
+      "musical_quality": "pending"
+    },
+    {
+      "id": "cover_baikal",
+      "status": "pass",
+      "audio_seconds": 212.27866666666668,
+      "decoded_frames": 10189376,
+      "rms": 0.14606263065064934,
+      "peak": 0.9999998807907104,
+      "duration_ratio": 0.978609494188298,
+      "musical_quality": "pending"
+    },
+    {
+      "id": "cover_birthday",
+      "status": "pass",
+      "audio_seconds": 64.83866666666667,
+      "decoded_frames": 3112256,
+      "rms": 0.13923169661602244,
+      "peak": 0.8563051223754883,
+      "duration_ratio": 1.0143932914745823,
+      "musical_quality": "pending"
+    },
+    {
+      "id": "audio_to_cover",
+      "status": "pass",
+      "audio_seconds": 224.35866666666666,
+      "decoded_frames": 10769216,
+      "rms": 0.17828478451638735,
+      "peak": 1.0,
+      "duration_ratio": 1.0117183742183742,
+      "musical_quality": "pending"
+    },
+    {
+      "id": "jazz_funk_score",
+      "status": "pass",
+      "audio_seconds": 130.43866666666668,
+      "decoded_frames": 6261056,
+      "rms": 0.1676394406635729,
+      "peak": 0.9980323314666748,
+      "duration_ratio": 1.0036831845696113,
+      "musical_quality": "pending"
+    }
+  ]
+}

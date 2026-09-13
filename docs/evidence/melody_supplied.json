@@ -1,0 +1,270 @@
+{
+  "id": "melody_supplied",
+  "official_id": "jingle-bells-minor-no-chord",
+  "title": "Jingle Bells · Minor-Key Version",
+  "genre": "Christmas Pop · E Minor · 104 BPM",
+  "language": "en",
+  "score_mode": "supplied",
+  "request": {
+    "id": "melody_supplied",
+    "style": "Christmas pop in E minor, sleigh bells, 104 BPM\n",
+    "lyrics": "[Verse]\nDashing through the snow\nIn a one-horse open sleigh\nO'er the fields we go\nLaughing all the way\nBells on bobtails ring\nMaking spirits bright\nWhat fun it is to ride and sing\nA sleighing song tonight\n\n[Chorus]\nJingle bells, jingle bells\nJingle all the way\nOh, what fun it is to ride\nIn a one-horse open sleigh, hey!\nJingle bells, jingle bells\nJingle all the way\nOh, what fun it is to ride\nIn a one-horse open sleigh\n\n[Verse]\nNow the ground is white\nGo it while you're young\nTake the girls tonight\nAnd sing this sleighing song\nJust get a bobtailed bay\nTwo forty as his speed\nHitch him to an open sleigh\nAnd snap! You'll take the lead\n\n[Chorus]\nJingle bells, jingle bells\nJingle all the way\nOh, what fun it is to ride\nIn a one-horse open sleigh, hey!\nJingle bells, jingle bells\nJingle all the way\nOh, what fun it is to ride\nIn a one-horse open sleigh\nOh, what fun it is to ride\nIn a one-horse open sleigh\n",
+    "cot": "melody",
+    "seed": 2026,
+    "abc": "X:1\nT:\nM:4/4\nL:1/32\nQ:1/4=104\nV: Vocal clef=treble name=\"Vocal Melody\" snm=\"Vocal\"\nV: Ins clef=treble name=\"Ins Melody\" snm=\"Inst.\"\nK:Em\n% intro\nV: Vocal\nZ4|\nV: Ins\nZ|g4g4g8g4g4g8|g4b4e6f2g16|a4a4a8a4g4g4g2g2|\nV: Vocal\nZ|\nV: Ins\nb4b4a4f4e16|\n% verse\nV: Vocal\nB4g4f4e4B8z4B2B2|B4g4f4e4c8z8|c4a4g4f4d8z8|b4b4a4f4g8z8|\nV: Ins\nZ4|\nV: Vocal\nB4g4f4e4B8z8|B4g4f4e4c8z4c4|c4a4g4f4b4b4b4b4|c'4b4a4f4e4z4b8|\nV: Ins\nZ4|\n% chorus\nV: Vocal\ng4g4g8g4g4g8|g4b4e6f2g8z8|a4a4a6a2a4g4g4g2g2|g4f4f4g4f8b4z4|\nV: Ins\nZ4|\nV: Vocal\ng4g4g8g4g4g8|g4b4e6f2g8z8|a4a4a6a2a4g4g4g2g2|b4b4a4f4e12z4|\nV: Ins\nZ4|\nV: Vocal\nZ|\nV: Ins\nZ|\n% interlude\nV: Vocal\nZ|\nV: Ins\nB4B2B2e4B2B2e2B2e2g2b8|\n% verse\nV: Vocal\nB4g4f4e4B8z8|B4g4f4e4c8z8|c4a4g4f4d8z8|b4b4a4f4g8z8|\nV: Ins\nZ4|\nV: Vocal\nB4g4f4e4B8z4B4|B4g4f4e4c8z4c4|c4a4g4f4b4b4b4b4|c'4b4a4f4e4z4b8|\nV: Ins\nZ4|\n% chorus\nV: Vocal\ng4g4g8g4g4g8|g4b4e6f2g8z8|a4a4a6a2a4g4g4g2g2|g4f4f4g4f8b4z4|\nV: Ins\nZ4|\nV: Vocal\ng4g4g8g4g4g8|g4b4e6f2g8z8|a4a4a6a2a4g4g4g2g2|b4b4a4f4e8z8|\nV: Ins\nZ4|\nV: Vocal\na4a4a6a2a4g4g4g2g2|b8b8a8f8|e24z8|\nV: Ins\nZ3|\nV: Vocal\nM:1/4\nZ|\nV: Ins\nM:1/4\nZ|\n% outro\nV: Vocal\nM:4/4\nZ4|\nV: Ins\nM:4/4\ng4g4g8g4g4g8|g4b4e6f2g16|a4a4a4a4a4g4g4g2g2|b4b4a4f4e16|\nV: Vocal\nZ|\nV: Ins\ne4g4g4e4z16|\n"
+  },
+  "official_mode": "cover/edit",
+  "source": {
+    "id": "jingle-bells-minor-no-chord",
+    "title": "Jingle Bells · Minor-Key Version",
+    "genre": "Christmas Pop · E Minor · 104 BPM",
+    "source": "Adapted from Jingle Bells",
+    "editType": "Melody remapping: G major → E natural minor · Chordless melody input",
+    "audio": "assets/covers/jingle-bells-minor-no-chord/jingle-bells-minor-no-chord.mp3",
+    "abcUrl": "assets/covers/jingle-bells-minor-no-chord/jingle-bells-minor-no-chord.abc",
+    "abc": "X:1\nT:\nM:4/4\nL:1/32\nQ:1/4=104\nV: Vocal clef=treble name=\"Vocal Melody\" snm=\"Vocal\"\nV: Ins clef=treble name=\"Ins Melody\" snm=\"Inst.\"\nK:Em\n% intro\nV: Vocal\nZ4|\nV: Ins\nZ|g4g4g8g4g4g8|g4b4e6f2g16|a4a4a8a4g4g4g2g2|\nV: Vocal\nZ|\nV: Ins\nb4b4a4f4e16|\n% verse\nV: Vocal\nB4g4f4e4B8z4B2B2|B4g4f4e4c8z8|c4a4g4f4d8z8|b4b4a4f4g8z8|\nV: Ins\nZ4|\nV: Vocal\nB4g4f4e4B8z8|B4g4f4e4c8z4c4|c4a4g4f4b4b4b4b4|c'4b4a4f4e4z4b8|\nV: Ins\nZ4|\n% chorus\nV: Vocal\ng4g4g8g4g4g8|g4b4e6f2g8z8|a4a4a6a2a4g4g4g2g2|g4f4f4g4f8b4z4|\nV: Ins\nZ4|\nV: Vocal\ng4g4g8g4g4g8|g4b4e6f2g8z8|a4a4a6a2a4g4g4g2g2|b4b4a4f4e12z4|\nV: Ins\nZ4|\nV: Vocal\nZ|\nV: Ins\nZ|\n% interlude\nV: Vocal\nZ|\nV: Ins\nB4B2B2e4B2B2e2B2e2g2b8|\n% verse\nV: Vocal\nB4g4f4e4B8z8|B4g4f4e4c8z8|c4a4g4f4d8z8|b4b4a4f4g8z8|\nV: Ins\nZ4|\nV: Vocal\nB4g4f4e4B8z4B4|B4g4f4e4c8z4c4|c4a4g4f4b4b4b4b4|c'4b4a4f4e4z4b8|\nV: Ins\nZ4|\n% chorus\nV: Vocal\ng4g4g8g4g4g8|g4b4e6f2g8z8|a4a4a6a2a4g4g4g2g2|g4f4f4g4f8b4z4|\nV: Ins\nZ4|\nV: Vocal\ng4g4g8g4g4g8|g4b4e6f2g8z8|a4a4a6a2a4g4g4g2g2|b4b4a4f4e8z8|\nV: Ins\nZ4|\nV: Vocal\na4a4a6a2a4g4g4g2g2|b8b8a8f8|e24z8|\nV: Ins\nZ3|\nV: Vocal\nM:1/4\nZ|\nV: Ins\nM:1/4\nZ|\n% outro\nV: Vocal\nM:4/4\nZ4|\nV: Ins\nM:4/4\ng4g4g8g4g4g8|g4b4e6f2g16|a4a4a4a4a4g4g4g2g2|b4b4a4f4e16|\nV: Vocal\nZ|\nV: Ins\ne4g4g4e4z16|\n",
+    "tags": "Christmas pop in E minor, sleigh bells, 104 BPM\n",
+    "lyrics": "[Verse]\nDashing through the snow\nIn a one-horse open sleigh\nO'er the fields we go\nLaughing all the way\nBells on bobtails ring\nMaking spirits bright\nWhat fun it is to ride and sing\nA sleighing song tonight\n\n[Chorus]\nJingle bells, jingle bells\nJingle all the way\nOh, what fun it is to ride\nIn a one-horse open sleigh, hey!\nJingle bells, jingle bells\nJingle all the way\nOh, what fun it is to ride\nIn a one-horse open sleigh\n\n[Verse]\nNow the ground is white\nGo it while you're young\nTake the girls tonight\nAnd sing this sleighing song\nJust get a bobtailed bay\nTwo forty as his speed\nHitch him to an open sleigh\nAnd snap! You'll take the lead\n\n[Chorus]\nJingle bells, jingle bells\nJingle all the way\nOh, what fun it is to ride\nIn a one-horse open sleigh, hey!\nJingle bells, jingle bells\nJingle all the way\nOh, what fun it is to ride\nIn a one-horse open sleigh\nOh, what fun it is to ride\nIn a one-horse open sleigh\n",
+    "titleZh": "",
+    "sourceTitleZh": "",
+    "sourceUrl": "https://www.youtube.com/watch?v=hLf0-lro8X8"
+  },
+  "official_audio_url": "https://map-yue2.github.io/assets/covers/jingle-bells-minor-no-chord/jingle-bells-minor-no-chord.mp3",
+  "official_audio_path": "outputs/official_fullsong/reference/jingle-bells-minor-no-chord.mp3",
+  "official_audio_sha256": "8adfbdf7e6f4255548a6640230cd6645c2ba16cf100bcb8c807dd69fbaa9be8d",
+  "official_seconds": 107.35866666666666,
+  "input_hashes": {
+    "style": "44b2302e6ac7eea08fe335ad7d66a3ccdf4a803cbe3263d0ae3856239efa3382",
+    "lyrics": "9378c9fab1a5d334b470ce3b8d4302de3b0f7bd3624d2f3db215e52b79c5cdb4",
+    "abc": "c2e2213018cf67c203cd089251031cd592bf2b55aa04b0c69213d8b29d46c32c"
+  },
+  "measurement": {
+    "id": "melody_supplied",
+    "status": "complete",
+    "case_sha256": "81ff5bce14179bf0a6da751244f9aec6edc6e34e061c0b39eda3139f75861272",
+    "attempt": 2,
+    "benchmark_script_sha256": "2c5868ef28d74bb713079a0c1cf886d419a4e3a73cce34be2413e4cda7ec9449",
+    "retry_policy": "Only interrupted/failed execution, identical input and seed; no quality reroll",
+    "truncated": {
+      "abc": false,
+      "semantic": false
+    },
+    "audio_seconds": 106.95866666666667,
+    "official_seconds": 107.35866666666666,
+    "duration_ratio": 0.9962741713136031,
+    "e2e_seconds": 154.71270404098323,
+    "rtf": 1.446471883602855,
+    "speed_multiplier": 0.6913373231349731,
+    "load_seconds": 5.201949458976742,
+    "transcription_seconds": 0,
+    "save_seconds": 0.3180820000125095,
+    "timing": {
+      "abc": {
+        "seconds": 0.0,
+        "output_tokens": 0,
+        "external_prefix_tokens": 944
+      },
+      "semantic": {
+        "seconds": 40.39203779201489,
+        "prefill_seconds": 0.8464277079910971,
+        "ttft_seconds": 0.8498130000079982,
+        "output_tokens": 2675,
+        "content_tokens": 2674,
+        "output_tps": 66.22592338059313,
+        "prefix_tokens": 1269,
+        "cfg_branches": 1,
+        "execution": "eager",
+        "attention": "sdpa",
+        "backend": "mlx"
+      },
+      "nar_seconds": 104.41671999997925,
+      "vae_seconds": 3.958839250029996,
+      "load": {
+        "resolve_conversion_integrity_seconds": 5.201887417002581,
+        "ar_load_events_seconds": [
+          0.11900458298623562
+        ],
+        "ar_load_seconds": 0.11900458298623562,
+        "conditioning_load_events_seconds": [
+          0.21916387503733858
+        ],
+        "conditioning_load_seconds": 0.21916387503733858,
+        "nar_load_events_seconds": [
+          0.13244458299595863
+        ],
+        "nar_load_seconds": 0.13244458299595863,
+        "vae_load_events_seconds": [
+          0.10607362497830763
+        ],
+        "vae_load_seconds": 0.10607362497830763
+      },
+      "e2e_seconds": 148.9062277909834
+    },
+    "configuration": {
+      "generation": {
+        "abc": {
+          "temperature": 0.7,
+          "top_p": 0.9,
+          "top_k": 30,
+          "repetition_penalty": 1.005,
+          "penalty_window": 100,
+          "min_tokens": 32,
+          "max_tokens": 4096
+        },
+        "semantic": {
+          "temperature": 1.0,
+          "top_p": 0.95,
+          "top_k": 100,
+          "repetition_penalty": 1.2,
+          "penalty_window": 50,
+          "min_tokens": 200,
+          "max_tokens": 9000
+        },
+        "ode_steps": 32,
+        "ode_method": "midpoint",
+        "context": 24576,
+        "version": "yue2-native-v1"
+      },
+      "overrides": {},
+      "cot": "melody",
+      "cfg_scale": 1.0,
+      "cfg_negative": "same_instruction_and_exact_abc",
+      "backend": "mlx",
+      "quantization": "8bit",
+      "model_dtype": "bfloat16",
+      "vae_dtype": "float32",
+      "vae_decode": "halo_crop",
+      "vae_core_frames": 256,
+      "vae_halo_frames": 16,
+      "device": "DeviceType.gpu",
+      "memory_budget_gib": 16.0,
+      "offload_ar": false,
+      "runtime_sha256": "ff4829d01380a2ac98fbc0aa0aed90f9b2bbe9c0a3473f1d62ed8ee3abc8efa9",
+      "decoder_release": "standard",
+      "validation_status": "unvalidated",
+      "vae_backend": "mlx",
+      "ar_precision": "8bit",
+      "kv_dtype": "bfloat16",
+      "nar_dtype": "bfloat16",
+      "conditioning_precision": "bf16",
+      "attention_opmath": "float32",
+      "mlx_tf32_enabled": false,
+      "attention_inputs": "native_steel_bfloat16",
+      "query_chunk_size": 256,
+      "runtime": {
+        "lyra-yue2": "0.1.0",
+        "mlx": "0.32.2",
+        "mlx-lm": "0.31.3",
+        "transformers": "5.0.0",
+        "numpy": "2.2.6",
+        "python": "3.12.10",
+        "macos": "27.0"
+      },
+      "upstream_commit": "92a73cc7652fcc1f937855e4b765e0a0edd7ff2e",
+      "execution_guard": "GPUExecution",
+      "rng": {
+        "ar": "request_local_mlx",
+        "acoustic": "numpy_pcg64_fp32_full_song_v1"
+      }
+    },
+    "identity": "9d0b167724db8db0f005e8cf98a353533fe70e277508e799adec3d1661f82a64",
+    "audio_sha256": "16759c15b81f802f51b4a676ae5bed9b16bc4e9334976e5d70c289ee5c983020",
+    "result_sha256": "8271706dc45c46af193dcb0e1e8e4a040f345279acc987beeb066654d59e2869",
+    "audio_quality": {
+      "sample_rate": 48000,
+      "channels": 2,
+      "finite": true,
+      "rms": 0.14550125703815084,
+      "peak": 1.0,
+      "clipping_fraction": 1.9477929168900137e-07
+    },
+    "musical_quality_acceptance": "pending human listening; not established by duration or EOS",
+    "resources": {
+      "memory_counter_schema": 2,
+      "swap_counter_source": "host_statistics64.swapins/swapouts",
+      "sampling_interval_seconds": 0.1,
+      "power_sampling_interval_seconds": 5.0,
+      "metadata": {},
+      "power_start": {
+        "ac_connected": true,
+        "pmset": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=37224547)\t95%; AC attached; not charging present: true"
+      },
+      "power_end": {
+        "ac_connected": true,
+        "pmset": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=37224547)\t95%; AC attached; not charging present: true"
+      },
+      "start": {
+        "elapsed_seconds": 0.009916167007759213,
+        "rss_bytes": 51953664,
+        "system_swap_used_bytes": 12374114304,
+        "system_swap_in_bytes": 56332369920,
+        "system_swap_out_bytes": 83892617216,
+        "system_available_bytes": 70761709568,
+        "system_total_bytes": 137438953472,
+        "system_memory_pressure_level": 1,
+        "system_free_bytes": 14330363904,
+        "system_wired_bytes": 6635929600,
+        "system_compressor_bytes": 2742812672,
+        "system_file_backed_bytes": 29971595264,
+        "physical_footprint_bytes": 32097000,
+        "process_lifetime_peak_footprint_bytes": 32097000,
+        "mlx_active_bytes": 0,
+        "mlx_cache_bytes": 0,
+        "mlx_peak_bytes": 0,
+        "ac_connected": true
+      },
+      "end": {
+        "elapsed_seconds": 155.07863366702804,
+        "rss_bytes": 938688512,
+        "system_swap_used_bytes": 12374114304,
+        "system_swap_in_bytes": 56332566528,
+        "system_swap_out_bytes": 83892617216,
+        "system_available_bytes": 65943896064,
+        "system_total_bytes": 137438953472,
+        "system_memory_pressure_level": 1,
+        "system_free_bytes": 5339480064,
+        "system_wired_bytes": 7147044864,
+        "system_compressor_bytes": 2742632448,
+        "system_file_backed_bytes": 30022123520,
+        "physical_footprint_bytes": 1260112176,
+        "process_lifetime_peak_footprint_bytes": 11869723320,
+        "mlx_active_bytes": 8,
+        "mlx_cache_bytes": 0,
+        "mlx_peak_bytes": 11256166614,
+        "ac_connected": true
+      },
+      "sampled_maxima": {
+        "mlx_active_bytes": 11196732990,
+        "mlx_cache_bytes": 164937760,
+        "mlx_peak_bytes": 11256166614,
+        "physical_footprint_bytes": 11737373368,
+        "process_lifetime_peak_footprint_bytes": 11869723320,
+        "rss_bytes": 8234958848,
+        "system_available_bytes": 70762905600,
+        "system_compressor_bytes": 2742812672,
+        "system_file_backed_bytes": 30022123520,
+        "system_free_bytes": 14346682368,
+        "system_swap_in_bytes": 56332566528,
+        "system_swap_out_bytes": 83892617216,
+        "system_swap_used_bytes": 12374114304,
+        "system_total_bytes": 137438953472,
+        "system_wired_bytes": 11826184192
+      },
+      "monitor_error": null,
+      "exception": null
+    },
+    "artifact_directory": "outputs/official_fullsong/melody_supplied/attempt-2",
+    "prior_attempts": [
+      {
+        "attempt": 1,
+        "status": "failed",
+        "error": "RuntimeError: AC power is required for an acceptance benchmark",
+        "receipt_path": "outputs/official_fullsong/melody_supplied/measurement.json",
+        "receipt_sha256": "185c873093a44167d02daee1965c139df7240a2d49bb4990cb49e1a121fe8a0e"
+      }
+    ]
+  },
+  "official_player": "audio/fullsong/8adfbdf7e6f4255548a6.mp3",
+  "local_player": "audio/fullsong/16759c15b81f802f51b4.mp3",
+  "actual_score": "X:1\nT:\nM:4/4\nL:1/32\nQ:1/4=104\nV: Vocal clef=treble name=\"Vocal Melody\" snm=\"Vocal\"\nV: Ins clef=treble name=\"Ins Melody\" snm=\"Inst.\"\nK:Em\n% intro\nV: Vocal\nZ4|\nV: Ins\nZ|g4g4g8g4g4g8|g4b4e6f2g16|a4a4a8a4g4g4g2g2|\nV: Vocal\nZ|\nV: Ins\nb4b4a4f4e16|\n% verse\nV: Vocal\nB4g4f4e4B8z4B2B2|B4g4f4e4c8z8|c4a4g4f4d8z8|b4b4a4f4g8z8|\nV: Ins\nZ4|\nV: Vocal\nB4g4f4e4B8z8|B4g4f4e4c8z4c4|c4a4g4f4b4b4b4b4|c'4b4a4f4e4z4b8|\nV: Ins\nZ4|\n% chorus\nV: Vocal\ng4g4g8g4g4g8|g4b4e6f2g8z8|a4a4a6a2a4g4g4g2g2|g4f4f4g4f8b4z4|\nV: Ins\nZ4|\nV: Vocal\ng4g4g8g4g4g8|g4b4e6f2g8z8|a4a4a6a2a4g4g4g2g2|b4b4a4f4e12z4|\nV: Ins\nZ4|\nV: Vocal\nZ|\nV: Ins\nZ|\n% interlude\nV: Vocal\nZ|\nV: Ins\nB4B2B2e4B2B2e2B2e2g2b8|\n% verse\nV: Vocal\nB4g4f4e4B8z8|B4g4f4e4c8z8|c4a4g4f4d8z8|b4b4a4f4g8z8|\nV: Ins\nZ4|\nV: Vocal\nB4g4f4e4B8z4B4|B4g4f4e4c8z4c4|c4a4g4f4b4b4b4b4|c'4b4a4f4e4z4b8|\nV: Ins\nZ4|\n% chorus\nV: Vocal\ng4g4g8g4g4g8|g4b4e6f2g8z8|a4a4a6a2a4g4g4g2g2|g4f4f4g4f8b4z4|\nV: Ins\nZ4|\nV: Vocal\ng4g4g8g4g4g8|g4b4e6f2g8z8|a4a4a6a2a4g4g4g2g2|b4b4a4f4e8z8|\nV: Ins\nZ4|\nV: Vocal\na4a4a6a2a4g4g4g2g2|b8b8a8f8|e24z8|\nV: Ins\nZ3|\nV: Vocal\nM:1/4\nZ|\nV: Ins\nM:1/4\nZ|\n% outro\nV: Vocal\nM:4/4\nZ4|\nV: Ins\nM:4/4\ng4g4g8g4g4g8|g4b4e6f2g16|a4a4a4a4a4g4g4g2g2|b4b4a4f4e16|\nV: Vocal\nZ|\nV: Ins\ne4g4g4e4z16|\n"
+}

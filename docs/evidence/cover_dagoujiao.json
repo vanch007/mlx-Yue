@@ -1,0 +1,270 @@
+{
+  "id": "cover_dagoujiao",
+  "official_id": "dagoujiao-chord",
+  "title": "Big Dog Goes Woof",
+  "genre": "New Orleans Brass-Funk · 115 BPM",
+  "language": "zh",
+  "score_mode": "supplied",
+  "request": {
+    "id": "cover_dagoujiao",
+    "style": "New Orleans brass-funk, second-line drums, sousaphone, honky-tonk piano, trombone and baritone sax, playful Mandarin duet, 115 BPM\n",
+    "lyrics": "[Chorus]\n我们一起学狗叫 一起汪汪汪汪汪\n在你门前摇尾巴 快来汪汪汪汪汪\n我的脚步咚咚响 追着飞盘满街跑\n不带我出门我就汪汪汪\n\n[Verse]\n每天我都等你带我跑\n守在门边数着每分每秒\n外面今天多热闹 风儿比我更知道\n我就是你的小保镖\n\n[Verse]\n有时候我馋得像头熊\n听见塑料袋就满屋乱跑\n你总说等等 可我已经冲到大门口\n今天也要当只快乐狗\n\n[Chorus]\n我们一起学狗叫 一起汪汪汪汪汪\n在你门前摇尾巴 快来汪汪汪汪汪\n我的脚步咚咚响 追着飞盘满街跑\n不带我出门我就汪汪汪\n我们一起学狗叫 一起汪汪汪汪汪\n我要叼你的外套 闻见出门的味道\n想要追着你的球 跑到草地上睡着\n每天都惦记那根骨头\n\n[Verse]\n黄昏后我跑得一身土\n你拿毛巾追我满屋乱跑\n你说慢一点 我却摇着尾巴装不懂\n今晚还要当只香香狗\n\n[Chorus]\n我们一起学狗叫 一起汪汪汪汪汪\n在你门前摇尾巴 快来汪汪汪汪汪\n我的脚步咚咚响 追着飞盘满街跑\n不带我出门我就汪汪汪\n我们一起学狗叫 一起汪汪汪汪汪\n我要叼你的外套 闻见出门的味道\n想要追着你的球 跑到草地上睡着\n每天都惦记那根骨头\n\n[Chorus]\n我们终于跑回家 一起汪汪汪汪汪\n在你脚边摇尾巴 晚安汪汪汪汪汪\n我的呼噜轰轰响 梦里飞盘满天跑\n不许我上床我就汪汪汪\n我们明天还要跑 一起汪汪汪汪汪\n我要守着你外套 闻着安心的味道\n想要靠着你的脚 一直睡到天亮了\n每天都等着新的骨头\n",
+    "cot": "full",
+    "seed": 2026,
+    "abc": "X:1\nT:\nM:4/4\nL:1/32\nQ:1/4=115\nV: Vocal clef=treble name=\"Vocal Melody\" snm=\"Vocal\"\nV: Ins clef=treble name=\"Ins Melody\" snm=\"Inst.\"\nK:F#\n% silence\nV: Vocal\nZ|\nV: Ins\nZ|\n% intro\nV: Vocal\n\"F#\"z32|\"C#\"z32|\"D#m7\"z32|\"Bsus2\"z24f4g4|\nV: Ins\nz12f2z6f4z4f4|z4g4z4g6z2g4z4g4|z4f4z4f6z2f4z4f4|z4f4z4f8z12|\n% chorus\nV: Vocal\n\"F#\"a4c4f4a4a4z4g4f4|\"C#/E#\"g4c'4c'4c'4c'4z4f4e4|\"D#m7\"f4f4f4f4f4z4e4f4|\"C#sus4\"e4f4e4d4c4z4c4c4|\nV: Ins\nZ4|\nV: Vocal\n\"B\"d4d4d4d4d4z4c4A4|\"A#m7\"c4A4\"D#m7\"c4g4f8z4c4|\"G#m7\"a4a4a4b4c'4f4f4a4|\"C#sus4\"g16z16|\nV: Ins\nZ4|\n% verse\nV: Vocal\n\"F#\"z8c4c4c8c4c4|\"C#/E#\"d4c4A4c4z4F4F4F4|\"D#m7\"A8A4A4A4F4F4A4|\"F#maj7/C#\"A8z12A4G4F4|\nV: Ins\nZ4|\nV: Vocal\n\"B\"F4F2F6C4z4F4F4F4|\"F#/A#\"F4C4C4A8F4z4C4|\"G#m7\"B8B4B4B4F4F4G4|\"C#sus4\"G16z16|\nV: Ins\nZ4|\nV: Vocal\n\"F#\"z8c4c4c8c4c4|\"A#m7\"d4c4A4c4z4c4c4c4|\"D#m7\"f8f4f4A4A4d4c4-|\"C#6\"c12z8c4c4A4|\nV: Ins\nZ4|\nV: Vocal\n\"B\"d6d6c4z4d4c4B4|\"A#m7\"c4c4\"D#m7\"c4g8f4z4c4|\"G#m7\"a8a4b4c'4a4f4a4-|\"C#sus4\"a4a4g8-\"C#\"g16|\nV: Ins\nZ4|\nV: Vocal\n\"C#\"z24f4g4|\nV: Ins\nZ|\n% chorus\nV: Vocal\n\"F#\"a4c4f4a4a4z4g4f4|\"A#m7\"g4c'4c'4c'4c'4z4f4e4|\"D#m7\"f4f4f4f4f4z4e4f4|\"C#6\"e4f4e4d4c4z4c4c4|\nV: Ins\nZ4|\nV: Vocal\n\"B\"d4d4d4d4c4z4c4A4|\"A#m\"c4A4c4g4f8z4c4|\"G#m7\"a4a4a4b4c'4f4f4a4|\"C#sus4\"g16z8f4g4|\nV: Ins\nZ4|\nV: Vocal\n\"F#\"a4c4f4a4a4z4g4f4|\"A#m7\"g4c'4c'4c'4c'4z4f4e4|\"D#m7\"f4f4f4f4f4z4e4f4|\"C#6\"e4f4e4d4c4z4c4c4|\nV: Ins\nZ4|\nV: Vocal\n\"Bmaj7\"d4F4B4d4d4z4c4A4|\"A#m\"c4A4c4g4f8z4c4|\"G#m7\"b8b4a4\"C#sus4\"b4a4f4g4-|\"F#\"g4f16z12|\nV: Ins\nZ4|\n% interlude\nV: Vocal\n\"Bmaj7\"z16\"C#\"z16|\"F#\"z32|\"B\"z16\"C#\"z16|\"D#m7\"z32|\nV: Ins\na4g4f4g8f4e4f4-|f16-f4z4a4b4|c'8f4g8c'8a4-|a16-a4z8d2e2|\nV: Vocal\n\"Bmaj7\"z8\"C#sus4\"z24|\"A#7\"z8\"D#m\"z24|\"G#m7\"z16\"C#sus4\"z16|\"F#sus4\"z8\"F#\"z24|\nV: Ins\nf8a4g12z4a2c'2|^^c'4a4e'4f'12d'4^c'4-|c'4z4a4g8c4g4f4-|f16f4g8a4-|\n% verse\nV: Vocal\n\"F#\"z8c4c4c8c4c4|\"A#m7\"d4c4A4c4z4c4c4c4|\"D#m7\"f8f4f4A4A4d4c4-|\"C#\"c12z8c4c4A4|\nV: Ins\na8z24|Z3|\nV: Vocal\n\"B\"d4d2d6c4z4d4c4B4|\"A#m7\"c4c4\"D#m7\"c4g8f4z4c4|\"G#m7\"a4a4a4b4c'4a4f4a4-|\"C#sus4\"a4a4g16-\"C#\"g8|\nV: Ins\nZ4|\nV: Vocal\n\"C#\"z24f4g4|\nV: Ins\nz4c'2z2c'8a4c'4z8|\n% chorus\nV: Vocal\n\"F#\"a4c4f4a4a4z4g4f4|\"A#m7\"g4c'4c'4c'4c'4z4f4e4|\"D#m7\"f4f4f4f4f4z4e4f4|\"C#6\"e4f4e4d4c4z4c4c4|\nV: Ins\nZ4|\nV: Vocal\n\"B\"d4d4d4d4d4z4c4A4|\"A#m7\"c4A4c4g4f8z4c4|\"G#m7\"a4a4a4b4c'4f4f4a4|\"C#\"g16z8f4g4|\nV: Ins\nZ4|\nV: Vocal\n\"F#\"a4c4f4a4a4z4g4f4|\"A#m7\"g4c'4c'4c'4c'4z4f4e4|\"D#m7\"f4f4f4f4f4z4e4f4|\"C#6\"e4f4e4d4c4z4c4c4|\nV: Ins\nZ4|\nV: Vocal\n\"B\"d4F4B4d4d4z4c4A4|\"A#m\"c4A4c4g4f8z4c4|\"G#m7\"b8b4a4\"C#\"b4a4f4g4-|\"F#\"g4f16z4f4g4|\nV: Ins\nZ4|\nV: Vocal\n\"F#\"a4c4f4a4a4z4g4f4|\"A#m7\"g4c'4c'4c'4c'4z4f4e4|\"D#m7\"f4f4f4f4f4z4e4f4|\"C#6\"e4f4e4d4c4z4c4c4|\nV: Ins\nZ4|\nV: Vocal\n\"B\"d4d4d4d4d4z4c4A4|\"A#m\"c4A4c4g4f4f4z4c4|\"G#m7\"a4a4a4b4c'4f4f4a4|\"C#\"a4g16z4f4g4|\nV: Ins\nZ4|\nV: Vocal\n\"F#\"a4c4f4a4a4z4g4f4|\"A#m7\"g4c'4c'4c'4c'4z4f4e4|\"D#m7\"f4f4f4f4f4z4e4f4|\"C#6\"e4f4e4d4c4z4c4c4|\nV: Ins\nZ4|\nV: Vocal\n\"B\"d4F4B4d4d4z4c4A4|\"A#m\"c4A4c4g4f4f4z4c4|\"G#m7\"b8b4a4\"C#sus4\"b4c'4f4g4|\"F#\"z4g4f16z8|\nV: Ins\nZ4|\n% outro\nV: Vocal\n\"F#\"z32|\"C#/E#\"z32|\"D#m7\"z32|\"Bsus2\"z32|\nV: Ins\na16z8a4g4-|g16-g4z4g4f4-|f16-f4z12|b8c'2z2c'16z4|\nV: Vocal\n\"F#\"z32|\"F#\"z32|\nV: Ins\nf'32|Z|\n"
+  },
+  "official_mode": "cover/edit",
+  "source": {
+    "id": "dagoujiao-chord",
+    "title": "Big Dog Goes Woof",
+    "genre": "New Orleans Brass-Funk · 115 BPM",
+    "source": "Adapted from Learn to Meow",
+    "editType": "Lyric rewrite · Style rearrangement · Chord-conditioned ABC",
+    "audio": "assets/covers/dagoujiao-chord/dagoujiao-chord.mp3",
+    "abcUrl": "assets/covers/dagoujiao-chord/dagoujiao-chord.abc",
+    "abc": "X:1\nT:\nM:4/4\nL:1/32\nQ:1/4=115\nV: Vocal clef=treble name=\"Vocal Melody\" snm=\"Vocal\"\nV: Ins clef=treble name=\"Ins Melody\" snm=\"Inst.\"\nK:F#\n% silence\nV: Vocal\nZ|\nV: Ins\nZ|\n% intro\nV: Vocal\n\"F#\"z32|\"C#\"z32|\"D#m7\"z32|\"Bsus2\"z24f4g4|\nV: Ins\nz12f2z6f4z4f4|z4g4z4g6z2g4z4g4|z4f4z4f6z2f4z4f4|z4f4z4f8z12|\n% chorus\nV: Vocal\n\"F#\"a4c4f4a4a4z4g4f4|\"C#/E#\"g4c'4c'4c'4c'4z4f4e4|\"D#m7\"f4f4f4f4f4z4e4f4|\"C#sus4\"e4f4e4d4c4z4c4c4|\nV: Ins\nZ4|\nV: Vocal\n\"B\"d4d4d4d4d4z4c4A4|\"A#m7\"c4A4\"D#m7\"c4g4f8z4c4|\"G#m7\"a4a4a4b4c'4f4f4a4|\"C#sus4\"g16z16|\nV: Ins\nZ4|\n% verse\nV: Vocal\n\"F#\"z8c4c4c8c4c4|\"C#/E#\"d4c4A4c4z4F4F4F4|\"D#m7\"A8A4A4A4F4F4A4|\"F#maj7/C#\"A8z12A4G4F4|\nV: Ins\nZ4|\nV: Vocal\n\"B\"F4F2F6C4z4F4F4F4|\"F#/A#\"F4C4C4A8F4z4C4|\"G#m7\"B8B4B4B4F4F4G4|\"C#sus4\"G16z16|\nV: Ins\nZ4|\nV: Vocal\n\"F#\"z8c4c4c8c4c4|\"A#m7\"d4c4A4c4z4c4c4c4|\"D#m7\"f8f4f4A4A4d4c4-|\"C#6\"c12z8c4c4A4|\nV: Ins\nZ4|\nV: Vocal\n\"B\"d6d6c4z4d4c4B4|\"A#m7\"c4c4\"D#m7\"c4g8f4z4c4|\"G#m7\"a8a4b4c'4a4f4a4-|\"C#sus4\"a4a4g8-\"C#\"g16|\nV: Ins\nZ4|\nV: Vocal\n\"C#\"z24f4g4|\nV: Ins\nZ|\n% chorus\nV: Vocal\n\"F#\"a4c4f4a4a4z4g4f4|\"A#m7\"g4c'4c'4c'4c'4z4f4e4|\"D#m7\"f4f4f4f4f4z4e4f4|\"C#6\"e4f4e4d4c4z4c4c4|\nV: Ins\nZ4|\nV: Vocal\n\"B\"d4d4d4d4c4z4c4A4|\"A#m\"c4A4c4g4f8z4c4|\"G#m7\"a4a4a4b4c'4f4f4a4|\"C#sus4\"g16z8f4g4|\nV: Ins\nZ4|\nV: Vocal\n\"F#\"a4c4f4a4a4z4g4f4|\"A#m7\"g4c'4c'4c'4c'4z4f4e4|\"D#m7\"f4f4f4f4f4z4e4f4|\"C#6\"e4f4e4d4c4z4c4c4|\nV: Ins\nZ4|\nV: Vocal\n\"Bmaj7\"d4F4B4d4d4z4c4A4|\"A#m\"c4A4c4g4f8z4c4|\"G#m7\"b8b4a4\"C#sus4\"b4a4f4g4-|\"F#\"g4f16z12|\nV: Ins\nZ4|\n% interlude\nV: Vocal\n\"Bmaj7\"z16\"C#\"z16|\"F#\"z32|\"B\"z16\"C#\"z16|\"D#m7\"z32|\nV: Ins\na4g4f4g8f4e4f4-|f16-f4z4a4b4|c'8f4g8c'8a4-|a16-a4z8d2e2|\nV: Vocal\n\"Bmaj7\"z8\"C#sus4\"z24|\"A#7\"z8\"D#m\"z24|\"G#m7\"z16\"C#sus4\"z16|\"F#sus4\"z8\"F#\"z24|\nV: Ins\nf8a4g12z4a2c'2|^^c'4a4e'4f'12d'4^c'4-|c'4z4a4g8c4g4f4-|f16f4g8a4-|\n% verse\nV: Vocal\n\"F#\"z8c4c4c8c4c4|\"A#m7\"d4c4A4c4z4c4c4c4|\"D#m7\"f8f4f4A4A4d4c4-|\"C#\"c12z8c4c4A4|\nV: Ins\na8z24|Z3|\nV: Vocal\n\"B\"d4d2d6c4z4d4c4B4|\"A#m7\"c4c4\"D#m7\"c4g8f4z4c4|\"G#m7\"a4a4a4b4c'4a4f4a4-|\"C#sus4\"a4a4g16-\"C#\"g8|\nV: Ins\nZ4|\nV: Vocal\n\"C#\"z24f4g4|\nV: Ins\nz4c'2z2c'8a4c'4z8|\n% chorus\nV: Vocal\n\"F#\"a4c4f4a4a4z4g4f4|\"A#m7\"g4c'4c'4c'4c'4z4f4e4|\"D#m7\"f4f4f4f4f4z4e4f4|\"C#6\"e4f4e4d4c4z4c4c4|\nV: Ins\nZ4|\nV: Vocal\n\"B\"d4d4d4d4d4z4c4A4|\"A#m7\"c4A4c4g4f8z4c4|\"G#m7\"a4a4a4b4c'4f4f4a4|\"C#\"g16z8f4g4|\nV: Ins\nZ4|\nV: Vocal\n\"F#\"a4c4f4a4a4z4g4f4|\"A#m7\"g4c'4c'4c'4c'4z4f4e4|\"D#m7\"f4f4f4f4f4z4e4f4|\"C#6\"e4f4e4d4c4z4c4c4|\nV: Ins\nZ4|\nV: Vocal\n\"B\"d4F4B4d4d4z4c4A4|\"A#m\"c4A4c4g4f8z4c4|\"G#m7\"b8b4a4\"C#\"b4a4f4g4-|\"F#\"g4f16z4f4g4|\nV: Ins\nZ4|\nV: Vocal\n\"F#\"a4c4f4a4a4z4g4f4|\"A#m7\"g4c'4c'4c'4c'4z4f4e4|\"D#m7\"f4f4f4f4f4z4e4f4|\"C#6\"e4f4e4d4c4z4c4c4|\nV: Ins\nZ4|\nV: Vocal\n\"B\"d4d4d4d4d4z4c4A4|\"A#m\"c4A4c4g4f4f4z4c4|\"G#m7\"a4a4a4b4c'4f4f4a4|\"C#\"a4g16z4f4g4|\nV: Ins\nZ4|\nV: Vocal\n\"F#\"a4c4f4a4a4z4g4f4|\"A#m7\"g4c'4c'4c'4c'4z4f4e4|\"D#m7\"f4f4f4f4f4z4e4f4|\"C#6\"e4f4e4d4c4z4c4c4|\nV: Ins\nZ4|\nV: Vocal\n\"B\"d4F4B4d4d4z4c4A4|\"A#m\"c4A4c4g4f4f4z4c4|\"G#m7\"b8b4a4\"C#sus4\"b4c'4f4g4|\"F#\"z4g4f16z8|\nV: Ins\nZ4|\n% outro\nV: Vocal\n\"F#\"z32|\"C#/E#\"z32|\"D#m7\"z32|\"Bsus2\"z32|\nV: Ins\na16z8a4g4-|g16-g4z4g4f4-|f16-f4z12|b8c'2z2c'16z4|\nV: Vocal\n\"F#\"z32|\"F#\"z32|\nV: Ins\nf'32|Z|\n",
+    "tags": "New Orleans brass-funk, second-line drums, sousaphone, honky-tonk piano, trombone and baritone sax, playful Mandarin duet, 115 BPM\n",
+    "lyrics": "[Chorus]\n我们一起学狗叫 一起汪汪汪汪汪\n在你门前摇尾巴 快来汪汪汪汪汪\n我的脚步咚咚响 追着飞盘满街跑\n不带我出门我就汪汪汪\n\n[Verse]\n每天我都等你带我跑\n守在门边数着每分每秒\n外面今天多热闹 风儿比我更知道\n我就是你的小保镖\n\n[Verse]\n有时候我馋得像头熊\n听见塑料袋就满屋乱跑\n你总说等等 可我已经冲到大门口\n今天也要当只快乐狗\n\n[Chorus]\n我们一起学狗叫 一起汪汪汪汪汪\n在你门前摇尾巴 快来汪汪汪汪汪\n我的脚步咚咚响 追着飞盘满街跑\n不带我出门我就汪汪汪\n我们一起学狗叫 一起汪汪汪汪汪\n我要叼你的外套 闻见出门的味道\n想要追着你的球 跑到草地上睡着\n每天都惦记那根骨头\n\n[Verse]\n黄昏后我跑得一身土\n你拿毛巾追我满屋乱跑\n你说慢一点 我却摇着尾巴装不懂\n今晚还要当只香香狗\n\n[Chorus]\n我们一起学狗叫 一起汪汪汪汪汪\n在你门前摇尾巴 快来汪汪汪汪汪\n我的脚步咚咚响 追着飞盘满街跑\n不带我出门我就汪汪汪\n我们一起学狗叫 一起汪汪汪汪汪\n我要叼你的外套 闻见出门的味道\n想要追着你的球 跑到草地上睡着\n每天都惦记那根骨头\n\n[Chorus]\n我们终于跑回家 一起汪汪汪汪汪\n在你脚边摇尾巴 晚安汪汪汪汪汪\n我的呼噜轰轰响 梦里飞盘满天跑\n不许我上床我就汪汪汪\n我们明天还要跑 一起汪汪汪汪汪\n我要守着你外套 闻着安心的味道\n想要靠着你的脚 一直睡到天亮了\n每天都等着新的骨头\n",
+    "titleZh": "大狗叫",
+    "sourceTitleZh": "学猫叫",
+    "sourceUrl": "https://www.youtube.com/watch?v=8j-6PcuWiZI"
+  },
+  "official_audio_url": "https://map-yue2.github.io/assets/covers/dagoujiao-chord/dagoujiao-chord.mp3",
+  "official_audio_path": "outputs/official_fullsong/reference/dagoujiao-chord.mp3",
+  "official_audio_sha256": "7e446010ba7fec74807ccd6319033a31abdc9a736e7d814e0b3a05f8c169abac",
+  "official_seconds": 209.95866666666666,
+  "input_hashes": {
+    "style": "715e85409513674aef60538c2ca36daf31cfae0d837ff8fdb18fccaf9d73380e",
+    "lyrics": "c568830664579147e41838e288999a1e4e8205dc29558e04221143f3fb637f19",
+    "abc": "5ab5d44d9f58ad31466d02ac0c7a174e882c332015aa18b46973fd040641e88b"
+  },
+  "measurement": {
+    "id": "cover_dagoujiao",
+    "status": "complete",
+    "case_sha256": "6202abf61195ceb62850331159d65f1f79d39f9fca6c6ec514ced0a24babe31d",
+    "attempt": 2,
+    "benchmark_script_sha256": "2c5868ef28d74bb713079a0c1cf886d419a4e3a73cce34be2413e4cda7ec9449",
+    "retry_policy": "Only interrupted/failed execution, identical input and seed; no quality reroll",
+    "truncated": {
+      "abc": false,
+      "semantic": false
+    },
+    "audio_seconds": 207.91866666666667,
+    "official_seconds": 209.95866666666666,
+    "duration_ratio": 0.9902838018911659,
+    "e2e_seconds": 390.4508596250089,
+    "rtf": 1.877901902146074,
+    "speed_multiplier": 0.5325091789178102,
+    "load_seconds": 5.236991917015985,
+    "transcription_seconds": 0,
+    "save_seconds": 0.46092441596556455,
+    "timing": {
+      "abc": {
+        "seconds": 0.0,
+        "output_tokens": 0,
+        "external_prefix_tokens": 2398
+      },
+      "semantic": {
+        "seconds": 86.1781507920241,
+        "prefill_seconds": 1.704754917009268,
+        "ttft_seconds": 1.7083948340150528,
+        "output_tokens": 5199,
+        "content_tokens": 5198,
+        "output_tps": 60.32851659287605,
+        "prefix_tokens": 2931,
+        "cfg_branches": 1,
+        "execution": "eager",
+        "attention": "sdpa",
+        "backend": "mlx"
+      },
+      "nar_seconds": 288.79281679098494,
+      "vae_seconds": 9.522870707965922,
+      "load": {
+        "resolve_conversion_integrity_seconds": 5.236917499976698,
+        "ar_load_events_seconds": [
+          0.12041183398105204
+        ],
+        "ar_load_seconds": 0.12041183398105204,
+        "conditioning_load_events_seconds": [
+          0.19284049997804686
+        ],
+        "conditioning_load_seconds": 0.19284049997804686,
+        "nar_load_events_seconds": [
+          0.1329428749741055
+        ],
+        "nar_load_seconds": 0.1329428749741055,
+        "vae_load_events_seconds": [
+          0.1017137499875389
+        ],
+        "vae_load_seconds": 0.1017137499875389
+      },
+      "e2e_seconds": 384.63164837495424
+    },
+    "configuration": {
+      "generation": {
+        "abc": {
+          "temperature": 0.7,
+          "top_p": 0.9,
+          "top_k": 30,
+          "repetition_penalty": 1.005,
+          "penalty_window": 100,
+          "min_tokens": 32,
+          "max_tokens": 4096
+        },
+        "semantic": {
+          "temperature": 1.0,
+          "top_p": 0.95,
+          "top_k": 100,
+          "repetition_penalty": 1.2,
+          "penalty_window": 50,
+          "min_tokens": 200,
+          "max_tokens": 9000
+        },
+        "ode_steps": 32,
+        "ode_method": "midpoint",
+        "context": 24576,
+        "version": "yue2-native-v1"
+      },
+      "overrides": {},
+      "cot": "full",
+      "cfg_scale": 1.0,
+      "cfg_negative": "same_instruction_and_exact_abc",
+      "backend": "mlx",
+      "quantization": "8bit",
+      "model_dtype": "bfloat16",
+      "vae_dtype": "float32",
+      "vae_decode": "halo_crop",
+      "vae_core_frames": 256,
+      "vae_halo_frames": 16,
+      "device": "DeviceType.gpu",
+      "memory_budget_gib": 16.0,
+      "offload_ar": false,
+      "runtime_sha256": "ff4829d01380a2ac98fbc0aa0aed90f9b2bbe9c0a3473f1d62ed8ee3abc8efa9",
+      "decoder_release": "standard",
+      "validation_status": "unvalidated",
+      "vae_backend": "mlx",
+      "ar_precision": "8bit",
+      "kv_dtype": "bfloat16",
+      "nar_dtype": "bfloat16",
+      "conditioning_precision": "bf16",
+      "attention_opmath": "float32",
+      "mlx_tf32_enabled": false,
+      "attention_inputs": "native_steel_bfloat16",
+      "query_chunk_size": 256,
+      "runtime": {
+        "lyra-yue2": "0.1.0",
+        "mlx": "0.32.2",
+        "mlx-lm": "0.31.3",
+        "transformers": "5.0.0",
+        "numpy": "2.2.6",
+        "python": "3.12.10",
+        "macos": "27.0"
+      },
+      "upstream_commit": "92a73cc7652fcc1f937855e4b765e0a0edd7ff2e",
+      "execution_guard": "GPUExecution",
+      "rng": {
+        "ar": "request_local_mlx",
+        "acoustic": "numpy_pcg64_fp32_full_song_v1"
+      }
+    },
+    "identity": "1dfc2e74cf3d94c387b37ac8ed9971bd82efb12d37b6371cee329f6adea975c1",
+    "audio_sha256": "ec9f59e58b06d8d91148c843af26fbc52db6c330c31e7c4cb7dbdcd10ba626ba",
+    "result_sha256": "ca548e00759f8b74711a1516904e4776206829f1bafd06cb70e3ff340187b8b0",
+    "audio_quality": {
+      "sample_rate": 48000,
+      "channels": 2,
+      "finite": true,
+      "rms": 0.17102370424286245,
+      "peak": 0.950627326965332,
+      "clipping_fraction": 0.0
+    },
+    "musical_quality_acceptance": "pending human listening; not established by duration or EOS",
+    "resources": {
+      "memory_counter_schema": 2,
+      "swap_counter_source": "host_statistics64.swapins/swapouts",
+      "sampling_interval_seconds": 0.1,
+      "power_sampling_interval_seconds": 5.0,
+      "metadata": {},
+      "power_start": {
+        "ac_connected": true,
+        "pmset": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=37224547)\t95%; AC attached; not charging present: true"
+      },
+      "power_end": {
+        "ac_connected": true,
+        "pmset": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=37224547)\t95%; AC attached; not charging present: true"
+      },
+      "start": {
+        "elapsed_seconds": 0.01035045797470957,
+        "rss_bytes": 52068352,
+        "system_swap_used_bytes": 12374114304,
+        "system_swap_in_bytes": 56332828672,
+        "system_swap_out_bytes": 83892617216,
+        "system_available_bytes": 70936838144,
+        "system_total_bytes": 137438953472,
+        "system_memory_pressure_level": 1,
+        "system_free_bytes": 14734950400,
+        "system_wired_bytes": 6459129856,
+        "system_compressor_bytes": 2738896896,
+        "system_file_backed_bytes": 29460611072,
+        "physical_footprint_bytes": 32195280,
+        "process_lifetime_peak_footprint_bytes": 32195280,
+        "mlx_active_bytes": 0,
+        "mlx_cache_bytes": 0,
+        "mlx_peak_bytes": 0,
+        "ac_connected": true
+      },
+      "end": {
+        "elapsed_seconds": 390.99074724997627,
+        "rss_bytes": 817184768,
+        "system_swap_used_bytes": 12374114304,
+        "system_swap_in_bytes": 56333025280,
+        "system_swap_out_bytes": 83892617216,
+        "system_available_bytes": 65638514688,
+        "system_total_bytes": 137438953472,
+        "system_memory_pressure_level": 1,
+        "system_free_bytes": 5577211904,
+        "system_wired_bytes": 7952646144,
+        "system_compressor_bytes": 2737373184,
+        "system_file_backed_bytes": 29556326400,
+        "physical_footprint_bytes": 975341680,
+        "process_lifetime_peak_footprint_bytes": 12128754288,
+        "mlx_active_bytes": 8,
+        "mlx_cache_bytes": 0,
+        "mlx_peak_bytes": 11256150230,
+        "ac_connected": true
+      },
+      "sampled_maxima": {
+        "mlx_active_bytes": 11196716606,
+        "mlx_cache_bytes": 197705728,
+        "mlx_peak_bytes": 11256150230,
+        "physical_footprint_bytes": 11872508504,
+        "process_lifetime_peak_footprint_bytes": 12128754288,
+        "rss_bytes": 8184348672,
+        "system_available_bytes": 70969376768,
+        "system_compressor_bytes": 2738896896,
+        "system_file_backed_bytes": 29571416064,
+        "system_free_bytes": 14819852288,
+        "system_swap_in_bytes": 56333025280,
+        "system_swap_out_bytes": 83892617216,
+        "system_swap_used_bytes": 12374114304,
+        "system_total_bytes": 137438953472,
+        "system_wired_bytes": 11388895232
+      },
+      "monitor_error": null,
+      "exception": null
+    },
+    "artifact_directory": "outputs/official_fullsong/cover_dagoujiao/attempt-2",
+    "prior_attempts": [
+      {
+        "attempt": 1,
+        "status": "failed",
+        "error": "RuntimeError: AC power is required for an acceptance benchmark",
+        "receipt_path": "outputs/official_fullsong/cover_dagoujiao/measurement.json",
+        "receipt_sha256": "1c1d677994e2f85fa04dfc5ce5ebc3c58498deb5ecaa3faa3349c2423c6eb34a"
+      }
+    ]
+  },
+  "official_player": "audio/fullsong/7e446010ba7fec74807c.mp3",
+  "local_player": "audio/fullsong/ec9f59e58b06d8d91148.mp3",
+  "actual_score": "X:1\nT:\nM:4/4\nL:1/32\nQ:1/4=115\nV: Vocal clef=treble name=\"Vocal Melody\" snm=\"Vocal\"\nV: Ins clef=treble name=\"Ins Melody\" snm=\"Inst.\"\nK:F#\n% silence\nV: Vocal\nZ|\nV: Ins\nZ|\n% intro\nV: Vocal\n\"F#\"z32|\"C#\"z32|\"D#m7\"z32|\"Bsus2\"z24f4g4|\nV: Ins\nz12f2z6f4z4f4|z4g4z4g6z2g4z4g4|z4f4z4f6z2f4z4f4|z4f4z4f8z12|\n% chorus\nV: Vocal\n\"F#\"a4c4f4a4a4z4g4f4|\"C#/E#\"g4c'4c'4c'4c'4z4f4e4|\"D#m7\"f4f4f4f4f4z4e4f4|\"C#sus4\"e4f4e4d4c4z4c4c4|\nV: Ins\nZ4|\nV: Vocal\n\"B\"d4d4d4d4d4z4c4A4|\"A#m7\"c4A4\"D#m7\"c4g4f8z4c4|\"G#m7\"a4a4a4b4c'4f4f4a4|\"C#sus4\"g16z16|\nV: Ins\nZ4|\n% verse\nV: Vocal\n\"F#\"z8c4c4c8c4c4|\"C#/E#\"d4c4A4c4z4F4F4F4|\"D#m7\"A8A4A4A4F4F4A4|\"F#maj7/C#\"A8z12A4G4F4|\nV: Ins\nZ4|\nV: Vocal\n\"B\"F4F2F6C4z4F4F4F4|\"F#/A#\"F4C4C4A8F4z4C4|\"G#m7\"B8B4B4B4F4F4G4|\"C#sus4\"G16z16|\nV: Ins\nZ4|\nV: Vocal\n\"F#\"z8c4c4c8c4c4|\"A#m7\"d4c4A4c4z4c4c4c4|\"D#m7\"f8f4f4A4A4d4c4-|\"C#6\"c12z8c4c4A4|\nV: Ins\nZ4|\nV: Vocal\n\"B\"d6d6c4z4d4c4B4|\"A#m7\"c4c4\"D#m7\"c4g8f4z4c4|\"G#m7\"a8a4b4c'4a4f4a4-|\"C#sus4\"a4a4g8-\"C#\"g16|\nV: Ins\nZ4|\nV: Vocal\n\"C#\"z24f4g4|\nV: Ins\nZ|\n% chorus\nV: Vocal\n\"F#\"a4c4f4a4a4z4g4f4|\"A#m7\"g4c'4c'4c'4c'4z4f4e4|\"D#m7\"f4f4f4f4f4z4e4f4|\"C#6\"e4f4e4d4c4z4c4c4|\nV: Ins\nZ4|\nV: Vocal\n\"B\"d4d4d4d4c4z4c4A4|\"A#m\"c4A4c4g4f8z4c4|\"G#m7\"a4a4a4b4c'4f4f4a4|\"C#sus4\"g16z8f4g4|\nV: Ins\nZ4|\nV: Vocal\n\"F#\"a4c4f4a4a4z4g4f4|\"A#m7\"g4c'4c'4c'4c'4z4f4e4|\"D#m7\"f4f4f4f4f4z4e4f4|\"C#6\"e4f4e4d4c4z4c4c4|\nV: Ins\nZ4|\nV: Vocal\n\"Bmaj7\"d4F4B4d4d4z4c4A4|\"A#m\"c4A4c4g4f8z4c4|\"G#m7\"b8b4a4\"C#sus4\"b4a4f4g4-|\"F#\"g4f16z12|\nV: Ins\nZ4|\n% interlude\nV: Vocal\n\"Bmaj7\"z16\"C#\"z16|\"F#\"z32|\"B\"z16\"C#\"z16|\"D#m7\"z32|\nV: Ins\na4g4f4g8f4e4f4-|f16-f4z4a4b4|c'8f4g8c'8a4-|a16-a4z8d2e2|\nV: Vocal\n\"Bmaj7\"z8\"C#sus4\"z24|\"A#7\"z8\"D#m\"z24|\"G#m7\"z16\"C#sus4\"z16|\"F#sus4\"z8\"F#\"z24|\nV: Ins\nf8a4g12z4a2c'2|^^c'4a4e'4f'12d'4^c'4-|c'4z4a4g8c4g4f4-|f16f4g8a4-|\n% verse\nV: Vocal\n\"F#\"z8c4c4c8c4c4|\"A#m7\"d4c4A4c4z4c4c4c4|\"D#m7\"f8f4f4A4A4d4c4-|\"C#\"c12z8c4c4A4|\nV: Ins\na8z24|Z3|\nV: Vocal\n\"B\"d4d2d6c4z4d4c4B4|\"A#m7\"c4c4\"D#m7\"c4g8f4z4c4|\"G#m7\"a4a4a4b4c'4a4f4a4-|\"C#sus4\"a4a4g16-\"C#\"g8|\nV: Ins\nZ4|\nV: Vocal\n\"C#\"z24f4g4|\nV: Ins\nz4c'2z2c'8a4c'4z8|\n% chorus\nV: Vocal\n\"F#\"a4c4f4a4a4z4g4f4|\"A#m7\"g4c'4c'4c'4c'4z4f4e4|\"D#m7\"f4f4f4f4f4z4e4f4|\"C#6\"e4f4e4d4c4z4c4c4|\nV: Ins\nZ4|\nV: Vocal\n\"B\"d4d4d4d4d4z4c4A4|\"A#m7\"c4A4c4g4f8z4c4|\"G#m7\"a4a4a4b4c'4f4f4a4|\"C#\"g16z8f4g4|\nV: Ins\nZ4|\nV: Vocal\n\"F#\"a4c4f4a4a4z4g4f4|\"A#m7\"g4c'4c'4c'4c'4z4f4e4|\"D#m7\"f4f4f4f4f4z4e4f4|\"C#6\"e4f4e4d4c4z4c4c4|\nV: Ins\nZ4|\nV: Vocal\n\"B\"d4F4B4d4d4z4c4A4|\"A#m\"c4A4c4g4f8z4c4|\"G#m7\"b8b4a4\"C#\"b4a4f4g4-|\"F#\"g4f16z4f4g4|\nV: Ins\nZ4|\nV: Vocal\n\"F#\"a4c4f4a4a4z4g4f4|\"A#m7\"g4c'4c'4c'4c'4z4f4e4|\"D#m7\"f4f4f4f4f4z4e4f4|\"C#6\"e4f4e4d4c4z4c4c4|\nV: Ins\nZ4|\nV: Vocal\n\"B\"d4d4d4d4d4z4c4A4|\"A#m\"c4A4c4g4f4f4z4c4|\"G#m7\"a4a4a4b4c'4f4f4a4|\"C#\"a4g16z4f4g4|\nV: Ins\nZ4|\nV: Vocal\n\"F#\"a4c4f4a4a4z4g4f4|\"A#m7\"g4c'4c'4c'4c'4z4f4e4|\"D#m7\"f4f4f4f4f4z4e4f4|\"C#6\"e4f4e4d4c4z4c4c4|\nV: Ins\nZ4|\nV: Vocal\n\"B\"d4F4B4d4d4z4c4A4|\"A#m\"c4A4c4g4f4f4z4c4|\"G#m7\"b8b4a4\"C#sus4\"b4c'4f4g4|\"F#\"z4g4f16z8|\nV: Ins\nZ4|\n% outro\nV: Vocal\n\"F#\"z32|\"C#/E#\"z32|\"D#m7\"z32|\"Bsus2\"z32|\nV: Ins\na16z8a4g4-|g16-g4z4g4f4-|f16-f4z12|b8c'2z2c'16z4|\nV: Vocal\n\"F#\"z32|\"F#\"z32|\nV: Ins\nf'32|Z|\n"
+}

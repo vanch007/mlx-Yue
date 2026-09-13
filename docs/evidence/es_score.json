@@ -1,0 +1,274 @@
+{
+  "id": "es_score",
+  "official_id": "0792ba06ebe2fd7cdd6c3e7b",
+  "title": "Flamenco",
+  "genre": "Flamenco",
+  "language": "es",
+  "score_mode": "supplied",
+  "request": {
+    "id": "es_score",
+    "style": "flamenco gipsy female vocals, deep male spanish rap voice, hip hop beat with cajón and bass, flamenco guitar, palmas, 95 bpm, joyful energy, andalusian accent, fusion, bright tone, no melancholy, festive rhythm, call and response vocals, uplifting and emotional, warm analog texture, street spirit, modern flamenco rap fusion, mediterranean vibe, vibrant and organic production.",
+    "lyrics": "[Intro – female flamenco vocals, slow compás, soft palmas, flamenco guitar intro]\nAy, Jaén, tierra de fuego\ndonde el sol besa el suelo\nentre olivos se levanta\ntu corazón verdadero.\n\n\n\n[Beat drops – male rap enters, groovy hip-hop rhythm, cajón + bass, 95 BPM]\nJaén despierta, con fuerza y con arte\nla gente sonríe, la vida reparte\nen cada calle hay historia que late\norgullo en el alma, raíces que arden.\n\nSubo la cuesta, la brisa me guía\nSanta Catalina me da compañía\nel barrio murmura con algarabía\nla tapa, la risa, la buena energía.\n\n\n\n[Chorus – female flamenco vocals, upbeat rhythm with hand claps and guitar strums]\nAy, Jaén, qué bonito suena\ntu cante vuela, tu luz me llena\ndel valle al monte, la voz resuena\nJaén se alegra, Jaén resuena.\n\n\n\n[Verse 2 – male rap with female ad-libs, syncopated rhythm]\nTierra sincera, mirada clara\ntrabajo y coraje, palabra rara\ndesde el casco viejo hasta la Almenara\nJaén no espera, Jaén dispara.\n\n[Female ad-libs – flamenco “jaleos” style]\n¡Ole mi gente buena! ¡Ay qué alegría más sana!\n\n[Male rap continues]\nPor el Paseo de la Estación suena el alma\nni el tiempo ni el miedo aquí tienen calma\nJaén respira verdad y palma\ncada esquina suena a jarana.\n\n\n\n[Bridge – vocal duel, flamenco and rap call & response, energetic palmas]\nTierra bendita, no hay quien te iguale\nAquí el corazón se mide en el vale.\nDeja que el cante reviente la calle\nQue en cada compás la vida estalle.\n\n\n\n[Final Chorus – both voices together, full festive energy, strong compás]\nAy, Jaén, qué bonito suena\ntu cante vuela, tu luz me llena\ndel valle al monte, la voz resuena\nJaén se alegra, Jaén resuena.\n\n\n\n[Outro – female flamenco vocals, slow fade with guitar and cajón]\nAy, mi Jaén, mi tierra buena\nmi gente canta, la vida suena\nJaén resuena, Jaén resuena...",
+    "cot": "full",
+    "seed": 2026,
+    "abc": "X:1\nT:\nM:2/4\nL:1/32\nQ:1/4=95\nV: Vocal clef=treble name=\"Vocal Melody\" snm=\"Vocal\"\nV: Ins clef=treble name=\"Ins Melody\" snm=\"Inst.\"\nK:C#m\n% intro\nV: Vocal\nZ|z8\"C#m\"z8|\"C#m\"z16|\"C#m\"z16|\nV: Ins\nZ2|c2e2d2e8-e2-|e6z4d2e2f2|\nV: Vocal\n\"C#m\"z16|\"C#m\"z16|\"C#m\"z16|\"C#m\"z16|\nV: Ins\ng2a2g12-|g4z4f2g2a2b2|c'4c'4c'4b4|a4a2g2g4f4|\nV: Vocal\n\"C#m\"z16|\"C#m\"z16|\nV: Ins\ne4z12|Z|\n% verse\nV: Vocal\n\"C#m\"z8z2e4e2|\"C#m\"e4e2d4c2c4-|\"A\"c4z8z2B2|\"A\"e4d2d4c2c4-|\nV: Ins\nZ4|\nV: Vocal\n\"B\"c4B2z6B2B2|\"B\"B4c2d4e2e4-|\"C#m\"e2c2c2z8B2|\"C#m\"B4c2d4d4c2|\nV: Ins\nZ4|\nV: Vocal\n\"C#m\"c8z8|\"C#m\"z8z2C2E2D2|\"C#m\"E4C2C2E4E2D2|\"C#m\"E4C2C2E4E2D2|\nV: Ins\nZ4|\nV: Vocal\n\"A\"E4C2C2E4E2D2|\"A\"E4C2z4C2E2D2|\"B\"D4D2C2D4D2C2|\"B\"D4B,2B,2D4D2C2|\nV: Ins\nZ4|\nV: Vocal\n\"C#m\"D4B,2B,2D4D2C2|\"C#m\"D4C4z2c2e2d2|\"C#m\"e4c2c2e4e2d2|\"C#m\"e4c4e2e2e2d2|\nV: Ins\nZ4|\nV: Vocal\n\"A\"e4c2c2e4e2d2|\"A\"e4c4e4e2d2|\"B\"d4d2c2d4d2c2|\"B\"d4B2B2d4d2c2|\nV: Ins\nZ4|\nV: Vocal\n\"C#m\"d4B2B2d4d2c2|\"C#m\"d4c8z4|\nV: Ins\nZ2|\n% chorus\nV: Vocal\n\"C#m\"g8e8|\"C#m\"c4c2c2a4g2a2-|\"A\"a2g4z8z2|\"A\"z6e2f4e2f2-|\nV: Ins\nZ4|\nV: Vocal\n\"B\"f2d4z8z2|\"B\"z6d2a4g2g2-|\"C#m\"g2e4z8z2|\"C#m\"z6e2e4e2g2-|\nV: Ins\nZ4|\nV: Vocal\n\"C#m\"g2g4f2e8|\"C#m\"z6c2a4g2a2-|\"A\"a2g4z8z2|\"A\"z6e2f4e2f2-|\nV: Ins\nZ4|\nV: Vocal\n\"B\"f2d4z8z2|\"B\"z6d2e4d2e2-|\"C#m\"e2c4z8z2|\"C#m\"z8z2C2E2D2|\nV: Ins\nZ4|\n% verse\nV: Vocal\n\"C#m\"E4C2C2E2D2E4|\"C#m\"C4z4E2E2E2D2|\"A\"E4C2C2E2D2E4|\"A\"C4z4E2E2E2D2|\nV: Ins\nZ4|\nV: Vocal\n\"B\"D4D2C2D2C2D4|\"B\"B,4z6C2D2C2|\"C#m\"D4B,4z2C2D2C2|\"C#m\"D4B,4z8|\nV: Ins\nZ4|\nV: Vocal\n\"C#m\"z8z2c2c2c2|\"C#m\"g4f2e4d2c4|\"A\"z8z2c2c2c2|\"A\"g2f4e4d4e2|\nV: Ins\nZ4|\nV: Vocal\n\"B\"d16-|\"B\"d8z2e2c2d2|\"C#m\"e16-|\"C#m\"e8z2C2E2D2|\nV: Ins\nZ4|\nV: Vocal\n\"C#m\"E2E2E2D2E4E2D2|\"C#m\"E4C4E2E2E2D2|\"A\"E4C2E4E4D2|\"A\"E4C4z6C2|\nV: Ins\nZ4|\nV: Vocal\n\"B\"D4D2D4D4C2|\"B\"D4C2D4C4z2|D2C2D2C2D4D2C2|D4C4z8|\nV: Ins\nZ4|\n% pre-chorus\nV: Vocal\n\"C#m\"z2c2c2c2g4g2g2-|\"C#m\"g2f4e2e4d4|\"A\"c2c2c2c2g4g2g2-|\"A\"g2f4e2e4d4|\nV: Ins\nZ4|\nV: Vocal\n\"B\"z2d2d2d2f4f2f2|\"B\"f4e2d2e4d2c2|\"C#m\"c4c2c2e6d2|\"C#m\"e4d4e4d2c2|\nV: Ins\nZ4|\n% chorus\nV: Vocal\n\"C#m\"g8e8|\"C#m\"c4c2c2a4g2a2-|\"A\"a2g4z8z2|\"A\"z6e2f4e2f2-|\nV: Ins\nZ4|\nV: Vocal\n\"B\"f2d4z8z2|\"B\"z6d2a4g2g2-|\"C#m\"g2e4z8z2|\"C#m\"z6e2e4e2g2-|\nV: Ins\nZ4|\nV: Vocal\n\"C#m\"g2g4f2e8|\"C#m\"z6c2a4g2a2-|\"A\"a2g4z8z2|\"A\"z6e2f4e2f2-|\nV: Ins\nZ4|\nV: Vocal\n\"B\"f2d4z8z2|\"B\"z6d2e4d2e2-|\"C#m\"e2c4z8z2|\"C#m\"z16|\nV: Ins\nZ4|\nV: Vocal\n\"C#m\"g8e8|\"C#m\"c4c2c2a4g2a2-|\"A\"a2g4z8z2|\"A\"z6e2f4e2f2-|\nV: Ins\nZ4|\nV: Vocal\n\"B\"f2d4z8z2|\"B\"z6d2a4g2g2-|\"C#m\"g2e4z8z2|\"C#m\"z6e2e4e2g2-|\nV: Ins\nZ4|\nV: Vocal\n\"C#m\"g2g4f2e8|\"C#m\"z6c2a4g2a2-|\"A\"a2g4z8z2|\"A\"z6e2f4e2f2-|\nV: Ins\nZ4|\nV: Vocal\n\"B\"f2d4z8z2|\"B\"z6d2e4d2e2-|\"C#m\"e2c4z8z2|\"C#m\"z16|\nV: Ins\nZ4|\n% outro\nV: Vocal\n\"C#m\"g16-|\"C#m\"g8z2g2f2g2|\"A\"a16-|\"A\"a8z2g2f2g2|\nV: Ins\nZ4|\nV: Vocal\n\"B\"f16-|\"B\"f8e4d2e2|\"C#m\"c16-|\"C#m\"c8z8|\nV: Ins\nZ4|\nV: Vocal\n\"C#m\"g16-|\"C#m\"g8z2a2f2g2|\"A\"a16-|\"A\"a8z2g2f2g2|\nV: Ins\nZ4|\nV: Vocal\n\"B\"f16-|\"B\"f8e4d2e2|\"C#m\"c16-|\"C#m\"c8z8|\nV: Ins\nZ4|\n% chorus\nV: Vocal\n\"C#m\"g8e8|\"C#m\"c6c2a4g2a2-|\"A\"a2g4z8z2|\"A\"z6e2f4e2f2-|\nV: Ins\nZ4|\nV: Vocal\n\"B\"f4d12-|\"B\"d4z2d2e4d2e2-|\"C#m\"e2c4z8z2|\"C#m\"z6d2e4d2e2-|\nV: Ins\nZ4|\nV: Vocal\n\"C#m\"e2c4z8z2|\"C#m\"z6d2e4d2e2-|\"C#m\"e2c12-c2-|\"C#m\"c8-c2z6|\nV: Ins\nZ4|\nV: Vocal\nZ|\nV: Ins\nZ|\n"
+  },
+  "official_mode": "planned",
+  "source": {
+    "id": "0792ba06ebe2fd7cdd6c3e7b",
+    "order": 16,
+    "collection": "genre",
+    "title": "Flamenco",
+    "genre": "Flamenco",
+    "genrePath": [
+      "Regional Music",
+      "European Music",
+      "Iberian Music",
+      "Spanish Music",
+      "Flamenco"
+    ],
+    "language": "es",
+    "languageLabel": "Spanish",
+    "mode": "planned",
+    "tags": "flamenco gipsy female vocals, deep male spanish rap voice, hip hop beat with cajón and bass, flamenco guitar, palmas, 95 bpm, joyful energy, andalusian accent, fusion, bright tone, no melancholy, festive rhythm, call and response vocals, uplifting and emotional, warm analog texture, street spirit, modern flamenco rap fusion, mediterranean vibe, vibrant and organic production.",
+    "lyrics": "[Intro – female flamenco vocals, slow compás, soft palmas, flamenco guitar intro]\nAy, Jaén, tierra de fuego\ndonde el sol besa el suelo\nentre olivos se levanta\ntu corazón verdadero.\n\n\n\n[Beat drops – male rap enters, groovy hip-hop rhythm, cajón + bass, 95 BPM]\nJaén despierta, con fuerza y con arte\nla gente sonríe, la vida reparte\nen cada calle hay historia que late\norgullo en el alma, raíces que arden.\n\nSubo la cuesta, la brisa me guía\nSanta Catalina me da compañía\nel barrio murmura con algarabía\nla tapa, la risa, la buena energía.\n\n\n\n[Chorus – female flamenco vocals, upbeat rhythm with hand claps and guitar strums]\nAy, Jaén, qué bonito suena\ntu cante vuela, tu luz me llena\ndel valle al monte, la voz resuena\nJaén se alegra, Jaén resuena.\n\n\n\n[Verse 2 – male rap with female ad-libs, syncopated rhythm]\nTierra sincera, mirada clara\ntrabajo y coraje, palabra rara\ndesde el casco viejo hasta la Almenara\nJaén no espera, Jaén dispara.\n\n[Female ad-libs – flamenco “jaleos” style]\n¡Ole mi gente buena! ¡Ay qué alegría más sana!\n\n[Male rap continues]\nPor el Paseo de la Estación suena el alma\nni el tiempo ni el miedo aquí tienen calma\nJaén respira verdad y palma\ncada esquina suena a jarana.\n\n\n\n[Bridge – vocal duel, flamenco and rap call & response, energetic palmas]\nTierra bendita, no hay quien te iguale\nAquí el corazón se mide en el vale.\nDeja que el cante reviente la calle\nQue en cada compás la vida estalle.\n\n\n\n[Final Chorus – both voices together, full festive energy, strong compás]\nAy, Jaén, qué bonito suena\ntu cante vuela, tu luz me llena\ndel valle al monte, la voz resuena\nJaén se alegra, Jaén resuena.\n\n\n\n[Outro – female flamenco vocals, slow fade with guitar and cajón]\nAy, mi Jaén, mi tierra buena\nmi gente canta, la vida suena\nJaén resuena, Jaén resuena...",
+    "abc": "X:1\nT:\nM:2/4\nL:1/32\nQ:1/4=95\nV: Vocal clef=treble name=\"Vocal Melody\" snm=\"Vocal\"\nV: Ins clef=treble name=\"Ins Melody\" snm=\"Inst.\"\nK:C#m\n% intro\nV: Vocal\nZ|z8\"C#m\"z8|\"C#m\"z16|\"C#m\"z16|\nV: Ins\nZ2|c2e2d2e8-e2-|e6z4d2e2f2|\nV: Vocal\n\"C#m\"z16|\"C#m\"z16|\"C#m\"z16|\"C#m\"z16|\nV: Ins\ng2a2g12-|g4z4f2g2a2b2|c'4c'4c'4b4|a4a2g2g4f4|\nV: Vocal\n\"C#m\"z16|\"C#m\"z16|\nV: Ins\ne4z12|Z|\n% verse\nV: Vocal\n\"C#m\"z8z2e4e2|\"C#m\"e4e2d4c2c4-|\"A\"c4z8z2B2|\"A\"e4d2d4c2c4-|\nV: Ins\nZ4|\nV: Vocal\n\"B\"c4B2z6B2B2|\"B\"B4c2d4e2e4-|\"C#m\"e2c2c2z8B2|\"C#m\"B4c2d4d4c2|\nV: Ins\nZ4|\nV: Vocal\n\"C#m\"c8z8|\"C#m\"z8z2C2E2D2|\"C#m\"E4C2C2E4E2D2|\"C#m\"E4C2C2E4E2D2|\nV: Ins\nZ4|\nV: Vocal\n\"A\"E4C2C2E4E2D2|\"A\"E4C2z4C2E2D2|\"B\"D4D2C2D4D2C2|\"B\"D4B,2B,2D4D2C2|\nV: Ins\nZ4|\nV: Vocal\n\"C#m\"D4B,2B,2D4D2C2|\"C#m\"D4C4z2c2e2d2|\"C#m\"e4c2c2e4e2d2|\"C#m\"e4c4e2e2e2d2|\nV: Ins\nZ4|\nV: Vocal\n\"A\"e4c2c2e4e2d2|\"A\"e4c4e4e2d2|\"B\"d4d2c2d4d2c2|\"B\"d4B2B2d4d2c2|\nV: Ins\nZ4|\nV: Vocal\n\"C#m\"d4B2B2d4d2c2|\"C#m\"d4c8z4|\nV: Ins\nZ2|\n% chorus\nV: Vocal\n\"C#m\"g8e8|\"C#m\"c4c2c2a4g2a2-|\"A\"a2g4z8z2|\"A\"z6e2f4e2f2-|\nV: Ins\nZ4|\nV: Vocal\n\"B\"f2d4z8z2|\"B\"z6d2a4g2g2-|\"C#m\"g2e4z8z2|\"C#m\"z6e2e4e2g2-|\nV: Ins\nZ4|\nV: Vocal\n\"C#m\"g2g4f2e8|\"C#m\"z6c2a4g2a2-|\"A\"a2g4z8z2|\"A\"z6e2f4e2f2-|\nV: Ins\nZ4|\nV: Vocal\n\"B\"f2d4z8z2|\"B\"z6d2e4d2e2-|\"C#m\"e2c4z8z2|\"C#m\"z8z2C2E2D2|\nV: Ins\nZ4|\n% verse\nV: Vocal\n\"C#m\"E4C2C2E2D2E4|\"C#m\"C4z4E2E2E2D2|\"A\"E4C2C2E2D2E4|\"A\"C4z4E2E2E2D2|\nV: Ins\nZ4|\nV: Vocal\n\"B\"D4D2C2D2C2D4|\"B\"B,4z6C2D2C2|\"C#m\"D4B,4z2C2D2C2|\"C#m\"D4B,4z8|\nV: Ins\nZ4|\nV: Vocal\n\"C#m\"z8z2c2c2c2|\"C#m\"g4f2e4d2c4|\"A\"z8z2c2c2c2|\"A\"g2f4e4d4e2|\nV: Ins\nZ4|\nV: Vocal\n\"B\"d16-|\"B\"d8z2e2c2d2|\"C#m\"e16-|\"C#m\"e8z2C2E2D2|\nV: Ins\nZ4|\nV: Vocal\n\"C#m\"E2E2E2D2E4E2D2|\"C#m\"E4C4E2E2E2D2|\"A\"E4C2E4E4D2|\"A\"E4C4z6C2|\nV: Ins\nZ4|\nV: Vocal\n\"B\"D4D2D4D4C2|\"B\"D4C2D4C4z2|D2C2D2C2D4D2C2|D4C4z8|\nV: Ins\nZ4|\n% pre-chorus\nV: Vocal\n\"C#m\"z2c2c2c2g4g2g2-|\"C#m\"g2f4e2e4d4|\"A\"c2c2c2c2g4g2g2-|\"A\"g2f4e2e4d4|\nV: Ins\nZ4|\nV: Vocal\n\"B\"z2d2d2d2f4f2f2|\"B\"f4e2d2e4d2c2|\"C#m\"c4c2c2e6d2|\"C#m\"e4d4e4d2c2|\nV: Ins\nZ4|\n% chorus\nV: Vocal\n\"C#m\"g8e8|\"C#m\"c4c2c2a4g2a2-|\"A\"a2g4z8z2|\"A\"z6e2f4e2f2-|\nV: Ins\nZ4|\nV: Vocal\n\"B\"f2d4z8z2|\"B\"z6d2a4g2g2-|\"C#m\"g2e4z8z2|\"C#m\"z6e2e4e2g2-|\nV: Ins\nZ4|\nV: Vocal\n\"C#m\"g2g4f2e8|\"C#m\"z6c2a4g2a2-|\"A\"a2g4z8z2|\"A\"z6e2f4e2f2-|\nV: Ins\nZ4|\nV: Vocal\n\"B\"f2d4z8z2|\"B\"z6d2e4d2e2-|\"C#m\"e2c4z8z2|\"C#m\"z16|\nV: Ins\nZ4|\nV: Vocal\n\"C#m\"g8e8|\"C#m\"c4c2c2a4g2a2-|\"A\"a2g4z8z2|\"A\"z6e2f4e2f2-|\nV: Ins\nZ4|\nV: Vocal\n\"B\"f2d4z8z2|\"B\"z6d2a4g2g2-|\"C#m\"g2e4z8z2|\"C#m\"z6e2e4e2g2-|\nV: Ins\nZ4|\nV: Vocal\n\"C#m\"g2g4f2e8|\"C#m\"z6c2a4g2a2-|\"A\"a2g4z8z2|\"A\"z6e2f4e2f2-|\nV: Ins\nZ4|\nV: Vocal\n\"B\"f2d4z8z2|\"B\"z6d2e4d2e2-|\"C#m\"e2c4z8z2|\"C#m\"z16|\nV: Ins\nZ4|\n% outro\nV: Vocal\n\"C#m\"g16-|\"C#m\"g8z2g2f2g2|\"A\"a16-|\"A\"a8z2g2f2g2|\nV: Ins\nZ4|\nV: Vocal\n\"B\"f16-|\"B\"f8e4d2e2|\"C#m\"c16-|\"C#m\"c8z8|\nV: Ins\nZ4|\nV: Vocal\n\"C#m\"g16-|\"C#m\"g8z2a2f2g2|\"A\"a16-|\"A\"a8z2g2f2g2|\nV: Ins\nZ4|\nV: Vocal\n\"B\"f16-|\"B\"f8e4d2e2|\"C#m\"c16-|\"C#m\"c8z8|\nV: Ins\nZ4|\n% chorus\nV: Vocal\n\"C#m\"g8e8|\"C#m\"c6c2a4g2a2-|\"A\"a2g4z8z2|\"A\"z6e2f4e2f2-|\nV: Ins\nZ4|\nV: Vocal\n\"B\"f4d12-|\"B\"d4z2d2e4d2e2-|\"C#m\"e2c4z8z2|\"C#m\"z6d2e4d2e2-|\nV: Ins\nZ4|\nV: Vocal\n\"C#m\"e2c4z8z2|\"C#m\"z6d2e4d2e2-|\"C#m\"e2c12-c2-|\"C#m\"c8-c2z6|\nV: Ins\nZ4|\nV: Vocal\nZ|\nV: Ins\nZ|\n",
+    "abcUrl": "assets/genre/0792ba06ebe2fd7cdd6c3e7b/score.abc",
+    "audio": "assets/genre/0792ba06ebe2fd7cdd6c3e7b/0792ba06ebe2fd7cdd6c3e7b_music.mp3",
+    "scoreAudio": "assets/genre/0792ba06ebe2fd7cdd6c3e7b/0792ba06ebe2fd7cdd6c3e7b_score.mp3",
+    "sheets": [
+      "assets/genre/0792ba06ebe2fd7cdd6c3e7b/sheet_01.svg",
+      "assets/genre/0792ba06ebe2fd7cdd6c3e7b/sheet_02.svg",
+      "assets/genre/0792ba06ebe2fd7cdd6c3e7b/sheet_03.svg",
+      "assets/genre/0792ba06ebe2fd7cdd6c3e7b/sheet_04.svg",
+      "assets/genre/0792ba06ebe2fd7cdd6c3e7b/sheet_05.svg"
+    ]
+  },
+  "official_audio_url": "https://map-yue2.github.io/assets/genre/0792ba06ebe2fd7cdd6c3e7b/0792ba06ebe2fd7cdd6c3e7b_music.mp3",
+  "official_audio_path": "outputs/official_fullsong/reference/0792ba06ebe2fd7cdd6c3e7b.mp3",
+  "official_audio_sha256": "7a771a42b662e9586a5aa50b09766d86b60f1ad14accf12b04db8f9be0cd9237",
+  "official_seconds": 182.92,
+  "input_hashes": {
+    "style": "dcb0c85c90f5804864eb62f2e72bbd433180b1764931ee5767f094de388db78a",
+    "lyrics": "4be0ebb85d6be4c9a1e07eb760153fc8c651c8728ed6ab88e5125860c80d6f0f",
+    "abc": "9619b6418f072dba563105dcffbde7d8fd6e906378a4d0cf3ee3a5bd5f04df48"
+  },
+  "measurement": {
+    "id": "es_score",
+    "status": "complete",
+    "case_sha256": "d559816619d07e4fbaf1dbcdedb3669bcc08cd4fe588e559b7184c9e30813ce5",
+    "truncated": {
+      "abc": false,
+      "semantic": false
+    },
+    "audio_seconds": 181.03866666666667,
+    "official_seconds": 182.92,
+    "duration_ratio": 0.9897149938042132,
+    "e2e_seconds": 389.6965463749948,
+    "rtf": 2.1525597462144077,
+    "speed_multiplier": 0.4645631796091359,
+    "load_seconds": 5.2215331249753945,
+    "transcription_seconds": 0,
+    "save_seconds": 0.48262100003194064,
+    "timing": {
+      "abc": {
+        "seconds": 0.0,
+        "output_tokens": 0,
+        "external_prefix_tokens": 2366
+      },
+      "semantic": {
+        "seconds": 91.5086536660092,
+        "prefill_seconds": 1.83645666600205,
+        "ttft_seconds": 1.8413168750121258,
+        "output_tokens": 4527,
+        "content_tokens": 4526,
+        "output_tps": 49.470731112740104,
+        "prefix_tokens": 3042,
+        "cfg_branches": 1,
+        "execution": "eager",
+        "attention": "sdpa",
+        "backend": "mlx"
+      },
+      "nar_seconds": 283.7967567089945,
+      "vae_seconds": 8.454269333044067,
+      "load": {
+        "resolve_conversion_integrity_seconds": 5.221474041987676,
+        "ar_load_events_seconds": [
+          0.11692950001452118
+        ],
+        "ar_load_seconds": 0.11692950001452118,
+        "conditioning_load_events_seconds": [
+          0.2450902090058662
+        ],
+        "conditioning_load_seconds": 0.2450902090058662,
+        "nar_load_events_seconds": [
+          0.1404322080197744
+        ],
+        "nar_load_seconds": 0.1404322080197744,
+        "vae_load_events_seconds": [
+          0.10621683299541473
+        ],
+        "vae_load_seconds": 0.10621683299541473
+      },
+      "e2e_seconds": 383.908113958023
+    },
+    "configuration": {
+      "generation": {
+        "abc": {
+          "temperature": 0.7,
+          "top_p": 0.9,
+          "top_k": 30,
+          "repetition_penalty": 1.005,
+          "penalty_window": 100,
+          "min_tokens": 32,
+          "max_tokens": 4096
+        },
+        "semantic": {
+          "temperature": 1.0,
+          "top_p": 0.95,
+          "top_k": 100,
+          "repetition_penalty": 1.2,
+          "penalty_window": 50,
+          "min_tokens": 200,
+          "max_tokens": 9000
+        },
+        "ode_steps": 32,
+        "ode_method": "midpoint",
+        "context": 24576,
+        "version": "yue2-native-v1"
+      },
+      "overrides": {},
+      "cot": "full",
+      "cfg_scale": 1.0,
+      "cfg_negative": "same_instruction_and_exact_abc",
+      "backend": "mlx",
+      "quantization": "8bit",
+      "model_dtype": "bfloat16",
+      "vae_dtype": "float32",
+      "vae_decode": "halo_crop",
+      "vae_core_frames": 256,
+      "vae_halo_frames": 16,
+      "device": "DeviceType.gpu",
+      "memory_budget_gib": 16.0,
+      "offload_ar": false,
+      "runtime_sha256": "ff4829d01380a2ac98fbc0aa0aed90f9b2bbe9c0a3473f1d62ed8ee3abc8efa9",
+      "decoder_release": "standard",
+      "validation_status": "unvalidated",
+      "vae_backend": "mlx",
+      "ar_precision": "8bit",
+      "kv_dtype": "bfloat16",
+      "nar_dtype": "bfloat16",
+      "conditioning_precision": "bf16",
+      "attention_opmath": "float32",
+      "mlx_tf32_enabled": false,
+      "attention_inputs": "native_steel_bfloat16",
+      "query_chunk_size": 256,
+      "runtime": {
+        "lyra-yue2": "0.1.0",
+        "mlx": "0.32.2",
+        "mlx-lm": "0.31.3",
+        "transformers": "5.0.0",
+        "numpy": "2.2.6",
+        "python": "3.12.10",
+        "macos": "27.0"
+      },
+      "upstream_commit": "92a73cc7652fcc1f937855e4b765e0a0edd7ff2e",
+      "execution_guard": "GPUExecution",
+      "rng": {
+        "ar": "request_local_mlx",
+        "acoustic": "numpy_pcg64_fp32_full_song_v1"
+      }
+    },
+    "identity": "533c88d131634c01b3bf46d6bba3649530811bbd77171619d9215e65d9f5981c",
+    "audio_sha256": "84cad5eafcd34a09a9afce4efbe13a0eb624edddf86204a7290cdfc162e14924",
+    "result_sha256": "adfb789aa7b14c85aab0a5ab0237277584c147cf7034690e4db83c109f7bc839",
+    "audio_quality": {
+      "sample_rate": 48000,
+      "channels": 2,
+      "finite": true,
+      "rms": 0.14357905449661487,
+      "peak": 0.9590508341789246,
+      "clipping_fraction": 0.0
+    },
+    "musical_quality_acceptance": "pending human listening; not established by duration or EOS",
+    "resources": {
+      "memory_counter_schema": 2,
+      "swap_counter_source": "host_statistics64.swapins/swapouts",
+      "sampling_interval_seconds": 0.1,
+      "power_sampling_interval_seconds": 5.0,
+      "metadata": {},
+      "power_start": {
+        "ac_connected": true,
+        "pmset": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=37224547)\t95%; AC attached; not charging present: true"
+      },
+      "power_end": {
+        "ac_connected": true,
+        "pmset": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=37224547)\t95%; AC attached; not charging present: true"
+      },
+      "start": {
+        "elapsed_seconds": 0.012591834005434066,
+        "rss_bytes": 52068352,
+        "system_swap_used_bytes": 12382502912,
+        "system_swap_in_bytes": 56328011776,
+        "system_swap_out_bytes": 83892617216,
+        "system_available_bytes": 68005363712,
+        "system_total_bytes": 137438953472,
+        "system_memory_pressure_level": 1,
+        "system_free_bytes": 10946576384,
+        "system_wired_bytes": 8721760256,
+        "system_compressor_bytes": 2908192768,
+        "system_file_backed_bytes": 33731592192,
+        "physical_footprint_bytes": 32211688,
+        "process_lifetime_peak_footprint_bytes": 32211688,
+        "mlx_active_bytes": 0,
+        "mlx_cache_bytes": 0,
+        "mlx_peak_bytes": 0,
+        "ac_connected": true
+      },
+      "end": {
+        "elapsed_seconds": 390.24551800003974,
+        "rss_bytes": 1019641856,
+        "system_swap_used_bytes": 12382502912,
+        "system_swap_in_bytes": 56328994816,
+        "system_swap_out_bytes": 83892617216,
+        "system_available_bytes": 65221279744,
+        "system_total_bytes": 137438953472,
+        "system_memory_pressure_level": 1,
+        "system_free_bytes": 4218208256,
+        "system_wired_bytes": 7308443648,
+        "system_compressor_bytes": 2906521600,
+        "system_file_backed_bytes": 34812772352,
+        "physical_footprint_bytes": 1317636472,
+        "process_lifetime_peak_footprint_bytes": 12049209992,
+        "mlx_active_bytes": 8,
+        "mlx_cache_bytes": 0,
+        "mlx_peak_bytes": 11256150230,
+        "ac_connected": true
+      },
+      "sampled_maxima": {
+        "mlx_active_bytes": 11196716606,
+        "mlx_cache_bytes": 185466880,
+        "mlx_peak_bytes": 11256150230,
+        "physical_footprint_bytes": 11901475464,
+        "process_lifetime_peak_footprint_bytes": 12049209992,
+        "rss_bytes": 8175878144,
+        "system_available_bytes": 68721623040,
+        "system_compressor_bytes": 2908258304,
+        "system_file_backed_bytes": 34836414464,
+        "system_free_bytes": 11903664128,
+        "system_swap_in_bytes": 56328994816,
+        "system_swap_out_bytes": 83892617216,
+        "system_swap_used_bytes": 12382502912,
+        "system_total_bytes": 137438953472,
+        "system_wired_bytes": 13419298816
+      },
+      "monitor_error": null,
+      "exception": null
+    },
+    "artifact_directory": "outputs/official_fullsong/es_score",
+    "prior_attempts": []
+  },
+  "official_player": "audio/fullsong/7a771a42b662e9586a5a.mp3",
+  "local_player": "audio/fullsong/84cad5eafcd34a09a9af.mp3",
+  "actual_score": "X:1\nT:\nM:2/4\nL:1/32\nQ:1/4=95\nV: Vocal clef=treble name=\"Vocal Melody\" snm=\"Vocal\"\nV: Ins clef=treble name=\"Ins Melody\" snm=\"Inst.\"\nK:C#m\n% intro\nV: Vocal\nZ|z8\"C#m\"z8|\"C#m\"z16|\"C#m\"z16|\nV: Ins\nZ2|c2e2d2e8-e2-|e6z4d2e2f2|\nV: Vocal\n\"C#m\"z16|\"C#m\"z16|\"C#m\"z16|\"C#m\"z16|\nV: Ins\ng2a2g12-|g4z4f2g2a2b2|c'4c'4c'4b4|a4a2g2g4f4|\nV: Vocal\n\"C#m\"z16|\"C#m\"z16|\nV: Ins\ne4z12|Z|\n% verse\nV: Vocal\n\"C#m\"z8z2e4e2|\"C#m\"e4e2d4c2c4-|\"A\"c4z8z2B2|\"A\"e4d2d4c2c4-|\nV: Ins\nZ4|\nV: Vocal\n\"B\"c4B2z6B2B2|\"B\"B4c2d4e2e4-|\"C#m\"e2c2c2z8B2|\"C#m\"B4c2d4d4c2|\nV: Ins\nZ4|\nV: Vocal\n\"C#m\"c8z8|\"C#m\"z8z2C2E2D2|\"C#m\"E4C2C2E4E2D2|\"C#m\"E4C2C2E4E2D2|\nV: Ins\nZ4|\nV: Vocal\n\"A\"E4C2C2E4E2D2|\"A\"E4C2z4C2E2D2|\"B\"D4D2C2D4D2C2|\"B\"D4B,2B,2D4D2C2|\nV: Ins\nZ4|\nV: Vocal\n\"C#m\"D4B,2B,2D4D2C2|\"C#m\"D4C4z2c2e2d2|\"C#m\"e4c2c2e4e2d2|\"C#m\"e4c4e2e2e2d2|\nV: Ins\nZ4|\nV: Vocal\n\"A\"e4c2c2e4e2d2|\"A\"e4c4e4e2d2|\"B\"d4d2c2d4d2c2|\"B\"d4B2B2d4d2c2|\nV: Ins\nZ4|\nV: Vocal\n\"C#m\"d4B2B2d4d2c2|\"C#m\"d4c8z4|\nV: Ins\nZ2|\n% chorus\nV: Vocal\n\"C#m\"g8e8|\"C#m\"c4c2c2a4g2a2-|\"A\"a2g4z8z2|\"A\"z6e2f4e2f2-|\nV: Ins\nZ4|\nV: Vocal\n\"B\"f2d4z8z2|\"B\"z6d2a4g2g2-|\"C#m\"g2e4z8z2|\"C#m\"z6e2e4e2g2-|\nV: Ins\nZ4|\nV: Vocal\n\"C#m\"g2g4f2e8|\"C#m\"z6c2a4g2a2-|\"A\"a2g4z8z2|\"A\"z6e2f4e2f2-|\nV: Ins\nZ4|\nV: Vocal\n\"B\"f2d4z8z2|\"B\"z6d2e4d2e2-|\"C#m\"e2c4z8z2|\"C#m\"z8z2C2E2D2|\nV: Ins\nZ4|\n% verse\nV: Vocal\n\"C#m\"E4C2C2E2D2E4|\"C#m\"C4z4E2E2E2D2|\"A\"E4C2C2E2D2E4|\"A\"C4z4E2E2E2D2|\nV: Ins\nZ4|\nV: Vocal\n\"B\"D4D2C2D2C2D4|\"B\"B,4z6C2D2C2|\"C#m\"D4B,4z2C2D2C2|\"C#m\"D4B,4z8|\nV: Ins\nZ4|\nV: Vocal\n\"C#m\"z8z2c2c2c2|\"C#m\"g4f2e4d2c4|\"A\"z8z2c2c2c2|\"A\"g2f4e4d4e2|\nV: Ins\nZ4|\nV: Vocal\n\"B\"d16-|\"B\"d8z2e2c2d2|\"C#m\"e16-|\"C#m\"e8z2C2E2D2|\nV: Ins\nZ4|\nV: Vocal\n\"C#m\"E2E2E2D2E4E2D2|\"C#m\"E4C4E2E2E2D2|\"A\"E4C2E4E4D2|\"A\"E4C4z6C2|\nV: Ins\nZ4|\nV: Vocal\n\"B\"D4D2D4D4C2|\"B\"D4C2D4C4z2|D2C2D2C2D4D2C2|D4C4z8|\nV: Ins\nZ4|\n% pre-chorus\nV: Vocal\n\"C#m\"z2c2c2c2g4g2g2-|\"C#m\"g2f4e2e4d4|\"A\"c2c2c2c2g4g2g2-|\"A\"g2f4e2e4d4|\nV: Ins\nZ4|\nV: Vocal\n\"B\"z2d2d2d2f4f2f2|\"B\"f4e2d2e4d2c2|\"C#m\"c4c2c2e6d2|\"C#m\"e4d4e4d2c2|\nV: Ins\nZ4|\n% chorus\nV: Vocal\n\"C#m\"g8e8|\"C#m\"c4c2c2a4g2a2-|\"A\"a2g4z8z2|\"A\"z6e2f4e2f2-|\nV: Ins\nZ4|\nV: Vocal\n\"B\"f2d4z8z2|\"B\"z6d2a4g2g2-|\"C#m\"g2e4z8z2|\"C#m\"z6e2e4e2g2-|\nV: Ins\nZ4|\nV: Vocal\n\"C#m\"g2g4f2e8|\"C#m\"z6c2a4g2a2-|\"A\"a2g4z8z2|\"A\"z6e2f4e2f2-|\nV: Ins\nZ4|\nV: Vocal\n\"B\"f2d4z8z2|\"B\"z6d2e4d2e2-|\"C#m\"e2c4z8z2|\"C#m\"z16|\nV: Ins\nZ4|\nV: Vocal\n\"C#m\"g8e8|\"C#m\"c4c2c2a4g2a2-|\"A\"a2g4z8z2|\"A\"z6e2f4e2f2-|\nV: Ins\nZ4|\nV: Vocal\n\"B\"f2d4z8z2|\"B\"z6d2a4g2g2-|\"C#m\"g2e4z8z2|\"C#m\"z6e2e4e2g2-|\nV: Ins\nZ4|\nV: Vocal\n\"C#m\"g2g4f2e8|\"C#m\"z6c2a4g2a2-|\"A\"a2g4z8z2|\"A\"z6e2f4e2f2-|\nV: Ins\nZ4|\nV: Vocal\n\"B\"f2d4z8z2|\"B\"z6d2e4d2e2-|\"C#m\"e2c4z8z2|\"C#m\"z16|\nV: Ins\nZ4|\n% outro\nV: Vocal\n\"C#m\"g16-|\"C#m\"g8z2g2f2g2|\"A\"a16-|\"A\"a8z2g2f2g2|\nV: Ins\nZ4|\nV: Vocal\n\"B\"f16-|\"B\"f8e4d2e2|\"C#m\"c16-|\"C#m\"c8z8|\nV: Ins\nZ4|\nV: Vocal\n\"C#m\"g16-|\"C#m\"g8z2a2f2g2|\"A\"a16-|\"A\"a8z2g2f2g2|\nV: Ins\nZ4|\nV: Vocal\n\"B\"f16-|\"B\"f8e4d2e2|\"C#m\"c16-|\"C#m\"c8z8|\nV: Ins\nZ4|\n% chorus\nV: Vocal\n\"C#m\"g8e8|\"C#m\"c6c2a4g2a2-|\"A\"a2g4z8z2|\"A\"z6e2f4e2f2-|\nV: Ins\nZ4|\nV: Vocal\n\"B\"f4d12-|\"B\"d4z2d2e4d2e2-|\"C#m\"e2c4z8z2|\"C#m\"z6d2e4d2e2-|\nV: Ins\nZ4|\nV: Vocal\n\"C#m\"e2c4z8z2|\"C#m\"z6d2e4d2e2-|\"C#m\"e2c12-c2-|\"C#m\"c8-c2z6|\nV: Ins\nZ4|\nV: Vocal\nZ|\nV: Ins\nZ|\n"
+}

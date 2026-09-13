@@ -1,0 +1,25 @@
+{
+  "regression": {
+    "status": "pass",
+    "tests": 4,
+    "command": ".venv/bin/pytest -q tests/test_fullsong_benchmark.py"
+  },
+  "lint": {
+    "status": "pass",
+    "scope": "all changed benchmark tools and regression tests"
+  },
+  "browser_local_preview": {
+    "status": "pending",
+    "reason": "Browser URL policy rejected file:// navigation; no workaround attempted"
+  },
+  "audio_decode": {
+    "status": "pass",
+    "cases": 15,
+    "evidence": "audio-validation.json",
+    "scope": "Full FLAC decode, saved artifact hashes, exact public inputs, natural termination, RTF, full-length listening copies"
+  },
+  "static_page": {
+    "status": "pass",
+    "scope": "unique IDs, existing local assets, extracted JavaScript syntax"
+  }
+}

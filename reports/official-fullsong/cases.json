@@ -1,0 +1,738 @@
+{
+  "source_url": "https://map-yue2.github.io/data/cases.js",
+  "source_sha256": "c7e6d5f51913fd0865646efd9858a9a80d37b7cb192a2add113168151bde67ed",
+  "official_seed": "unknown",
+  "official_sampling": "unknown",
+  "official_candidate_selection": "unknown for individual demo recordings",
+  "selection_policy": "Fixed seed 2026; execution failures may be retried with identical input and seed, preserving failures; no best-of-N selection",
+  "cases": [
+    {
+      "id": "ja_score",
+      "official_id": "1b91eef30046ca2f0cf5633e",
+      "title": "Easy Listening",
+      "genre": "Easy Listening",
+      "language": "ja",
+      "score_mode": "supplied",
+      "request": {
+        "id": "ja_score",
+        "style": "A gentle and melancholic piece beginning with a delicate piano melody and a breathy, expressive flute line. A soft, clear female vocal enters, singing in a gentle, almost lullaby-like style. The arrangement gradually builds, introducing a subtle, downtempo lo-fi hip-hop beat with a soft kick and snare, complemented by a warm bassline and atmospheric synth pads. The track maintains a tranquil and introspective mood throughout, with the piano and flute weaving in and out, creating a serene soundscape perfect for relaxation or contemplation. The song concludes with a beautiful instrumental outro featuring the piano and flute, fading into silence.",
+        "lyrics": "[Intro: Piano & Flute]\n\n[Verse 1]\n静かな森 歩み寄る\n木々のざわめき 聞こえる音\n陽射しが揺れて 影踊る\n心は軽く 自由になる\n\n[Verse 2]\n風が通り 抱きしめるように\n葉は止ま 語る古い物語\n小鳥の歌が 空を仰ぎ\nその音色だけ 生きている\n\n[Chorus]\n森の中で 消えてゆく\n小さな悩み 風に乗る\n心地良い緑 包まれて\n私は癒され 生まれ変わる\n\n[Instrumental Break: Piano, Flute, Drums]\n\n[Verse 3]\n土の匂いが 深く染みる\n地球の鼓動 感じている\n目を閉じ夜明けを 夢見て\n自然と溶ける 虚無する\n\n[Verse 4]\n月の光が ゆっくりと\n静けさ抱え 手ら知ってる\n心がささやく 小さな声\n森のリズムで 調和化する\n\n[Chorus]\n森の中で 消えてゆく\n小さな悩み 風に乗る\n心地良い緑 包まれて\n私は癒され 生まれ変わる\n\n[Outro: Piano & Flute]",
+        "cot": "full",
+        "seed": 2026,
+        "abc": "X:1\nT:\nM:4/4\nL:1/16\nQ:1/4=85\nV: Vocal clef=treble name=\"Vocal Melody\" snm=\"Vocal\"\nV: Ins clef=treble name=\"Ins Melody\" snm=\"Inst.\"\nK:D#m\n% intro\nV: Vocal\nz8\"Bmaj7\"z8|\"Bmaj7\"z16|\"C#\"z16|\"D#m7\"z16|\nV: Ins\nz12z3a|a3c'3g6f2a2|g3c'3e8z2|e3f3c8Ac|\nV: Vocal\n\"D#m7\"z16|\"Bmaj7\"z16|\"C#\"z16|\"D#m7\"z16|\nV: Ins\ne3f3c4f2e2c2|a3c'3g6f2a2|g3c'3e4f2e2c2|e3f3c8Ac|\nV: Vocal\n\"D#m7\"z8z2d2f2g2|\nV: Ins\ne3f3c4z6|\n% verse\nV: Vocal\n\"Bmaj7\"a2dd3z4d2f2a2|\"C#\"g3c3z4c2d2e2|\"D#m7\"e2fe2c2cc2AA3GA-|\"D#m7\"A2z8d2f2g2|\nV: Ins\nZ4|\nV: Vocal\n\"Bmaj7\"a3d3cd3d2f2a2|\"C#\"g3c3z4c2d2e2|\"D#m7\"e2fe2c2cc2AA3GA-|\"D#m7\"A2z8d2f2g2|\nV: Ins\nZ4|\nV: Vocal\n\"Bmaj7\"a3d3cd3d2f2a2|\"C#\"g3c3z4c2d2e2|\"D#m7\"e2fe2c2cc2A2A2G2|\"D#m7\"G3c3A2z2d2f2g2|\nV: Ins\nZ4|\nV: Vocal\n\"Bmaj7\"a3d3cd3d2f2a2|\"C#\"g3c3e4z4c2|\"D#m7\"d3e3f2g3f3e2|\"D#m7\"e3f3e4d2d4|\nV: Ins\nZ4|\nV: Vocal\n\"D#m7\"z8z2d2a2g2|\nV: Ins\nZ|\n% chorus\nV: Vocal\n\"Bmaj7\"a3c'3g2-\"C#\"g2a2g2f2|\"D#m7\"e3c4z3d2a2g2|\"Bmaj7\"a3c'3g2-\"C#\"g2a2g2f2|\"D#m7\"g3a4z3d2a2g2|\nV: Ins\nZ4|\nV: Vocal\n\"Bmaj7\"a3c'3g2-\"C#\"g2a2g2f2|\"D#m7\"g3c'3a4z4de|\"Bmaj7\"f2f2f2a2\"C#\"g3f3e2|\"D#m7\"e3f3e4d2d4|\nV: Ins\nZ4|\n% interlude\nV: Vocal\n\"Bmaj7\"z16|\"C#\"z16|\"D#m7\"z16|\"D#m7\"z16|\nV: Ins\nz2d'c'c'aaggffeeddc|cddccAAGGFFEEDEC|D3A3A8-A2-|A6z8z2|\nV: Vocal\n\"Bmaj7\"z16|\"C#\"z16|\"D#m7\"z16|\"D#m7\"z8z2d2f2g2|\nV: Ins\nz2d'c'c'aaggffeeddc|cddccAAGGFFEEDEC|D3A3A8-A2-|A6z8z2|\n% verse\nV: Vocal\n\"Bmaj7\"a2dd2c3z2d2f2a2|\"C#\"g3c3e2z2c2d2e2|\"D#m7\"e2fe2c3c2AA3GA-|\"D#m7\"A2z8d2f2g2|\nV: Ins\nZ4|\nV: Vocal\n\"Bmaj7\"a3d3cd3d2f2a2|\"C#\"g3c4z4zd2e2|\"D#m7\"e3f3e4d4c2|\"D#m7\"e3f3e4d4z2|\nV: Ins\nZ4|\nV: Vocal\n\"Bmaj7\"z2aaa2gg2ff2z4|\"C#\"z2a2a2gg2c'4z3|\"D#m7\"z2aaa2gg2ff2z2e2|\"D#m7\"e3f3e4d4z2|\nV: Ins\nZ4|\nV: Vocal\n\"Bmaj7\"z2aaa2gggff4z2|\"C#\"z2a2a2gg2c'c'z4z|\"D#m7\"z2aaa2gggff4e2|\"D#m7\"e3f3e4d2d4|\nV: Ins\nZ4|\nV: Vocal\n\"D#m\"z8z2d2a2g2|\nV: Ins\nZ|\n% chorus\nV: Vocal\n\"Bmaj7\"a3c'3g2-\"C#\"g2a2g2f2|\"D#m7\"g3c4z3d2a2g2|\"Bmaj7\"a3c'3g2-\"C#\"g2a2g2f2|\"D#m7\"g3a4z3d2a2g2|\nV: Ins\nZ4|\nV: Vocal\n\"Bmaj7\"a3c'3g2-\"C#\"g2a2g2f2|\"D#m7\"g3c'3a4z4de|\"Bmaj7\"f2f2f2a2\"C#\"g3f3e2|\"D#m7\"e3f3e4d2d4|\nV: Ins\nZ4|\n% outro\nV: Vocal\n\"Bmaj7\"z8\"C#\"z8|\"D#m7\"z16|\"Bmaj7\"z8\"C#\"z8|\"D#m7\"z16|\nV: Ins\nz2d'c'c'aaggffeeddc|cddccAAGGFFEEDEC|D3A3A8-A2-|A6z8z2|\nV: Vocal\n\"Bmaj7\"z8\"C#\"z8|\"D#m7\"z16|\"Bmaj7\"z8\"C#\"z8|\"D#m7\"z16|\nV: Ins\nz2d'c'c'aaggffeeddc|cddccAAGGFFEEDEC|D3A3A8-A2-|A6z8z2|\nV: Vocal\n\"Bmaj7\"z16|\"C#\"z16|\"D#m7\"z16|\"D#m7\"z16|\nV: Ins\na3c'3g6f2a2|g3c'3e8z2|e3f3c8Ac|e3f3c8z2|\nV: Vocal\n\"D#m7\"z16|\nV: Ins\nZ|\n"
+      },
+      "official_mode": "planned",
+      "source": {
+        "id": "1b91eef30046ca2f0cf5633e",
+        "order": 0,
+        "collection": "genre",
+        "title": "Easy Listening",
+        "genre": "Easy Listening",
+        "genrePath": [
+          "Easy Listening"
+        ],
+        "language": "ja",
+        "languageLabel": "Japanese",
+        "mode": "planned",
+        "tags": "A gentle and melancholic piece beginning with a delicate piano melody and a breathy, expressive flute line. A soft, clear female vocal enters, singing in a gentle, almost lullaby-like style. The arrangement gradually builds, introducing a subtle, downtempo lo-fi hip-hop beat with a soft kick and snare, complemented by a warm bassline and atmospheric synth pads. The track maintains a tranquil and introspective mood throughout, with the piano and flute weaving in and out, creating a serene soundscape perfect for relaxation or contemplation. The song concludes with a beautiful instrumental outro featuring the piano and flute, fading into silence.",
+        "lyrics": "[Intro: Piano & Flute]\n\n[Verse 1]\n静かな森 歩み寄る\n木々のざわめき 聞こえる音\n陽射しが揺れて 影踊る\n心は軽く 自由になる\n\n[Verse 2]\n風が通り 抱きしめるように\n葉は止ま 語る古い物語\n小鳥の歌が 空を仰ぎ\nその音色だけ 生きている\n\n[Chorus]\n森の中で 消えてゆく\n小さな悩み 風に乗る\n心地良い緑 包まれて\n私は癒され 生まれ変わる\n\n[Instrumental Break: Piano, Flute, Drums]\n\n[Verse 3]\n土の匂いが 深く染みる\n地球の鼓動 感じている\n目を閉じ夜明けを 夢見て\n自然と溶ける 虚無する\n\n[Verse 4]\n月の光が ゆっくりと\n静けさ抱え 手ら知ってる\n心がささやく 小さな声\n森のリズムで 調和化する\n\n[Chorus]\n森の中で 消えてゆく\n小さな悩み 風に乗る\n心地良い緑 包まれて\n私は癒され 生まれ変わる\n\n[Outro: Piano & Flute]",
+        "abc": "X:1\nT:\nM:4/4\nL:1/16\nQ:1/4=85\nV: Vocal clef=treble name=\"Vocal Melody\" snm=\"Vocal\"\nV: Ins clef=treble name=\"Ins Melody\" snm=\"Inst.\"\nK:D#m\n% intro\nV: Vocal\nz8\"Bmaj7\"z8|\"Bmaj7\"z16|\"C#\"z16|\"D#m7\"z16|\nV: Ins\nz12z3a|a3c'3g6f2a2|g3c'3e8z2|e3f3c8Ac|\nV: Vocal\n\"D#m7\"z16|\"Bmaj7\"z16|\"C#\"z16|\"D#m7\"z16|\nV: Ins\ne3f3c4f2e2c2|a3c'3g6f2a2|g3c'3e4f2e2c2|e3f3c8Ac|\nV: Vocal\n\"D#m7\"z8z2d2f2g2|\nV: Ins\ne3f3c4z6|\n% verse\nV: Vocal\n\"Bmaj7\"a2dd3z4d2f2a2|\"C#\"g3c3z4c2d2e2|\"D#m7\"e2fe2c2cc2AA3GA-|\"D#m7\"A2z8d2f2g2|\nV: Ins\nZ4|\nV: Vocal\n\"Bmaj7\"a3d3cd3d2f2a2|\"C#\"g3c3z4c2d2e2|\"D#m7\"e2fe2c2cc2AA3GA-|\"D#m7\"A2z8d2f2g2|\nV: Ins\nZ4|\nV: Vocal\n\"Bmaj7\"a3d3cd3d2f2a2|\"C#\"g3c3z4c2d2e2|\"D#m7\"e2fe2c2cc2A2A2G2|\"D#m7\"G3c3A2z2d2f2g2|\nV: Ins\nZ4|\nV: Vocal\n\"Bmaj7\"a3d3cd3d2f2a2|\"C#\"g3c3e4z4c2|\"D#m7\"d3e3f2g3f3e2|\"D#m7\"e3f3e4d2d4|\nV: Ins\nZ4|\nV: Vocal\n\"D#m7\"z8z2d2a2g2|\nV: Ins\nZ|\n% chorus\nV: Vocal\n\"Bmaj7\"a3c'3g2-\"C#\"g2a2g2f2|\"D#m7\"e3c4z3d2a2g2|\"Bmaj7\"a3c'3g2-\"C#\"g2a2g2f2|\"D#m7\"g3a4z3d2a2g2|\nV: Ins\nZ4|\nV: Vocal\n\"Bmaj7\"a3c'3g2-\"C#\"g2a2g2f2|\"D#m7\"g3c'3a4z4de|\"Bmaj7\"f2f2f2a2\"C#\"g3f3e2|\"D#m7\"e3f3e4d2d4|\nV: Ins\nZ4|\n% interlude\nV: Vocal\n\"Bmaj7\"z16|\"C#\"z16|\"D#m7\"z16|\"D#m7\"z16|\nV: Ins\nz2d'c'c'aaggffeeddc|cddccAAGGFFEEDEC|D3A3A8-A2-|A6z8z2|\nV: Vocal\n\"Bmaj7\"z16|\"C#\"z16|\"D#m7\"z16|\"D#m7\"z8z2d2f2g2|\nV: Ins\nz2d'c'c'aaggffeeddc|cddccAAGGFFEEDEC|D3A3A8-A2-|A6z8z2|\n% verse\nV: Vocal\n\"Bmaj7\"a2dd2c3z2d2f2a2|\"C#\"g3c3e2z2c2d2e2|\"D#m7\"e2fe2c3c2AA3GA-|\"D#m7\"A2z8d2f2g2|\nV: Ins\nZ4|\nV: Vocal\n\"Bmaj7\"a3d3cd3d2f2a2|\"C#\"g3c4z4zd2e2|\"D#m7\"e3f3e4d4c2|\"D#m7\"e3f3e4d4z2|\nV: Ins\nZ4|\nV: Vocal\n\"Bmaj7\"z2aaa2gg2ff2z4|\"C#\"z2a2a2gg2c'4z3|\"D#m7\"z2aaa2gg2ff2z2e2|\"D#m7\"e3f3e4d4z2|\nV: Ins\nZ4|\nV: Vocal\n\"Bmaj7\"z2aaa2gggff4z2|\"C#\"z2a2a2gg2c'c'z4z|\"D#m7\"z2aaa2gggff4e2|\"D#m7\"e3f3e4d2d4|\nV: Ins\nZ4|\nV: Vocal\n\"D#m\"z8z2d2a2g2|\nV: Ins\nZ|\n% chorus\nV: Vocal\n\"Bmaj7\"a3c'3g2-\"C#\"g2a2g2f2|\"D#m7\"g3c4z3d2a2g2|\"Bmaj7\"a3c'3g2-\"C#\"g2a2g2f2|\"D#m7\"g3a4z3d2a2g2|\nV: Ins\nZ4|\nV: Vocal\n\"Bmaj7\"a3c'3g2-\"C#\"g2a2g2f2|\"D#m7\"g3c'3a4z4de|\"Bmaj7\"f2f2f2a2\"C#\"g3f3e2|\"D#m7\"e3f3e4d2d4|\nV: Ins\nZ4|\n% outro\nV: Vocal\n\"Bmaj7\"z8\"C#\"z8|\"D#m7\"z16|\"Bmaj7\"z8\"C#\"z8|\"D#m7\"z16|\nV: Ins\nz2d'c'c'aaggffeeddc|cddccAAGGFFEEDEC|D3A3A8-A2-|A6z8z2|\nV: Vocal\n\"Bmaj7\"z8\"C#\"z8|\"D#m7\"z16|\"Bmaj7\"z8\"C#\"z8|\"D#m7\"z16|\nV: Ins\nz2d'c'c'aaggffeeddc|cddccAAGGFFEEDEC|D3A3A8-A2-|A6z8z2|\nV: Vocal\n\"Bmaj7\"z16|\"C#\"z16|\"D#m7\"z16|\"D#m7\"z16|\nV: Ins\na3c'3g6f2a2|g3c'3e8z2|e3f3c8Ac|e3f3c8z2|\nV: Vocal\n\"D#m7\"z16|\nV: Ins\nZ|\n",
+        "abcUrl": "assets/genre/1b91eef30046ca2f0cf5633e/score.abc",
+        "audio": "assets/genre/1b91eef30046ca2f0cf5633e/1b91eef30046ca2f0cf5633e_music.mp3",
+        "scoreAudio": "assets/genre/1b91eef30046ca2f0cf5633e/1b91eef30046ca2f0cf5633e_score.mp3",
+        "sheets": [
+          "assets/genre/1b91eef30046ca2f0cf5633e/sheet_01.svg",
+          "assets/genre/1b91eef30046ca2f0cf5633e/sheet_02.svg",
+          "assets/genre/1b91eef30046ca2f0cf5633e/sheet_03.svg",
+          "assets/genre/1b91eef30046ca2f0cf5633e/sheet_04.svg"
+        ]
+      },
+      "official_audio_url": "https://map-yue2.github.io/assets/genre/1b91eef30046ca2f0cf5633e/1b91eef30046ca2f0cf5633e_music.mp3",
+      "official_audio_path": "outputs/official_fullsong/reference/1b91eef30046ca2f0cf5633e.mp3",
+      "official_audio_sha256": "55a3e96b7dd0266ec8163a6fc121491169e4cd9737e651931fae94b1a836507f",
+      "official_seconds": 221.76,
+      "input_hashes": {
+        "style": "e2d3e5319cc956c19f7f1a898c4ff1885046da07f2fc8b60ba006f595a607cca",
+        "lyrics": "b101b5240926d0a25ef27df79d9b262be1f1f22ae3b03520b8a5359f66ae360b",
+        "abc": "441bf19bb9ba937d9d2a4e774d71bc924574e74aee1bb1a194f5313d1582ab19"
+      }
+    },
+    {
+      "id": "ru_score",
+      "official_id": "43fc3aa38700252b8d63982b",
+      "title": "Folktronica",
+      "genre": "Folktronica",
+      "language": "ru",
+      "score_mode": "supplied",
+      "request": {
+        "id": "ru_score",
+        "style": "Dance Pop, Storytelling, Groovy, Anthemic, Dance, Folk, Melodic, Danceable, Electronic, female vocals",
+        "lyrics": "Ах вы, сени мои, сени\nСени новые мои\nСени новые, кленовые\nРешетчатые!\nВыходила молода\nЗа новые ворота\nВыпускала сокола\nИз правого рукава\nНа полетике соколику наказывала\n«Ты лети, лети, соколик\nвысоко и далеко».\nИ высоко и далеко\nНа родиму сторону\nНа родимой на сторонке\nГрозен батюшка живёт.\nОн и грозен, сударь, грозен\nДа не милостив\nНе пускает молоду\nПоздно вечером одну.\nНе велит поздно ходить\nС молодцами говорить.\nНе послушаю отца\nЭх, потешу молодца.\nАх вы, сени мои, сени\nСени новые мои\nСени новые, кленовые\nРешетчатые!",
+        "cot": "full",
+        "seed": 2026,
+        "abc": "X:1\nT:\nM:4/4\nL:1/16\nQ:1/4=126\nV: Vocal clef=treble name=\"Vocal Melody\" snm=\"Vocal\"\nV: Ins clef=treble name=\"Ins Melody\" snm=\"Inst.\"\nK:Am\n% intro\nV: Vocal\nz12\"Am\"z4|\"Am\"e2z2e2z2e2f2e2d2|\"Dm\"d2z2d2z2d2e2d2c2|\"F\"c2z2c2z2c2d2c2B2|\nV: Ins\nZ4|\nV: Vocal\n\"G\"B4z12|\"Am\"e2z2e2z2e2f2e2d2|\"Dm\"d2z2d2z2d2e2d2c2|\"F\"c4z12|\nV: Ins\nZ3|z4c4c4c4|\nV: Vocal\n\"G\"z16|\nV: Ins\nc4c4c4c4|\n% verse\nV: Vocal\n\"Am\"e4A4e2e2e2d2|\"Dm\"d4A4z8|\"F\"c4A4c2d2c2B2|\"G\"B4z12|\nV: Ins\nZ4|\nV: Vocal\n\"Am\"e4A4e2f2e2d2|\"Dm\"d2d2d2c2d2e2d2c2|\"F\"c4z12|\"G\"z16|\nV: Ins\nZ2|z6c'2z2b2c'2b2|c'3b3c'2z2b2c'2g2|\nV: Vocal\n\"Am\"e4A4e2f2e2d2|\"Dm\"d4z12|\"F\"c4A4c2d2c2B2|\"G\"B4z12|\nV: Ins\nZ4|\nV: Vocal\n\"Am\"e4A4e2f2e2d2|\"Dm\"d4z8z2A2|\"F\"c4A2A4d2c2B2|\"G\"B4z12|\nV: Ins\nZ4|\nV: Vocal\n\"Am\"a4e4a2a2e4|\"Dm\"f2f2f2f2f2e2d2c2|\"F\"c2c2c2c2c2d2c2B2|\"G\"B2B2B2B2B2B2A4|\nV: Ins\nZ4|\nV: Vocal\n\"Am\"z16|\"Am\"z16|\nV: Ins\nA4A4A4A4|A2A2A2A2AAAAAAAA|\n% chorus\nV: Vocal\n\"Am\"e4e4e2f2e2d2|\"Dm\"d4d4d2e2d2c2|\"F\"c4c4c2d2c2B2|\"G\"B4z12|\nV: Ins\nZ4|\nV: Vocal\n\"Am\"e4e4e2f2e2d2|\"Dm\"d4d4d2e2d2c2|\"F\"c4c4c2d2c2B2|\"G\"B4z12|\nV: Ins\nZ4|\n% verse\nV: Vocal\n\"Am\"e4A4e2f2e2d2|\"Dm\"d4z12|\"F\"c4A4c2d2c2B2|\"G\"B4z12|\nV: Ins\nZ4|\nV: Vocal\n\"Am\"e4A4e2f2e2d2|\"Dm\"d4z12|\"F\"c4A4c2d2c2B2|\"G\"B4z12|\nV: Ins\nZ4|\n% interlude\nV: Vocal\n\"Am\"a4e4a2a2e2e2|\"Dm\"f4z12|\"F\"a4e4a2a2e2e2|\"G\"f4z12|\nV: Ins\nZ4|\nV: Vocal\n\"Am\"a4e4a2a2e2e2|\"Dm\"f4z12|\"F\"c4z2c2c2d2c2B2|\"G\"B4z12|\nV: Ins\nZ4|\n% chorus\nV: Vocal\n\"Am\"e4A4e2f2e2d2|\"Dm\"d4A4z8|\"F\"c4A4c2d2c2B2|\"G\"B4z12|\nV: Ins\nZ4|\nV: Vocal\n\"Am\"e4A4e2f2e2d2|\"Dm\"d2d2d2c2d2e2d2c2|\"F\"c4z12|\"G\"z16|\nV: Ins\nZ2|z6c'2z2b2c'2b2|c'3b3c'4b2c'2b2|\nV: Vocal\nZ|\nV: Ins\nc'4z12|\n"
+      },
+      "official_mode": "planned",
+      "source": {
+        "id": "43fc3aa38700252b8d63982b",
+        "order": 14,
+        "collection": "genre",
+        "title": "Folktronica",
+        "genre": "Folktronica",
+        "genrePath": [
+          "Electronic",
+          "Folktronica"
+        ],
+        "language": "ru",
+        "languageLabel": "Russian",
+        "mode": "planned",
+        "tags": "Dance Pop, Storytelling, Groovy, Anthemic, Dance, Folk, Melodic, Danceable, Electronic, female vocals",
+        "lyrics": "Ах вы, сени мои, сени\nСени новые мои\nСени новые, кленовые\nРешетчатые!\nВыходила молода\nЗа новые ворота\nВыпускала сокола\nИз правого рукава\nНа полетике соколику наказывала\n«Ты лети, лети, соколик\nвысоко и далеко».\nИ высоко и далеко\nНа родиму сторону\nНа родимой на сторонке\nГрозен батюшка живёт.\nОн и грозен, сударь, грозен\nДа не милостив\nНе пускает молоду\nПоздно вечером одну.\nНе велит поздно ходить\nС молодцами говорить.\nНе послушаю отца\nЭх, потешу молодца.\nАх вы, сени мои, сени\nСени новые мои\nСени новые, кленовые\nРешетчатые!",
+        "abc": "X:1\nT:\nM:4/4\nL:1/16\nQ:1/4=126\nV: Vocal clef=treble name=\"Vocal Melody\" snm=\"Vocal\"\nV: Ins clef=treble name=\"Ins Melody\" snm=\"Inst.\"\nK:Am\n% intro\nV: Vocal\nz12\"Am\"z4|\"Am\"e2z2e2z2e2f2e2d2|\"Dm\"d2z2d2z2d2e2d2c2|\"F\"c2z2c2z2c2d2c2B2|\nV: Ins\nZ4|\nV: Vocal\n\"G\"B4z12|\"Am\"e2z2e2z2e2f2e2d2|\"Dm\"d2z2d2z2d2e2d2c2|\"F\"c4z12|\nV: Ins\nZ3|z4c4c4c4|\nV: Vocal\n\"G\"z16|\nV: Ins\nc4c4c4c4|\n% verse\nV: Vocal\n\"Am\"e4A4e2e2e2d2|\"Dm\"d4A4z8|\"F\"c4A4c2d2c2B2|\"G\"B4z12|\nV: Ins\nZ4|\nV: Vocal\n\"Am\"e4A4e2f2e2d2|\"Dm\"d2d2d2c2d2e2d2c2|\"F\"c4z12|\"G\"z16|\nV: Ins\nZ2|z6c'2z2b2c'2b2|c'3b3c'2z2b2c'2g2|\nV: Vocal\n\"Am\"e4A4e2f2e2d2|\"Dm\"d4z12|\"F\"c4A4c2d2c2B2|\"G\"B4z12|\nV: Ins\nZ4|\nV: Vocal\n\"Am\"e4A4e2f2e2d2|\"Dm\"d4z8z2A2|\"F\"c4A2A4d2c2B2|\"G\"B4z12|\nV: Ins\nZ4|\nV: Vocal\n\"Am\"a4e4a2a2e4|\"Dm\"f2f2f2f2f2e2d2c2|\"F\"c2c2c2c2c2d2c2B2|\"G\"B2B2B2B2B2B2A4|\nV: Ins\nZ4|\nV: Vocal\n\"Am\"z16|\"Am\"z16|\nV: Ins\nA4A4A4A4|A2A2A2A2AAAAAAAA|\n% chorus\nV: Vocal\n\"Am\"e4e4e2f2e2d2|\"Dm\"d4d4d2e2d2c2|\"F\"c4c4c2d2c2B2|\"G\"B4z12|\nV: Ins\nZ4|\nV: Vocal\n\"Am\"e4e4e2f2e2d2|\"Dm\"d4d4d2e2d2c2|\"F\"c4c4c2d2c2B2|\"G\"B4z12|\nV: Ins\nZ4|\n% verse\nV: Vocal\n\"Am\"e4A4e2f2e2d2|\"Dm\"d4z12|\"F\"c4A4c2d2c2B2|\"G\"B4z12|\nV: Ins\nZ4|\nV: Vocal\n\"Am\"e4A4e2f2e2d2|\"Dm\"d4z12|\"F\"c4A4c2d2c2B2|\"G\"B4z12|\nV: Ins\nZ4|\n% interlude\nV: Vocal\n\"Am\"a4e4a2a2e2e2|\"Dm\"f4z12|\"F\"a4e4a2a2e2e2|\"G\"f4z12|\nV: Ins\nZ4|\nV: Vocal\n\"Am\"a4e4a2a2e2e2|\"Dm\"f4z12|\"F\"c4z2c2c2d2c2B2|\"G\"B4z12|\nV: Ins\nZ4|\n% chorus\nV: Vocal\n\"Am\"e4A4e2f2e2d2|\"Dm\"d4A4z8|\"F\"c4A4c2d2c2B2|\"G\"B4z12|\nV: Ins\nZ4|\nV: Vocal\n\"Am\"e4A4e2f2e2d2|\"Dm\"d2d2d2c2d2e2d2c2|\"F\"c4z12|\"G\"z16|\nV: Ins\nZ2|z6c'2z2b2c'2b2|c'3b3c'4b2c'2b2|\nV: Vocal\nZ|\nV: Ins\nc'4z12|\n",
+        "abcUrl": "assets/genre/43fc3aa38700252b8d63982b/score.abc",
+        "audio": "assets/genre/43fc3aa38700252b8d63982b/43fc3aa38700252b8d63982b_music.mp3",
+        "scoreAudio": "assets/genre/43fc3aa38700252b8d63982b/43fc3aa38700252b8d63982b_score.mp3",
+        "sheets": [
+          "assets/genre/43fc3aa38700252b8d63982b/sheet_01.svg",
+          "assets/genre/43fc3aa38700252b8d63982b/sheet_02.svg",
+          "assets/genre/43fc3aa38700252b8d63982b/sheet_03.svg"
+        ]
+      },
+      "official_audio_url": "https://map-yue2.github.io/assets/genre/43fc3aa38700252b8d63982b/43fc3aa38700252b8d63982b_music.mp3",
+      "official_audio_path": "outputs/official_fullsong/reference/43fc3aa38700252b8d63982b.mp3",
+      "official_audio_sha256": "43629268f69c7519046ec0d87ddae2736e633a42edd4cc291a0ecfaff7ea761d",
+      "official_seconds": 119.96,
+      "input_hashes": {
+        "style": "a4a18338d01bcf22150c586d122a71215f8f8c285c24998d58488de4bf7df1d2",
+        "lyrics": "fdd620456b6c1f0d7973980cd3d4a5100815f24691483613c962f8963cd53e75",
+        "abc": "c5b4e6a0e92b448b7c01f4c3fe4d8e3ecdce2a01d8a871213d1952782669c7bb"
+      }
+    },
+    {
+      "id": "es_score",
+      "official_id": "0792ba06ebe2fd7cdd6c3e7b",
+      "title": "Flamenco",
+      "genre": "Flamenco",
+      "language": "es",
+      "score_mode": "supplied",
+      "request": {
+        "id": "es_score",
+        "style": "flamenco gipsy female vocals, deep male spanish rap voice, hip hop beat with cajón and bass, flamenco guitar, palmas, 95 bpm, joyful energy, andalusian accent, fusion, bright tone, no melancholy, festive rhythm, call and response vocals, uplifting and emotional, warm analog texture, street spirit, modern flamenco rap fusion, mediterranean vibe, vibrant and organic production.",
+        "lyrics": "[Intro – female flamenco vocals, slow compás, soft palmas, flamenco guitar intro]\nAy, Jaén, tierra de fuego\ndonde el sol besa el suelo\nentre olivos se levanta\ntu corazón verdadero.\n\n\n\n[Beat drops – male rap enters, groovy hip-hop rhythm, cajón + bass, 95 BPM]\nJaén despierta, con fuerza y con arte\nla gente sonríe, la vida reparte\nen cada calle hay historia que late\norgullo en el alma, raíces que arden.\n\nSubo la cuesta, la brisa me guía\nSanta Catalina me da compañía\nel barrio murmura con algarabía\nla tapa, la risa, la buena energía.\n\n\n\n[Chorus – female flamenco vocals, upbeat rhythm with hand claps and guitar strums]\nAy, Jaén, qué bonito suena\ntu cante vuela, tu luz me llena\ndel valle al monte, la voz resuena\nJaén se alegra, Jaén resuena.\n\n\n\n[Verse 2 – male rap with female ad-libs, syncopated rhythm]\nTierra sincera, mirada clara\ntrabajo y coraje, palabra rara\ndesde el casco viejo hasta la Almenara\nJaén no espera, Jaén dispara.\n\n[Female ad-libs – flamenco “jaleos” style]\n¡Ole mi gente buena! ¡Ay qué alegría más sana!\n\n[Male rap continues]\nPor el Paseo de la Estación suena el alma\nni el tiempo ni el miedo aquí tienen calma\nJaén respira verdad y palma\ncada esquina suena a jarana.\n\n\n\n[Bridge – vocal duel, flamenco and rap call & response, energetic palmas]\nTierra bendita, no hay quien te iguale\nAquí el corazón se mide en el vale.\nDeja que el cante reviente la calle\nQue en cada compás la vida estalle.\n\n\n\n[Final Chorus – both voices together, full festive energy, strong compás]\nAy, Jaén, qué bonito suena\ntu cante vuela, tu luz me llena\ndel valle al monte, la voz resuena\nJaén se alegra, Jaén resuena.\n\n\n\n[Outro – female flamenco vocals, slow fade with guitar and cajón]\nAy, mi Jaén, mi tierra buena\nmi gente canta, la vida suena\nJaén resuena, Jaén resuena...",
+        "cot": "full",
+        "seed": 2026,
+        "abc": "X:1\nT:\nM:2/4\nL:1/32\nQ:1/4=95\nV: Vocal clef=treble name=\"Vocal Melody\" snm=\"Vocal\"\nV: Ins clef=treble name=\"Ins Melody\" snm=\"Inst.\"\nK:C#m\n% intro\nV: Vocal\nZ|z8\"C#m\"z8|\"C#m\"z16|\"C#m\"z16|\nV: Ins\nZ2|c2e2d2e8-e2-|e6z4d2e2f2|\nV: Vocal\n\"C#m\"z16|\"C#m\"z16|\"C#m\"z16|\"C#m\"z16|\nV: Ins\ng2a2g12-|g4z4f2g2a2b2|c'4c'4c'4b4|a4a2g2g4f4|\nV: Vocal\n\"C#m\"z16|\"C#m\"z16|\nV: Ins\ne4z12|Z|\n% verse\nV: Vocal\n\"C#m\"z8z2e4e2|\"C#m\"e4e2d4c2c4-|\"A\"c4z8z2B2|\"A\"e4d2d4c2c4-|\nV: Ins\nZ4|\nV: Vocal\n\"B\"c4B2z6B2B2|\"B\"B4c2d4e2e4-|\"C#m\"e2c2c2z8B2|\"C#m\"B4c2d4d4c2|\nV: Ins\nZ4|\nV: Vocal\n\"C#m\"c8z8|\"C#m\"z8z2C2E2D2|\"C#m\"E4C2C2E4E2D2|\"C#m\"E4C2C2E4E2D2|\nV: Ins\nZ4|\nV: Vocal\n\"A\"E4C2C2E4E2D2|\"A\"E4C2z4C2E2D2|\"B\"D4D2C2D4D2C2|\"B\"D4B,2B,2D4D2C2|\nV: Ins\nZ4|\nV: Vocal\n\"C#m\"D4B,2B,2D4D2C2|\"C#m\"D4C4z2c2e2d2|\"C#m\"e4c2c2e4e2d2|\"C#m\"e4c4e2e2e2d2|\nV: Ins\nZ4|\nV: Vocal\n\"A\"e4c2c2e4e2d2|\"A\"e4c4e4e2d2|\"B\"d4d2c2d4d2c2|\"B\"d4B2B2d4d2c2|\nV: Ins\nZ4|\nV: Vocal\n\"C#m\"d4B2B2d4d2c2|\"C#m\"d4c8z4|\nV: Ins\nZ2|\n% chorus\nV: Vocal\n\"C#m\"g8e8|\"C#m\"c4c2c2a4g2a2-|\"A\"a2g4z8z2|\"A\"z6e2f4e2f2-|\nV: Ins\nZ4|\nV: Vocal\n\"B\"f2d4z8z2|\"B\"z6d2a4g2g2-|\"C#m\"g2e4z8z2|\"C#m\"z6e2e4e2g2-|\nV: Ins\nZ4|\nV: Vocal\n\"C#m\"g2g4f2e8|\"C#m\"z6c2a4g2a2-|\"A\"a2g4z8z2|\"A\"z6e2f4e2f2-|\nV: Ins\nZ4|\nV: Vocal\n\"B\"f2d4z8z2|\"B\"z6d2e4d2e2-|\"C#m\"e2c4z8z2|\"C#m\"z8z2C2E2D2|\nV: Ins\nZ4|\n% verse\nV: Vocal\n\"C#m\"E4C2C2E2D2E4|\"C#m\"C4z4E2E2E2D2|\"A\"E4C2C2E2D2E4|\"A\"C4z4E2E2E2D2|\nV: Ins\nZ4|\nV: Vocal\n\"B\"D4D2C2D2C2D4|\"B\"B,4z6C2D2C2|\"C#m\"D4B,4z2C2D2C2|\"C#m\"D4B,4z8|\nV: Ins\nZ4|\nV: Vocal\n\"C#m\"z8z2c2c2c2|\"C#m\"g4f2e4d2c4|\"A\"z8z2c2c2c2|\"A\"g2f4e4d4e2|\nV: Ins\nZ4|\nV: Vocal\n\"B\"d16-|\"B\"d8z2e2c2d2|\"C#m\"e16-|\"C#m\"e8z2C2E2D2|\nV: Ins\nZ4|\nV: Vocal\n\"C#m\"E2E2E2D2E4E2D2|\"C#m\"E4C4E2E2E2D2|\"A\"E4C2E4E4D2|\"A\"E4C4z6C2|\nV: Ins\nZ4|\nV: Vocal\n\"B\"D4D2D4D4C2|\"B\"D4C2D4C4z2|D2C2D2C2D4D2C2|D4C4z8|\nV: Ins\nZ4|\n% pre-chorus\nV: Vocal\n\"C#m\"z2c2c2c2g4g2g2-|\"C#m\"g2f4e2e4d4|\"A\"c2c2c2c2g4g2g2-|\"A\"g2f4e2e4d4|\nV: Ins\nZ4|\nV: Vocal\n\"B\"z2d2d2d2f4f2f2|\"B\"f4e2d2e4d2c2|\"C#m\"c4c2c2e6d2|\"C#m\"e4d4e4d2c2|\nV: Ins\nZ4|\n% chorus\nV: Vocal\n\"C#m\"g8e8|\"C#m\"c4c2c2a4g2a2-|\"A\"a2g4z8z2|\"A\"z6e2f4e2f2-|\nV: Ins\nZ4|\nV: Vocal\n\"B\"f2d4z8z2|\"B\"z6d2a4g2g2-|\"C#m\"g2e4z8z2|\"C#m\"z6e2e4e2g2-|\nV: Ins\nZ4|\nV: Vocal\n\"C#m\"g2g4f2e8|\"C#m\"z6c2a4g2a2-|\"A\"a2g4z8z2|\"A\"z6e2f4e2f2-|\nV: Ins\nZ4|\nV: Vocal\n\"B\"f2d4z8z2|\"B\"z6d2e4d2e2-|\"C#m\"e2c4z8z2|\"C#m\"z16|\nV: Ins\nZ4|\nV: Vocal\n\"C#m\"g8e8|\"C#m\"c4c2c2a4g2a2-|\"A\"a2g4z8z2|\"A\"z6e2f4e2f2-|\nV: Ins\nZ4|\nV: Vocal\n\"B\"f2d4z8z2|\"B\"z6d2a4g2g2-|\"C#m\"g2e4z8z2|\"C#m\"z6e2e4e2g2-|\nV: Ins\nZ4|\nV: Vocal\n\"C#m\"g2g4f2e8|\"C#m\"z6c2a4g2a2-|\"A\"a2g4z8z2|\"A\"z6e2f4e2f2-|\nV: Ins\nZ4|\nV: Vocal\n\"B\"f2d4z8z2|\"B\"z6d2e4d2e2-|\"C#m\"e2c4z8z2|\"C#m\"z16|\nV: Ins\nZ4|\n% outro\nV: Vocal\n\"C#m\"g16-|\"C#m\"g8z2g2f2g2|\"A\"a16-|\"A\"a8z2g2f2g2|\nV: Ins\nZ4|\nV: Vocal\n\"B\"f16-|\"B\"f8e4d2e2|\"C#m\"c16-|\"C#m\"c8z8|\nV: Ins\nZ4|\nV: Vocal\n\"C#m\"g16-|\"C#m\"g8z2a2f2g2|\"A\"a16-|\"A\"a8z2g2f2g2|\nV: Ins\nZ4|\nV: Vocal\n\"B\"f16-|\"B\"f8e4d2e2|\"C#m\"c16-|\"C#m\"c8z8|\nV: Ins\nZ4|\n% chorus\nV: Vocal\n\"C#m\"g8e8|\"C#m\"c6c2a4g2a2-|\"A\"a2g4z8z2|\"A\"z6e2f4e2f2-|\nV: Ins\nZ4|\nV: Vocal\n\"B\"f4d12-|\"B\"d4z2d2e4d2e2-|\"C#m\"e2c4z8z2|\"C#m\"z6d2e4d2e2-|\nV: Ins\nZ4|\nV: Vocal\n\"C#m\"e2c4z8z2|\"C#m\"z6d2e4d2e2-|\"C#m\"e2c12-c2-|\"C#m\"c8-c2z6|\nV: Ins\nZ4|\nV: Vocal\nZ|\nV: Ins\nZ|\n"
+      },
+      "official_mode": "planned",
+      "source": {
+        "id": "0792ba06ebe2fd7cdd6c3e7b",
+        "order": 16,
+        "collection": "genre",
+        "title": "Flamenco",
+        "genre": "Flamenco",
+        "genrePath": [
+          "Regional Music",
+          "European Music",
+          "Iberian Music",
+          "Spanish Music",
+          "Flamenco"
+        ],
+        "language": "es",
+        "languageLabel": "Spanish",
+        "mode": "planned",
+        "tags": "flamenco gipsy female vocals, deep male spanish rap voice, hip hop beat with cajón and bass, flamenco guitar, palmas, 95 bpm, joyful energy, andalusian accent, fusion, bright tone, no melancholy, festive rhythm, call and response vocals, uplifting and emotional, warm analog texture, street spirit, modern flamenco rap fusion, mediterranean vibe, vibrant and organic production.",
+        "lyrics": "[Intro – female flamenco vocals, slow compás, soft palmas, flamenco guitar intro]\nAy, Jaén, tierra de fuego\ndonde el sol besa el suelo\nentre olivos se levanta\ntu corazón verdadero.\n\n\n\n[Beat drops – male rap enters, groovy hip-hop rhythm, cajón + bass, 95 BPM]\nJaén despierta, con fuerza y con arte\nla gente sonríe, la vida reparte\nen cada calle hay historia que late\norgullo en el alma, raíces que arden.\n\nSubo la cuesta, la brisa me guía\nSanta Catalina me da compañía\nel barrio murmura con algarabía\nla tapa, la risa, la buena energía.\n\n\n\n[Chorus – female flamenco vocals, upbeat rhythm with hand claps and guitar strums]\nAy, Jaén, qué bonito suena\ntu cante vuela, tu luz me llena\ndel valle al monte, la voz resuena\nJaén se alegra, Jaén resuena.\n\n\n\n[Verse 2 – male rap with female ad-libs, syncopated rhythm]\nTierra sincera, mirada clara\ntrabajo y coraje, palabra rara\ndesde el casco viejo hasta la Almenara\nJaén no espera, Jaén dispara.\n\n[Female ad-libs – flamenco “jaleos” style]\n¡Ole mi gente buena! ¡Ay qué alegría más sana!\n\n[Male rap continues]\nPor el Paseo de la Estación suena el alma\nni el tiempo ni el miedo aquí tienen calma\nJaén respira verdad y palma\ncada esquina suena a jarana.\n\n\n\n[Bridge – vocal duel, flamenco and rap call & response, energetic palmas]\nTierra bendita, no hay quien te iguale\nAquí el corazón se mide en el vale.\nDeja que el cante reviente la calle\nQue en cada compás la vida estalle.\n\n\n\n[Final Chorus – both voices together, full festive energy, strong compás]\nAy, Jaén, qué bonito suena\ntu cante vuela, tu luz me llena\ndel valle al monte, la voz resuena\nJaén se alegra, Jaén resuena.\n\n\n\n[Outro – female flamenco vocals, slow fade with guitar and cajón]\nAy, mi Jaén, mi tierra buena\nmi gente canta, la vida suena\nJaén resuena, Jaén resuena...",
+        "abc": "X:1\nT:\nM:2/4\nL:1/32\nQ:1/4=95\nV: Vocal clef=treble name=\"Vocal Melody\" snm=\"Vocal\"\nV: Ins clef=treble name=\"Ins Melody\" snm=\"Inst.\"\nK:C#m\n% intro\nV: Vocal\nZ|z8\"C#m\"z8|\"C#m\"z16|\"C#m\"z16|\nV: Ins\nZ2|c2e2d2e8-e2-|e6z4d2e2f2|\nV: Vocal\n\"C#m\"z16|\"C#m\"z16|\"C#m\"z16|\"C#m\"z16|\nV: Ins\ng2a2g12-|g4z4f2g2a2b2|c'4c'4c'4b4|a4a2g2g4f4|\nV: Vocal\n\"C#m\"z16|\"C#m\"z16|\nV: Ins\ne4z12|Z|\n% verse\nV: Vocal\n\"C#m\"z8z2e4e2|\"C#m\"e4e2d4c2c4-|\"A\"c4z8z2B2|\"A\"e4d2d4c2c4-|\nV: Ins\nZ4|\nV: Vocal\n\"B\"c4B2z6B2B2|\"B\"B4c2d4e2e4-|\"C#m\"e2c2c2z8B2|\"C#m\"B4c2d4d4c2|\nV: Ins\nZ4|\nV: Vocal\n\"C#m\"c8z8|\"C#m\"z8z2C2E2D2|\"C#m\"E4C2C2E4E2D2|\"C#m\"E4C2C2E4E2D2|\nV: Ins\nZ4|\nV: Vocal\n\"A\"E4C2C2E4E2D2|\"A\"E4C2z4C2E2D2|\"B\"D4D2C2D4D2C2|\"B\"D4B,2B,2D4D2C2|\nV: Ins\nZ4|\nV: Vocal\n\"C#m\"D4B,2B,2D4D2C2|\"C#m\"D4C4z2c2e2d2|\"C#m\"e4c2c2e4e2d2|\"C#m\"e4c4e2e2e2d2|\nV: Ins\nZ4|\nV: Vocal\n\"A\"e4c2c2e4e2d2|\"A\"e4c4e4e2d2|\"B\"d4d2c2d4d2c2|\"B\"d4B2B2d4d2c2|\nV: Ins\nZ4|\nV: Vocal\n\"C#m\"d4B2B2d4d2c2|\"C#m\"d4c8z4|\nV: Ins\nZ2|\n% chorus\nV: Vocal\n\"C#m\"g8e8|\"C#m\"c4c2c2a4g2a2-|\"A\"a2g4z8z2|\"A\"z6e2f4e2f2-|\nV: Ins\nZ4|\nV: Vocal\n\"B\"f2d4z8z2|\"B\"z6d2a4g2g2-|\"C#m\"g2e4z8z2|\"C#m\"z6e2e4e2g2-|\nV: Ins\nZ4|\nV: Vocal\n\"C#m\"g2g4f2e8|\"C#m\"z6c2a4g2a2-|\"A\"a2g4z8z2|\"A\"z6e2f4e2f2-|\nV: Ins\nZ4|\nV: Vocal\n\"B\"f2d4z8z2|\"B\"z6d2e4d2e2-|\"C#m\"e2c4z8z2|\"C#m\"z8z2C2E2D2|\nV: Ins\nZ4|\n% verse\nV: Vocal\n\"C#m\"E4C2C2E2D2E4|\"C#m\"C4z4E2E2E2D2|\"A\"E4C2C2E2D2E4|\"A\"C4z4E2E2E2D2|\nV: Ins\nZ4|\nV: Vocal\n\"B\"D4D2C2D2C2D4|\"B\"B,4z6C2D2C2|\"C#m\"D4B,4z2C2D2C2|\"C#m\"D4B,4z8|\nV: Ins\nZ4|\nV: Vocal\n\"C#m\"z8z2c2c2c2|\"C#m\"g4f2e4d2c4|\"A\"z8z2c2c2c2|\"A\"g2f4e4d4e2|\nV: Ins\nZ4|\nV: Vocal\n\"B\"d16-|\"B\"d8z2e2c2d2|\"C#m\"e16-|\"C#m\"e8z2C2E2D2|\nV: Ins\nZ4|\nV: Vocal\n\"C#m\"E2E2E2D2E4E2D2|\"C#m\"E4C4E2E2E2D2|\"A\"E4C2E4E4D2|\"A\"E4C4z6C2|\nV: Ins\nZ4|\nV: Vocal\n\"B\"D4D2D4D4C2|\"B\"D4C2D4C4z2|D2C2D2C2D4D2C2|D4C4z8|\nV: Ins\nZ4|\n% pre-chorus\nV: Vocal\n\"C#m\"z2c2c2c2g4g2g2-|\"C#m\"g2f4e2e4d4|\"A\"c2c2c2c2g4g2g2-|\"A\"g2f4e2e4d4|\nV: Ins\nZ4|\nV: Vocal\n\"B\"z2d2d2d2f4f2f2|\"B\"f4e2d2e4d2c2|\"C#m\"c4c2c2e6d2|\"C#m\"e4d4e4d2c2|\nV: Ins\nZ4|\n% chorus\nV: Vocal\n\"C#m\"g8e8|\"C#m\"c4c2c2a4g2a2-|\"A\"a2g4z8z2|\"A\"z6e2f4e2f2-|\nV: Ins\nZ4|\nV: Vocal\n\"B\"f2d4z8z2|\"B\"z6d2a4g2g2-|\"C#m\"g2e4z8z2|\"C#m\"z6e2e4e2g2-|\nV: Ins\nZ4|\nV: Vocal\n\"C#m\"g2g4f2e8|\"C#m\"z6c2a4g2a2-|\"A\"a2g4z8z2|\"A\"z6e2f4e2f2-|\nV: Ins\nZ4|\nV: Vocal\n\"B\"f2d4z8z2|\"B\"z6d2e4d2e2-|\"C#m\"e2c4z8z2|\"C#m\"z16|\nV: Ins\nZ4|\nV: Vocal\n\"C#m\"g8e8|\"C#m\"c4c2c2a4g2a2-|\"A\"a2g4z8z2|\"A\"z6e2f4e2f2-|\nV: Ins\nZ4|\nV: Vocal\n\"B\"f2d4z8z2|\"B\"z6d2a4g2g2-|\"C#m\"g2e4z8z2|\"C#m\"z6e2e4e2g2-|\nV: Ins\nZ4|\nV: Vocal\n\"C#m\"g2g4f2e8|\"C#m\"z6c2a4g2a2-|\"A\"a2g4z8z2|\"A\"z6e2f4e2f2-|\nV: Ins\nZ4|\nV: Vocal\n\"B\"f2d4z8z2|\"B\"z6d2e4d2e2-|\"C#m\"e2c4z8z2|\"C#m\"z16|\nV: Ins\nZ4|\n% outro\nV: Vocal\n\"C#m\"g16-|\"C#m\"g8z2g2f2g2|\"A\"a16-|\"A\"a8z2g2f2g2|\nV: Ins\nZ4|\nV: Vocal\n\"B\"f16-|\"B\"f8e4d2e2|\"C#m\"c16-|\"C#m\"c8z8|\nV: Ins\nZ4|\nV: Vocal\n\"C#m\"g16-|\"C#m\"g8z2a2f2g2|\"A\"a16-|\"A\"a8z2g2f2g2|\nV: Ins\nZ4|\nV: Vocal\n\"B\"f16-|\"B\"f8e4d2e2|\"C#m\"c16-|\"C#m\"c8z8|\nV: Ins\nZ4|\n% chorus\nV: Vocal\n\"C#m\"g8e8|\"C#m\"c6c2a4g2a2-|\"A\"a2g4z8z2|\"A\"z6e2f4e2f2-|\nV: Ins\nZ4|\nV: Vocal\n\"B\"f4d12-|\"B\"d4z2d2e4d2e2-|\"C#m\"e2c4z8z2|\"C#m\"z6d2e4d2e2-|\nV: Ins\nZ4|\nV: Vocal\n\"C#m\"e2c4z8z2|\"C#m\"z6d2e4d2e2-|\"C#m\"e2c12-c2-|\"C#m\"c8-c2z6|\nV: Ins\nZ4|\nV: Vocal\nZ|\nV: Ins\nZ|\n",
+        "abcUrl": "assets/genre/0792ba06ebe2fd7cdd6c3e7b/score.abc",
+        "audio": "assets/genre/0792ba06ebe2fd7cdd6c3e7b/0792ba06ebe2fd7cdd6c3e7b_music.mp3",
+        "scoreAudio": "assets/genre/0792ba06ebe2fd7cdd6c3e7b/0792ba06ebe2fd7cdd6c3e7b_score.mp3",
+        "sheets": [
+          "assets/genre/0792ba06ebe2fd7cdd6c3e7b/sheet_01.svg",
+          "assets/genre/0792ba06ebe2fd7cdd6c3e7b/sheet_02.svg",
+          "assets/genre/0792ba06ebe2fd7cdd6c3e7b/sheet_03.svg",
+          "assets/genre/0792ba06ebe2fd7cdd6c3e7b/sheet_04.svg",
+          "assets/genre/0792ba06ebe2fd7cdd6c3e7b/sheet_05.svg"
+        ]
+      },
+      "official_audio_url": "https://map-yue2.github.io/assets/genre/0792ba06ebe2fd7cdd6c3e7b/0792ba06ebe2fd7cdd6c3e7b_music.mp3",
+      "official_audio_path": "outputs/official_fullsong/reference/0792ba06ebe2fd7cdd6c3e7b.mp3",
+      "official_audio_sha256": "7a771a42b662e9586a5aa50b09766d86b60f1ad14accf12b04db8f9be0cd9237",
+      "official_seconds": 182.92,
+      "input_hashes": {
+        "style": "dcb0c85c90f5804864eb62f2e72bbd433180b1764931ee5767f094de388db78a",
+        "lyrics": "4be0ebb85d6be4c9a1e07eb760153fc8c651c8728ed6ab88e5125860c80d6f0f",
+        "abc": "9619b6418f072dba563105dcffbde7d8fd6e906378a4d0cf3ee3a5bd5f04df48"
+      }
+    },
+    {
+      "id": "zh_score",
+      "official_id": "115abed0e655f5fa9b1409b3",
+      "title": "R&B",
+      "genre": "R&B",
+      "language": "zh",
+      "score_mode": "supplied",
+      "request": {
+        "id": "zh_score",
+        "style": "Modern Chinese pop R&B with synth-pop influence, emotional and intimate atmosphere, Intro starts with a clear and emotional lead synth melody, simple and memorable, soft and slightly fragile, close-mic, expressive and melodic, Clean pop drum groove, tight punchy kick, natural snare with soft room reverb, minimal hi-hat pattern, smooth R&B bounce, Warm melodic synth bass with smooth movement, Analog-style synths with slight detune, warm tone, gentle filter movement, soft low-pass, subtle chorus width, Lead synth is smooth and rounded, emotional and expressive, High-frequency bell-like pluck synth in the background, soft and bright, short notes with light delay and reverb, adding sparkle and rhythmic detail, Wide atmospheric pads with slow attack and breathing movement, Minimal and clean arrangement, layered but spacious, focusing on melody and texture, Wide stereo image, airy reverb and delay, polished and warm, Pop music, Well-defined rhythm , Well-defined rhythm",
+        "lyrics": "[Intro]\n\n[Verse 1]\n交易命运的改变 源头在起心动念\n这是改变的关键 但很多人视而不见\n大赚大亏踏空卖飞 内在秩序不要乱\n保持平和的心念 净值弹指间改变\n当你大赚庆幸时 请你安静想想看\n这笔盈利隐含多少潜在代价来交换\n当你清楚知晓每次交易对应的代价\n策略的赔率带给你先胜后战的心安\n\n[Pre-Chorus]\n当你选择策略保守会避开一些风险\n模式内机会出现时进攻必然受限\n当你选择激进策略博弈猛干一段\n大赚的概率提升 大面概率也提升\n\n[Chorus]\n当你大亏懊悔时 请你冷静想想看\n当下的首要任务是稳住还是继续猛干\n如果内心秩序混乱还想力挽狂澜\n连续重仓猛干会让你连续吃大面\n此时赶紧降低期待调整心中的不甘\n要警惕出其不意博弈小概率事件\n\n[Verse 2]\n因为赌性会在不顺之时出来作乱\n回头发现 努力回血反而不如摆烂\n当你交易卖飞时\n请你转念想想看 后续行情是否出现一个更好的答案\n其实时间拉长看 每条净值的曲线\n那是模式画的图\n更是心性的变现\n\n[Bridge]\n世间 一切都是万物因缘合和的结果\n很多事\n都不是我们想怎样就怎样的\n走势无常才是交易基本的常态\n于是先要接纳它 否则痛苦一直在\n所有绊脚石\n换个角度也是垫脚石\n在你主动站上去看更高的风景时\n\n[Verse 3]\n当你后悔当初时 请你转念想想看\n难道当初不那样 做现在真的会更棒 不那样现在会怎样\n都是你的想象\n况且日子还很长 不要过早下判",
+        "cot": "full",
+        "seed": 2026,
+        "abc": "X:1\nT:\nM:4/4\nL:1/16\nQ:1/4=98\nV: Vocal clef=treble name=\"Vocal Melody\" snm=\"Vocal\"\nV: Ins clef=treble name=\"Ins Melody\" snm=\"Inst.\"\nK:Bb\n% intro\nV: Vocal\nZ|\"Ebmaj7\"z16|\"Ebm(maj7)\"z16|\"Dm7\"z16|\nV: Ins\nz4f2e2d2e2d2B2|d2GdzGdzGdzGdzGd|d2^FdzFd2FdzFdzF2|c2FczFczFczFc2Fc|\nV: Vocal\n\"Gm7\"z12z2BG|\nV: Ins\nA3B3f6z4|\n% verse\nV: Vocal\n\"Ebmaj7\"BGBGB2GGBGBBd2BG|\"Ebm(maj7)\"BGBGBGBGBGBBd2BB|\"Dm7\"AAAAAAAGAAAGA2AG|\"Gm7\"AAAGAGAGABAB2zBB|\nV: Ins\nZ4|\nV: Vocal\n\"Ebmaj7\"dddddddddddf3dd|\"Ebm(maj7)\"dddddddddddg2f3|\"Dm7\"cccccccccccccdB2|\"Gm7\"cccccccccccdcBB2|\nV: Ins\nZ4|\n% pre-chorus\nV: Vocal\n\"Ebmaj7\"z2ddGGddGGGGddcd|\"Ebm(maj7)\"c2ccFFccFFccFFcc-|\"Dm7\"c2ccFFccFFccFFcc-|\"Gm7\"c2cBcBcBcBcBcBcd-|\nV: Ins\nZ4|\nV: Vocal\n\"Gm7\"d2z6f2e2d2e2|\nV: Ins\nZ|\n% chorus\nV: Vocal\n\"Ebmaj7\"d2G2B2Gd3G2B2Gd-|\"Ebm(maj7)\"d2c4z2f2e2d2e2|\"Dm7\"d2F2A2Fd3F2A2F2|\"Gm7\"c3c3B2d2z2Bcde|\nV: Ins\nZ4|\nV: Vocal\n\"Ebmaj7\"d2G2B2Gd3G2B2Gd-|\"Ebm(maj7)\"d2c4z2f2e2d2e2|\"Dm7\"d2F2A2Fd3F2A2F2|\"Gm7\"c3B4z3dcdcdc|\nV: Ins\nZ4|\nV: Vocal\n\"Ebmaj7\"d2g2z2d2c2B2cBcB|\"Ebm(maj7)\"d4z6dcdcdc|\"Dm7\"d2a4f4d2c2B2|\"Gm7\"c3B4z6zBB|\nV: Ins\nZ4|\n% verse\nV: Vocal\n\"Ebmaj7\"ddBBddBBddBd3BB|\"Ebm(maj7)\"ddBBddBBddBd3dd|\"Dm7\"cccccccccccccccc|\"Gm7\"cccccccdc2B2B2z2|\nV: Ins\nZ4|\nV: Vocal\n\"Ebmaj7\"z2dcdcdcd2G2d2d2|\"Ebm(maj7)\"z2dcdcdcd2G2d2d2|\"Dm7\"z2cBcBcBc2F2c2c2|\"Gm7\"z2cBcBcdc2B4BB|\nV: Ins\nZ4|\n% pre-chorus\nV: Vocal\n\"Ebmaj7\"dcdcdcdcdcddG2BB|\"Ebm(maj7)\"dcdcdcdcdcddG2BB|\"Dm7\"cBcBcBcBc2d2d2BB|\"Gm7\"cBcBcBcBc2d2d2G2|\nV: Ins\nZ4|\nV: Vocal\n\"Ebmaj7\"d4g4a4b4|\"Ebm(maj7)\"d6c6z2BB|\"Dm7\"c4f4g4a4|\"Gm7\"a3f3g3b3c'c'z2|\nV: Ins\nZ4|\nV: Vocal\n\"Ebmaj7\"z2dcdcdcdcdcd2G2|\"Ebm(maj7)\"d2dcdcdcdcdcd2G2|\"Dm7\"d2d2z2d2d2z2cBcB|\"Gm7\"d2z4Bz6zBB|\nV: Ins\nZ4|\n% chorus\nV: Vocal\n\"Ebmaj7\"d2G2B2Gd3GGB2Gd-|\"Ebm(maj7)\"d2c4z2f2e2d2e2|\"Dm7\"d2F2A2Fd3F2A2F2|\"Gm7\"c3c3B2d2z2Bcde|\nV: Ins\nZ4|\nV: Vocal\n\"Ebmaj7\"d2G2B2Gd3G2B2Gd-|\"Ebm(maj7)\"d2c4z2f2e2d2e2|\"Dm7\"d2F2A2Fd3F2A2F2|\"Gm7\"c3B4z8z|\nV: Ins\nZ3|z12z2Bz|\n% outro\nV: Vocal\n\"Ebmaj7\"z16|\"Ebm(maj7)\"z16|\"Dm7\"z16|\"Gm7\"z16|\nV: Ins\nd2GdzGdzGdzGd2Gd|d2^FdzFd2FdzFd2F2|c2FczFc2FczFc2Fc|A3B3f8z2|\nV: Vocal\n\"Gm7\"z16|\nV: Ins\nZ|\n"
+      },
+      "official_mode": "planned",
+      "source": {
+        "id": "115abed0e655f5fa9b1409b3",
+        "order": 20,
+        "collection": "genre",
+        "title": "R&B",
+        "genre": "R&B",
+        "genrePath": [
+          "R&B"
+        ],
+        "language": "zh",
+        "languageLabel": "Chinese",
+        "mode": "planned",
+        "tags": "Modern Chinese pop R&B with synth-pop influence, emotional and intimate atmosphere, Intro starts with a clear and emotional lead synth melody, simple and memorable, soft and slightly fragile, close-mic, expressive and melodic, Clean pop drum groove, tight punchy kick, natural snare with soft room reverb, minimal hi-hat pattern, smooth R&B bounce, Warm melodic synth bass with smooth movement, Analog-style synths with slight detune, warm tone, gentle filter movement, soft low-pass, subtle chorus width, Lead synth is smooth and rounded, emotional and expressive, High-frequency bell-like pluck synth in the background, soft and bright, short notes with light delay and reverb, adding sparkle and rhythmic detail, Wide atmospheric pads with slow attack and breathing movement, Minimal and clean arrangement, layered but spacious, focusing on melody and texture, Wide stereo image, airy reverb and delay, polished and warm, Pop music, Well-defined rhythm , Well-defined rhythm",
+        "lyrics": "[Intro]\n\n[Verse 1]\n交易命运的改变 源头在起心动念\n这是改变的关键 但很多人视而不见\n大赚大亏踏空卖飞 内在秩序不要乱\n保持平和的心念 净值弹指间改变\n当你大赚庆幸时 请你安静想想看\n这笔盈利隐含多少潜在代价来交换\n当你清楚知晓每次交易对应的代价\n策略的赔率带给你先胜后战的心安\n\n[Pre-Chorus]\n当你选择策略保守会避开一些风险\n模式内机会出现时进攻必然受限\n当你选择激进策略博弈猛干一段\n大赚的概率提升 大面概率也提升\n\n[Chorus]\n当你大亏懊悔时 请你冷静想想看\n当下的首要任务是稳住还是继续猛干\n如果内心秩序混乱还想力挽狂澜\n连续重仓猛干会让你连续吃大面\n此时赶紧降低期待调整心中的不甘\n要警惕出其不意博弈小概率事件\n\n[Verse 2]\n因为赌性会在不顺之时出来作乱\n回头发现 努力回血反而不如摆烂\n当你交易卖飞时\n请你转念想想看 后续行情是否出现一个更好的答案\n其实时间拉长看 每条净值的曲线\n那是模式画的图\n更是心性的变现\n\n[Bridge]\n世间 一切都是万物因缘合和的结果\n很多事\n都不是我们想怎样就怎样的\n走势无常才是交易基本的常态\n于是先要接纳它 否则痛苦一直在\n所有绊脚石\n换个角度也是垫脚石\n在你主动站上去看更高的风景时\n\n[Verse 3]\n当你后悔当初时 请你转念想想看\n难道当初不那样 做现在真的会更棒 不那样现在会怎样\n都是你的想象\n况且日子还很长 不要过早下判",
+        "abc": "X:1\nT:\nM:4/4\nL:1/16\nQ:1/4=98\nV: Vocal clef=treble name=\"Vocal Melody\" snm=\"Vocal\"\nV: Ins clef=treble name=\"Ins Melody\" snm=\"Inst.\"\nK:Bb\n% intro\nV: Vocal\nZ|\"Ebmaj7\"z16|\"Ebm(maj7)\"z16|\"Dm7\"z16|\nV: Ins\nz4f2e2d2e2d2B2|d2GdzGdzGdzGdzGd|d2^FdzFd2FdzFdzF2|c2FczFczFczFc2Fc|\nV: Vocal\n\"Gm7\"z12z2BG|\nV: Ins\nA3B3f6z4|\n% verse\nV: Vocal\n\"Ebmaj7\"BGBGB2GGBGBBd2BG|\"Ebm(maj7)\"BGBGBGBGBGBBd2BB|\"Dm7\"AAAAAAAGAAAGA2AG|\"Gm7\"AAAGAGAGABAB2zBB|\nV: Ins\nZ4|\nV: Vocal\n\"Ebmaj7\"dddddddddddf3dd|\"Ebm(maj7)\"dddddddddddg2f3|\"Dm7\"cccccccccccccdB2|\"Gm7\"cccccccccccdcBB2|\nV: Ins\nZ4|\n% pre-chorus\nV: Vocal\n\"Ebmaj7\"z2ddGGddGGGGddcd|\"Ebm(maj7)\"c2ccFFccFFccFFcc-|\"Dm7\"c2ccFFccFFccFFcc-|\"Gm7\"c2cBcBcBcBcBcBcd-|\nV: Ins\nZ4|\nV: Vocal\n\"Gm7\"d2z6f2e2d2e2|\nV: Ins\nZ|\n% chorus\nV: Vocal\n\"Ebmaj7\"d2G2B2Gd3G2B2Gd-|\"Ebm(maj7)\"d2c4z2f2e2d2e2|\"Dm7\"d2F2A2Fd3F2A2F2|\"Gm7\"c3c3B2d2z2Bcde|\nV: Ins\nZ4|\nV: Vocal\n\"Ebmaj7\"d2G2B2Gd3G2B2Gd-|\"Ebm(maj7)\"d2c4z2f2e2d2e2|\"Dm7\"d2F2A2Fd3F2A2F2|\"Gm7\"c3B4z3dcdcdc|\nV: Ins\nZ4|\nV: Vocal\n\"Ebmaj7\"d2g2z2d2c2B2cBcB|\"Ebm(maj7)\"d4z6dcdcdc|\"Dm7\"d2a4f4d2c2B2|\"Gm7\"c3B4z6zBB|\nV: Ins\nZ4|\n% verse\nV: Vocal\n\"Ebmaj7\"ddBBddBBddBd3BB|\"Ebm(maj7)\"ddBBddBBddBd3dd|\"Dm7\"cccccccccccccccc|\"Gm7\"cccccccdc2B2B2z2|\nV: Ins\nZ4|\nV: Vocal\n\"Ebmaj7\"z2dcdcdcd2G2d2d2|\"Ebm(maj7)\"z2dcdcdcd2G2d2d2|\"Dm7\"z2cBcBcBc2F2c2c2|\"Gm7\"z2cBcBcdc2B4BB|\nV: Ins\nZ4|\n% pre-chorus\nV: Vocal\n\"Ebmaj7\"dcdcdcdcdcddG2BB|\"Ebm(maj7)\"dcdcdcdcdcddG2BB|\"Dm7\"cBcBcBcBc2d2d2BB|\"Gm7\"cBcBcBcBc2d2d2G2|\nV: Ins\nZ4|\nV: Vocal\n\"Ebmaj7\"d4g4a4b4|\"Ebm(maj7)\"d6c6z2BB|\"Dm7\"c4f4g4a4|\"Gm7\"a3f3g3b3c'c'z2|\nV: Ins\nZ4|\nV: Vocal\n\"Ebmaj7\"z2dcdcdcdcdcd2G2|\"Ebm(maj7)\"d2dcdcdcdcdcd2G2|\"Dm7\"d2d2z2d2d2z2cBcB|\"Gm7\"d2z4Bz6zBB|\nV: Ins\nZ4|\n% chorus\nV: Vocal\n\"Ebmaj7\"d2G2B2Gd3GGB2Gd-|\"Ebm(maj7)\"d2c4z2f2e2d2e2|\"Dm7\"d2F2A2Fd3F2A2F2|\"Gm7\"c3c3B2d2z2Bcde|\nV: Ins\nZ4|\nV: Vocal\n\"Ebmaj7\"d2G2B2Gd3G2B2Gd-|\"Ebm(maj7)\"d2c4z2f2e2d2e2|\"Dm7\"d2F2A2Fd3F2A2F2|\"Gm7\"c3B4z8z|\nV: Ins\nZ3|z12z2Bz|\n% outro\nV: Vocal\n\"Ebmaj7\"z16|\"Ebm(maj7)\"z16|\"Dm7\"z16|\"Gm7\"z16|\nV: Ins\nd2GdzGdzGdzGd2Gd|d2^FdzFd2FdzFd2F2|c2FczFc2FczFc2Fc|A3B3f8z2|\nV: Vocal\n\"Gm7\"z16|\nV: Ins\nZ|\n",
+        "abcUrl": "assets/genre/115abed0e655f5fa9b1409b3/score.abc",
+        "audio": "assets/genre/115abed0e655f5fa9b1409b3/115abed0e655f5fa9b1409b3_music.mp3",
+        "scoreAudio": "assets/genre/115abed0e655f5fa9b1409b3/115abed0e655f5fa9b1409b3_score.mp3",
+        "sheets": [
+          "assets/genre/115abed0e655f5fa9b1409b3/sheet_01.svg",
+          "assets/genre/115abed0e655f5fa9b1409b3/sheet_02.svg",
+          "assets/genre/115abed0e655f5fa9b1409b3/sheet_03.svg",
+          "assets/genre/115abed0e655f5fa9b1409b3/sheet_04.svg"
+        ]
+      },
+      "official_audio_url": "https://map-yue2.github.io/assets/genre/115abed0e655f5fa9b1409b3/115abed0e655f5fa9b1409b3_music.mp3",
+      "official_audio_path": "outputs/official_fullsong/reference/115abed0e655f5fa9b1409b3.mp3",
+      "official_audio_sha256": "5f92a87f15925c817ce984f407921fd9c4bc2a699d741ae33912dc1762a59a17",
+      "official_seconds": 152.72,
+      "input_hashes": {
+        "style": "e444b3469164e2bf7a2b9aa3860f01ac0de892cbcdaf92513e6a831129ba0ec5",
+        "lyrics": "d98e108d0eda26fc39e80a7046299d6700c99028336418ba955dc713d3aa109c",
+        "abc": "b6019e00b45d0673f9f144f610263de544a4894041877d421c66b7f70a766ad1"
+      }
+    },
+    {
+      "id": "ko_score",
+      "official_id": "df64fef4d0ba5a18670f6c19",
+      "title": "Emo",
+      "genre": "Emo",
+      "language": "ko",
+      "score_mode": "supplied",
+      "request": {
+        "id": "ko_score",
+        "style": "A melancholic yet energetic Emo Hip-hop track with Pop Punk influences. Heavy distorted electric guitar riffs combined with fast-paced trap drum beats (808 bass, crisp snare). Dark, emotional, and cinematic atmosphere. Melodic Rap beat featuring a lonely acoustic guitar intro transitioning into an explosive chorus with heavy rock guitars. Deep, distorted 808 bass and sharp hi-hats. Sad, longing melody. Fast-paced Emo Rock and Hip-hop fusion. High-energy electric guitar loops, upbeat but sad melody, 140 BPM ~ 160 BPM, driving drum rhythm. A female vocal with a husky, raspy tone and heavy auto-tune. The singing style is emotional melodic rap. Add high reverb to create a lonely, atmospheric vibe. The voice should sound raw yet polished with metallic pitch correction.",
+        "lyrics": "[Verse 1]\n늦은 밤 텅 빈 버스 안\n창문에 비친 너와 내 얼굴\n목적지는 아직 안 정해도\n너만 있으면 되는 것 같아\n\n[Pre-Chorus]\n사실 난 겁이 많아서\n길을 잃을까 봐 두려워\n근데 네 손 한 번만 잡으면\n지도 따윈 필요 없을 것 같아 (알잖아)\n\n[Chorus]\n나랑 어디든 간다고 해줘\n길 끝이 어딘지 몰라도\n나와 어디든 좋다고 해줘\n창문 밖 풍경은 변해도\n나만 있으면 그 어디든 괜찮다고\n작게라도 말해줘\n그 한마디면 돼\n\n[Verse 2]\n비 오는 빨래 냄새 나는 골목\n우산 하나 나눠 쓰는 우리\n비틀비틀 맞지 않는 보폭도\n웃으면서 맞춰 가는 게 좋아\n\n[Pre-Chorus]\n가끔은 말이 안 통해도\n표정만 봐도 다 알잖아\n서툰 얘길 이어 붙이다가\n그냥 네 이름만 부르게 돼 (왜 이렇게)\n\n[Chorus]\n나랑 어디든 간다고 해줘\n길 끝이 어딘지 몰라도\n나와 어디든 좋다고 해줘\n창문 밖 풍경은 변해도\n나만 있으면 그 어디든 괜찮다고\n조용하게 말해줘\n그 한마디면 돼\n내일도 난 버틸 수 있어\n\n[Bridge]\n약속 같은 건 없어도\n네 옆에 서 있는 지금이\n나에게는 다야\n멀리 안 가도 좋아\n편의점 앞 구석자리라도\n너면 돼 너면 돼 (너면 돼)\n\n[Chorus]\n나랑 어디든 간다고 해줘\n잠깐 밖에 못 나가도\n나와 어디든 좋다고 해줘\n네 방 안 좁은 소파여도\n나만 있으면 그 어디든 괜찮다고\n다시 한 번 말해줘\n그 한마디 듣고\n영원까지 걸어가 볼래",
+        "cot": "full",
+        "seed": 2026,
+        "abc": "X:1\nT:\nM:4/4\nL:1/16\nQ:1/4=170\nV: Vocal clef=treble name=\"Vocal Melody\" snm=\"Vocal\"\nV: Ins clef=treble name=\"Ins Melody\" snm=\"Inst.\"\nK:Bb\n% intro\nV: Vocal\nz4B2B2B4f4|\"Eb\"f4d4d4c4|\"Eb\"c4B2B2B4f4|\"Gm\"f2d2d2d2d4c4|\nV: Ins\nZ4|\nV: Vocal\n\"Gm\"z4B2B2B2B2B2B2|\"Eb\"f4d2d4c2c4|\"Eb\"BzB6A4B2B2|\"Gm\"A4A2A4B4B2-|\nV: Ins\nZ4|\nV: Vocal\n\"Gm\"B4z12|\nV: Ins\nZ|\n% verse\nV: Vocal\n\"Eb\"z2B2d2d2d2c2c2c2-|\"Eb\"c2B6z8|\"Gm\"z2B2d2d2d2c2c2c2-|\"Gm\"c2B4B4B2B2B2|\nV: Ins\nZ4|\nV: Vocal\n\"Eb\"f4d2d4c4c2-|\"Eb\"c2B4B4z2B2B2|\"Gm\"f4d2d4c4c2-|\"Gm\"c2d4c4B4B2-|\nV: Ins\nZ4|\nV: Vocal\n\"Eb\"B2z6f8|\"Eb\"d8c8|\"F\"z16|\nV: Ins\nZ3|\n% chorus\nV: Vocal\nz2b2b2b2b2b2f'4|\"Eb\"f'2d'zd'4d'4c'4|\"Eb\"z2b2b2b2b2b2f'4|\"Gm\"f'4d'4d'4c'4|\nV: Ins\nZ4|\nV: Vocal\n\"Gm\"z2b2b2b2b2b2f'4|\"F\"f'4d'4d'4c'4|\"F\"z2b2b2b2b2b2f'4|\"Dm\"f'6a6b4-|\nV: Ins\nZ4|\nV: Vocal\n\"Dm\"b2z6d'2d'2d'2d'2-|\"Eb\"d'2c'zc'4d'2d'2d'2d'2-|\"Eb\"d'2c'4c'4b6|\"Gm\"d'4c'4d'4c'2d'2-|\nV: Ins\nZ4|\nV: Vocal\n\"Gm\"d'2c'4c'4b6|\"F\"a16|\"F\"f16|\"Dm\"z8d4d4|\nV: Ins\nZ4|\nV: Vocal\n\"Dm\"e6d6B4|\nV: Ins\nZ|\n% verse\nV: Vocal\n\"Eb\"z2B2d2d2d2c2c2c2|\"Eb\"c2B2B4B4z4|\"Gm\"d2d2d2d2d2c2c2c2|\"Gm\"c4d4z8|\nV: Ins\nZ4|\nV: Vocal\n\"Eb\"d2d2d2d2d2c2c2c2|\"Eb\"c4B4B4B2B2|\"Gm\"d4d2d4c4e2-|\"Gm\"e2d4d2c4B4|\nV: Ins\nZ4|\nV: Vocal\n\"Eb\"z2f2f2f2f2f2f2g2-|\"Eb\"g2d4d6c4|\"Gm\"z2f2f2f2f2f2f2g2-|\"Gm\"g2d4d6c4|\nV: Ins\nZ4|\nV: Vocal\n\"Eb\"z4f2f2f2f2f2f2|\"Eb\"g4d2d4c4c2|\"Gm\"d4d4d4d4|\"Gm\"e4d4c4B4|\nV: Ins\nZ4|\nV: Vocal\nz8B4z4|\nV: Ins\nZ|\n% chorus\nV: Vocal\nz2b2b2b2b2b2f'4|\"Eb\"f'4d'4d'4c'4|\"Eb\"z2b2b2b2b2b2f'4|\"Gm\"f'4d'4d'4c'4|\nV: Ins\nZ4|\nV: Vocal\n\"Gm\"z2b2b2b2b2b2f'4|\"F\"f'4d'4d'4c'4|\"F\"z2b2b2b2b2b2f'4|\"Dm\"f'6a6b4-|\nV: Ins\nZ4|\nV: Vocal\n\"Dm\"b4z4d'2d'2d'2d'2-|\"Eb\"d'2c'zc'4d'2d'2d'2d'2-|\"Eb\"d'2c'4c'4b6|\"Gm\"d'4c'4d'4c'2d'2-|\nV: Ins\nZ4|\nV: Vocal\n\"Gm\"d'2c'4c'4b6|\"F\"a16|\"F\"f16|\"Dm\"z8d4d4|\nV: Ins\nZ4|\nV: Vocal\n\"Dm\"e6d6B4|\nV: Ins\nZ|\n% bridge\nV: Vocal\n\"Eb\"z16|\"Eb\"f6d6c4-|\"Gm\"c4z8B4|\"Gm\"f4f2d4c2c4-|\nV: Ins\nZ4|\nV: Vocal\n\"F\"c4z12|\"F\"z16|\"F\"z16|\"F\"z16|\nV: Ins\nz4A2A2A2A2A2A2|A2A2A2A2A2A2A2A2|A2A2A2A2A2A2A2A2|A2A2A2A2A2A2A2c2|\nV: Vocal\n\"Eb\"z4f4f4f4|\"Eb\"f4d4c4B4|\"Gm\"B4f4f4f4|\"Gm\"f4d4c4B4|\nV: Ins\nZ4|\nV: Vocal\n\"F\"B4c12-|\"F\"c16-|\"F\"c16-|\"F\"c2b2b2b2b2b2f'4|\nV: Ins\nZ4|\n% chorus\nV: Vocal\n\"Eb\"f'2d'zd'4d'4c'4|\"Eb\"z2b2b2b2b2b2f'4|\"Gm\"f'2d'zd'4d'4c'4|\"Gm\"z2b2b2b2b2b2f'4|\nV: Ins\nZ4|\nV: Vocal\n\"F\"f'4d'4d'4c'4|\"F\"z2b2b2b2b2b2f'4|\"Dm\"f'6a6b4-|\"Dm\"b2z6d'2d'2d'2d'2-|\nV: Ins\nZ4|\nV: Vocal\n\"Eb\"d'2c'zc'4d'2d'2d'2d'2-|\"Eb\"d'2c'4c'4b6|\"Gm\"d'4c'4d'4c'2d'2-|\"Gm\"d'2c'4c'4b6|\nV: Ins\nZ4|\nV: Vocal\n\"F\"a16|\"F\"f16|\"Dm\"z8d4d4|\"Dm\"e6d6B4|\nV: Ins\nZ4|\n% outro\nV: Vocal\n\"Eb\"z16|\"Eb\"z16|\"Gm\"z12d2d2|\"Gm\"d2d2d2d2e4d4|\nV: Ins\nB2B2B2B2B2B2B2B2|B2B2B2B2B2B2B2B2|G2G2G2G2G2B2z4|Z|\nV: Vocal\n\"F\"d4c12-|\"F\"c16-|\"F\"c16-|\"F\"c4z4z8|\nV: Ins\nZ4|\n"
+      },
+      "official_mode": "planned",
+      "source": {
+        "id": "df64fef4d0ba5a18670f6c19",
+        "order": 74,
+        "collection": "genre",
+        "title": "Emo",
+        "genre": "Emo",
+        "genrePath": [
+          "Punk",
+          "Emo"
+        ],
+        "language": "ko",
+        "languageLabel": "Korean",
+        "mode": "planned",
+        "tags": "A melancholic yet energetic Emo Hip-hop track with Pop Punk influences. Heavy distorted electric guitar riffs combined with fast-paced trap drum beats (808 bass, crisp snare). Dark, emotional, and cinematic atmosphere. Melodic Rap beat featuring a lonely acoustic guitar intro transitioning into an explosive chorus with heavy rock guitars. Deep, distorted 808 bass and sharp hi-hats. Sad, longing melody. Fast-paced Emo Rock and Hip-hop fusion. High-energy electric guitar loops, upbeat but sad melody, 140 BPM ~ 160 BPM, driving drum rhythm. A female vocal with a husky, raspy tone and heavy auto-tune. The singing style is emotional melodic rap. Add high reverb to create a lonely, atmospheric vibe. The voice should sound raw yet polished with metallic pitch correction.",
+        "lyrics": "[Verse 1]\n늦은 밤 텅 빈 버스 안\n창문에 비친 너와 내 얼굴\n목적지는 아직 안 정해도\n너만 있으면 되는 것 같아\n\n[Pre-Chorus]\n사실 난 겁이 많아서\n길을 잃을까 봐 두려워\n근데 네 손 한 번만 잡으면\n지도 따윈 필요 없을 것 같아 (알잖아)\n\n[Chorus]\n나랑 어디든 간다고 해줘\n길 끝이 어딘지 몰라도\n나와 어디든 좋다고 해줘\n창문 밖 풍경은 변해도\n나만 있으면 그 어디든 괜찮다고\n작게라도 말해줘\n그 한마디면 돼\n\n[Verse 2]\n비 오는 빨래 냄새 나는 골목\n우산 하나 나눠 쓰는 우리\n비틀비틀 맞지 않는 보폭도\n웃으면서 맞춰 가는 게 좋아\n\n[Pre-Chorus]\n가끔은 말이 안 통해도\n표정만 봐도 다 알잖아\n서툰 얘길 이어 붙이다가\n그냥 네 이름만 부르게 돼 (왜 이렇게)\n\n[Chorus]\n나랑 어디든 간다고 해줘\n길 끝이 어딘지 몰라도\n나와 어디든 좋다고 해줘\n창문 밖 풍경은 변해도\n나만 있으면 그 어디든 괜찮다고\n조용하게 말해줘\n그 한마디면 돼\n내일도 난 버틸 수 있어\n\n[Bridge]\n약속 같은 건 없어도\n네 옆에 서 있는 지금이\n나에게는 다야\n멀리 안 가도 좋아\n편의점 앞 구석자리라도\n너면 돼 너면 돼 (너면 돼)\n\n[Chorus]\n나랑 어디든 간다고 해줘\n잠깐 밖에 못 나가도\n나와 어디든 좋다고 해줘\n네 방 안 좁은 소파여도\n나만 있으면 그 어디든 괜찮다고\n다시 한 번 말해줘\n그 한마디 듣고\n영원까지 걸어가 볼래",
+        "abc": "X:1\nT:\nM:4/4\nL:1/16\nQ:1/4=170\nV: Vocal clef=treble name=\"Vocal Melody\" snm=\"Vocal\"\nV: Ins clef=treble name=\"Ins Melody\" snm=\"Inst.\"\nK:Bb\n% intro\nV: Vocal\nz4B2B2B4f4|\"Eb\"f4d4d4c4|\"Eb\"c4B2B2B4f4|\"Gm\"f2d2d2d2d4c4|\nV: Ins\nZ4|\nV: Vocal\n\"Gm\"z4B2B2B2B2B2B2|\"Eb\"f4d2d4c2c4|\"Eb\"BzB6A4B2B2|\"Gm\"A4A2A4B4B2-|\nV: Ins\nZ4|\nV: Vocal\n\"Gm\"B4z12|\nV: Ins\nZ|\n% verse\nV: Vocal\n\"Eb\"z2B2d2d2d2c2c2c2-|\"Eb\"c2B6z8|\"Gm\"z2B2d2d2d2c2c2c2-|\"Gm\"c2B4B4B2B2B2|\nV: Ins\nZ4|\nV: Vocal\n\"Eb\"f4d2d4c4c2-|\"Eb\"c2B4B4z2B2B2|\"Gm\"f4d2d4c4c2-|\"Gm\"c2d4c4B4B2-|\nV: Ins\nZ4|\nV: Vocal\n\"Eb\"B2z6f8|\"Eb\"d8c8|\"F\"z16|\nV: Ins\nZ3|\n% chorus\nV: Vocal\nz2b2b2b2b2b2f'4|\"Eb\"f'2d'zd'4d'4c'4|\"Eb\"z2b2b2b2b2b2f'4|\"Gm\"f'4d'4d'4c'4|\nV: Ins\nZ4|\nV: Vocal\n\"Gm\"z2b2b2b2b2b2f'4|\"F\"f'4d'4d'4c'4|\"F\"z2b2b2b2b2b2f'4|\"Dm\"f'6a6b4-|\nV: Ins\nZ4|\nV: Vocal\n\"Dm\"b2z6d'2d'2d'2d'2-|\"Eb\"d'2c'zc'4d'2d'2d'2d'2-|\"Eb\"d'2c'4c'4b6|\"Gm\"d'4c'4d'4c'2d'2-|\nV: Ins\nZ4|\nV: Vocal\n\"Gm\"d'2c'4c'4b6|\"F\"a16|\"F\"f16|\"Dm\"z8d4d4|\nV: Ins\nZ4|\nV: Vocal\n\"Dm\"e6d6B4|\nV: Ins\nZ|\n% verse\nV: Vocal\n\"Eb\"z2B2d2d2d2c2c2c2|\"Eb\"c2B2B4B4z4|\"Gm\"d2d2d2d2d2c2c2c2|\"Gm\"c4d4z8|\nV: Ins\nZ4|\nV: Vocal\n\"Eb\"d2d2d2d2d2c2c2c2|\"Eb\"c4B4B4B2B2|\"Gm\"d4d2d4c4e2-|\"Gm\"e2d4d2c4B4|\nV: Ins\nZ4|\nV: Vocal\n\"Eb\"z2f2f2f2f2f2f2g2-|\"Eb\"g2d4d6c4|\"Gm\"z2f2f2f2f2f2f2g2-|\"Gm\"g2d4d6c4|\nV: Ins\nZ4|\nV: Vocal\n\"Eb\"z4f2f2f2f2f2f2|\"Eb\"g4d2d4c4c2|\"Gm\"d4d4d4d4|\"Gm\"e4d4c4B4|\nV: Ins\nZ4|\nV: Vocal\nz8B4z4|\nV: Ins\nZ|\n% chorus\nV: Vocal\nz2b2b2b2b2b2f'4|\"Eb\"f'4d'4d'4c'4|\"Eb\"z2b2b2b2b2b2f'4|\"Gm\"f'4d'4d'4c'4|\nV: Ins\nZ4|\nV: Vocal\n\"Gm\"z2b2b2b2b2b2f'4|\"F\"f'4d'4d'4c'4|\"F\"z2b2b2b2b2b2f'4|\"Dm\"f'6a6b4-|\nV: Ins\nZ4|\nV: Vocal\n\"Dm\"b4z4d'2d'2d'2d'2-|\"Eb\"d'2c'zc'4d'2d'2d'2d'2-|\"Eb\"d'2c'4c'4b6|\"Gm\"d'4c'4d'4c'2d'2-|\nV: Ins\nZ4|\nV: Vocal\n\"Gm\"d'2c'4c'4b6|\"F\"a16|\"F\"f16|\"Dm\"z8d4d4|\nV: Ins\nZ4|\nV: Vocal\n\"Dm\"e6d6B4|\nV: Ins\nZ|\n% bridge\nV: Vocal\n\"Eb\"z16|\"Eb\"f6d6c4-|\"Gm\"c4z8B4|\"Gm\"f4f2d4c2c4-|\nV: Ins\nZ4|\nV: Vocal\n\"F\"c4z12|\"F\"z16|\"F\"z16|\"F\"z16|\nV: Ins\nz4A2A2A2A2A2A2|A2A2A2A2A2A2A2A2|A2A2A2A2A2A2A2A2|A2A2A2A2A2A2A2c2|\nV: Vocal\n\"Eb\"z4f4f4f4|\"Eb\"f4d4c4B4|\"Gm\"B4f4f4f4|\"Gm\"f4d4c4B4|\nV: Ins\nZ4|\nV: Vocal\n\"F\"B4c12-|\"F\"c16-|\"F\"c16-|\"F\"c2b2b2b2b2b2f'4|\nV: Ins\nZ4|\n% chorus\nV: Vocal\n\"Eb\"f'2d'zd'4d'4c'4|\"Eb\"z2b2b2b2b2b2f'4|\"Gm\"f'2d'zd'4d'4c'4|\"Gm\"z2b2b2b2b2b2f'4|\nV: Ins\nZ4|\nV: Vocal\n\"F\"f'4d'4d'4c'4|\"F\"z2b2b2b2b2b2f'4|\"Dm\"f'6a6b4-|\"Dm\"b2z6d'2d'2d'2d'2-|\nV: Ins\nZ4|\nV: Vocal\n\"Eb\"d'2c'zc'4d'2d'2d'2d'2-|\"Eb\"d'2c'4c'4b6|\"Gm\"d'4c'4d'4c'2d'2-|\"Gm\"d'2c'4c'4b6|\nV: Ins\nZ4|\nV: Vocal\n\"F\"a16|\"F\"f16|\"Dm\"z8d4d4|\"Dm\"e6d6B4|\nV: Ins\nZ4|\n% outro\nV: Vocal\n\"Eb\"z16|\"Eb\"z16|\"Gm\"z12d2d2|\"Gm\"d2d2d2d2e4d4|\nV: Ins\nB2B2B2B2B2B2B2B2|B2B2B2B2B2B2B2B2|G2G2G2G2G2B2z4|Z|\nV: Vocal\n\"F\"d4c12-|\"F\"c16-|\"F\"c16-|\"F\"c4z4z8|\nV: Ins\nZ4|\n",
+        "abcUrl": "assets/genre/df64fef4d0ba5a18670f6c19/score.abc",
+        "audio": "assets/genre/df64fef4d0ba5a18670f6c19/df64fef4d0ba5a18670f6c19_music.mp3",
+        "scoreAudio": "assets/genre/df64fef4d0ba5a18670f6c19/df64fef4d0ba5a18670f6c19_score.mp3",
+        "sheets": [
+          "assets/genre/df64fef4d0ba5a18670f6c19/sheet_01.svg",
+          "assets/genre/df64fef4d0ba5a18670f6c19/sheet_02.svg",
+          "assets/genre/df64fef4d0ba5a18670f6c19/sheet_03.svg",
+          "assets/genre/df64fef4d0ba5a18670f6c19/sheet_04.svg",
+          "assets/genre/df64fef4d0ba5a18670f6c19/sheet_05.svg"
+        ]
+      },
+      "official_audio_url": "https://map-yue2.github.io/assets/genre/df64fef4d0ba5a18670f6c19/df64fef4d0ba5a18670f6c19_music.mp3",
+      "official_audio_path": "outputs/official_fullsong/reference/df64fef4d0ba5a18670f6c19.mp3",
+      "official_audio_sha256": "5f662ec975e05bf477a74424d174d2114ee24eda29141b551200870470df35ff",
+      "official_seconds": 156.92,
+      "input_hashes": {
+        "style": "a36c54aa9a7be97ca5f98ec1b88bb04110b97dd004999c5c9436acfe32728e50",
+        "lyrics": "6acf9a1ecb9742e92a44ba5d3b2375300bae8cc46ae4478631804248fdf38aaf",
+        "abc": "bf67722dd8162985b955dfa48371d1728b83e47423e3e558d611e426432cbe8a"
+      }
+    },
+    {
+      "id": "en_score",
+      "official_id": "ad4ec0a4f236082a2933b48d",
+      "title": "Rock & Roll",
+      "genre": "Rock & Roll",
+      "language": "en",
+      "score_mode": "supplied",
+      "request": {
+        "id": "en_score",
+        "style": "Joyful happy 50s male powerful",
+        "lyrics": "[Verse]\nSnow is falling thick and bright\nReindeer footprints in the night\nCookies vanish\nMilk is gone\nWho's that laughing till the dawn\n\n[Prechorus]\nChimneys whisper\nMagic flows\nCandy canes in secret rows\n\n[Chorus]\nChristmas time with Santa Claus\nSliding rooftops\nNo time to pause\nHo ho ho\nHe’s on his way\nBringing joy to Christmas Day\n\n[Verse 2]\nStockings hang by the fire’s glow\nToys and dreams in a sack to go\nElves are dancing\nWrapping fast\nEvery wish will make it past\n\n[Prechorus]\nMidnight sparkles\nSleigh bells sing\nFeel the joy that he will bring\n\n[Chorus]\nChristmas time with Santa Claus\nSliding rooftops\nNo time to pause\nHo ho ho\nHe’s on his way\nBringing joy to Christmas Day",
+        "cot": "full",
+        "seed": 2026,
+        "abc": "X:1\nT:\nM:4/4\nL:1/16\nQ:1/4=175\nV: Vocal clef=treble name=\"Vocal Melody\" snm=\"Vocal\"\nV: Ins clef=treble name=\"Ins Melody\" snm=\"Inst.\"\nK:F\n% intro\nV: Vocal\nz8\"F\"z8|\"F\"z16|\"F\"z16|\"F\"z16|\nV: Ins\nZ|f4f4d2c2A2G2|F4f4d2c2A2G2|F4f4d2c2A2G2|\nV: Vocal\n\"F\"z16|\"F\"z16|\"Dm7\"z16|\"Bb\"z16|\nV: Ins\nF4f4d2c2A2G2|F4f4d2c2A2G2|F4f4d2c2A2G2|F4f4d2c2A2G2|\nV: Vocal\n\"C\"z16|\nV: Ins\nc2z2c4c4z4|\n% verse\nV: Vocal\n\"F\"A4c4d4A4|\"Dm\"G2F4A6z4|\"Bb\"D4F4G4A4|\"C\"G4C2C6z4|\nV: Ins\nZ4|\nV: Vocal\n\"F\"A2c6d2A6|\"Dm\"G4F2A6z4|\"Bb\"D4F4G4A4|\"C\"G4C2C6z4|\nV: Ins\nZ4|\nV: Vocal\n\"Bb\"D4F4G4A4|\"Bb\"D2F4G6z4|\"C\"c4c2c6d4|\"C\"e2e4d2c8|\nV: Ins\nZ4|\n% chorus\nV: Vocal\n\"F\"f4d4c4d4|\"Dm\"A2FzF2F6z2d2-|\"Bb\"d2c2d4c4d4|\"C\"G4G2G6z4|\nV: Ins\nZ4|\nV: Vocal\n\"F\"f4d4c4d4|\"Dm\"G2F4A6z4|\"Bb\"D2F4G6A4|\"C\"c8A8|\nV: Ins\nZ4|\nV: Vocal\n\"F\"G2F12-F2-|\"Dm7\"F8-F2z6|\"Bb\"z16|\"C\"z16|\nV: Ins\nZ|z8z2c2A2G2|F4f4d2c2A2G2|c4c4c4z4|\n% verse\nV: Vocal\n\"F\"A2c4d6A2A2|\"Dm\"G2F4A6z4|\"Bb\"D4F4G4A2A2|\"C\"G4C2C6z4|\nV: Ins\nZ4|\nV: Vocal\n\"F\"A4c2d6A4|\"Dm\"G2F4A6z4|\"Bb\"D2F4G6A4|\"C\"G2C4C6z4|\nV: Ins\nZ4|\nV: Vocal\n\"Bb\"D4F4G4A4|\"Bb\"D2F4G6z4|\"C\"c4c2c6d4|\"C\"e2e4d2c8|\nV: Ins\nZ4|\n% chorus\nV: Vocal\n\"F\"f4d4c4d4|\"Dm\"G2FzF2F6z2d2-|\"Bb\"d2c2d4c4d4|\"C\"G4G2G6z4|\nV: Ins\nZ4|\nV: Vocal\n\"F\"f4d4c4d4|\"Dm\"G2F4A6z4|\"Bb\"D2F4G6A4|\"C\"c8A8|\nV: Ins\nZ4|\nV: Vocal\n\"F\"G2F12-F2-|\"Dm7\"F8-F2z6|\"Bb\"z16|\"C\"z16|\nV: Ins\nZ|z8z2c2A2G2|F4f4d2c2A2G2|c4c4c4z4|\n% outro\nV: Vocal\n\"F\"z16|\"Dm7\"z16|\"Bb\"z16|\"C\"z16|\nV: Ins\nf4f4d2c2A2G2|F4f4d2c2A2G2|F4f4d2c2A2G2|c4c4c4z4|\nV: Vocal\n\"F\"z16|\"Dm7\"z16|\"Bb\"z16|\"C\"z16|\nV: Ins\nf4f4d2c2A2G2|F4f4d2c2A2G2|F4f4d2c2A2G2|c4c4c4z4|\nV: Vocal\n\"F\"z16|\"F\"z16|\"F\"z16|\"F\"z16|\nV: Ins\nF4f4d2c2A2G2|F4f4d2c2A2G2|F4f4d2c2A2G2|F4f4d2c2A2G2|\nV: Vocal\n\"F\"z16|\"F\"z16|\nV: Ins\nF4z12|Z|\n"
+      },
+      "official_mode": "planned",
+      "source": {
+        "id": "ad4ec0a4f236082a2933b48d",
+        "order": 87,
+        "collection": "genre",
+        "title": "Rock & Roll",
+        "genre": "Rock & Roll",
+        "genrePath": [
+          "Rock",
+          "Rock & Roll"
+        ],
+        "language": "en",
+        "languageLabel": "English",
+        "mode": "planned",
+        "tags": "Joyful happy 50s male powerful",
+        "lyrics": "[Verse]\nSnow is falling thick and bright\nReindeer footprints in the night\nCookies vanish\nMilk is gone\nWho's that laughing till the dawn\n\n[Prechorus]\nChimneys whisper\nMagic flows\nCandy canes in secret rows\n\n[Chorus]\nChristmas time with Santa Claus\nSliding rooftops\nNo time to pause\nHo ho ho\nHe’s on his way\nBringing joy to Christmas Day\n\n[Verse 2]\nStockings hang by the fire’s glow\nToys and dreams in a sack to go\nElves are dancing\nWrapping fast\nEvery wish will make it past\n\n[Prechorus]\nMidnight sparkles\nSleigh bells sing\nFeel the joy that he will bring\n\n[Chorus]\nChristmas time with Santa Claus\nSliding rooftops\nNo time to pause\nHo ho ho\nHe’s on his way\nBringing joy to Christmas Day",
+        "abc": "X:1\nT:\nM:4/4\nL:1/16\nQ:1/4=175\nV: Vocal clef=treble name=\"Vocal Melody\" snm=\"Vocal\"\nV: Ins clef=treble name=\"Ins Melody\" snm=\"Inst.\"\nK:F\n% intro\nV: Vocal\nz8\"F\"z8|\"F\"z16|\"F\"z16|\"F\"z16|\nV: Ins\nZ|f4f4d2c2A2G2|F4f4d2c2A2G2|F4f4d2c2A2G2|\nV: Vocal\n\"F\"z16|\"F\"z16|\"Dm7\"z16|\"Bb\"z16|\nV: Ins\nF4f4d2c2A2G2|F4f4d2c2A2G2|F4f4d2c2A2G2|F4f4d2c2A2G2|\nV: Vocal\n\"C\"z16|\nV: Ins\nc2z2c4c4z4|\n% verse\nV: Vocal\n\"F\"A4c4d4A4|\"Dm\"G2F4A6z4|\"Bb\"D4F4G4A4|\"C\"G4C2C6z4|\nV: Ins\nZ4|\nV: Vocal\n\"F\"A2c6d2A6|\"Dm\"G4F2A6z4|\"Bb\"D4F4G4A4|\"C\"G4C2C6z4|\nV: Ins\nZ4|\nV: Vocal\n\"Bb\"D4F4G4A4|\"Bb\"D2F4G6z4|\"C\"c4c2c6d4|\"C\"e2e4d2c8|\nV: Ins\nZ4|\n% chorus\nV: Vocal\n\"F\"f4d4c4d4|\"Dm\"A2FzF2F6z2d2-|\"Bb\"d2c2d4c4d4|\"C\"G4G2G6z4|\nV: Ins\nZ4|\nV: Vocal\n\"F\"f4d4c4d4|\"Dm\"G2F4A6z4|\"Bb\"D2F4G6A4|\"C\"c8A8|\nV: Ins\nZ4|\nV: Vocal\n\"F\"G2F12-F2-|\"Dm7\"F8-F2z6|\"Bb\"z16|\"C\"z16|\nV: Ins\nZ|z8z2c2A2G2|F4f4d2c2A2G2|c4c4c4z4|\n% verse\nV: Vocal\n\"F\"A2c4d6A2A2|\"Dm\"G2F4A6z4|\"Bb\"D4F4G4A2A2|\"C\"G4C2C6z4|\nV: Ins\nZ4|\nV: Vocal\n\"F\"A4c2d6A4|\"Dm\"G2F4A6z4|\"Bb\"D2F4G6A4|\"C\"G2C4C6z4|\nV: Ins\nZ4|\nV: Vocal\n\"Bb\"D4F4G4A4|\"Bb\"D2F4G6z4|\"C\"c4c2c6d4|\"C\"e2e4d2c8|\nV: Ins\nZ4|\n% chorus\nV: Vocal\n\"F\"f4d4c4d4|\"Dm\"G2FzF2F6z2d2-|\"Bb\"d2c2d4c4d4|\"C\"G4G2G6z4|\nV: Ins\nZ4|\nV: Vocal\n\"F\"f4d4c4d4|\"Dm\"G2F4A6z4|\"Bb\"D2F4G6A4|\"C\"c8A8|\nV: Ins\nZ4|\nV: Vocal\n\"F\"G2F12-F2-|\"Dm7\"F8-F2z6|\"Bb\"z16|\"C\"z16|\nV: Ins\nZ|z8z2c2A2G2|F4f4d2c2A2G2|c4c4c4z4|\n% outro\nV: Vocal\n\"F\"z16|\"Dm7\"z16|\"Bb\"z16|\"C\"z16|\nV: Ins\nf4f4d2c2A2G2|F4f4d2c2A2G2|F4f4d2c2A2G2|c4c4c4z4|\nV: Vocal\n\"F\"z16|\"Dm7\"z16|\"Bb\"z16|\"C\"z16|\nV: Ins\nf4f4d2c2A2G2|F4f4d2c2A2G2|F4f4d2c2A2G2|c4c4c4z4|\nV: Vocal\n\"F\"z16|\"F\"z16|\"F\"z16|\"F\"z16|\nV: Ins\nF4f4d2c2A2G2|F4f4d2c2A2G2|F4f4d2c2A2G2|F4f4d2c2A2G2|\nV: Vocal\n\"F\"z16|\"F\"z16|\nV: Ins\nF4z12|Z|\n",
+        "abcUrl": "assets/genre/ad4ec0a4f236082a2933b48d/score.abc",
+        "audio": "assets/genre/ad4ec0a4f236082a2933b48d/ad4ec0a4f236082a2933b48d_music.mp3",
+        "scoreAudio": "assets/genre/ad4ec0a4f236082a2933b48d/ad4ec0a4f236082a2933b48d_score.mp3",
+        "sheets": [
+          "assets/genre/ad4ec0a4f236082a2933b48d/sheet_01.svg",
+          "assets/genre/ad4ec0a4f236082a2933b48d/sheet_02.svg",
+          "assets/genre/ad4ec0a4f236082a2933b48d/sheet_03.svg"
+        ]
+      },
+      "official_audio_url": "https://map-yue2.github.io/assets/genre/ad4ec0a4f236082a2933b48d/ad4ec0a4f236082a2933b48d_music.mp3",
+      "official_audio_path": "outputs/official_fullsong/reference/ad4ec0a4f236082a2933b48d.mp3",
+      "official_audio_sha256": "763d40f556e26f5f4c37cbb9f12d8c8120d2c8be86d567f0ab24f9e3c08b109d",
+      "official_seconds": 95.76,
+      "input_hashes": {
+        "style": "146c8bd1d49434b6edeaafe3ff86c7edab3be2fb838e8d618f53460e38e341de",
+        "lyrics": "d67cef442d25bf4a64585e098bd3012a4dc6c5afa0928fb7e535f1aa5d1f6fee",
+        "abc": "096ab1e0d15127f96840a891faa1aab0deb58a9633ae25aed95525edaf426b59"
+      }
+    },
+    {
+      "id": "full_generated",
+      "official_id": "2998556d4b082ca29c856652",
+      "title": "Comedy",
+      "genre": "Comedy",
+      "language": "en",
+      "score_mode": "generated",
+      "request": {
+        "id": "full_generated",
+        "style": "Pop genre, Happy mood, Live vocal style, Upbeat production",
+        "lyrics": "[Verse 1]\nThanksgiving morning, sun begins to gleam\nThe family's gathering, living out a dream\nTurkey in the oven, pies all lined up neat\nBut something's brewing, can't be beat\nSierra Zemke's got a story, whispers in the hall\nAbout a Jedi master, standing proud and tall\nObi-Wan in jail, the news has spread so far\nWhile Kirk Cameron's preaching, playing his guitar\n\n[Chorus]\nOh, Thanksgiving day, a feast for all to see\nWith secret farts on YouTube, for the world to agree\nJar Jar Binks is laughing, from a galaxy away\nIt's a bizarre holiday, in every single way\n\n[Verse 2]\nDinner's on the table, laughter fills the air\nGravy on the mashed potatoes, without a care\nUncle Bob tells stories, of birds that fly in jail\nAnd a gun that shot no bullets, an unbelievable tale\nWe're watching viral videos, a screen aglow and bright\nSomeone caught a moment, a comedic sight\nOf gas escaping quickly, a sound both deep and low\nAnd everyone's just giggling, because they know, they know\n\n[Chorus]\nOh, Thanksgiving day, a feast for all to see\nWith secret farts on YouTube, for the world to agree\nJar Jar Binks is laughing, from a galaxy away\nIt's a bizarre holiday, in every single way\n\n[Bridge]\nFrom Hollywood to kitchens, the strange tales intertwine\nOf movie stars and flatulence, a truly wild design\nWho knew that these odd pieces, would fit into one day?\nBut on Thanksgiving, anything can go astray\n\n[Chorus]\nOh, Thanksgiving day, a feast for all to see\nWith secret farts on YouTube, for the world to agree\nJar Jar Binks is laughing, from a galaxy away\nIt's a bizarre holiday, in every single way\n\n[Outro]\nSo pass the cranberry sauce, and don't forget the pie\nAnother year of weirdness, as the hours fly by\nHappy Thanksgiving, everyone, let the good times roll\nWith YouTube farts and Jedi tales, reaching every soul.",
+        "cot": "full",
+        "seed": 2026
+      },
+      "official_mode": "planned",
+      "source": {
+        "id": "2998556d4b082ca29c856652",
+        "order": 3,
+        "collection": "genre",
+        "title": "Comedy",
+        "genre": "Comedy",
+        "genrePath": [
+          "Comedy"
+        ],
+        "language": "en",
+        "languageLabel": "English",
+        "mode": "planned",
+        "tags": "Pop genre, Happy mood, Live vocal style, Upbeat production",
+        "lyrics": "[Verse 1]\nThanksgiving morning, sun begins to gleam\nThe family's gathering, living out a dream\nTurkey in the oven, pies all lined up neat\nBut something's brewing, can't be beat\nSierra Zemke's got a story, whispers in the hall\nAbout a Jedi master, standing proud and tall\nObi-Wan in jail, the news has spread so far\nWhile Kirk Cameron's preaching, playing his guitar\n\n[Chorus]\nOh, Thanksgiving day, a feast for all to see\nWith secret farts on YouTube, for the world to agree\nJar Jar Binks is laughing, from a galaxy away\nIt's a bizarre holiday, in every single way\n\n[Verse 2]\nDinner's on the table, laughter fills the air\nGravy on the mashed potatoes, without a care\nUncle Bob tells stories, of birds that fly in jail\nAnd a gun that shot no bullets, an unbelievable tale\nWe're watching viral videos, a screen aglow and bright\nSomeone caught a moment, a comedic sight\nOf gas escaping quickly, a sound both deep and low\nAnd everyone's just giggling, because they know, they know\n\n[Chorus]\nOh, Thanksgiving day, a feast for all to see\nWith secret farts on YouTube, for the world to agree\nJar Jar Binks is laughing, from a galaxy away\nIt's a bizarre holiday, in every single way\n\n[Bridge]\nFrom Hollywood to kitchens, the strange tales intertwine\nOf movie stars and flatulence, a truly wild design\nWho knew that these odd pieces, would fit into one day?\nBut on Thanksgiving, anything can go astray\n\n[Chorus]\nOh, Thanksgiving day, a feast for all to see\nWith secret farts on YouTube, for the world to agree\nJar Jar Binks is laughing, from a galaxy away\nIt's a bizarre holiday, in every single way\n\n[Outro]\nSo pass the cranberry sauce, and don't forget the pie\nAnother year of weirdness, as the hours fly by\nHappy Thanksgiving, everyone, let the good times roll\nWith YouTube farts and Jedi tales, reaching every soul.",
+        "abc": "X:1\nT:\nM:2/4\nL:1/32\nQ:1/4=98\nV: Vocal clef=treble name=\"Vocal Melody\" snm=\"Vocal\"\nV: Ins clef=treble name=\"Ins Melody\" snm=\"Inst.\"\nK:C\n% intro\nV: Vocal\nz12\"C\"z4|\"C\"z4e4e4d2c2|\"C\"d2c2A2c6A2G2|\"C\"z4e4e4d2c2|\nV: Ins\nZ4|\nV: Vocal\n\"C\"d2c2A2c6e4|\"C\"z4e4e4d2c2|\"C\"d2c2A2c6A2G2|\"F\"A8\"G\"c6d2|\nV: Ins\nZ4|\nV: Vocal\n\"G\"z16|\nV: Ins\nZ|\n% verse\nV: Vocal\n\"C\"z4c4c4A2c2-|\"C\"c4A4z8|\"G\"d4d2d4d4e2-|\"G\"e2d4z8z2|\nV: Ins\nZ4|\nV: Vocal\n\"Am\"z6A2e4e4|\"Am\"d2c2A4z8|\"F\"A2c4c6A2c2-|\"F\"c6z8z2|\nV: Ins\nZ4|\nV: Vocal\n\"C\"e4g4g4e2g2-|\"C\"g4e4z8|\"G\"d4d4d2c4e2-|\"G\"e2d6z8|\nV: Ins\nZ4|\nV: Vocal\n\"Am\"z6A2e4e4|\"Am\"d2c6z8|\"F\"A8c6c2-|\"F\"c2z4A2e4g2g2-|\nV: Ins\nZ4|\nV: Vocal\n\"C\"g2e6d4c2c2-|\"C\"c4A4z8|\"G\"d4d4d4c2e2-|\"G\"e2d6z6A2|\nV: Ins\nZ4|\nV: Vocal\n\"Am\"e4g2g4e6|\"Am\"d4c4z8|\"F\"A4c2c6A2c2-|\"F\"c6z8z2|\nV: Ins\nZ4|\nV: Vocal\n\"C\"e2g4g4g4a2-|\"C\"a4e2z6c2d2-|\"G\"d4d4d4c4|\"G\"e8z4c4|\nV: Ins\nZ4|\nV: Vocal\n\"Am\"e6g6e4|\"Am\"d4c4z8|\"F\"A2c4c6A2c2-|\"F\"c4z4e8|\nV: Ins\nZ4|\n% chorus\nV: Vocal\n\"C\"e8e2d4d2-|\"G\"d6z8G2|\"Am\"A4c2c6A2e2-|\"F\"e4z8G4|\nV: Ins\nZ4|\nV: Vocal\n\"C\"G4c2c6e4|\"G\"d4d4z4c2A2|\"F\"c8c2A4c2-|\"F\"c4z8z2e2-|\nV: Ins\nZ4|\nV: Vocal\n\"C\"e4g4g4e2g2-|\"G\"g4e4z4d2c2|\"Am\"d2c4c6A2e2-|\"F\"e4z6G2A2G2|\nV: Ins\nZ4|\nV: Vocal\n\"C\"c8c4A2d2-|\"G\"d4z8c4|\"F\"f8e8|d6c6c4|\nV: Ins\nZ4|\nV: Vocal\n\"C\"z4e4e4d2c2|\"C\"d2c2A2c6A2G2|\"F\"z4e4e4d2c2|\"G\"d2c2A2c6e4|\nV: Ins\nZ4|\nV: Vocal\n\"C\"z4e4e4d2c2|\"C\"d2c2A2c6A2G2|\"F\"A8c6d2-|\"G\"d4z12|\nV: Ins\nZ4|\n% verse\nV: Vocal\n\"C\"A2c4c6A2c2-|\"C\"c4A4z8|\"G\"d4d4d4c2e2-|\"G\"e2d6z6e2-|\nV: Ins\nZ4|\nV: Vocal\n\"Am\"e4g2g6e2a2-|\"Am\"a4e2d4c6|\"F\"z4A2c6A2c2-|\"F\"c4z12|\nV: Ins\nZ4|\nV: Vocal\n\"C\"e2g4g4g4g2-|\"C\"g4e4z4c2d2-|\"G\"d4d4d2c4e2-|\"G\"e2d6z4c2d2|\nV: Ins\nZ4|\nV: Vocal\n\"Am\"e4g4g4e4|\"Am\"d2c6z6G2|\"F\"A4c2c4A2c4|\"F\"c8z4g4|\nV: Ins\nZ4|\nV: Vocal\n\"C\"g4e4d4c4|\"C\"c2A2c8z2A2|\"G\"d6c2d2c4e2-|\"G\"e2d6z8|\nV: Ins\nZ4|\nV: Vocal\n\"Am\"e2g6g4e2g2-|\"Am\"g4a4z8|\"F\"z4A2c4c6|\"F\"c4z8z2c2|\nV: Ins\nZ4|\nV: Vocal\n\"C\"e4g2g4g4g2-|\"C\"g2e6z6c2|\"G\"d4d4d2c4e2-|\"G\"e2d6z6c2|\nV: Ins\nZ4|\nV: Vocal\n\"Am\"e4g2g6e4|\"Am\"d2c2c4z6G2|\"F\"A2c4c6c4|G4z4e8|\nV: Ins\nZ4|\n% chorus\nV: Vocal\n\"C\"e8e2d4d2-|\"G\"d6z8A2|\"Am\"c4c2c6A2e2-|\"F\"e4z8G4|\nV: Ins\nZ4|\nV: Vocal\n\"C\"c4c2c6e4|\"G\"d4d4z4c2A2|\"F\"c8c2A4c2-|\"F\"c4z8z2e2|\nV: Ins\nZ4|\nV: Vocal\n\"C\"e4g4g4e2g2-|\"G\"g4e4z4d2c2|\"Am\"d2c4c6A2e2-|\"F\"e4z6G2A2G2|\nV: Ins\nZ4|\nV: Vocal\n\"C\"c8c4A2d2-|\"G\"d4z8c4|\"F\"f8e8|d6c6c4|\nV: Ins\nZ4|\n% interlude\nV: Vocal\n\"C\"z16|\"C\"z16|\"C\"z16|\"C\"z12c4|\nV: Ins\nc4c4z2c4z2|c4z2c4z2c4|z4c4z2c6|c4z2c6z4|\n% bridge\nV: Vocal\n\"C\"e4g2g6e2g2-|\"C\"g2e6z6c2|\"G\"d4d4d2c4e2-|\"G\"e2d6z6c2|\nV: Ins\nZ4|\nV: Vocal\n\"Am\"e4g2g6e4|\"Am\"a4g2e6z2G2|\"F\"A2c4c6A2c2-|\"F\"c6z6e4|\nV: Ins\nZ4|\nV: Vocal\n\"C\"e4d2d4c4c2-|\"C\"c4A4z6A2|\"G\"d2d4d4d6|\"G\"e8z6c2|\nV: Ins\nZ4|\nV: Vocal\n\"Am\"e8g8|\"Am\"g2a6z8|\"F\"a2g4g6e4|a2g4g8z2|\nV: Ins\nZ4|\n% chorus\nV: Vocal\n\"C\"e8e2d4d2-|\"G\"d4z8z2A2|\"Am\"c4c2c6A2e2-|\"F\"e4z8G4|\nV: Ins\nZ4|\nV: Vocal\n\"C\"c4c2c6e4|\"G\"d4d4z4c2A2|\"F\"c8c2A4c2-|\"F\"c4z8z2e2|\nV: Ins\nZ4|\nV: Vocal\n\"C\"e4g4g4e2g2-|\"G\"g4e4z4d2c2|\"Am\"d2c4c6A2e2-|\"F\"e4z6G2A2G2|\nV: Ins\nZ4|\nV: Vocal\n\"C\"c8c4A2d2-|\"G\"d4z8c4|\"F\"f8e8|d6c6c4|\nV: Ins\nZ4|\n% outro\nV: Vocal\n\"C\"z2A2e2d2e4d2c2|\"C\"c8z8|\"F\"z2A2e2d2e4d2d2-|\"G\"d6z8z2|\nV: Ins\nZ4|\nV: Vocal\n\"C\"z2c2e2d2e4d2e2-|\"C\"e4c4z4A2G2|\"F\"A6c4c6|\"G\"d8z8|\nV: Ins\nZ4|\nV: Vocal\n\"C\"e6g4g6|\"C\"g2e6d2c2c4|\"F\"z4e2d2e4d4|\"G\"d8z4c4|\nV: Ins\nZ4|\nV: Vocal\n\"Am\"e8g8|\"Am\"g6e2d2c6|\"F\"c8z8|\"G\"d4d2e2-e4c4|\nV: Ins\nZ4|\nV: Vocal\n\"C\"c16-|\"C\"c16|\"C\"z16|\"C\"z16|\nV: Ins\nZ4|\n",
+        "abcUrl": "assets/genre/2998556d4b082ca29c856652/score.abc",
+        "audio": "assets/genre/2998556d4b082ca29c856652/2998556d4b082ca29c856652_music.mp3",
+        "scoreAudio": "assets/genre/2998556d4b082ca29c856652/2998556d4b082ca29c856652_score.mp3",
+        "sheets": [
+          "assets/genre/2998556d4b082ca29c856652/sheet_01.svg",
+          "assets/genre/2998556d4b082ca29c856652/sheet_02.svg",
+          "assets/genre/2998556d4b082ca29c856652/sheet_03.svg",
+          "assets/genre/2998556d4b082ca29c856652/sheet_04.svg",
+          "assets/genre/2998556d4b082ca29c856652/sheet_05.svg",
+          "assets/genre/2998556d4b082ca29c856652/sheet_06.svg"
+        ]
+      },
+      "official_audio_url": "https://map-yue2.github.io/assets/genre/2998556d4b082ca29c856652/2998556d4b082ca29c856652_music.mp3",
+      "official_audio_path": "outputs/official_fullsong/reference/2998556d4b082ca29c856652.mp3",
+      "official_audio_sha256": "221f7f7e55a1fab9adf0a9e7891b6d47eeeaf05bc132436ce4a4cb19285e2cca",
+      "official_seconds": 204.88,
+      "input_hashes": {
+        "style": "70604881f6fc967ee25f94c5602e458a139ae0f1d954bcec6518f8c6cae505cb",
+        "lyrics": "ceddf1fcf7f603ce103bb0f2e8da3b2f7524b9b141b3005c958f5d3d065c80d5"
+      }
+    },
+    {
+      "id": "melody_generated",
+      "official_id": "115abed0e655f5fa9b1409b3",
+      "title": "R&B",
+      "genre": "R&B",
+      "language": "zh",
+      "score_mode": "generated",
+      "request": {
+        "id": "melody_generated",
+        "style": "Modern Chinese pop R&B with synth-pop influence, emotional and intimate atmosphere, Intro starts with a clear and emotional lead synth melody, simple and memorable, soft and slightly fragile, close-mic, expressive and melodic, Clean pop drum groove, tight punchy kick, natural snare with soft room reverb, minimal hi-hat pattern, smooth R&B bounce, Warm melodic synth bass with smooth movement, Analog-style synths with slight detune, warm tone, gentle filter movement, soft low-pass, subtle chorus width, Lead synth is smooth and rounded, emotional and expressive, High-frequency bell-like pluck synth in the background, soft and bright, short notes with light delay and reverb, adding sparkle and rhythmic detail, Wide atmospheric pads with slow attack and breathing movement, Minimal and clean arrangement, layered but spacious, focusing on melody and texture, Wide stereo image, airy reverb and delay, polished and warm, Pop music, Well-defined rhythm , Well-defined rhythm",
+        "lyrics": "[Intro]\n\n[Verse 1]\n交易命运的改变 源头在起心动念\n这是改变的关键 但很多人视而不见\n大赚大亏踏空卖飞 内在秩序不要乱\n保持平和的心念 净值弹指间改变\n当你大赚庆幸时 请你安静想想看\n这笔盈利隐含多少潜在代价来交换\n当你清楚知晓每次交易对应的代价\n策略的赔率带给你先胜后战的心安\n\n[Pre-Chorus]\n当你选择策略保守会避开一些风险\n模式内机会出现时进攻必然受限\n当你选择激进策略博弈猛干一段\n大赚的概率提升 大面概率也提升\n\n[Chorus]\n当你大亏懊悔时 请你冷静想想看\n当下的首要任务是稳住还是继续猛干\n如果内心秩序混乱还想力挽狂澜\n连续重仓猛干会让你连续吃大面\n此时赶紧降低期待调整心中的不甘\n要警惕出其不意博弈小概率事件\n\n[Verse 2]\n因为赌性会在不顺之时出来作乱\n回头发现 努力回血反而不如摆烂\n当你交易卖飞时\n请你转念想想看 后续行情是否出现一个更好的答案\n其实时间拉长看 每条净值的曲线\n那是模式画的图\n更是心性的变现\n\n[Bridge]\n世间 一切都是万物因缘合和的结果\n很多事\n都不是我们想怎样就怎样的\n走势无常才是交易基本的常态\n于是先要接纳它 否则痛苦一直在\n所有绊脚石\n换个角度也是垫脚石\n在你主动站上去看更高的风景时\n\n[Verse 3]\n当你后悔当初时 请你转念想想看\n难道当初不那样 做现在真的会更棒 不那样现在会怎样\n都是你的想象\n况且日子还很长 不要过早下判",
+        "cot": "melody",
+        "seed": 2026
+      },
+      "official_mode": "planned",
+      "source": {
+        "id": "115abed0e655f5fa9b1409b3",
+        "order": 20,
+        "collection": "genre",
+        "title": "R&B",
+        "genre": "R&B",
+        "genrePath": [
+          "R&B"
+        ],
+        "language": "zh",
+        "languageLabel": "Chinese",
+        "mode": "planned",
+        "tags": "Modern Chinese pop R&B with synth-pop influence, emotional and intimate atmosphere, Intro starts with a clear and emotional lead synth melody, simple and memorable, soft and slightly fragile, close-mic, expressive and melodic, Clean pop drum groove, tight punchy kick, natural snare with soft room reverb, minimal hi-hat pattern, smooth R&B bounce, Warm melodic synth bass with smooth movement, Analog-style synths with slight detune, warm tone, gentle filter movement, soft low-pass, subtle chorus width, Lead synth is smooth and rounded, emotional and expressive, High-frequency bell-like pluck synth in the background, soft and bright, short notes with light delay and reverb, adding sparkle and rhythmic detail, Wide atmospheric pads with slow attack and breathing movement, Minimal and clean arrangement, layered but spacious, focusing on melody and texture, Wide stereo image, airy reverb and delay, polished and warm, Pop music, Well-defined rhythm , Well-defined rhythm",
+        "lyrics": "[Intro]\n\n[Verse 1]\n交易命运的改变 源头在起心动念\n这是改变的关键 但很多人视而不见\n大赚大亏踏空卖飞 内在秩序不要乱\n保持平和的心念 净值弹指间改变\n当你大赚庆幸时 请你安静想想看\n这笔盈利隐含多少潜在代价来交换\n当你清楚知晓每次交易对应的代价\n策略的赔率带给你先胜后战的心安\n\n[Pre-Chorus]\n当你选择策略保守会避开一些风险\n模式内机会出现时进攻必然受限\n当你选择激进策略博弈猛干一段\n大赚的概率提升 大面概率也提升\n\n[Chorus]\n当你大亏懊悔时 请你冷静想想看\n当下的首要任务是稳住还是继续猛干\n如果内心秩序混乱还想力挽狂澜\n连续重仓猛干会让你连续吃大面\n此时赶紧降低期待调整心中的不甘\n要警惕出其不意博弈小概率事件\n\n[Verse 2]\n因为赌性会在不顺之时出来作乱\n回头发现 努力回血反而不如摆烂\n当你交易卖飞时\n请你转念想想看 后续行情是否出现一个更好的答案\n其实时间拉长看 每条净值的曲线\n那是模式画的图\n更是心性的变现\n\n[Bridge]\n世间 一切都是万物因缘合和的结果\n很多事\n都不是我们想怎样就怎样的\n走势无常才是交易基本的常态\n于是先要接纳它 否则痛苦一直在\n所有绊脚石\n换个角度也是垫脚石\n在你主动站上去看更高的风景时\n\n[Verse 3]\n当你后悔当初时 请你转念想想看\n难道当初不那样 做现在真的会更棒 不那样现在会怎样\n都是你的想象\n况且日子还很长 不要过早下判",
+        "abc": "X:1\nT:\nM:4/4\nL:1/16\nQ:1/4=98\nV: Vocal clef=treble name=\"Vocal Melody\" snm=\"Vocal\"\nV: Ins clef=treble name=\"Ins Melody\" snm=\"Inst.\"\nK:Bb\n% intro\nV: Vocal\nZ|\"Ebmaj7\"z16|\"Ebm(maj7)\"z16|\"Dm7\"z16|\nV: Ins\nz4f2e2d2e2d2B2|d2GdzGdzGdzGdzGd|d2^FdzFd2FdzFdzF2|c2FczFczFczFc2Fc|\nV: Vocal\n\"Gm7\"z12z2BG|\nV: Ins\nA3B3f6z4|\n% verse\nV: Vocal\n\"Ebmaj7\"BGBGB2GGBGBBd2BG|\"Ebm(maj7)\"BGBGBGBGBGBBd2BB|\"Dm7\"AAAAAAAGAAAGA2AG|\"Gm7\"AAAGAGAGABAB2zBB|\nV: Ins\nZ4|\nV: Vocal\n\"Ebmaj7\"dddddddddddf3dd|\"Ebm(maj7)\"dddddddddddg2f3|\"Dm7\"cccccccccccccdB2|\"Gm7\"cccccccccccdcBB2|\nV: Ins\nZ4|\n% pre-chorus\nV: Vocal\n\"Ebmaj7\"z2ddGGddGGGGddcd|\"Ebm(maj7)\"c2ccFFccFFccFFcc-|\"Dm7\"c2ccFFccFFccFFcc-|\"Gm7\"c2cBcBcBcBcBcBcd-|\nV: Ins\nZ4|\nV: Vocal\n\"Gm7\"d2z6f2e2d2e2|\nV: Ins\nZ|\n% chorus\nV: Vocal\n\"Ebmaj7\"d2G2B2Gd3G2B2Gd-|\"Ebm(maj7)\"d2c4z2f2e2d2e2|\"Dm7\"d2F2A2Fd3F2A2F2|\"Gm7\"c3c3B2d2z2Bcde|\nV: Ins\nZ4|\nV: Vocal\n\"Ebmaj7\"d2G2B2Gd3G2B2Gd-|\"Ebm(maj7)\"d2c4z2f2e2d2e2|\"Dm7\"d2F2A2Fd3F2A2F2|\"Gm7\"c3B4z3dcdcdc|\nV: Ins\nZ4|\nV: Vocal\n\"Ebmaj7\"d2g2z2d2c2B2cBcB|\"Ebm(maj7)\"d4z6dcdcdc|\"Dm7\"d2a4f4d2c2B2|\"Gm7\"c3B4z6zBB|\nV: Ins\nZ4|\n% verse\nV: Vocal\n\"Ebmaj7\"ddBBddBBddBd3BB|\"Ebm(maj7)\"ddBBddBBddBd3dd|\"Dm7\"cccccccccccccccc|\"Gm7\"cccccccdc2B2B2z2|\nV: Ins\nZ4|\nV: Vocal\n\"Ebmaj7\"z2dcdcdcd2G2d2d2|\"Ebm(maj7)\"z2dcdcdcd2G2d2d2|\"Dm7\"z2cBcBcBc2F2c2c2|\"Gm7\"z2cBcBcdc2B4BB|\nV: Ins\nZ4|\n% pre-chorus\nV: Vocal\n\"Ebmaj7\"dcdcdcdcdcddG2BB|\"Ebm(maj7)\"dcdcdcdcdcddG2BB|\"Dm7\"cBcBcBcBc2d2d2BB|\"Gm7\"cBcBcBcBc2d2d2G2|\nV: Ins\nZ4|\nV: Vocal\n\"Ebmaj7\"d4g4a4b4|\"Ebm(maj7)\"d6c6z2BB|\"Dm7\"c4f4g4a4|\"Gm7\"a3f3g3b3c'c'z2|\nV: Ins\nZ4|\nV: Vocal\n\"Ebmaj7\"z2dcdcdcdcdcd2G2|\"Ebm(maj7)\"d2dcdcdcdcdcd2G2|\"Dm7\"d2d2z2d2d2z2cBcB|\"Gm7\"d2z4Bz6zBB|\nV: Ins\nZ4|\n% chorus\nV: Vocal\n\"Ebmaj7\"d2G2B2Gd3GGB2Gd-|\"Ebm(maj7)\"d2c4z2f2e2d2e2|\"Dm7\"d2F2A2Fd3F2A2F2|\"Gm7\"c3c3B2d2z2Bcde|\nV: Ins\nZ4|\nV: Vocal\n\"Ebmaj7\"d2G2B2Gd3G2B2Gd-|\"Ebm(maj7)\"d2c4z2f2e2d2e2|\"Dm7\"d2F2A2Fd3F2A2F2|\"Gm7\"c3B4z8z|\nV: Ins\nZ3|z12z2Bz|\n% outro\nV: Vocal\n\"Ebmaj7\"z16|\"Ebm(maj7)\"z16|\"Dm7\"z16|\"Gm7\"z16|\nV: Ins\nd2GdzGdzGdzGd2Gd|d2^FdzFd2FdzFd2F2|c2FczFc2FczFc2Fc|A3B3f8z2|\nV: Vocal\n\"Gm7\"z16|\nV: Ins\nZ|\n",
+        "abcUrl": "assets/genre/115abed0e655f5fa9b1409b3/score.abc",
+        "audio": "assets/genre/115abed0e655f5fa9b1409b3/115abed0e655f5fa9b1409b3_music.mp3",
+        "scoreAudio": "assets/genre/115abed0e655f5fa9b1409b3/115abed0e655f5fa9b1409b3_score.mp3",
+        "sheets": [
+          "assets/genre/115abed0e655f5fa9b1409b3/sheet_01.svg",
+          "assets/genre/115abed0e655f5fa9b1409b3/sheet_02.svg",
+          "assets/genre/115abed0e655f5fa9b1409b3/sheet_03.svg",
+          "assets/genre/115abed0e655f5fa9b1409b3/sheet_04.svg"
+        ]
+      },
+      "official_audio_url": "https://map-yue2.github.io/assets/genre/115abed0e655f5fa9b1409b3/115abed0e655f5fa9b1409b3_music.mp3",
+      "official_audio_path": "outputs/official_fullsong/reference/115abed0e655f5fa9b1409b3.mp3",
+      "official_audio_sha256": "5f92a87f15925c817ce984f407921fd9c4bc2a699d741ae33912dc1762a59a17",
+      "official_seconds": 152.72,
+      "input_hashes": {
+        "style": "e444b3469164e2bf7a2b9aa3860f01ac0de892cbcdaf92513e6a831129ba0ec5",
+        "lyrics": "d98e108d0eda26fc39e80a7046299d6700c99028336418ba955dc713d3aa109c"
+      }
+    },
+    {
+      "id": "melody_supplied",
+      "official_id": "jingle-bells-minor-no-chord",
+      "title": "Jingle Bells · Minor-Key Version",
+      "genre": "Christmas Pop · E Minor · 104 BPM",
+      "language": "en",
+      "score_mode": "supplied",
+      "request": {
+        "id": "melody_supplied",
+        "style": "Christmas pop in E minor, sleigh bells, 104 BPM\n",
+        "lyrics": "[Verse]\nDashing through the snow\nIn a one-horse open sleigh\nO'er the fields we go\nLaughing all the way\nBells on bobtails ring\nMaking spirits bright\nWhat fun it is to ride and sing\nA sleighing song tonight\n\n[Chorus]\nJingle bells, jingle bells\nJingle all the way\nOh, what fun it is to ride\nIn a one-horse open sleigh, hey!\nJingle bells, jingle bells\nJingle all the way\nOh, what fun it is to ride\nIn a one-horse open sleigh\n\n[Verse]\nNow the ground is white\nGo it while you're young\nTake the girls tonight\nAnd sing this sleighing song\nJust get a bobtailed bay\nTwo forty as his speed\nHitch him to an open sleigh\nAnd snap! You'll take the lead\n\n[Chorus]\nJingle bells, jingle bells\nJingle all the way\nOh, what fun it is to ride\nIn a one-horse open sleigh, hey!\nJingle bells, jingle bells\nJingle all the way\nOh, what fun it is to ride\nIn a one-horse open sleigh\nOh, what fun it is to ride\nIn a one-horse open sleigh\n",
+        "cot": "melody",
+        "seed": 2026,
+        "abc": "X:1\nT:\nM:4/4\nL:1/32\nQ:1/4=104\nV: Vocal clef=treble name=\"Vocal Melody\" snm=\"Vocal\"\nV: Ins clef=treble name=\"Ins Melody\" snm=\"Inst.\"\nK:Em\n% intro\nV: Vocal\nZ4|\nV: Ins\nZ|g4g4g8g4g4g8|g4b4e6f2g16|a4a4a8a4g4g4g2g2|\nV: Vocal\nZ|\nV: Ins\nb4b4a4f4e16|\n% verse\nV: Vocal\nB4g4f4e4B8z4B2B2|B4g4f4e4c8z8|c4a4g4f4d8z8|b4b4a4f4g8z8|\nV: Ins\nZ4|\nV: Vocal\nB4g4f4e4B8z8|B4g4f4e4c8z4c4|c4a4g4f4b4b4b4b4|c'4b4a4f4e4z4b8|\nV: Ins\nZ4|\n% chorus\nV: Vocal\ng4g4g8g4g4g8|g4b4e6f2g8z8|a4a4a6a2a4g4g4g2g2|g4f4f4g4f8b4z4|\nV: Ins\nZ4|\nV: Vocal\ng4g4g8g4g4g8|g4b4e6f2g8z8|a4a4a6a2a4g4g4g2g2|b4b4a4f4e12z4|\nV: Ins\nZ4|\nV: Vocal\nZ|\nV: Ins\nZ|\n% interlude\nV: Vocal\nZ|\nV: Ins\nB4B2B2e4B2B2e2B2e2g2b8|\n% verse\nV: Vocal\nB4g4f4e4B8z8|B4g4f4e4c8z8|c4a4g4f4d8z8|b4b4a4f4g8z8|\nV: Ins\nZ4|\nV: Vocal\nB4g4f4e4B8z4B4|B4g4f4e4c8z4c4|c4a4g4f4b4b4b4b4|c'4b4a4f4e4z4b8|\nV: Ins\nZ4|\n% chorus\nV: Vocal\ng4g4g8g4g4g8|g4b4e6f2g8z8|a4a4a6a2a4g4g4g2g2|g4f4f4g4f8b4z4|\nV: Ins\nZ4|\nV: Vocal\ng4g4g8g4g4g8|g4b4e6f2g8z8|a4a4a6a2a4g4g4g2g2|b4b4a4f4e8z8|\nV: Ins\nZ4|\nV: Vocal\na4a4a6a2a4g4g4g2g2|b8b8a8f8|e24z8|\nV: Ins\nZ3|\nV: Vocal\nM:1/4\nZ|\nV: Ins\nM:1/4\nZ|\n% outro\nV: Vocal\nM:4/4\nZ4|\nV: Ins\nM:4/4\ng4g4g8g4g4g8|g4b4e6f2g16|a4a4a4a4a4g4g4g2g2|b4b4a4f4e16|\nV: Vocal\nZ|\nV: Ins\ne4g4g4e4z16|\n"
+      },
+      "official_mode": "cover/edit",
+      "source": {
+        "id": "jingle-bells-minor-no-chord",
+        "title": "Jingle Bells · Minor-Key Version",
+        "genre": "Christmas Pop · E Minor · 104 BPM",
+        "source": "Adapted from Jingle Bells",
+        "editType": "Melody remapping: G major → E natural minor · Chordless melody input",
+        "audio": "assets/covers/jingle-bells-minor-no-chord/jingle-bells-minor-no-chord.mp3",
+        "abcUrl": "assets/covers/jingle-bells-minor-no-chord/jingle-bells-minor-no-chord.abc",
+        "abc": "X:1\nT:\nM:4/4\nL:1/32\nQ:1/4=104\nV: Vocal clef=treble name=\"Vocal Melody\" snm=\"Vocal\"\nV: Ins clef=treble name=\"Ins Melody\" snm=\"Inst.\"\nK:Em\n% intro\nV: Vocal\nZ4|\nV: Ins\nZ|g4g4g8g4g4g8|g4b4e6f2g16|a4a4a8a4g4g4g2g2|\nV: Vocal\nZ|\nV: Ins\nb4b4a4f4e16|\n% verse\nV: Vocal\nB4g4f4e4B8z4B2B2|B4g4f4e4c8z8|c4a4g4f4d8z8|b4b4a4f4g8z8|\nV: Ins\nZ4|\nV: Vocal\nB4g4f4e4B8z8|B4g4f4e4c8z4c4|c4a4g4f4b4b4b4b4|c'4b4a4f4e4z4b8|\nV: Ins\nZ4|\n% chorus\nV: Vocal\ng4g4g8g4g4g8|g4b4e6f2g8z8|a4a4a6a2a4g4g4g2g2|g4f4f4g4f8b4z4|\nV: Ins\nZ4|\nV: Vocal\ng4g4g8g4g4g8|g4b4e6f2g8z8|a4a4a6a2a4g4g4g2g2|b4b4a4f4e12z4|\nV: Ins\nZ4|\nV: Vocal\nZ|\nV: Ins\nZ|\n% interlude\nV: Vocal\nZ|\nV: Ins\nB4B2B2e4B2B2e2B2e2g2b8|\n% verse\nV: Vocal\nB4g4f4e4B8z8|B4g4f4e4c8z8|c4a4g4f4d8z8|b4b4a4f4g8z8|\nV: Ins\nZ4|\nV: Vocal\nB4g4f4e4B8z4B4|B4g4f4e4c8z4c4|c4a4g4f4b4b4b4b4|c'4b4a4f4e4z4b8|\nV: Ins\nZ4|\n% chorus\nV: Vocal\ng4g4g8g4g4g8|g4b4e6f2g8z8|a4a4a6a2a4g4g4g2g2|g4f4f4g4f8b4z4|\nV: Ins\nZ4|\nV: Vocal\ng4g4g8g4g4g8|g4b4e6f2g8z8|a4a4a6a2a4g4g4g2g2|b4b4a4f4e8z8|\nV: Ins\nZ4|\nV: Vocal\na4a4a6a2a4g4g4g2g2|b8b8a8f8|e24z8|\nV: Ins\nZ3|\nV: Vocal\nM:1/4\nZ|\nV: Ins\nM:1/4\nZ|\n% outro\nV: Vocal\nM:4/4\nZ4|\nV: Ins\nM:4/4\ng4g4g8g4g4g8|g4b4e6f2g16|a4a4a4a4a4g4g4g2g2|b4b4a4f4e16|\nV: Vocal\nZ|\nV: Ins\ne4g4g4e4z16|\n",
+        "tags": "Christmas pop in E minor, sleigh bells, 104 BPM\n",
+        "lyrics": "[Verse]\nDashing through the snow\nIn a one-horse open sleigh\nO'er the fields we go\nLaughing all the way\nBells on bobtails ring\nMaking spirits bright\nWhat fun it is to ride and sing\nA sleighing song tonight\n\n[Chorus]\nJingle bells, jingle bells\nJingle all the way\nOh, what fun it is to ride\nIn a one-horse open sleigh, hey!\nJingle bells, jingle bells\nJingle all the way\nOh, what fun it is to ride\nIn a one-horse open sleigh\n\n[Verse]\nNow the ground is white\nGo it while you're young\nTake the girls tonight\nAnd sing this sleighing song\nJust get a bobtailed bay\nTwo forty as his speed\nHitch him to an open sleigh\nAnd snap! You'll take the lead\n\n[Chorus]\nJingle bells, jingle bells\nJingle all the way\nOh, what fun it is to ride\nIn a one-horse open sleigh, hey!\nJingle bells, jingle bells\nJingle all the way\nOh, what fun it is to ride\nIn a one-horse open sleigh\nOh, what fun it is to ride\nIn a one-horse open sleigh\n",
+        "titleZh": "",
+        "sourceTitleZh": "",
+        "sourceUrl": "https://www.youtube.com/watch?v=hLf0-lro8X8"
+      },
+      "official_audio_url": "https://map-yue2.github.io/assets/covers/jingle-bells-minor-no-chord/jingle-bells-minor-no-chord.mp3",
+      "official_audio_path": "outputs/official_fullsong/reference/jingle-bells-minor-no-chord.mp3",
+      "official_audio_sha256": "8adfbdf7e6f4255548a6640230cd6645c2ba16cf100bcb8c807dd69fbaa9be8d",
+      "official_seconds": 107.35866666666666,
+      "input_hashes": {
+        "style": "44b2302e6ac7eea08fe335ad7d66a3ccdf4a803cbe3263d0ae3856239efa3382",
+        "lyrics": "9378c9fab1a5d334b470ce3b8d4302de3b0f7bd3624d2f3db215e52b79c5cdb4",
+        "abc": "c2e2213018cf67c203cd089251031cd592bf2b55aa04b0c69213d8b29d46c32c"
+      }
+    },
+    {
+      "id": "off_direct",
+      "official_id": "bdfc142ef136070839953ffa",
+      "title": "Enka",
+      "genre": "Enka",
+      "language": "ja",
+      "score_mode": "none",
+      "request": {
+        "id": "off_direct",
+        "style": "retro,city pop,中森明菜,Japanese",
+        "lyrics": "风が麦浪をなびかせ 稲の花が香る\n黒い土地が われらの父母を育てる\n毎年冬には 大雪が舞い散る\n暖かい炬燵の上で 世間話をする\n\n青い空に 白い雲がゆらゆら\n清らかな小川が せせらぎながら流れる\n東北の人は ザワーキャベツと血腸が好き\nヤンコ踊りを踊れば 人々は喜びそう\n\n大東北は わたしの故郷だ\nソナが奏でる 素敵な姿\n仲間が集まれば 必ずお酒を二杯飲む\n月を酔わせ わたしの心を温める\n\n大東北は わたしの故郷だ\nわたしはこの地で 生まれ育った\n東北人の情 東北人の愛\nこの故郷を 心から愛してる\n\n风が麦浪をなびかせ 稲の花が香る\n黒い土地が われらの父母を育てる\n毎年冬には 大雪が舞い散る\n暖かい炬燵の上で 世間話をする\n\n青い空に 白い雲がゆらゆら\n清らかな小川が せせらぎながら流れる\n東北の人は ザワーキャベツと血腸が好き\nヤンコ踊りを踊れば 人々は喜びそう\n\n大東北は わたしの故郷だ\nソナが奏でる 素敵な姿\n仲間が集まれば 必ずお酒を二杯飲む\n月を酔わせ わたしの心を温める\n\n大東北は わたしの故郷だ\nわたしはこの地で 生まれ育った\n東北人の情 東北人の愛\nこの故郷を 心から愛してる\n\n大東北は わたしの故郷だ\nソナが奏でる 素敵な姿\n仲間が集まれば 必ずお酒を二杯飲む\n月を酔わせ わたしの心を温める\n\n大東北は わたしの故郷だ\nわたしはこの地で 生まれ育った\n東北人の情 東北人の愛\nこの故郷を 心から愛してる\nこの故郷を 心から愛してる",
+        "cot": "off",
+        "seed": 2026
+      },
+      "official_mode": "direct",
+      "source": {
+        "id": "bdfc142ef136070839953ffa",
+        "order": 1,
+        "collection": "genre",
+        "title": "Enka",
+        "genre": "Enka",
+        "genrePath": [
+          "Regional Music",
+          "Asian Music",
+          "East Asian Music",
+          "Japanese Music",
+          "Enka"
+        ],
+        "language": "ja",
+        "languageLabel": "Japanese",
+        "mode": "direct",
+        "tags": "retro,city pop,中森明菜,Japanese",
+        "lyrics": "风が麦浪をなびかせ 稲の花が香る\n黒い土地が われらの父母を育てる\n毎年冬には 大雪が舞い散る\n暖かい炬燵の上で 世間話をする\n\n青い空に 白い雲がゆらゆら\n清らかな小川が せせらぎながら流れる\n東北の人は ザワーキャベツと血腸が好き\nヤンコ踊りを踊れば 人々は喜びそう\n\n大東北は わたしの故郷だ\nソナが奏でる 素敵な姿\n仲間が集まれば 必ずお酒を二杯飲む\n月を酔わせ わたしの心を温める\n\n大東北は わたしの故郷だ\nわたしはこの地で 生まれ育った\n東北人の情 東北人の愛\nこの故郷を 心から愛してる\n\n风が麦浪をなびかせ 稲の花が香る\n黒い土地が われらの父母を育てる\n毎年冬には 大雪が舞い散る\n暖かい炬燵の上で 世間話をする\n\n青い空に 白い雲がゆらゆら\n清らかな小川が せせらぎながら流れる\n東北の人は ザワーキャベツと血腸が好き\nヤンコ踊りを踊れば 人々は喜びそう\n\n大東北は わたしの故郷だ\nソナが奏でる 素敵な姿\n仲間が集まれば 必ずお酒を二杯飲む\n月を酔わせ わたしの心を温める\n\n大東北は わたしの故郷だ\nわたしはこの地で 生まれ育った\n東北人の情 東北人の愛\nこの故郷を 心から愛してる\n\n大東北は わたしの故郷だ\nソナが奏でる 素敵な姿\n仲間が集まれば 必ずお酒を二杯飲む\n月を酔わせ わたしの心を温める\n\n大東北は わたしの故郷だ\nわたしはこの地で 生まれ育った\n東北人の情 東北人の愛\nこの故郷を 心から愛してる\nこの故郷を 心から愛してる",
+        "abc": "",
+        "abcUrl": null,
+        "audio": "assets/genre/bdfc142ef136070839953ffa/bdfc142ef136070839953ffa_music.mp3",
+        "scoreAudio": null,
+        "sheets": []
+      },
+      "official_audio_url": "https://map-yue2.github.io/assets/genre/bdfc142ef136070839953ffa/bdfc142ef136070839953ffa_music.mp3",
+      "official_audio_path": "outputs/official_fullsong/reference/bdfc142ef136070839953ffa.mp3",
+      "official_audio_sha256": "4201bc6f26587da253ca8303e943b3a8216e932008a46e3544ec72a7d5f35db2",
+      "official_seconds": 243.28,
+      "input_hashes": {
+        "style": "8ead6106d7852eb72a2106d2ae5bda3d6721f122c4d8f20db218b2bab89c9d8d",
+        "lyrics": "5816106e2a8c0ab898ba91623a38c10e396ca212064951c4cd32acccca5febc9"
+      }
+    },
+    {
+      "id": "cover_dagoujiao",
+      "official_id": "dagoujiao-chord",
+      "title": "Big Dog Goes Woof",
+      "genre": "New Orleans Brass-Funk · 115 BPM",
+      "language": "zh",
+      "score_mode": "supplied",
+      "request": {
+        "id": "cover_dagoujiao",
+        "style": "New Orleans brass-funk, second-line drums, sousaphone, honky-tonk piano, trombone and baritone sax, playful Mandarin duet, 115 BPM\n",
+        "lyrics": "[Chorus]\n我们一起学狗叫 一起汪汪汪汪汪\n在你门前摇尾巴 快来汪汪汪汪汪\n我的脚步咚咚响 追着飞盘满街跑\n不带我出门我就汪汪汪\n\n[Verse]\n每天我都等你带我跑\n守在门边数着每分每秒\n外面今天多热闹 风儿比我更知道\n我就是你的小保镖\n\n[Verse]\n有时候我馋得像头熊\n听见塑料袋就满屋乱跑\n你总说等等 可我已经冲到大门口\n今天也要当只快乐狗\n\n[Chorus]\n我们一起学狗叫 一起汪汪汪汪汪\n在你门前摇尾巴 快来汪汪汪汪汪\n我的脚步咚咚响 追着飞盘满街跑\n不带我出门我就汪汪汪\n我们一起学狗叫 一起汪汪汪汪汪\n我要叼你的外套 闻见出门的味道\n想要追着你的球 跑到草地上睡着\n每天都惦记那根骨头\n\n[Verse]\n黄昏后我跑得一身土\n你拿毛巾追我满屋乱跑\n你说慢一点 我却摇着尾巴装不懂\n今晚还要当只香香狗\n\n[Chorus]\n我们一起学狗叫 一起汪汪汪汪汪\n在你门前摇尾巴 快来汪汪汪汪汪\n我的脚步咚咚响 追着飞盘满街跑\n不带我出门我就汪汪汪\n我们一起学狗叫 一起汪汪汪汪汪\n我要叼你的外套 闻见出门的味道\n想要追着你的球 跑到草地上睡着\n每天都惦记那根骨头\n\n[Chorus]\n我们终于跑回家 一起汪汪汪汪汪\n在你脚边摇尾巴 晚安汪汪汪汪汪\n我的呼噜轰轰响 梦里飞盘满天跑\n不许我上床我就汪汪汪\n我们明天还要跑 一起汪汪汪汪汪\n我要守着你外套 闻着安心的味道\n想要靠着你的脚 一直睡到天亮了\n每天都等着新的骨头\n",
+        "cot": "full",
+        "seed": 2026,
+        "abc": "X:1\nT:\nM:4/4\nL:1/32\nQ:1/4=115\nV: Vocal clef=treble name=\"Vocal Melody\" snm=\"Vocal\"\nV: Ins clef=treble name=\"Ins Melody\" snm=\"Inst.\"\nK:F#\n% silence\nV: Vocal\nZ|\nV: Ins\nZ|\n% intro\nV: Vocal\n\"F#\"z32|\"C#\"z32|\"D#m7\"z32|\"Bsus2\"z24f4g4|\nV: Ins\nz12f2z6f4z4f4|z4g4z4g6z2g4z4g4|z4f4z4f6z2f4z4f4|z4f4z4f8z12|\n% chorus\nV: Vocal\n\"F#\"a4c4f4a4a4z4g4f4|\"C#/E#\"g4c'4c'4c'4c'4z4f4e4|\"D#m7\"f4f4f4f4f4z4e4f4|\"C#sus4\"e4f4e4d4c4z4c4c4|\nV: Ins\nZ4|\nV: Vocal\n\"B\"d4d4d4d4d4z4c4A4|\"A#m7\"c4A4\"D#m7\"c4g4f8z4c4|\"G#m7\"a4a4a4b4c'4f4f4a4|\"C#sus4\"g16z16|\nV: Ins\nZ4|\n% verse\nV: Vocal\n\"F#\"z8c4c4c8c4c4|\"C#/E#\"d4c4A4c4z4F4F4F4|\"D#m7\"A8A4A4A4F4F4A4|\"F#maj7/C#\"A8z12A4G4F4|\nV: Ins\nZ4|\nV: Vocal\n\"B\"F4F2F6C4z4F4F4F4|\"F#/A#\"F4C4C4A8F4z4C4|\"G#m7\"B8B4B4B4F4F4G4|\"C#sus4\"G16z16|\nV: Ins\nZ4|\nV: Vocal\n\"F#\"z8c4c4c8c4c4|\"A#m7\"d4c4A4c4z4c4c4c4|\"D#m7\"f8f4f4A4A4d4c4-|\"C#6\"c12z8c4c4A4|\nV: Ins\nZ4|\nV: Vocal\n\"B\"d6d6c4z4d4c4B4|\"A#m7\"c4c4\"D#m7\"c4g8f4z4c4|\"G#m7\"a8a4b4c'4a4f4a4-|\"C#sus4\"a4a4g8-\"C#\"g16|\nV: Ins\nZ4|\nV: Vocal\n\"C#\"z24f4g4|\nV: Ins\nZ|\n% chorus\nV: Vocal\n\"F#\"a4c4f4a4a4z4g4f4|\"A#m7\"g4c'4c'4c'4c'4z4f4e4|\"D#m7\"f4f4f4f4f4z4e4f4|\"C#6\"e4f4e4d4c4z4c4c4|\nV: Ins\nZ4|\nV: Vocal\n\"B\"d4d4d4d4c4z4c4A4|\"A#m\"c4A4c4g4f8z4c4|\"G#m7\"a4a4a4b4c'4f4f4a4|\"C#sus4\"g16z8f4g4|\nV: Ins\nZ4|\nV: Vocal\n\"F#\"a4c4f4a4a4z4g4f4|\"A#m7\"g4c'4c'4c'4c'4z4f4e4|\"D#m7\"f4f4f4f4f4z4e4f4|\"C#6\"e4f4e4d4c4z4c4c4|\nV: Ins\nZ4|\nV: Vocal\n\"Bmaj7\"d4F4B4d4d4z4c4A4|\"A#m\"c4A4c4g4f8z4c4|\"G#m7\"b8b4a4\"C#sus4\"b4a4f4g4-|\"F#\"g4f16z12|\nV: Ins\nZ4|\n% interlude\nV: Vocal\n\"Bmaj7\"z16\"C#\"z16|\"F#\"z32|\"B\"z16\"C#\"z16|\"D#m7\"z32|\nV: Ins\na4g4f4g8f4e4f4-|f16-f4z4a4b4|c'8f4g8c'8a4-|a16-a4z8d2e2|\nV: Vocal\n\"Bmaj7\"z8\"C#sus4\"z24|\"A#7\"z8\"D#m\"z24|\"G#m7\"z16\"C#sus4\"z16|\"F#sus4\"z8\"F#\"z24|\nV: Ins\nf8a4g12z4a2c'2|^^c'4a4e'4f'12d'4^c'4-|c'4z4a4g8c4g4f4-|f16f4g8a4-|\n% verse\nV: Vocal\n\"F#\"z8c4c4c8c4c4|\"A#m7\"d4c4A4c4z4c4c4c4|\"D#m7\"f8f4f4A4A4d4c4-|\"C#\"c12z8c4c4A4|\nV: Ins\na8z24|Z3|\nV: Vocal\n\"B\"d4d2d6c4z4d4c4B4|\"A#m7\"c4c4\"D#m7\"c4g8f4z4c4|\"G#m7\"a4a4a4b4c'4a4f4a4-|\"C#sus4\"a4a4g16-\"C#\"g8|\nV: Ins\nZ4|\nV: Vocal\n\"C#\"z24f4g4|\nV: Ins\nz4c'2z2c'8a4c'4z8|\n% chorus\nV: Vocal\n\"F#\"a4c4f4a4a4z4g4f4|\"A#m7\"g4c'4c'4c'4c'4z4f4e4|\"D#m7\"f4f4f4f4f4z4e4f4|\"C#6\"e4f4e4d4c4z4c4c4|\nV: Ins\nZ4|\nV: Vocal\n\"B\"d4d4d4d4d4z4c4A4|\"A#m7\"c4A4c4g4f8z4c4|\"G#m7\"a4a4a4b4c'4f4f4a4|\"C#\"g16z8f4g4|\nV: Ins\nZ4|\nV: Vocal\n\"F#\"a4c4f4a4a4z4g4f4|\"A#m7\"g4c'4c'4c'4c'4z4f4e4|\"D#m7\"f4f4f4f4f4z4e4f4|\"C#6\"e4f4e4d4c4z4c4c4|\nV: Ins\nZ4|\nV: Vocal\n\"B\"d4F4B4d4d4z4c4A4|\"A#m\"c4A4c4g4f8z4c4|\"G#m7\"b8b4a4\"C#\"b4a4f4g4-|\"F#\"g4f16z4f4g4|\nV: Ins\nZ4|\nV: Vocal\n\"F#\"a4c4f4a4a4z4g4f4|\"A#m7\"g4c'4c'4c'4c'4z4f4e4|\"D#m7\"f4f4f4f4f4z4e4f4|\"C#6\"e4f4e4d4c4z4c4c4|\nV: Ins\nZ4|\nV: Vocal\n\"B\"d4d4d4d4d4z4c4A4|\"A#m\"c4A4c4g4f4f4z4c4|\"G#m7\"a4a4a4b4c'4f4f4a4|\"C#\"a4g16z4f4g4|\nV: Ins\nZ4|\nV: Vocal\n\"F#\"a4c4f4a4a4z4g4f4|\"A#m7\"g4c'4c'4c'4c'4z4f4e4|\"D#m7\"f4f4f4f4f4z4e4f4|\"C#6\"e4f4e4d4c4z4c4c4|\nV: Ins\nZ4|\nV: Vocal\n\"B\"d4F4B4d4d4z4c4A4|\"A#m\"c4A4c4g4f4f4z4c4|\"G#m7\"b8b4a4\"C#sus4\"b4c'4f4g4|\"F#\"z4g4f16z8|\nV: Ins\nZ4|\n% outro\nV: Vocal\n\"F#\"z32|\"C#/E#\"z32|\"D#m7\"z32|\"Bsus2\"z32|\nV: Ins\na16z8a4g4-|g16-g4z4g4f4-|f16-f4z12|b8c'2z2c'16z4|\nV: Vocal\n\"F#\"z32|\"F#\"z32|\nV: Ins\nf'32|Z|\n"
+      },
+      "official_mode": "cover/edit",
+      "source": {
+        "id": "dagoujiao-chord",
+        "title": "Big Dog Goes Woof",
+        "genre": "New Orleans Brass-Funk · 115 BPM",
+        "source": "Adapted from Learn to Meow",
+        "editType": "Lyric rewrite · Style rearrangement · Chord-conditioned ABC",
+        "audio": "assets/covers/dagoujiao-chord/dagoujiao-chord.mp3",
+        "abcUrl": "assets/covers/dagoujiao-chord/dagoujiao-chord.abc",
+        "abc": "X:1\nT:\nM:4/4\nL:1/32\nQ:1/4=115\nV: Vocal clef=treble name=\"Vocal Melody\" snm=\"Vocal\"\nV: Ins clef=treble name=\"Ins Melody\" snm=\"Inst.\"\nK:F#\n% silence\nV: Vocal\nZ|\nV: Ins\nZ|\n% intro\nV: Vocal\n\"F#\"z32|\"C#\"z32|\"D#m7\"z32|\"Bsus2\"z24f4g4|\nV: Ins\nz12f2z6f4z4f4|z4g4z4g6z2g4z4g4|z4f4z4f6z2f4z4f4|z4f4z4f8z12|\n% chorus\nV: Vocal\n\"F#\"a4c4f4a4a4z4g4f4|\"C#/E#\"g4c'4c'4c'4c'4z4f4e4|\"D#m7\"f4f4f4f4f4z4e4f4|\"C#sus4\"e4f4e4d4c4z4c4c4|\nV: Ins\nZ4|\nV: Vocal\n\"B\"d4d4d4d4d4z4c4A4|\"A#m7\"c4A4\"D#m7\"c4g4f8z4c4|\"G#m7\"a4a4a4b4c'4f4f4a4|\"C#sus4\"g16z16|\nV: Ins\nZ4|\n% verse\nV: Vocal\n\"F#\"z8c4c4c8c4c4|\"C#/E#\"d4c4A4c4z4F4F4F4|\"D#m7\"A8A4A4A4F4F4A4|\"F#maj7/C#\"A8z12A4G4F4|\nV: Ins\nZ4|\nV: Vocal\n\"B\"F4F2F6C4z4F4F4F4|\"F#/A#\"F4C4C4A8F4z4C4|\"G#m7\"B8B4B4B4F4F4G4|\"C#sus4\"G16z16|\nV: Ins\nZ4|\nV: Vocal\n\"F#\"z8c4c4c8c4c4|\"A#m7\"d4c4A4c4z4c4c4c4|\"D#m7\"f8f4f4A4A4d4c4-|\"C#6\"c12z8c4c4A4|\nV: Ins\nZ4|\nV: Vocal\n\"B\"d6d6c4z4d4c4B4|\"A#m7\"c4c4\"D#m7\"c4g8f4z4c4|\"G#m7\"a8a4b4c'4a4f4a4-|\"C#sus4\"a4a4g8-\"C#\"g16|\nV: Ins\nZ4|\nV: Vocal\n\"C#\"z24f4g4|\nV: Ins\nZ|\n% chorus\nV: Vocal\n\"F#\"a4c4f4a4a4z4g4f4|\"A#m7\"g4c'4c'4c'4c'4z4f4e4|\"D#m7\"f4f4f4f4f4z4e4f4|\"C#6\"e4f4e4d4c4z4c4c4|\nV: Ins\nZ4|\nV: Vocal\n\"B\"d4d4d4d4c4z4c4A4|\"A#m\"c4A4c4g4f8z4c4|\"G#m7\"a4a4a4b4c'4f4f4a4|\"C#sus4\"g16z8f4g4|\nV: Ins\nZ4|\nV: Vocal\n\"F#\"a4c4f4a4a4z4g4f4|\"A#m7\"g4c'4c'4c'4c'4z4f4e4|\"D#m7\"f4f4f4f4f4z4e4f4|\"C#6\"e4f4e4d4c4z4c4c4|\nV: Ins\nZ4|\nV: Vocal\n\"Bmaj7\"d4F4B4d4d4z4c4A4|\"A#m\"c4A4c4g4f8z4c4|\"G#m7\"b8b4a4\"C#sus4\"b4a4f4g4-|\"F#\"g4f16z12|\nV: Ins\nZ4|\n% interlude\nV: Vocal\n\"Bmaj7\"z16\"C#\"z16|\"F#\"z32|\"B\"z16\"C#\"z16|\"D#m7\"z32|\nV: Ins\na4g4f4g8f4e4f4-|f16-f4z4a4b4|c'8f4g8c'8a4-|a16-a4z8d2e2|\nV: Vocal\n\"Bmaj7\"z8\"C#sus4\"z24|\"A#7\"z8\"D#m\"z24|\"G#m7\"z16\"C#sus4\"z16|\"F#sus4\"z8\"F#\"z24|\nV: Ins\nf8a4g12z4a2c'2|^^c'4a4e'4f'12d'4^c'4-|c'4z4a4g8c4g4f4-|f16f4g8a4-|\n% verse\nV: Vocal\n\"F#\"z8c4c4c8c4c4|\"A#m7\"d4c4A4c4z4c4c4c4|\"D#m7\"f8f4f4A4A4d4c4-|\"C#\"c12z8c4c4A4|\nV: Ins\na8z24|Z3|\nV: Vocal\n\"B\"d4d2d6c4z4d4c4B4|\"A#m7\"c4c4\"D#m7\"c4g8f4z4c4|\"G#m7\"a4a4a4b4c'4a4f4a4-|\"C#sus4\"a4a4g16-\"C#\"g8|\nV: Ins\nZ4|\nV: Vocal\n\"C#\"z24f4g4|\nV: Ins\nz4c'2z2c'8a4c'4z8|\n% chorus\nV: Vocal\n\"F#\"a4c4f4a4a4z4g4f4|\"A#m7\"g4c'4c'4c'4c'4z4f4e4|\"D#m7\"f4f4f4f4f4z4e4f4|\"C#6\"e4f4e4d4c4z4c4c4|\nV: Ins\nZ4|\nV: Vocal\n\"B\"d4d4d4d4d4z4c4A4|\"A#m7\"c4A4c4g4f8z4c4|\"G#m7\"a4a4a4b4c'4f4f4a4|\"C#\"g16z8f4g4|\nV: Ins\nZ4|\nV: Vocal\n\"F#\"a4c4f4a4a4z4g4f4|\"A#m7\"g4c'4c'4c'4c'4z4f4e4|\"D#m7\"f4f4f4f4f4z4e4f4|\"C#6\"e4f4e4d4c4z4c4c4|\nV: Ins\nZ4|\nV: Vocal\n\"B\"d4F4B4d4d4z4c4A4|\"A#m\"c4A4c4g4f8z4c4|\"G#m7\"b8b4a4\"C#\"b4a4f4g4-|\"F#\"g4f16z4f4g4|\nV: Ins\nZ4|\nV: Vocal\n\"F#\"a4c4f4a4a4z4g4f4|\"A#m7\"g4c'4c'4c'4c'4z4f4e4|\"D#m7\"f4f4f4f4f4z4e4f4|\"C#6\"e4f4e4d4c4z4c4c4|\nV: Ins\nZ4|\nV: Vocal\n\"B\"d4d4d4d4d4z4c4A4|\"A#m\"c4A4c4g4f4f4z4c4|\"G#m7\"a4a4a4b4c'4f4f4a4|\"C#\"a4g16z4f4g4|\nV: Ins\nZ4|\nV: Vocal\n\"F#\"a4c4f4a4a4z4g4f4|\"A#m7\"g4c'4c'4c'4c'4z4f4e4|\"D#m7\"f4f4f4f4f4z4e4f4|\"C#6\"e4f4e4d4c4z4c4c4|\nV: Ins\nZ4|\nV: Vocal\n\"B\"d4F4B4d4d4z4c4A4|\"A#m\"c4A4c4g4f4f4z4c4|\"G#m7\"b8b4a4\"C#sus4\"b4c'4f4g4|\"F#\"z4g4f16z8|\nV: Ins\nZ4|\n% outro\nV: Vocal\n\"F#\"z32|\"C#/E#\"z32|\"D#m7\"z32|\"Bsus2\"z32|\nV: Ins\na16z8a4g4-|g16-g4z4g4f4-|f16-f4z12|b8c'2z2c'16z4|\nV: Vocal\n\"F#\"z32|\"F#\"z32|\nV: Ins\nf'32|Z|\n",
+        "tags": "New Orleans brass-funk, second-line drums, sousaphone, honky-tonk piano, trombone and baritone sax, playful Mandarin duet, 115 BPM\n",
+        "lyrics": "[Chorus]\n我们一起学狗叫 一起汪汪汪汪汪\n在你门前摇尾巴 快来汪汪汪汪汪\n我的脚步咚咚响 追着飞盘满街跑\n不带我出门我就汪汪汪\n\n[Verse]\n每天我都等你带我跑\n守在门边数着每分每秒\n外面今天多热闹 风儿比我更知道\n我就是你的小保镖\n\n[Verse]\n有时候我馋得像头熊\n听见塑料袋就满屋乱跑\n你总说等等 可我已经冲到大门口\n今天也要当只快乐狗\n\n[Chorus]\n我们一起学狗叫 一起汪汪汪汪汪\n在你门前摇尾巴 快来汪汪汪汪汪\n我的脚步咚咚响 追着飞盘满街跑\n不带我出门我就汪汪汪\n我们一起学狗叫 一起汪汪汪汪汪\n我要叼你的外套 闻见出门的味道\n想要追着你的球 跑到草地上睡着\n每天都惦记那根骨头\n\n[Verse]\n黄昏后我跑得一身土\n你拿毛巾追我满屋乱跑\n你说慢一点 我却摇着尾巴装不懂\n今晚还要当只香香狗\n\n[Chorus]\n我们一起学狗叫 一起汪汪汪汪汪\n在你门前摇尾巴 快来汪汪汪汪汪\n我的脚步咚咚响 追着飞盘满街跑\n不带我出门我就汪汪汪\n我们一起学狗叫 一起汪汪汪汪汪\n我要叼你的外套 闻见出门的味道\n想要追着你的球 跑到草地上睡着\n每天都惦记那根骨头\n\n[Chorus]\n我们终于跑回家 一起汪汪汪汪汪\n在你脚边摇尾巴 晚安汪汪汪汪汪\n我的呼噜轰轰响 梦里飞盘满天跑\n不许我上床我就汪汪汪\n我们明天还要跑 一起汪汪汪汪汪\n我要守着你外套 闻着安心的味道\n想要靠着你的脚 一直睡到天亮了\n每天都等着新的骨头\n",
+        "titleZh": "大狗叫",
+        "sourceTitleZh": "学猫叫",
+        "sourceUrl": "https://www.youtube.com/watch?v=8j-6PcuWiZI"
+      },
+      "official_audio_url": "https://map-yue2.github.io/assets/covers/dagoujiao-chord/dagoujiao-chord.mp3",
+      "official_audio_path": "outputs/official_fullsong/reference/dagoujiao-chord.mp3",
+      "official_audio_sha256": "7e446010ba7fec74807ccd6319033a31abdc9a736e7d814e0b3a05f8c169abac",
+      "official_seconds": 209.95866666666666,
+      "input_hashes": {
+        "style": "715e85409513674aef60538c2ca36daf31cfae0d837ff8fdb18fccaf9d73380e",
+        "lyrics": "c568830664579147e41838e288999a1e4e8205dc29558e04221143f3fb637f19",
+        "abc": "5ab5d44d9f58ad31466d02ac0c7a174e882c332015aa18b46973fd040641e88b"
+      }
+    },
+    {
+      "id": "cover_baikal",
+      "official_id": "baikal-lake-jazz",
+      "title": "Lake Baikal · Chinese Jazz Version",
+      "genre": "Jazz Ballad · 60 BPM",
+      "language": "zh",
+      "score_mode": "supplied",
+      "request": {
+        "id": "cover_baikal",
+        "style": "Jazz ballad, brushed drums, upright bass, warm piano, muted trumpet, intimate Mandarin male vocal, 60 BPM\n",
+        "lyrics": "[Verse]\n在我的怀里\n在你的眼里\n那里春风沉醉\n那里绿草如茵\n月光把爱恋\n洒满了湖面\n两个人的篝火\n照亮整个夜晚\n\n[Chorus]\n多少年以后\n如云般游走\n那变换的脚步\n让我们难牵手\n这一生一世\n有多少你我\n被吞没在月光\n如水的夜里\n\n[Post-Chorus]\n多想某一天\n往日又重现\n我们流连忘返\n在贝加尔湖畔\n\n[Chorus]\n多少年以后\n往事随云走\n那纷飞的冰雪\n容不下那温柔\n这一生一世\n这时间太少\n不够证明融化\n冰雪的深情\n\n[Post-Chorus]\n就在某一天\n你忽然出现\n你清澈又神秘\n在贝加尔湖畔\n你清澈又神秘\n像贝加尔湖畔\n",
+        "cot": "full",
+        "seed": 2026,
+        "abc": "X:1\nT:\nM:2/4\nL:1/16\nQ:1/4=60\nV: Vocal clef=treble name=\"Vocal Melody\" snm=\"Vocal\"\nV: Ins clef=treble name=\"Ins Melody\" snm=\"Inst.\"\nK:F\n% intro\nV: Vocal\nZ2|\"Gm\"z8|\"C\"z8|\nV: Ins\nZ|z2def2c'2|b8|z2cde2b2|\nV: Vocal\n\"Fmaj7\"z8|\"D\"z8|\"Gm\"z8|\"A7\"z8|\nV: Ins\na8|z2A2d2c2|B3AG4|G2E2A2G2|\nV: Vocal\n\"Dm\"z8|\nV: Ins\nd8|\n% verse\nV: Vocal\n\"Dm\"z2DEF2c2|\nV: Ins\nZ|\nV: Vocal\n\"Gm\"B4z4|\"C\"z2CDE2B2|\"Fmaj7\"A4z4|\"D\"z2AAd2c2|\nV: Ins\nZ4|\nV: Vocal\n\"Gm\"B2G2z3F|\"C\"E2FG3B2|\"Fmaj7\"A4z4|\"Dm\"z2DEF2c2|\nV: Ins\nZ4|\nV: Vocal\n\"Gm\"B4z4|\"C\"z2CDE2B2|\"Fmaj7\"A4z4|\"D\"z2AAd2c2|\nV: Ins\nZ4|\nV: Vocal\n\"Gm\"B2G2z3F|\"A7\"E2AG3FE|\"Dm\"D2DDD2d2|\nV: Ins\nZ3|\n% chorus\nV: Vocal\n\"Bb\"d6z2|\"Bb\"z2Ddc2dc|\"Fmaj7\"A4z4|\"Fmaj7\"z2AAd2c2|\nV: Ins\nZ4|\nV: Vocal\n\"Gm\"B2G2z3F|\"C\"E2FG3B2|\"Fmaj7\"A6z2|\"Fmaj7\"z2DDD2d2|\nV: Ins\nZ4|\nV: Vocal\n\"Bb\"d8|\"Bb\"z2deggf2|\"Fmaj7\"A6z2|\"Fmaj7\"z2AAd2c2|\nV: Ins\nZ4|\nV: Vocal\n\"Gm\"B2G4z2|\"C\"c2de3e2|\"Fmaj7\"a8|\"A\"e8|\nV: Ins\nZ4|\nV: Vocal\n\"A\"z8|\"Dm\"z2DEF2c2|\nV: Ins\nZ2|\n% post-chorus\nV: Vocal\n\"Gm\"B4z4|\"C\"z2CDE2B2|\"Fmaj7\"A4z4|\"D\"z2AAd2cB-|\nV: Ins\nZ4|\nV: Vocal\n\"Gm\"BGG2z3E|\"A\"E2AG3F2|\"Dm\"D4z4|\"Dm\"z8|\nV: Ins\nZ2|z4fdAF|D2DEF2c2|\n% interlude\nV: Vocal\n\"Gm\"z8|\"C\"z8|\"Fmaj7\"z8|\"D\"z8|\nV: Ins\nB8|z2cde2b2|a8|z2AAB2a^g|\nV: Vocal\n\"Gm\"z8|\"C\"z8|\"Fmaj7\"z8|\"A\"z8|\nV: Ins\ng6f2|e2fg3c'=b|a8|z2dfad'2^c'|\nV: Vocal\n\"Gm\"z8|\"C\"z8|\"Fmaj7\"z8|\"D\"z8|\nV: Ins\nd'2DGBd2^c|d3d'e'4|c'8|z2d^fad'2c'|\nV: Vocal\n\"Gm\"z8|\"A7\"z8|\"Dm\"z8|\nV: Ins\nb6a2|g2e2a2g2|d'd'^c'd'a'f'd'a|\n% chorus\nV: Vocal\n\"Dm\"z2DD\"Dm7/C\"D2d2|\nV: Ins\nf^cz6|\nV: Vocal\n\"Bb\"d6z2|\"Bb\"z2Ddc2e2-|\"Fmaj7\"e2A4z2|\"Fmaj7\"z2AAd2c2|\nV: Ins\nZ4|\nV: Vocal\n\"Gm\"B2G2z3F|\"C\"E2FG3B2|\"Fmaj7\"A6z2|\"Fmaj7\"z2DDD2d2|\nV: Ins\nZ4|\nV: Vocal\n\"Bb\"d6z2|\"Bb\"z2deggf2|\"Fmaj7\"A6z2|\"Fmaj7\"z2AAd2c2|\nV: Ins\nZ4|\nV: Vocal\n\"Gm\"B2G4z2|\"C\"c2de3e2|\"Fmaj7\"a6gf|\"A7\"e8|\nV: Ins\nZ4|\nV: Vocal\n\"A7\"z8|\"A7\"z2DEF2c2|\nV: Ins\nZ2|\n% post-chorus\nV: Vocal\n\"Gm\"B4z4|\"C\"z2CDE2B2|\"Fmaj7\"A4z4|\"Dm7\"z2AA\"D7\"d2c2|\nV: Ins\nZ4|\nV: Vocal\n\"Gm\"B2G2z3E|\"A7\"E2AG3E2|\"Dm\"D4z4|\"Dm\"z2AAd2c2|\nV: Ins\nZ2|z4fdAF|D2z6|\nV: Vocal\n\"Gm\"B2G2z3E|\"A7\"EE2GG4|\"A7\"z4FF3-|\"Dm\"FDD4z2|\nV: Ins\nZ4|\n% outro\nV: Vocal\n\"Dm\"z8|\"Dm\"z8|\"Dm\"z4\"D\"z4|\nV: Ins\nZ3|\nV: Vocal\n\"D\"z4\"Dsus2\"z4|\"Dsus2\"z4\"Dm\"z4|\"Dm\"z8|\"Dm\"z8|\nV: Ins\nZ4|\nV: Vocal\n\"Dm\"z8|\"Dm\"z8|\"Dm\"z8|\nV: Ins\nZ3|\n"
+      },
+      "official_mode": "cover/edit",
+      "source": {
+        "id": "baikal-lake-jazz",
+        "title": "Lake Baikal · Chinese Jazz Version",
+        "genre": "Jazz Ballad · 60 BPM",
+        "source": "Adapted from Li Jian's Lake Baikal",
+        "editType": "Style rearrangement",
+        "audio": "assets/covers/baikal-lake-jazz/baikal-lake-jazz.mp3",
+        "abcUrl": "assets/covers/baikal-lake-jazz/baikal-lake-jazz.abc",
+        "abc": "X:1\nT:\nM:2/4\nL:1/16\nQ:1/4=60\nV: Vocal clef=treble name=\"Vocal Melody\" snm=\"Vocal\"\nV: Ins clef=treble name=\"Ins Melody\" snm=\"Inst.\"\nK:F\n% intro\nV: Vocal\nZ2|\"Gm\"z8|\"C\"z8|\nV: Ins\nZ|z2def2c'2|b8|z2cde2b2|\nV: Vocal\n\"Fmaj7\"z8|\"D\"z8|\"Gm\"z8|\"A7\"z8|\nV: Ins\na8|z2A2d2c2|B3AG4|G2E2A2G2|\nV: Vocal\n\"Dm\"z8|\nV: Ins\nd8|\n% verse\nV: Vocal\n\"Dm\"z2DEF2c2|\nV: Ins\nZ|\nV: Vocal\n\"Gm\"B4z4|\"C\"z2CDE2B2|\"Fmaj7\"A4z4|\"D\"z2AAd2c2|\nV: Ins\nZ4|\nV: Vocal\n\"Gm\"B2G2z3F|\"C\"E2FG3B2|\"Fmaj7\"A4z4|\"Dm\"z2DEF2c2|\nV: Ins\nZ4|\nV: Vocal\n\"Gm\"B4z4|\"C\"z2CDE2B2|\"Fmaj7\"A4z4|\"D\"z2AAd2c2|\nV: Ins\nZ4|\nV: Vocal\n\"Gm\"B2G2z3F|\"A7\"E2AG3FE|\"Dm\"D2DDD2d2|\nV: Ins\nZ3|\n% chorus\nV: Vocal\n\"Bb\"d6z2|\"Bb\"z2Ddc2dc|\"Fmaj7\"A4z4|\"Fmaj7\"z2AAd2c2|\nV: Ins\nZ4|\nV: Vocal\n\"Gm\"B2G2z3F|\"C\"E2FG3B2|\"Fmaj7\"A6z2|\"Fmaj7\"z2DDD2d2|\nV: Ins\nZ4|\nV: Vocal\n\"Bb\"d8|\"Bb\"z2deggf2|\"Fmaj7\"A6z2|\"Fmaj7\"z2AAd2c2|\nV: Ins\nZ4|\nV: Vocal\n\"Gm\"B2G4z2|\"C\"c2de3e2|\"Fmaj7\"a8|\"A\"e8|\nV: Ins\nZ4|\nV: Vocal\n\"A\"z8|\"Dm\"z2DEF2c2|\nV: Ins\nZ2|\n% post-chorus\nV: Vocal\n\"Gm\"B4z4|\"C\"z2CDE2B2|\"Fmaj7\"A4z4|\"D\"z2AAd2cB-|\nV: Ins\nZ4|\nV: Vocal\n\"Gm\"BGG2z3E|\"A\"E2AG3F2|\"Dm\"D4z4|\"Dm\"z8|\nV: Ins\nZ2|z4fdAF|D2DEF2c2|\n% interlude\nV: Vocal\n\"Gm\"z8|\"C\"z8|\"Fmaj7\"z8|\"D\"z8|\nV: Ins\nB8|z2cde2b2|a8|z2AAB2a^g|\nV: Vocal\n\"Gm\"z8|\"C\"z8|\"Fmaj7\"z8|\"A\"z8|\nV: Ins\ng6f2|e2fg3c'=b|a8|z2dfad'2^c'|\nV: Vocal\n\"Gm\"z8|\"C\"z8|\"Fmaj7\"z8|\"D\"z8|\nV: Ins\nd'2DGBd2^c|d3d'e'4|c'8|z2d^fad'2c'|\nV: Vocal\n\"Gm\"z8|\"A7\"z8|\"Dm\"z8|\nV: Ins\nb6a2|g2e2a2g2|d'd'^c'd'a'f'd'a|\n% chorus\nV: Vocal\n\"Dm\"z2DD\"Dm7/C\"D2d2|\nV: Ins\nf^cz6|\nV: Vocal\n\"Bb\"d6z2|\"Bb\"z2Ddc2e2-|\"Fmaj7\"e2A4z2|\"Fmaj7\"z2AAd2c2|\nV: Ins\nZ4|\nV: Vocal\n\"Gm\"B2G2z3F|\"C\"E2FG3B2|\"Fmaj7\"A6z2|\"Fmaj7\"z2DDD2d2|\nV: Ins\nZ4|\nV: Vocal\n\"Bb\"d6z2|\"Bb\"z2deggf2|\"Fmaj7\"A6z2|\"Fmaj7\"z2AAd2c2|\nV: Ins\nZ4|\nV: Vocal\n\"Gm\"B2G4z2|\"C\"c2de3e2|\"Fmaj7\"a6gf|\"A7\"e8|\nV: Ins\nZ4|\nV: Vocal\n\"A7\"z8|\"A7\"z2DEF2c2|\nV: Ins\nZ2|\n% post-chorus\nV: Vocal\n\"Gm\"B4z4|\"C\"z2CDE2B2|\"Fmaj7\"A4z4|\"Dm7\"z2AA\"D7\"d2c2|\nV: Ins\nZ4|\nV: Vocal\n\"Gm\"B2G2z3E|\"A7\"E2AG3E2|\"Dm\"D4z4|\"Dm\"z2AAd2c2|\nV: Ins\nZ2|z4fdAF|D2z6|\nV: Vocal\n\"Gm\"B2G2z3E|\"A7\"EE2GG4|\"A7\"z4FF3-|\"Dm\"FDD4z2|\nV: Ins\nZ4|\n% outro\nV: Vocal\n\"Dm\"z8|\"Dm\"z8|\"Dm\"z4\"D\"z4|\nV: Ins\nZ3|\nV: Vocal\n\"D\"z4\"Dsus2\"z4|\"Dsus2\"z4\"Dm\"z4|\"Dm\"z8|\"Dm\"z8|\nV: Ins\nZ4|\nV: Vocal\n\"Dm\"z8|\"Dm\"z8|\"Dm\"z8|\nV: Ins\nZ3|\n",
+        "tags": "Jazz ballad, brushed drums, upright bass, warm piano, muted trumpet, intimate Mandarin male vocal, 60 BPM\n",
+        "lyrics": "[Verse]\n在我的怀里\n在你的眼里\n那里春风沉醉\n那里绿草如茵\n月光把爱恋\n洒满了湖面\n两个人的篝火\n照亮整个夜晚\n\n[Chorus]\n多少年以后\n如云般游走\n那变换的脚步\n让我们难牵手\n这一生一世\n有多少你我\n被吞没在月光\n如水的夜里\n\n[Post-Chorus]\n多想某一天\n往日又重现\n我们流连忘返\n在贝加尔湖畔\n\n[Chorus]\n多少年以后\n往事随云走\n那纷飞的冰雪\n容不下那温柔\n这一生一世\n这时间太少\n不够证明融化\n冰雪的深情\n\n[Post-Chorus]\n就在某一天\n你忽然出现\n你清澈又神秘\n在贝加尔湖畔\n你清澈又神秘\n像贝加尔湖畔\n",
+        "titleZh": "贝加尔湖畔",
+        "sourceTitleZh": "贝加尔湖畔",
+        "sourceUrl": "https://www.youtube.com/watch?v=G6ZS7ho5PXM"
+      },
+      "official_audio_url": "https://map-yue2.github.io/assets/covers/baikal-lake-jazz/baikal-lake-jazz.mp3",
+      "official_audio_path": "outputs/official_fullsong/reference/baikal-lake-jazz.mp3",
+      "official_audio_sha256": "7c173f2ac175464ce6e79a00ce04d9129d9952a4f259d7db34bd9fd460ad0f31",
+      "official_seconds": 216.91866666666667,
+      "input_hashes": {
+        "style": "a00129bd207df13d9d9332960b753841ace01f20795f2638247a52766fd5ea35",
+        "lyrics": "19f39390ce308f17fada15d875b87b82fca0dfcd3e05f0dd80332fff7fdc76ac",
+        "abc": "7a27f36d4b5eac197e11596233c29a20f960095dc95302e1d06a84c87533f3c8"
+      }
+    },
+    {
+      "id": "cover_birthday",
+      "official_id": "happy-birthday-heavy-metal",
+      "title": "Happy Birthday · Heavy-Metal Scream Version",
+      "genre": "Heavy Metal · 160 BPM",
+      "language": "en",
+      "score_mode": "supplied",
+      "request": {
+        "id": "cover_birthday",
+        "style": "heavy metal, harsh screamed vocals, distorted guitars, double-kick drums, 160 BPM\n",
+        "lyrics": "[Chorus]\nHAPPY BIRTHDAY TO YOU!!!\nHAPPY BIRTHDAY TO YOU!!!\nHAPPY BIRTHDAY, DEAR FRIEND!!!\nHAPPY BIRTHDAY TO YOU!!!\n\n[Chorus]\nHAPPY BIRTHDAY TO YOU!!!\nHAPPY BIRTHDAY TO YOU!!!\nHAPPY BIRTHDAY, DEAR FRIEND!!!\nHAPPY BIRTHDAY TO YOU!!!\n\n[Chorus]\nHAPPY BIRTHDAY TO YOU!!!\nHAPPY BIRTHDAY TO YOU!!!\nHAPPY BIRTHDAY, DEAR FRIEND!!!\nHAPPY BIRTHDAY TO YOU!!!\n\n[Chorus]\nHAPPY BIRTHDAY TO YOU!!!\nHAPPY BIRTHDAY TO YOU!!!\nHAPPY BIRTHDAY, DEAR FRIEND!!!\nHAPPY BIRTHDAY TO YOU!!!\n\n[Chorus]\nHAPPY BIRTHDAY TO YOU!!!\nHAPPY BIRTHDAY TO YOU!!!\nHAPPY BIRTHDAY, DEAR FRIEND!!!\nHAPPY BIRTHDAY TO YOU!!!\n",
+        "cot": "full",
+        "seed": 2026,
+        "abc": "X:1\nT:\nM:3/4\nL:1/32\nQ:1/4=160\nV: Vocal clef=treble name=\"Vocal Melody\" snm=\"Vocal\"\nV: Ins clef=treble name=\"Ins Melody\" snm=\"Inst.\"\nK:F\n% silence\nV: Vocal\nZ3|\nV: Ins\nZ3|\n% intro\nV: Vocal\nZ|\"F\"z24|\"Bb\"z24|\"F/C\"z16\"C7\"z8|\nV: Ins\nz16c4z4|c'8a8f8|e8d8b6b2|a8f8g8|\n% chorus\nV: Vocal\n\"F\"z16c6c2|\"F\"d8c8f8|\"C\"e12z4c6c2|\"C\"d8c8g8|\nV: Ins\nf16z8|Z|Z|Z|\nV: Vocal\n\"F\"f12z4c6c2|\"F\"c'8a8f8|\"Bb\"e8d4z4b6b2|\"F/C\"a8f8\"C7\"g8|\nV: Ins\nZ4|\nV: Vocal\n\"F\"f8z8c6c2|\nV: Ins\nZ|\n% chorus\nV: Vocal\n\"F\"d8c8f8|\"C\"e12z4c6c2|\"C\"d8c8g8|\"F\"f8z8c6c2|\nV: Ins\nZ4|\nV: Vocal\n\"F\"c'8a8f6f2|\"Bb\"e8d8b6b2|\"F/C\"a8f8\"C7\"g8|\"F\"f12z12|\nV: Ins\nZ|Z|Z|z16c4z2c2|\n% interlude\nV: Vocal\n\"F\"z24|\"C\"z24|\"C\"z24|\"F\"z24|\nV: Ins\nd8c8f8|e16c4z2c2|d8c8g8|f16c4z2c2|\nV: Vocal\n\"F\"z24|\"Bb\"z24|\"F/C\"z16\"C7\"z8|\nV: Ins\nc'8a8f6f2|e8d8b6b2|a8f8g8|\n% chorus\nV: Vocal\n\"F\"z16c6c2|\"F\"d8c8f8|\"C\"e12z4c6c2|\"C\"d8c8g8|\nV: Ins\nf16z8|Z|Z|Z|\nV: Vocal\n\"F\"f12z4c6c2|\"F\"c'8a8f8|\"Bb\"e8d4z4b6b2|\"F/C\"a8f8\"C7\"g8|\nV: Ins\nZ4|\nV: Vocal\n\"F\"f12z4c6c2|\nV: Ins\nZ|\n% chorus\nV: Vocal\n\"F\"d8c8f8|\"C\"e8z8c6c2|\"C\"d8c8g8|\"F\"f8z8c6c2|\nV: Ins\nZ4|\nV: Vocal\n\"F\"c'8a8f6f2|\"Bb\"e8d8b6b2|\"F/C\"a8f8\"C7\"g8|\"F\"f12z4c6c2|\nV: Ins\nZ4|\n% chorus\nV: Vocal\n\"F\"d8c8f8|\"C\"e8z8c6c2|\"C\"d8c8g8|\"F\"f12z4c6c2|\nV: Ins\nZ4|\nV: Vocal\n\"F\"c'8a8f8|\"Bb\"e8d4z4b6b2|\"F/C\"a8f8\"C7\"g8|\"F\"f24|\nV: Ins\nZ4|\n% outro\nV: Vocal\n\"F\"z24|\"F\"z24|\nV: Ins\nZ2|\n"
+      },
+      "official_mode": "cover/edit",
+      "source": {
+        "id": "happy-birthday-heavy-metal",
+        "title": "Happy Birthday · Heavy-Metal Scream Version",
+        "genre": "Heavy Metal · 160 BPM",
+        "source": "Adapted from Happy Birthday to You",
+        "editType": "Tempo change: 97 → 160 BPM · Style rearrangement",
+        "audio": "assets/covers/happy-birthday-heavy-metal/happy-birthday-heavy-metal.mp3",
+        "abcUrl": "assets/covers/happy-birthday-heavy-metal/happy-birthday-heavy-metal.abc",
+        "abc": "X:1\nT:\nM:3/4\nL:1/32\nQ:1/4=160\nV: Vocal clef=treble name=\"Vocal Melody\" snm=\"Vocal\"\nV: Ins clef=treble name=\"Ins Melody\" snm=\"Inst.\"\nK:F\n% silence\nV: Vocal\nZ3|\nV: Ins\nZ3|\n% intro\nV: Vocal\nZ|\"F\"z24|\"Bb\"z24|\"F/C\"z16\"C7\"z8|\nV: Ins\nz16c4z4|c'8a8f8|e8d8b6b2|a8f8g8|\n% chorus\nV: Vocal\n\"F\"z16c6c2|\"F\"d8c8f8|\"C\"e12z4c6c2|\"C\"d8c8g8|\nV: Ins\nf16z8|Z|Z|Z|\nV: Vocal\n\"F\"f12z4c6c2|\"F\"c'8a8f8|\"Bb\"e8d4z4b6b2|\"F/C\"a8f8\"C7\"g8|\nV: Ins\nZ4|\nV: Vocal\n\"F\"f8z8c6c2|\nV: Ins\nZ|\n% chorus\nV: Vocal\n\"F\"d8c8f8|\"C\"e12z4c6c2|\"C\"d8c8g8|\"F\"f8z8c6c2|\nV: Ins\nZ4|\nV: Vocal\n\"F\"c'8a8f6f2|\"Bb\"e8d8b6b2|\"F/C\"a8f8\"C7\"g8|\"F\"f12z12|\nV: Ins\nZ|Z|Z|z16c4z2c2|\n% interlude\nV: Vocal\n\"F\"z24|\"C\"z24|\"C\"z24|\"F\"z24|\nV: Ins\nd8c8f8|e16c4z2c2|d8c8g8|f16c4z2c2|\nV: Vocal\n\"F\"z24|\"Bb\"z24|\"F/C\"z16\"C7\"z8|\nV: Ins\nc'8a8f6f2|e8d8b6b2|a8f8g8|\n% chorus\nV: Vocal\n\"F\"z16c6c2|\"F\"d8c8f8|\"C\"e12z4c6c2|\"C\"d8c8g8|\nV: Ins\nf16z8|Z|Z|Z|\nV: Vocal\n\"F\"f12z4c6c2|\"F\"c'8a8f8|\"Bb\"e8d4z4b6b2|\"F/C\"a8f8\"C7\"g8|\nV: Ins\nZ4|\nV: Vocal\n\"F\"f12z4c6c2|\nV: Ins\nZ|\n% chorus\nV: Vocal\n\"F\"d8c8f8|\"C\"e8z8c6c2|\"C\"d8c8g8|\"F\"f8z8c6c2|\nV: Ins\nZ4|\nV: Vocal\n\"F\"c'8a8f6f2|\"Bb\"e8d8b6b2|\"F/C\"a8f8\"C7\"g8|\"F\"f12z4c6c2|\nV: Ins\nZ4|\n% chorus\nV: Vocal\n\"F\"d8c8f8|\"C\"e8z8c6c2|\"C\"d8c8g8|\"F\"f12z4c6c2|\nV: Ins\nZ4|\nV: Vocal\n\"F\"c'8a8f8|\"Bb\"e8d4z4b6b2|\"F/C\"a8f8\"C7\"g8|\"F\"f24|\nV: Ins\nZ4|\n% outro\nV: Vocal\n\"F\"z24|\"F\"z24|\nV: Ins\nZ2|\n",
+        "tags": "heavy metal, harsh screamed vocals, distorted guitars, double-kick drums, 160 BPM\n",
+        "lyrics": "[Chorus]\nHAPPY BIRTHDAY TO YOU!!!\nHAPPY BIRTHDAY TO YOU!!!\nHAPPY BIRTHDAY, DEAR FRIEND!!!\nHAPPY BIRTHDAY TO YOU!!!\n\n[Chorus]\nHAPPY BIRTHDAY TO YOU!!!\nHAPPY BIRTHDAY TO YOU!!!\nHAPPY BIRTHDAY, DEAR FRIEND!!!\nHAPPY BIRTHDAY TO YOU!!!\n\n[Chorus]\nHAPPY BIRTHDAY TO YOU!!!\nHAPPY BIRTHDAY TO YOU!!!\nHAPPY BIRTHDAY, DEAR FRIEND!!!\nHAPPY BIRTHDAY TO YOU!!!\n\n[Chorus]\nHAPPY BIRTHDAY TO YOU!!!\nHAPPY BIRTHDAY TO YOU!!!\nHAPPY BIRTHDAY, DEAR FRIEND!!!\nHAPPY BIRTHDAY TO YOU!!!\n\n[Chorus]\nHAPPY BIRTHDAY TO YOU!!!\nHAPPY BIRTHDAY TO YOU!!!\nHAPPY BIRTHDAY, DEAR FRIEND!!!\nHAPPY BIRTHDAY TO YOU!!!\n",
+        "titleZh": "",
+        "sourceTitleZh": "",
+        "sourceUrl": "https://www.youtube.com/watch?v=c-v-7JRisLA"
+      },
+      "official_audio_url": "https://map-yue2.github.io/assets/covers/happy-birthday-heavy-metal/happy-birthday-heavy-metal.mp3",
+      "official_audio_path": "outputs/official_fullsong/reference/happy-birthday-heavy-metal.mp3",
+      "official_audio_sha256": "9cd75cf90c4d4700f2105a3c5260a4f0b367ffa9bd035e232b05f44c9085a4cb",
+      "official_seconds": 63.91866666666667,
+      "input_hashes": {
+        "style": "7f5bbe57542658ac60c555fd8c6a2e45ada7053cdf32a29030696e6b94f90408",
+        "lyrics": "202e34e83192ab5b422a8e571929ac340c3900ba516c066499e89a25908c306c",
+        "abc": "ab387a14ffed0cfad3073164a4d45d6a9428a92fc659dce67d291ee3a325a346"
+      }
+    },
+    {
+      "id": "audio_to_cover",
+      "official_id": "1b91eef30046ca2f0cf5633e",
+      "title": "Easy Listening",
+      "genre": "Easy Listening",
+      "language": "ja",
+      "score_mode": "transcribed",
+      "request": {
+        "id": "audio_to_cover",
+        "style": "A gentle and melancholic piece beginning with a delicate piano melody and a breathy, expressive flute line. A soft, clear female vocal enters, singing in a gentle, almost lullaby-like style. The arrangement gradually builds, introducing a subtle, downtempo lo-fi hip-hop beat with a soft kick and snare, complemented by a warm bassline and atmospheric synth pads. The track maintains a tranquil and introspective mood throughout, with the piano and flute weaving in and out, creating a serene soundscape perfect for relaxation or contemplation. The song concludes with a beautiful instrumental outro featuring the piano and flute, fading into silence.",
+        "lyrics": "[Intro: Piano & Flute]\n\n[Verse 1]\n静かな森 歩み寄る\n木々のざわめき 聞こえる音\n陽射しが揺れて 影踊る\n心は軽く 自由になる\n\n[Verse 2]\n風が通り 抱きしめるように\n葉は止ま 語る古い物語\n小鳥の歌が 空を仰ぎ\nその音色だけ 生きている\n\n[Chorus]\n森の中で 消えてゆく\n小さな悩み 風に乗る\n心地良い緑 包まれて\n私は癒され 生まれ変わる\n\n[Instrumental Break: Piano, Flute, Drums]\n\n[Verse 3]\n土の匂いが 深く染みる\n地球の鼓動 感じている\n目を閉じ夜明けを 夢見て\n自然と溶ける 虚無する\n\n[Verse 4]\n月の光が ゆっくりと\n静けさ抱え 手ら知ってる\n心がささやく 小さな声\n森のリズムで 調和化する\n\n[Chorus]\n森の中で 消えてゆく\n小さな悩み 風に乗る\n心地良い緑 包まれて\n私は癒され 生まれ変わる\n\n[Outro: Piano & Flute]",
+        "cot": "full",
+        "seed": 2026
+      },
+      "official_mode": "planned",
+      "source": {
+        "id": "1b91eef30046ca2f0cf5633e",
+        "order": 0,
+        "collection": "genre",
+        "title": "Easy Listening",
+        "genre": "Easy Listening",
+        "genrePath": [
+          "Easy Listening"
+        ],
+        "language": "ja",
+        "languageLabel": "Japanese",
+        "mode": "planned",
+        "tags": "A gentle and melancholic piece beginning with a delicate piano melody and a breathy, expressive flute line. A soft, clear female vocal enters, singing in a gentle, almost lullaby-like style. The arrangement gradually builds, introducing a subtle, downtempo lo-fi hip-hop beat with a soft kick and snare, complemented by a warm bassline and atmospheric synth pads. The track maintains a tranquil and introspective mood throughout, with the piano and flute weaving in and out, creating a serene soundscape perfect for relaxation or contemplation. The song concludes with a beautiful instrumental outro featuring the piano and flute, fading into silence.",
+        "lyrics": "[Intro: Piano & Flute]\n\n[Verse 1]\n静かな森 歩み寄る\n木々のざわめき 聞こえる音\n陽射しが揺れて 影踊る\n心は軽く 自由になる\n\n[Verse 2]\n風が通り 抱きしめるように\n葉は止ま 語る古い物語\n小鳥の歌が 空を仰ぎ\nその音色だけ 生きている\n\n[Chorus]\n森の中で 消えてゆく\n小さな悩み 風に乗る\n心地良い緑 包まれて\n私は癒され 生まれ変わる\n\n[Instrumental Break: Piano, Flute, Drums]\n\n[Verse 3]\n土の匂いが 深く染みる\n地球の鼓動 感じている\n目を閉じ夜明けを 夢見て\n自然と溶ける 虚無する\n\n[Verse 4]\n月の光が ゆっくりと\n静けさ抱え 手ら知ってる\n心がささやく 小さな声\n森のリズムで 調和化する\n\n[Chorus]\n森の中で 消えてゆく\n小さな悩み 風に乗る\n心地良い緑 包まれて\n私は癒され 生まれ変わる\n\n[Outro: Piano & Flute]",
+        "abc": "X:1\nT:\nM:4/4\nL:1/16\nQ:1/4=85\nV: Vocal clef=treble name=\"Vocal Melody\" snm=\"Vocal\"\nV: Ins clef=treble name=\"Ins Melody\" snm=\"Inst.\"\nK:D#m\n% intro\nV: Vocal\nz8\"Bmaj7\"z8|\"Bmaj7\"z16|\"C#\"z16|\"D#m7\"z16|\nV: Ins\nz12z3a|a3c'3g6f2a2|g3c'3e8z2|e3f3c8Ac|\nV: Vocal\n\"D#m7\"z16|\"Bmaj7\"z16|\"C#\"z16|\"D#m7\"z16|\nV: Ins\ne3f3c4f2e2c2|a3c'3g6f2a2|g3c'3e4f2e2c2|e3f3c8Ac|\nV: Vocal\n\"D#m7\"z8z2d2f2g2|\nV: Ins\ne3f3c4z6|\n% verse\nV: Vocal\n\"Bmaj7\"a2dd3z4d2f2a2|\"C#\"g3c3z4c2d2e2|\"D#m7\"e2fe2c2cc2AA3GA-|\"D#m7\"A2z8d2f2g2|\nV: Ins\nZ4|\nV: Vocal\n\"Bmaj7\"a3d3cd3d2f2a2|\"C#\"g3c3z4c2d2e2|\"D#m7\"e2fe2c2cc2AA3GA-|\"D#m7\"A2z8d2f2g2|\nV: Ins\nZ4|\nV: Vocal\n\"Bmaj7\"a3d3cd3d2f2a2|\"C#\"g3c3z4c2d2e2|\"D#m7\"e2fe2c2cc2A2A2G2|\"D#m7\"G3c3A2z2d2f2g2|\nV: Ins\nZ4|\nV: Vocal\n\"Bmaj7\"a3d3cd3d2f2a2|\"C#\"g3c3e4z4c2|\"D#m7\"d3e3f2g3f3e2|\"D#m7\"e3f3e4d2d4|\nV: Ins\nZ4|\nV: Vocal\n\"D#m7\"z8z2d2a2g2|\nV: Ins\nZ|\n% chorus\nV: Vocal\n\"Bmaj7\"a3c'3g2-\"C#\"g2a2g2f2|\"D#m7\"e3c4z3d2a2g2|\"Bmaj7\"a3c'3g2-\"C#\"g2a2g2f2|\"D#m7\"g3a4z3d2a2g2|\nV: Ins\nZ4|\nV: Vocal\n\"Bmaj7\"a3c'3g2-\"C#\"g2a2g2f2|\"D#m7\"g3c'3a4z4de|\"Bmaj7\"f2f2f2a2\"C#\"g3f3e2|\"D#m7\"e3f3e4d2d4|\nV: Ins\nZ4|\n% interlude\nV: Vocal\n\"Bmaj7\"z16|\"C#\"z16|\"D#m7\"z16|\"D#m7\"z16|\nV: Ins\nz2d'c'c'aaggffeeddc|cddccAAGGFFEEDEC|D3A3A8-A2-|A6z8z2|\nV: Vocal\n\"Bmaj7\"z16|\"C#\"z16|\"D#m7\"z16|\"D#m7\"z8z2d2f2g2|\nV: Ins\nz2d'c'c'aaggffeeddc|cddccAAGGFFEEDEC|D3A3A8-A2-|A6z8z2|\n% verse\nV: Vocal\n\"Bmaj7\"a2dd2c3z2d2f2a2|\"C#\"g3c3e2z2c2d2e2|\"D#m7\"e2fe2c3c2AA3GA-|\"D#m7\"A2z8d2f2g2|\nV: Ins\nZ4|\nV: Vocal\n\"Bmaj7\"a3d3cd3d2f2a2|\"C#\"g3c4z4zd2e2|\"D#m7\"e3f3e4d4c2|\"D#m7\"e3f3e4d4z2|\nV: Ins\nZ4|\nV: Vocal\n\"Bmaj7\"z2aaa2gg2ff2z4|\"C#\"z2a2a2gg2c'4z3|\"D#m7\"z2aaa2gg2ff2z2e2|\"D#m7\"e3f3e4d4z2|\nV: Ins\nZ4|\nV: Vocal\n\"Bmaj7\"z2aaa2gggff4z2|\"C#\"z2a2a2gg2c'c'z4z|\"D#m7\"z2aaa2gggff4e2|\"D#m7\"e3f3e4d2d4|\nV: Ins\nZ4|\nV: Vocal\n\"D#m\"z8z2d2a2g2|\nV: Ins\nZ|\n% chorus\nV: Vocal\n\"Bmaj7\"a3c'3g2-\"C#\"g2a2g2f2|\"D#m7\"g3c4z3d2a2g2|\"Bmaj7\"a3c'3g2-\"C#\"g2a2g2f2|\"D#m7\"g3a4z3d2a2g2|\nV: Ins\nZ4|\nV: Vocal\n\"Bmaj7\"a3c'3g2-\"C#\"g2a2g2f2|\"D#m7\"g3c'3a4z4de|\"Bmaj7\"f2f2f2a2\"C#\"g3f3e2|\"D#m7\"e3f3e4d2d4|\nV: Ins\nZ4|\n% outro\nV: Vocal\n\"Bmaj7\"z8\"C#\"z8|\"D#m7\"z16|\"Bmaj7\"z8\"C#\"z8|\"D#m7\"z16|\nV: Ins\nz2d'c'c'aaggffeeddc|cddccAAGGFFEEDEC|D3A3A8-A2-|A6z8z2|\nV: Vocal\n\"Bmaj7\"z8\"C#\"z8|\"D#m7\"z16|\"Bmaj7\"z8\"C#\"z8|\"D#m7\"z16|\nV: Ins\nz2d'c'c'aaggffeeddc|cddccAAGGFFEEDEC|D3A3A8-A2-|A6z8z2|\nV: Vocal\n\"Bmaj7\"z16|\"C#\"z16|\"D#m7\"z16|\"D#m7\"z16|\nV: Ins\na3c'3g6f2a2|g3c'3e8z2|e3f3c8Ac|e3f3c8z2|\nV: Vocal\n\"D#m7\"z16|\nV: Ins\nZ|\n",
+        "abcUrl": "assets/genre/1b91eef30046ca2f0cf5633e/score.abc",
+        "audio": "assets/genre/1b91eef30046ca2f0cf5633e/1b91eef30046ca2f0cf5633e_music.mp3",
+        "scoreAudio": "assets/genre/1b91eef30046ca2f0cf5633e/1b91eef30046ca2f0cf5633e_score.mp3",
+        "sheets": [
+          "assets/genre/1b91eef30046ca2f0cf5633e/sheet_01.svg",
+          "assets/genre/1b91eef30046ca2f0cf5633e/sheet_02.svg",
+          "assets/genre/1b91eef30046ca2f0cf5633e/sheet_03.svg",
+          "assets/genre/1b91eef30046ca2f0cf5633e/sheet_04.svg"
+        ]
+      },
+      "official_audio_url": "https://map-yue2.github.io/assets/genre/1b91eef30046ca2f0cf5633e/1b91eef30046ca2f0cf5633e_music.mp3",
+      "official_audio_path": "outputs/official_fullsong/reference/1b91eef30046ca2f0cf5633e.mp3",
+      "official_audio_sha256": "55a3e96b7dd0266ec8163a6fc121491169e4cd9737e651931fae94b1a836507f",
+      "official_seconds": 221.76,
+      "input_hashes": {
+        "style": "e2d3e5319cc956c19f7f1a898c4ff1885046da07f2fc8b60ba006f595a607cca",
+        "lyrics": "b101b5240926d0a25ef27df79d9b262be1f1f22ae3b03520b8a5359f66ae360b"
+      },
+      "source_audio_url": "https://map-yue2.github.io/assets/genre/1b91eef30046ca2f0cf5633e/1b91eef30046ca2f0cf5633e_score.mp3",
+      "source_audio_path": "outputs/official_fullsong/reference/1b91eef30046ca2f0cf5633e-score.mp3",
+      "source_audio_sha256": "3172a644320a11511d36c541ea2115be388720a3a8693aee57b65334653947f8"
+    },
+    {
+      "id": "jazz_funk_score",
+      "official_id": "e3d76e66a92637ebb46e61ed",
+      "title": "Jazz-Funk",
+      "genre": "Jazz-Funk",
+      "language": "ja",
+      "score_mode": "supplied",
+      "request": {
+        "id": "jazz_funk_score",
+        "style": "funk",
+        "lyrics": "[Verse]\n姉が玉子焼き用の四角いフライパンで\n目玉焼きを焼いている\n合う蓋はないので\n横から湯気は洩れるが\n面白い発想に見えた\n\n僕は丸い小さめの普通のフライパンで\n目玉焼きを焼く\n\n[Pre-Chorus]\nかように遠くで暮らしていると\n癖やメソッドや好みが違う\n\n[Chorus]\n当たり前、当たり前、当たり前\nこれはAが優れてBが劣るというような\n問題ではないのだ\n\n[Bridge]\n君の一本道の進歩観を\n多々野辺のどこへともない道に\n考え直してみてはどうだろう",
+        "cot": "full",
+        "seed": 2026,
+        "abc": "X:1\nT:\nM:4/4\nL:1/32\nQ:1/4=116\nV: Vocal clef=treble name=\"Vocal Melody\" snm=\"Vocal\"\nV: Ins clef=treble name=\"Ins Melody\" snm=\"Inst.\"\nK:Em\n% intro\nV: Vocal\nz24z4\"Em\"z4|\"Em\"z32|\"Em\"z32|\"Em\"z32|\nV: Ins\nz24z4E4|E8G6A6^A4B4d2e2|E8G6A6^A4B4d2e2|E8G6A6^A4B4d2e2|\nV: Vocal\n\"Em\"z32|\"Em\"z16\"G6\"z16|\"Am7\"z16\"C\"z8\"B7\"z8|\"Em\"z16\"G6\"z16|\nV: Ins\ne4d4^A2=A2G4E4D4E8|E8z4D4G6G2z8|A6A2z8c4c4B2B6|E8z4D4G6G2z8|\nV: Vocal\n\"Am7\"z16\"C\"z8\"B7\"z8|\"Em\"z16\"G6\"z16|\"Am7\"z16\"C\"z8\"B7\"z8|\"Em\"z16\"G6\"z16|\nV: Ins\nA6A2z8c4c4B2B6|e8e2d2B2d4e12z2|A6A2z8c4c4B2B6|E8e2d2B2d4e12z2|\nV: Vocal\n\"Am7\"z16\"C\"z8\"B7\"z8|\nV: Ins\nA6A2z8c4c4B2B6|\n% verse\nV: Vocal\n\"Em\"e4d4B4A4\"G6\"A4G4E4D4|\"Am7\"E4D4E4D4\"C\"E4G4-\"B7\"G4E4|\"Em\"z4e4d4B4\"G6\"A4G4E4A4-|\"Am7\"A8G2G2B4-\"C\"B8\"B7\"z8|\nV: Ins\nZ4|\nV: Vocal\n\"Em\"e8B2B2B2A2-\"G6\"A2G2G8E2D2|\"Am7\"E2D2E2D2E4D2E2-\"C\"E2E2G4-\"B7\"G4z4|\"Em\"E4D4E4D4\"G6\"E4z4G8|\"Am7\"A4G4A4G4\"C\"B8\"B7\"z8|\nV: Ins\nZ4|\n% pre-chorus\nV: Vocal\n\"Cmaj7\"z8e8g8a8|\"B7\"z8e8g8a8|\"Em7\"b8a4g4a8g4a4-|\"A7\"a8g4e12z4B4|\nV: Ins\nZ4|\nV: Vocal\n\"Cmaj7\"c8d8e8g8|\"B7\"f16^d16|\"Em\"e8z24|\"Em\"z32|\nV: Ins\nZ2|z8G6A6^A4B4d2e2|E8G6A6^A4B4d2e2|\n% chorus\nV: Vocal\n\"Cmaj7\"b16a4g4g4a4-|\"B7\"a8g4b12z8|\"Em7\"a16a4g4g4a4-|\"A7\"a8g4e8z8d4|\nV: Ins\nZ4|\nV: Vocal\n\"Cmaj7\"e8g8f8g8|\"B7\"f8^d8B8A8|\"Em7\"B16d16|\"Em7\"e16g16|\nV: Ins\nZ4|\nV: Vocal\n\"Cmaj7\"z4b4a2g2g2a6b4a2g2g2a2-|\"B7\"a4b4a2g2g2a6b4a4g4|\"Em7\"a4g4a4g4a4g4a4g4|\"A7\"a2g2a2g2a2g2b8e8z4|\nV: Ins\nZ4|\nV: Vocal\n\"Cmaj7\"e16g16|\"B7\"f8^d8B8A8|\"Em7\"B16d16|\"Em7\"e16g16|\nV: Ins\nZ4|\nV: Vocal\n\"Cmaj7\"z4e4e4e4e8b8|\"B7\"a4g4a4g4a2g2a8b4|\"Em7\"z4e4e4e4e4e4b8|\"A7\"a2g2a2g2a4g2a4g2b8z4|\nV: Ins\nZ4|\nV: Vocal\n\"Cmaj7\"e16g16|\"B7\"f16^d16|\"Em7\"e16d16|\"Em7\"B8A8G8A6G2|\nV: Ins\nZ4|\nV: Vocal\n\"Em\"E16z16|\nV: Ins\nz16e4e4e4z4|\n% outro\nV: Vocal\n\"Em\"z16\"G6\"z16|\"A7\"z16\"C\"z8\"B7\"z8|\"Em\"z16\"G6\"z16|\"A7\"z16\"C\"z8\"B7\"z8|\nV: Ins\ne8e2d2B2d4e6z8|A6A2z8c4c4B8|E8e2d2B2d4e6z8|A6A2z8c4c4B8|\nV: Vocal\n\"Em\"z16\"G6\"z16|\"A7\"z16\"C\"z8\"B7\"z8|\"Em\"z16\"G6\"z16|\"A7\"z16\"C\"z8\"B7\"z8|\nV: Ins\nE8e2d2B2d4e6z8|A6A2z8c4c4B8|E8e2d2B2d4e6z8|A6A2z8c4c4B8|\nV: Vocal\n\"Em\"z32|\"Em\"z32|\nV: Ins\nE8G6A6^A4B4d2e2|e8z24|\n"
+      },
+      "official_mode": "planned",
+      "source": {
+        "id": "e3d76e66a92637ebb46e61ed",
+        "order": 2,
+        "collection": "genre",
+        "title": "Jazz-Funk",
+        "genre": "Jazz-Funk",
+        "genrePath": [
+          "Jazz",
+          "Jazz-Funk"
+        ],
+        "language": "ja",
+        "languageLabel": "Japanese",
+        "mode": "planned",
+        "tags": "funk",
+        "lyrics": "[Verse]\n姉が玉子焼き用の四角いフライパンで\n目玉焼きを焼いている\n合う蓋はないので\n横から湯気は洩れるが\n面白い発想に見えた\n\n僕は丸い小さめの普通のフライパンで\n目玉焼きを焼く\n\n[Pre-Chorus]\nかように遠くで暮らしていると\n癖やメソッドや好みが違う\n\n[Chorus]\n当たり前、当たり前、当たり前\nこれはAが優れてBが劣るというような\n問題ではないのだ\n\n[Bridge]\n君の一本道の進歩観を\n多々野辺のどこへともない道に\n考え直してみてはどうだろう",
+        "abc": "X:1\nT:\nM:4/4\nL:1/32\nQ:1/4=116\nV: Vocal clef=treble name=\"Vocal Melody\" snm=\"Vocal\"\nV: Ins clef=treble name=\"Ins Melody\" snm=\"Inst.\"\nK:Em\n% intro\nV: Vocal\nz24z4\"Em\"z4|\"Em\"z32|\"Em\"z32|\"Em\"z32|\nV: Ins\nz24z4E4|E8G6A6^A4B4d2e2|E8G6A6^A4B4d2e2|E8G6A6^A4B4d2e2|\nV: Vocal\n\"Em\"z32|\"Em\"z16\"G6\"z16|\"Am7\"z16\"C\"z8\"B7\"z8|\"Em\"z16\"G6\"z16|\nV: Ins\ne4d4^A2=A2G4E4D4E8|E8z4D4G6G2z8|A6A2z8c4c4B2B6|E8z4D4G6G2z8|\nV: Vocal\n\"Am7\"z16\"C\"z8\"B7\"z8|\"Em\"z16\"G6\"z16|\"Am7\"z16\"C\"z8\"B7\"z8|\"Em\"z16\"G6\"z16|\nV: Ins\nA6A2z8c4c4B2B6|e8e2d2B2d4e12z2|A6A2z8c4c4B2B6|E8e2d2B2d4e12z2|\nV: Vocal\n\"Am7\"z16\"C\"z8\"B7\"z8|\nV: Ins\nA6A2z8c4c4B2B6|\n% verse\nV: Vocal\n\"Em\"e4d4B4A4\"G6\"A4G4E4D4|\"Am7\"E4D4E4D4\"C\"E4G4-\"B7\"G4E4|\"Em\"z4e4d4B4\"G6\"A4G4E4A4-|\"Am7\"A8G2G2B4-\"C\"B8\"B7\"z8|\nV: Ins\nZ4|\nV: Vocal\n\"Em\"e8B2B2B2A2-\"G6\"A2G2G8E2D2|\"Am7\"E2D2E2D2E4D2E2-\"C\"E2E2G4-\"B7\"G4z4|\"Em\"E4D4E4D4\"G6\"E4z4G8|\"Am7\"A4G4A4G4\"C\"B8\"B7\"z8|\nV: Ins\nZ4|\n% pre-chorus\nV: Vocal\n\"Cmaj7\"z8e8g8a8|\"B7\"z8e8g8a8|\"Em7\"b8a4g4a8g4a4-|\"A7\"a8g4e12z4B4|\nV: Ins\nZ4|\nV: Vocal\n\"Cmaj7\"c8d8e8g8|\"B7\"f16^d16|\"Em\"e8z24|\"Em\"z32|\nV: Ins\nZ2|z8G6A6^A4B4d2e2|E8G6A6^A4B4d2e2|\n% chorus\nV: Vocal\n\"Cmaj7\"b16a4g4g4a4-|\"B7\"a8g4b12z8|\"Em7\"a16a4g4g4a4-|\"A7\"a8g4e8z8d4|\nV: Ins\nZ4|\nV: Vocal\n\"Cmaj7\"e8g8f8g8|\"B7\"f8^d8B8A8|\"Em7\"B16d16|\"Em7\"e16g16|\nV: Ins\nZ4|\nV: Vocal\n\"Cmaj7\"z4b4a2g2g2a6b4a2g2g2a2-|\"B7\"a4b4a2g2g2a6b4a4g4|\"Em7\"a4g4a4g4a4g4a4g4|\"A7\"a2g2a2g2a2g2b8e8z4|\nV: Ins\nZ4|\nV: Vocal\n\"Cmaj7\"e16g16|\"B7\"f8^d8B8A8|\"Em7\"B16d16|\"Em7\"e16g16|\nV: Ins\nZ4|\nV: Vocal\n\"Cmaj7\"z4e4e4e4e8b8|\"B7\"a4g4a4g4a2g2a8b4|\"Em7\"z4e4e4e4e4e4b8|\"A7\"a2g2a2g2a4g2a4g2b8z4|\nV: Ins\nZ4|\nV: Vocal\n\"Cmaj7\"e16g16|\"B7\"f16^d16|\"Em7\"e16d16|\"Em7\"B8A8G8A6G2|\nV: Ins\nZ4|\nV: Vocal\n\"Em\"E16z16|\nV: Ins\nz16e4e4e4z4|\n% outro\nV: Vocal\n\"Em\"z16\"G6\"z16|\"A7\"z16\"C\"z8\"B7\"z8|\"Em\"z16\"G6\"z16|\"A7\"z16\"C\"z8\"B7\"z8|\nV: Ins\ne8e2d2B2d4e6z8|A6A2z8c4c4B8|E8e2d2B2d4e6z8|A6A2z8c4c4B8|\nV: Vocal\n\"Em\"z16\"G6\"z16|\"A7\"z16\"C\"z8\"B7\"z8|\"Em\"z16\"G6\"z16|\"A7\"z16\"C\"z8\"B7\"z8|\nV: Ins\nE8e2d2B2d4e6z8|A6A2z8c4c4B8|E8e2d2B2d4e6z8|A6A2z8c4c4B8|\nV: Vocal\n\"Em\"z32|\"Em\"z32|\nV: Ins\nE8G6A6^A4B4d2e2|e8z24|\n",
+        "abcUrl": "assets/genre/e3d76e66a92637ebb46e61ed/score.abc",
+        "audio": "assets/genre/e3d76e66a92637ebb46e61ed/e3d76e66a92637ebb46e61ed_music.mp3",
+        "scoreAudio": "assets/genre/e3d76e66a92637ebb46e61ed/e3d76e66a92637ebb46e61ed_score.mp3",
+        "sheets": [
+          "assets/genre/e3d76e66a92637ebb46e61ed/sheet_01.svg",
+          "assets/genre/e3d76e66a92637ebb46e61ed/sheet_02.svg",
+          "assets/genre/e3d76e66a92637ebb46e61ed/sheet_03.svg"
+        ]
+      },
+      "official_audio_url": "https://map-yue2.github.io/assets/genre/e3d76e66a92637ebb46e61ed/e3d76e66a92637ebb46e61ed_music.mp3",
+      "official_audio_path": "outputs/official_fullsong/reference/e3d76e66a92637ebb46e61ed.mp3",
+      "official_audio_sha256": "210b9d92adb1bb58165b685a7db0b007622f66508558813fa14a3110eab1f08f",
+      "official_seconds": 129.96,
+      "input_hashes": {
+        "style": "22ddc25aa854579f9c3405eb1fa24993f14878fbb4999bf2f0eeb0faaae7e51c",
+        "lyrics": "28daf78829536ffd428dab56a17612a330ba236319b0977c6b9942c2c0f1c814",
+        "abc": "84bab1c8c9dbcf8dfffc511ec31240e045a629eb11d99c3157a201534f59a2ae"
+      }
+    }
+  ]
+}

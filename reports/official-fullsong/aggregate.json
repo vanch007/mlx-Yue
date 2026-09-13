@@ -1,0 +1,19 @@
+{
+  "cases": 15,
+  "complete": 15,
+  "audio_seconds": 2515.46,
+  "generation_seconds": 4991.43405183102,
+  "minimum_duration": 64.83866666666667,
+  "maximum_duration": 251.11866666666666,
+  "rtf_range": [
+    1.446471883602855,
+    2.4903662857133755
+  ],
+  "footprint_gib_range": [
+    10.93128078430891,
+    11.208853393793106
+  ],
+  "swap_out_delta_bytes": 0,
+  "prior_failures": 7,
+  "truncated": 0
+}

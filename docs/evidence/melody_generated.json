@@ -1,0 +1,286 @@
+{
+  "id": "melody_generated",
+  "official_id": "115abed0e655f5fa9b1409b3",
+  "title": "R&B",
+  "genre": "R&B",
+  "language": "zh",
+  "score_mode": "generated",
+  "request": {
+    "id": "melody_generated",
+    "style": "Modern Chinese pop R&B with synth-pop influence, emotional and intimate atmosphere, Intro starts with a clear and emotional lead synth melody, simple and memorable, soft and slightly fragile, close-mic, expressive and melodic, Clean pop drum groove, tight punchy kick, natural snare with soft room reverb, minimal hi-hat pattern, smooth R&B bounce, Warm melodic synth bass with smooth movement, Analog-style synths with slight detune, warm tone, gentle filter movement, soft low-pass, subtle chorus width, Lead synth is smooth and rounded, emotional and expressive, High-frequency bell-like pluck synth in the background, soft and bright, short notes with light delay and reverb, adding sparkle and rhythmic detail, Wide atmospheric pads with slow attack and breathing movement, Minimal and clean arrangement, layered but spacious, focusing on melody and texture, Wide stereo image, airy reverb and delay, polished and warm, Pop music, Well-defined rhythm , Well-defined rhythm",
+    "lyrics": "[Intro]\n\n[Verse 1]\n交易命运的改变 源头在起心动念\n这是改变的关键 但很多人视而不见\n大赚大亏踏空卖飞 内在秩序不要乱\n保持平和的心念 净值弹指间改变\n当你大赚庆幸时 请你安静想想看\n这笔盈利隐含多少潜在代价来交换\n当你清楚知晓每次交易对应的代价\n策略的赔率带给你先胜后战的心安\n\n[Pre-Chorus]\n当你选择策略保守会避开一些风险\n模式内机会出现时进攻必然受限\n当你选择激进策略博弈猛干一段\n大赚的概率提升 大面概率也提升\n\n[Chorus]\n当你大亏懊悔时 请你冷静想想看\n当下的首要任务是稳住还是继续猛干\n如果内心秩序混乱还想力挽狂澜\n连续重仓猛干会让你连续吃大面\n此时赶紧降低期待调整心中的不甘\n要警惕出其不意博弈小概率事件\n\n[Verse 2]\n因为赌性会在不顺之时出来作乱\n回头发现 努力回血反而不如摆烂\n当你交易卖飞时\n请你转念想想看 后续行情是否出现一个更好的答案\n其实时间拉长看 每条净值的曲线\n那是模式画的图\n更是心性的变现\n\n[Bridge]\n世间 一切都是万物因缘合和的结果\n很多事\n都不是我们想怎样就怎样的\n走势无常才是交易基本的常态\n于是先要接纳它 否则痛苦一直在\n所有绊脚石\n换个角度也是垫脚石\n在你主动站上去看更高的风景时\n\n[Verse 3]\n当你后悔当初时 请你转念想想看\n难道当初不那样 做现在真的会更棒 不那样现在会怎样\n都是你的想象\n况且日子还很长 不要过早下判",
+    "cot": "melody",
+    "seed": 2026
+  },
+  "official_mode": "planned",
+  "source": {
+    "id": "115abed0e655f5fa9b1409b3",
+    "order": 20,
+    "collection": "genre",
+    "title": "R&B",
+    "genre": "R&B",
+    "genrePath": [
+      "R&B"
+    ],
+    "language": "zh",
+    "languageLabel": "Chinese",
+    "mode": "planned",
+    "tags": "Modern Chinese pop R&B with synth-pop influence, emotional and intimate atmosphere, Intro starts with a clear and emotional lead synth melody, simple and memorable, soft and slightly fragile, close-mic, expressive and melodic, Clean pop drum groove, tight punchy kick, natural snare with soft room reverb, minimal hi-hat pattern, smooth R&B bounce, Warm melodic synth bass with smooth movement, Analog-style synths with slight detune, warm tone, gentle filter movement, soft low-pass, subtle chorus width, Lead synth is smooth and rounded, emotional and expressive, High-frequency bell-like pluck synth in the background, soft and bright, short notes with light delay and reverb, adding sparkle and rhythmic detail, Wide atmospheric pads with slow attack and breathing movement, Minimal and clean arrangement, layered but spacious, focusing on melody and texture, Wide stereo image, airy reverb and delay, polished and warm, Pop music, Well-defined rhythm , Well-defined rhythm",
+    "lyrics": "[Intro]\n\n[Verse 1]\n交易命运的改变 源头在起心动念\n这是改变的关键 但很多人视而不见\n大赚大亏踏空卖飞 内在秩序不要乱\n保持平和的心念 净值弹指间改变\n当你大赚庆幸时 请你安静想想看\n这笔盈利隐含多少潜在代价来交换\n当你清楚知晓每次交易对应的代价\n策略的赔率带给你先胜后战的心安\n\n[Pre-Chorus]\n当你选择策略保守会避开一些风险\n模式内机会出现时进攻必然受限\n当你选择激进策略博弈猛干一段\n大赚的概率提升 大面概率也提升\n\n[Chorus]\n当你大亏懊悔时 请你冷静想想看\n当下的首要任务是稳住还是继续猛干\n如果内心秩序混乱还想力挽狂澜\n连续重仓猛干会让你连续吃大面\n此时赶紧降低期待调整心中的不甘\n要警惕出其不意博弈小概率事件\n\n[Verse 2]\n因为赌性会在不顺之时出来作乱\n回头发现 努力回血反而不如摆烂\n当你交易卖飞时\n请你转念想想看 后续行情是否出现一个更好的答案\n其实时间拉长看 每条净值的曲线\n那是模式画的图\n更是心性的变现\n\n[Bridge]\n世间 一切都是万物因缘合和的结果\n很多事\n都不是我们想怎样就怎样的\n走势无常才是交易基本的常态\n于是先要接纳它 否则痛苦一直在\n所有绊脚石\n换个角度也是垫脚石\n在你主动站上去看更高的风景时\n\n[Verse 3]\n当你后悔当初时 请你转念想想看\n难道当初不那样 做现在真的会更棒 不那样现在会怎样\n都是你的想象\n况且日子还很长 不要过早下判",
+    "abc": "X:1\nT:\nM:4/4\nL:1/16\nQ:1/4=98\nV: Vocal clef=treble name=\"Vocal Melody\" snm=\"Vocal\"\nV: Ins clef=treble name=\"Ins Melody\" snm=\"Inst.\"\nK:Bb\n% intro\nV: Vocal\nZ|\"Ebmaj7\"z16|\"Ebm(maj7)\"z16|\"Dm7\"z16|\nV: Ins\nz4f2e2d2e2d2B2|d2GdzGdzGdzGdzGd|d2^FdzFd2FdzFdzF2|c2FczFczFczFc2Fc|\nV: Vocal\n\"Gm7\"z12z2BG|\nV: Ins\nA3B3f6z4|\n% verse\nV: Vocal\n\"Ebmaj7\"BGBGB2GGBGBBd2BG|\"Ebm(maj7)\"BGBGBGBGBGBBd2BB|\"Dm7\"AAAAAAAGAAAGA2AG|\"Gm7\"AAAGAGAGABAB2zBB|\nV: Ins\nZ4|\nV: Vocal\n\"Ebmaj7\"dddddddddddf3dd|\"Ebm(maj7)\"dddddddddddg2f3|\"Dm7\"cccccccccccccdB2|\"Gm7\"cccccccccccdcBB2|\nV: Ins\nZ4|\n% pre-chorus\nV: Vocal\n\"Ebmaj7\"z2ddGGddGGGGddcd|\"Ebm(maj7)\"c2ccFFccFFccFFcc-|\"Dm7\"c2ccFFccFFccFFcc-|\"Gm7\"c2cBcBcBcBcBcBcd-|\nV: Ins\nZ4|\nV: Vocal\n\"Gm7\"d2z6f2e2d2e2|\nV: Ins\nZ|\n% chorus\nV: Vocal\n\"Ebmaj7\"d2G2B2Gd3G2B2Gd-|\"Ebm(maj7)\"d2c4z2f2e2d2e2|\"Dm7\"d2F2A2Fd3F2A2F2|\"Gm7\"c3c3B2d2z2Bcde|\nV: Ins\nZ4|\nV: Vocal\n\"Ebmaj7\"d2G2B2Gd3G2B2Gd-|\"Ebm(maj7)\"d2c4z2f2e2d2e2|\"Dm7\"d2F2A2Fd3F2A2F2|\"Gm7\"c3B4z3dcdcdc|\nV: Ins\nZ4|\nV: Vocal\n\"Ebmaj7\"d2g2z2d2c2B2cBcB|\"Ebm(maj7)\"d4z6dcdcdc|\"Dm7\"d2a4f4d2c2B2|\"Gm7\"c3B4z6zBB|\nV: Ins\nZ4|\n% verse\nV: Vocal\n\"Ebmaj7\"ddBBddBBddBd3BB|\"Ebm(maj7)\"ddBBddBBddBd3dd|\"Dm7\"cccccccccccccccc|\"Gm7\"cccccccdc2B2B2z2|\nV: Ins\nZ4|\nV: Vocal\n\"Ebmaj7\"z2dcdcdcd2G2d2d2|\"Ebm(maj7)\"z2dcdcdcd2G2d2d2|\"Dm7\"z2cBcBcBc2F2c2c2|\"Gm7\"z2cBcBcdc2B4BB|\nV: Ins\nZ4|\n% pre-chorus\nV: Vocal\n\"Ebmaj7\"dcdcdcdcdcddG2BB|\"Ebm(maj7)\"dcdcdcdcdcddG2BB|\"Dm7\"cBcBcBcBc2d2d2BB|\"Gm7\"cBcBcBcBc2d2d2G2|\nV: Ins\nZ4|\nV: Vocal\n\"Ebmaj7\"d4g4a4b4|\"Ebm(maj7)\"d6c6z2BB|\"Dm7\"c4f4g4a4|\"Gm7\"a3f3g3b3c'c'z2|\nV: Ins\nZ4|\nV: Vocal\n\"Ebmaj7\"z2dcdcdcdcdcd2G2|\"Ebm(maj7)\"d2dcdcdcdcdcd2G2|\"Dm7\"d2d2z2d2d2z2cBcB|\"Gm7\"d2z4Bz6zBB|\nV: Ins\nZ4|\n% chorus\nV: Vocal\n\"Ebmaj7\"d2G2B2Gd3GGB2Gd-|\"Ebm(maj7)\"d2c4z2f2e2d2e2|\"Dm7\"d2F2A2Fd3F2A2F2|\"Gm7\"c3c3B2d2z2Bcde|\nV: Ins\nZ4|\nV: Vocal\n\"Ebmaj7\"d2G2B2Gd3G2B2Gd-|\"Ebm(maj7)\"d2c4z2f2e2d2e2|\"Dm7\"d2F2A2Fd3F2A2F2|\"Gm7\"c3B4z8z|\nV: Ins\nZ3|z12z2Bz|\n% outro\nV: Vocal\n\"Ebmaj7\"z16|\"Ebm(maj7)\"z16|\"Dm7\"z16|\"Gm7\"z16|\nV: Ins\nd2GdzGdzGdzGd2Gd|d2^FdzFd2FdzFd2F2|c2FczFc2FczFc2Fc|A3B3f8z2|\nV: Vocal\n\"Gm7\"z16|\nV: Ins\nZ|\n",
+    "abcUrl": "assets/genre/115abed0e655f5fa9b1409b3/score.abc",
+    "audio": "assets/genre/115abed0e655f5fa9b1409b3/115abed0e655f5fa9b1409b3_music.mp3",
+    "scoreAudio": "assets/genre/115abed0e655f5fa9b1409b3/115abed0e655f5fa9b1409b3_score.mp3",
+    "sheets": [
+      "assets/genre/115abed0e655f5fa9b1409b3/sheet_01.svg",
+      "assets/genre/115abed0e655f5fa9b1409b3/sheet_02.svg",
+      "assets/genre/115abed0e655f5fa9b1409b3/sheet_03.svg",
+      "assets/genre/115abed0e655f5fa9b1409b3/sheet_04.svg"
+    ]
+  },
+  "official_audio_url": "https://map-yue2.github.io/assets/genre/115abed0e655f5fa9b1409b3/115abed0e655f5fa9b1409b3_music.mp3",
+  "official_audio_path": "outputs/official_fullsong/reference/115abed0e655f5fa9b1409b3.mp3",
+  "official_audio_sha256": "5f92a87f15925c817ce984f407921fd9c4bc2a699d741ae33912dc1762a59a17",
+  "official_seconds": 152.72,
+  "input_hashes": {
+    "style": "e444b3469164e2bf7a2b9aa3860f01ac0de892cbcdaf92513e6a831129ba0ec5",
+    "lyrics": "d98e108d0eda26fc39e80a7046299d6700c99028336418ba955dc713d3aa109c"
+  },
+  "measurement": {
+    "id": "melody_generated",
+    "status": "complete",
+    "case_sha256": "ad2f51849d639bc72b087a37888ca059d97bb36b30677a54627ffd0c0ab224f1",
+    "attempt": 2,
+    "benchmark_script_sha256": "2c5868ef28d74bb713079a0c1cf886d419a4e3a73cce34be2413e4cda7ec9449",
+    "retry_policy": "Only interrupted/failed execution, identical input and seed; no quality reroll",
+    "truncated": {
+      "abc": false,
+      "semantic": false
+    },
+    "audio_seconds": 181.03866666666667,
+    "official_seconds": 152.72,
+    "duration_ratio": 1.1854286712065654,
+    "e2e_seconds": 417.94476708298316,
+    "rtf": 2.3085939306684935,
+    "speed_multiplier": 0.4331640946965639,
+    "load_seconds": 5.222712083952501,
+    "transcription_seconds": 0,
+    "save_seconds": 0.46523162501398474,
+    "timing": {
+      "abc": {
+        "seconds": 18.721492583979852,
+        "prefill_seconds": 0.2737319999723695,
+        "ttft_seconds": 0.277456916985102,
+        "output_tokens": 1303,
+        "content_tokens": 1302,
+        "output_tps": 69.59915157165346,
+        "prefix_tokens": 630,
+        "cfg_branches": 1,
+        "execution": "eager",
+        "attention": "sdpa",
+        "backend": "mlx"
+      },
+      "semantic": {
+        "seconds": 62.798967041948345,
+        "prefill_seconds": 1.0575671669794247,
+        "ttft_seconds": 1.0596303339698352,
+        "output_tokens": 4527,
+        "content_tokens": 4526,
+        "output_tps": 72.08717297811702,
+        "prefix_tokens": 1934,
+        "cfg_branches": 1,
+        "execution": "eager",
+        "attention": "sdpa",
+        "backend": "mlx"
+      },
+      "nar_seconds": 320.9904702079948,
+      "vae_seconds": 9.49240120803006,
+      "load": {
+        "resolve_conversion_integrity_seconds": 5.222618916013744,
+        "ar_load_events_seconds": [
+          0.11920879100216553
+        ],
+        "ar_load_seconds": 0.11920879100216553,
+        "conditioning_load_events_seconds": [
+          0.1726755000418052
+        ],
+        "conditioning_load_seconds": 0.1726755000418052,
+        "nar_load_events_seconds": [
+          0.11611875001108274
+        ],
+        "nar_load_seconds": 0.11611875001108274,
+        "vae_load_events_seconds": [
+          0.1061998339719139
+        ],
+        "vae_load_seconds": 0.1061998339719139
+      },
+      "e2e_seconds": 412.14095762500074
+    },
+    "configuration": {
+      "generation": {
+        "abc": {
+          "temperature": 0.7,
+          "top_p": 0.9,
+          "top_k": 30,
+          "repetition_penalty": 1.005,
+          "penalty_window": 100,
+          "min_tokens": 32,
+          "max_tokens": 4096
+        },
+        "semantic": {
+          "temperature": 1.0,
+          "top_p": 0.95,
+          "top_k": 100,
+          "repetition_penalty": 1.2,
+          "penalty_window": 50,
+          "min_tokens": 200,
+          "max_tokens": 9000
+        },
+        "ode_steps": 32,
+        "ode_method": "midpoint",
+        "context": 24576,
+        "version": "yue2-native-v1"
+      },
+      "overrides": {},
+      "cot": "melody",
+      "cfg_scale": 1.0,
+      "cfg_negative": "same_instruction_and_exact_abc",
+      "backend": "mlx",
+      "quantization": "8bit",
+      "model_dtype": "bfloat16",
+      "vae_dtype": "float32",
+      "vae_decode": "halo_crop",
+      "vae_core_frames": 256,
+      "vae_halo_frames": 16,
+      "device": "DeviceType.gpu",
+      "memory_budget_gib": 16.0,
+      "offload_ar": false,
+      "runtime_sha256": "ff4829d01380a2ac98fbc0aa0aed90f9b2bbe9c0a3473f1d62ed8ee3abc8efa9",
+      "decoder_release": "standard",
+      "validation_status": "unvalidated",
+      "vae_backend": "mlx",
+      "ar_precision": "8bit",
+      "kv_dtype": "bfloat16",
+      "nar_dtype": "bfloat16",
+      "conditioning_precision": "bf16",
+      "attention_opmath": "float32",
+      "mlx_tf32_enabled": false,
+      "attention_inputs": "native_steel_bfloat16",
+      "query_chunk_size": 256,
+      "runtime": {
+        "lyra-yue2": "0.1.0",
+        "mlx": "0.32.2",
+        "mlx-lm": "0.31.3",
+        "transformers": "5.0.0",
+        "numpy": "2.2.6",
+        "python": "3.12.10",
+        "macos": "27.0"
+      },
+      "upstream_commit": "92a73cc7652fcc1f937855e4b765e0a0edd7ff2e",
+      "execution_guard": "GPUExecution",
+      "rng": {
+        "ar": "request_local_mlx",
+        "acoustic": "numpy_pcg64_fp32_full_song_v1"
+      }
+    },
+    "identity": "a86563a9199a737d2d27d95035ba6bf3287a02dea2eedd934e1cc403916de2ed",
+    "audio_sha256": "e6edc8d011da73b514f87bd67b8e4df19e4a0f6025bb09733531d255f2417212",
+    "result_sha256": "5dbc633cba22fec09a778ccfa4c27c98048aa1a68d43b10ee7cfee621a51ea3e",
+    "audio_quality": {
+      "sample_rate": 48000,
+      "channels": 2,
+      "finite": true,
+      "rms": 0.17611676890217365,
+      "peak": 0.8792818784713745,
+      "clipping_fraction": 0.0
+    },
+    "musical_quality_acceptance": "pending human listening; not established by duration or EOS",
+    "resources": {
+      "memory_counter_schema": 2,
+      "swap_counter_source": "host_statistics64.swapins/swapouts",
+      "sampling_interval_seconds": 0.1,
+      "power_sampling_interval_seconds": 5.0,
+      "metadata": {},
+      "power_start": {
+        "ac_connected": true,
+        "pmset": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=37224547)\t95%; AC attached; not charging present: true"
+      },
+      "power_end": {
+        "ac_connected": true,
+        "pmset": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=37224547)\t95%; AC attached; not charging present: true"
+      },
+      "start": {
+        "elapsed_seconds": 0.011745583033189178,
+        "rss_bytes": 51822592,
+        "system_swap_used_bytes": 12382502912,
+        "system_swap_in_bytes": 56332173312,
+        "system_swap_out_bytes": 83892617216,
+        "system_available_bytes": 70473826304,
+        "system_total_bytes": 137438953472,
+        "system_memory_pressure_level": 1,
+        "system_free_bytes": 13708705792,
+        "system_wired_bytes": 6456360960,
+        "system_compressor_bytes": 2759802880,
+        "system_file_backed_bytes": 30930026496,
+        "physical_footprint_bytes": 31965928,
+        "process_lifetime_peak_footprint_bytes": 31965928,
+        "mlx_active_bytes": 0,
+        "mlx_cache_bytes": 0,
+        "mlx_peak_bytes": 0,
+        "ac_connected": true
+      },
+      "end": {
+        "elapsed_seconds": 418.47346291702706,
+        "rss_bytes": 1018609664,
+        "system_swap_used_bytes": 12374114304,
+        "system_swap_in_bytes": 56332369920,
+        "system_swap_out_bytes": 83892617216,
+        "system_available_bytes": 69795315712,
+        "system_total_bytes": 137438953472,
+        "system_memory_pressure_level": 1,
+        "system_free_bytes": 13033472000,
+        "system_wired_bytes": 7206256640,
+        "system_compressor_bytes": 2742812672,
+        "system_file_backed_bytes": 29968367616,
+        "physical_footprint_bytes": 1316309224,
+        "process_lifetime_peak_footprint_bytes": 12091726472,
+        "mlx_active_bytes": 8,
+        "mlx_cache_bytes": 0,
+        "mlx_peak_bytes": 11256150230,
+        "ac_connected": true
+      },
+      "sampled_maxima": {
+        "mlx_active_bytes": 11196716606,
+        "mlx_cache_bytes": 267354112,
+        "mlx_peak_bytes": 11256150230,
+        "physical_footprint_bytes": 11845720712,
+        "process_lifetime_peak_footprint_bytes": 12091726472,
+        "rss_bytes": 8174305280,
+        "system_available_bytes": 70474907648,
+        "system_compressor_bytes": 2759802880,
+        "system_file_backed_bytes": 31175032832,
+        "system_free_bytes": 13708705792,
+        "system_swap_in_bytes": 56332369920,
+        "system_swap_out_bytes": 83892617216,
+        "system_swap_used_bytes": 12382502912,
+        "system_total_bytes": 137438953472,
+        "system_wired_bytes": 11553832960
+      },
+      "monitor_error": null,
+      "exception": null
+    },
+    "artifact_directory": "outputs/official_fullsong/melody_generated/attempt-2",
+    "prior_attempts": [
+      {
+        "attempt": 1,
+        "status": "failed",
+        "error": "RuntimeError: AC power disconnected during acceptance execution",
+        "receipt_path": "outputs/official_fullsong/melody_generated/measurement.json",
+        "receipt_sha256": "7adccedb0ac39e78279f699e1f16669084ed9be9e0a0755b373be4ec51edc2e0"
+      }
+    ]
+  },
+  "official_player": "audio/fullsong/5f92a87f15925c817ce9.mp3",
+  "local_player": "audio/fullsong/e6edc8d011da73b514f8.mp3",
+  "actual_score": "X:1\nT:\nM:4/4\nL:1/16\nQ:1/4=104\nV: Vocal clef=treble name=\"Vocal Melody\" snm=\"Vocal\"\nV: Ins clef=treble name=\"Ins Melody\" snm=\"Inst.\"\nK:F\n% intro\nV: Vocal\nz8z2dz4z|Z3|\nV: Ins\nz12f2z2|a2z2a2z2a2z2f2d2|a2a2a2a2z4c2e2|g2z2g2z2g2z2e2c2|\nV: Vocal\nZ4|\nV: Ins\ng2g2g2g2z4cdfz|a3zf4d3za3z|a3zf4d3za3z|e4z12|\nV: Vocal\nz8z2A2A2A2|\nV: Ins\nZ|\n% verse\nV: Vocal\nD2F2F3D2zA2A2A2|D2F2F3D2zA2A2A2|E2E2E3C2zC2C2D2|F2G2G2F2A4AGA2|\nV: Ins\nZ4|\nV: Vocal\nA2A2D2D2F4AGA2|A2A2D2D2G4GFGF|G2G2G2GFG2GFG2A2|z12cAcA|\nV: Ins\nZ4|\nV: Vocal\ncAcAcAcAcAc2cAcA|cAcAcAcAcAc2cAcA|cAcAcAcAcAc2cAcA|cAcAcAcAcAd2d2dd|\nV: Ins\nZ4|\nV: Vocal\nffddccAAGFA2G2GF|ffddccAAGFA2G2GF|GFGFGFGFGFA2D2GF|GFGFGFGFGFA2D2F2|\nV: Ins\nZ4|\n% chorus\nV: Vocal\na2a2d2d2a3d3d2|a2a2d2d2a3d3g2-|gfgfgfgfgfgfgfa2|d4z12|\nV: Ins\nZ4|\nV: Vocal\na2a2d2d2a3d3d2|a2a2d2d2a3c'3e2-|e4zdc6z2cd|f2f2f2f2f2edcAcA|\nV: Ins\nZ4|\nV: Vocal\nd4z6cccAcA|d2c2cAcAd2c2A2AA|d2c2cAcAd2c2A2A2|D4z12|\nV: Ins\nZ3|z4a3zg3zf3z|\nV: Vocal\nz8z2cccAcA|d2c2cAcAd2c2A2AA|d2c2cAcAd2c2A2A2|D4z8z2AG|\nV: Ins\na4f4z8|Z3|\n% verse\nV: Vocal\nAGAGAGAGAGA2D2AG|AGAGAGAGAGA2D2GF|GFGFGFGFGFGFGFGF|GFGFGFGFA2D2F4|\nV: Ins\nZ4|\nV: Vocal\nz2cAcAcAcAcAcAcA-|AzcAcAcAc2cAcAcA-|Azd2c2d2f2g2a2d'2-|d'4c'4a3ggfgf|\nV: Ins\nZ4|\n% chorus\nV: Vocal\na2a2d2d2a2a2d2d2|a3d3g4a2gfgf|g2g2c2c2g2g2c2c2|g3c3f4z2cdfd|\nV: Ins\nZ4|\nV: Vocal\nf2f2fdfdf2f2a2dd|fdfdfdfdfdfda2z2|z2e2e2e2A2A4cA|cAcAcAcAcAcAcAcA|\nV: Ins\nZ4|\nV: Vocal\na3gg3ff4d4|a12c'4|a2a2d2d2a3d3d2|a2a2d2d2a3d3g2-|\nV: Ins\nZ4|\nV: Vocal\ngfgfgfgfgfgfgfa2|d4z12|a2a2d2d2a3d3d2|a2a2d2d2a3c'3e2-|\nV: Ins\nZ4|\nV: Vocal\ne4zdc6z2cd|f2f2f2f2f2eAcAcA|d4z6cAcAcA|d2c2cAcAd2c2A2AA|\nV: Ins\nZ4|\nV: Vocal\nd2c2cAcAd2c2A2A2|D4z12|z8z2cAcAcA|d2c2cAcAd2c2A2AA|\nV: Ins\nZ|z4a4g4f4|a4f4z8|Z|\nV: Vocal\nd2c2cAcAd2c2A2A2|D4z12|\nV: Ins\nZ|z12cdfz|\n% outro\nV: Vocal\nZ4|\nV: Ins\na3zf4d3za3z|a3zf4d3za3z|e16|Z|\n"
+}

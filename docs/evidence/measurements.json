@@ -1,0 +1,3319 @@
+[
+  {
+    "id": "ja_score",
+    "status": "complete",
+    "case_sha256": "0f832298a61a1fe7782e3ae11633247a1f6184f5fb7305a1897ebdc7dd0529cc",
+    "truncated": {
+      "abc": false,
+      "semantic": false
+    },
+    "audio_seconds": 222.27866666666668,
+    "official_seconds": 221.76,
+    "duration_ratio": 1.002338864838865,
+    "e2e_seconds": 553.5552974999882,
+    "rtf": 2.4903662857133755,
+    "speed_multiplier": 0.40154735700397015,
+    "load_seconds": 5.217120249988511,
+    "transcription_seconds": 0,
+    "save_seconds": 0.5711062909686007,
+    "timing": {
+      "abc": {
+        "seconds": 0.0,
+        "output_tokens": 0,
+        "external_prefix_tokens": 1738
+      },
+      "semantic": {
+        "seconds": 72.30839145800564,
+        "prefill_seconds": 0.7439379160059616,
+        "ttft_seconds": 0.7479968330007978,
+        "output_tokens": 5558,
+        "content_tokens": 5557,
+        "output_tps": 76.86521422935961,
+        "prefix_tokens": 2200,
+        "cfg_branches": 1,
+        "execution": "eager",
+        "attention": "sdpa",
+        "backend": "mlx"
+      },
+      "nar_seconds": 464.59326087497175,
+      "vae_seconds": 10.387618332984857,
+      "load": {
+        "resolve_conversion_integrity_seconds": 5.216982375015505,
+        "ar_load_events_seconds": [
+          0.1254808329977095
+        ],
+        "ar_load_seconds": 0.1254808329977095,
+        "conditioning_load_events_seconds": [
+          0.18663158296840265
+        ],
+        "conditioning_load_seconds": 0.18663158296840265,
+        "nar_load_events_seconds": [
+          0.1431943330098875
+        ],
+        "nar_load_seconds": 0.1431943330098875,
+        "vae_load_events_seconds": [
+          0.10199695901246741
+        ],
+        "vae_load_seconds": 0.10199695901246741
+      },
+      "e2e_seconds": 547.4561339580105
+    },
+    "configuration": {
+      "generation": {
+        "abc": {
+          "temperature": 0.7,
+          "top_p": 0.9,
+          "top_k": 30,
+          "repetition_penalty": 1.005,
+          "penalty_window": 100,
+          "min_tokens": 32,
+          "max_tokens": 4096
+        },
+        "semantic": {
+          "temperature": 1.0,
+          "top_p": 0.95,
+          "top_k": 100,
+          "repetition_penalty": 1.2,
+          "penalty_window": 50,
+          "min_tokens": 200,
+          "max_tokens": 9000
+        },
+        "ode_steps": 32,
+        "ode_method": "midpoint",
+        "context": 24576,
+        "version": "yue2-native-v1"
+      },
+      "overrides": {},
+      "cot": "full",
+      "cfg_scale": 1.0,
+      "cfg_negative": "same_instruction_and_exact_abc",
+      "backend": "mlx",
+      "quantization": "8bit",
+      "model_dtype": "bfloat16",
+      "vae_dtype": "float32",
+      "vae_decode": "halo_crop",
+      "vae_core_frames": 256,
+      "vae_halo_frames": 16,
+      "device": "DeviceType.gpu",
+      "memory_budget_gib": 16.0,
+      "offload_ar": false,
+      "runtime_sha256": "ff4829d01380a2ac98fbc0aa0aed90f9b2bbe9c0a3473f1d62ed8ee3abc8efa9",
+      "decoder_release": "standard",
+      "validation_status": "unvalidated",
+      "vae_backend": "mlx",
+      "ar_precision": "8bit",
+      "kv_dtype": "bfloat16",
+      "nar_dtype": "bfloat16",
+      "conditioning_precision": "bf16",
+      "attention_opmath": "float32",
+      "mlx_tf32_enabled": false,
+      "attention_inputs": "native_steel_bfloat16",
+      "query_chunk_size": 256,
+      "runtime": {
+        "lyra-yue2": "0.1.0",
+        "mlx": "0.32.2",
+        "mlx-lm": "0.31.3",
+        "transformers": "5.0.0",
+        "numpy": "2.2.6",
+        "python": "3.12.10",
+        "macos": "27.0"
+      },
+      "upstream_commit": "92a73cc7652fcc1f937855e4b765e0a0edd7ff2e",
+      "execution_guard": "GPUExecution",
+      "rng": {
+        "ar": "request_local_mlx",
+        "acoustic": "numpy_pcg64_fp32_full_song_v1"
+      }
+    },
+    "identity": "d749941555cc8c222323475543b07d022a798a4ccfe5b31e3cfb7cb34804a51a",
+    "audio_sha256": "2aa7e9afce7f5afd660bc39817be3f479a6b59773ba67caaeb527360f561c2e2",
+    "result_sha256": "af10208e255a1f2230108d1ec7e683214f31481f7678ea38f9222ca64ba05ed8",
+    "audio_quality": {
+      "sample_rate": 48000,
+      "channels": 2,
+      "finite": true,
+      "rms": 0.14319429003155604,
+      "peak": 0.8744818568229675,
+      "clipping_fraction": 0.0
+    },
+    "musical_quality_acceptance": "pending human listening; not established by duration or EOS",
+    "resources": {
+      "memory_counter_schema": 2,
+      "swap_counter_source": "host_statistics64.swapins/swapouts",
+      "sampling_interval_seconds": 0.1,
+      "power_sampling_interval_seconds": 5.0,
+      "metadata": {},
+      "power_start": {
+        "ac_connected": true,
+        "pmset": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=37224547)\t95%; AC attached; not charging present: true"
+      },
+      "power_end": {
+        "ac_connected": true,
+        "pmset": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=37224547)\t95%; AC attached; not charging present: true"
+      },
+      "start": {
+        "elapsed_seconds": 0.01626429200405255,
+        "rss_bytes": 51658752,
+        "system_swap_used_bytes": 12407668736,
+        "system_swap_in_bytes": 56318050304,
+        "system_swap_out_bytes": 83892617216,
+        "system_available_bytes": 52476608512,
+        "system_total_bytes": 137438953472,
+        "system_memory_pressure_level": 1,
+        "system_free_bytes": 11686707200,
+        "system_wired_bytes": 6419333120,
+        "system_compressor_bytes": 36918575104,
+        "system_file_backed_bytes": 36826939392,
+        "physical_footprint_bytes": 31785680,
+        "process_lifetime_peak_footprint_bytes": 31785680,
+        "mlx_active_bytes": 0,
+        "mlx_cache_bytes": 0,
+        "mlx_peak_bytes": 0,
+        "ac_connected": true
+      },
+      "end": {
+        "elapsed_seconds": 554.2063482080121,
+        "rss_bytes": 830947328,
+        "system_swap_used_bytes": 12390891520,
+        "system_swap_in_bytes": 56321720320,
+        "system_swap_out_bytes": 83892617216,
+        "system_available_bytes": 63129010176,
+        "system_total_bytes": 137438953472,
+        "system_memory_pressure_level": 1,
+        "system_free_bytes": 2445590528,
+        "system_wired_bytes": 8817328128,
+        "system_compressor_bytes": 2902540288,
+        "system_file_backed_bytes": 35045130240,
+        "physical_footprint_bytes": 988678304,
+        "process_lifetime_peak_footprint_bytes": 11875867272,
+        "mlx_active_bytes": 8,
+        "mlx_cache_bytes": 0,
+        "mlx_peak_bytes": 11256150230,
+        "ac_connected": true
+      },
+      "sampled_maxima": {
+        "mlx_active_bytes": 11196716606,
+        "mlx_cache_bytes": 196902912,
+        "mlx_peak_bytes": 11256150230,
+        "physical_footprint_bytes": 11823946376,
+        "process_lifetime_peak_footprint_bytes": 11875867272,
+        "rss_bytes": 8190558208,
+        "system_available_bytes": 64890142720,
+        "system_compressor_bytes": 36918624256,
+        "system_file_backed_bytes": 37440602112,
+        "system_free_bytes": 12019777536,
+        "system_swap_in_bytes": 56321720320,
+        "system_swap_out_bytes": 83892617216,
+        "system_swap_used_bytes": 12407668736,
+        "system_total_bytes": 137438953472,
+        "system_wired_bytes": 43725864960
+      },
+      "monitor_error": null,
+      "exception": null
+    },
+    "artifact_directory": "outputs/official_fullsong/ja_score",
+    "prior_attempts": []
+  },
+  {
+    "id": "ru_score",
+    "status": "complete",
+    "case_sha256": "b8e8dc58ee5f6c88305f86733815138bbb81f039aabb33d1ba7c7f5556b4cad9",
+    "truncated": {
+      "abc": false,
+      "semantic": false
+    },
+    "audio_seconds": 119.95866666666667,
+    "official_seconds": 119.96,
+    "duration_ratio": 0.9999888851839503,
+    "e2e_seconds": 195.10311070800526,
+    "rtf": 1.6264194670498053,
+    "speed_multiplier": 0.6148475348822035,
+    "load_seconds": 5.187667417048942,
+    "transcription_seconds": 0,
+    "save_seconds": 0.468616625003051,
+    "timing": {
+      "abc": {
+        "seconds": 0.0,
+        "output_tokens": 0,
+        "external_prefix_tokens": 1158
+      },
+      "semantic": {
+        "seconds": 49.4814189170138,
+        "prefill_seconds": 0.9020838750293478,
+        "ttft_seconds": 0.907485292002093,
+        "output_tokens": 3000,
+        "content_tokens": 2999,
+        "output_tps": 60.62881917415011,
+        "prefix_tokens": 1450,
+        "cfg_branches": 1,
+        "execution": "eager",
+        "attention": "sdpa",
+        "backend": "mlx"
+      },
+      "nar_seconds": 133.82474104198627,
+      "vae_seconds": 5.876439166953787,
+      "load": {
+        "resolve_conversion_integrity_seconds": 5.187611332978122,
+        "ar_load_events_seconds": [
+          0.11997312499443069
+        ],
+        "ar_load_seconds": 0.11997312499443069,
+        "conditioning_load_events_seconds": [
+          0.2336275419802405
+        ],
+        "conditioning_load_seconds": 0.2336275419802405,
+        "nar_load_events_seconds": [
+          0.11692583403782919
+        ],
+        "nar_load_seconds": 0.11692583403782919,
+        "vae_load_events_seconds": [
+          0.10771866701543331
+        ],
+        "vae_load_seconds": 0.10771866701543331
+      },
+      "e2e_seconds": 189.32758395798737
+    },
+    "configuration": {
+      "generation": {
+        "abc": {
+          "temperature": 0.7,
+          "top_p": 0.9,
+          "top_k": 30,
+          "repetition_penalty": 1.005,
+          "penalty_window": 100,
+          "min_tokens": 32,
+          "max_tokens": 4096
+        },
+        "semantic": {
+          "temperature": 1.0,
+          "top_p": 0.95,
+          "top_k": 100,
+          "repetition_penalty": 1.2,
+          "penalty_window": 50,
+          "min_tokens": 200,
+          "max_tokens": 9000
+        },
+        "ode_steps": 32,
+        "ode_method": "midpoint",
+        "context": 24576,
+        "version": "yue2-native-v1"
+      },
+      "overrides": {},
+      "cot": "full",
+      "cfg_scale": 1.0,
+      "cfg_negative": "same_instruction_and_exact_abc",
+      "backend": "mlx",
+      "quantization": "8bit",
+      "model_dtype": "bfloat16",
+      "vae_dtype": "float32",
+      "vae_decode": "halo_crop",
+      "vae_core_frames": 256,
+      "vae_halo_frames": 16,
+      "device": "DeviceType.gpu",
+      "memory_budget_gib": 16.0,
+      "offload_ar": false,
+      "runtime_sha256": "ff4829d01380a2ac98fbc0aa0aed90f9b2bbe9c0a3473f1d62ed8ee3abc8efa9",
+      "decoder_release": "standard",
+      "validation_status": "unvalidated",
+      "vae_backend": "mlx",
+      "ar_precision": "8bit",
+      "kv_dtype": "bfloat16",
+      "nar_dtype": "bfloat16",
+      "conditioning_precision": "bf16",
+      "attention_opmath": "float32",
+      "mlx_tf32_enabled": false,
+      "attention_inputs": "native_steel_bfloat16",
+      "query_chunk_size": 256,
+      "runtime": {
+        "lyra-yue2": "0.1.0",
+        "mlx": "0.32.2",
+        "mlx-lm": "0.31.3",
+        "transformers": "5.0.0",
+        "numpy": "2.2.6",
+        "python": "3.12.10",
+        "macos": "27.0"
+      },
+      "upstream_commit": "92a73cc7652fcc1f937855e4b765e0a0edd7ff2e",
+      "execution_guard": "GPUExecution",
+      "rng": {
+        "ar": "request_local_mlx",
+        "acoustic": "numpy_pcg64_fp32_full_song_v1"
+      }
+    },
+    "identity": "be5e899886c562e66d297bf0700174cb3dac682b4ca3d2ba523c89384c3cd5bb",
+    "audio_sha256": "a4235afa6365faeeb9a4a4cd8e52b9abd196d71e8e114087cf703e45b4fac42a",
+    "result_sha256": "84b536bb5fe4e872adba3455ae38949b12fe8dc0145653938d7e1a0be7d6bd25",
+    "audio_quality": {
+      "sample_rate": 48000,
+      "channels": 2,
+      "finite": true,
+      "rms": 0.130880053446391,
+      "peak": 0.822986364364624,
+      "clipping_fraction": 0.0
+    },
+    "musical_quality_acceptance": "pending human listening; not established by duration or EOS",
+    "resources": {
+      "memory_counter_schema": 2,
+      "swap_counter_source": "host_statistics64.swapins/swapouts",
+      "sampling_interval_seconds": 0.1,
+      "power_sampling_interval_seconds": 5.0,
+      "metadata": {},
+      "power_start": {
+        "ac_connected": true,
+        "pmset": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=37224547)\t95%; AC attached; not charging present: true"
+      },
+      "power_end": {
+        "ac_connected": true,
+        "pmset": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=37224547)\t95%; AC attached; not charging present: true"
+      },
+      "start": {
+        "elapsed_seconds": 0.00960112496977672,
+        "rss_bytes": 51675136,
+        "system_swap_used_bytes": 12390891520,
+        "system_swap_in_bytes": 56321720320,
+        "system_swap_out_bytes": 83892617216,
+        "system_available_bytes": 69813141504,
+        "system_total_bytes": 137438953472,
+        "system_memory_pressure_level": 1,
+        "system_free_bytes": 12734529536,
+        "system_wired_bytes": 6374260736,
+        "system_compressor_bytes": 2902540288,
+        "system_file_backed_bytes": 35071262720,
+        "physical_footprint_bytes": 31802064,
+        "process_lifetime_peak_footprint_bytes": 31802064,
+        "mlx_active_bytes": 0,
+        "mlx_cache_bytes": 0,
+        "mlx_peak_bytes": 0,
+        "ac_connected": true
+      },
+      "end": {
+        "elapsed_seconds": 195.62312208296498,
+        "rss_bytes": 942751744,
+        "system_swap_used_bytes": 12382502912,
+        "system_swap_in_bytes": 56328011776,
+        "system_swap_out_bytes": 83892617216,
+        "system_available_bytes": 68005363712,
+        "system_total_bytes": 137438953472,
+        "system_memory_pressure_level": 1,
+        "system_free_bytes": 10946576384,
+        "system_wired_bytes": 8721760256,
+        "system_compressor_bytes": 2908192768,
+        "system_file_backed_bytes": 33731592192,
+        "physical_footprint_bytes": 1247185224,
+        "process_lifetime_peak_footprint_bytes": 11869936240,
+        "mlx_active_bytes": 8,
+        "mlx_cache_bytes": 0,
+        "mlx_peak_bytes": 11256150230,
+        "ac_connected": true
+      },
+      "sampled_maxima": {
+        "mlx_active_bytes": 11196716606,
+        "mlx_cache_bytes": 156781600,
+        "mlx_peak_bytes": 11256150230,
+        "physical_footprint_bytes": 11774040688,
+        "process_lifetime_peak_footprint_bytes": 11869936240,
+        "rss_bytes": 8236990464,
+        "system_available_bytes": 69813141504,
+        "system_compressor_bytes": 2908487680,
+        "system_file_backed_bytes": 36293132288,
+        "system_free_bytes": 12734529536,
+        "system_swap_in_bytes": 56328011776,
+        "system_swap_out_bytes": 83892617216,
+        "system_swap_used_bytes": 12390891520,
+        "system_total_bytes": 137438953472,
+        "system_wired_bytes": 12710789120
+      },
+      "monitor_error": null,
+      "exception": null
+    },
+    "artifact_directory": "outputs/official_fullsong/ru_score",
+    "prior_attempts": []
+  },
+  {
+    "id": "es_score",
+    "status": "complete",
+    "case_sha256": "d559816619d07e4fbaf1dbcdedb3669bcc08cd4fe588e559b7184c9e30813ce5",
+    "truncated": {
+      "abc": false,
+      "semantic": false
+    },
+    "audio_seconds": 181.03866666666667,
+    "official_seconds": 182.92,
+    "duration_ratio": 0.9897149938042132,
+    "e2e_seconds": 389.6965463749948,
+    "rtf": 2.1525597462144077,
+    "speed_multiplier": 0.4645631796091359,
+    "load_seconds": 5.2215331249753945,
+    "transcription_seconds": 0,
+    "save_seconds": 0.48262100003194064,
+    "timing": {
+      "abc": {
+        "seconds": 0.0,
+        "output_tokens": 0,
+        "external_prefix_tokens": 2366
+      },
+      "semantic": {
+        "seconds": 91.5086536660092,
+        "prefill_seconds": 1.83645666600205,
+        "ttft_seconds": 1.8413168750121258,
+        "output_tokens": 4527,
+        "content_tokens": 4526,
+        "output_tps": 49.470731112740104,
+        "prefix_tokens": 3042,
+        "cfg_branches": 1,
+        "execution": "eager",
+        "attention": "sdpa",
+        "backend": "mlx"
+      },
+      "nar_seconds": 283.7967567089945,
+      "vae_seconds": 8.454269333044067,
+      "load": {
+        "resolve_conversion_integrity_seconds": 5.221474041987676,
+        "ar_load_events_seconds": [
+          0.11692950001452118
+        ],
+        "ar_load_seconds": 0.11692950001452118,
+        "conditioning_load_events_seconds": [
+          0.2450902090058662
+        ],
+        "conditioning_load_seconds": 0.2450902090058662,
+        "nar_load_events_seconds": [
+          0.1404322080197744
+        ],
+        "nar_load_seconds": 0.1404322080197744,
+        "vae_load_events_seconds": [
+          0.10621683299541473
+        ],
+        "vae_load_seconds": 0.10621683299541473
+      },
+      "e2e_seconds": 383.908113958023
+    },
+    "configuration": {
+      "generation": {
+        "abc": {
+          "temperature": 0.7,
+          "top_p": 0.9,
+          "top_k": 30,
+          "repetition_penalty": 1.005,
+          "penalty_window": 100,
+          "min_tokens": 32,
+          "max_tokens": 4096
+        },
+        "semantic": {
+          "temperature": 1.0,
+          "top_p": 0.95,
+          "top_k": 100,
+          "repetition_penalty": 1.2,
+          "penalty_window": 50,
+          "min_tokens": 200,
+          "max_tokens": 9000
+        },
+        "ode_steps": 32,
+        "ode_method": "midpoint",
+        "context": 24576,
+        "version": "yue2-native-v1"
+      },
+      "overrides": {},
+      "cot": "full",
+      "cfg_scale": 1.0,
+      "cfg_negative": "same_instruction_and_exact_abc",
+      "backend": "mlx",
+      "quantization": "8bit",
+      "model_dtype": "bfloat16",
+      "vae_dtype": "float32",
+      "vae_decode": "halo_crop",
+      "vae_core_frames": 256,
+      "vae_halo_frames": 16,
+      "device": "DeviceType.gpu",
+      "memory_budget_gib": 16.0,
+      "offload_ar": false,
+      "runtime_sha256": "ff4829d01380a2ac98fbc0aa0aed90f9b2bbe9c0a3473f1d62ed8ee3abc8efa9",
+      "decoder_release": "standard",
+      "validation_status": "unvalidated",
+      "vae_backend": "mlx",
+      "ar_precision": "8bit",
+      "kv_dtype": "bfloat16",
+      "nar_dtype": "bfloat16",
+      "conditioning_precision": "bf16",
+      "attention_opmath": "float32",
+      "mlx_tf32_enabled": false,
+      "attention_inputs": "native_steel_bfloat16",
+      "query_chunk_size": 256,
+      "runtime": {
+        "lyra-yue2": "0.1.0",
+        "mlx": "0.32.2",
+        "mlx-lm": "0.31.3",
+        "transformers": "5.0.0",
+        "numpy": "2.2.6",
+        "python": "3.12.10",
+        "macos": "27.0"
+      },
+      "upstream_commit": "92a73cc7652fcc1f937855e4b765e0a0edd7ff2e",
+      "execution_guard": "GPUExecution",
+      "rng": {
+        "ar": "request_local_mlx",
+        "acoustic": "numpy_pcg64_fp32_full_song_v1"
+      }
+    },
+    "identity": "533c88d131634c01b3bf46d6bba3649530811bbd77171619d9215e65d9f5981c",
+    "audio_sha256": "84cad5eafcd34a09a9afce4efbe13a0eb624edddf86204a7290cdfc162e14924",
+    "result_sha256": "adfb789aa7b14c85aab0a5ab0237277584c147cf7034690e4db83c109f7bc839",
+    "audio_quality": {
+      "sample_rate": 48000,
+      "channels": 2,
+      "finite": true,
+      "rms": 0.14357905449661487,
+      "peak": 0.9590508341789246,
+      "clipping_fraction": 0.0
+    },
+    "musical_quality_acceptance": "pending human listening; not established by duration or EOS",
+    "resources": {
+      "memory_counter_schema": 2,
+      "swap_counter_source": "host_statistics64.swapins/swapouts",
+      "sampling_interval_seconds": 0.1,
+      "power_sampling_interval_seconds": 5.0,
+      "metadata": {},
+      "power_start": {
+        "ac_connected": true,
+        "pmset": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=37224547)\t95%; AC attached; not charging present: true"
+      },
+      "power_end": {
+        "ac_connected": true,
+        "pmset": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=37224547)\t95%; AC attached; not charging present: true"
+      },
+      "start": {
+        "elapsed_seconds": 0.012591834005434066,
+        "rss_bytes": 52068352,
+        "system_swap_used_bytes": 12382502912,
+        "system_swap_in_bytes": 56328011776,
+        "system_swap_out_bytes": 83892617216,
+        "system_available_bytes": 68005363712,
+        "system_total_bytes": 137438953472,
+        "system_memory_pressure_level": 1,
+        "system_free_bytes": 10946576384,
+        "system_wired_bytes": 8721760256,
+        "system_compressor_bytes": 2908192768,
+        "system_file_backed_bytes": 33731592192,
+        "physical_footprint_bytes": 32211688,
+        "process_lifetime_peak_footprint_bytes": 32211688,
+        "mlx_active_bytes": 0,
+        "mlx_cache_bytes": 0,
+        "mlx_peak_bytes": 0,
+        "ac_connected": true
+      },
+      "end": {
+        "elapsed_seconds": 390.24551800003974,
+        "rss_bytes": 1019641856,
+        "system_swap_used_bytes": 12382502912,
+        "system_swap_in_bytes": 56328994816,
+        "system_swap_out_bytes": 83892617216,
+        "system_available_bytes": 65221279744,
+        "system_total_bytes": 137438953472,
+        "system_memory_pressure_level": 1,
+        "system_free_bytes": 4218208256,
+        "system_wired_bytes": 7308443648,
+        "system_compressor_bytes": 2906521600,
+        "system_file_backed_bytes": 34812772352,
+        "physical_footprint_bytes": 1317636472,
+        "process_lifetime_peak_footprint_bytes": 12049209992,
+        "mlx_active_bytes": 8,
+        "mlx_cache_bytes": 0,
+        "mlx_peak_bytes": 11256150230,
+        "ac_connected": true
+      },
+      "sampled_maxima": {
+        "mlx_active_bytes": 11196716606,
+        "mlx_cache_bytes": 185466880,
+        "mlx_peak_bytes": 11256150230,
+        "physical_footprint_bytes": 11901475464,
+        "process_lifetime_peak_footprint_bytes": 12049209992,
+        "rss_bytes": 8175878144,
+        "system_available_bytes": 68721623040,
+        "system_compressor_bytes": 2908258304,
+        "system_file_backed_bytes": 34836414464,
+        "system_free_bytes": 11903664128,
+        "system_swap_in_bytes": 56328994816,
+        "system_swap_out_bytes": 83892617216,
+        "system_swap_used_bytes": 12382502912,
+        "system_total_bytes": 137438953472,
+        "system_wired_bytes": 13419298816
+      },
+      "monitor_error": null,
+      "exception": null
+    },
+    "artifact_directory": "outputs/official_fullsong/es_score",
+    "prior_attempts": []
+  },
+  {
+    "id": "zh_score",
+    "status": "complete",
+    "case_sha256": "4bc847a703582fe65cd8b2b9bf716b3031e4efa766f4fd104e29cbbce1f2b0fc",
+    "truncated": {
+      "abc": false,
+      "semantic": false
+    },
+    "audio_seconds": 152.27866666666668,
+    "official_seconds": 152.72,
+    "duration_ratio": 0.9971101798498342,
+    "e2e_seconds": 258.0486004999839,
+    "rtf": 1.6945814285650684,
+    "speed_multiplier": 0.5901162276083578,
+    "load_seconds": 5.196350332989823,
+    "transcription_seconds": 0,
+    "save_seconds": 0.4392753330175765,
+    "timing": {
+      "abc": {
+        "seconds": 0.0,
+        "output_tokens": 0,
+        "external_prefix_tokens": 1367
+      },
+      "semantic": {
+        "seconds": 63.472836249973625,
+        "prefill_seconds": 1.2251123749883845,
+        "ttft_seconds": 1.22868387500057,
+        "output_tokens": 3808,
+        "content_tokens": 3807,
+        "output_tps": 59.994167977669065,
+        "prefix_tokens": 1998,
+        "cfg_branches": 1,
+        "execution": "eager",
+        "attention": "sdpa",
+        "backend": "mlx"
+      },
+      "nar_seconds": 182.23769116698531,
+      "vae_seconds": 6.420643166988157,
+      "load": {
+        "resolve_conversion_integrity_seconds": 5.196277417009696,
+        "ar_load_events_seconds": [
+          0.11680804198840633
+        ],
+        "ar_load_seconds": 0.11680804198840633,
+        "conditioning_load_events_seconds": [
+          0.23702437500469387
+        ],
+        "conditioning_load_seconds": 0.23702437500469387,
+        "nar_load_events_seconds": [
+          0.13652141601778567
+        ],
+        "nar_load_seconds": 0.13652141601778567,
+        "vae_load_events_seconds": [
+          0.11104529199656099
+        ],
+        "vae_load_seconds": 0.11104529199656099
+      },
+      "e2e_seconds": 252.2732525410247
+    },
+    "configuration": {
+      "generation": {
+        "abc": {
+          "temperature": 0.7,
+          "top_p": 0.9,
+          "top_k": 30,
+          "repetition_penalty": 1.005,
+          "penalty_window": 100,
+          "min_tokens": 32,
+          "max_tokens": 4096
+        },
+        "semantic": {
+          "temperature": 1.0,
+          "top_p": 0.95,
+          "top_k": 100,
+          "repetition_penalty": 1.2,
+          "penalty_window": 50,
+          "min_tokens": 200,
+          "max_tokens": 9000
+        },
+        "ode_steps": 32,
+        "ode_method": "midpoint",
+        "context": 24576,
+        "version": "yue2-native-v1"
+      },
+      "overrides": {},
+      "cot": "full",
+      "cfg_scale": 1.0,
+      "cfg_negative": "same_instruction_and_exact_abc",
+      "backend": "mlx",
+      "quantization": "8bit",
+      "model_dtype": "bfloat16",
+      "vae_dtype": "float32",
+      "vae_decode": "halo_crop",
+      "vae_core_frames": 256,
+      "vae_halo_frames": 16,
+      "device": "DeviceType.gpu",
+      "memory_budget_gib": 16.0,
+      "offload_ar": false,
+      "runtime_sha256": "ff4829d01380a2ac98fbc0aa0aed90f9b2bbe9c0a3473f1d62ed8ee3abc8efa9",
+      "decoder_release": "standard",
+      "validation_status": "unvalidated",
+      "vae_backend": "mlx",
+      "ar_precision": "8bit",
+      "kv_dtype": "bfloat16",
+      "nar_dtype": "bfloat16",
+      "conditioning_precision": "bf16",
+      "attention_opmath": "float32",
+      "mlx_tf32_enabled": false,
+      "attention_inputs": "native_steel_bfloat16",
+      "query_chunk_size": 256,
+      "runtime": {
+        "lyra-yue2": "0.1.0",
+        "mlx": "0.32.2",
+        "mlx-lm": "0.31.3",
+        "transformers": "5.0.0",
+        "numpy": "2.2.6",
+        "python": "3.12.10",
+        "macos": "27.0"
+      },
+      "upstream_commit": "92a73cc7652fcc1f937855e4b765e0a0edd7ff2e",
+      "execution_guard": "GPUExecution",
+      "rng": {
+        "ar": "request_local_mlx",
+        "acoustic": "numpy_pcg64_fp32_full_song_v1"
+      }
+    },
+    "identity": "e0f838bd206fe8b11310d79fae6c4220891e436a4f5a20674f5b57a7c95cfe39",
+    "audio_sha256": "b70ff8f3e5bfc2b0e7b6a078a50155e25d5bd772a306daf802b0c174818de0ff",
+    "result_sha256": "78b2422ac0c41cfb277606488ab92daf3093ea4d75636839ecf52f561cd2fefc",
+    "audio_quality": {
+      "sample_rate": 48000,
+      "channels": 2,
+      "finite": true,
+      "rms": 0.15860733541378255,
+      "peak": 1.0,
+      "clipping_fraction": 1.3681058410458019e-07
+    },
+    "musical_quality_acceptance": "pending human listening; not established by duration or EOS",
+    "resources": {
+      "memory_counter_schema": 2,
+      "swap_counter_source": "host_statistics64.swapins/swapouts",
+      "sampling_interval_seconds": 0.1,
+      "power_sampling_interval_seconds": 5.0,
+      "metadata": {},
+      "power_start": {
+        "ac_connected": true,
+        "pmset": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=37224547)\t95%; AC attached; not charging present: true"
+      },
+      "power_end": {
+        "ac_connected": true,
+        "pmset": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=37224547)\t95%; AC attached; not charging present: true"
+      },
+      "start": {
+        "elapsed_seconds": 0.010249125014524907,
+        "rss_bytes": 51757056,
+        "system_swap_used_bytes": 12382502912,
+        "system_swap_in_bytes": 56328994816,
+        "system_swap_out_bytes": 83892617216,
+        "system_available_bytes": 65221279744,
+        "system_total_bytes": 137438953472,
+        "system_memory_pressure_level": 1,
+        "system_free_bytes": 4218208256,
+        "system_wired_bytes": 7308443648,
+        "system_compressor_bytes": 2906521600,
+        "system_file_backed_bytes": 34812772352,
+        "physical_footprint_bytes": 31883984,
+        "process_lifetime_peak_footprint_bytes": 31883984,
+        "mlx_active_bytes": 0,
+        "mlx_cache_bytes": 0,
+        "mlx_peak_bytes": 0,
+        "ac_connected": true
+      },
+      "end": {
+        "elapsed_seconds": 258.5429126250092,
+        "rss_bytes": 988987392,
+        "system_swap_used_bytes": 12382502912,
+        "system_swap_in_bytes": 56329125888,
+        "system_swap_out_bytes": 83892617216,
+        "system_available_bytes": 63939657728,
+        "system_total_bytes": 137438953472,
+        "system_memory_pressure_level": 1,
+        "system_free_bytes": 2698018816,
+        "system_wired_bytes": 8543420416,
+        "system_compressor_bytes": 2905391104,
+        "system_file_backed_bytes": 35016163328,
+        "physical_footprint_bytes": 1381746992,
+        "process_lifetime_peak_footprint_bytes": 11870575216,
+        "mlx_active_bytes": 8,
+        "mlx_cache_bytes": 0,
+        "mlx_peak_bytes": 11256150230,
+        "ac_connected": true
+      },
+      "sampled_maxima": {
+        "mlx_active_bytes": 11256150230,
+        "mlx_cache_bytes": 267354112,
+        "mlx_peak_bytes": 11256150230,
+        "physical_footprint_bytes": 11782855280,
+        "process_lifetime_peak_footprint_bytes": 11870575216,
+        "rss_bytes": 8159985664,
+        "system_available_bytes": 69785157632,
+        "system_compressor_bytes": 2906537984,
+        "system_file_backed_bytes": 35016163328,
+        "system_free_bytes": 12537413632,
+        "system_swap_in_bytes": 56329125888,
+        "system_swap_out_bytes": 83892617216,
+        "system_swap_used_bytes": 12382502912,
+        "system_total_bytes": 137438953472,
+        "system_wired_bytes": 11295391744
+      },
+      "monitor_error": null,
+      "exception": null
+    },
+    "artifact_directory": "outputs/official_fullsong/zh_score",
+    "prior_attempts": []
+  },
+  {
+    "id": "ko_score",
+    "status": "complete",
+    "case_sha256": "2d38527bb49dbc4dc16afee14e020c4aff37f3b8bcef24c781ba69c1fcb92fbb",
+    "truncated": {
+      "abc": false,
+      "semantic": false
+    },
+    "audio_seconds": 156.03866666666667,
+    "official_seconds": 156.92,
+    "duration_ratio": 0.9943835500042486,
+    "e2e_seconds": 299.78041066700825,
+    "rtf": 1.921193105984467,
+    "speed_multiplier": 0.5205098836160851,
+    "load_seconds": 5.164946083037648,
+    "transcription_seconds": 0,
+    "save_seconds": 0.3679583329940215,
+    "timing": {
+      "abc": {
+        "seconds": 0.0,
+        "output_tokens": 0,
+        "external_prefix_tokens": 1980
+      },
+      "semantic": {
+        "seconds": 65.99044629203854,
+        "prefill_seconds": 1.376692042045761,
+        "ttft_seconds": 1.3849018750479445,
+        "output_tokens": 3902,
+        "content_tokens": 3901,
+        "output_tps": 59.12977134192771,
+        "prefix_tokens": 2692,
+        "cfg_branches": 1,
+        "execution": "eager",
+        "attention": "sdpa",
+        "backend": "mlx"
+      },
+      "nar_seconds": 219.74767066596542,
+      "vae_seconds": 8.172454458952416,
+      "load": {
+        "resolve_conversion_integrity_seconds": 5.164890291984193,
+        "ar_load_events_seconds": [
+          0.11963616701541469
+        ],
+        "ar_load_seconds": 0.11963616701541469,
+        "conditioning_load_events_seconds": [
+          0.16252879198873416
+        ],
+        "conditioning_load_seconds": 0.16252879198873416,
+        "nar_load_events_seconds": [
+          0.11841804103460163
+        ],
+        "nar_load_seconds": 0.11841804103460163,
+        "vae_load_events_seconds": [
+          0.10575899999821559
+        ],
+        "vae_load_seconds": 0.10575899999821559
+      },
+      "e2e_seconds": 294.04429254104616
+    },
+    "configuration": {
+      "generation": {
+        "abc": {
+          "temperature": 0.7,
+          "top_p": 0.9,
+          "top_k": 30,
+          "repetition_penalty": 1.005,
+          "penalty_window": 100,
+          "min_tokens": 32,
+          "max_tokens": 4096
+        },
+        "semantic": {
+          "temperature": 1.0,
+          "top_p": 0.95,
+          "top_k": 100,
+          "repetition_penalty": 1.2,
+          "penalty_window": 50,
+          "min_tokens": 200,
+          "max_tokens": 9000
+        },
+        "ode_steps": 32,
+        "ode_method": "midpoint",
+        "context": 24576,
+        "version": "yue2-native-v1"
+      },
+      "overrides": {},
+      "cot": "full",
+      "cfg_scale": 1.0,
+      "cfg_negative": "same_instruction_and_exact_abc",
+      "backend": "mlx",
+      "quantization": "8bit",
+      "model_dtype": "bfloat16",
+      "vae_dtype": "float32",
+      "vae_decode": "halo_crop",
+      "vae_core_frames": 256,
+      "vae_halo_frames": 16,
+      "device": "DeviceType.gpu",
+      "memory_budget_gib": 16.0,
+      "offload_ar": false,
+      "runtime_sha256": "ff4829d01380a2ac98fbc0aa0aed90f9b2bbe9c0a3473f1d62ed8ee3abc8efa9",
+      "decoder_release": "standard",
+      "validation_status": "unvalidated",
+      "vae_backend": "mlx",
+      "ar_precision": "8bit",
+      "kv_dtype": "bfloat16",
+      "nar_dtype": "bfloat16",
+      "conditioning_precision": "bf16",
+      "attention_opmath": "float32",
+      "mlx_tf32_enabled": false,
+      "attention_inputs": "native_steel_bfloat16",
+      "query_chunk_size": 256,
+      "runtime": {
+        "lyra-yue2": "0.1.0",
+        "mlx": "0.32.2",
+        "mlx-lm": "0.31.3",
+        "transformers": "5.0.0",
+        "numpy": "2.2.6",
+        "python": "3.12.10",
+        "macos": "27.0"
+      },
+      "upstream_commit": "92a73cc7652fcc1f937855e4b765e0a0edd7ff2e",
+      "execution_guard": "GPUExecution",
+      "rng": {
+        "ar": "request_local_mlx",
+        "acoustic": "numpy_pcg64_fp32_full_song_v1"
+      }
+    },
+    "identity": "0910f50d377d92b9633239791464579defbe4346888068ffa1726ac493ea6806",
+    "audio_sha256": "530de8ebe1df332844f86b9854b8e62c5f8e319e591d0427be5bf76ea16c0058",
+    "result_sha256": "f9a6bfe7694b7507d96f28ee065a0b64065437736e4d36c7c136c9745fb8919f",
+    "audio_quality": {
+      "sample_rate": 48000,
+      "channels": 2,
+      "finite": true,
+      "rms": 0.15526236099207205,
+      "peak": 1.0,
+      "clipping_fraction": 2.6702783070862776e-07
+    },
+    "musical_quality_acceptance": "pending human listening; not established by duration or EOS",
+    "resources": {
+      "memory_counter_schema": 2,
+      "swap_counter_source": "host_statistics64.swapins/swapouts",
+      "sampling_interval_seconds": 0.1,
+      "power_sampling_interval_seconds": 5.0,
+      "metadata": {},
+      "power_start": {
+        "ac_connected": true,
+        "pmset": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=37224547)\t95%; AC attached; not charging present: true"
+      },
+      "power_end": {
+        "ac_connected": true,
+        "pmset": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=37224547)\t95%; AC attached; not charging present: true"
+      },
+      "start": {
+        "elapsed_seconds": 0.009647957980632782,
+        "rss_bytes": 51838976,
+        "system_swap_used_bytes": 12382502912,
+        "system_swap_in_bytes": 56329125888,
+        "system_swap_out_bytes": 83892617216,
+        "system_available_bytes": 63939657728,
+        "system_total_bytes": 137438953472,
+        "system_memory_pressure_level": 1,
+        "system_free_bytes": 2698018816,
+        "system_wired_bytes": 8543420416,
+        "system_compressor_bytes": 2905391104,
+        "system_file_backed_bytes": 35016163328,
+        "physical_footprint_bytes": 31965904,
+        "process_lifetime_peak_footprint_bytes": 31965904,
+        "mlx_active_bytes": 0,
+        "mlx_cache_bytes": 0,
+        "mlx_peak_bytes": 0,
+        "ac_connected": true
+      },
+      "end": {
+        "elapsed_seconds": 300.20517570798984,
+        "rss_bytes": 752517120,
+        "system_swap_used_bytes": 12382502912,
+        "system_swap_in_bytes": 56329289728,
+        "system_swap_out_bytes": 83892617216,
+        "system_available_bytes": 64987594752,
+        "system_total_bytes": 137438953472,
+        "system_memory_pressure_level": 1,
+        "system_free_bytes": 3830333440,
+        "system_wired_bytes": 7345537024,
+        "system_compressor_bytes": 2903179264,
+        "system_file_backed_bytes": 35064840192,
+        "physical_footprint_bytes": 910821464,
+        "process_lifetime_peak_footprint_bytes": 12118252192,
+        "mlx_active_bytes": 8,
+        "mlx_cache_bytes": 0,
+        "mlx_peak_bytes": 11256150230,
+        "ac_connected": true
+      },
+      "sampled_maxima": {
+        "mlx_active_bytes": 11196716606,
+        "mlx_cache_bytes": 156781600,
+        "mlx_peak_bytes": 11256150230,
+        "physical_footprint_bytes": 11969518216,
+        "process_lifetime_peak_footprint_bytes": 12118252192,
+        "rss_bytes": 8162607104,
+        "system_available_bytes": 69856018432,
+        "system_compressor_bytes": 2905407488,
+        "system_file_backed_bytes": 35064840192,
+        "system_free_bytes": 12392005632,
+        "system_swap_in_bytes": 56329289728,
+        "system_swap_out_bytes": 83892617216,
+        "system_swap_used_bytes": 12382502912,
+        "system_total_bytes": 137438953472,
+        "system_wired_bytes": 11378753536
+      },
+      "monitor_error": null,
+      "exception": null
+    },
+    "artifact_directory": "outputs/official_fullsong/ko_score",
+    "prior_attempts": []
+  },
+  {
+    "id": "en_score",
+    "status": "complete",
+    "case_sha256": "f0418030dbdc46c67c1a9ba135dddc001f755d501ef50bf6e5ccd0d2c1d18778",
+    "truncated": {
+      "abc": false,
+      "semantic": false
+    },
+    "audio_seconds": 94.99866666666667,
+    "official_seconds": 95.76,
+    "duration_ratio": 0.9920495683653577,
+    "e2e_seconds": 146.92567508301,
+    "rtf": 1.5466077602809511,
+    "speed_multiplier": 0.6465763496611083,
+    "load_seconds": 5.267140208045021,
+    "transcription_seconds": 0,
+    "save_seconds": 0.2570144580095075,
+    "timing": {
+      "abc": {
+        "seconds": 0.0,
+        "output_tokens": 0,
+        "external_prefix_tokens": 1248
+      },
+      "semantic": {
+        "seconds": 36.48848658299539,
+        "prefill_seconds": 1.0328282919945195,
+        "ttft_seconds": 1.0356238330132328,
+        "output_tokens": 2376,
+        "content_tokens": 2375,
+        "output_tps": 65.11643048268489,
+        "prefix_tokens": 1482,
+        "cfg_branches": 1,
+        "execution": "eager",
+        "attention": "sdpa",
+        "backend": "mlx"
+      },
+      "nar_seconds": 99.93519991700305,
+      "vae_seconds": 4.497567957965657,
+      "load": {
+        "resolve_conversion_integrity_seconds": 5.2670660829753615,
+        "ar_load_events_seconds": [
+          0.12442404200555757
+        ],
+        "ar_load_seconds": 0.12442404200555757,
+        "conditioning_load_events_seconds": [
+          0.20056979201035574
+        ],
+        "conditioning_load_seconds": 0.20056979201035574,
+        "nar_load_events_seconds": [
+          0.13628183299442753
+        ],
+        "nar_load_seconds": 0.13628183299442753,
+        "vae_load_events_seconds": [
+          0.10732383403228596
+        ],
+        "vae_load_seconds": 0.10732383403228596
+      },
+      "e2e_seconds": 141.06340920901857
+    },
+    "configuration": {
+      "generation": {
+        "abc": {
+          "temperature": 0.7,
+          "top_p": 0.9,
+          "top_k": 30,
+          "repetition_penalty": 1.005,
+          "penalty_window": 100,
+          "min_tokens": 32,
+          "max_tokens": 4096
+        },
+        "semantic": {
+          "temperature": 1.0,
+          "top_p": 0.95,
+          "top_k": 100,
+          "repetition_penalty": 1.2,
+          "penalty_window": 50,
+          "min_tokens": 200,
+          "max_tokens": 9000
+        },
+        "ode_steps": 32,
+        "ode_method": "midpoint",
+        "context": 24576,
+        "version": "yue2-native-v1"
+      },
+      "overrides": {},
+      "cot": "full",
+      "cfg_scale": 1.0,
+      "cfg_negative": "same_instruction_and_exact_abc",
+      "backend": "mlx",
+      "quantization": "8bit",
+      "model_dtype": "bfloat16",
+      "vae_dtype": "float32",
+      "vae_decode": "halo_crop",
+      "vae_core_frames": 256,
+      "vae_halo_frames": 16,
+      "device": "DeviceType.gpu",
+      "memory_budget_gib": 16.0,
+      "offload_ar": false,
+      "runtime_sha256": "ff4829d01380a2ac98fbc0aa0aed90f9b2bbe9c0a3473f1d62ed8ee3abc8efa9",
+      "decoder_release": "standard",
+      "validation_status": "unvalidated",
+      "vae_backend": "mlx",
+      "ar_precision": "8bit",
+      "kv_dtype": "bfloat16",
+      "nar_dtype": "bfloat16",
+      "conditioning_precision": "bf16",
+      "attention_opmath": "float32",
+      "mlx_tf32_enabled": false,
+      "attention_inputs": "native_steel_bfloat16",
+      "query_chunk_size": 256,
+      "runtime": {
+        "lyra-yue2": "0.1.0",
+        "mlx": "0.32.2",
+        "mlx-lm": "0.31.3",
+        "transformers": "5.0.0",
+        "numpy": "2.2.6",
+        "python": "3.12.10",
+        "macos": "27.0"
+      },
+      "upstream_commit": "92a73cc7652fcc1f937855e4b765e0a0edd7ff2e",
+      "execution_guard": "GPUExecution",
+      "rng": {
+        "ar": "request_local_mlx",
+        "acoustic": "numpy_pcg64_fp32_full_song_v1"
+      }
+    },
+    "identity": "68e37c7e7b12a2825e49a45a87916820c250ccb52f06337b14eda5f4ce48dbc3",
+    "audio_sha256": "3fef195cc9776ca1912f484cdc19fed79eb9df0c9a20ba3cb30a78d2c0d8adcf",
+    "result_sha256": "17a56e384f1005060e4ed2f8dd64b0a444ce238fdaadd82271c4c5d6f420e074",
+    "audio_quality": {
+      "sample_rate": 48000,
+      "channels": 2,
+      "finite": true,
+      "rms": 0.1444062875937603,
+      "peak": 0.914916455745697,
+      "clipping_fraction": 0.0
+    },
+    "musical_quality_acceptance": "pending human listening; not established by duration or EOS",
+    "resources": {
+      "memory_counter_schema": 2,
+      "swap_counter_source": "host_statistics64.swapins/swapouts",
+      "sampling_interval_seconds": 0.1,
+      "power_sampling_interval_seconds": 5.0,
+      "metadata": {},
+      "power_start": {
+        "ac_connected": true,
+        "pmset": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=37224547)\t95%; AC attached; not charging present: true"
+      },
+      "power_end": {
+        "ac_connected": true,
+        "pmset": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=37224547)\t95%; AC attached; not charging present: true"
+      },
+      "start": {
+        "elapsed_seconds": 0.011967124999500811,
+        "rss_bytes": 51691520,
+        "system_swap_used_bytes": 12382502912,
+        "system_swap_in_bytes": 56329289728,
+        "system_swap_out_bytes": 83892617216,
+        "system_available_bytes": 64987594752,
+        "system_total_bytes": 137438953472,
+        "system_memory_pressure_level": 1,
+        "system_free_bytes": 3830333440,
+        "system_wired_bytes": 7345537024,
+        "system_compressor_bytes": 2903179264,
+        "system_file_backed_bytes": 35064840192,
+        "physical_footprint_bytes": 31834856,
+        "process_lifetime_peak_footprint_bytes": 31834856,
+        "mlx_active_bytes": 0,
+        "mlx_cache_bytes": 0,
+        "mlx_peak_bytes": 0,
+        "ac_connected": true
+      },
+      "end": {
+        "elapsed_seconds": 147.22970483300742,
+        "rss_bytes": 924106752,
+        "system_swap_used_bytes": 12382502912,
+        "system_swap_in_bytes": 56330141696,
+        "system_swap_out_bytes": 83892617216,
+        "system_available_bytes": 63983616000,
+        "system_total_bytes": 137438953472,
+        "system_memory_pressure_level": 1,
+        "system_free_bytes": 2658271232,
+        "system_wired_bytes": 8259878912,
+        "system_compressor_bytes": 2903408640,
+        "system_file_backed_bytes": 35047292928,
+        "physical_footprint_bytes": 1226983800,
+        "process_lifetime_peak_footprint_bytes": 12098951888,
+        "mlx_active_bytes": 8,
+        "mlx_cache_bytes": 0,
+        "mlx_peak_bytes": 11256166614,
+        "ac_connected": true
+      },
+      "sampled_maxima": {
+        "mlx_active_bytes": 11196732990,
+        "mlx_cache_bytes": 267354112,
+        "mlx_peak_bytes": 11256166614,
+        "physical_footprint_bytes": 11987426000,
+        "process_lifetime_peak_footprint_bytes": 12098951888,
+        "rss_bytes": 8219082752,
+        "system_available_bytes": 70019235840,
+        "system_compressor_bytes": 2903621632,
+        "system_file_backed_bytes": 35064840192,
+        "system_free_bytes": 12387696640,
+        "system_swap_in_bytes": 56330141696,
+        "system_swap_out_bytes": 83892617216,
+        "system_swap_used_bytes": 12382502912,
+        "system_total_bytes": 137438953472,
+        "system_wired_bytes": 11021893632
+      },
+      "monitor_error": null,
+      "exception": null
+    },
+    "artifact_directory": "outputs/official_fullsong/en_score",
+    "prior_attempts": []
+  },
+  {
+    "id": "full_generated",
+    "status": "complete",
+    "case_sha256": "72df4bb21da03afede40459e879fbfc99af8fb70b5af98cceb9358134aaf3b86",
+    "truncated": {
+      "abc": false,
+      "semantic": false
+    },
+    "audio_seconds": 209.91866666666667,
+    "official_seconds": 204.88,
+    "duration_ratio": 1.0245932578419887,
+    "e2e_seconds": 504.1577927910257,
+    "rtf": 2.401681569326973,
+    "speed_multiplier": 0.4163749319524618,
+    "load_seconds": 5.259764832968358,
+    "transcription_seconds": 0,
+    "save_seconds": 0.6404737089760602,
+    "timing": {
+      "abc": {
+        "seconds": 44.032045375031885,
+        "prefill_seconds": 0.2251760830404237,
+        "ttft_seconds": 0.22886995802400634,
+        "output_tokens": 2627,
+        "content_tokens": 2626,
+        "output_tps": 59.66109404242268,
+        "prefix_tokens": 497,
+        "cfg_branches": 1,
+        "execution": "eager",
+        "attention": "sdpa",
+        "backend": "mlx"
+      },
+      "semantic": {
+        "seconds": 84.81278020801255,
+        "prefill_seconds": 1.7360337499994785,
+        "ttft_seconds": 1.7377602080232464,
+        "output_tokens": 5249,
+        "content_tokens": 5248,
+        "output_tps": 61.88925757564199,
+        "prefix_tokens": 3125,
+        "cfg_branches": 1,
+        "execution": "eager",
+        "attention": "sdpa",
+        "backend": "mlx"
+      },
+      "nar_seconds": 356.23452941601863,
+      "vae_seconds": 13.093939333048183,
+      "load": {
+        "resolve_conversion_integrity_seconds": 5.259697625006083,
+        "ar_load_events_seconds": [
+          0.12291249999543652
+        ],
+        "ar_load_seconds": 0.12291249999543652,
+        "conditioning_load_events_seconds": [
+          0.20717633399181068
+        ],
+        "conditioning_load_seconds": 0.20717633399181068,
+        "nar_load_events_seconds": [
+          0.1273670409573242
+        ],
+        "nar_load_seconds": 0.1273670409573242,
+        "vae_load_events_seconds": [
+          0.10023258399451151
+        ],
+        "vae_load_seconds": 0.10023258399451151
+      },
+      "e2e_seconds": 498.31734858301934
+    },
+    "configuration": {
+      "generation": {
+        "abc": {
+          "temperature": 0.7,
+          "top_p": 0.9,
+          "top_k": 30,
+          "repetition_penalty": 1.005,
+          "penalty_window": 100,
+          "min_tokens": 32,
+          "max_tokens": 4096
+        },
+        "semantic": {
+          "temperature": 1.0,
+          "top_p": 0.95,
+          "top_k": 100,
+          "repetition_penalty": 1.2,
+          "penalty_window": 50,
+          "min_tokens": 200,
+          "max_tokens": 9000
+        },
+        "ode_steps": 32,
+        "ode_method": "midpoint",
+        "context": 24576,
+        "version": "yue2-native-v1"
+      },
+      "overrides": {},
+      "cot": "full",
+      "cfg_scale": 1.0,
+      "cfg_negative": "same_instruction_and_exact_abc",
+      "backend": "mlx",
+      "quantization": "8bit",
+      "model_dtype": "bfloat16",
+      "vae_dtype": "float32",
+      "vae_decode": "halo_crop",
+      "vae_core_frames": 256,
+      "vae_halo_frames": 16,
+      "device": "DeviceType.gpu",
+      "memory_budget_gib": 16.0,
+      "offload_ar": false,
+      "runtime_sha256": "ff4829d01380a2ac98fbc0aa0aed90f9b2bbe9c0a3473f1d62ed8ee3abc8efa9",
+      "decoder_release": "standard",
+      "validation_status": "unvalidated",
+      "vae_backend": "mlx",
+      "ar_precision": "8bit",
+      "kv_dtype": "bfloat16",
+      "nar_dtype": "bfloat16",
+      "conditioning_precision": "bf16",
+      "attention_opmath": "float32",
+      "mlx_tf32_enabled": false,
+      "attention_inputs": "native_steel_bfloat16",
+      "query_chunk_size": 256,
+      "runtime": {
+        "lyra-yue2": "0.1.0",
+        "mlx": "0.32.2",
+        "mlx-lm": "0.31.3",
+        "transformers": "5.0.0",
+        "numpy": "2.2.6",
+        "python": "3.12.10",
+        "macos": "27.0"
+      },
+      "upstream_commit": "92a73cc7652fcc1f937855e4b765e0a0edd7ff2e",
+      "execution_guard": "GPUExecution",
+      "rng": {
+        "ar": "request_local_mlx",
+        "acoustic": "numpy_pcg64_fp32_full_song_v1"
+      }
+    },
+    "identity": "5a8691af20b1d67888c9786f71fae99740b711fd612538cfc7fcafb58f0348da",
+    "audio_sha256": "f9764eca715115d42d63fbc7e0872f565e6f4780911252efd551a7cfb24050d4",
+    "result_sha256": "80a6d4b4f7e5a3c037b42237c583a35f632203facbe90473ad5a2449911f4566",
+    "audio_quality": {
+      "sample_rate": 48000,
+      "channels": 2,
+      "finite": true,
+      "rms": 0.15009467599607557,
+      "peak": 0.9160799980163574,
+      "clipping_fraction": 0.0
+    },
+    "musical_quality_acceptance": "pending human listening; not established by duration or EOS",
+    "resources": {
+      "memory_counter_schema": 2,
+      "swap_counter_source": "host_statistics64.swapins/swapouts",
+      "sampling_interval_seconds": 0.1,
+      "power_sampling_interval_seconds": 5.0,
+      "metadata": {},
+      "power_start": {
+        "ac_connected": true,
+        "pmset": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=37224547)\t95%; AC attached; not charging present: true"
+      },
+      "power_end": {
+        "ac_connected": true,
+        "pmset": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=37224547)\t95%; AC attached; not charging present: true"
+      },
+      "start": {
+        "elapsed_seconds": 0.011119750037323684,
+        "rss_bytes": 51658752,
+        "system_swap_used_bytes": 12382502912,
+        "system_swap_in_bytes": 56330141696,
+        "system_swap_out_bytes": 83892617216,
+        "system_available_bytes": 63983616000,
+        "system_total_bytes": 137438953472,
+        "system_memory_pressure_level": 1,
+        "system_free_bytes": 2658271232,
+        "system_wired_bytes": 8259878912,
+        "system_compressor_bytes": 2903408640,
+        "system_file_backed_bytes": 35047292928,
+        "physical_footprint_bytes": 31785680,
+        "process_lifetime_peak_footprint_bytes": 31785680,
+        "mlx_active_bytes": 0,
+        "mlx_cache_bytes": 0,
+        "mlx_peak_bytes": 0,
+        "ac_connected": true
+      },
+      "end": {
+        "elapsed_seconds": 504.8804157920531,
+        "rss_bytes": 1056571392,
+        "system_swap_used_bytes": 12382502912,
+        "system_swap_in_bytes": 56331911168,
+        "system_swap_out_bytes": 83892617216,
+        "system_available_bytes": 68778950656,
+        "system_total_bytes": 137438953472,
+        "system_memory_pressure_level": 1,
+        "system_free_bytes": 10470260736,
+        "system_wired_bytes": 7700496384,
+        "system_compressor_bytes": 2761113600,
+        "system_file_backed_bytes": 34686304256,
+        "physical_footprint_bytes": 1373898888,
+        "process_lifetime_peak_footprint_bytes": 12140796600,
+        "mlx_active_bytes": 8,
+        "mlx_cache_bytes": 0,
+        "mlx_peak_bytes": 11256150230,
+        "ac_connected": true
+      },
+      "sampled_maxima": {
+        "mlx_active_bytes": 11196718142,
+        "mlx_cache_bytes": 267354112,
+        "mlx_peak_bytes": 11256150230,
+        "physical_footprint_bytes": 12018440888,
+        "process_lifetime_peak_footprint_bytes": 12140796600,
+        "rss_bytes": 8189100032,
+        "system_available_bytes": 70283558912,
+        "system_compressor_bytes": 2903949312,
+        "system_file_backed_bytes": 35142369280,
+        "system_free_bytes": 12560564224,
+        "system_swap_in_bytes": 56331911168,
+        "system_swap_out_bytes": 83892617216,
+        "system_swap_used_bytes": 12382502912,
+        "system_total_bytes": 137438953472,
+        "system_wired_bytes": 11424907264
+      },
+      "monitor_error": null,
+      "exception": null
+    },
+    "artifact_directory": "outputs/official_fullsong/full_generated",
+    "prior_attempts": []
+  },
+  {
+    "id": "melody_generated",
+    "status": "complete",
+    "case_sha256": "ad2f51849d639bc72b087a37888ca059d97bb36b30677a54627ffd0c0ab224f1",
+    "attempt": 2,
+    "benchmark_script_sha256": "2c5868ef28d74bb713079a0c1cf886d419a4e3a73cce34be2413e4cda7ec9449",
+    "retry_policy": "Only interrupted/failed execution, identical input and seed; no quality reroll",
+    "truncated": {
+      "abc": false,
+      "semantic": false
+    },
+    "audio_seconds": 181.03866666666667,
+    "official_seconds": 152.72,
+    "duration_ratio": 1.1854286712065654,
+    "e2e_seconds": 417.94476708298316,
+    "rtf": 2.3085939306684935,
+    "speed_multiplier": 0.4331640946965639,
+    "load_seconds": 5.222712083952501,
+    "transcription_seconds": 0,
+    "save_seconds": 0.46523162501398474,
+    "timing": {
+      "abc": {
+        "seconds": 18.721492583979852,
+        "prefill_seconds": 0.2737319999723695,
+        "ttft_seconds": 0.277456916985102,
+        "output_tokens": 1303,
+        "content_tokens": 1302,
+        "output_tps": 69.59915157165346,
+        "prefix_tokens": 630,
+        "cfg_branches": 1,
+        "execution": "eager",
+        "attention": "sdpa",
+        "backend": "mlx"
+      },
+      "semantic": {
+        "seconds": 62.798967041948345,
+        "prefill_seconds": 1.0575671669794247,
+        "ttft_seconds": 1.0596303339698352,
+        "output_tokens": 4527,
+        "content_tokens": 4526,
+        "output_tps": 72.08717297811702,
+        "prefix_tokens": 1934,
+        "cfg_branches": 1,
+        "execution": "eager",
+        "attention": "sdpa",
+        "backend": "mlx"
+      },
+      "nar_seconds": 320.9904702079948,
+      "vae_seconds": 9.49240120803006,
+      "load": {
+        "resolve_conversion_integrity_seconds": 5.222618916013744,
+        "ar_load_events_seconds": [
+          0.11920879100216553
+        ],
+        "ar_load_seconds": 0.11920879100216553,
+        "conditioning_load_events_seconds": [
+          0.1726755000418052
+        ],
+        "conditioning_load_seconds": 0.1726755000418052,
+        "nar_load_events_seconds": [
+          0.11611875001108274
+        ],
+        "nar_load_seconds": 0.11611875001108274,
+        "vae_load_events_seconds": [
+          0.1061998339719139
+        ],
+        "vae_load_seconds": 0.1061998339719139
+      },
+      "e2e_seconds": 412.14095762500074
+    },
+    "configuration": {
+      "generation": {
+        "abc": {
+          "temperature": 0.7,
+          "top_p": 0.9,
+          "top_k": 30,
+          "repetition_penalty": 1.005,
+          "penalty_window": 100,
+          "min_tokens": 32,
+          "max_tokens": 4096
+        },
+        "semantic": {
+          "temperature": 1.0,
+          "top_p": 0.95,
+          "top_k": 100,
+          "repetition_penalty": 1.2,
+          "penalty_window": 50,
+          "min_tokens": 200,
+          "max_tokens": 9000
+        },
+        "ode_steps": 32,
+        "ode_method": "midpoint",
+        "context": 24576,
+        "version": "yue2-native-v1"
+      },
+      "overrides": {},
+      "cot": "melody",
+      "cfg_scale": 1.0,
+      "cfg_negative": "same_instruction_and_exact_abc",
+      "backend": "mlx",
+      "quantization": "8bit",
+      "model_dtype": "bfloat16",
+      "vae_dtype": "float32",
+      "vae_decode": "halo_crop",
+      "vae_core_frames": 256,
+      "vae_halo_frames": 16,
+      "device": "DeviceType.gpu",
+      "memory_budget_gib": 16.0,
+      "offload_ar": false,
+      "runtime_sha256": "ff4829d01380a2ac98fbc0aa0aed90f9b2bbe9c0a3473f1d62ed8ee3abc8efa9",
+      "decoder_release": "standard",
+      "validation_status": "unvalidated",
+      "vae_backend": "mlx",
+      "ar_precision": "8bit",
+      "kv_dtype": "bfloat16",
+      "nar_dtype": "bfloat16",
+      "conditioning_precision": "bf16",
+      "attention_opmath": "float32",
+      "mlx_tf32_enabled": false,
+      "attention_inputs": "native_steel_bfloat16",
+      "query_chunk_size": 256,
+      "runtime": {
+        "lyra-yue2": "0.1.0",
+        "mlx": "0.32.2",
+        "mlx-lm": "0.31.3",
+        "transformers": "5.0.0",
+        "numpy": "2.2.6",
+        "python": "3.12.10",
+        "macos": "27.0"
+      },
+      "upstream_commit": "92a73cc7652fcc1f937855e4b765e0a0edd7ff2e",
+      "execution_guard": "GPUExecution",
+      "rng": {
+        "ar": "request_local_mlx",
+        "acoustic": "numpy_pcg64_fp32_full_song_v1"
+      }
+    },
+    "identity": "a86563a9199a737d2d27d95035ba6bf3287a02dea2eedd934e1cc403916de2ed",
+    "audio_sha256": "e6edc8d011da73b514f87bd67b8e4df19e4a0f6025bb09733531d255f2417212",
+    "result_sha256": "5dbc633cba22fec09a778ccfa4c27c98048aa1a68d43b10ee7cfee621a51ea3e",
+    "audio_quality": {
+      "sample_rate": 48000,
+      "channels": 2,
+      "finite": true,
+      "rms": 0.17611676890217365,
+      "peak": 0.8792818784713745,
+      "clipping_fraction": 0.0
+    },
+    "musical_quality_acceptance": "pending human listening; not established by duration or EOS",
+    "resources": {
+      "memory_counter_schema": 2,
+      "swap_counter_source": "host_statistics64.swapins/swapouts",
+      "sampling_interval_seconds": 0.1,
+      "power_sampling_interval_seconds": 5.0,
+      "metadata": {},
+      "power_start": {
+        "ac_connected": true,
+        "pmset": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=37224547)\t95%; AC attached; not charging present: true"
+      },
+      "power_end": {
+        "ac_connected": true,
+        "pmset": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=37224547)\t95%; AC attached; not charging present: true"
+      },
+      "start": {
+        "elapsed_seconds": 0.011745583033189178,
+        "rss_bytes": 51822592,
+        "system_swap_used_bytes": 12382502912,
+        "system_swap_in_bytes": 56332173312,
+        "system_swap_out_bytes": 83892617216,
+        "system_available_bytes": 70473826304,
+        "system_total_bytes": 137438953472,
+        "system_memory_pressure_level": 1,
+        "system_free_bytes": 13708705792,
+        "system_wired_bytes": 6456360960,
+        "system_compressor_bytes": 2759802880,
+        "system_file_backed_bytes": 30930026496,
+        "physical_footprint_bytes": 31965928,
+        "process_lifetime_peak_footprint_bytes": 31965928,
+        "mlx_active_bytes": 0,
+        "mlx_cache_bytes": 0,
+        "mlx_peak_bytes": 0,
+        "ac_connected": true
+      },
+      "end": {
+        "elapsed_seconds": 418.47346291702706,
+        "rss_bytes": 1018609664,
+        "system_swap_used_bytes": 12374114304,
+        "system_swap_in_bytes": 56332369920,
+        "system_swap_out_bytes": 83892617216,
+        "system_available_bytes": 69795315712,
+        "system_total_bytes": 137438953472,
+        "system_memory_pressure_level": 1,
+        "system_free_bytes": 13033472000,
+        "system_wired_bytes": 7206256640,
+        "system_compressor_bytes": 2742812672,
+        "system_file_backed_bytes": 29968367616,
+        "physical_footprint_bytes": 1316309224,
+        "process_lifetime_peak_footprint_bytes": 12091726472,
+        "mlx_active_bytes": 8,
+        "mlx_cache_bytes": 0,
+        "mlx_peak_bytes": 11256150230,
+        "ac_connected": true
+      },
+      "sampled_maxima": {
+        "mlx_active_bytes": 11196716606,
+        "mlx_cache_bytes": 267354112,
+        "mlx_peak_bytes": 11256150230,
+        "physical_footprint_bytes": 11845720712,
+        "process_lifetime_peak_footprint_bytes": 12091726472,
+        "rss_bytes": 8174305280,
+        "system_available_bytes": 70474907648,
+        "system_compressor_bytes": 2759802880,
+        "system_file_backed_bytes": 31175032832,
+        "system_free_bytes": 13708705792,
+        "system_swap_in_bytes": 56332369920,
+        "system_swap_out_bytes": 83892617216,
+        "system_swap_used_bytes": 12382502912,
+        "system_total_bytes": 137438953472,
+        "system_wired_bytes": 11553832960
+      },
+      "monitor_error": null,
+      "exception": null
+    },
+    "artifact_directory": "outputs/official_fullsong/melody_generated/attempt-2",
+    "prior_attempts": [
+      {
+        "attempt": 1,
+        "status": "failed",
+        "error": "RuntimeError: AC power disconnected during acceptance execution",
+        "receipt_path": "outputs/official_fullsong/melody_generated/measurement.json",
+        "receipt_sha256": "7adccedb0ac39e78279f699e1f16669084ed9be9e0a0755b373be4ec51edc2e0"
+      }
+    ]
+  },
+  {
+    "id": "melody_supplied",
+    "status": "complete",
+    "case_sha256": "81ff5bce14179bf0a6da751244f9aec6edc6e34e061c0b39eda3139f75861272",
+    "attempt": 2,
+    "benchmark_script_sha256": "2c5868ef28d74bb713079a0c1cf886d419a4e3a73cce34be2413e4cda7ec9449",
+    "retry_policy": "Only interrupted/failed execution, identical input and seed; no quality reroll",
+    "truncated": {
+      "abc": false,
+      "semantic": false
+    },
+    "audio_seconds": 106.95866666666667,
+    "official_seconds": 107.35866666666666,
+    "duration_ratio": 0.9962741713136031,
+    "e2e_seconds": 154.71270404098323,
+    "rtf": 1.446471883602855,
+    "speed_multiplier": 0.6913373231349731,
+    "load_seconds": 5.201949458976742,
+    "transcription_seconds": 0,
+    "save_seconds": 0.3180820000125095,
+    "timing": {
+      "abc": {
+        "seconds": 0.0,
+        "output_tokens": 0,
+        "external_prefix_tokens": 944
+      },
+      "semantic": {
+        "seconds": 40.39203779201489,
+        "prefill_seconds": 0.8464277079910971,
+        "ttft_seconds": 0.8498130000079982,
+        "output_tokens": 2675,
+        "content_tokens": 2674,
+        "output_tps": 66.22592338059313,
+        "prefix_tokens": 1269,
+        "cfg_branches": 1,
+        "execution": "eager",
+        "attention": "sdpa",
+        "backend": "mlx"
+      },
+      "nar_seconds": 104.41671999997925,
+      "vae_seconds": 3.958839250029996,
+      "load": {
+        "resolve_conversion_integrity_seconds": 5.201887417002581,
+        "ar_load_events_seconds": [
+          0.11900458298623562
+        ],
+        "ar_load_seconds": 0.11900458298623562,
+        "conditioning_load_events_seconds": [
+          0.21916387503733858
+        ],
+        "conditioning_load_seconds": 0.21916387503733858,
+        "nar_load_events_seconds": [
+          0.13244458299595863
+        ],
+        "nar_load_seconds": 0.13244458299595863,
+        "vae_load_events_seconds": [
+          0.10607362497830763
+        ],
+        "vae_load_seconds": 0.10607362497830763
+      },
+      "e2e_seconds": 148.9062277909834
+    },
+    "configuration": {
+      "generation": {
+        "abc": {
+          "temperature": 0.7,
+          "top_p": 0.9,
+          "top_k": 30,
+          "repetition_penalty": 1.005,
+          "penalty_window": 100,
+          "min_tokens": 32,
+          "max_tokens": 4096
+        },
+        "semantic": {
+          "temperature": 1.0,
+          "top_p": 0.95,
+          "top_k": 100,
+          "repetition_penalty": 1.2,
+          "penalty_window": 50,
+          "min_tokens": 200,
+          "max_tokens": 9000
+        },
+        "ode_steps": 32,
+        "ode_method": "midpoint",
+        "context": 24576,
+        "version": "yue2-native-v1"
+      },
+      "overrides": {},
+      "cot": "melody",
+      "cfg_scale": 1.0,
+      "cfg_negative": "same_instruction_and_exact_abc",
+      "backend": "mlx",
+      "quantization": "8bit",
+      "model_dtype": "bfloat16",
+      "vae_dtype": "float32",
+      "vae_decode": "halo_crop",
+      "vae_core_frames": 256,
+      "vae_halo_frames": 16,
+      "device": "DeviceType.gpu",
+      "memory_budget_gib": 16.0,
+      "offload_ar": false,
+      "runtime_sha256": "ff4829d01380a2ac98fbc0aa0aed90f9b2bbe9c0a3473f1d62ed8ee3abc8efa9",
+      "decoder_release": "standard",
+      "validation_status": "unvalidated",
+      "vae_backend": "mlx",
+      "ar_precision": "8bit",
+      "kv_dtype": "bfloat16",
+      "nar_dtype": "bfloat16",
+      "conditioning_precision": "bf16",
+      "attention_opmath": "float32",
+      "mlx_tf32_enabled": false,
+      "attention_inputs": "native_steel_bfloat16",
+      "query_chunk_size": 256,
+      "runtime": {
+        "lyra-yue2": "0.1.0",
+        "mlx": "0.32.2",
+        "mlx-lm": "0.31.3",
+        "transformers": "5.0.0",
+        "numpy": "2.2.6",
+        "python": "3.12.10",
+        "macos": "27.0"
+      },
+      "upstream_commit": "92a73cc7652fcc1f937855e4b765e0a0edd7ff2e",
+      "execution_guard": "GPUExecution",
+      "rng": {
+        "ar": "request_local_mlx",
+        "acoustic": "numpy_pcg64_fp32_full_song_v1"
+      }
+    },
+    "identity": "9d0b167724db8db0f005e8cf98a353533fe70e277508e799adec3d1661f82a64",
+    "audio_sha256": "16759c15b81f802f51b4a676ae5bed9b16bc4e9334976e5d70c289ee5c983020",
+    "result_sha256": "8271706dc45c46af193dcb0e1e8e4a040f345279acc987beeb066654d59e2869",
+    "audio_quality": {
+      "sample_rate": 48000,
+      "channels": 2,
+      "finite": true,
+      "rms": 0.14550125703815084,
+      "peak": 1.0,
+      "clipping_fraction": 1.9477929168900137e-07
+    },
+    "musical_quality_acceptance": "pending human listening; not established by duration or EOS",
+    "resources": {
+      "memory_counter_schema": 2,
+      "swap_counter_source": "host_statistics64.swapins/swapouts",
+      "sampling_interval_seconds": 0.1,
+      "power_sampling_interval_seconds": 5.0,
+      "metadata": {},
+      "power_start": {
+        "ac_connected": true,
+        "pmset": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=37224547)\t95%; AC attached; not charging present: true"
+      },
+      "power_end": {
+        "ac_connected": true,
+        "pmset": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=37224547)\t95%; AC attached; not charging present: true"
+      },
+      "start": {
+        "elapsed_seconds": 0.009916167007759213,
+        "rss_bytes": 51953664,
+        "system_swap_used_bytes": 12374114304,
+        "system_swap_in_bytes": 56332369920,
+        "system_swap_out_bytes": 83892617216,
+        "system_available_bytes": 70761709568,
+        "system_total_bytes": 137438953472,
+        "system_memory_pressure_level": 1,
+        "system_free_bytes": 14330363904,
+        "system_wired_bytes": 6635929600,
+        "system_compressor_bytes": 2742812672,
+        "system_file_backed_bytes": 29971595264,
+        "physical_footprint_bytes": 32097000,
+        "process_lifetime_peak_footprint_bytes": 32097000,
+        "mlx_active_bytes": 0,
+        "mlx_cache_bytes": 0,
+        "mlx_peak_bytes": 0,
+        "ac_connected": true
+      },
+      "end": {
+        "elapsed_seconds": 155.07863366702804,
+        "rss_bytes": 938688512,
+        "system_swap_used_bytes": 12374114304,
+        "system_swap_in_bytes": 56332566528,
+        "system_swap_out_bytes": 83892617216,
+        "system_available_bytes": 65943896064,
+        "system_total_bytes": 137438953472,
+        "system_memory_pressure_level": 1,
+        "system_free_bytes": 5339480064,
+        "system_wired_bytes": 7147044864,
+        "system_compressor_bytes": 2742632448,
+        "system_file_backed_bytes": 30022123520,
+        "physical_footprint_bytes": 1260112176,
+        "process_lifetime_peak_footprint_bytes": 11869723320,
+        "mlx_active_bytes": 8,
+        "mlx_cache_bytes": 0,
+        "mlx_peak_bytes": 11256166614,
+        "ac_connected": true
+      },
+      "sampled_maxima": {
+        "mlx_active_bytes": 11196732990,
+        "mlx_cache_bytes": 164937760,
+        "mlx_peak_bytes": 11256166614,
+        "physical_footprint_bytes": 11737373368,
+        "process_lifetime_peak_footprint_bytes": 11869723320,
+        "rss_bytes": 8234958848,
+        "system_available_bytes": 70762905600,
+        "system_compressor_bytes": 2742812672,
+        "system_file_backed_bytes": 30022123520,
+        "system_free_bytes": 14346682368,
+        "system_swap_in_bytes": 56332566528,
+        "system_swap_out_bytes": 83892617216,
+        "system_swap_used_bytes": 12374114304,
+        "system_total_bytes": 137438953472,
+        "system_wired_bytes": 11826184192
+      },
+      "monitor_error": null,
+      "exception": null
+    },
+    "artifact_directory": "outputs/official_fullsong/melody_supplied/attempt-2",
+    "prior_attempts": [
+      {
+        "attempt": 1,
+        "status": "failed",
+        "error": "RuntimeError: AC power is required for an acceptance benchmark",
+        "receipt_path": "outputs/official_fullsong/melody_supplied/measurement.json",
+        "receipt_sha256": "185c873093a44167d02daee1965c139df7240a2d49bb4990cb49e1a121fe8a0e"
+      }
+    ]
+  },
+  {
+    "id": "off_direct",
+    "status": "complete",
+    "case_sha256": "088ab9b8b866dce7532e5ecc6ed6aec999e48e744ed1dbcf6340b8f68a66f97d",
+    "attempt": 2,
+    "benchmark_script_sha256": "2c5868ef28d74bb713079a0c1cf886d419a4e3a73cce34be2413e4cda7ec9449",
+    "retry_policy": "Only interrupted/failed execution, identical input and seed; no quality reroll",
+    "truncated": {
+      "abc": false,
+      "semantic": false
+    },
+    "audio_seconds": 251.11866666666666,
+    "official_seconds": 243.28,
+    "duration_ratio": 1.0322207607146772,
+    "e2e_seconds": 562.6601044579875,
+    "rtf": 2.2406144151954224,
+    "speed_multiplier": 0.44630615299901205,
+    "load_seconds": 5.205297333013732,
+    "transcription_seconds": 0,
+    "save_seconds": 0.5658685420057736,
+    "timing": {
+      "abc": {},
+      "semantic": {
+        "seconds": 188.53203529200982,
+        "prefill_seconds": 0.27864099998259917,
+        "ttft_seconds": 0.2826585419825278,
+        "output_tokens": 6279,
+        "content_tokens": 6278,
+        "output_tps": 33.30468474641302,
+        "prefix_tokens": 604,
+        "cfg_branches": 2,
+        "execution": "eager",
+        "attention": "sdpa",
+        "backend": "mlx"
+      },
+      "nar_seconds": 355.02819666598225,
+      "vae_seconds": 13.176016915997025,
+      "load": {
+        "resolve_conversion_integrity_seconds": 5.205235541972797,
+        "ar_load_events_seconds": [
+          0.12122329202247784
+        ],
+        "ar_load_seconds": 0.12122329202247784,
+        "conditioning_load_events_seconds": [
+          0.17318866698769853
+        ],
+        "conditioning_load_seconds": 0.17318866698769853,
+        "nar_load_events_seconds": [
+          0.11944195796968415
+        ],
+        "nar_load_seconds": 0.11944195796968415,
+        "vae_load_events_seconds": [
+          0.09848862502258271
+        ],
+        "vae_load_seconds": 0.09848862502258271
+      },
+      "e2e_seconds": 556.8740691249841
+    },
+    "configuration": {
+      "generation": {
+        "abc": {
+          "temperature": 0.7,
+          "top_p": 0.9,
+          "top_k": 30,
+          "repetition_penalty": 1.005,
+          "penalty_window": 100,
+          "min_tokens": 32,
+          "max_tokens": 4096
+        },
+        "semantic": {
+          "temperature": 1.0,
+          "top_p": 0.95,
+          "top_k": 100,
+          "repetition_penalty": 1.2,
+          "penalty_window": 50,
+          "min_tokens": 200,
+          "max_tokens": 9000
+        },
+        "ode_steps": 32,
+        "ode_method": "midpoint",
+        "context": 24576,
+        "version": "yue2-native-v1"
+      },
+      "overrides": {},
+      "cot": "off",
+      "cfg_scale": 1.01,
+      "cfg_negative": "instruction_only",
+      "backend": "mlx",
+      "quantization": "8bit",
+      "model_dtype": "bfloat16",
+      "vae_dtype": "float32",
+      "vae_decode": "halo_crop",
+      "vae_core_frames": 256,
+      "vae_halo_frames": 16,
+      "device": "DeviceType.gpu",
+      "memory_budget_gib": 16.0,
+      "offload_ar": false,
+      "runtime_sha256": "ff4829d01380a2ac98fbc0aa0aed90f9b2bbe9c0a3473f1d62ed8ee3abc8efa9",
+      "decoder_release": "standard",
+      "validation_status": "unvalidated",
+      "vae_backend": "mlx",
+      "ar_precision": "8bit",
+      "kv_dtype": "bfloat16",
+      "nar_dtype": "bfloat16",
+      "conditioning_precision": "bf16",
+      "attention_opmath": "float32",
+      "mlx_tf32_enabled": false,
+      "attention_inputs": "native_steel_bfloat16",
+      "query_chunk_size": 256,
+      "runtime": {
+        "lyra-yue2": "0.1.0",
+        "mlx": "0.32.2",
+        "mlx-lm": "0.31.3",
+        "transformers": "5.0.0",
+        "numpy": "2.2.6",
+        "python": "3.12.10",
+        "macos": "27.0"
+      },
+      "upstream_commit": "92a73cc7652fcc1f937855e4b765e0a0edd7ff2e",
+      "execution_guard": "GPUExecution",
+      "rng": {
+        "ar": "request_local_mlx",
+        "acoustic": "numpy_pcg64_fp32_full_song_v1"
+      }
+    },
+    "identity": "004582111a9d836a10ccb2cc7e31bb54cfe515a1b5936539b6c4e4763455c269",
+    "audio_sha256": "bc71fd78a2fb6cc3fb7ed40ff8933e623a50c944fb2a7a09e7b5df59391b1d53",
+    "result_sha256": "8d2e8a74360591e3b3c468b48bddd6a4b6c8c7aa62c8d52ba02a3e705705536e",
+    "audio_quality": {
+      "sample_rate": 48000,
+      "channels": 2,
+      "finite": true,
+      "rms": 0.14199334393344099,
+      "peak": 0.9785663485527039,
+      "clipping_fraction": 0.0
+    },
+    "musical_quality_acceptance": "pending human listening; not established by duration or EOS",
+    "resources": {
+      "memory_counter_schema": 2,
+      "swap_counter_source": "host_statistics64.swapins/swapouts",
+      "sampling_interval_seconds": 0.1,
+      "power_sampling_interval_seconds": 5.0,
+      "metadata": {},
+      "power_start": {
+        "ac_connected": true,
+        "pmset": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=37224547)\t95%; AC attached; not charging present: true"
+      },
+      "power_end": {
+        "ac_connected": true,
+        "pmset": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=37224547)\t95%; AC attached; not charging present: true"
+      },
+      "start": {
+        "elapsed_seconds": 0.01051108300453052,
+        "rss_bytes": 52101120,
+        "system_swap_used_bytes": 12374114304,
+        "system_swap_in_bytes": 56332566528,
+        "system_swap_out_bytes": 83892617216,
+        "system_available_bytes": 65943896064,
+        "system_total_bytes": 137438953472,
+        "system_memory_pressure_level": 1,
+        "system_free_bytes": 5339480064,
+        "system_wired_bytes": 7147044864,
+        "system_compressor_bytes": 2742632448,
+        "system_file_backed_bytes": 30022123520,
+        "physical_footprint_bytes": 32244456,
+        "process_lifetime_peak_footprint_bytes": 32244456,
+        "mlx_active_bytes": 0,
+        "mlx_cache_bytes": 0,
+        "mlx_peak_bytes": 0,
+        "ac_connected": true
+      },
+      "end": {
+        "elapsed_seconds": 563.3207151250099,
+        "rss_bytes": 1106231296,
+        "system_swap_used_bytes": 12374114304,
+        "system_swap_in_bytes": 56332828672,
+        "system_swap_out_bytes": 83892617216,
+        "system_available_bytes": 64992411648,
+        "system_total_bytes": 137438953472,
+        "system_memory_pressure_level": 1,
+        "system_free_bytes": 4838768640,
+        "system_wired_bytes": 8458977280,
+        "system_compressor_bytes": 2738896896,
+        "system_file_backed_bytes": 29403021312,
+        "physical_footprint_bytes": 1411549368,
+        "process_lifetime_peak_footprint_bytes": 12590766728,
+        "mlx_active_bytes": 8,
+        "mlx_cache_bytes": 0,
+        "mlx_peak_bytes": 11256150230,
+        "ac_connected": true
+      },
+      "sampled_maxima": {
+        "mlx_active_bytes": 11196716606,
+        "mlx_cache_bytes": 180060168,
+        "mlx_peak_bytes": 11256150230,
+        "physical_footprint_bytes": 12035414688,
+        "process_lifetime_peak_footprint_bytes": 12590766728,
+        "rss_bytes": 8207761408,
+        "system_available_bytes": 70676021248,
+        "system_compressor_bytes": 2742779904,
+        "system_file_backed_bytes": 30050975744,
+        "system_free_bytes": 13948567552,
+        "system_swap_in_bytes": 56332828672,
+        "system_swap_out_bytes": 83892617216,
+        "system_swap_used_bytes": 12374114304,
+        "system_total_bytes": 137438953472,
+        "system_wired_bytes": 12477759488
+      },
+      "monitor_error": null,
+      "exception": null
+    },
+    "artifact_directory": "outputs/official_fullsong/off_direct/attempt-2",
+    "prior_attempts": [
+      {
+        "attempt": 1,
+        "status": "failed",
+        "error": "RuntimeError: AC power is required for an acceptance benchmark",
+        "receipt_path": "outputs/official_fullsong/off_direct/measurement.json",
+        "receipt_sha256": "72176fb435f5c6546a2315df5c1a98d8b51af2d2f7fbc8d77d30326c8987ef16"
+      }
+    ]
+  },
+  {
+    "id": "cover_dagoujiao",
+    "status": "complete",
+    "case_sha256": "6202abf61195ceb62850331159d65f1f79d39f9fca6c6ec514ced0a24babe31d",
+    "attempt": 2,
+    "benchmark_script_sha256": "2c5868ef28d74bb713079a0c1cf886d419a4e3a73cce34be2413e4cda7ec9449",
+    "retry_policy": "Only interrupted/failed execution, identical input and seed; no quality reroll",
+    "truncated": {
+      "abc": false,
+      "semantic": false
+    },
+    "audio_seconds": 207.91866666666667,
+    "official_seconds": 209.95866666666666,
+    "duration_ratio": 0.9902838018911659,
+    "e2e_seconds": 390.4508596250089,
+    "rtf": 1.877901902146074,
+    "speed_multiplier": 0.5325091789178102,
+    "load_seconds": 5.236991917015985,
+    "transcription_seconds": 0,
+    "save_seconds": 0.46092441596556455,
+    "timing": {
+      "abc": {
+        "seconds": 0.0,
+        "output_tokens": 0,
+        "external_prefix_tokens": 2398
+      },
+      "semantic": {
+        "seconds": 86.1781507920241,
+        "prefill_seconds": 1.704754917009268,
+        "ttft_seconds": 1.7083948340150528,
+        "output_tokens": 5199,
+        "content_tokens": 5198,
+        "output_tps": 60.32851659287605,
+        "prefix_tokens": 2931,
+        "cfg_branches": 1,
+        "execution": "eager",
+        "attention": "sdpa",
+        "backend": "mlx"
+      },
+      "nar_seconds": 288.79281679098494,
+      "vae_seconds": 9.522870707965922,
+      "load": {
+        "resolve_conversion_integrity_seconds": 5.236917499976698,
+        "ar_load_events_seconds": [
+          0.12041183398105204
+        ],
+        "ar_load_seconds": 0.12041183398105204,
+        "conditioning_load_events_seconds": [
+          0.19284049997804686
+        ],
+        "conditioning_load_seconds": 0.19284049997804686,
+        "nar_load_events_seconds": [
+          0.1329428749741055
+        ],
+        "nar_load_seconds": 0.1329428749741055,
+        "vae_load_events_seconds": [
+          0.1017137499875389
+        ],
+        "vae_load_seconds": 0.1017137499875389
+      },
+      "e2e_seconds": 384.63164837495424
+    },
+    "configuration": {
+      "generation": {
+        "abc": {
+          "temperature": 0.7,
+          "top_p": 0.9,
+          "top_k": 30,
+          "repetition_penalty": 1.005,
+          "penalty_window": 100,
+          "min_tokens": 32,
+          "max_tokens": 4096
+        },
+        "semantic": {
+          "temperature": 1.0,
+          "top_p": 0.95,
+          "top_k": 100,
+          "repetition_penalty": 1.2,
+          "penalty_window": 50,
+          "min_tokens": 200,
+          "max_tokens": 9000
+        },
+        "ode_steps": 32,
+        "ode_method": "midpoint",
+        "context": 24576,
+        "version": "yue2-native-v1"
+      },
+      "overrides": {},
+      "cot": "full",
+      "cfg_scale": 1.0,
+      "cfg_negative": "same_instruction_and_exact_abc",
+      "backend": "mlx",
+      "quantization": "8bit",
+      "model_dtype": "bfloat16",
+      "vae_dtype": "float32",
+      "vae_decode": "halo_crop",
+      "vae_core_frames": 256,
+      "vae_halo_frames": 16,
+      "device": "DeviceType.gpu",
+      "memory_budget_gib": 16.0,
+      "offload_ar": false,
+      "runtime_sha256": "ff4829d01380a2ac98fbc0aa0aed90f9b2bbe9c0a3473f1d62ed8ee3abc8efa9",
+      "decoder_release": "standard",
+      "validation_status": "unvalidated",
+      "vae_backend": "mlx",
+      "ar_precision": "8bit",
+      "kv_dtype": "bfloat16",
+      "nar_dtype": "bfloat16",
+      "conditioning_precision": "bf16",
+      "attention_opmath": "float32",
+      "mlx_tf32_enabled": false,
+      "attention_inputs": "native_steel_bfloat16",
+      "query_chunk_size": 256,
+      "runtime": {
+        "lyra-yue2": "0.1.0",
+        "mlx": "0.32.2",
+        "mlx-lm": "0.31.3",
+        "transformers": "5.0.0",
+        "numpy": "2.2.6",
+        "python": "3.12.10",
+        "macos": "27.0"
+      },
+      "upstream_commit": "92a73cc7652fcc1f937855e4b765e0a0edd7ff2e",
+      "execution_guard": "GPUExecution",
+      "rng": {
+        "ar": "request_local_mlx",
+        "acoustic": "numpy_pcg64_fp32_full_song_v1"
+      }
+    },
+    "identity": "1dfc2e74cf3d94c387b37ac8ed9971bd82efb12d37b6371cee329f6adea975c1",
+    "audio_sha256": "ec9f59e58b06d8d91148c843af26fbc52db6c330c31e7c4cb7dbdcd10ba626ba",
+    "result_sha256": "ca548e00759f8b74711a1516904e4776206829f1bafd06cb70e3ff340187b8b0",
+    "audio_quality": {
+      "sample_rate": 48000,
+      "channels": 2,
+      "finite": true,
+      "rms": 0.17102370424286245,
+      "peak": 0.950627326965332,
+      "clipping_fraction": 0.0
+    },
+    "musical_quality_acceptance": "pending human listening; not established by duration or EOS",
+    "resources": {
+      "memory_counter_schema": 2,
+      "swap_counter_source": "host_statistics64.swapins/swapouts",
+      "sampling_interval_seconds": 0.1,
+      "power_sampling_interval_seconds": 5.0,
+      "metadata": {},
+      "power_start": {
+        "ac_connected": true,
+        "pmset": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=37224547)\t95%; AC attached; not charging present: true"
+      },
+      "power_end": {
+        "ac_connected": true,
+        "pmset": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=37224547)\t95%; AC attached; not charging present: true"
+      },
+      "start": {
+        "elapsed_seconds": 0.01035045797470957,
+        "rss_bytes": 52068352,
+        "system_swap_used_bytes": 12374114304,
+        "system_swap_in_bytes": 56332828672,
+        "system_swap_out_bytes": 83892617216,
+        "system_available_bytes": 70936838144,
+        "system_total_bytes": 137438953472,
+        "system_memory_pressure_level": 1,
+        "system_free_bytes": 14734950400,
+        "system_wired_bytes": 6459129856,
+        "system_compressor_bytes": 2738896896,
+        "system_file_backed_bytes": 29460611072,
+        "physical_footprint_bytes": 32195280,
+        "process_lifetime_peak_footprint_bytes": 32195280,
+        "mlx_active_bytes": 0,
+        "mlx_cache_bytes": 0,
+        "mlx_peak_bytes": 0,
+        "ac_connected": true
+      },
+      "end": {
+        "elapsed_seconds": 390.99074724997627,
+        "rss_bytes": 817184768,
+        "system_swap_used_bytes": 12374114304,
+        "system_swap_in_bytes": 56333025280,
+        "system_swap_out_bytes": 83892617216,
+        "system_available_bytes": 65638514688,
+        "system_total_bytes": 137438953472,
+        "system_memory_pressure_level": 1,
+        "system_free_bytes": 5577211904,
+        "system_wired_bytes": 7952646144,
+        "system_compressor_bytes": 2737373184,
+        "system_file_backed_bytes": 29556326400,
+        "physical_footprint_bytes": 975341680,
+        "process_lifetime_peak_footprint_bytes": 12128754288,
+        "mlx_active_bytes": 8,
+        "mlx_cache_bytes": 0,
+        "mlx_peak_bytes": 11256150230,
+        "ac_connected": true
+      },
+      "sampled_maxima": {
+        "mlx_active_bytes": 11196716606,
+        "mlx_cache_bytes": 197705728,
+        "mlx_peak_bytes": 11256150230,
+        "physical_footprint_bytes": 11872508504,
+        "process_lifetime_peak_footprint_bytes": 12128754288,
+        "rss_bytes": 8184348672,
+        "system_available_bytes": 70969376768,
+        "system_compressor_bytes": 2738896896,
+        "system_file_backed_bytes": 29571416064,
+        "system_free_bytes": 14819852288,
+        "system_swap_in_bytes": 56333025280,
+        "system_swap_out_bytes": 83892617216,
+        "system_swap_used_bytes": 12374114304,
+        "system_total_bytes": 137438953472,
+        "system_wired_bytes": 11388895232
+      },
+      "monitor_error": null,
+      "exception": null
+    },
+    "artifact_directory": "outputs/official_fullsong/cover_dagoujiao/attempt-2",
+    "prior_attempts": [
+      {
+        "attempt": 1,
+        "status": "failed",
+        "error": "RuntimeError: AC power is required for an acceptance benchmark",
+        "receipt_path": "outputs/official_fullsong/cover_dagoujiao/measurement.json",
+        "receipt_sha256": "1c1d677994e2f85fa04dfc5ce5ebc3c58498deb5ecaa3faa3349c2423c6eb34a"
+      }
+    ]
+  },
+  {
+    "id": "cover_baikal",
+    "status": "complete",
+    "case_sha256": "5e16e6ddaf10453f9c76aa556f8cd495b10f656dafebba79fbd24da51885aef4",
+    "attempt": 2,
+    "benchmark_script_sha256": "2c5868ef28d74bb713079a0c1cf886d419a4e3a73cce34be2413e4cda7ec9449",
+    "retry_policy": "Only interrupted/failed execution, identical input and seed; no quality reroll",
+    "truncated": {
+      "abc": false,
+      "semantic": false
+    },
+    "audio_seconds": 212.27866666666668,
+    "official_seconds": 216.91866666666667,
+    "duration_ratio": 0.978609494188298,
+    "e2e_seconds": 372.6630877080024,
+    "rtf": 1.7555371604683265,
+    "speed_multiplier": 0.5696262218301485,
+    "load_seconds": 5.270500749989878,
+    "transcription_seconds": 0,
+    "save_seconds": 0.46892104198923334,
+    "timing": {
+      "abc": {
+        "seconds": 0.0,
+        "output_tokens": 0,
+        "external_prefix_tokens": 1455
+      },
+      "semantic": {
+        "seconds": 81.14225450000959,
+        "prefill_seconds": 0.984601583040785,
+        "ttft_seconds": 0.9880465830210596,
+        "output_tokens": 5308,
+        "content_tokens": 5307,
+        "output_tps": 65.4159787980672,
+        "prefix_tokens": 1702,
+        "cfg_branches": 1,
+        "execution": "eager",
+        "attention": "sdpa",
+        "backend": "mlx"
+      },
+      "nar_seconds": 274.79719120799564,
+      "vae_seconds": 10.727858000027481,
+      "load": {
+        "resolve_conversion_integrity_seconds": 5.270408125012182,
+        "ar_load_events_seconds": [
+          0.11972937500104308
+        ],
+        "ar_load_seconds": 0.11972937500104308,
+        "conditioning_load_events_seconds": [
+          0.16321333398809657
+        ],
+        "conditioning_load_seconds": 0.16321333398809657,
+        "nar_load_events_seconds": [
+          0.13335404195822775
+        ],
+        "nar_load_seconds": 0.13335404195822775,
+        "vae_load_events_seconds": [
+          0.10133187501924112
+        ],
+        "vae_load_seconds": 0.10133187501924112
+      },
+      "e2e_seconds": 366.80124545795843
+    },
+    "configuration": {
+      "generation": {
+        "abc": {
+          "temperature": 0.7,
+          "top_p": 0.9,
+          "top_k": 30,
+          "repetition_penalty": 1.005,
+          "penalty_window": 100,
+          "min_tokens": 32,
+          "max_tokens": 4096
+        },
+        "semantic": {
+          "temperature": 1.0,
+          "top_p": 0.95,
+          "top_k": 100,
+          "repetition_penalty": 1.2,
+          "penalty_window": 50,
+          "min_tokens": 200,
+          "max_tokens": 9000
+        },
+        "ode_steps": 32,
+        "ode_method": "midpoint",
+        "context": 24576,
+        "version": "yue2-native-v1"
+      },
+      "overrides": {},
+      "cot": "full",
+      "cfg_scale": 1.0,
+      "cfg_negative": "same_instruction_and_exact_abc",
+      "backend": "mlx",
+      "quantization": "8bit",
+      "model_dtype": "bfloat16",
+      "vae_dtype": "float32",
+      "vae_decode": "halo_crop",
+      "vae_core_frames": 256,
+      "vae_halo_frames": 16,
+      "device": "DeviceType.gpu",
+      "memory_budget_gib": 16.0,
+      "offload_ar": false,
+      "runtime_sha256": "ff4829d01380a2ac98fbc0aa0aed90f9b2bbe9c0a3473f1d62ed8ee3abc8efa9",
+      "decoder_release": "standard",
+      "validation_status": "unvalidated",
+      "vae_backend": "mlx",
+      "ar_precision": "8bit",
+      "kv_dtype": "bfloat16",
+      "nar_dtype": "bfloat16",
+      "conditioning_precision": "bf16",
+      "attention_opmath": "float32",
+      "mlx_tf32_enabled": false,
+      "attention_inputs": "native_steel_bfloat16",
+      "query_chunk_size": 256,
+      "runtime": {
+        "lyra-yue2": "0.1.0",
+        "mlx": "0.32.2",
+        "mlx-lm": "0.31.3",
+        "transformers": "5.0.0",
+        "numpy": "2.2.6",
+        "python": "3.12.10",
+        "macos": "27.0"
+      },
+      "upstream_commit": "92a73cc7652fcc1f937855e4b765e0a0edd7ff2e",
+      "execution_guard": "GPUExecution",
+      "rng": {
+        "ar": "request_local_mlx",
+        "acoustic": "numpy_pcg64_fp32_full_song_v1"
+      }
+    },
+    "identity": "e7b3263aec42b7863d934c3a09e582a76c5d7404071d068fb83206758e9ff3f3",
+    "audio_sha256": "4d1dc12e8de200850fc5d7feae9b189bd02b9ee8584f8bd73f18ab29015422d7",
+    "result_sha256": "2df9efe0b7a1dac21fea66831b611e54d484af4de0c940a13bc5010951c5fad1",
+    "audio_quality": {
+      "sample_rate": 48000,
+      "channels": 2,
+      "finite": true,
+      "rms": 0.14606263065109223,
+      "peak": 1.0,
+      "clipping_fraction": 9.814143672782317e-08
+    },
+    "musical_quality_acceptance": "pending human listening; not established by duration or EOS",
+    "resources": {
+      "memory_counter_schema": 2,
+      "swap_counter_source": "host_statistics64.swapins/swapouts",
+      "sampling_interval_seconds": 0.1,
+      "power_sampling_interval_seconds": 5.0,
+      "metadata": {},
+      "power_start": {
+        "ac_connected": true,
+        "pmset": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=37224547)\t95%; AC attached; not charging present: true"
+      },
+      "power_end": {
+        "ac_connected": true,
+        "pmset": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=37224547)\t95%; AC attached; not charging present: true"
+      },
+      "start": {
+        "elapsed_seconds": 0.010612874990329146,
+        "rss_bytes": 51970048,
+        "system_swap_used_bytes": 12374114304,
+        "system_swap_in_bytes": 56333025280,
+        "system_swap_out_bytes": 83892617216,
+        "system_available_bytes": 71012450304,
+        "system_total_bytes": 137438953472,
+        "system_memory_pressure_level": 1,
+        "system_free_bytes": 14900953088,
+        "system_wired_bytes": 6432079872,
+        "system_compressor_bytes": 2737373184,
+        "system_file_backed_bytes": 29603938304,
+        "physical_footprint_bytes": 32129792,
+        "process_lifetime_peak_footprint_bytes": 32129792,
+        "mlx_active_bytes": 0,
+        "mlx_cache_bytes": 0,
+        "mlx_peak_bytes": 0,
+        "ac_connected": true
+      },
+      "end": {
+        "elapsed_seconds": 373.2065921250032,
+        "rss_bytes": 817364992,
+        "system_swap_used_bytes": 12374114304,
+        "system_swap_in_bytes": 56333713408,
+        "system_swap_out_bytes": 83892617216,
+        "system_available_bytes": 69842173952,
+        "system_total_bytes": 137438953472,
+        "system_memory_pressure_level": 1,
+        "system_free_bytes": 13065633792,
+        "system_wired_bytes": 7090126848,
+        "system_compressor_bytes": 2734948352,
+        "system_file_backed_bytes": 29652516864,
+        "physical_footprint_bytes": 974997760,
+        "process_lifetime_peak_footprint_bytes": 12148841216,
+        "mlx_active_bytes": 8,
+        "mlx_cache_bytes": 0,
+        "mlx_peak_bytes": 11256150230,
+        "ac_connected": true
+      },
+      "sampled_maxima": {
+        "mlx_active_bytes": 11196718142,
+        "mlx_cache_bytes": 197296128,
+        "mlx_peak_bytes": 11256150230,
+        "physical_footprint_bytes": 11975809792,
+        "process_lifetime_peak_footprint_bytes": 12148841216,
+        "rss_bytes": 8187363328,
+        "system_available_bytes": 71012450304,
+        "system_compressor_bytes": 2737537024,
+        "system_file_backed_bytes": 29652516864,
+        "system_free_bytes": 14900953088,
+        "system_swap_in_bytes": 56333713408,
+        "system_swap_out_bytes": 83892617216,
+        "system_swap_used_bytes": 12374114304,
+        "system_total_bytes": 137438953472,
+        "system_wired_bytes": 11743920128
+      },
+      "monitor_error": null,
+      "exception": null
+    },
+    "artifact_directory": "outputs/official_fullsong/cover_baikal/attempt-2",
+    "prior_attempts": [
+      {
+        "attempt": 1,
+        "status": "failed",
+        "error": "RuntimeError: AC power is required for an acceptance benchmark",
+        "receipt_path": "outputs/official_fullsong/cover_baikal/measurement.json",
+        "receipt_sha256": "ca348f4fd8706a3364bb84fa36f426316bf933acff192e50b9c3fa35d01598c2"
+      }
+    ]
+  },
+  {
+    "id": "cover_birthday",
+    "status": "complete",
+    "case_sha256": "c6714902951c35a1221ef82166622d5e8063394694b46c6f50be8ed289bbc8e3",
+    "attempt": 2,
+    "benchmark_script_sha256": "2c5868ef28d74bb713079a0c1cf886d419a4e3a73cce34be2413e4cda7ec9449",
+    "retry_policy": "Only interrupted/failed execution, identical input and seed; no quality reroll",
+    "truncated": {
+      "abc": false,
+      "semantic": false
+    },
+    "audio_seconds": 64.83866666666667,
+    "official_seconds": 63.91866666666667,
+    "duration_ratio": 1.0143932914745823,
+    "e2e_seconds": 102.2056244580308,
+    "rtf": 1.5763066964881676,
+    "speed_multiplier": 0.634394310591896,
+    "load_seconds": 5.280088083003648,
+    "transcription_seconds": 0,
+    "save_seconds": 0.22794137499295175,
+    "timing": {
+      "abc": {
+        "seconds": 0.0,
+        "output_tokens": 0,
+        "external_prefix_tokens": 916
+      },
+      "semantic": {
+        "seconds": 24.856704458012246,
+        "prefill_seconds": 0.775047708011698,
+        "ttft_seconds": 0.7778397499932908,
+        "output_tokens": 1622,
+        "content_tokens": 1621,
+        "output_tps": 65.25402443191413,
+        "prefix_tokens": 1178,
+        "cfg_branches": 1,
+        "execution": "eager",
+        "attention": "sdpa",
+        "backend": "mlx"
+      },
+      "nar_seconds": 67.96025833301246,
+      "vae_seconds": 3.3562813330208883,
+      "load": {
+        "resolve_conversion_integrity_seconds": 5.280012957984582,
+        "ar_load_events_seconds": [
+          0.12474133301293477
+        ],
+        "ar_load_seconds": 0.12474133301293477,
+        "conditioning_load_events_seconds": [
+          0.21434220799710602
+        ],
+        "conditioning_load_seconds": 0.21434220799710602,
+        "nar_load_events_seconds": [
+          0.13605595898116007
+        ],
+        "nar_load_seconds": 0.13605595898116007,
+        "vae_load_events_seconds": [
+          0.09607491601491347
+        ],
+        "vae_load_seconds": 0.09607491601491347
+      },
+      "e2e_seconds": 96.31568462500582
+    },
+    "configuration": {
+      "generation": {
+        "abc": {
+          "temperature": 0.7,
+          "top_p": 0.9,
+          "top_k": 30,
+          "repetition_penalty": 1.005,
+          "penalty_window": 100,
+          "min_tokens": 32,
+          "max_tokens": 4096
+        },
+        "semantic": {
+          "temperature": 1.0,
+          "top_p": 0.95,
+          "top_k": 100,
+          "repetition_penalty": 1.2,
+          "penalty_window": 50,
+          "min_tokens": 200,
+          "max_tokens": 9000
+        },
+        "ode_steps": 32,
+        "ode_method": "midpoint",
+        "context": 24576,
+        "version": "yue2-native-v1"
+      },
+      "overrides": {},
+      "cot": "full",
+      "cfg_scale": 1.0,
+      "cfg_negative": "same_instruction_and_exact_abc",
+      "backend": "mlx",
+      "quantization": "8bit",
+      "model_dtype": "bfloat16",
+      "vae_dtype": "float32",
+      "vae_decode": "halo_crop",
+      "vae_core_frames": 256,
+      "vae_halo_frames": 16,
+      "device": "DeviceType.gpu",
+      "memory_budget_gib": 16.0,
+      "offload_ar": false,
+      "runtime_sha256": "ff4829d01380a2ac98fbc0aa0aed90f9b2bbe9c0a3473f1d62ed8ee3abc8efa9",
+      "decoder_release": "standard",
+      "validation_status": "unvalidated",
+      "vae_backend": "mlx",
+      "ar_precision": "8bit",
+      "kv_dtype": "bfloat16",
+      "nar_dtype": "bfloat16",
+      "conditioning_precision": "bf16",
+      "attention_opmath": "float32",
+      "mlx_tf32_enabled": false,
+      "attention_inputs": "native_steel_bfloat16",
+      "query_chunk_size": 256,
+      "runtime": {
+        "lyra-yue2": "0.1.0",
+        "mlx": "0.32.2",
+        "mlx-lm": "0.31.3",
+        "transformers": "5.0.0",
+        "numpy": "2.2.6",
+        "python": "3.12.10",
+        "macos": "27.0"
+      },
+      "upstream_commit": "92a73cc7652fcc1f937855e4b765e0a0edd7ff2e",
+      "execution_guard": "GPUExecution",
+      "rng": {
+        "ar": "request_local_mlx",
+        "acoustic": "numpy_pcg64_fp32_full_song_v1"
+      }
+    },
+    "identity": "29e8c2912f2135b57e5ca764903185e4ec122fb9858ac11173546e5898422058",
+    "audio_sha256": "f5f5adf90d99f7a0a5486c30a703701c8008967dea18c8a6272861ac6f4b30f6",
+    "result_sha256": "b290d050db7402ea10d0c7a160eea07b411aa37d0d36bdb8fa3f6f55c8b222a3",
+    "audio_quality": {
+      "sample_rate": 48000,
+      "channels": 2,
+      "finite": true,
+      "rms": 0.13923169661928095,
+      "peak": 0.8563051223754883,
+      "clipping_fraction": 0.0
+    },
+    "musical_quality_acceptance": "pending human listening; not established by duration or EOS",
+    "resources": {
+      "memory_counter_schema": 2,
+      "swap_counter_source": "host_statistics64.swapins/swapouts",
+      "sampling_interval_seconds": 0.1,
+      "power_sampling_interval_seconds": 5.0,
+      "metadata": {},
+      "power_start": {
+        "ac_connected": true,
+        "pmset": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=37224547)\t95%; AC attached; not charging present: true"
+      },
+      "power_end": {
+        "ac_connected": true,
+        "pmset": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=37224547)\t95%; AC attached; not charging present: true"
+      },
+      "start": {
+        "elapsed_seconds": 0.01033629197627306,
+        "rss_bytes": 52019200,
+        "system_swap_used_bytes": 12374114304,
+        "system_swap_in_bytes": 56333713408,
+        "system_swap_out_bytes": 83892617216,
+        "system_available_bytes": 69842173952,
+        "system_total_bytes": 137438953472,
+        "system_memory_pressure_level": 1,
+        "system_free_bytes": 13065633792,
+        "system_wired_bytes": 7090126848,
+        "system_compressor_bytes": 2734948352,
+        "system_file_backed_bytes": 29652516864,
+        "physical_footprint_bytes": 32146128,
+        "process_lifetime_peak_footprint_bytes": 32146128,
+        "mlx_active_bytes": 0,
+        "mlx_cache_bytes": 0,
+        "mlx_peak_bytes": 0,
+        "ac_connected": true
+      },
+      "end": {
+        "elapsed_seconds": 102.4645569169661,
+        "rss_bytes": 884162560,
+        "system_swap_used_bytes": 12374114304,
+        "system_swap_in_bytes": 56333713408,
+        "system_swap_out_bytes": 83892617216,
+        "system_available_bytes": 64413810688,
+        "system_total_bytes": 137438953472,
+        "system_memory_pressure_level": 1,
+        "system_free_bytes": 5084184576,
+        "system_wired_bytes": 7852408832,
+        "system_compressor_bytes": 2734784512,
+        "system_file_backed_bytes": 29612359680,
+        "physical_footprint_bytes": 1182746976,
+        "process_lifetime_peak_footprint_bytes": 12073638632,
+        "mlx_active_bytes": 8,
+        "mlx_cache_bytes": 0,
+        "mlx_peak_bytes": 11256153824,
+        "ac_connected": true
+      },
+      "sampled_maxima": {
+        "mlx_active_bytes": 11196720200,
+        "mlx_cache_bytes": 200541464,
+        "mlx_peak_bytes": 11256153824,
+        "physical_footprint_bytes": 11964685032,
+        "process_lifetime_peak_footprint_bytes": 12073638632,
+        "rss_bytes": 8132837376,
+        "system_available_bytes": 70813024256,
+        "system_compressor_bytes": 2734948352,
+        "system_file_backed_bytes": 29655482368,
+        "system_free_bytes": 14387118080,
+        "system_swap_in_bytes": 56333713408,
+        "system_swap_out_bytes": 83892617216,
+        "system_swap_used_bytes": 12374114304,
+        "system_total_bytes": 137438953472,
+        "system_wired_bytes": 11302895616
+      },
+      "monitor_error": null,
+      "exception": null
+    },
+    "artifact_directory": "outputs/official_fullsong/cover_birthday/attempt-2",
+    "prior_attempts": [
+      {
+        "attempt": 1,
+        "status": "failed",
+        "error": "RuntimeError: AC power is required for an acceptance benchmark",
+        "receipt_path": "outputs/official_fullsong/cover_birthday/measurement.json",
+        "receipt_sha256": "cb694d43c7ff60cd97b0a6b7bad326e2ccce28cbfff221ad8402f9a0ee1bf02a"
+      }
+    ]
+  },
+  {
+    "id": "audio_to_cover",
+    "status": "complete",
+    "case_sha256": "340e01884cb6d1e6b446a91904a6e38967ec6ccdffa3f1f70a3e42d556e7bf9f",
+    "attempt": 2,
+    "benchmark_script_sha256": "2c5868ef28d74bb713079a0c1cf886d419a4e3a73cce34be2413e4cda7ec9449",
+    "retry_policy": "Only interrupted/failed execution, identical input and seed; no quality reroll",
+    "truncated": {
+      "abc": false,
+      "semantic": false
+    },
+    "audio_seconds": 224.35866666666666,
+    "official_seconds": 221.76,
+    "duration_ratio": 1.0117183742183742,
+    "e2e_seconds": 442.2056347919861,
+    "rtf": 1.970976389554758,
+    "speed_multiplier": 0.5073627493964549,
+    "load_seconds": 5.256098542013206,
+    "transcription_seconds": 15.441064957994968,
+    "save_seconds": 0.4870239580050111,
+    "timing": {
+      "abc": {
+        "seconds": 0.0,
+        "output_tokens": 0,
+        "external_prefix_tokens": 1988
+      },
+      "semantic": {
+        "seconds": 91.65822037495673,
+        "prefill_seconds": 1.516166332992725,
+        "ttft_seconds": 1.5191173749626614,
+        "output_tokens": 5610,
+        "content_tokens": 5609,
+        "output_tps": 61.20563957112121,
+        "prefix_tokens": 2450,
+        "cfg_branches": 1,
+        "execution": "eager",
+        "attention": "sdpa",
+        "backend": "mlx"
+      },
+      "nar_seconds": 319.2624067500001,
+      "vae_seconds": 9.963404207956046,
+      "load": {
+        "resolve_conversion_integrity_seconds": 5.256009291042574,
+        "ar_load_events_seconds": [
+          0.1156300829607062
+        ],
+        "ar_load_seconds": 0.1156300829607062,
+        "conditioning_load_events_seconds": [
+          0.19259333302034065
+        ],
+        "conditioning_load_seconds": 0.19259333302034065,
+        "nar_load_events_seconds": [
+          0.134724291972816
+        ],
+        "nar_load_seconds": 0.134724291972816,
+        "vae_load_events_seconds": [
+          0.10129804094322026
+        ],
+        "vae_load_seconds": 0.10129804094322026
+      },
+      "e2e_seconds": 421.00786125002196
+    },
+    "configuration": {
+      "generation": {
+        "abc": {
+          "temperature": 0.7,
+          "top_p": 0.9,
+          "top_k": 30,
+          "repetition_penalty": 1.005,
+          "penalty_window": 100,
+          "min_tokens": 32,
+          "max_tokens": 4096
+        },
+        "semantic": {
+          "temperature": 1.0,
+          "top_p": 0.95,
+          "top_k": 100,
+          "repetition_penalty": 1.2,
+          "penalty_window": 50,
+          "min_tokens": 200,
+          "max_tokens": 9000
+        },
+        "ode_steps": 32,
+        "ode_method": "midpoint",
+        "context": 24576,
+        "version": "yue2-native-v1"
+      },
+      "overrides": {},
+      "cot": "full",
+      "cfg_scale": 1.0,
+      "cfg_negative": "same_instruction_and_exact_abc",
+      "backend": "mlx",
+      "quantization": "8bit",
+      "model_dtype": "bfloat16",
+      "vae_dtype": "float32",
+      "vae_decode": "halo_crop",
+      "vae_core_frames": 256,
+      "vae_halo_frames": 16,
+      "device": "DeviceType.gpu",
+      "memory_budget_gib": 16.0,
+      "offload_ar": false,
+      "runtime_sha256": "ff4829d01380a2ac98fbc0aa0aed90f9b2bbe9c0a3473f1d62ed8ee3abc8efa9",
+      "decoder_release": "standard",
+      "validation_status": "unvalidated",
+      "vae_backend": "mlx",
+      "ar_precision": "8bit",
+      "kv_dtype": "bfloat16",
+      "nar_dtype": "bfloat16",
+      "conditioning_precision": "bf16",
+      "attention_opmath": "float32",
+      "mlx_tf32_enabled": false,
+      "attention_inputs": "native_steel_bfloat16",
+      "query_chunk_size": 256,
+      "runtime": {
+        "lyra-yue2": "0.1.0",
+        "mlx": "0.32.2",
+        "mlx-lm": "0.31.3",
+        "transformers": "5.0.0",
+        "numpy": "2.2.6",
+        "python": "3.12.10",
+        "macos": "27.0"
+      },
+      "upstream_commit": "92a73cc7652fcc1f937855e4b765e0a0edd7ff2e",
+      "execution_guard": "GPUExecution",
+      "rng": {
+        "ar": "request_local_mlx",
+        "acoustic": "numpy_pcg64_fp32_full_song_v1"
+      }
+    },
+    "identity": "df69a5697e65d8617297ca13345ed57255c90e66d3e3f1608cc5b73161f03ce5",
+    "audio_sha256": "bf9e9bce7f7ec16e85d0f9bcd805ab743442fc8c07581bb6370fbb046801fccc",
+    "result_sha256": "ab1ad8a6d6ac756e3e169bd1cf7341a660244e91d9993256162daa1554522254",
+    "audio_quality": {
+      "sample_rate": 48000,
+      "channels": 2,
+      "finite": true,
+      "rms": 0.17828478451710916,
+      "peak": 1.0,
+      "clipping_fraction": 4.178577159191533e-07
+    },
+    "musical_quality_acceptance": "pending human listening; not established by duration or EOS",
+    "resources": {
+      "memory_counter_schema": 2,
+      "swap_counter_source": "host_statistics64.swapins/swapouts",
+      "sampling_interval_seconds": 0.1,
+      "power_sampling_interval_seconds": 5.0,
+      "metadata": {},
+      "power_start": {
+        "ac_connected": true,
+        "pmset": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=37224547)\t95%; AC attached; not charging present: true"
+      },
+      "power_end": {
+        "ac_connected": true,
+        "pmset": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=37224547)\t95%; AC attached; not charging present: true"
+      },
+      "start": {
+        "elapsed_seconds": 0.009731750003993511,
+        "rss_bytes": 51937280,
+        "system_swap_used_bytes": 12374114304,
+        "system_swap_in_bytes": 56333713408,
+        "system_swap_out_bytes": 83892617216,
+        "system_available_bytes": 64413810688,
+        "system_total_bytes": 137438953472,
+        "system_memory_pressure_level": 1,
+        "system_free_bytes": 5084184576,
+        "system_wired_bytes": 7852408832,
+        "system_compressor_bytes": 2734784512,
+        "system_file_backed_bytes": 29612359680,
+        "physical_footprint_bytes": 32080616,
+        "process_lifetime_peak_footprint_bytes": 32080616,
+        "mlx_active_bytes": 0,
+        "mlx_cache_bytes": 0,
+        "mlx_peak_bytes": 0,
+        "ac_connected": true
+      },
+      "end": {
+        "elapsed_seconds": 442.765825749957,
+        "rss_bytes": 1139507200,
+        "system_swap_used_bytes": 12374114304,
+        "system_swap_in_bytes": 56335728640,
+        "system_swap_out_bytes": 83892617216,
+        "system_available_bytes": 65310294016,
+        "system_total_bytes": 137438953472,
+        "system_memory_pressure_level": 1,
+        "system_free_bytes": 3876765696,
+        "system_wired_bytes": 7238205440,
+        "system_compressor_bytes": 2733244416,
+        "system_file_backed_bytes": 31557681152,
+        "physical_footprint_bytes": 1138821736,
+        "process_lifetime_peak_footprint_bytes": 12167158840,
+        "mlx_active_bytes": 20,
+        "mlx_cache_bytes": 0,
+        "mlx_peak_bytes": 11256150242,
+        "ac_connected": true
+      },
+      "sampled_maxima": {
+        "mlx_active_bytes": 11196718154,
+        "mlx_cache_bytes": 244744192,
+        "mlx_peak_bytes": 11256150242,
+        "physical_footprint_bytes": 12009036856,
+        "process_lifetime_peak_footprint_bytes": 12167158840,
+        "rss_bytes": 8494088192,
+        "system_available_bytes": 70310297600,
+        "system_compressor_bytes": 2734784512,
+        "system_file_backed_bytes": 32501121024,
+        "system_free_bytes": 13867597824,
+        "system_swap_in_bytes": 56335728640,
+        "system_swap_out_bytes": 83892617216,
+        "system_swap_used_bytes": 12374114304,
+        "system_total_bytes": 137438953472,
+        "system_wired_bytes": 11352506368
+      },
+      "monitor_error": null,
+      "exception": null
+    },
+    "artifact_directory": "outputs/official_fullsong/audio_to_cover/attempt-2",
+    "prior_attempts": [
+      {
+        "attempt": 1,
+        "status": "failed",
+        "error": "RuntimeError: AC power is required for an acceptance benchmark",
+        "receipt_path": "outputs/official_fullsong/audio_to_cover/measurement.json",
+        "receipt_sha256": "2c6a35f1a27cf8803212d3bf2a414f2911523022bfc63c86fb57a7897139bc73"
+      }
+    ]
+  },
+  {
+    "id": "jazz_funk_score",
+    "status": "complete",
+    "case_sha256": "d40f44a1b959680ae81011c7207830384050d24c9ec83495892201c941c5f796",
+    "attempt": 1,
+    "benchmark_script_sha256": "2c5868ef28d74bb713079a0c1cf886d419a4e3a73cce34be2413e4cda7ec9449",
+    "retry_policy": "Only interrupted/failed execution, identical input and seed; no quality reroll",
+    "truncated": {
+      "abc": false,
+      "semantic": false
+    },
+    "audio_seconds": 130.43866666666668,
+    "official_seconds": 129.96,
+    "duration_ratio": 1.0036831845696113,
+    "e2e_seconds": 201.32383604202187,
+    "rtf": 1.5434367828712998,
+    "speed_multiplier": 0.6479047351325081,
+    "load_seconds": 5.2746187500306405,
+    "transcription_seconds": 0,
+    "save_seconds": 0.3200644159805961,
+    "timing": {
+      "abc": {
+        "seconds": 0.0,
+        "output_tokens": 0,
+        "external_prefix_tokens": 1549
+      },
+      "semantic": {
+        "seconds": 49.57729250000557,
+        "prefill_seconds": 0.9960394580266438,
+        "ttft_seconds": 1.0004081249935552,
+        "output_tokens": 3262,
+        "content_tokens": 3261,
+        "output_tps": 65.79625137858494,
+        "prefix_tokens": 1738,
+        "cfg_branches": 1,
+        "execution": "eager",
+        "attention": "sdpa",
+        "backend": "mlx"
+      },
+      "nar_seconds": 140.20773391699186,
+      "vae_seconds": 5.536092333029956,
+      "load": {
+        "resolve_conversion_integrity_seconds": 5.274542875005864,
+        "ar_load_events_seconds": [
+          0.12086416594684124
+        ],
+        "ar_load_seconds": 0.12086416594684124,
+        "conditioning_load_events_seconds": [
+          0.18636520800646394
+        ],
+        "conditioning_load_seconds": 0.18636520800646394,
+        "nar_load_events_seconds": [
+          0.13901312503730878
+        ],
+        "nar_load_seconds": 0.13901312503730878,
+        "vae_load_events_seconds": [
+          0.10589120798977092
+        ],
+        "vae_load_seconds": 0.10589120798977092
+      },
+      "e2e_seconds": 195.45785833301488
+    },
+    "configuration": {
+      "generation": {
+        "abc": {
+          "temperature": 0.7,
+          "top_p": 0.9,
+          "top_k": 30,
+          "repetition_penalty": 1.005,
+          "penalty_window": 100,
+          "min_tokens": 32,
+          "max_tokens": 4096
+        },
+        "semantic": {
+          "temperature": 1.0,
+          "top_p": 0.95,
+          "top_k": 100,
+          "repetition_penalty": 1.2,
+          "penalty_window": 50,
+          "min_tokens": 200,
+          "max_tokens": 9000
+        },
+        "ode_steps": 32,
+        "ode_method": "midpoint",
+        "context": 24576,
+        "version": "yue2-native-v1"
+      },
+      "overrides": {},
+      "cot": "full",
+      "cfg_scale": 1.0,
+      "cfg_negative": "same_instruction_and_exact_abc",
+      "backend": "mlx",
+      "quantization": "8bit",
+      "model_dtype": "bfloat16",
+      "vae_dtype": "float32",
+      "vae_decode": "halo_crop",
+      "vae_core_frames": 256,
+      "vae_halo_frames": 16,
+      "device": "DeviceType.gpu",
+      "memory_budget_gib": 16.0,
+      "offload_ar": false,
+      "runtime_sha256": "ff4829d01380a2ac98fbc0aa0aed90f9b2bbe9c0a3473f1d62ed8ee3abc8efa9",
+      "decoder_release": "standard",
+      "validation_status": "unvalidated",
+      "vae_backend": "mlx",
+      "ar_precision": "8bit",
+      "kv_dtype": "bfloat16",
+      "nar_dtype": "bfloat16",
+      "conditioning_precision": "bf16",
+      "attention_opmath": "float32",
+      "mlx_tf32_enabled": false,
+      "attention_inputs": "native_steel_bfloat16",
+      "query_chunk_size": 256,
+      "runtime": {
+        "lyra-yue2": "0.1.0",
+        "mlx": "0.32.2",
+        "mlx-lm": "0.31.3",
+        "transformers": "5.0.0",
+        "numpy": "2.2.6",
+        "python": "3.12.10",
+        "macos": "27.0"
+      },
+      "upstream_commit": "92a73cc7652fcc1f937855e4b765e0a0edd7ff2e",
+      "execution_guard": "GPUExecution",
+      "rng": {
+        "ar": "request_local_mlx",
+        "acoustic": "numpy_pcg64_fp32_full_song_v1"
+      }
+    },
+    "identity": "3f218561eac2134fff51f3d807ff4e4683b4d88ca4eff5f99842f5ba6a4e8b60",
+    "audio_sha256": "0ee90a8fbd7398b8fcd36af5975d5d98d9af45864efc72c9720bfbe4b6bac5fb",
+    "result_sha256": "cb8afe79b78df5c0b02a74454295b5435126cf9b5a087a13688052bdc46da8ef",
+    "audio_quality": {
+      "sample_rate": 48000,
+      "channels": 2,
+      "finite": true,
+      "rms": 0.16763944066473796,
+      "peak": 0.9980323910713196,
+      "clipping_fraction": 0.0
+    },
+    "musical_quality_acceptance": "pending human listening; not established by duration or EOS",
+    "resources": {
+      "memory_counter_schema": 2,
+      "swap_counter_source": "host_statistics64.swapins/swapouts",
+      "sampling_interval_seconds": 0.1,
+      "power_sampling_interval_seconds": 5.0,
+      "metadata": {},
+      "power_start": {
+        "ac_connected": true,
+        "pmset": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=37224547)\t95%; AC attached; not charging present: true"
+      },
+      "power_end": {
+        "ac_connected": true,
+        "pmset": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=37224547)\t95%; AC attached; not charging present: true"
+      },
+      "start": {
+        "elapsed_seconds": 0.013879666046705097,
+        "rss_bytes": 52789248,
+        "system_swap_used_bytes": 12374114304,
+        "system_swap_in_bytes": 56335728640,
+        "system_swap_out_bytes": 83892617216,
+        "system_available_bytes": 65310294016,
+        "system_total_bytes": 137438953472,
+        "system_memory_pressure_level": 1,
+        "system_free_bytes": 3876765696,
+        "system_wired_bytes": 7238205440,
+        "system_compressor_bytes": 2733244416,
+        "system_file_backed_bytes": 31557681152,
+        "physical_footprint_bytes": 32932584,
+        "process_lifetime_peak_footprint_bytes": 32932584,
+        "mlx_active_bytes": 0,
+        "mlx_cache_bytes": 0,
+        "mlx_peak_bytes": 0,
+        "ac_connected": true
+      },
+      "end": {
+        "elapsed_seconds": 201.7050155000179,
+        "rss_bytes": 956547072,
+        "system_swap_used_bytes": 12365725696,
+        "system_swap_in_bytes": 56340054016,
+        "system_swap_out_bytes": 83892617216,
+        "system_available_bytes": 63562334208,
+        "system_total_bytes": 137438953472,
+        "system_memory_pressure_level": 1,
+        "system_free_bytes": 2313764864,
+        "system_wired_bytes": 8933703680,
+        "system_compressor_bytes": 2734473216,
+        "system_file_backed_bytes": 31645499392,
+        "physical_footprint_bytes": 1265600840,
+        "process_lifetime_peak_footprint_bytes": 11908111032,
+        "mlx_active_bytes": 8,
+        "mlx_cache_bytes": 0,
+        "mlx_peak_bytes": 11256150230,
+        "ac_connected": true
+      },
+      "sampled_maxima": {
+        "mlx_active_bytes": 11196716606,
+        "mlx_cache_bytes": 170590586,
+        "mlx_peak_bytes": 11256150230,
+        "physical_footprint_bytes": 11763456696,
+        "process_lifetime_peak_footprint_bytes": 11908111032,
+        "rss_bytes": 8251392000,
+        "system_available_bytes": 70759759872,
+        "system_compressor_bytes": 2734473216,
+        "system_file_backed_bytes": 31645515776,
+        "system_free_bytes": 12762710016,
+        "system_swap_in_bytes": 56340054016,
+        "system_swap_out_bytes": 83892617216,
+        "system_swap_used_bytes": 12374114304,
+        "system_total_bytes": 137438953472,
+        "system_wired_bytes": 11263492096
+      },
+      "monitor_error": null,
+      "exception": null
+    },
+    "artifact_directory": "outputs/official_fullsong/jazz_funk_score",
+    "prior_attempts": []
+  }
+]

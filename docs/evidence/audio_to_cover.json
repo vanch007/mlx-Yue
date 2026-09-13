@@ -1,0 +1,327 @@
+{
+  "id": "audio_to_cover",
+  "official_id": "1b91eef30046ca2f0cf5633e",
+  "title": "Easy Listening",
+  "genre": "Easy Listening",
+  "language": "ja",
+  "score_mode": "transcribed",
+  "request": {
+    "id": "audio_to_cover",
+    "style": "A gentle and melancholic piece beginning with a delicate piano melody and a breathy, expressive flute line. A soft, clear female vocal enters, singing in a gentle, almost lullaby-like style. The arrangement gradually builds, introducing a subtle, downtempo lo-fi hip-hop beat with a soft kick and snare, complemented by a warm bassline and atmospheric synth pads. The track maintains a tranquil and introspective mood throughout, with the piano and flute weaving in and out, creating a serene soundscape perfect for relaxation or contemplation. The song concludes with a beautiful instrumental outro featuring the piano and flute, fading into silence.",
+    "lyrics": "[Intro: Piano & Flute]\n\n[Verse 1]\n静かな森 歩み寄る\n木々のざわめき 聞こえる音\n陽射しが揺れて 影踊る\n心は軽く 自由になる\n\n[Verse 2]\n風が通り 抱きしめるように\n葉は止ま 語る古い物語\n小鳥の歌が 空を仰ぎ\nその音色だけ 生きている\n\n[Chorus]\n森の中で 消えてゆく\n小さな悩み 風に乗る\n心地良い緑 包まれて\n私は癒され 生まれ変わる\n\n[Instrumental Break: Piano, Flute, Drums]\n\n[Verse 3]\n土の匂いが 深く染みる\n地球の鼓動 感じている\n目を閉じ夜明けを 夢見て\n自然と溶ける 虚無する\n\n[Verse 4]\n月の光が ゆっくりと\n静けさ抱え 手ら知ってる\n心がささやく 小さな声\n森のリズムで 調和化する\n\n[Chorus]\n森の中で 消えてゆく\n小さな悩み 風に乗る\n心地良い緑 包まれて\n私は癒され 生まれ変わる\n\n[Outro: Piano & Flute]",
+    "cot": "full",
+    "seed": 2026
+  },
+  "official_mode": "planned",
+  "source": {
+    "id": "1b91eef30046ca2f0cf5633e",
+    "order": 0,
+    "collection": "genre",
+    "title": "Easy Listening",
+    "genre": "Easy Listening",
+    "genrePath": [
+      "Easy Listening"
+    ],
+    "language": "ja",
+    "languageLabel": "Japanese",
+    "mode": "planned",
+    "tags": "A gentle and melancholic piece beginning with a delicate piano melody and a breathy, expressive flute line. A soft, clear female vocal enters, singing in a gentle, almost lullaby-like style. The arrangement gradually builds, introducing a subtle, downtempo lo-fi hip-hop beat with a soft kick and snare, complemented by a warm bassline and atmospheric synth pads. The track maintains a tranquil and introspective mood throughout, with the piano and flute weaving in and out, creating a serene soundscape perfect for relaxation or contemplation. The song concludes with a beautiful instrumental outro featuring the piano and flute, fading into silence.",
+    "lyrics": "[Intro: Piano & Flute]\n\n[Verse 1]\n静かな森 歩み寄る\n木々のざわめき 聞こえる音\n陽射しが揺れて 影踊る\n心は軽く 自由になる\n\n[Verse 2]\n風が通り 抱きしめるように\n葉は止ま 語る古い物語\n小鳥の歌が 空を仰ぎ\nその音色だけ 生きている\n\n[Chorus]\n森の中で 消えてゆく\n小さな悩み 風に乗る\n心地良い緑 包まれて\n私は癒され 生まれ変わる\n\n[Instrumental Break: Piano, Flute, Drums]\n\n[Verse 3]\n土の匂いが 深く染みる\n地球の鼓動 感じている\n目を閉じ夜明けを 夢見て\n自然と溶ける 虚無する\n\n[Verse 4]\n月の光が ゆっくりと\n静けさ抱え 手ら知ってる\n心がささやく 小さな声\n森のリズムで 調和化する\n\n[Chorus]\n森の中で 消えてゆく\n小さな悩み 風に乗る\n心地良い緑 包まれて\n私は癒され 生まれ変わる\n\n[Outro: Piano & Flute]",
+    "abc": "X:1\nT:\nM:4/4\nL:1/16\nQ:1/4=85\nV: Vocal clef=treble name=\"Vocal Melody\" snm=\"Vocal\"\nV: Ins clef=treble name=\"Ins Melody\" snm=\"Inst.\"\nK:D#m\n% intro\nV: Vocal\nz8\"Bmaj7\"z8|\"Bmaj7\"z16|\"C#\"z16|\"D#m7\"z16|\nV: Ins\nz12z3a|a3c'3g6f2a2|g3c'3e8z2|e3f3c8Ac|\nV: Vocal\n\"D#m7\"z16|\"Bmaj7\"z16|\"C#\"z16|\"D#m7\"z16|\nV: Ins\ne3f3c4f2e2c2|a3c'3g6f2a2|g3c'3e4f2e2c2|e3f3c8Ac|\nV: Vocal\n\"D#m7\"z8z2d2f2g2|\nV: Ins\ne3f3c4z6|\n% verse\nV: Vocal\n\"Bmaj7\"a2dd3z4d2f2a2|\"C#\"g3c3z4c2d2e2|\"D#m7\"e2fe2c2cc2AA3GA-|\"D#m7\"A2z8d2f2g2|\nV: Ins\nZ4|\nV: Vocal\n\"Bmaj7\"a3d3cd3d2f2a2|\"C#\"g3c3z4c2d2e2|\"D#m7\"e2fe2c2cc2AA3GA-|\"D#m7\"A2z8d2f2g2|\nV: Ins\nZ4|\nV: Vocal\n\"Bmaj7\"a3d3cd3d2f2a2|\"C#\"g3c3z4c2d2e2|\"D#m7\"e2fe2c2cc2A2A2G2|\"D#m7\"G3c3A2z2d2f2g2|\nV: Ins\nZ4|\nV: Vocal\n\"Bmaj7\"a3d3cd3d2f2a2|\"C#\"g3c3e4z4c2|\"D#m7\"d3e3f2g3f3e2|\"D#m7\"e3f3e4d2d4|\nV: Ins\nZ4|\nV: Vocal\n\"D#m7\"z8z2d2a2g2|\nV: Ins\nZ|\n% chorus\nV: Vocal\n\"Bmaj7\"a3c'3g2-\"C#\"g2a2g2f2|\"D#m7\"e3c4z3d2a2g2|\"Bmaj7\"a3c'3g2-\"C#\"g2a2g2f2|\"D#m7\"g3a4z3d2a2g2|\nV: Ins\nZ4|\nV: Vocal\n\"Bmaj7\"a3c'3g2-\"C#\"g2a2g2f2|\"D#m7\"g3c'3a4z4de|\"Bmaj7\"f2f2f2a2\"C#\"g3f3e2|\"D#m7\"e3f3e4d2d4|\nV: Ins\nZ4|\n% interlude\nV: Vocal\n\"Bmaj7\"z16|\"C#\"z16|\"D#m7\"z16|\"D#m7\"z16|\nV: Ins\nz2d'c'c'aaggffeeddc|cddccAAGGFFEEDEC|D3A3A8-A2-|A6z8z2|\nV: Vocal\n\"Bmaj7\"z16|\"C#\"z16|\"D#m7\"z16|\"D#m7\"z8z2d2f2g2|\nV: Ins\nz2d'c'c'aaggffeeddc|cddccAAGGFFEEDEC|D3A3A8-A2-|A6z8z2|\n% verse\nV: Vocal\n\"Bmaj7\"a2dd2c3z2d2f2a2|\"C#\"g3c3e2z2c2d2e2|\"D#m7\"e2fe2c3c2AA3GA-|\"D#m7\"A2z8d2f2g2|\nV: Ins\nZ4|\nV: Vocal\n\"Bmaj7\"a3d3cd3d2f2a2|\"C#\"g3c4z4zd2e2|\"D#m7\"e3f3e4d4c2|\"D#m7\"e3f3e4d4z2|\nV: Ins\nZ4|\nV: Vocal\n\"Bmaj7\"z2aaa2gg2ff2z4|\"C#\"z2a2a2gg2c'4z3|\"D#m7\"z2aaa2gg2ff2z2e2|\"D#m7\"e3f3e4d4z2|\nV: Ins\nZ4|\nV: Vocal\n\"Bmaj7\"z2aaa2gggff4z2|\"C#\"z2a2a2gg2c'c'z4z|\"D#m7\"z2aaa2gggff4e2|\"D#m7\"e3f3e4d2d4|\nV: Ins\nZ4|\nV: Vocal\n\"D#m\"z8z2d2a2g2|\nV: Ins\nZ|\n% chorus\nV: Vocal\n\"Bmaj7\"a3c'3g2-\"C#\"g2a2g2f2|\"D#m7\"g3c4z3d2a2g2|\"Bmaj7\"a3c'3g2-\"C#\"g2a2g2f2|\"D#m7\"g3a4z3d2a2g2|\nV: Ins\nZ4|\nV: Vocal\n\"Bmaj7\"a3c'3g2-\"C#\"g2a2g2f2|\"D#m7\"g3c'3a4z4de|\"Bmaj7\"f2f2f2a2\"C#\"g3f3e2|\"D#m7\"e3f3e4d2d4|\nV: Ins\nZ4|\n% outro\nV: Vocal\n\"Bmaj7\"z8\"C#\"z8|\"D#m7\"z16|\"Bmaj7\"z8\"C#\"z8|\"D#m7\"z16|\nV: Ins\nz2d'c'c'aaggffeeddc|cddccAAGGFFEEDEC|D3A3A8-A2-|A6z8z2|\nV: Vocal\n\"Bmaj7\"z8\"C#\"z8|\"D#m7\"z16|\"Bmaj7\"z8\"C#\"z8|\"D#m7\"z16|\nV: Ins\nz2d'c'c'aaggffeeddc|cddccAAGGFFEEDEC|D3A3A8-A2-|A6z8z2|\nV: Vocal\n\"Bmaj7\"z16|\"C#\"z16|\"D#m7\"z16|\"D#m7\"z16|\nV: Ins\na3c'3g6f2a2|g3c'3e8z2|e3f3c8Ac|e3f3c8z2|\nV: Vocal\n\"D#m7\"z16|\nV: Ins\nZ|\n",
+    "abcUrl": "assets/genre/1b91eef30046ca2f0cf5633e/score.abc",
+    "audio": "assets/genre/1b91eef30046ca2f0cf5633e/1b91eef30046ca2f0cf5633e_music.mp3",
+    "scoreAudio": "assets/genre/1b91eef30046ca2f0cf5633e/1b91eef30046ca2f0cf5633e_score.mp3",
+    "sheets": [
+      "assets/genre/1b91eef30046ca2f0cf5633e/sheet_01.svg",
+      "assets/genre/1b91eef30046ca2f0cf5633e/sheet_02.svg",
+      "assets/genre/1b91eef30046ca2f0cf5633e/sheet_03.svg",
+      "assets/genre/1b91eef30046ca2f0cf5633e/sheet_04.svg"
+    ]
+  },
+  "official_audio_url": "https://map-yue2.github.io/assets/genre/1b91eef30046ca2f0cf5633e/1b91eef30046ca2f0cf5633e_music.mp3",
+  "official_audio_path": "outputs/official_fullsong/reference/1b91eef30046ca2f0cf5633e.mp3",
+  "official_audio_sha256": "55a3e96b7dd0266ec8163a6fc121491169e4cd9737e651931fae94b1a836507f",
+  "official_seconds": 221.76,
+  "input_hashes": {
+    "style": "e2d3e5319cc956c19f7f1a898c4ff1885046da07f2fc8b60ba006f595a607cca",
+    "lyrics": "b101b5240926d0a25ef27df79d9b262be1f1f22ae3b03520b8a5359f66ae360b"
+  },
+  "source_audio_url": "https://map-yue2.github.io/assets/genre/1b91eef30046ca2f0cf5633e/1b91eef30046ca2f0cf5633e_score.mp3",
+  "source_audio_path": "outputs/official_fullsong/reference/1b91eef30046ca2f0cf5633e-score.mp3",
+  "source_audio_sha256": "3172a644320a11511d36c541ea2115be388720a3a8693aee57b65334653947f8",
+  "measurement": {
+    "id": "audio_to_cover",
+    "status": "complete",
+    "case_sha256": "340e01884cb6d1e6b446a91904a6e38967ec6ccdffa3f1f70a3e42d556e7bf9f",
+    "attempt": 2,
+    "benchmark_script_sha256": "2c5868ef28d74bb713079a0c1cf886d419a4e3a73cce34be2413e4cda7ec9449",
+    "retry_policy": "Only interrupted/failed execution, identical input and seed; no quality reroll",
+    "truncated": {
+      "abc": false,
+      "semantic": false
+    },
+    "audio_seconds": 224.35866666666666,
+    "official_seconds": 221.76,
+    "duration_ratio": 1.0117183742183742,
+    "e2e_seconds": 442.2056347919861,
+    "rtf": 1.970976389554758,
+    "speed_multiplier": 0.5073627493964549,
+    "load_seconds": 5.256098542013206,
+    "transcription_seconds": 15.441064957994968,
+    "save_seconds": 0.4870239580050111,
+    "timing": {
+      "abc": {
+        "seconds": 0.0,
+        "output_tokens": 0,
+        "external_prefix_tokens": 1988
+      },
+      "semantic": {
+        "seconds": 91.65822037495673,
+        "prefill_seconds": 1.516166332992725,
+        "ttft_seconds": 1.5191173749626614,
+        "output_tokens": 5610,
+        "content_tokens": 5609,
+        "output_tps": 61.20563957112121,
+        "prefix_tokens": 2450,
+        "cfg_branches": 1,
+        "execution": "eager",
+        "attention": "sdpa",
+        "backend": "mlx"
+      },
+      "nar_seconds": 319.2624067500001,
+      "vae_seconds": 9.963404207956046,
+      "load": {
+        "resolve_conversion_integrity_seconds": 5.256009291042574,
+        "ar_load_events_seconds": [
+          0.1156300829607062
+        ],
+        "ar_load_seconds": 0.1156300829607062,
+        "conditioning_load_events_seconds": [
+          0.19259333302034065
+        ],
+        "conditioning_load_seconds": 0.19259333302034065,
+        "nar_load_events_seconds": [
+          0.134724291972816
+        ],
+        "nar_load_seconds": 0.134724291972816,
+        "vae_load_events_seconds": [
+          0.10129804094322026
+        ],
+        "vae_load_seconds": 0.10129804094322026
+      },
+      "e2e_seconds": 421.00786125002196
+    },
+    "configuration": {
+      "generation": {
+        "abc": {
+          "temperature": 0.7,
+          "top_p": 0.9,
+          "top_k": 30,
+          "repetition_penalty": 1.005,
+          "penalty_window": 100,
+          "min_tokens": 32,
+          "max_tokens": 4096
+        },
+        "semantic": {
+          "temperature": 1.0,
+          "top_p": 0.95,
+          "top_k": 100,
+          "repetition_penalty": 1.2,
+          "penalty_window": 50,
+          "min_tokens": 200,
+          "max_tokens": 9000
+        },
+        "ode_steps": 32,
+        "ode_method": "midpoint",
+        "context": 24576,
+        "version": "yue2-native-v1"
+      },
+      "overrides": {},
+      "cot": "full",
+      "cfg_scale": 1.0,
+      "cfg_negative": "same_instruction_and_exact_abc",
+      "backend": "mlx",
+      "quantization": "8bit",
+      "model_dtype": "bfloat16",
+      "vae_dtype": "float32",
+      "vae_decode": "halo_crop",
+      "vae_core_frames": 256,
+      "vae_halo_frames": 16,
+      "device": "DeviceType.gpu",
+      "memory_budget_gib": 16.0,
+      "offload_ar": false,
+      "runtime_sha256": "ff4829d01380a2ac98fbc0aa0aed90f9b2bbe9c0a3473f1d62ed8ee3abc8efa9",
+      "decoder_release": "standard",
+      "validation_status": "unvalidated",
+      "vae_backend": "mlx",
+      "ar_precision": "8bit",
+      "kv_dtype": "bfloat16",
+      "nar_dtype": "bfloat16",
+      "conditioning_precision": "bf16",
+      "attention_opmath": "float32",
+      "mlx_tf32_enabled": false,
+      "attention_inputs": "native_steel_bfloat16",
+      "query_chunk_size": 256,
+      "runtime": {
+        "lyra-yue2": "0.1.0",
+        "mlx": "0.32.2",
+        "mlx-lm": "0.31.3",
+        "transformers": "5.0.0",
+        "numpy": "2.2.6",
+        "python": "3.12.10",
+        "macos": "27.0"
+      },
+      "upstream_commit": "92a73cc7652fcc1f937855e4b765e0a0edd7ff2e",
+      "execution_guard": "GPUExecution",
+      "rng": {
+        "ar": "request_local_mlx",
+        "acoustic": "numpy_pcg64_fp32_full_song_v1"
+      }
+    },
+    "identity": "df69a5697e65d8617297ca13345ed57255c90e66d3e3f1608cc5b73161f03ce5",
+    "audio_sha256": "bf9e9bce7f7ec16e85d0f9bcd805ab743442fc8c07581bb6370fbb046801fccc",
+    "result_sha256": "ab1ad8a6d6ac756e3e169bd1cf7341a660244e91d9993256162daa1554522254",
+    "audio_quality": {
+      "sample_rate": 48000,
+      "channels": 2,
+      "finite": true,
+      "rms": 0.17828478451710916,
+      "peak": 1.0,
+      "clipping_fraction": 4.178577159191533e-07
+    },
+    "musical_quality_acceptance": "pending human listening; not established by duration or EOS",
+    "resources": {
+      "memory_counter_schema": 2,
+      "swap_counter_source": "host_statistics64.swapins/swapouts",
+      "sampling_interval_seconds": 0.1,
+      "power_sampling_interval_seconds": 5.0,
+      "metadata": {},
+      "power_start": {
+        "ac_connected": true,
+        "pmset": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=37224547)\t95%; AC attached; not charging present: true"
+      },
+      "power_end": {
+        "ac_connected": true,
+        "pmset": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=37224547)\t95%; AC attached; not charging present: true"
+      },
+      "start": {
+        "elapsed_seconds": 0.009731750003993511,
+        "rss_bytes": 51937280,
+        "system_swap_used_bytes": 12374114304,
+        "system_swap_in_bytes": 56333713408,
+        "system_swap_out_bytes": 83892617216,
+        "system_available_bytes": 64413810688,
+        "system_total_bytes": 137438953472,
+        "system_memory_pressure_level": 1,
+        "system_free_bytes": 5084184576,
+        "system_wired_bytes": 7852408832,
+        "system_compressor_bytes": 2734784512,
+        "system_file_backed_bytes": 29612359680,
+        "physical_footprint_bytes": 32080616,
+        "process_lifetime_peak_footprint_bytes": 32080616,
+        "mlx_active_bytes": 0,
+        "mlx_cache_bytes": 0,
+        "mlx_peak_bytes": 0,
+        "ac_connected": true
+      },
+      "end": {
+        "elapsed_seconds": 442.765825749957,
+        "rss_bytes": 1139507200,
+        "system_swap_used_bytes": 12374114304,
+        "system_swap_in_bytes": 56335728640,
+        "system_swap_out_bytes": 83892617216,
+        "system_available_bytes": 65310294016,
+        "system_total_bytes": 137438953472,
+        "system_memory_pressure_level": 1,
+        "system_free_bytes": 3876765696,
+        "system_wired_bytes": 7238205440,
+        "system_compressor_bytes": 2733244416,
+        "system_file_backed_bytes": 31557681152,
+        "physical_footprint_bytes": 1138821736,
+        "process_lifetime_peak_footprint_bytes": 12167158840,
+        "mlx_active_bytes": 20,
+        "mlx_cache_bytes": 0,
+        "mlx_peak_bytes": 11256150242,
+        "ac_connected": true
+      },
+      "sampled_maxima": {
+        "mlx_active_bytes": 11196718154,
+        "mlx_cache_bytes": 244744192,
+        "mlx_peak_bytes": 11256150242,
+        "physical_footprint_bytes": 12009036856,
+        "process_lifetime_peak_footprint_bytes": 12167158840,
+        "rss_bytes": 8494088192,
+        "system_available_bytes": 70310297600,
+        "system_compressor_bytes": 2734784512,
+        "system_file_backed_bytes": 32501121024,
+        "system_free_bytes": 13867597824,
+        "system_swap_in_bytes": 56335728640,
+        "system_swap_out_bytes": 83892617216,
+        "system_swap_used_bytes": 12374114304,
+        "system_total_bytes": 137438953472,
+        "system_wired_bytes": 11352506368
+      },
+      "monitor_error": null,
+      "exception": null
+    },
+    "artifact_directory": "outputs/official_fullsong/audio_to_cover/attempt-2",
+    "prior_attempts": [
+      {
+        "attempt": 1,
+        "status": "failed",
+        "error": "RuntimeError: AC power is required for an acceptance benchmark",
+        "receipt_path": "outputs/official_fullsong/audio_to_cover/measurement.json",
+        "receipt_sha256": "2c6a35f1a27cf8803212d3bf2a414f2911523022bfc63c86fb57a7897139bc73"
+      }
+    ]
+  },
+  "official_player": "audio/fullsong/55a3e96b7dd0266ec816.mp3",
+  "source_player": "audio/fullsong/3172a644320a11511d36.mp3",
+  "transcription": {
+    "melody_notes": 482,
+    "vocal_notes": 0,
+    "instrumental_notes": 482,
+    "events": 666,
+    "abc_measures": 83,
+    "abc_error": null,
+    "diagnostics": [
+      "measure 50: inferred 1/4 from downbeat span; declared numerators were [4]",
+      "measure 59: inferred 1/4 from downbeat span; declared numerators were [4]",
+      "measure 60: inferred 3/4 from downbeat span; declared numerators were [4, 4, 4]",
+      "measure 72: inferred 3/4 from downbeat span; declared numerators were [4, 4, 4]",
+      "measure 82: padded final 2/4 span to declared 4/4 with trailing rest"
+    ],
+    "backend": "mlx",
+    "dtype": "float32",
+    "model": {
+      "model": "m-a-p/SheetSage2",
+      "revision": "eab522a8168e8b8b8c4856bf8609cd86198f01fe",
+      "model_sha256": "b235f68091a5f5b644000f2b5acb57d1e70432aca2b34ab1b9cf27236e1f4274",
+      "config_sha256": "a986e63f5d831ecb823c11d19cfb371d763f25ae2e614ec9acd714c0b8bb87fd",
+      "base_model": "m-a-p/MERT-v2-FullSong",
+      "base_revision": "d8ba1c745e733b3908ce6ad16ebeb17ac7600a42",
+      "base_sha256": "e6dd2ab187d6dd62b6521cd7d8f932e237acf0c5757745a7232082e28391350d",
+      "backend": "mlx",
+      "dtype": "float32",
+      "lora_merge": "numpy_cpu_fp32",
+      "implementation_sha256": {
+        "transcription/model.py": "993c38cb38f0bd9bdf1c3c1ce4c513b5fe0ef025214a11d9599d7cc61bd08ee2",
+        "transcription/pipeline.py": "804482c050bcab86d083d2ce8d54195236d194f8f6ba984f44b1789860480539",
+        "transcription/control.py": "1143e58cfedc3bd5469083d34b600094478e0fcbab585a418564cc2471886719",
+        "mert.py": "c7ad0c37fd0d90ce249dcd3c11c6301cc84c3a51c899eb8adc6d1f2291d2dfc8",
+        "bart.py": "a3de735ac0760a19f450ef4fbba9f7104a293acf1985633c642fd202c3d93848"
+      }
+    },
+    "source_audio_sha256": "3172a644320a11511d36c541ea2115be388720a3a8693aee57b65334653947f8",
+    "duration_seconds": 225.79579166666667,
+    "task": "full",
+    "preset": "default",
+    "audio_decode": "ffmpeg_float32_mono_24000",
+    "warnings": [],
+    "truncated": false,
+    "elapsed_seconds": 13.900297292042524,
+    "status": "complete"
+  },
+  "local_player": "audio/fullsong/bf9e9bce7f7ec16e85d0.mp3",
+  "actual_score": "X:1\nT:\nM:4/4\nL:1/16\nQ:1/4=85\nV: Vocal clef=treble name=\"Vocal Melody\" snm=\"Vocal\"\nV: Ins clef=treble name=\"Ins Melody\" snm=\"Inst.\"\nK:D#m\n% intro\nV: Vocal\nz8\"Bmaj7\"z8|\"Bmaj7\"z16|\"C#\"z16|\"D#m7\"z16|\nV: Ins\nz12z3a|a3c'3g6f2a2|g3c'3e8z2|e3f3c8Ac|\nV: Vocal\n\"D#m7\"z16|\"Bmaj7\"z16|\"C#\"z16|\"D#m7\"z16|\nV: Ins\ne3f3c4f2e2c2|a3c'3g6f2a2|g3c'3e4f2e2c2|e3f3c8Ac|\nV: Vocal\n\"D#m7\"z16|\nV: Ins\ne3f3c4d2f2g2|\n% verse\nV: Vocal\n\"Bmaj7\"z16|\"C#\"z16|\"D#m7\"z16|\"D#m7\"z16|\nV: Ins\na2dd3z4d2f2a2|g3c3z4c2d2e2|e2fe2c2cc2AA3GA-|A2z8d2f2g2|\nV: Vocal\n\"Bmaj7\"z16|\"C#\"z16|\"D#m7\"z16|\"D#m7\"z16|\nV: Ins\na3d3cd3d2f2a2|g3c3z4c2d2e2|e2fe2c2cc2AA3GA-|A2z8d2f2g2|\nV: Vocal\n\"Bmaj7\"z16|\"C#\"z16|\"D#m7\"z16|\"D#m7\"z16|\nV: Ins\na3d3cd3d2f2a2|g3c3z4c2d2e2|e2fe2c2cc2A2A2G2|G3c3A4d2f2g2|\nV: Vocal\n\"Bmaj7\"z16|\"C#\"z16|\"D#m7\"z16|\"D#m7\"z16|\nV: Ins\na3d3cd3d2f2a2|g3c3e8c2|d3e3f2g3f3e2|e3f3e4d2d4|\nV: Vocal\n\"D#m7\"z16|\"Bmaj7\"z8\"C#\"z8|\"D#m7\"z16|\"Bmaj7\"z8\"C#\"z8|\nV: Ins\nz8z2d2a2g2|a3c'3g4a2g2f2|e3c4z3d2a2g2|a3c'3g4a2g2f2|\nV: Vocal\n\"D#m7\"z16|\"Bmaj7\"z8\"C#\"z8|\"D#m7\"z16|\"Bmaj7\"z8\"C#\"z8|\nV: Ins\ng3a4z3d2a2g2|a3c'3g4a2g2f2|g3c'3a8de|f2f2f2a2g3f3e2|\nV: Vocal\n\"D#m7\"z16|\"Bmaj7\"z16|\"C#\"z16|\"D#m7\"z16|\nV: Ins\ne3f3e4d2d4|z2d'c'c'aaggffeeddc|cddccAAGGFFEEDEC|D3A3A8z2|\nV: Vocal\n\"D#m7\"z16|\"Bmaj7\"z16|\"C#\"z16|\"D#m7\"z16|\nV: Ins\nZ|z2d'c'c'aaggffeeddc|cddccAAGGFFEEDEC|D3A3A8-A2-|\nV: Vocal\n\"D#m7\"z16|\"Bmaj7\"z16|\"C#\"z16|\"D#m7\"z16|\nV: Ins\nA6z4d2f2g2|a2dd2c3z2d2f2a2|g3c3e4c2d2e2|e2fe2c3c2AA3GA-|\nV: Vocal\n\"D#m7\"z16|\"Bmaj7\"z16|\"C#\"z16|\"D#m7\"z16|\nV: Ins\nA2z8d2f2g2|a3d3cd3d2f2a2|g3c4z4zd2e2|e3f3e4d4c2|\nV: Vocal\n\"D#m7\"z16|\nV: Ins\ne3f3e4d4z2|\nV: Vocal\nM:1/4\n\"D#m7\"z4|\nV: Ins\nM:1/4\nZ|\nV: Vocal\nM:4/4\n\"Bmaj7\"z16|\"C#\"z16|\"D#m7\"z16|\"D#m7\"z16|\nV: Ins\nM:4/4\nz2aaa2gg2ff4z2|z2a2a2gg2c'3z4|z2aaa2gg2ff4e2|e3f3e4d4z2|\nV: Vocal\n\"Bmaj7\"z16|\"C#\"z16|\"D#m7\"z16|\"D#m7\"z16|\nV: Ins\nz2aaa2gggff4z2|z2a2a2gg2c'c'2z4|z2aaa2gggff4e2|e3f3e4d2d4|\nV: Vocal\nM:1/4\n\"D#m7\"z4|\nV: Ins\nM:1/4\nZ|\nV: Vocal\nM:3/4\n\"D#m7\"z12|\nV: Ins\nM:3/4\nz8z2d2|\nV: Vocal\nM:4/4\n\"Bmaj7\"z8\"C#\"z8|\"D#m7\"z16|\"Bmaj7\"z8\"C#\"z8|\"D#m7\"z16|\nV: Ins\nM:4/4\na3c'3g4a2g2f2|g3c4z3d2a2g2|a3c'3g4a2g2f2|g3a4z3d2a2g2|\nV: Vocal\n\"Bmaj7\"z8\"C#\"z8|\"D#m7\"z16|\"Bmaj7\"z8\"C#\"z8|\"D#m7\"z16|\nV: Ins\na3c'3g4a2g2f2|g3c'3a8de|f2f2f2a2g3f3e2|e3f3e4d2d4|\nV: Vocal\n\"Bmaj7\"z8\"C#\"z8|\"D#m7\"z16|\"Bmaj7\"z8\"C#\"z8|\nV: Ins\nz2d'c'c'aaggffeeddc|cddccAAGGFFEEDEC|D3A3A8z2|\nV: Vocal\nM:3/4\n\"D#m7\"z12|\nV: Ins\nM:3/4\nZ|\nV: Vocal\nM:4/4\n\"Bmaj7\"z8\"C#\"z8|\"D#m7\"z16|\"Bmaj7\"z8\"C#\"z8|\"D#m7\"z16|\nV: Ins\nM:4/4\nz2d'c'c'aaggffeeddc|cddccAAGGFFEEDEC|D3A3A8z2|Z|\nV: Vocal\n\"Bmaj7\"z16|\"C#\"z16|\"D#m7\"z16|\"D#m7\"z16|\nV: Ins\na3c'3g6f2a2|g3c'3e8z2|e3f3c8Ac|e3f3c8z2|\nV: Vocal\n\"D#m7\"z16|Z|\nV: Ins\nZ2|\n"
+}

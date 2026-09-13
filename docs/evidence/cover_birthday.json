@@ -1,0 +1,270 @@
+{
+  "id": "cover_birthday",
+  "official_id": "happy-birthday-heavy-metal",
+  "title": "Happy Birthday · Heavy-Metal Scream Version",
+  "genre": "Heavy Metal · 160 BPM",
+  "language": "en",
+  "score_mode": "supplied",
+  "request": {
+    "id": "cover_birthday",
+    "style": "heavy metal, harsh screamed vocals, distorted guitars, double-kick drums, 160 BPM\n",
+    "lyrics": "[Chorus]\nHAPPY BIRTHDAY TO YOU!!!\nHAPPY BIRTHDAY TO YOU!!!\nHAPPY BIRTHDAY, DEAR FRIEND!!!\nHAPPY BIRTHDAY TO YOU!!!\n\n[Chorus]\nHAPPY BIRTHDAY TO YOU!!!\nHAPPY BIRTHDAY TO YOU!!!\nHAPPY BIRTHDAY, DEAR FRIEND!!!\nHAPPY BIRTHDAY TO YOU!!!\n\n[Chorus]\nHAPPY BIRTHDAY TO YOU!!!\nHAPPY BIRTHDAY TO YOU!!!\nHAPPY BIRTHDAY, DEAR FRIEND!!!\nHAPPY BIRTHDAY TO YOU!!!\n\n[Chorus]\nHAPPY BIRTHDAY TO YOU!!!\nHAPPY BIRTHDAY TO YOU!!!\nHAPPY BIRTHDAY, DEAR FRIEND!!!\nHAPPY BIRTHDAY TO YOU!!!\n\n[Chorus]\nHAPPY BIRTHDAY TO YOU!!!\nHAPPY BIRTHDAY TO YOU!!!\nHAPPY BIRTHDAY, DEAR FRIEND!!!\nHAPPY BIRTHDAY TO YOU!!!\n",
+    "cot": "full",
+    "seed": 2026,
+    "abc": "X:1\nT:\nM:3/4\nL:1/32\nQ:1/4=160\nV: Vocal clef=treble name=\"Vocal Melody\" snm=\"Vocal\"\nV: Ins clef=treble name=\"Ins Melody\" snm=\"Inst.\"\nK:F\n% silence\nV: Vocal\nZ3|\nV: Ins\nZ3|\n% intro\nV: Vocal\nZ|\"F\"z24|\"Bb\"z24|\"F/C\"z16\"C7\"z8|\nV: Ins\nz16c4z4|c'8a8f8|e8d8b6b2|a8f8g8|\n% chorus\nV: Vocal\n\"F\"z16c6c2|\"F\"d8c8f8|\"C\"e12z4c6c2|\"C\"d8c8g8|\nV: Ins\nf16z8|Z|Z|Z|\nV: Vocal\n\"F\"f12z4c6c2|\"F\"c'8a8f8|\"Bb\"e8d4z4b6b2|\"F/C\"a8f8\"C7\"g8|\nV: Ins\nZ4|\nV: Vocal\n\"F\"f8z8c6c2|\nV: Ins\nZ|\n% chorus\nV: Vocal\n\"F\"d8c8f8|\"C\"e12z4c6c2|\"C\"d8c8g8|\"F\"f8z8c6c2|\nV: Ins\nZ4|\nV: Vocal\n\"F\"c'8a8f6f2|\"Bb\"e8d8b6b2|\"F/C\"a8f8\"C7\"g8|\"F\"f12z12|\nV: Ins\nZ|Z|Z|z16c4z2c2|\n% interlude\nV: Vocal\n\"F\"z24|\"C\"z24|\"C\"z24|\"F\"z24|\nV: Ins\nd8c8f8|e16c4z2c2|d8c8g8|f16c4z2c2|\nV: Vocal\n\"F\"z24|\"Bb\"z24|\"F/C\"z16\"C7\"z8|\nV: Ins\nc'8a8f6f2|e8d8b6b2|a8f8g8|\n% chorus\nV: Vocal\n\"F\"z16c6c2|\"F\"d8c8f8|\"C\"e12z4c6c2|\"C\"d8c8g8|\nV: Ins\nf16z8|Z|Z|Z|\nV: Vocal\n\"F\"f12z4c6c2|\"F\"c'8a8f8|\"Bb\"e8d4z4b6b2|\"F/C\"a8f8\"C7\"g8|\nV: Ins\nZ4|\nV: Vocal\n\"F\"f12z4c6c2|\nV: Ins\nZ|\n% chorus\nV: Vocal\n\"F\"d8c8f8|\"C\"e8z8c6c2|\"C\"d8c8g8|\"F\"f8z8c6c2|\nV: Ins\nZ4|\nV: Vocal\n\"F\"c'8a8f6f2|\"Bb\"e8d8b6b2|\"F/C\"a8f8\"C7\"g8|\"F\"f12z4c6c2|\nV: Ins\nZ4|\n% chorus\nV: Vocal\n\"F\"d8c8f8|\"C\"e8z8c6c2|\"C\"d8c8g8|\"F\"f12z4c6c2|\nV: Ins\nZ4|\nV: Vocal\n\"F\"c'8a8f8|\"Bb\"e8d4z4b6b2|\"F/C\"a8f8\"C7\"g8|\"F\"f24|\nV: Ins\nZ4|\n% outro\nV: Vocal\n\"F\"z24|\"F\"z24|\nV: Ins\nZ2|\n"
+  },
+  "official_mode": "cover/edit",
+  "source": {
+    "id": "happy-birthday-heavy-metal",
+    "title": "Happy Birthday · Heavy-Metal Scream Version",
+    "genre": "Heavy Metal · 160 BPM",
+    "source": "Adapted from Happy Birthday to You",
+    "editType": "Tempo change: 97 → 160 BPM · Style rearrangement",
+    "audio": "assets/covers/happy-birthday-heavy-metal/happy-birthday-heavy-metal.mp3",
+    "abcUrl": "assets/covers/happy-birthday-heavy-metal/happy-birthday-heavy-metal.abc",
+    "abc": "X:1\nT:\nM:3/4\nL:1/32\nQ:1/4=160\nV: Vocal clef=treble name=\"Vocal Melody\" snm=\"Vocal\"\nV: Ins clef=treble name=\"Ins Melody\" snm=\"Inst.\"\nK:F\n% silence\nV: Vocal\nZ3|\nV: Ins\nZ3|\n% intro\nV: Vocal\nZ|\"F\"z24|\"Bb\"z24|\"F/C\"z16\"C7\"z8|\nV: Ins\nz16c4z4|c'8a8f8|e8d8b6b2|a8f8g8|\n% chorus\nV: Vocal\n\"F\"z16c6c2|\"F\"d8c8f8|\"C\"e12z4c6c2|\"C\"d8c8g8|\nV: Ins\nf16z8|Z|Z|Z|\nV: Vocal\n\"F\"f12z4c6c2|\"F\"c'8a8f8|\"Bb\"e8d4z4b6b2|\"F/C\"a8f8\"C7\"g8|\nV: Ins\nZ4|\nV: Vocal\n\"F\"f8z8c6c2|\nV: Ins\nZ|\n% chorus\nV: Vocal\n\"F\"d8c8f8|\"C\"e12z4c6c2|\"C\"d8c8g8|\"F\"f8z8c6c2|\nV: Ins\nZ4|\nV: Vocal\n\"F\"c'8a8f6f2|\"Bb\"e8d8b6b2|\"F/C\"a8f8\"C7\"g8|\"F\"f12z12|\nV: Ins\nZ|Z|Z|z16c4z2c2|\n% interlude\nV: Vocal\n\"F\"z24|\"C\"z24|\"C\"z24|\"F\"z24|\nV: Ins\nd8c8f8|e16c4z2c2|d8c8g8|f16c4z2c2|\nV: Vocal\n\"F\"z24|\"Bb\"z24|\"F/C\"z16\"C7\"z8|\nV: Ins\nc'8a8f6f2|e8d8b6b2|a8f8g8|\n% chorus\nV: Vocal\n\"F\"z16c6c2|\"F\"d8c8f8|\"C\"e12z4c6c2|\"C\"d8c8g8|\nV: Ins\nf16z8|Z|Z|Z|\nV: Vocal\n\"F\"f12z4c6c2|\"F\"c'8a8f8|\"Bb\"e8d4z4b6b2|\"F/C\"a8f8\"C7\"g8|\nV: Ins\nZ4|\nV: Vocal\n\"F\"f12z4c6c2|\nV: Ins\nZ|\n% chorus\nV: Vocal\n\"F\"d8c8f8|\"C\"e8z8c6c2|\"C\"d8c8g8|\"F\"f8z8c6c2|\nV: Ins\nZ4|\nV: Vocal\n\"F\"c'8a8f6f2|\"Bb\"e8d8b6b2|\"F/C\"a8f8\"C7\"g8|\"F\"f12z4c6c2|\nV: Ins\nZ4|\n% chorus\nV: Vocal\n\"F\"d8c8f8|\"C\"e8z8c6c2|\"C\"d8c8g8|\"F\"f12z4c6c2|\nV: Ins\nZ4|\nV: Vocal\n\"F\"c'8a8f8|\"Bb\"e8d4z4b6b2|\"F/C\"a8f8\"C7\"g8|\"F\"f24|\nV: Ins\nZ4|\n% outro\nV: Vocal\n\"F\"z24|\"F\"z24|\nV: Ins\nZ2|\n",
+    "tags": "heavy metal, harsh screamed vocals, distorted guitars, double-kick drums, 160 BPM\n",
+    "lyrics": "[Chorus]\nHAPPY BIRTHDAY TO YOU!!!\nHAPPY BIRTHDAY TO YOU!!!\nHAPPY BIRTHDAY, DEAR FRIEND!!!\nHAPPY BIRTHDAY TO YOU!!!\n\n[Chorus]\nHAPPY BIRTHDAY TO YOU!!!\nHAPPY BIRTHDAY TO YOU!!!\nHAPPY BIRTHDAY, DEAR FRIEND!!!\nHAPPY BIRTHDAY TO YOU!!!\n\n[Chorus]\nHAPPY BIRTHDAY TO YOU!!!\nHAPPY BIRTHDAY TO YOU!!!\nHAPPY BIRTHDAY, DEAR FRIEND!!!\nHAPPY BIRTHDAY TO YOU!!!\n\n[Chorus]\nHAPPY BIRTHDAY TO YOU!!!\nHAPPY BIRTHDAY TO YOU!!!\nHAPPY BIRTHDAY, DEAR FRIEND!!!\nHAPPY BIRTHDAY TO YOU!!!\n\n[Chorus]\nHAPPY BIRTHDAY TO YOU!!!\nHAPPY BIRTHDAY TO YOU!!!\nHAPPY BIRTHDAY, DEAR FRIEND!!!\nHAPPY BIRTHDAY TO YOU!!!\n",
+    "titleZh": "",
+    "sourceTitleZh": "",
+    "sourceUrl": "https://www.youtube.com/watch?v=c-v-7JRisLA"
+  },
+  "official_audio_url": "https://map-yue2.github.io/assets/covers/happy-birthday-heavy-metal/happy-birthday-heavy-metal.mp3",
+  "official_audio_path": "outputs/official_fullsong/reference/happy-birthday-heavy-metal.mp3",
+  "official_audio_sha256": "9cd75cf90c4d4700f2105a3c5260a4f0b367ffa9bd035e232b05f44c9085a4cb",
+  "official_seconds": 63.91866666666667,
+  "input_hashes": {
+    "style": "7f5bbe57542658ac60c555fd8c6a2e45ada7053cdf32a29030696e6b94f90408",
+    "lyrics": "202e34e83192ab5b422a8e571929ac340c3900ba516c066499e89a25908c306c",
+    "abc": "ab387a14ffed0cfad3073164a4d45d6a9428a92fc659dce67d291ee3a325a346"
+  },
+  "measurement": {
+    "id": "cover_birthday",
+    "status": "complete",
+    "case_sha256": "c6714902951c35a1221ef82166622d5e8063394694b46c6f50be8ed289bbc8e3",
+    "attempt": 2,
+    "benchmark_script_sha256": "2c5868ef28d74bb713079a0c1cf886d419a4e3a73cce34be2413e4cda7ec9449",
+    "retry_policy": "Only interrupted/failed execution, identical input and seed; no quality reroll",
+    "truncated": {
+      "abc": false,
+      "semantic": false
+    },
+    "audio_seconds": 64.83866666666667,
+    "official_seconds": 63.91866666666667,
+    "duration_ratio": 1.0143932914745823,
+    "e2e_seconds": 102.2056244580308,
+    "rtf": 1.5763066964881676,
+    "speed_multiplier": 0.634394310591896,
+    "load_seconds": 5.280088083003648,
+    "transcription_seconds": 0,
+    "save_seconds": 0.22794137499295175,
+    "timing": {
+      "abc": {
+        "seconds": 0.0,
+        "output_tokens": 0,
+        "external_prefix_tokens": 916
+      },
+      "semantic": {
+        "seconds": 24.856704458012246,
+        "prefill_seconds": 0.775047708011698,
+        "ttft_seconds": 0.7778397499932908,
+        "output_tokens": 1622,
+        "content_tokens": 1621,
+        "output_tps": 65.25402443191413,
+        "prefix_tokens": 1178,
+        "cfg_branches": 1,
+        "execution": "eager",
+        "attention": "sdpa",
+        "backend": "mlx"
+      },
+      "nar_seconds": 67.96025833301246,
+      "vae_seconds": 3.3562813330208883,
+      "load": {
+        "resolve_conversion_integrity_seconds": 5.280012957984582,
+        "ar_load_events_seconds": [
+          0.12474133301293477
+        ],
+        "ar_load_seconds": 0.12474133301293477,
+        "conditioning_load_events_seconds": [
+          0.21434220799710602
+        ],
+        "conditioning_load_seconds": 0.21434220799710602,
+        "nar_load_events_seconds": [
+          0.13605595898116007
+        ],
+        "nar_load_seconds": 0.13605595898116007,
+        "vae_load_events_seconds": [
+          0.09607491601491347
+        ],
+        "vae_load_seconds": 0.09607491601491347
+      },
+      "e2e_seconds": 96.31568462500582
+    },
+    "configuration": {
+      "generation": {
+        "abc": {
+          "temperature": 0.7,
+          "top_p": 0.9,
+          "top_k": 30,
+          "repetition_penalty": 1.005,
+          "penalty_window": 100,
+          "min_tokens": 32,
+          "max_tokens": 4096
+        },
+        "semantic": {
+          "temperature": 1.0,
+          "top_p": 0.95,
+          "top_k": 100,
+          "repetition_penalty": 1.2,
+          "penalty_window": 50,
+          "min_tokens": 200,
+          "max_tokens": 9000
+        },
+        "ode_steps": 32,
+        "ode_method": "midpoint",
+        "context": 24576,
+        "version": "yue2-native-v1"
+      },
+      "overrides": {},
+      "cot": "full",
+      "cfg_scale": 1.0,
+      "cfg_negative": "same_instruction_and_exact_abc",
+      "backend": "mlx",
+      "quantization": "8bit",
+      "model_dtype": "bfloat16",
+      "vae_dtype": "float32",
+      "vae_decode": "halo_crop",
+      "vae_core_frames": 256,
+      "vae_halo_frames": 16,
+      "device": "DeviceType.gpu",
+      "memory_budget_gib": 16.0,
+      "offload_ar": false,
+      "runtime_sha256": "ff4829d01380a2ac98fbc0aa0aed90f9b2bbe9c0a3473f1d62ed8ee3abc8efa9",
+      "decoder_release": "standard",
+      "validation_status": "unvalidated",
+      "vae_backend": "mlx",
+      "ar_precision": "8bit",
+      "kv_dtype": "bfloat16",
+      "nar_dtype": "bfloat16",
+      "conditioning_precision": "bf16",
+      "attention_opmath": "float32",
+      "mlx_tf32_enabled": false,
+      "attention_inputs": "native_steel_bfloat16",
+      "query_chunk_size": 256,
+      "runtime": {
+        "lyra-yue2": "0.1.0",
+        "mlx": "0.32.2",
+        "mlx-lm": "0.31.3",
+        "transformers": "5.0.0",
+        "numpy": "2.2.6",
+        "python": "3.12.10",
+        "macos": "27.0"
+      },
+      "upstream_commit": "92a73cc7652fcc1f937855e4b765e0a0edd7ff2e",
+      "execution_guard": "GPUExecution",
+      "rng": {
+        "ar": "request_local_mlx",
+        "acoustic": "numpy_pcg64_fp32_full_song_v1"
+      }
+    },
+    "identity": "29e8c2912f2135b57e5ca764903185e4ec122fb9858ac11173546e5898422058",
+    "audio_sha256": "f5f5adf90d99f7a0a5486c30a703701c8008967dea18c8a6272861ac6f4b30f6",
+    "result_sha256": "b290d050db7402ea10d0c7a160eea07b411aa37d0d36bdb8fa3f6f55c8b222a3",
+    "audio_quality": {
+      "sample_rate": 48000,
+      "channels": 2,
+      "finite": true,
+      "rms": 0.13923169661928095,
+      "peak": 0.8563051223754883,
+      "clipping_fraction": 0.0
+    },
+    "musical_quality_acceptance": "pending human listening; not established by duration or EOS",
+    "resources": {
+      "memory_counter_schema": 2,
+      "swap_counter_source": "host_statistics64.swapins/swapouts",
+      "sampling_interval_seconds": 0.1,
+      "power_sampling_interval_seconds": 5.0,
+      "metadata": {},
+      "power_start": {
+        "ac_connected": true,
+        "pmset": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=37224547)\t95%; AC attached; not charging present: true"
+      },
+      "power_end": {
+        "ac_connected": true,
+        "pmset": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=37224547)\t95%; AC attached; not charging present: true"
+      },
+      "start": {
+        "elapsed_seconds": 0.01033629197627306,
+        "rss_bytes": 52019200,
+        "system_swap_used_bytes": 12374114304,
+        "system_swap_in_bytes": 56333713408,
+        "system_swap_out_bytes": 83892617216,
+        "system_available_bytes": 69842173952,
+        "system_total_bytes": 137438953472,
+        "system_memory_pressure_level": 1,
+        "system_free_bytes": 13065633792,
+        "system_wired_bytes": 7090126848,
+        "system_compressor_bytes": 2734948352,
+        "system_file_backed_bytes": 29652516864,
+        "physical_footprint_bytes": 32146128,
+        "process_lifetime_peak_footprint_bytes": 32146128,
+        "mlx_active_bytes": 0,
+        "mlx_cache_bytes": 0,
+        "mlx_peak_bytes": 0,
+        "ac_connected": true
+      },
+      "end": {
+        "elapsed_seconds": 102.4645569169661,
+        "rss_bytes": 884162560,
+        "system_swap_used_bytes": 12374114304,
+        "system_swap_in_bytes": 56333713408,
+        "system_swap_out_bytes": 83892617216,
+        "system_available_bytes": 64413810688,
+        "system_total_bytes": 137438953472,
+        "system_memory_pressure_level": 1,
+        "system_free_bytes": 5084184576,
+        "system_wired_bytes": 7852408832,
+        "system_compressor_bytes": 2734784512,
+        "system_file_backed_bytes": 29612359680,
+        "physical_footprint_bytes": 1182746976,
+        "process_lifetime_peak_footprint_bytes": 12073638632,
+        "mlx_active_bytes": 8,
+        "mlx_cache_bytes": 0,
+        "mlx_peak_bytes": 11256153824,
+        "ac_connected": true
+      },
+      "sampled_maxima": {
+        "mlx_active_bytes": 11196720200,
+        "mlx_cache_bytes": 200541464,
+        "mlx_peak_bytes": 11256153824,
+        "physical_footprint_bytes": 11964685032,
+        "process_lifetime_peak_footprint_bytes": 12073638632,
+        "rss_bytes": 8132837376,
+        "system_available_bytes": 70813024256,
+        "system_compressor_bytes": 2734948352,
+        "system_file_backed_bytes": 29655482368,
+        "system_free_bytes": 14387118080,
+        "system_swap_in_bytes": 56333713408,
+        "system_swap_out_bytes": 83892617216,
+        "system_swap_used_bytes": 12374114304,
+        "system_total_bytes": 137438953472,
+        "system_wired_bytes": 11302895616
+      },
+      "monitor_error": null,
+      "exception": null
+    },
+    "artifact_directory": "outputs/official_fullsong/cover_birthday/attempt-2",
+    "prior_attempts": [
+      {
+        "attempt": 1,
+        "status": "failed",
+        "error": "RuntimeError: AC power is required for an acceptance benchmark",
+        "receipt_path": "outputs/official_fullsong/cover_birthday/measurement.json",
+        "receipt_sha256": "cb694d43c7ff60cd97b0a6b7bad326e2ccce28cbfff221ad8402f9a0ee1bf02a"
+      }
+    ]
+  },
+  "official_player": "audio/fullsong/9cd75cf90c4d4700f210.mp3",
+  "local_player": "audio/fullsong/f5f5adf90d99f7a0a548.mp3",
+  "actual_score": "X:1\nT:\nM:3/4\nL:1/32\nQ:1/4=160\nV: Vocal clef=treble name=\"Vocal Melody\" snm=\"Vocal\"\nV: Ins clef=treble name=\"Ins Melody\" snm=\"Inst.\"\nK:F\n% silence\nV: Vocal\nZ3|\nV: Ins\nZ3|\n% intro\nV: Vocal\nZ|\"F\"z24|\"Bb\"z24|\"F/C\"z16\"C7\"z8|\nV: Ins\nz16c4z4|c'8a8f8|e8d8b6b2|a8f8g8|\n% chorus\nV: Vocal\n\"F\"z16c6c2|\"F\"d8c8f8|\"C\"e12z4c6c2|\"C\"d8c8g8|\nV: Ins\nf16z8|Z|Z|Z|\nV: Vocal\n\"F\"f12z4c6c2|\"F\"c'8a8f8|\"Bb\"e8d4z4b6b2|\"F/C\"a8f8\"C7\"g8|\nV: Ins\nZ4|\nV: Vocal\n\"F\"f8z8c6c2|\nV: Ins\nZ|\n% chorus\nV: Vocal\n\"F\"d8c8f8|\"C\"e12z4c6c2|\"C\"d8c8g8|\"F\"f8z8c6c2|\nV: Ins\nZ4|\nV: Vocal\n\"F\"c'8a8f6f2|\"Bb\"e8d8b6b2|\"F/C\"a8f8\"C7\"g8|\"F\"f12z12|\nV: Ins\nZ|Z|Z|z16c4z2c2|\n% interlude\nV: Vocal\n\"F\"z24|\"C\"z24|\"C\"z24|\"F\"z24|\nV: Ins\nd8c8f8|e16c4z2c2|d8c8g8|f16c4z2c2|\nV: Vocal\n\"F\"z24|\"Bb\"z24|\"F/C\"z16\"C7\"z8|\nV: Ins\nc'8a8f6f2|e8d8b6b2|a8f8g8|\n% chorus\nV: Vocal\n\"F\"z16c6c2|\"F\"d8c8f8|\"C\"e12z4c6c2|\"C\"d8c8g8|\nV: Ins\nf16z8|Z|Z|Z|\nV: Vocal\n\"F\"f12z4c6c2|\"F\"c'8a8f8|\"Bb\"e8d4z4b6b2|\"F/C\"a8f8\"C7\"g8|\nV: Ins\nZ4|\nV: Vocal\n\"F\"f12z4c6c2|\nV: Ins\nZ|\n% chorus\nV: Vocal\n\"F\"d8c8f8|\"C\"e8z8c6c2|\"C\"d8c8g8|\"F\"f8z8c6c2|\nV: Ins\nZ4|\nV: Vocal\n\"F\"c'8a8f6f2|\"Bb\"e8d8b6b2|\"F/C\"a8f8\"C7\"g8|\"F\"f12z4c6c2|\nV: Ins\nZ4|\n% chorus\nV: Vocal\n\"F\"d8c8f8|\"C\"e8z8c6c2|\"C\"d8c8g8|\"F\"f12z4c6c2|\nV: Ins\nZ4|\nV: Vocal\n\"F\"c'8a8f8|\"Bb\"e8d4z4b6b2|\"F/C\"a8f8\"C7\"g8|\"F\"f24|\nV: Ins\nZ4|\n% outro\nV: Vocal\n\"F\"z24|\"F\"z24|\nV: Ins\nZ2|\n"
+}
