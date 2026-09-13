@@ -160,6 +160,8 @@ def main(argv=None):
                 nar_seconds = 0.0
                 if args.stage == "synthesize":
                     if noise is None:
+                        if saved.config.get("rng", {}).get("acoustic") != "numpy_pcg64_fp32_full_song_v1":
+                            raise ValueError("Exact replay of legacy RNG requires retained noise.npy")
                         noise = initial_noise(
                             len(saved.semantic.tokens), saved.semantic.plan.request.seed,
                         )

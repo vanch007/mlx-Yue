@@ -7,12 +7,10 @@ import dataclasses
 import json
 import time
 import numpy as np
-import torch
 
 from .protocol import SongRequest, GenerationConfig, Sampling, token_prefixes, negative_prefix, CODEC_OFFSET, resolve_sampling
 from .storage import resolve_model, model_identity, identity, write_json, collect_hashes, sha256_file, copy_model_files
 from .tokenization_yue2 import YuE2TextTokenizer
-from .sampling import generate_tokens, synchronize
 from .progress import Progress
 
 
@@ -122,6 +120,7 @@ class YuE2Pipeline:
     def __init__(self, model_dir, vae_dir, *, device="auto", memory_budget_gib=24,
                  backend="torch", generation_config=None, verify_hashes=True,
                  vae_core_frames=None, quantization="none", offload_ar=False, progress=True):
+        import torch
         if not isinstance(progress, bool):
             raise TypeError("progress must be True or False")
         self.progress = progress
@@ -208,6 +207,7 @@ class YuE2Pipeline:
                    "generation_config": self.generation_config.to_dict(), "source_weights": self.weights})
 
     def _load_model(self, for_nar=False):
+        import torch
         loading = self._model is None or next(self._model.parameters()).device != self.device
         with self._status("Loading model") if loading else nullcontext():
             if self._model is None:
@@ -231,6 +231,7 @@ class YuE2Pipeline:
         return SongRequest(style=style, lyrics=lyrics, **kwargs)
 
     def _generate(self, prefix, sampling, seed, phase, **kwargs):
+        from .sampling import generate_tokens
         model = self._load_model() if self.backend != "vllm" else None
         callback = kwargs.pop("on_token", None)
         label = "Planning score" if phase == "abc" else "Generating song"
@@ -304,6 +305,7 @@ class YuE2Pipeline:
             return result.detach().float().cpu().numpy()
 
     def close(self):
+        import torch
         if self.backend == "vllm":
             from .fast import close_vllm
             close_vllm(self)
@@ -318,6 +320,7 @@ class YuE2Pipeline:
         self.close()
 
     def decode(self, latents, *, full=False, vae=None):
+        import torch
         from .modeling_vae import YuE2VAE
         with self._status("Loading audio decoder"):
             if self._model is not None:

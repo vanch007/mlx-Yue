@@ -16,16 +16,38 @@ from typing import Callable, Sequence
 import mlx.core as mx
 import mlx.nn as nn
 import numpy as np
-import torch
+import sys
+from dataclasses import dataclass
 from mlx.utils import tree_flatten
 from mlx_lm.models import qwen3
 
-from yue2.nar import Chunk, _integers, song_chunks
 from yue2.protocol import CODEC_OFFSET, CODEC_SIZE, CONTEXT, MUSIC_END, chunk_ranges
 from .ar import SourceMLP, SourceRMSNorm, SourceRoPE, _source_sdpa, _source_silu
 
 _LATENT_DIM = 64
 _TIME_EMBED_DIM = 256
+
+
+@dataclass
+class Chunk:
+    ar_tokens: list[int]
+    noise: np.ndarray
+    nar_cond_end: int = 0
+
+
+def _integers(values, name):
+    result = list(values)
+    if not result or any(isinstance(v, bool) or not isinstance(v, Integral) for v in result):
+        raise ValueError(f"{name} must be a nonempty sequence of integer token IDs")
+    return [int(v) for v in result]
+
+
+def _logit(t):
+    if t <= 0:
+        return -20.0
+    if t >= 1:
+        return 20.0
+    return max(-20.0, min(20.0, math.log(t / (1.0 - t))))
 
 
 class _AcousticAttention(nn.Module):
@@ -483,7 +505,8 @@ def _attention(
 
 
 def _cpu_float32_noise(value, name: str) -> np.ndarray:
-    if isinstance(value, torch.Tensor):
+    torch = sys.modules.get("torch")
+    if torch is not None and isinstance(value, torch.Tensor):
         if value.device.type != "cpu" or value.dtype != torch.float32:
             raise ValueError(f"{name} must be a CPU float32 tensor")
         if value.requires_grad:
@@ -701,7 +724,7 @@ class CachedNAR:
             if cancelled is not None and cancelled():
                 raise InterruptedError("Cancelled during acoustic flow matching")
             t = 1.0 - step * dt
-            raw = torch.logit(torch.tensor(t, dtype=torch.float64)).clamp(-20, 20).item()
+            raw = _logit(t)
             first = self.velocity(state, raw)
             mx.eval(first)
             midpoint = state - (first.astype(mx.float32) * half_dt).astype(mx.bfloat16)
@@ -709,11 +732,7 @@ class CachedNAR:
             if cancelled is not None and cancelled():
                 raise InterruptedError("Cancelled during acoustic flow matching")
             mid_t = t - dt / 2.0
-            raw_mid = (
-                torch.logit(torch.tensor(mid_t, dtype=torch.float64))
-                .clamp(-20, 20)
-                .item()
-            )
+            raw_mid = _logit(mid_t)
             velocity = self.velocity(midpoint, raw_mid)
             state = state - (velocity.astype(mx.float32) * full_dt).astype(mx.bfloat16)
             # Materializing after every submitted midpoint step prevents the
@@ -758,6 +777,12 @@ def _chunks_with_supplied_noise(prefix, codec, seed, context, noise) -> list[Chu
     ]
 
 
+def song_chunks(prefix, codec, seed, context=CONTEXT):
+    from .pipeline import initial_noise
+    return _chunks_with_supplied_noise(prefix, codec, seed, context,
+                                       initial_noise(len(codec), seed))
+
+
 def synthesize(
     model: AcousticModel,
     prefix: Sequence[int],
@@ -773,8 +798,8 @@ def synthesize(
 ) -> np.ndarray:
     """Return finite CPU float32 ``[frames,64]`` acoustic latents.
 
-    Upstream ``song_chunks`` supplies the native CPU FP32 draw. Supplied noise
-    uses the same validation and historical cuts without a redundant RNG draw.
+    Request-local FP32 noise uses the same historical cuts. Supply saved noise
+    for exact-input comparisons with other backends or prior RNG policies.
     """
     if not isinstance(model, AcousticModel):
         raise TypeError("synthesize requires the model returned by load_nar")
@@ -786,8 +811,10 @@ def synthesize(
     if on_progress is not None and not callable(on_progress):
         raise TypeError("on_progress must be callable")
 
-    chunks = (song_chunks(prefix, codec, seed, context) if noise is None else
-              _chunks_with_supplied_noise(prefix, codec, seed, context, noise))
+    if noise is None:
+        from .pipeline import initial_noise
+        noise = initial_noise(len(codec), seed)
+    chunks = _chunks_with_supplied_noise(prefix, codec, seed, context, noise)
     expected_frames = sum(len(chunk.noise) for chunk in chunks)
 
     output: list[np.ndarray] = []

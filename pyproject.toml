@@ -25,7 +25,6 @@ classifiers = [
 dependencies = [
   "mlx==0.32.2",
   "mlx-lm==0.31.3",
-  "torch==2.10.0",
   "transformers==5.0.0",
   "safetensors==0.7.0",
   "tiktoken==0.12.0",
@@ -40,10 +39,11 @@ Source = "https://github.com/daig/yue2-mlx"
 Issues = "https://github.com/daig/yue2-mlx/issues"
 
 [dependency-groups]
-dev = ["pytest==9.0.3", "ruff==0.15.7"]
+dev = ["pytest==9.0.3", "ruff==0.15.7", "torch==2.10.0"]
 
 [project.scripts]
 lyra = "lyra.cli:main"
+yue2-mlx = "lyra.cli:main"
 
 [tool.hatch.build.targets.sdist]
 only-include = [

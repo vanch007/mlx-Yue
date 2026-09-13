@@ -267,7 +267,6 @@ dependencies = [
     { name = "safetensors" },
     { name = "soundfile" },
     { name = "tiktoken" },
-    { name = "torch" },
     { name = "transformers" },
 ]
 
@@ -275,6 +274,7 @@ dependencies = [
 dev = [
     { name = "pytest" },
     { name = "ruff" },
+    { name = "torch" },
 ]
 
 [package.metadata]
@@ -286,7 +286,6 @@ requires-dist = [
     { name = "safetensors", specifier = "==0.7.0" },
     { name = "soundfile", specifier = "==0.13.1" },
     { name = "tiktoken", specifier = "==0.12.0" },
-    { name = "torch", specifier = "==2.10.0" },
     { name = "transformers", specifier = "==5.0.0" },
 ]
 
@@ -294,6 +293,7 @@ requires-dist = [
 dev = [
     { name = "pytest", specifier = "==9.0.3" },
     { name = "ruff", specifier = "==0.15.7" },
+    { name = "torch", specifier = "==2.10.0" },
 ]
 
 [[package]]

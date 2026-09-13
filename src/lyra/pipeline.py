@@ -1,4 +1,4 @@
-"""YuE2's public stage protocol with MLX generation and the original MPS VAE."""
+"""YuE2's public stage protocol with MLX generation and a native MLX FP32 VAE."""
 from __future__ import annotations
 
 from contextlib import ExitStack
@@ -13,7 +13,6 @@ import time
 
 import mlx.core as mx
 import numpy as np
-import torch
 
 from yue2.pipeline import (
     SemanticResult,
@@ -33,9 +32,10 @@ from .measure import DEFAULT_MEMORY_BUDGET_GIB, GPUExecution
 
 
 def initial_noise(frames: int, seed: int) -> np.ndarray:
-    """One checkpoint-native CPU FP32 draw; never mutate the global Torch RNG."""
-    generator = torch.Generator(device="cpu").manual_seed(seed)
-    return torch.randn((frames, 64), dtype=torch.float32, generator=generator).numpy()
+    """One request-local PCG64 FP32 draw; retained noise supports exact replay."""
+    if type(frames) is not int or frames < 1 or type(seed) is not int or not 0 <= seed < 2**63:
+        raise ValueError("Require positive frames and a 63-bit request seed")
+    return np.random.Generator(np.random.PCG64(seed)).standard_normal((frames, 64), dtype=np.float32)
 
 
 @dataclass
@@ -114,8 +114,8 @@ class YuE2Pipeline(ReferencePipeline):
     ):
         if platform.system() != "Darwin" or tuple(map(int, platform.mac_ver()[0].split(".")[:2])) < (26, 2):
             raise RuntimeError("The supported MLX M5 runtime requires macOS >=26.2")
-        if not mx.metal.is_available() or not torch.backends.mps.is_available():
-            raise RuntimeError("MLX Metal and PyTorch MPS are both required")
+        if not mx.metal.is_available():
+            raise RuntimeError("MLX Metal is required")
         for name in ("PYTORCH_ENABLE_MPS_FALLBACK", "PYTORCH_MPS_FAST_MATH"):
             if os.environ.get(name) == "1":
                 raise RuntimeError(f"Unset {name}; fallback/fast-math is not a validated execution path")
@@ -132,7 +132,7 @@ class YuE2Pipeline(ReferencePipeline):
         self.model_dir, self.vae_dir = Path(model_dir), Path(vae_dir)
         self.precision, self.progress = precision, progress
         self.backend, self.quantization = "mlx", precision
-        self.device = torch.device("mps")
+        self.device = mx.gpu
         self.memory_budget_gib = float(memory_budget_gib)
         self.vae_core_frames, self.query_chunk_size = vae_core_frames, query_chunk_size
         self.generation_config = generation_config or GenerationConfig()
@@ -162,7 +162,7 @@ class YuE2Pipeline(ReferencePipeline):
             "lyra": {p.name: sha256_file(p) for p in sorted(Path(__file__).parent.glob("*.py"))},
             "upstream": {p.name: sha256_file(p) for p in sorted(Path(__import__("yue2").__file__).parent.glob("*.py"))},
         })
-        self.runtime = {name: version(name) for name in ("lyra-yue2", "mlx", "mlx-lm", "torch", "transformers", "numpy")}
+        self.runtime = {name: version(name) for name in ("lyra-yue2", "mlx", "mlx-lm", "transformers", "numpy")}
         self.runtime.update(python=platform.python_version(), macos=platform.mac_ver()[0])
         self._closed = True
         self._gpu_execution = None
@@ -174,7 +174,6 @@ class YuE2Pipeline(ReferencePipeline):
                 )
             )
             resources.callback(self._release_models)
-            torch.set_float32_matmul_precision("highest")
             mx.set_default_device(mx.gpu)
             self.tokenizer = YuE2TextTokenizer(self.model_dir / "qwen.tiktoken")
             self._resources = resources.pop_all()
@@ -373,67 +372,39 @@ class YuE2Pipeline(ReferencePipeline):
         self._check_execution()
         return result
 
-    def decode(self, latents, *, full=False, vae=None):
-        from yue2.modeling_vae import YuE2VAE
+    def decode(self, latents, *, full=False, vae=None, cancelled=None):
+        from .vae import load_decoder
 
         self._check_execution()
-        z = torch.as_tensor(latents, dtype=torch.float32)
-        if z.ndim == 2 and z.shape[1] == 64:
-            z = z.T.unsqueeze(0)
-        if z.ndim != 3 or z.shape[0] != 1 or z.shape[1] != 64 or z.shape[-1] < 1:
-            raise ValueError("Expected nonempty latents [T,64] or [1,64,T]")
-        if not torch.isfinite(z).all():
-            raise ValueError("VAE latents contain non-finite values")
-        with self._status("Loading audio decoder"):
+        with self._status("Loading MLX audio decoder"):
             if vae is not None:
-                # An explicit alternate decoder is never substituted silently.
-                model = YuE2VAE.from_pretrained(
-                    vae, decoder_only=True, device="mps", local_files_only=True,
-                )
+                model = load_decoder(vae)
             else:
                 if self._vae is None:
                     start = time.perf_counter()
-                    self._vae = YuE2VAE.from_pretrained(
-                        self.vae_dir, decoder_only=True, device="mps", local_files_only=True,
-                    )
-                    torch.mps.synchronize()
+                    self._vae = load_decoder(self.vae_dir)
                     self._record_load("vae", time.perf_counter() - start)
                 model = self._vae
-        self._check_execution()
-        tiles = 1 if full else (z.shape[-1] + self.vae_core_frames - 1) // self.vae_core_frames
-        with self._status("Decoding audio", total=tiles, unit="chunks") as status:
+        with self._status("Decoding audio", unit="chunks") as status:
             def report(completed, total):
                 self._check_execution()
-                if self.progress:
-                    status.update(completed, total=total)
-
-            with torch.inference_mode():
-                if full:
-                    audio = model.decode(z).cpu()
-                    self._check_execution()
-                    status.update(1)
-                else:
-                    audio = model.decode_tiled(
-                        z, core_frames=self.vae_core_frames, halo_frames=16,
-                        output_device="cpu", on_progress=report,
-                    )
-                if not torch.isfinite(audio).all():
-                    raise ValueError("VAE produced non-finite audio")
-                if audio.shape != (1, 2, 1920 * z.shape[-1] - 64):
-                    raise RuntimeError("VAE output violates its natural stereo length contract")
-                result = audio[0].float().clamp(-1, 1).T.contiguous().numpy()
+                status.update(completed, total=total)
+            result = model.decode(
+                latents, full=full, core_frames=self.vae_core_frames,
+                cancelled=self._guarded_cancelled(cancelled), on_progress=report,
+            )
         self._check_execution()
-        return result
+        return np.clip(result, -1, 1)
 
     def effective_config(self, request, abc_sampling=None, semantic_sampling=None):
         config = super().effective_config(request, abc_sampling, semantic_sampling)
         config.update(
-            backend="mlx", ar_precision=self.precision, kv_dtype="bfloat16",
+            vae_backend="mlx", backend="mlx", ar_precision=self.precision, kv_dtype="bfloat16",
             nar_dtype="bfloat16", conditioning_precision="bf16",
             attention_opmath="float32", mlx_tf32_enabled=False,
             query_chunk_size=self.query_chunk_size, runtime=self.runtime,
             upstream_commit=UPSTREAM_COMMIT, execution_guard="GPUExecution",
-            rng={"ar": "request_local_mlx", "acoustic": "torch_cpu_fp32_full_song"},
+            rng={"ar": "request_local_mlx", "acoustic": "numpy_pcg64_fp32_full_song_v1"},
         )
         return config
 
@@ -453,7 +424,7 @@ class YuE2Pipeline(ReferencePipeline):
         if self._guarded_cancelled(cancelled)():
             raise InterruptedError("Cancelled before VAE")
         vae_start = time.perf_counter()
-        audio = self.decode(latents)
+        audio = self.decode(latents, cancelled=cancelled)
         timing = {"abc": plan.timing, "semantic": semantic.timing, "nar_seconds": nar_seconds,
                   "vae_seconds": time.perf_counter() - vae_start, "load": dict(self.load_timing),
                   "e2e_seconds": time.perf_counter() - start}
@@ -484,14 +455,8 @@ class YuE2Pipeline(ReferencePipeline):
         try:
             mx.synchronize()
         finally:
-            try:
-                torch.mps.synchronize()
-            finally:
-                self._ar = self._bf16_ar = self._nar = self._vae = self._model = None
-                try:
-                    mx.clear_cache()
-                finally:
-                    torch.mps.empty_cache()
+            self._ar = self._bf16_ar = self._nar = self._vae = self._model = None
+            mx.clear_cache()
 
     def close(self):
         if self._closed:

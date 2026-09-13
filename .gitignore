@@ -41,3 +41,5 @@ htmlcov/
 
 # Internal project brief
 /goal.md
+/.runtime/
+/reports/upstream-sheetsage2/
