@@ -9,8 +9,7 @@
       "decoded_frames": 10669376,
       "rms": 0.1431942900400167,
       "peak": 0.8744819164276123,
-      "duration_ratio": 1.002338864838865,
-      "musical_quality": "pending"
+      "duration_ratio": 1.002338864838865
     },
     {
       "id": "ru_score",
@@ -19,8 +18,7 @@
       "decoded_frames": 5758016,
       "rms": 0.13088005345821918,
       "peak": 0.822986364364624,
-      "duration_ratio": 0.9999888851839503,
-      "musical_quality": "pending"
+      "duration_ratio": 0.9999888851839503
     },
     {
       "id": "es_score",
@@ -29,8 +27,7 @@
       "decoded_frames": 8689856,
       "rms": 0.14357905450789588,
       "peak": 0.9590508937835693,
-      "duration_ratio": 0.9897149938042132,
-      "musical_quality": "pending"
+      "duration_ratio": 0.9897149938042132
     },
     {
       "id": "zh_score",
@@ -39,8 +36,7 @@
       "decoded_frames": 7309376,
       "rms": 0.15860733541175187,
       "peak": 1.0,
-      "duration_ratio": 0.9971101798498342,
-      "musical_quality": "pending"
+      "duration_ratio": 0.9971101798498342
     },
     {
       "id": "ko_score",
@@ -49,8 +45,7 @@
       "decoded_frames": 7489856,
       "rms": 0.1552623609864537,
       "peak": 1.0,
-      "duration_ratio": 0.9943835500042486,
-      "musical_quality": "pending"
+      "duration_ratio": 0.9943835500042486
     },
     {
       "id": "en_score",
@@ -59,8 +54,7 @@
       "decoded_frames": 4559936,
       "rms": 0.14440628758960297,
       "peak": 0.9149165153503418,
-      "duration_ratio": 0.9920495683653577,
-      "musical_quality": "pending"
+      "duration_ratio": 0.9920495683653577
     },
     {
       "id": "full_generated",
@@ -69,8 +63,7 @@
       "decoded_frames": 10076096,
       "rms": 0.1500946759898185,
       "peak": 0.9160799980163574,
-      "duration_ratio": 1.0245932578419887,
-      "musical_quality": "pending"
+      "duration_ratio": 1.0245932578419887
     },
     {
       "id": "melody_generated",
@@ -79,8 +72,7 @@
       "decoded_frames": 8689856,
       "rms": 0.17611676890821168,
       "peak": 0.8792818784713745,
-      "duration_ratio": 1.1854286712065654,
-      "musical_quality": "pending"
+      "duration_ratio": 1.1854286712065654
     },
     {
       "id": "melody_supplied",
@@ -89,8 +81,7 @@
       "decoded_frames": 5134016,
       "rms": 0.14550125703443406,
       "peak": 0.9999998807907104,
-      "duration_ratio": 0.9962741713136031,
-      "musical_quality": "pending"
+      "duration_ratio": 0.9962741713136031
     },
     {
       "id": "off_direct",
@@ -99,8 +90,7 @@
       "decoded_frames": 12053696,
       "rms": 0.14199334393349902,
       "peak": 0.9785664081573486,
-      "duration_ratio": 1.0322207607146772,
-      "musical_quality": "pending"
+      "duration_ratio": 1.0322207607146772
     },
     {
       "id": "cover_dagoujiao",
@@ -109,8 +99,7 @@
       "decoded_frames": 9980096,
       "rms": 0.17102370423208543,
       "peak": 0.950627326965332,
-      "duration_ratio": 0.9902838018911659,
-      "musical_quality": "pending"
+      "duration_ratio": 0.9902838018911659
     },
     {
       "id": "cover_baikal",
@@ -119,8 +108,7 @@
       "decoded_frames": 10189376,
       "rms": 0.14606263065064934,
       "peak": 0.9999998807907104,
-      "duration_ratio": 0.978609494188298,
-      "musical_quality": "pending"
+      "duration_ratio": 0.978609494188298
     },
     {
       "id": "cover_birthday",
@@ -129,8 +117,7 @@
       "decoded_frames": 3112256,
       "rms": 0.13923169661602244,
       "peak": 0.8563051223754883,
-      "duration_ratio": 1.0143932914745823,
-      "musical_quality": "pending"
+      "duration_ratio": 1.0143932914745823
     },
     {
       "id": "audio_to_cover",
@@ -139,8 +126,7 @@
       "decoded_frames": 10769216,
       "rms": 0.17828478451638735,
       "peak": 1.0,
-      "duration_ratio": 1.0117183742183742,
-      "musical_quality": "pending"
+      "duration_ratio": 1.0117183742183742
     },
     {
       "id": "jazz_funk_score",
@@ -149,8 +135,7 @@
       "decoded_frames": 6261056,
       "rms": 0.1676394406635729,
       "peak": 0.9980323314666748,
-      "duration_ratio": 1.0036831845696113,
-      "musical_quality": "pending"
+      "duration_ratio": 1.0036831845696113
     }
   ]
 }

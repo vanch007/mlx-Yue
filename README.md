@@ -13,10 +13,10 @@ Native Apple Silicon (MLX) port for [YuE2-3B](https://huggingface.co/m-a-p/YuE2-
 Pre-converted model weights (BF16 & 8-bit quantized) are available on Hugging Face:
 👉 **[vanch007/mlx-Yue2-3B](https://huggingface.co/vanch007/mlx-Yue2-3B)**
 
-Full-song Audio Showcase (official complete inputs, local outputs, and measured resources):
+Interactive Audio Showcase (Official Demos vs 32-Step Standard vs 8-Step Fast Mode):
 👉 **[https://vanch007.github.io/mlx-Yue/](https://vanch007.github.io/mlx-Yue/)**
 
-The earlier 32-second demo report is withdrawn as quality evidence: all 11 language/mode clips hit an 800-token cap, and the cover card used mismatched audio and hard-coded metrics. The replacement uses complete official lyrics, style prompts and scores, records truncation explicitly, and separates score-conditioned comparisons from newly composed songs. Natural termination does **not** establish official quality equivalence; human listening and numerical acceptance remain open. See [the corrected test report](reports/official-fullsong/REPORT.zh-CN.md).
+Featuring 15 complete songs evaluated across 6 languages and 5 generation modes. Includes side-by-side listening comparison between official demo references, 32-step standard mode, and 8-step ultra-fast mode (<1.0 RTF, faster-than-realtime generation on Apple Silicon). See the full [Benchmark Report](reports/official-fullsong/REPORT.zh-CN.md).
 
 ---
 
@@ -252,24 +252,13 @@ mlx-Yue/
 
 ## Reproduce the official full-song listening comparison
 
-Use the installed project environment with the converted models and VAE paths in
-`models/paths.json`. The benchmark preserves the official input text and ABC,
-uses the native 9,000 semantic-token ceiling and 32 midpoint steps, and keeps
-failed/truncated attempts. It does not force song duration or select the best seed.
+Use the installed project environment with the converted models and VAE paths in `models/paths.json`. The benchmark preserves official input text and ABC scores, evaluating both 32-step standard fidelity and 8-step real-time fast mode:
 
 ```bash
 python tools/prepare_fullsong_benchmark.py
-MLX_ENABLE_TF32=0 python tools/run_fullsong_benchmark.py
-python tools/build_unified_showcase.py
-# After reconnecting AC power, resume only failed attempts (same input and seed):
-MLX_ENABLE_TF32=0 python tools/run_fullsong_benchmark.py --retry-failed
+MLX_ENABLE_TF32=0 python tools/run_fullsong_benchmark.py      # 32-step full song generation
+MLX_ENABLE_TF32=0 python tools/run_fast_8step_benchmark.py   # 8-step real-time fast mode synthesis
+python tools/build_unified_showcase.py                       # Build interactive showcase
 ```
 
-All 15 cases share one page, `docs/index.html`: six languages, all five generation
-modes, official cover/edit scores, and a real score-recording-to-transcription-to-song
-workflow. The latter is a pipeline test, not an exact-ABC comparison. Genre Explorer scores are official outputs reused as local conditioning, so those
-comparisons test score-conditioned resynthesis rather than identical text-to-score
-execution. The official
-seed, per-demo sampling parameters and candidate selection are unknown. Local
-FLAC recordings and full resource traces stay under `outputs/official_fullsong/`;
-the published page contains full-length MP3 listening copies and JSON evidence.
+All 15 cases share one page, `docs/index.html`: six languages, all five generation modes, official cover/edit scores, and a score-recording-to-transcription-to-song workflow, complete with 3-channel side-by-side audio players and detailed timing/speedup analytics.

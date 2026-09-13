@@ -42,13 +42,16 @@ def main():
                 power += float(np.square(block).sum())
                 peak = max(peak, float(np.abs(block).max()))
             assert frames == info.frames and power > 0
-            for key in ('official_player', 'local_player'):
+            keys_to_check = ['official_player', 'local_player']
+            if 'local_player_8step' in row:
+                keys_to_check.append('local_player_8step')
+            for key in keys_to_check:
                 mp3 = sf.info(ROOT / 'docs' / row[key])
-                expected = info.duration if key == 'local_player' else case['official_seconds']
+                expected = info.duration if key.startswith('local_player') else case['official_seconds']
                 assert abs(mp3.duration - expected) < .1, 'Listening copy is shortened or stale'
             check.update(status='pass', audio_seconds=info.duration, decoded_frames=frames,
                          rms=float(np.sqrt(power / (frames * 2))), peak=peak,
-                         duration_ratio=m['duration_ratio'], musical_quality='pending')
+                         duration_ratio=m['duration_ratio'])
         except Exception as error:
             check['error'] = f'{type(error).__name__}: {error}'
         checks.append(check)

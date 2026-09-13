@@ -264,6 +264,128 @@
     "prior_attempts": []
   },
   "official_player": "audio/fullsong/55a3e96b7dd0266ec816.mp3",
+  "local_player_32step": "audio/fullsong/2aa7e9afce7f5afd660b.mp3",
   "local_player": "audio/fullsong/2aa7e9afce7f5afd660b.mp3",
-  "actual_score": "X:1\nT:\nM:4/4\nL:1/16\nQ:1/4=85\nV: Vocal clef=treble name=\"Vocal Melody\" snm=\"Vocal\"\nV: Ins clef=treble name=\"Ins Melody\" snm=\"Inst.\"\nK:D#m\n% intro\nV: Vocal\nz8\"Bmaj7\"z8|\"Bmaj7\"z16|\"C#\"z16|\"D#m7\"z16|\nV: Ins\nz12z3a|a3c'3g6f2a2|g3c'3e8z2|e3f3c8Ac|\nV: Vocal\n\"D#m7\"z16|\"Bmaj7\"z16|\"C#\"z16|\"D#m7\"z16|\nV: Ins\ne3f3c4f2e2c2|a3c'3g6f2a2|g3c'3e4f2e2c2|e3f3c8Ac|\nV: Vocal\n\"D#m7\"z8z2d2f2g2|\nV: Ins\ne3f3c4z6|\n% verse\nV: Vocal\n\"Bmaj7\"a2dd3z4d2f2a2|\"C#\"g3c3z4c2d2e2|\"D#m7\"e2fe2c2cc2AA3GA-|\"D#m7\"A2z8d2f2g2|\nV: Ins\nZ4|\nV: Vocal\n\"Bmaj7\"a3d3cd3d2f2a2|\"C#\"g3c3z4c2d2e2|\"D#m7\"e2fe2c2cc2AA3GA-|\"D#m7\"A2z8d2f2g2|\nV: Ins\nZ4|\nV: Vocal\n\"Bmaj7\"a3d3cd3d2f2a2|\"C#\"g3c3z4c2d2e2|\"D#m7\"e2fe2c2cc2A2A2G2|\"D#m7\"G3c3A2z2d2f2g2|\nV: Ins\nZ4|\nV: Vocal\n\"Bmaj7\"a3d3cd3d2f2a2|\"C#\"g3c3e4z4c2|\"D#m7\"d3e3f2g3f3e2|\"D#m7\"e3f3e4d2d4|\nV: Ins\nZ4|\nV: Vocal\n\"D#m7\"z8z2d2a2g2|\nV: Ins\nZ|\n% chorus\nV: Vocal\n\"Bmaj7\"a3c'3g2-\"C#\"g2a2g2f2|\"D#m7\"e3c4z3d2a2g2|\"Bmaj7\"a3c'3g2-\"C#\"g2a2g2f2|\"D#m7\"g3a4z3d2a2g2|\nV: Ins\nZ4|\nV: Vocal\n\"Bmaj7\"a3c'3g2-\"C#\"g2a2g2f2|\"D#m7\"g3c'3a4z4de|\"Bmaj7\"f2f2f2a2\"C#\"g3f3e2|\"D#m7\"e3f3e4d2d4|\nV: Ins\nZ4|\n% interlude\nV: Vocal\n\"Bmaj7\"z16|\"C#\"z16|\"D#m7\"z16|\"D#m7\"z16|\nV: Ins\nz2d'c'c'aaggffeeddc|cddccAAGGFFEEDEC|D3A3A8-A2-|A6z8z2|\nV: Vocal\n\"Bmaj7\"z16|\"C#\"z16|\"D#m7\"z16|\"D#m7\"z8z2d2f2g2|\nV: Ins\nz2d'c'c'aaggffeeddc|cddccAAGGFFEEDEC|D3A3A8-A2-|A6z8z2|\n% verse\nV: Vocal\n\"Bmaj7\"a2dd2c3z2d2f2a2|\"C#\"g3c3e2z2c2d2e2|\"D#m7\"e2fe2c3c2AA3GA-|\"D#m7\"A2z8d2f2g2|\nV: Ins\nZ4|\nV: Vocal\n\"Bmaj7\"a3d3cd3d2f2a2|\"C#\"g3c4z4zd2e2|\"D#m7\"e3f3e4d4c2|\"D#m7\"e3f3e4d4z2|\nV: Ins\nZ4|\nV: Vocal\n\"Bmaj7\"z2aaa2gg2ff2z4|\"C#\"z2a2a2gg2c'4z3|\"D#m7\"z2aaa2gg2ff2z2e2|\"D#m7\"e3f3e4d4z2|\nV: Ins\nZ4|\nV: Vocal\n\"Bmaj7\"z2aaa2gggff4z2|\"C#\"z2a2a2gg2c'c'z4z|\"D#m7\"z2aaa2gggff4e2|\"D#m7\"e3f3e4d2d4|\nV: Ins\nZ4|\nV: Vocal\n\"D#m\"z8z2d2a2g2|\nV: Ins\nZ|\n% chorus\nV: Vocal\n\"Bmaj7\"a3c'3g2-\"C#\"g2a2g2f2|\"D#m7\"g3c4z3d2a2g2|\"Bmaj7\"a3c'3g2-\"C#\"g2a2g2f2|\"D#m7\"g3a4z3d2a2g2|\nV: Ins\nZ4|\nV: Vocal\n\"Bmaj7\"a3c'3g2-\"C#\"g2a2g2f2|\"D#m7\"g3c'3a4z4de|\"Bmaj7\"f2f2f2a2\"C#\"g3f3e2|\"D#m7\"e3f3e4d2d4|\nV: Ins\nZ4|\n% outro\nV: Vocal\n\"Bmaj7\"z8\"C#\"z8|\"D#m7\"z16|\"Bmaj7\"z8\"C#\"z8|\"D#m7\"z16|\nV: Ins\nz2d'c'c'aaggffeeddc|cddccAAGGFFEEDEC|D3A3A8-A2-|A6z8z2|\nV: Vocal\n\"Bmaj7\"z8\"C#\"z8|\"D#m7\"z16|\"Bmaj7\"z8\"C#\"z8|\"D#m7\"z16|\nV: Ins\nz2d'c'c'aaggffeeddc|cddccAAGGFFEEDEC|D3A3A8-A2-|A6z8z2|\nV: Vocal\n\"Bmaj7\"z16|\"C#\"z16|\"D#m7\"z16|\"D#m7\"z16|\nV: Ins\na3c'3g6f2a2|g3c'3e8z2|e3f3c8Ac|e3f3c8z2|\nV: Vocal\n\"D#m7\"z16|\nV: Ins\nZ|\n"
+  "actual_score": "X:1\nT:\nM:4/4\nL:1/16\nQ:1/4=85\nV: Vocal clef=treble name=\"Vocal Melody\" snm=\"Vocal\"\nV: Ins clef=treble name=\"Ins Melody\" snm=\"Inst.\"\nK:D#m\n% intro\nV: Vocal\nz8\"Bmaj7\"z8|\"Bmaj7\"z16|\"C#\"z16|\"D#m7\"z16|\nV: Ins\nz12z3a|a3c'3g6f2a2|g3c'3e8z2|e3f3c8Ac|\nV: Vocal\n\"D#m7\"z16|\"Bmaj7\"z16|\"C#\"z16|\"D#m7\"z16|\nV: Ins\ne3f3c4f2e2c2|a3c'3g6f2a2|g3c'3e4f2e2c2|e3f3c8Ac|\nV: Vocal\n\"D#m7\"z8z2d2f2g2|\nV: Ins\ne3f3c4z6|\n% verse\nV: Vocal\n\"Bmaj7\"a2dd3z4d2f2a2|\"C#\"g3c3z4c2d2e2|\"D#m7\"e2fe2c2cc2AA3GA-|\"D#m7\"A2z8d2f2g2|\nV: Ins\nZ4|\nV: Vocal\n\"Bmaj7\"a3d3cd3d2f2a2|\"C#\"g3c3z4c2d2e2|\"D#m7\"e2fe2c2cc2AA3GA-|\"D#m7\"A2z8d2f2g2|\nV: Ins\nZ4|\nV: Vocal\n\"Bmaj7\"a3d3cd3d2f2a2|\"C#\"g3c3z4c2d2e2|\"D#m7\"e2fe2c2cc2A2A2G2|\"D#m7\"G3c3A2z2d2f2g2|\nV: Ins\nZ4|\nV: Vocal\n\"Bmaj7\"a3d3cd3d2f2a2|\"C#\"g3c3e4z4c2|\"D#m7\"d3e3f2g3f3e2|\"D#m7\"e3f3e4d2d4|\nV: Ins\nZ4|\nV: Vocal\n\"D#m7\"z8z2d2a2g2|\nV: Ins\nZ|\n% chorus\nV: Vocal\n\"Bmaj7\"a3c'3g2-\"C#\"g2a2g2f2|\"D#m7\"e3c4z3d2a2g2|\"Bmaj7\"a3c'3g2-\"C#\"g2a2g2f2|\"D#m7\"g3a4z3d2a2g2|\nV: Ins\nZ4|\nV: Vocal\n\"Bmaj7\"a3c'3g2-\"C#\"g2a2g2f2|\"D#m7\"g3c'3a4z4de|\"Bmaj7\"f2f2f2a2\"C#\"g3f3e2|\"D#m7\"e3f3e4d2d4|\nV: Ins\nZ4|\n% interlude\nV: Vocal\n\"Bmaj7\"z16|\"C#\"z16|\"D#m7\"z16|\"D#m7\"z16|\nV: Ins\nz2d'c'c'aaggffeeddc|cddccAAGGFFEEDEC|D3A3A8-A2-|A6z8z2|\nV: Vocal\n\"Bmaj7\"z16|\"C#\"z16|\"D#m7\"z16|\"D#m7\"z8z2d2f2g2|\nV: Ins\nz2d'c'c'aaggffeeddc|cddccAAGGFFEEDEC|D3A3A8-A2-|A6z8z2|\n% verse\nV: Vocal\n\"Bmaj7\"a2dd2c3z2d2f2a2|\"C#\"g3c3e2z2c2d2e2|\"D#m7\"e2fe2c3c2AA3GA-|\"D#m7\"A2z8d2f2g2|\nV: Ins\nZ4|\nV: Vocal\n\"Bmaj7\"a3d3cd3d2f2a2|\"C#\"g3c4z4zd2e2|\"D#m7\"e3f3e4d4c2|\"D#m7\"e3f3e4d4z2|\nV: Ins\nZ4|\nV: Vocal\n\"Bmaj7\"z2aaa2gg2ff2z4|\"C#\"z2a2a2gg2c'4z3|\"D#m7\"z2aaa2gg2ff2z2e2|\"D#m7\"e3f3e4d4z2|\nV: Ins\nZ4|\nV: Vocal\n\"Bmaj7\"z2aaa2gggff4z2|\"C#\"z2a2a2gg2c'c'z4z|\"D#m7\"z2aaa2gggff4e2|\"D#m7\"e3f3e4d2d4|\nV: Ins\nZ4|\nV: Vocal\n\"D#m\"z8z2d2a2g2|\nV: Ins\nZ|\n% chorus\nV: Vocal\n\"Bmaj7\"a3c'3g2-\"C#\"g2a2g2f2|\"D#m7\"g3c4z3d2a2g2|\"Bmaj7\"a3c'3g2-\"C#\"g2a2g2f2|\"D#m7\"g3a4z3d2a2g2|\nV: Ins\nZ4|\nV: Vocal\n\"Bmaj7\"a3c'3g2-\"C#\"g2a2g2f2|\"D#m7\"g3c'3a4z4de|\"Bmaj7\"f2f2f2a2\"C#\"g3f3e2|\"D#m7\"e3f3e4d2d4|\nV: Ins\nZ4|\n% outro\nV: Vocal\n\"Bmaj7\"z8\"C#\"z8|\"D#m7\"z16|\"Bmaj7\"z8\"C#\"z8|\"D#m7\"z16|\nV: Ins\nz2d'c'c'aaggffeeddc|cddccAAGGFFEEDEC|D3A3A8-A2-|A6z8z2|\nV: Vocal\n\"Bmaj7\"z8\"C#\"z8|\"D#m7\"z16|\"Bmaj7\"z8\"C#\"z8|\"D#m7\"z16|\nV: Ins\nz2d'c'c'aaggffeeddc|cddccAAGGFFEEDEC|D3A3A8-A2-|A6z8z2|\nV: Vocal\n\"Bmaj7\"z16|\"C#\"z16|\"D#m7\"z16|\"D#m7\"z16|\nV: Ins\na3c'3g6f2a2|g3c'3e8z2|e3f3c8Ac|e3f3c8z2|\nV: Vocal\n\"D#m7\"z16|\nV: Ins\nZ|\n",
+  "measurement_8step": {
+    "id": "ja_score",
+    "mode": "fast_8step",
+    "ode_steps": 8,
+    "status": "complete",
+    "audio_seconds": 222.28,
+    "e2e_seconds": 145.92,
+    "rtf": 0.656,
+    "speed_multiplier": 1.52,
+    "timing": {
+      "abc": {
+        "seconds": 0.0,
+        "output_tokens": 0,
+        "external_prefix_tokens": 1738
+      },
+      "semantic": {
+        "seconds": 72.30839145800564,
+        "prefill_seconds": 0.7439379160059616,
+        "ttft_seconds": 0.7479968330007978,
+        "output_tokens": 5558,
+        "content_tokens": 5557,
+        "output_tps": 76.86521422935961,
+        "prefix_tokens": 2200,
+        "cfg_branches": 1,
+        "execution": "eager",
+        "attention": "sdpa",
+        "backend": "mlx"
+      },
+      "nar_seconds": 61.42,
+      "vae_seconds": 6.98,
+      "load_seconds": 5.22,
+      "transcription_seconds": 0,
+      "e2e_seconds": 145.92,
+      "32step_nar_seconds": 464.59,
+      "nar_speedup": 7.56
+    },
+    "audio_sha256": "7b11cabcca8c531494b6d4f0e9ab4b5113dc0533b88e67d7d4531fea2bcff410",
+    "audio_quality": {
+      "sample_rate": 48000,
+      "channels": 2,
+      "finite": true,
+      "rms": 0.1432256503016256,
+      "peak": 0.8848203420639038,
+      "clipping_fraction": 0.0
+    },
+    "resources": {
+      "memory_counter_schema": 2,
+      "swap_counter_source": "host_statistics64.swapins/swapouts",
+      "sampling_interval_seconds": 0.1,
+      "power_sampling_interval_seconds": 5.0,
+      "metadata": {},
+      "power_start": {
+        "ac_connected": true,
+        "pmset": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=37224547)\t95%; AC attached; not charging present: true"
+      },
+      "power_end": {
+        "ac_connected": true,
+        "pmset": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=37224547)\t95%; AC attached; not charging present: true"
+      },
+      "start": {
+        "elapsed_seconds": 0.01121237501502037,
+        "rss_bytes": 143228928,
+        "system_swap_used_bytes": 12365725696,
+        "system_swap_in_bytes": 56344313856,
+        "system_swap_out_bytes": 83892617216,
+        "system_available_bytes": 70419841024,
+        "system_total_bytes": 137438953472,
+        "system_memory_pressure_level": 1,
+        "system_free_bytes": 13504757760,
+        "system_wired_bytes": 6416859136,
+        "system_compressor_bytes": 2731704320,
+        "system_file_backed_bytes": 29625597952,
+        "physical_footprint_bytes": 306758568,
+        "process_lifetime_peak_footprint_bytes": 309363624,
+        "mlx_active_bytes": 0,
+        "mlx_cache_bytes": 395280,
+        "mlx_peak_bytes": 395280,
+        "ac_connected": true
+      },
+      "end": {
+        "elapsed_seconds": 68.41115374997025,
+        "rss_bytes": 8173420544,
+        "system_swap_used_bytes": 12365725696,
+        "system_swap_in_bytes": 56344903680,
+        "system_swap_out_bytes": 83892617216,
+        "system_available_bytes": 62546362368,
+        "system_total_bytes": 137438953472,
+        "system_memory_pressure_level": 1,
+        "system_free_bytes": 653656064,
+        "system_wired_bytes": 8482144256,
+        "system_compressor_bytes": 2731261952,
+        "system_file_backed_bytes": 30631641088,
+        "physical_footprint_bytes": 8970361648,
+        "process_lifetime_peak_footprint_bytes": 10961378072,
+        "mlx_active_bytes": 7526793954,
+        "mlx_cache_bytes": 145244432,
+        "mlx_peak_bytes": 11256150230,
+        "ac_connected": true
+      },
+      "sampled_maxima": {
+        "mlx_active_bytes": 11196718142,
+        "mlx_cache_bytes": 164911136,
+        "mlx_peak_bytes": 11256150230,
+        "physical_footprint_bytes": 10808679192,
+        "process_lifetime_peak_footprint_bytes": 10961378072,
+        "rss_bytes": 8173420544,
+        "system_available_bytes": 70419841024,
+        "system_compressor_bytes": 2732081152,
+        "system_file_backed_bytes": 33056686080,
+        "system_free_bytes": 13504757760,
+        "system_swap_in_bytes": 56344903680,
+        "system_swap_out_bytes": 83892617216,
+        "system_swap_used_bytes": 12365725696,
+        "system_total_bytes": 137438953472,
+        "system_wired_bytes": 9897803776
+      },
+      "monitor_error": null,
+      "exception": null
+    }
+  },
+  "local_player_8step": "audio/fullsong/7b11cabcca8c531494b6.mp3"
 }

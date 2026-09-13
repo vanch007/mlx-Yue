@@ -265,6 +265,7 @@
     ]
   },
   "official_player": "audio/fullsong/8adfbdf7e6f4255548a6.mp3",
+  "local_player_32step": "audio/fullsong/16759c15b81f802f51b4.mp3",
   "local_player": "audio/fullsong/16759c15b81f802f51b4.mp3",
   "actual_score": "X:1\nT:\nM:4/4\nL:1/32\nQ:1/4=104\nV: Vocal clef=treble name=\"Vocal Melody\" snm=\"Vocal\"\nV: Ins clef=treble name=\"Ins Melody\" snm=\"Inst.\"\nK:Em\n% intro\nV: Vocal\nZ4|\nV: Ins\nZ|g4g4g8g4g4g8|g4b4e6f2g16|a4a4a8a4g4g4g2g2|\nV: Vocal\nZ|\nV: Ins\nb4b4a4f4e16|\n% verse\nV: Vocal\nB4g4f4e4B8z4B2B2|B4g4f4e4c8z8|c4a4g4f4d8z8|b4b4a4f4g8z8|\nV: Ins\nZ4|\nV: Vocal\nB4g4f4e4B8z8|B4g4f4e4c8z4c4|c4a4g4f4b4b4b4b4|c'4b4a4f4e4z4b8|\nV: Ins\nZ4|\n% chorus\nV: Vocal\ng4g4g8g4g4g8|g4b4e6f2g8z8|a4a4a6a2a4g4g4g2g2|g4f4f4g4f8b4z4|\nV: Ins\nZ4|\nV: Vocal\ng4g4g8g4g4g8|g4b4e6f2g8z8|a4a4a6a2a4g4g4g2g2|b4b4a4f4e12z4|\nV: Ins\nZ4|\nV: Vocal\nZ|\nV: Ins\nZ|\n% interlude\nV: Vocal\nZ|\nV: Ins\nB4B2B2e4B2B2e2B2e2g2b8|\n% verse\nV: Vocal\nB4g4f4e4B8z8|B4g4f4e4c8z8|c4a4g4f4d8z8|b4b4a4f4g8z8|\nV: Ins\nZ4|\nV: Vocal\nB4g4f4e4B8z4B4|B4g4f4e4c8z4c4|c4a4g4f4b4b4b4b4|c'4b4a4f4e4z4b8|\nV: Ins\nZ4|\n% chorus\nV: Vocal\ng4g4g8g4g4g8|g4b4e6f2g8z8|a4a4a6a2a4g4g4g2g2|g4f4f4g4f8b4z4|\nV: Ins\nZ4|\nV: Vocal\ng4g4g8g4g4g8|g4b4e6f2g8z8|a4a4a6a2a4g4g4g2g2|b4b4a4f4e8z8|\nV: Ins\nZ4|\nV: Vocal\na4a4a6a2a4g4g4g2g2|b8b8a8f8|e24z8|\nV: Ins\nZ3|\nV: Vocal\nM:1/4\nZ|\nV: Ins\nM:1/4\nZ|\n% outro\nV: Vocal\nM:4/4\nZ4|\nV: Ins\nM:4/4\ng4g4g8g4g4g8|g4b4e6f2g16|a4a4a4a4a4g4g4g2g2|b4b4a4f4e16|\nV: Vocal\nZ|\nV: Ins\ne4g4g4e4z16|\n"
 }

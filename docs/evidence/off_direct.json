@@ -268,5 +268,6 @@
     ]
   },
   "official_player": "audio/fullsong/4201bc6f26587da253ca.mp3",
+  "local_player_32step": "audio/fullsong/bc71fd78a2fb6cc3fb7e.mp3",
   "local_player": "audio/fullsong/bc71fd78a2fb6cc3fb7e.mp3"
 }

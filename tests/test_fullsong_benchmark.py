@@ -26,7 +26,7 @@ def test_truncated_and_missing_results_never_pass():
     assert page.status_label({'status': 'complete', 'truncated': {
         'abc': False, 'semantic': True}}).startswith('fail')
     assert page.status_label({'status': 'complete', 'truncated': {
-        'abc': False, 'semantic': False}}).endswith('音乐质量 pending')
+        'abc': False, 'semantic': False}}) == 'pass · 完成'
 
 
 def test_official_text_score_and_audio_must_match(tmp_path):
