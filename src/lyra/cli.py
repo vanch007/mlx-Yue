@@ -27,9 +27,24 @@ def _pipeline(args, generation_config=None):
 
 
 def _request(args):
-    request = json.loads(Path(args.request).read_text())
+    if args.request and args.request_file:
+        raise ValueError("Pass a positional request or --request, not both")
+    filename = args.request or args.request_file
+    request = json.loads(Path(filename).read_text()) if filename else {}
+    for key in ("style", "lyrics", "seed", "cfg_scale", "id"):
+        value = getattr(args, key, None)
+        if value is not None:
+            request[key] = value
+    if args.lyrics_file:
+        request["lyrics"] = Path(args.lyrics_file).read_bytes().decode("utf-8")
     if args.abc is not None:
         request["abc"] = Path(args.abc).read_bytes().decode("utf-8")
+        request.pop("abc_path", None)
+    if "abc_path" in request:
+        if request.get("abc") is not None:
+            raise ValueError("Pass abc or abc_path, not both")
+        base = Path(filename).parent if filename else Path.cwd()
+        request["abc"] = (base / request.pop("abc_path")).read_bytes().decode("utf-8")
     if args.mode is not None:
         request["cot"] = args.mode
     return request
@@ -78,7 +93,7 @@ def _render_plan(pipe, plan, semantic_sampling=None):
     return SongResult(audio, 48000, semantic, latents, config, pipe.weights, timing, stamp, noise)
 
 
-def main(argv=None):
+def parser():
     parser = argparse.ArgumentParser(description=__doc__)
     commands = parser.add_subparsers(dest="command", required=True)
     prep = commands.add_parser("prepare", help="Fetch pinned checkpoints and convert the generator")
@@ -87,9 +102,19 @@ def main(argv=None):
     prep.add_argument("--precision", choices=("bf16", "8bit", "4bit"), default="bf16")
     prep.add_argument("--offline", action="store_true")
     prep.add_argument("--cache-dir")
+    doctor = commands.add_parser("doctor", help="Inspect runtime and local models without downloading")
+    doctor.add_argument("--model", type=Path)
+    doctor.add_argument("--vae", type=Path)
+    doctor.add_argument("--verify-hashes", action="store_true")
+    doctor.add_argument("--output", type=Path)
+    batch = commands.add_parser("batch", help="Generate serial JSONL requests with verified resume")
+    batch.add_argument("--input", required=True, type=Path)
+    batch.add_argument("--concurrency", type=int, choices=[1], default=1)
     for name in ("generate", "plan", "render-plan", "replay"):
         command = commands.add_parser(name)
-        command.add_argument("request", help="Request JSON, saved plan directory, or saved song directory")
+        command.add_argument("request", nargs="?", help="Request JSON, saved plan or song directory")
+    for name in ("generate", "plan", "render-plan", "replay", "batch"):
+        command = commands.choices[name]
         command.add_argument("--output", required=True, type=Path)
         command.add_argument("--model", help="Converted directory or pinned source checkpoint")
         command.add_argument("--vae", help="Local default VAE checkpoint directory")
@@ -100,20 +125,53 @@ def main(argv=None):
         command.add_argument("--memory-budget-gib", type=float, default=DEFAULT_MEMORY_BUDGET_GIB)
         command.add_argument("--vae-core-frames", type=int, default=256)
         command.add_argument("--require-ac", action="store_true")
+        command.add_argument("--resume", action="store_true", help="Verify and reuse a completed song")
         if name in {"generate", "plan"}:
-            command.add_argument("--abc", help="Supplied ABC file; bytes are preserved")
-            command.add_argument("--mode", choices=("full", "melody", "off"))
+            command.add_argument("--request", dest="request_file")
+            command.add_argument("--abc", "--abc-file", help="Supplied ABC file; bytes are preserved")
+            command.add_argument("--mode", "--cot", choices=("full", "melody", "off"))
+            command.add_argument("--style")
+            lyrics = command.add_mutually_exclusive_group()
+            lyrics.add_argument("--lyrics")
+            lyrics.add_argument("--lyrics-file")
+            command.add_argument("--seed", type=int)
+            command.add_argument("--cfg-scale", type=float)
+            command.add_argument("--id")
         if name == "replay":
             command.add_argument("--stage", choices=("synthesize", "decode"), default="decode")
-    args = parser.parse_args(argv)
+    return parser
+
+
+def main(argv=None):
+    cli = parser()
+    args = cli.parse_args(argv)
+    if args.command == "doctor":
+        from .commands import doctor
+        return doctor(args)
+    if args.command == "batch":
+        from .commands import batch
+        return batch(args)
     if args.command == "prepare":
         from .conversion import fetch_models, prepare
         model, vae = fetch_models(cache_dir=args.cache_dir, local_files_only=args.offline)
         output = prepare(args.source or model, args.output, precision=args.precision)
         print(json.dumps({"model": str(output), "vae": str(vae)}))
         return 0
+    if args.command in {"render-plan", "replay"} and not args.request:
+        cli.error("A saved plan/song directory is required")
+    if args.resume:
+        if args.command != "generate":
+            cli.error("--resume applies to completed generate or batch results")
+        if (args.output / "result.json").is_file():
+            from .commands import resume_result
+            request = _request(args)
+            generation = request.pop("generation_config", None)
+            config = None if generation is None else GenerationConfig.from_dict(generation)
+            with _pipeline(args, config) as pipe:
+                print(json.dumps(resume_result(pipe, request, args.output), indent=2))
+            return 0
     if args.output.exists() and any(args.output.iterdir()):
-        parser.error("Output directory must be empty; recordings are never silently overwritten")
+        cli.error("Output directory must be empty; recordings are never silently overwritten")
     with _resource_monitor(args):
         if args.command in {"generate", "plan"}:
             request = _request(args)
