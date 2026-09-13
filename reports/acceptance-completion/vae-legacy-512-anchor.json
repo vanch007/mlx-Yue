@@ -1,0 +1,124 @@
+{
+  "stage": "vae",
+  "status": "failed",
+  "comparison": "Port against the independent FP32 anchor, using the existing error budget",
+  "reference_comparison_status": "failed",
+  "input_sha256": {
+    "anchor": "181ce386eba53d608b8e131b4c394c608543b74b22626cdce8794b9060417fc4",
+    "actual": "2f4a28745cb3f731de6f77a27d68b62392336cc4a0a7a9030d2a095aa518a98b",
+    "limits": "76d2aa057303c499c06c00a20d6bcc24010839fb2d6ee8fd20d87cbcaa977e25",
+    "fidelity_report": "87ebb68fc2e0e10171d305c732b2a0696292568d87c89df060558cd07fa0245c"
+  },
+  "metrics": {
+    "core_64": {
+      "max_abs": 1.3425946235656738e-05,
+      "rms_error": 3.335942443971396e-07,
+      "reference_rms": 0.14581193021172098,
+      "relative_rms_error": 2.287839163179282e-06,
+      "cosine": 0.9999999999973594,
+      "p99_abs": 1.1026859283447266e-06
+    },
+    "core_1024": {
+      "max_abs": 1.3425946235656738e-05,
+      "rms_error": 3.3770484096767696e-07,
+      "reference_rms": 0.14581193021172098,
+      "relative_rms_error": 2.316030248535389e-06,
+      "cosine": 0.9999999999972935,
+      "p99_abs": 1.1175870895385742e-06
+    },
+    "full": {
+      "max_abs": 1.3425946235656738e-05,
+      "rms_error": 3.3770484096767696e-07,
+      "reference_rms": 0.14581193021172098,
+      "relative_rms_error": 2.316030248535389e-06,
+      "cosine": 0.9999999999972935,
+      "p99_abs": 1.1175870895385742e-06
+    },
+    "core_256": {
+      "max_abs": 1.3425946235656738e-05,
+      "rms_error": 3.3770484096767696e-07,
+      "reference_rms": 0.14581193021172098,
+      "relative_rms_error": 2.316030248535389e-06,
+      "cosine": 0.9999999999972935,
+      "p99_abs": 1.1175870895385742e-06
+    }
+  },
+  "failures": [
+    {
+      "kind": "bound",
+      "tensor": "core_64",
+      "group": "audio",
+      "metric": "rms_error",
+      "actual": 3.335942443971396e-07,
+      "upper": 0.0,
+      "source": "group"
+    },
+    {
+      "kind": "bound",
+      "tensor": "core_64",
+      "group": "audio",
+      "metric": "max_abs",
+      "actual": 1.3425946235656738e-05,
+      "upper": 0.0,
+      "source": "group"
+    },
+    {
+      "kind": "bound",
+      "tensor": "core_1024",
+      "group": "audio",
+      "metric": "rms_error",
+      "actual": 3.3770484096767696e-07,
+      "upper": 0.0,
+      "source": "group"
+    },
+    {
+      "kind": "bound",
+      "tensor": "core_1024",
+      "group": "audio",
+      "metric": "max_abs",
+      "actual": 1.3425946235656738e-05,
+      "upper": 0.0,
+      "source": "group"
+    },
+    {
+      "kind": "bound",
+      "tensor": "full",
+      "group": "audio",
+      "metric": "rms_error",
+      "actual": 3.3770484096767696e-07,
+      "upper": 0.0,
+      "source": "group"
+    },
+    {
+      "kind": "bound",
+      "tensor": "full",
+      "group": "audio",
+      "metric": "max_abs",
+      "actual": 1.3425946235656738e-05,
+      "upper": 0.0,
+      "source": "group"
+    },
+    {
+      "kind": "bound",
+      "tensor": "core_256",
+      "group": "audio",
+      "metric": "rms_error",
+      "actual": 3.3770484096767696e-07,
+      "upper": 0.0,
+      "source": "group"
+    },
+    {
+      "kind": "bound",
+      "tensor": "core_256",
+      "group": "audio",
+      "metric": "max_abs",
+      "actual": 1.3425946235656738e-05,
+      "upper": 0.0,
+      "source": "group"
+    },
+    {
+      "kind": "reference_comparison",
+      "status": "failed"
+    }
+  ]
+}

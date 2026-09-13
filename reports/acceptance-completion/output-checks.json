@@ -1,0 +1,283 @@
+{
+  "scope": "Integrity, geometry, finite audio, natural endings, transcription coverage/export; not listening approval",
+  "outputs": [
+    {
+      "path": "outputs/acceptance-completion/complete-cover/song",
+      "kind": "song",
+      "seconds": 44.87866666666667,
+      "peak": 0.9366843700408936,
+      "rms": 0.18822545429519444,
+      "near_full_scale_fraction": 0.0,
+      "quiet_second_indices": [],
+      "truncated": {
+        "abc": false,
+        "semantic": false
+      },
+      "naturally_ended": true,
+      "audio_sha256": "45a72d4fb7e0d0bddc19d3d4d6cbdcdf1f3995eedf5543b2af387e71c66fba74",
+      "status": "pass"
+    },
+    {
+      "path": "outputs/acceptance-completion/complete-cover/transcription",
+      "kind": "transcription",
+      "task": "full",
+      "seconds": 55.19866666666667,
+      "windows": 1,
+      "events": 142,
+      "notes": 140,
+      "measures": 21,
+      "event_windows": [
+        0
+      ],
+      "warnings": [],
+      "diagnostics": [
+        "measure 20: padded final 2/4 span to declared 4/4 with trailing rest"
+      ],
+      "status": "pass"
+    },
+    {
+      "path": "outputs/acceptance-completion/complete-modes/full_generated",
+      "kind": "song",
+      "seconds": 53.318666666666665,
+      "peak": 0.974940299987793,
+      "rms": 0.16212532302712596,
+      "near_full_scale_fraction": 0.0,
+      "quiet_second_indices": [],
+      "truncated": {
+        "abc": false,
+        "semantic": false
+      },
+      "naturally_ended": true,
+      "audio_sha256": "4f35b6a7a9e56e2b3af94805be982251e116d485fb54c461320857852f5207de",
+      "status": "pass"
+    },
+    {
+      "path": "outputs/acceptance-completion/complete-modes/full_supplied",
+      "kind": "song",
+      "seconds": 55.19866666666667,
+      "peak": 0.9999998807907104,
+      "rms": 0.17690540053023943,
+      "near_full_scale_fraction": 3.7742457547283753e-07,
+      "quiet_second_indices": [
+        55
+      ],
+      "truncated": {
+        "abc": false,
+        "semantic": false
+      },
+      "naturally_ended": true,
+      "audio_sha256": "11b952f2f21f0b51de4b6c9aa54a40a43adaa7fd5ecfbcc8ebe7dbdcd8f6a365",
+      "status": "pass"
+    },
+    {
+      "path": "outputs/acceptance-completion/complete-modes/melody_generated",
+      "kind": "song",
+      "seconds": 72.63866666666667,
+      "peak": 1.0,
+      "rms": 0.1649864601310744,
+      "near_full_scale_fraction": 8.0306173020797e-06,
+      "quiet_second_indices": [
+        72
+      ],
+      "truncated": {
+        "abc": false,
+        "semantic": false
+      },
+      "naturally_ended": true,
+      "audio_sha256": "9aee1d7351782364dfc96173067966049a6d27645bcaa9efbcdc249368036a11",
+      "status": "pass"
+    },
+    {
+      "path": "outputs/acceptance-completion/complete-modes/melody_supplied",
+      "kind": "song",
+      "seconds": 32.15866666666667,
+      "peak": 0.7373073101043701,
+      "rms": 0.12063368729338346,
+      "near_full_scale_fraction": 0.0,
+      "quiet_second_indices": [],
+      "truncated": {
+        "abc": false,
+        "semantic": false
+      },
+      "naturally_ended": true,
+      "audio_sha256": "93f3d6b1b2fbb0a49cfac515a91c865ee363de384771053b28a72ac7e92347d2",
+      "status": "pass"
+    },
+    {
+      "path": "outputs/acceptance-completion/complete-modes/off_none",
+      "kind": "song",
+      "seconds": 54.958666666666666,
+      "peak": 0.9822361469268799,
+      "rms": 0.12563635452279834,
+      "near_full_scale_fraction": 0.0,
+      "quiet_second_indices": [],
+      "truncated": {
+        "abc": false,
+        "semantic": false
+      },
+      "naturally_ended": true,
+      "audio_sha256": "0e2f5b3495485da47df3d3ff6a846e3107f4a97cfc38df84a3318cb1e72a6550",
+      "status": "pass"
+    },
+    {
+      "path": "outputs/acceptance-completion/installed-reload",
+      "kind": "song",
+      "seconds": 2.558666666666667,
+      "peak": 0.733234167098999,
+      "rms": 0.14768387705958258,
+      "near_full_scale_fraction": 0.0,
+      "quiet_second_indices": [],
+      "truncated": {
+        "abc": false,
+        "semantic": true
+      },
+      "naturally_ended": false,
+      "audio_sha256": "1de7cd11fe2e3e72a532593fca2952d258150fc87f1c1e65cafecd4d44bf80cd",
+      "status": "pass"
+    },
+    {
+      "path": "outputs/acceptance-completion/reference-fixed-score-bf16/song",
+      "kind": "song",
+      "seconds": 21.918666666666667,
+      "peak": 1.0,
+      "rms": 0.16390397913398763,
+      "near_full_scale_fraction": 1.758394671208711e-05,
+      "quiet_second_indices": [],
+      "truncated": {
+        "abc": false,
+        "semantic": false
+      },
+      "naturally_ended": true,
+      "audio_sha256": "9d2ff4898b853e89017c4881ef0a2097a0b084aaf107ea69e647517ac64143bd",
+      "status": "pass"
+    },
+    {
+      "path": "outputs/acceptance-completion/reference-full-song-staged/song",
+      "kind": "song",
+      "seconds": 226.51866666666666,
+      "peak": 0.9999998807907104,
+      "rms": 0.1678817729527449,
+      "near_full_scale_fraction": 1.3795772533830912e-07,
+      "quiet_second_indices": [],
+      "truncated": {
+        "abc": false,
+        "semantic": false
+      },
+      "naturally_ended": true,
+      "audio_sha256": "a870c828af2db707ab7a016dfc6c4d8d7cb195699e285586b3477c653656fb55",
+      "status": "pass"
+    },
+    {
+      "path": "outputs/acceptance-completion/sustain-bf16-retry/tonight_awake_1",
+      "kind": "song",
+      "seconds": 169.95866666666666,
+      "peak": 1.0,
+      "rms": 0.1694573343573147,
+      "near_full_scale_fraction": 3.6773646925919244e-07,
+      "quiet_second_indices": [],
+      "truncated": {
+        "abc": false,
+        "semantic": false
+      },
+      "naturally_ended": true,
+      "audio_sha256": "dd5638b52904c35399b1cefbbd06100bd96bef691f2bbed109c18390b8142b4e",
+      "status": "pass"
+    },
+    {
+      "path": "outputs/acceptance-completion/sustain-bf16-retry/tonight_awake_2",
+      "kind": "song",
+      "seconds": 169.95866666666666,
+      "peak": 1.0,
+      "rms": 0.1694573343573147,
+      "near_full_scale_fraction": 3.6773646925919244e-07,
+      "quiet_second_indices": [],
+      "truncated": {
+        "abc": false,
+        "semantic": false
+      },
+      "naturally_ended": true,
+      "audio_sha256": "dd5638b52904c35399b1cefbbd06100bd96bef691f2bbed109c18390b8142b4e",
+      "status": "pass"
+    },
+    {
+      "path": "outputs/acceptance-completion/sustain-bf16-retry/tonight_awake_3",
+      "kind": "song",
+      "seconds": 169.95866666666666,
+      "peak": 1.0,
+      "rms": 0.1694573343573147,
+      "near_full_scale_fraction": 3.6773646925919244e-07,
+      "quiet_second_indices": [],
+      "truncated": {
+        "abc": false,
+        "semantic": false
+      },
+      "naturally_ended": true,
+      "audio_sha256": "dd5638b52904c35399b1cefbbd06100bd96bef691f2bbed109c18390b8142b4e",
+      "status": "pass"
+    },
+    {
+      "path": "outputs/acceptance-completion/transcribe-full",
+      "kind": "transcription",
+      "task": "full",
+      "seconds": 374.2373333333333,
+      "windows": 2,
+      "events": 1316,
+      "notes": 970,
+      "measures": 180,
+      "event_windows": [
+        0,
+        1
+      ],
+      "warnings": [],
+      "diagnostics": [
+        "notation only: clipped track 0 note at 199.700 to next onset",
+        "measure 82: inferred 1/4 from downbeat span; declared numerators were [4]",
+        "measure 179: padded final 1/4 span to declared 4/4 with trailing rest"
+      ],
+      "status": "pass"
+    },
+    {
+      "path": "outputs/acceptance-completion/transcribe-melody-full",
+      "kind": "transcription",
+      "task": "melody-full",
+      "seconds": 374.2373333333333,
+      "windows": 2,
+      "events": 1357,
+      "notes": 994,
+      "measures": 185,
+      "event_windows": [
+        0,
+        1
+      ],
+      "warnings": [],
+      "diagnostics": [
+        "notation only: clipped track 0 note at 199.690 to next onset",
+        "measure 82: inferred 2/4 from downbeat span; declared numerators were [4, 4]"
+      ],
+      "status": "pass"
+    },
+    {
+      "path": "outputs/acceptance-completion/transcribe-melody-vocal",
+      "kind": "transcription",
+      "task": "melody-vocal",
+      "seconds": 374.2373333333333,
+      "windows": 2,
+      "events": 1168,
+      "notes": 717,
+      "measures": 176,
+      "event_windows": [
+        0,
+        1
+      ],
+      "warnings": [],
+      "diagnostics": [
+        "measure 67: inferred 3/4 from downbeat span; declared numerators were [4, 4, 4]",
+        "measure 82: inferred 2/4 from downbeat span; declared numerators were [4, 4]",
+        "measure 175: padded final 2/4 span to declared 4/4 with trailing rest"
+      ],
+      "status": "pass"
+    }
+  ],
+  "passed": 16,
+  "failed": 0
+}

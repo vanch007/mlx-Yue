@@ -59,8 +59,11 @@ def batch(args):
 
     rows = [json.loads(line) for line in args.input.read_text().splitlines() if line.strip()]
     ids = [row.get("id") for row in rows]
-    if not rows or any(not isinstance(i, str) for i in ids) or len(set(ids)) != len(ids):
-        raise ValueError("A batch requires nonempty JSONL with unique string request ids")
+    if (not rows or any(not isinstance(i, str) for i in ids)
+            or len({i.casefold() for i in ids}) != len(ids)):
+        raise ValueError("A batch requires nonempty JSONL with case-insensitively unique string request ids")
+    if any(i.casefold() == "batch.json" for i in ids):
+        raise ValueError("batch.json is reserved for the batch manifest")
     prepared = []
     for row in rows:
         data = dict(row)
@@ -125,11 +128,17 @@ def cover(args):
     if args.output.exists() and any(args.output.iterdir()):
         raise FileExistsError("Cover requires a fresh output directory")
     with _resource_monitor(args):
-        with GPUExecution(memory_budget_gib=args.memory_budget_gib):
+        with GPUExecution(memory_budget_gib=args.memory_budget_gib) as guard:
+            def cancelled():
+                guard.check()
+                return False
+
             transcription = transcribe(
                 args.audio, args.output / "transcription", model_path=args.transcription_model,
-                base_model=args.base_model, offline=args.offline, cache_dir=args.cache_dir, task=args.task,
+                base_model=args.base_model, offline=args.offline, cache_dir=args.cache_dir,
+                task=args.task, cancelled=cancelled,
             )
+            guard.check()
         gc.collect()
         mx.clear_cache()
         if transcription["status"] != "complete" or transcription["truncated"]:

@@ -1,0 +1,16 @@
+[
+  {
+    "case": "serialized_generation_config_via_cli",
+    "saved_steps": 17,
+    "saved_max_tokens": 555,
+    "constructor_config": null,
+    "expected": "saved config",
+    "status": "fail"
+  },
+  {
+    "case": "valid_request_id_collides_with_batch_manifest",
+    "status": "fail",
+    "error": "IsADirectoryError: [Errno 21] Is a directory: '/var/folders/n_/f7ft6yj94ls_9qzjdjxmld200000gn/T/tmpura_uchg/out/batch.json.22830.tmp' -> '/var/folders/n_/f7ft6yj94ls_9qzjdjxmld200000gn/T/tmpura_uchg/out/batch.json'",
+    "expected": "preflight rejection before generation or noncolliding output layout"
+  }
+]

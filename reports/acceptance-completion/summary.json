@@ -1,0 +1,2744 @@
+{
+  "recorded_at": "2026-09-13T13:03:47.625776+00:00",
+  "overall_status": "request_changes",
+  "production_defects_fixed": [
+    "transcription cancellation and resource propagation",
+    "saved CLI generation config lost through None",
+    "reserved and case-insensitive batch IDs",
+    "Torch dependency during native VAE checkpoint export"
+  ],
+  "final_validation_jobs": [
+    {
+      "name": "final-build",
+      "command": [
+        "/Users/vanch/.local/bin/uv",
+        "build",
+        "--offline"
+      ],
+      "status": "pass",
+      "exit_code": 0,
+      "seconds": 0.5847322940826416
+    },
+    {
+      "name": "final-install",
+      "command": [
+        "/Users/vanch/.local/bin/uv",
+        "pip",
+        "install",
+        "--python",
+        "outputs/acceptance-audit-env/bin/python",
+        "--offline",
+        "--no-deps",
+        "--reinstall-package",
+        "lyra-yue2",
+        "dist/lyra_yue2-0.1.0-py3-none-any.whl"
+      ],
+      "status": "pass",
+      "exit_code": 0,
+      "seconds": 0.055268049240112305
+    },
+    {
+      "name": "installed-wheel-native",
+      "command": [
+        "/Users/vanch/yue2-mlx/outputs/acceptance-audit-env/bin/python",
+        "-I",
+        "/Users/vanch/yue2-mlx/reports/acceptance-completion/test_installed_pipeline.py"
+      ],
+      "status": "pass",
+      "exit_code": 0,
+      "seconds": 24.058949947357178
+    },
+    {
+      "name": "final-tests",
+      "command": [
+        ".venv/bin/pytest",
+        "-q"
+      ],
+      "status": "pass",
+      "exit_code": 0,
+      "seconds": 7.302125930786133
+    },
+    {
+      "name": "final-lint",
+      "command": [
+        ".venv/bin/ruff",
+        "check",
+        "src",
+        "tests",
+        "tools"
+      ],
+      "status": "pass",
+      "exit_code": 0,
+      "seconds": 0.011268138885498047
+    },
+    {
+      "name": "final-artifacts",
+      "command": [
+        ".venv/bin/python",
+        "/Users/vanch/yue2-mlx/reports/acceptance-completion/verify_outputs.py"
+      ],
+      "status": "pass",
+      "exit_code": 0,
+      "seconds": 1.326711893081665
+    },
+    {
+      "name": "final-listening",
+      "command": [
+        ".runtime/bin/python",
+        "/Users/vanch/yue2-mlx/reports/acceptance-completion/build_listening.py"
+      ],
+      "status": "pass",
+      "exit_code": 0,
+      "seconds": 0.07417488098144531
+    },
+    {
+      "name": "final-diff-check",
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "status": "pass",
+      "exit_code": 0,
+      "seconds": 0.00988316535949707
+    }
+  ],
+  "pytest_summary": "103 passed, 1 skipped, 3 warnings, 28 subtests passed in 6.63s",
+  "installed_wheel": {
+    "status": "pass",
+    "import_path": "/Users/vanch/yue2-mlx/outputs/acceptance-audit-env/lib/python3.12/site-packages/lyra/__init__.py",
+    "torch_installed": false,
+    "network": "denied connect and DNS",
+    "restored_generation_config": {
+      "abc": {
+        "temperature": 0.7,
+        "top_p": 0.9,
+        "top_k": 30,
+        "repetition_penalty": 1.005,
+        "penalty_window": 100,
+        "min_tokens": 32,
+        "max_tokens": 4096
+      },
+      "semantic": {
+        "temperature": 1.0,
+        "top_p": 0.95,
+        "top_k": 100,
+        "repetition_penalty": 1.2,
+        "penalty_window": 50,
+        "min_tokens": 0,
+        "max_tokens": 64
+      },
+      "ode_steps": 17,
+      "ode_method": "midpoint",
+      "context": 24576,
+      "version": "yue2-native-v1"
+    },
+    "audio_seconds": 2.558666666666667,
+    "truncated": {
+      "abc": false,
+      "semantic": true
+    },
+    "scope": "Actual save_pretrained, installed CLI reload and real capped generation; nondefault 17 steps are a configuration test only"
+  },
+  "output_checks": {
+    "scope": "Integrity, geometry, finite audio, natural endings, transcription coverage/export; not listening approval",
+    "outputs": [
+      {
+        "path": "outputs/acceptance-completion/complete-cover/song",
+        "kind": "song",
+        "seconds": 44.87866666666667,
+        "peak": 0.9366843700408936,
+        "rms": 0.18822545429519444,
+        "near_full_scale_fraction": 0.0,
+        "quiet_second_indices": [],
+        "truncated": {
+          "abc": false,
+          "semantic": false
+        },
+        "naturally_ended": true,
+        "audio_sha256": "45a72d4fb7e0d0bddc19d3d4d6cbdcdf1f3995eedf5543b2af387e71c66fba74",
+        "status": "pass"
+      },
+      {
+        "path": "outputs/acceptance-completion/complete-cover/transcription",
+        "kind": "transcription",
+        "task": "full",
+        "seconds": 55.19866666666667,
+        "windows": 1,
+        "events": 142,
+        "notes": 140,
+        "measures": 21,
+        "event_windows": [
+          0
+        ],
+        "warnings": [],
+        "diagnostics": [
+          "measure 20: padded final 2/4 span to declared 4/4 with trailing rest"
+        ],
+        "status": "pass"
+      },
+      {
+        "path": "outputs/acceptance-completion/complete-modes/full_generated",
+        "kind": "song",
+        "seconds": 53.318666666666665,
+        "peak": 0.974940299987793,
+        "rms": 0.16212532302712596,
+        "near_full_scale_fraction": 0.0,
+        "quiet_second_indices": [],
+        "truncated": {
+          "abc": false,
+          "semantic": false
+        },
+        "naturally_ended": true,
+        "audio_sha256": "4f35b6a7a9e56e2b3af94805be982251e116d485fb54c461320857852f5207de",
+        "status": "pass"
+      },
+      {
+        "path": "outputs/acceptance-completion/complete-modes/full_supplied",
+        "kind": "song",
+        "seconds": 55.19866666666667,
+        "peak": 0.9999998807907104,
+        "rms": 0.17690540053023943,
+        "near_full_scale_fraction": 3.7742457547283753e-07,
+        "quiet_second_indices": [
+          55
+        ],
+        "truncated": {
+          "abc": false,
+          "semantic": false
+        },
+        "naturally_ended": true,
+        "audio_sha256": "11b952f2f21f0b51de4b6c9aa54a40a43adaa7fd5ecfbcc8ebe7dbdcd8f6a365",
+        "status": "pass"
+      },
+      {
+        "path": "outputs/acceptance-completion/complete-modes/melody_generated",
+        "kind": "song",
+        "seconds": 72.63866666666667,
+        "peak": 1.0,
+        "rms": 0.1649864601310744,
+        "near_full_scale_fraction": 8.0306173020797e-06,
+        "quiet_second_indices": [
+          72
+        ],
+        "truncated": {
+          "abc": false,
+          "semantic": false
+        },
+        "naturally_ended": true,
+        "audio_sha256": "9aee1d7351782364dfc96173067966049a6d27645bcaa9efbcdc249368036a11",
+        "status": "pass"
+      },
+      {
+        "path": "outputs/acceptance-completion/complete-modes/melody_supplied",
+        "kind": "song",
+        "seconds": 32.15866666666667,
+        "peak": 0.7373073101043701,
+        "rms": 0.12063368729338346,
+        "near_full_scale_fraction": 0.0,
+        "quiet_second_indices": [],
+        "truncated": {
+          "abc": false,
+          "semantic": false
+        },
+        "naturally_ended": true,
+        "audio_sha256": "93f3d6b1b2fbb0a49cfac515a91c865ee363de384771053b28a72ac7e92347d2",
+        "status": "pass"
+      },
+      {
+        "path": "outputs/acceptance-completion/complete-modes/off_none",
+        "kind": "song",
+        "seconds": 54.958666666666666,
+        "peak": 0.9822361469268799,
+        "rms": 0.12563635452279834,
+        "near_full_scale_fraction": 0.0,
+        "quiet_second_indices": [],
+        "truncated": {
+          "abc": false,
+          "semantic": false
+        },
+        "naturally_ended": true,
+        "audio_sha256": "0e2f5b3495485da47df3d3ff6a846e3107f4a97cfc38df84a3318cb1e72a6550",
+        "status": "pass"
+      },
+      {
+        "path": "outputs/acceptance-completion/installed-reload",
+        "kind": "song",
+        "seconds": 2.558666666666667,
+        "peak": 0.733234167098999,
+        "rms": 0.14768387705958258,
+        "near_full_scale_fraction": 0.0,
+        "quiet_second_indices": [],
+        "truncated": {
+          "abc": false,
+          "semantic": true
+        },
+        "naturally_ended": false,
+        "audio_sha256": "1de7cd11fe2e3e72a532593fca2952d258150fc87f1c1e65cafecd4d44bf80cd",
+        "status": "pass"
+      },
+      {
+        "path": "outputs/acceptance-completion/reference-fixed-score-bf16/song",
+        "kind": "song",
+        "seconds": 21.918666666666667,
+        "peak": 1.0,
+        "rms": 0.16390397913398763,
+        "near_full_scale_fraction": 1.758394671208711e-05,
+        "quiet_second_indices": [],
+        "truncated": {
+          "abc": false,
+          "semantic": false
+        },
+        "naturally_ended": true,
+        "audio_sha256": "9d2ff4898b853e89017c4881ef0a2097a0b084aaf107ea69e647517ac64143bd",
+        "status": "pass"
+      },
+      {
+        "path": "outputs/acceptance-completion/reference-full-song-staged/song",
+        "kind": "song",
+        "seconds": 226.51866666666666,
+        "peak": 0.9999998807907104,
+        "rms": 0.1678817729527449,
+        "near_full_scale_fraction": 1.3795772533830912e-07,
+        "quiet_second_indices": [],
+        "truncated": {
+          "abc": false,
+          "semantic": false
+        },
+        "naturally_ended": true,
+        "audio_sha256": "a870c828af2db707ab7a016dfc6c4d8d7cb195699e285586b3477c653656fb55",
+        "status": "pass"
+      },
+      {
+        "path": "outputs/acceptance-completion/sustain-bf16-retry/tonight_awake_1",
+        "kind": "song",
+        "seconds": 169.95866666666666,
+        "peak": 1.0,
+        "rms": 0.1694573343573147,
+        "near_full_scale_fraction": 3.6773646925919244e-07,
+        "quiet_second_indices": [],
+        "truncated": {
+          "abc": false,
+          "semantic": false
+        },
+        "naturally_ended": true,
+        "audio_sha256": "dd5638b52904c35399b1cefbbd06100bd96bef691f2bbed109c18390b8142b4e",
+        "status": "pass"
+      },
+      {
+        "path": "outputs/acceptance-completion/sustain-bf16-retry/tonight_awake_2",
+        "kind": "song",
+        "seconds": 169.95866666666666,
+        "peak": 1.0,
+        "rms": 0.1694573343573147,
+        "near_full_scale_fraction": 3.6773646925919244e-07,
+        "quiet_second_indices": [],
+        "truncated": {
+          "abc": false,
+          "semantic": false
+        },
+        "naturally_ended": true,
+        "audio_sha256": "dd5638b52904c35399b1cefbbd06100bd96bef691f2bbed109c18390b8142b4e",
+        "status": "pass"
+      },
+      {
+        "path": "outputs/acceptance-completion/sustain-bf16-retry/tonight_awake_3",
+        "kind": "song",
+        "seconds": 169.95866666666666,
+        "peak": 1.0,
+        "rms": 0.1694573343573147,
+        "near_full_scale_fraction": 3.6773646925919244e-07,
+        "quiet_second_indices": [],
+        "truncated": {
+          "abc": false,
+          "semantic": false
+        },
+        "naturally_ended": true,
+        "audio_sha256": "dd5638b52904c35399b1cefbbd06100bd96bef691f2bbed109c18390b8142b4e",
+        "status": "pass"
+      },
+      {
+        "path": "outputs/acceptance-completion/transcribe-full",
+        "kind": "transcription",
+        "task": "full",
+        "seconds": 374.2373333333333,
+        "windows": 2,
+        "events": 1316,
+        "notes": 970,
+        "measures": 180,
+        "event_windows": [
+          0,
+          1
+        ],
+        "warnings": [],
+        "diagnostics": [
+          "notation only: clipped track 0 note at 199.700 to next onset",
+          "measure 82: inferred 1/4 from downbeat span; declared numerators were [4]",
+          "measure 179: padded final 1/4 span to declared 4/4 with trailing rest"
+        ],
+        "status": "pass"
+      },
+      {
+        "path": "outputs/acceptance-completion/transcribe-melody-full",
+        "kind": "transcription",
+        "task": "melody-full",
+        "seconds": 374.2373333333333,
+        "windows": 2,
+        "events": 1357,
+        "notes": 994,
+        "measures": 185,
+        "event_windows": [
+          0,
+          1
+        ],
+        "warnings": [],
+        "diagnostics": [
+          "notation only: clipped track 0 note at 199.690 to next onset",
+          "measure 82: inferred 2/4 from downbeat span; declared numerators were [4, 4]"
+        ],
+        "status": "pass"
+      },
+      {
+        "path": "outputs/acceptance-completion/transcribe-melody-vocal",
+        "kind": "transcription",
+        "task": "melody-vocal",
+        "seconds": 374.2373333333333,
+        "windows": 2,
+        "events": 1168,
+        "notes": 717,
+        "measures": 176,
+        "event_windows": [
+          0,
+          1
+        ],
+        "warnings": [],
+        "diagnostics": [
+          "measure 67: inferred 3/4 from downbeat span; declared numerators were [4, 4, 4]",
+          "measure 82: inferred 2/4 from downbeat span; declared numerators were [4, 4]",
+          "measure 175: padded final 2/4 span to declared 4/4 with trailing rest"
+        ],
+        "status": "pass"
+      }
+    ],
+    "passed": 16,
+    "failed": 0
+  },
+  "sustained_execution": {
+    "execution_status": "pass",
+    "runs": [
+      {
+        "id": "tonight_awake_1",
+        "audio_seconds": 169.95866666666666,
+        "e2e_seconds": 301.21143216703786
+      },
+      {
+        "id": "tonight_awake_2",
+        "audio_seconds": 169.95866666666666,
+        "e2e_seconds": 334.58663437503856
+      },
+      {
+        "id": "tonight_awake_3",
+        "audio_seconds": 169.95866666666666,
+        "e2e_seconds": 313.10574099997757
+      }
+    ],
+    "sampled_peak_footprint_gib": 10.976614691317081,
+    "new_swap_out_bytes": 0,
+    "monitor_error": null,
+    "historical_duration_gate": "failed",
+    "historical_workload_status": "failed_full_duration_gate",
+    "first_attempt": "outputs/acceptance-completion/sustain-bf16/report.json",
+    "scope": "Three natural-ending serial BF16 runs in one process; historical duration benchmark evaluated separately, not waived"
+  },
+  "numerical": [
+    {
+      "name": "ar-short",
+      "reference_status": "passed",
+      "anchor_status": "passed",
+      "reference_failures": [],
+      "anchor_failures": [],
+      "reference_report": "/Users/vanch/yue2-mlx/outputs/acceptance-completion/ar-short-mlx/fidelity.json",
+      "anchor_report": "/Users/vanch/yue2-mlx/reports/acceptance-completion/ar-short-anchor.json"
+    },
+    {
+      "name": "ar-negative",
+      "reference_status": "passed",
+      "anchor_status": "failed",
+      "reference_failures": [],
+      "anchor_failures": [
+        {
+          "kind": "bound",
+          "tensor": "logits_128",
+          "group": "logits",
+          "metric": "max_abs",
+          "actual": 1.8235387802124023,
+          "upper": 1.756739616394043,
+          "source": "tensor"
+        },
+        {
+          "kind": "bound",
+          "tensor": "v_128_15",
+          "group": "cache",
+          "metric": "max_abs",
+          "actual": 0.619870662689209,
+          "upper": 0.5564613342285156,
+          "source": "tensor"
+        }
+      ],
+      "reference_report": "/Users/vanch/yue2-mlx/outputs/acceptance-completion/ar-negative-mlx/fidelity.json",
+      "anchor_report": "/Users/vanch/yue2-mlx/reports/acceptance-completion/ar-negative-anchor.json"
+    },
+    {
+      "name": "ar-song-negative-bounded",
+      "reference_status": "failed",
+      "anchor_status": "failed",
+      "reference_failures": [
+        {
+          "kind": "bound",
+          "tensor": "v_1024_27",
+          "group": "cache",
+          "metric": "max_abs",
+          "actual": 0.25,
+          "upper": 0.21889495849609375,
+          "source": "tensor"
+        },
+        {
+          "kind": "bound",
+          "tensor": "v_6144_12",
+          "group": "cache",
+          "metric": "max_abs",
+          "actual": 0.125,
+          "upper": 0.12234622240066528,
+          "source": "tensor"
+        },
+        {
+          "kind": "bound",
+          "tensor": "v_6144_27",
+          "group": "cache",
+          "metric": "max_abs",
+          "actual": 0.171875,
+          "upper": 0.1693727970123291,
+          "source": "tensor"
+        }
+      ],
+      "anchor_failures": [
+        {
+          "kind": "bound",
+          "tensor": "v_1024_15",
+          "group": "cache",
+          "metric": "max_abs",
+          "actual": 0.16150283813476562,
+          "upper": 0.1568603515625,
+          "source": "tensor"
+        },
+        {
+          "kind": "bound",
+          "tensor": "v_6144_12",
+          "group": "cache",
+          "metric": "max_abs",
+          "actual": 0.17165660858154297,
+          "upper": 0.12234622240066528,
+          "source": "tensor"
+        },
+        {
+          "kind": "reference_comparison",
+          "status": "failed"
+        }
+      ],
+      "reference_report": "/Users/vanch/yue2-mlx/outputs/acceptance-completion/ar-song-negative-bounded-mlx/fidelity.json",
+      "anchor_report": "/Users/vanch/yue2-mlx/reports/acceptance-completion/ar-song-negative-bounded-anchor.json"
+    },
+    {
+      "name": "nar",
+      "reference_status": "passed",
+      "anchor_status": "failed",
+      "reference_failures": [],
+      "anchor_failures": [
+        {
+          "kind": "bound",
+          "tensor": "fixed_velocity_15",
+          "group": "velocity",
+          "metric": "max_abs",
+          "actual": 0.14297056198120117,
+          "upper": 0.1415853500366211,
+          "source": "tensor"
+        }
+      ],
+      "reference_report": "/Users/vanch/yue2-mlx/outputs/acceptance-completion/nar-mlx/fidelity.json",
+      "anchor_report": "/Users/vanch/yue2-mlx/reports/acceptance-completion/nar-anchor.json"
+    },
+    {
+      "name": "vae-default-512-fp64",
+      "reference_status": "passed",
+      "anchor_status": "passed",
+      "reference_failures": [],
+      "anchor_failures": [],
+      "reference_report": "/Users/vanch/yue2-mlx/outputs/acceptance-completion/vae-default-512-fp64-budget-mlx/fidelity.json",
+      "anchor_report": "/Users/vanch/yue2-mlx/reports/acceptance-completion/vae-default-512-fp64-anchor.json"
+    },
+    {
+      "name": "vae-legacy-512-fp64",
+      "reference_status": "passed",
+      "anchor_status": "passed",
+      "reference_failures": [],
+      "anchor_failures": [],
+      "reference_report": "/Users/vanch/yue2-mlx/outputs/acceptance-completion/vae-legacy-512-fp64-budget-mlx/fidelity.json",
+      "anchor_report": "/Users/vanch/yue2-mlx/reports/acceptance-completion/vae-legacy-512-fp64-anchor.json"
+    },
+    {
+      "name": "ar-long-layerwise",
+      "reference_status": "passed",
+      "anchor_status": "passed",
+      "reference_failures": [],
+      "anchor_failures": [],
+      "reference_report": "/Users/vanch/yue2-mlx/outputs/acceptance-completion/ar-long-layerwise-mlx/fidelity.json",
+      "anchor_report": "/Users/vanch/yue2-mlx/reports/acceptance-completion/ar-long-layerwise-anchor.json"
+    },
+    {
+      "name": "ar-valid-prefix-layerwise",
+      "reference_status": "passed",
+      "anchor_status": "passed",
+      "reference_failures": [],
+      "anchor_failures": [],
+      "reference_report": "/Users/vanch/yue2-mlx/outputs/acceptance-completion/ar-valid-prefix-layerwise-mlx/fidelity.json",
+      "anchor_report": "/Users/vanch/yue2-mlx/reports/acceptance-completion/ar-valid-prefix-layerwise-anchor.json"
+    }
+  ],
+  "long_reference_attempts": [
+    [
+      {
+        "name": "ar-short-limits",
+        "command": [
+          ".runtime/bin/python",
+          "tools/limits.py",
+          "ar",
+          "--oracle",
+          "outputs/oracle-ar-local",
+          "--calibration",
+          "outputs/acceptance-completion/calibration-ar-short",
+          "--output",
+          "reports/acceptance-completion/ar-short-limits.json"
+        ],
+        "status": "pass",
+        "start": 1789300122.967774,
+        "exit_code": 0,
+        "seconds": 0.8112392425537109
+      },
+      {
+        "name": "ar-short-fidelity",
+        "command": [
+          ".runtime/bin/python",
+          "tools/fidelity.py",
+          "ar",
+          "--oracle",
+          "outputs/oracle-ar-local",
+          "--model",
+          "models/converted",
+          "--limits",
+          "reports/acceptance-completion/ar-short-limits.json",
+          "--output",
+          "outputs/acceptance-completion/ar-short-mlx",
+          "--require-ac"
+        ],
+        "status": "pass",
+        "start": 1789300123.779377,
+        "exit_code": 0,
+        "seconds": 6.8023200035095215
+      },
+      {
+        "name": "ar-short-anchor",
+        "command": [
+          ".runtime/bin/python",
+          "tools/limits.py",
+          "ar",
+          "--oracle",
+          "outputs/oracle-ar-local",
+          "--calibration",
+          "outputs/acceptance-completion/calibration-ar-short",
+          "--actual",
+          "outputs/acceptance-completion/ar-short-mlx/ar-actual.npz",
+          "--limits",
+          "reports/acceptance-completion/ar-short-limits.json",
+          "--output",
+          "reports/acceptance-completion/ar-short-anchor.json"
+        ],
+        "status": "pass",
+        "start": 1789300130.582072,
+        "exit_code": 0,
+        "seconds": 0.8272378444671631
+      },
+      {
+        "name": "ar-negative-reference",
+        "command": [
+          ".oracle/bin/python",
+          "tools/oracle.py",
+          "ar",
+          "--model",
+          "models/hf-cache/models--m-a-p--YuE2-3B/snapshots/1a96eca688d6ae5d7f0feb88573fec89920fcd19",
+          "--vae",
+          "/Users/vanch/yue2-mlx/models/hf-cache/models--m-a-p--YuE2-Vae/snapshots/95535e72a97bc0f09b8ada125d26b4009428c0e8",
+          "--lengths",
+          "128",
+          "1024",
+          "--branch",
+          "negative",
+          "--output",
+          "outputs/acceptance-completion/ar-negative-torch",
+          "--require-ac"
+        ],
+        "status": "pass",
+        "start": 1789300131.409728,
+        "exit_code": 0,
+        "seconds": 9.35916805267334
+      },
+      {
+        "name": "ar-negative-calibration",
+        "command": [
+          ".oracle/bin/python",
+          "tools/calibrate.py",
+          "ar",
+          "--model",
+          "models/hf-cache/models--m-a-p--YuE2-3B/snapshots/1a96eca688d6ae5d7f0feb88573fec89920fcd19",
+          "--oracle",
+          "outputs/acceptance-completion/ar-negative-torch",
+          "--output",
+          "outputs/acceptance-completion/ar-negative-fp32",
+          "--require-ac"
+        ],
+        "status": "pass",
+        "start": 1789300140.76929,
+        "exit_code": 0,
+        "seconds": 8.230199098587036
+      },
+      {
+        "name": "ar-negative-limits",
+        "command": [
+          ".runtime/bin/python",
+          "tools/limits.py",
+          "ar",
+          "--oracle",
+          "outputs/acceptance-completion/ar-negative-torch",
+          "--calibration",
+          "outputs/acceptance-completion/ar-negative-fp32",
+          "--output",
+          "reports/acceptance-completion/ar-negative-limits.json"
+        ],
+        "status": "pass",
+        "start": 1789300148.99984,
+        "exit_code": 0,
+        "seconds": 0.8002381324768066
+      },
+      {
+        "name": "ar-negative-fidelity",
+        "command": [
+          ".runtime/bin/python",
+          "tools/fidelity.py",
+          "ar",
+          "--oracle",
+          "outputs/acceptance-completion/ar-negative-torch",
+          "--model",
+          "models/converted",
+          "--limits",
+          "reports/acceptance-completion/ar-negative-limits.json",
+          "--output",
+          "outputs/acceptance-completion/ar-negative-mlx",
+          "--require-ac"
+        ],
+        "status": "pass",
+        "start": 1789300149.800502,
+        "exit_code": 0,
+        "seconds": 6.6406378746032715
+      },
+      {
+        "name": "ar-negative-anchor",
+        "command": [
+          ".runtime/bin/python",
+          "tools/limits.py",
+          "ar",
+          "--oracle",
+          "outputs/acceptance-completion/ar-negative-torch",
+          "--calibration",
+          "outputs/acceptance-completion/ar-negative-fp32",
+          "--actual",
+          "outputs/acceptance-completion/ar-negative-mlx/ar-actual.npz",
+          "--limits",
+          "reports/acceptance-completion/ar-negative-limits.json",
+          "--output",
+          "reports/acceptance-completion/ar-negative-anchor.json"
+        ],
+        "status": "fail",
+        "start": 1789300156.4419,
+        "exit_code": 1,
+        "seconds": 0.9563310146331787
+      },
+      {
+        "name": "ar-long-reference",
+        "command": [
+          ".oracle/bin/python",
+          "tools/oracle.py",
+          "ar",
+          "--model",
+          "models/hf-cache/models--m-a-p--YuE2-3B/snapshots/1a96eca688d6ae5d7f0feb88573fec89920fcd19",
+          "--vae",
+          "/Users/vanch/yue2-mlx/models/hf-cache/models--m-a-p--YuE2-Vae/snapshots/95535e72a97bc0f09b8ada125d26b4009428c0e8",
+          "--lengths",
+          "6144",
+          "12000",
+          "--output",
+          "outputs/acceptance-completion/ar-long-torch",
+          "--require-ac"
+        ],
+        "status": "fail",
+        "start": 1789300157.398674,
+        "exit_code": 1,
+        "seconds": 23.79103994369507
+      },
+      {
+        "name": "ar-song-negative-reference",
+        "command": [
+          ".oracle/bin/python",
+          "tools/oracle.py",
+          "ar",
+          "--model",
+          "models/hf-cache/models--m-a-p--YuE2-3B/snapshots/1a96eca688d6ae5d7f0feb88573fec89920fcd19",
+          "--vae",
+          "/Users/vanch/yue2-mlx/models/hf-cache/models--m-a-p--YuE2-Vae/snapshots/95535e72a97bc0f09b8ada125d26b4009428c0e8",
+          "--lengths",
+          "128",
+          "1024",
+          "6144",
+          "--branch",
+          "negative",
+          "--source",
+          "outputs/precision-comparison/full-song-bf16",
+          "--output",
+          "outputs/acceptance-completion/ar-song-negative-torch",
+          "--require-ac"
+        ],
+        "status": "fail",
+        "start": 1789300181.1902132,
+        "exit_code": 1,
+        "seconds": 2.3040478229522705
+      },
+      {
+        "name": "ar-long-prefix-reference",
+        "command": [
+          ".oracle/bin/python",
+          "tools/oracle.py",
+          "ar",
+          "--model",
+          "models/hf-cache/models--m-a-p--YuE2-3B/snapshots/1a96eca688d6ae5d7f0feb88573fec89920fcd19",
+          "--vae",
+          "/Users/vanch/yue2-mlx/models/hf-cache/models--m-a-p--YuE2-Vae/snapshots/95535e72a97bc0f09b8ada125d26b4009428c0e8",
+          "--lengths",
+          "12000",
+          "--source",
+          "outputs/acceptance-completion/fixtures/long-plan",
+          "--output",
+          "outputs/acceptance-completion/ar-long-prefix-torch",
+          "--require-ac"
+        ],
+        "status": "fail",
+        "start": 1789300183.494674,
+        "exit_code": 1,
+        "seconds": 15.43250823020935
+      },
+      {
+        "name": "nar-calibration",
+        "command": [
+          ".oracle/bin/python",
+          "tools/calibrate.py",
+          "nar",
+          "--model",
+          "models/hf-cache/models--m-a-p--YuE2-3B/snapshots/1a96eca688d6ae5d7f0feb88573fec89920fcd19",
+          "--oracle",
+          "outputs/oracle-nar-local",
+          "--output",
+          "outputs/acceptance-completion/nar-fp32",
+          "--require-ac"
+        ],
+        "status": "pass",
+        "start": 1789300198.927637,
+        "exit_code": 0,
+        "seconds": 13.926640033721924
+      },
+      {
+        "name": "nar-limits",
+        "command": [
+          ".runtime/bin/python",
+          "tools/limits.py",
+          "nar",
+          "--oracle",
+          "outputs/oracle-nar-local",
+          "--calibration",
+          "outputs/acceptance-completion/nar-fp32",
+          "--output",
+          "reports/acceptance-completion/nar-limits.json"
+        ],
+        "status": "pass",
+        "start": 1789300212.8547661,
+        "exit_code": 0,
+        "seconds": 1.0673747062683105
+      },
+      {
+        "name": "nar-fidelity",
+        "command": [
+          ".runtime/bin/python",
+          "tools/fidelity.py",
+          "nar",
+          "--oracle",
+          "outputs/oracle-nar-local",
+          "--model",
+          "models/converted",
+          "--limits",
+          "reports/acceptance-completion/nar-limits.json",
+          "--output",
+          "outputs/acceptance-completion/nar-mlx",
+          "--require-ac"
+        ],
+        "status": "pass",
+        "start": 1789300213.922612,
+        "exit_code": 0,
+        "seconds": 18.229504108428955
+      },
+      {
+        "name": "nar-anchor",
+        "command": [
+          ".runtime/bin/python",
+          "tools/limits.py",
+          "nar",
+          "--oracle",
+          "outputs/oracle-nar-local",
+          "--calibration",
+          "outputs/acceptance-completion/nar-fp32",
+          "--actual",
+          "outputs/acceptance-completion/nar-mlx/nar-actual.npz",
+          "--limits",
+          "reports/acceptance-completion/nar-limits.json",
+          "--output",
+          "reports/acceptance-completion/nar-anchor.json"
+        ],
+        "status": "fail",
+        "start": 1789300232.152554,
+        "exit_code": 1,
+        "seconds": 1.1493899822235107
+      },
+      {
+        "name": "vae-default-512-reference",
+        "command": [
+          ".oracle/bin/python",
+          "tools/oracle.py",
+          "vae",
+          "--model",
+          "models/hf-cache/models--m-a-p--YuE2-3B/snapshots/1a96eca688d6ae5d7f0feb88573fec89920fcd19",
+          "--vae",
+          "/Users/vanch/yue2-mlx/models/hf-cache/models--m-a-p--YuE2-Vae/snapshots/95535e72a97bc0f09b8ada125d26b4009428c0e8",
+          "--latents",
+          "outputs/acceptance-completion/fixtures/vae-512.npy",
+          "--output",
+          "outputs/acceptance-completion/vae-default-512-torch",
+          "--require-ac"
+        ],
+        "status": "pass",
+        "start": 1789300233.302476,
+        "exit_code": 0,
+        "seconds": 5.560567140579224
+      },
+      {
+        "name": "vae-default-512-limits",
+        "command": [
+          ".runtime/bin/python",
+          "tools/limits.py",
+          "vae",
+          "--oracle",
+          "outputs/acceptance-completion/vae-default-512-torch",
+          "--calibration",
+          "outputs/acceptance-completion/vae-default-512-torch",
+          "--output",
+          "reports/acceptance-completion/vae-default-512-limits.json"
+        ],
+        "status": "pass",
+        "start": 1789300238.863691,
+        "exit_code": 0,
+        "seconds": 0.7424759864807129
+      },
+      {
+        "name": "vae-default-512-fidelity",
+        "command": [
+          ".runtime/bin/python",
+          "tools/fidelity.py",
+          "vae",
+          "--oracle",
+          "outputs/acceptance-completion/vae-default-512-torch",
+          "--model",
+          "models/converted",
+          "--limits",
+          "reports/acceptance-completion/vae-default-512-limits.json",
+          "--output",
+          "outputs/acceptance-completion/vae-default-512-mlx",
+          "--require-ac",
+          "--vae",
+          "/Users/vanch/yue2-mlx/models/hf-cache/models--m-a-p--YuE2-Vae/snapshots/95535e72a97bc0f09b8ada125d26b4009428c0e8",
+          "--latents",
+          "outputs/acceptance-completion/fixtures/vae-512.npy"
+        ],
+        "status": "fail",
+        "start": 1789300239.606623,
+        "exit_code": 1,
+        "seconds": 3.9367570877075195
+      },
+      {
+        "name": "vae-default-512-anchor",
+        "command": [
+          ".runtime/bin/python",
+          "tools/limits.py",
+          "vae",
+          "--oracle",
+          "outputs/acceptance-completion/vae-default-512-torch",
+          "--calibration",
+          "outputs/acceptance-completion/vae-default-512-torch",
+          "--actual",
+          "outputs/acceptance-completion/vae-default-512-mlx/vae-actual.npz",
+          "--limits",
+          "reports/acceptance-completion/vae-default-512-limits.json",
+          "--output",
+          "reports/acceptance-completion/vae-default-512-anchor.json"
+        ],
+        "status": "fail",
+        "start": 1789300243.5444632,
+        "exit_code": 1,
+        "seconds": 1.0180857181549072
+      },
+      {
+        "name": "vae-legacy-512-reference",
+        "command": [
+          ".oracle/bin/python",
+          "tools/oracle.py",
+          "vae",
+          "--model",
+          "models/hf-cache/models--m-a-p--YuE2-3B/snapshots/1a96eca688d6ae5d7f0feb88573fec89920fcd19",
+          "--vae",
+          "/Users/vanch/yue2-mlx/models/hf-cache/models--m-a-p--YuE2-Vae-legacy/snapshots/5ddd12f79acb90d24b3a672dcd2ebf88da7c92a9",
+          "--latents",
+          "outputs/acceptance-completion/fixtures/vae-512.npy",
+          "--output",
+          "outputs/acceptance-completion/vae-legacy-512-torch",
+          "--require-ac"
+        ],
+        "status": "pass",
+        "start": 1789300244.56305,
+        "exit_code": 0,
+        "seconds": 5.292108058929443
+      },
+      {
+        "name": "vae-legacy-512-limits",
+        "command": [
+          ".runtime/bin/python",
+          "tools/limits.py",
+          "vae",
+          "--oracle",
+          "outputs/acceptance-completion/vae-legacy-512-torch",
+          "--calibration",
+          "outputs/acceptance-completion/vae-legacy-512-torch",
+          "--output",
+          "reports/acceptance-completion/vae-legacy-512-limits.json"
+        ],
+        "status": "pass",
+        "start": 1789300249.855693,
+        "exit_code": 0,
+        "seconds": 0.7362890243530273
+      },
+      {
+        "name": "vae-legacy-512-fidelity",
+        "command": [
+          ".runtime/bin/python",
+          "tools/fidelity.py",
+          "vae",
+          "--oracle",
+          "outputs/acceptance-completion/vae-legacy-512-torch",
+          "--model",
+          "models/converted",
+          "--limits",
+          "reports/acceptance-completion/vae-legacy-512-limits.json",
+          "--output",
+          "outputs/acceptance-completion/vae-legacy-512-mlx",
+          "--require-ac",
+          "--vae",
+          "/Users/vanch/yue2-mlx/models/hf-cache/models--m-a-p--YuE2-Vae-legacy/snapshots/5ddd12f79acb90d24b3a672dcd2ebf88da7c92a9",
+          "--latents",
+          "outputs/acceptance-completion/fixtures/vae-512.npy"
+        ],
+        "status": "fail",
+        "start": 1789300250.5925639,
+        "exit_code": 1,
+        "seconds": 3.784417152404785
+      },
+      {
+        "name": "vae-legacy-512-anchor",
+        "command": [
+          ".runtime/bin/python",
+          "tools/limits.py",
+          "vae",
+          "--oracle",
+          "outputs/acceptance-completion/vae-legacy-512-torch",
+          "--calibration",
+          "outputs/acceptance-completion/vae-legacy-512-torch",
+          "--actual",
+          "outputs/acceptance-completion/vae-legacy-512-mlx/vae-actual.npz",
+          "--limits",
+          "reports/acceptance-completion/vae-legacy-512-limits.json",
+          "--output",
+          "reports/acceptance-completion/vae-legacy-512-anchor.json"
+        ],
+        "status": "fail",
+        "start": 1789300254.377579,
+        "exit_code": 1,
+        "seconds": 0.8136310577392578
+      }
+    ],
+    [
+      {
+        "name": "ar-long-bounded-reference",
+        "command": [
+          ".oracle/bin/python",
+          "tools/oracle.py",
+          "ar",
+          "--model",
+          "models/hf-cache/models--m-a-p--YuE2-3B/snapshots/1a96eca688d6ae5d7f0feb88573fec89920fcd19",
+          "--vae",
+          "/Users/vanch/yue2-mlx/models/hf-cache/models--m-a-p--YuE2-Vae/snapshots/95535e72a97bc0f09b8ada125d26b4009428c0e8",
+          "--lengths",
+          "6144",
+          "12000",
+          "--prefill-chunk-size",
+          "1024",
+          "--output",
+          "outputs/acceptance-completion/ar-long-bounded-torch",
+          "--require-ac"
+        ],
+        "status": "fail",
+        "start": 1789301943.018604,
+        "exit_code": 1,
+        "seconds": 23.523913860321045
+      },
+      {
+        "name": "ar-song-negative-bounded-reference",
+        "command": [
+          ".oracle/bin/python",
+          "tools/oracle.py",
+          "ar",
+          "--model",
+          "models/hf-cache/models--m-a-p--YuE2-3B/snapshots/1a96eca688d6ae5d7f0feb88573fec89920fcd19",
+          "--vae",
+          "/Users/vanch/yue2-mlx/models/hf-cache/models--m-a-p--YuE2-Vae/snapshots/95535e72a97bc0f09b8ada125d26b4009428c0e8",
+          "--lengths",
+          "128",
+          "1024",
+          "6144",
+          "--branch",
+          "negative",
+          "--source",
+          "outputs/precision-comparison/full-song-8bit",
+          "--prefill-chunk-size",
+          "1024",
+          "--output",
+          "outputs/acceptance-completion/ar-song-negative-bounded-torch",
+          "--require-ac"
+        ],
+        "status": "pass",
+        "start": 1789301966.542928,
+        "exit_code": 0,
+        "seconds": 14.894236087799072
+      },
+      {
+        "name": "ar-song-negative-bounded-calibration",
+        "command": [
+          ".oracle/bin/python",
+          "tools/calibrate.py",
+          "ar",
+          "--model",
+          "models/hf-cache/models--m-a-p--YuE2-3B/snapshots/1a96eca688d6ae5d7f0feb88573fec89920fcd19",
+          "--oracle",
+          "outputs/acceptance-completion/ar-song-negative-bounded-torch",
+          "--output",
+          "outputs/acceptance-completion/ar-song-negative-bounded-fp32",
+          "--require-ac"
+        ],
+        "status": "pass",
+        "start": 1789301981.43756,
+        "exit_code": 0,
+        "seconds": 15.530797004699707
+      },
+      {
+        "name": "ar-song-negative-bounded-limits",
+        "command": [
+          ".runtime/bin/python",
+          "tools/limits.py",
+          "ar",
+          "--oracle",
+          "outputs/acceptance-completion/ar-song-negative-bounded-torch",
+          "--calibration",
+          "outputs/acceptance-completion/ar-song-negative-bounded-fp32",
+          "--output",
+          "reports/acceptance-completion/ar-song-negative-bounded-limits.json"
+        ],
+        "status": "pass",
+        "start": 1789301996.968736,
+        "exit_code": 0,
+        "seconds": 0.8743190765380859
+      },
+      {
+        "name": "ar-song-negative-bounded-fidelity",
+        "command": [
+          ".runtime/bin/python",
+          "tools/fidelity.py",
+          "ar",
+          "--oracle",
+          "outputs/acceptance-completion/ar-song-negative-bounded-torch",
+          "--model",
+          "models/converted",
+          "--limits",
+          "reports/acceptance-completion/ar-song-negative-bounded-limits.json",
+          "--output",
+          "outputs/acceptance-completion/ar-song-negative-bounded-mlx",
+          "--require-ac",
+          "--prefill-chunk-size",
+          "1024"
+        ],
+        "status": "fail",
+        "start": 1789301997.843422,
+        "exit_code": 1,
+        "seconds": 9.416920185089111
+      },
+      {
+        "name": "ar-song-negative-bounded-anchor",
+        "command": [
+          ".runtime/bin/python",
+          "tools/limits.py",
+          "ar",
+          "--oracle",
+          "outputs/acceptance-completion/ar-song-negative-bounded-torch",
+          "--calibration",
+          "outputs/acceptance-completion/ar-song-negative-bounded-fp32",
+          "--actual",
+          "outputs/acceptance-completion/ar-song-negative-bounded-mlx/ar-actual.npz",
+          "--limits",
+          "reports/acceptance-completion/ar-song-negative-bounded-limits.json",
+          "--output",
+          "reports/acceptance-completion/ar-song-negative-bounded-anchor.json"
+        ],
+        "status": "fail",
+        "start": 1789302007.26086,
+        "exit_code": 1,
+        "seconds": 0.8992948532104492
+      },
+      {
+        "name": "ar-long-prefix-bounded-reference",
+        "command": [
+          ".oracle/bin/python",
+          "tools/oracle.py",
+          "ar",
+          "--model",
+          "models/hf-cache/models--m-a-p--YuE2-3B/snapshots/1a96eca688d6ae5d7f0feb88573fec89920fcd19",
+          "--vae",
+          "/Users/vanch/yue2-mlx/models/hf-cache/models--m-a-p--YuE2-Vae/snapshots/95535e72a97bc0f09b8ada125d26b4009428c0e8",
+          "--lengths",
+          "12000",
+          "--source",
+          "outputs/acceptance-completion/fixtures/long-plan",
+          "--prefill-chunk-size",
+          "1024",
+          "--output",
+          "outputs/acceptance-completion/ar-long-prefix-bounded-torch",
+          "--require-ac"
+        ],
+        "status": "fail",
+        "start": 1789302008.160563,
+        "exit_code": 1,
+        "seconds": 15.784714937210083
+      },
+      {
+        "name": "vae-default-512-fp64-calibration",
+        "command": [
+          ".oracle/bin/python",
+          "tools/calibrate_vae.py",
+          "--vae",
+          "/Users/vanch/yue2-mlx/models/hf-cache/models--m-a-p--YuE2-Vae/snapshots/95535e72a97bc0f09b8ada125d26b4009428c0e8",
+          "--latents",
+          "outputs/acceptance-completion/fixtures/vae-512.npy",
+          "--output",
+          "outputs/acceptance-completion/vae-default-512-fp64"
+        ],
+        "status": "pass",
+        "start": 1789302023.945715,
+        "exit_code": 0,
+        "seconds": 8.134696960449219
+      },
+      {
+        "name": "vae-default-512-fp64-limits",
+        "command": [
+          ".runtime/bin/python",
+          "tools/limits.py",
+          "vae",
+          "--oracle",
+          "outputs/acceptance-completion/vae-default-512-torch",
+          "--calibration",
+          "outputs/acceptance-completion/vae-default-512-fp64",
+          "--vae-fp64",
+          "--output",
+          "reports/acceptance-completion/vae-default-512-fp64-limits.json"
+        ],
+        "status": "pass",
+        "start": 1789302032.080829,
+        "exit_code": 0,
+        "seconds": 0.7531461715698242
+      },
+      {
+        "name": "vae-default-512-fp64-fidelity",
+        "command": [
+          ".runtime/bin/python",
+          "tools/fidelity.py",
+          "vae",
+          "--oracle",
+          "outputs/acceptance-completion/vae-default-512-torch",
+          "--vae",
+          "/Users/vanch/yue2-mlx/models/hf-cache/models--m-a-p--YuE2-Vae/snapshots/95535e72a97bc0f09b8ada125d26b4009428c0e8",
+          "--latents",
+          "outputs/acceptance-completion/fixtures/vae-512.npy",
+          "--limits",
+          "reports/acceptance-completion/vae-default-512-fp64-limits.json",
+          "--output",
+          "outputs/acceptance-completion/vae-default-512-fp64-budget-mlx",
+          "--require-ac"
+        ],
+        "status": "pass",
+        "start": 1789302032.83442,
+        "exit_code": 0,
+        "seconds": 3.7131619453430176
+      },
+      {
+        "name": "vae-default-512-fp64-anchor",
+        "command": [
+          ".runtime/bin/python",
+          "tools/limits.py",
+          "vae",
+          "--oracle",
+          "outputs/acceptance-completion/vae-default-512-torch",
+          "--calibration",
+          "outputs/acceptance-completion/vae-default-512-fp64",
+          "--actual",
+          "outputs/acceptance-completion/vae-default-512-fp64-budget-mlx/vae-actual.npz",
+          "--limits",
+          "reports/acceptance-completion/vae-default-512-fp64-limits.json",
+          "--output",
+          "reports/acceptance-completion/vae-default-512-fp64-anchor.json"
+        ],
+        "status": "pass",
+        "start": 1789302036.5481532,
+        "exit_code": 0,
+        "seconds": 0.8371100425720215
+      },
+      {
+        "name": "vae-legacy-512-fp64-calibration",
+        "command": [
+          ".oracle/bin/python",
+          "tools/calibrate_vae.py",
+          "--vae",
+          "/Users/vanch/yue2-mlx/models/hf-cache/models--m-a-p--YuE2-Vae-legacy/snapshots/5ddd12f79acb90d24b3a672dcd2ebf88da7c92a9",
+          "--latents",
+          "outputs/acceptance-completion/fixtures/vae-512.npy",
+          "--output",
+          "outputs/acceptance-completion/vae-legacy-512-fp64"
+        ],
+        "status": "pass",
+        "start": 1789302037.385706,
+        "exit_code": 0,
+        "seconds": 8.231462955474854
+      },
+      {
+        "name": "vae-legacy-512-fp64-limits",
+        "command": [
+          ".runtime/bin/python",
+          "tools/limits.py",
+          "vae",
+          "--oracle",
+          "outputs/acceptance-completion/vae-legacy-512-torch",
+          "--calibration",
+          "outputs/acceptance-completion/vae-legacy-512-fp64",
+          "--vae-fp64",
+          "--output",
+          "reports/acceptance-completion/vae-legacy-512-fp64-limits.json"
+        ],
+        "status": "pass",
+        "start": 1789302045.617661,
+        "exit_code": 0,
+        "seconds": 0.7551028728485107
+      },
+      {
+        "name": "vae-legacy-512-fp64-fidelity",
+        "command": [
+          ".runtime/bin/python",
+          "tools/fidelity.py",
+          "vae",
+          "--oracle",
+          "outputs/acceptance-completion/vae-legacy-512-torch",
+          "--vae",
+          "/Users/vanch/yue2-mlx/models/hf-cache/models--m-a-p--YuE2-Vae-legacy/snapshots/5ddd12f79acb90d24b3a672dcd2ebf88da7c92a9",
+          "--latents",
+          "outputs/acceptance-completion/fixtures/vae-512.npy",
+          "--limits",
+          "reports/acceptance-completion/vae-legacy-512-fp64-limits.json",
+          "--output",
+          "outputs/acceptance-completion/vae-legacy-512-fp64-budget-mlx",
+          "--require-ac"
+        ],
+        "status": "pass",
+        "start": 1789302046.373234,
+        "exit_code": 0,
+        "seconds": 3.6720409393310547
+      },
+      {
+        "name": "vae-legacy-512-fp64-anchor",
+        "command": [
+          ".runtime/bin/python",
+          "tools/limits.py",
+          "vae",
+          "--oracle",
+          "outputs/acceptance-completion/vae-legacy-512-torch",
+          "--calibration",
+          "outputs/acceptance-completion/vae-legacy-512-fp64",
+          "--actual",
+          "outputs/acceptance-completion/vae-legacy-512-fp64-budget-mlx/vae-actual.npz",
+          "--limits",
+          "reports/acceptance-completion/vae-legacy-512-fp64-limits.json",
+          "--output",
+          "reports/acceptance-completion/vae-legacy-512-fp64-anchor.json"
+        ],
+        "status": "pass",
+        "start": 1789302050.045822,
+        "exit_code": 0,
+        "seconds": 0.8404691219329834
+      },
+      {
+        "name": "transcription-generated-torch",
+        "command": [
+          ".oracle/bin/python",
+          "tools/transcription_oracle.py",
+          "torch",
+          "--model",
+          "/Users/vanch/yue2-mlx/models/hf-cache/models--m-a-p--SheetSage2/snapshots/eab522a8168e8b8b8c4856bf8609cd86198f01fe",
+          "--parent",
+          "/Users/vanch/yue2-mlx/models/hf-cache/models--m-a-p--MERT-v2-FullSong/snapshots/d8ba1c745e733b3908ce6ad16ebeb17ac7600a42",
+          "--input",
+          "outputs/transcription-oracle-input.npz",
+          "--generate",
+          "--task",
+          "melody-full",
+          "--output",
+          "outputs/acceptance-completion/transcription-generated-torch"
+        ],
+        "status": "pass",
+        "start": 1789302050.887163,
+        "exit_code": 0,
+        "seconds": 24.912814140319824
+      },
+      {
+        "name": "transcription-generated-mlx",
+        "command": [
+          ".runtime/bin/python",
+          "tools/transcription_oracle.py",
+          "mlx",
+          "--model",
+          "/Users/vanch/yue2-mlx/models/hf-cache/models--m-a-p--SheetSage2/snapshots/eab522a8168e8b8b8c4856bf8609cd86198f01fe",
+          "--parent",
+          "/Users/vanch/yue2-mlx/models/hf-cache/models--m-a-p--MERT-v2-FullSong/snapshots/d8ba1c745e733b3908ce6ad16ebeb17ac7600a42",
+          "--input",
+          "outputs/transcription-oracle-input.npz",
+          "--generate",
+          "--task",
+          "melody-full",
+          "--output",
+          "outputs/acceptance-completion/transcription-generated-mlx"
+        ],
+        "status": "pass",
+        "start": 1789302075.800473,
+        "exit_code": 0,
+        "seconds": 10.572009086608887
+      },
+      {
+        "name": "transcription-generated-compare",
+        "command": [
+          ".runtime/bin/python",
+          "tools/compare_transcription.py",
+          "--reference",
+          "outputs/acceptance-completion/transcription-generated-torch",
+          "--actual",
+          "outputs/acceptance-completion/transcription-generated-mlx",
+          "--output",
+          "reports/acceptance-completion/transcription-generated-comparison.json"
+        ],
+        "status": "pass",
+        "start": 1789302086.3729641,
+        "exit_code": 0,
+        "seconds": 0.7765886783599854
+      }
+    ],
+    [
+      {
+        "name": "ar-long-prefill256-reference",
+        "command": [
+          ".oracle/bin/python",
+          "tools/oracle.py",
+          "ar",
+          "--model",
+          "models/hf-cache/models--m-a-p--YuE2-3B/snapshots/1a96eca688d6ae5d7f0feb88573fec89920fcd19",
+          "--vae",
+          "/Users/vanch/yue2-mlx/models/hf-cache/models--m-a-p--YuE2-Vae/snapshots/95535e72a97bc0f09b8ada125d26b4009428c0e8",
+          "--lengths",
+          "12000",
+          "--prefill-chunk-size",
+          "256",
+          "--output",
+          "outputs/acceptance-completion/ar-long-prefill256-torch",
+          "--require-ac"
+        ],
+        "status": "fail",
+        "start": 1789302689.4017558,
+        "exit_code": 1,
+        "seconds": 19.58576726913452
+      },
+      {
+        "name": "ar-valid-prefix-prefill256-reference",
+        "command": [
+          ".oracle/bin/python",
+          "tools/oracle.py",
+          "ar",
+          "--model",
+          "models/hf-cache/models--m-a-p--YuE2-3B/snapshots/1a96eca688d6ae5d7f0feb88573fec89920fcd19",
+          "--vae",
+          "/Users/vanch/yue2-mlx/models/hf-cache/models--m-a-p--YuE2-Vae/snapshots/95535e72a97bc0f09b8ada125d26b4009428c0e8",
+          "--lengths",
+          "12000",
+          "--source",
+          "outputs/acceptance-completion/fixtures/long-plan",
+          "--prefill-chunk-size",
+          "256",
+          "--output",
+          "outputs/acceptance-completion/ar-valid-prefix-prefill256-torch",
+          "--require-ac"
+        ],
+        "status": "fail",
+        "start": 1789302708.987864,
+        "exit_code": 1,
+        "seconds": 18.862465143203735
+      }
+    ],
+    [
+      {
+        "name": "ar-long-layer-cleanup-reference",
+        "command": [
+          ".oracle/bin/python",
+          "tools/oracle.py",
+          "ar",
+          "--model",
+          "models/hf-cache/models--m-a-p--YuE2-3B/snapshots/1a96eca688d6ae5d7f0feb88573fec89920fcd19",
+          "--vae",
+          "/Users/vanch/yue2-mlx/models/hf-cache/models--m-a-p--YuE2-Vae/snapshots/95535e72a97bc0f09b8ada125d26b4009428c0e8",
+          "--lengths",
+          "12000",
+          "--prefill-chunk-size",
+          "256",
+          "--output",
+          "outputs/acceptance-completion/ar-long-layer-cleanup-torch",
+          "--require-ac"
+        ],
+        "status": "fail",
+        "start": 1789302825.008363,
+        "exit_code": 1,
+        "seconds": 18.99101996421814
+      },
+      {
+        "name": "ar-valid-prefix-layer-cleanup-reference",
+        "command": [
+          ".oracle/bin/python",
+          "tools/oracle.py",
+          "ar",
+          "--model",
+          "models/hf-cache/models--m-a-p--YuE2-3B/snapshots/1a96eca688d6ae5d7f0feb88573fec89920fcd19",
+          "--vae",
+          "/Users/vanch/yue2-mlx/models/hf-cache/models--m-a-p--YuE2-Vae/snapshots/95535e72a97bc0f09b8ada125d26b4009428c0e8",
+          "--lengths",
+          "12000",
+          "--source",
+          "outputs/acceptance-completion/fixtures/long-plan",
+          "--prefill-chunk-size",
+          "256",
+          "--output",
+          "outputs/acceptance-completion/ar-valid-prefix-layer-cleanup-torch",
+          "--require-ac"
+        ],
+        "status": "fail",
+        "start": 1789302843.999852,
+        "exit_code": 1,
+        "seconds": 19.096549034118652
+      }
+    ]
+  ],
+  "bounded_full_prefix_ar": [
+    {
+      "name": "ar-long-layerwise-limits",
+      "command": [
+        ".runtime/bin/python",
+        "tools/limits.py",
+        "ar",
+        "--oracle",
+        "outputs/acceptance-completion/ar-long-layerwise-bf16",
+        "--calibration",
+        "outputs/acceptance-completion/ar-long-layerwise-fp32-cpu-attention",
+        "--output",
+        "reports/acceptance-completion/ar-long-layerwise-limits.json"
+      ],
+      "status": "pass",
+      "start": 1789304408.477491,
+      "exit_code": 0,
+      "seconds": 1.0148251056671143
+    },
+    {
+      "name": "ar-long-layerwise-fidelity",
+      "command": [
+        ".runtime/bin/python",
+        "tools/fidelity.py",
+        "ar",
+        "--oracle",
+        "outputs/acceptance-completion/ar-long-layerwise-bf16",
+        "--model",
+        "models/converted",
+        "--limits",
+        "reports/acceptance-completion/ar-long-layerwise-limits.json",
+        "--output",
+        "outputs/acceptance-completion/ar-long-layerwise-mlx",
+        "--require-ac",
+        "--prefill-chunk-size",
+        "256"
+      ],
+      "status": "pass",
+      "start": 1789304409.492613,
+      "exit_code": 0,
+      "seconds": 11.69362497329712
+    },
+    {
+      "name": "ar-long-layerwise-anchor",
+      "command": [
+        ".runtime/bin/python",
+        "tools/limits.py",
+        "ar",
+        "--oracle",
+        "outputs/acceptance-completion/ar-long-layerwise-bf16",
+        "--calibration",
+        "outputs/acceptance-completion/ar-long-layerwise-fp32-cpu-attention",
+        "--actual",
+        "outputs/acceptance-completion/ar-long-layerwise-mlx/ar-actual.npz",
+        "--limits",
+        "reports/acceptance-completion/ar-long-layerwise-limits.json",
+        "--output",
+        "reports/acceptance-completion/ar-long-layerwise-anchor.json"
+      ],
+      "status": "pass",
+      "start": 1789304421.186569,
+      "exit_code": 0,
+      "seconds": 0.7116711139678955
+    },
+    {
+      "name": "ar-valid-prefix-layerwise-limits",
+      "command": [
+        ".runtime/bin/python",
+        "tools/limits.py",
+        "ar",
+        "--oracle",
+        "outputs/acceptance-completion/ar-valid-prefix-layerwise-bf16",
+        "--calibration",
+        "outputs/acceptance-completion/ar-valid-prefix-layerwise-fp32-cpu-attention",
+        "--output",
+        "reports/acceptance-completion/ar-valid-prefix-layerwise-limits.json"
+      ],
+      "status": "pass",
+      "start": 1789304447.908889,
+      "exit_code": 0,
+      "seconds": 0.7093157768249512
+    },
+    {
+      "name": "ar-valid-prefix-layerwise-fidelity",
+      "command": [
+        ".runtime/bin/python",
+        "tools/fidelity.py",
+        "ar",
+        "--oracle",
+        "outputs/acceptance-completion/ar-valid-prefix-layerwise-bf16",
+        "--model",
+        "models/converted",
+        "--limits",
+        "reports/acceptance-completion/ar-valid-prefix-layerwise-limits.json",
+        "--output",
+        "outputs/acceptance-completion/ar-valid-prefix-layerwise-mlx",
+        "--require-ac",
+        "--prefill-chunk-size",
+        "256"
+      ],
+      "status": "pass",
+      "start": 1789304448.618508,
+      "exit_code": 0,
+      "seconds": 11.214595079421997
+    },
+    {
+      "name": "ar-valid-prefix-layerwise-anchor",
+      "command": [
+        ".runtime/bin/python",
+        "tools/limits.py",
+        "ar",
+        "--oracle",
+        "outputs/acceptance-completion/ar-valid-prefix-layerwise-bf16",
+        "--calibration",
+        "outputs/acceptance-completion/ar-valid-prefix-layerwise-fp32-cpu-attention",
+        "--actual",
+        "outputs/acceptance-completion/ar-valid-prefix-layerwise-mlx/ar-actual.npz",
+        "--limits",
+        "reports/acceptance-completion/ar-valid-prefix-layerwise-limits.json",
+        "--output",
+        "reports/acceptance-completion/ar-valid-prefix-layerwise-anchor.json"
+      ],
+      "status": "pass",
+      "start": 1789304459.8334668,
+      "exit_code": 0,
+      "seconds": 0.7091841697692871
+    }
+  ],
+  "complete_greedy_transcription": {
+    "status": "pass",
+    "scope": "Exact complete greedy token trajectory on the recorded input/task only",
+    "reference_tokens": 183,
+    "actual_tokens": 183,
+    "first_mismatch": null,
+    "token_dtype": "int64",
+    "float_metrics": {
+      "memory": {
+        "max_abs": 0.00017011165618896484,
+        "rms_error": 2.4504643868129766e-06,
+        "reference_rms": 0.18983459417275633,
+        "relative_rms_error": 1.2908418497120527e-05,
+        "cosine": 0.9999999999166932,
+        "p99_abs": 8.054077625274658e-06
+      },
+      "logits": {
+        "max_abs": 0.00012683868408203125,
+        "rms_error": 8.826909455402839e-06,
+        "reference_rms": 2.5567606062406028,
+        "relative_rms_error": 3.452380107022107e-06,
+        "cosine": 0.9999999999940541,
+        "p99_abs": 2.956390380859375e-05
+      },
+      "cached": {
+        "max_abs": 2.7418136596679688e-05,
+        "rms_error": 6.913305208080455e-06,
+        "reference_rms": 2.526645359008704,
+        "relative_rms_error": 2.7361597002251237e-06,
+        "cosine": 0.9999999999962631,
+        "p99_abs": 1.7881393432617188e-05
+      }
+    },
+    "float_numerical_acceptance": "measured_not_accepted",
+    "identities": [
+      {
+        "backend": "torch",
+        "elapsed_seconds": 23.084763708000537,
+        "shapes": {
+          "memory": [
+            1,
+            7500,
+            512
+          ],
+          "logits": [
+            1,
+            20,
+            31678
+          ],
+          "cached": [
+            1,
+            1,
+            31678
+          ],
+          "generated": [
+            183
+          ]
+        },
+        "dtypes": {
+          "memory": "float32",
+          "logits": "float32",
+          "cached": "float32",
+          "generated": "int64"
+        },
+        "encoder_context_seconds": 300,
+        "input_audio_seconds": 15.998666666666667,
+        "status": "captured_not_accepted",
+        "input_sha256": "6d0370ad931bf8a860d133dcc736594dc383b3a3c9e4555872223f7243f110f6",
+        "script_sha256": "3df3ed1331a4b0c67f13a24c00adf48e8ee659df6614a630d021ee062e5000c5",
+        "complete_generation": true,
+        "task": "melody-full",
+        "weights_sha256": {
+          "adapter": "b235f68091a5f5b644000f2b5acb57d1e70432aca2b34ab1b9cf27236e1f4274",
+          "parent": "e6dd2ab187d6dd62b6521cd7d8f932e237acf0c5757745a7232082e28391350d",
+          "config": "a986e63f5d831ecb823c11d19cfb371d763f25ae2e614ec9acd714c0b8bb87fd"
+        },
+        "values_sha256": "958bd352af879bc5fd660f5a966e599962a54ed302e9aaa0607c024155276cdc"
+      },
+      {
+        "backend": "mlx",
+        "elapsed_seconds": 9.070263542002067,
+        "shapes": {
+          "memory": [
+            1,
+            7500,
+            512
+          ],
+          "logits": [
+            1,
+            20,
+            31678
+          ],
+          "cached": [
+            1,
+            1,
+            31678
+          ],
+          "generated": [
+            183
+          ]
+        },
+        "dtypes": {
+          "memory": "float32",
+          "logits": "float32",
+          "cached": "float32",
+          "generated": "int64"
+        },
+        "encoder_context_seconds": 300,
+        "input_audio_seconds": 15.998666666666667,
+        "status": "captured_not_accepted",
+        "input_sha256": "6d0370ad931bf8a860d133dcc736594dc383b3a3c9e4555872223f7243f110f6",
+        "script_sha256": "3df3ed1331a4b0c67f13a24c00adf48e8ee659df6614a630d021ee062e5000c5",
+        "complete_generation": true,
+        "task": "melody-full",
+        "weights_sha256": {
+          "adapter": "b235f68091a5f5b644000f2b5acb57d1e70432aca2b34ab1b9cf27236e1f4274",
+          "parent": "e6dd2ab187d6dd62b6521cd7d8f932e237acf0c5757745a7232082e28391350d",
+          "config": "a986e63f5d831ecb823c11d19cfb371d763f25ae2e614ec9acd714c0b8bb87fd"
+        },
+        "values_sha256": "a1bbec7b653d3d802e078802affd35b53ef3b1b7903bbbdff6177dceaf08a0d6"
+      }
+    ],
+    "reference_report_sha256": "6cb8b32b3868a15fa2a662d307ce7996d585deb007ade86138d0f1fd7492055d",
+    "actual_report_sha256": "fa9e4978978d07739439b5d48ac7545a327924b8d145cf48c7c9d544563b6340"
+  },
+  "attention_diagnostic": {
+    "scope": "Diagnostic only; same weights, inputs, states and limits; full attention operand promotion",
+    "cases": [
+      {
+        "name": "promoted-negative",
+        "production_equal": false,
+        "changed_tensors": {
+          "logits_1024": {
+            "different_elements": 180286,
+            "max_abs": 0.140625
+          },
+          "k_1024_1": {
+            "different_elements": 283,
+            "max_abs": 0.03125
+          },
+          "v_1024_1": {
+            "different_elements": 540,
+            "max_abs": 0.0078125
+          },
+          "k_1024_2": {
+            "different_elements": 532,
+            "max_abs": 0.0625
+          },
+          "v_1024_2": {
+            "different_elements": 655,
+            "max_abs": 0.00390625
+          },
+          "k_1024_3": {
+            "different_elements": 527,
+            "max_abs": 0.03125
+          },
+          "v_1024_3": {
+            "different_elements": 729,
+            "max_abs": 0.0029296875
+          },
+          "k_1024_4": {
+            "different_elements": 559,
+            "max_abs": 0.03125
+          },
+          "v_1024_4": {
+            "different_elements": 774,
+            "max_abs": 0.00390625
+          },
+          "k_1024_5": {
+            "different_elements": 575,
+            "max_abs": 0.0625
+          },
+          "v_1024_5": {
+            "different_elements": 784,
+            "max_abs": 0.0029296875
+          },
+          "k_1024_6": {
+            "different_elements": 537,
+            "max_abs": 0.03125
+          },
+          "v_1024_6": {
+            "different_elements": 755,
+            "max_abs": 0.00390625
+          },
+          "k_1024_7": {
+            "different_elements": 609,
+            "max_abs": 0.03125
+          },
+          "v_1024_7": {
+            "different_elements": 777,
+            "max_abs": 0.00390625
+          },
+          "k_1024_8": {
+            "different_elements": 565,
+            "max_abs": 0.03125
+          },
+          "v_1024_8": {
+            "different_elements": 791,
+            "max_abs": 0.005859375
+          },
+          "k_1024_9": {
+            "different_elements": 697,
+            "max_abs": 0.046875
+          },
+          "v_1024_9": {
+            "different_elements": 799,
+            "max_abs": 0.005859375
+          },
+          "k_1024_10": {
+            "different_elements": 618,
+            "max_abs": 0.125
+          },
+          "v_1024_10": {
+            "different_elements": 797,
+            "max_abs": 0.006561279296875
+          },
+          "k_1024_11": {
+            "different_elements": 655,
+            "max_abs": 0.046875
+          },
+          "v_1024_11": {
+            "different_elements": 820,
+            "max_abs": 0.0068359375
+          },
+          "k_1024_12": {
+            "different_elements": 665,
+            "max_abs": 0.03125
+          },
+          "v_1024_12": {
+            "different_elements": 822,
+            "max_abs": 0.0078125
+          },
+          "k_1024_13": {
+            "different_elements": 688,
+            "max_abs": 0.03125
+          },
+          "v_1024_13": {
+            "different_elements": 846,
+            "max_abs": 0.0078125
+          },
+          "k_1024_14": {
+            "different_elements": 730,
+            "max_abs": 0.0625
+          },
+          "v_1024_14": {
+            "different_elements": 837,
+            "max_abs": 0.013671875
+          },
+          "k_1024_15": {
+            "different_elements": 733,
+            "max_abs": 0.125
+          },
+          "v_1024_15": {
+            "different_elements": 825,
+            "max_abs": 0.015625
+          },
+          "k_1024_16": {
+            "different_elements": 743,
+            "max_abs": 0.0625
+          },
+          "v_1024_16": {
+            "different_elements": 854,
+            "max_abs": 0.01171875
+          },
+          "k_1024_17": {
+            "different_elements": 724,
+            "max_abs": 0.0625
+          },
+          "v_1024_17": {
+            "different_elements": 849,
+            "max_abs": 0.017578125
+          },
+          "k_1024_18": {
+            "different_elements": 771,
+            "max_abs": 0.0625
+          },
+          "v_1024_18": {
+            "different_elements": 886,
+            "max_abs": 0.0234375
+          },
+          "k_1024_19": {
+            "different_elements": 777,
+            "max_abs": 0.0625
+          },
+          "v_1024_19": {
+            "different_elements": 880,
+            "max_abs": 0.0205078125
+          },
+          "k_1024_20": {
+            "different_elements": 760,
+            "max_abs": 0.03125
+          },
+          "v_1024_20": {
+            "different_elements": 874,
+            "max_abs": 0.0234375
+          },
+          "k_1024_21": {
+            "different_elements": 754,
+            "max_abs": 0.0625
+          },
+          "v_1024_21": {
+            "different_elements": 875,
+            "max_abs": 0.0234375
+          },
+          "k_1024_22": {
+            "different_elements": 771,
+            "max_abs": 0.0625
+          },
+          "v_1024_22": {
+            "different_elements": 900,
+            "max_abs": 0.03125
+          },
+          "k_1024_23": {
+            "different_elements": 759,
+            "max_abs": 0.125
+          },
+          "v_1024_23": {
+            "different_elements": 873,
+            "max_abs": 0.0390625
+          },
+          "k_1024_24": {
+            "different_elements": 794,
+            "max_abs": 0.0625
+          },
+          "v_1024_24": {
+            "different_elements": 891,
+            "max_abs": 0.046875
+          },
+          "k_1024_25": {
+            "different_elements": 787,
+            "max_abs": 0.0625
+          },
+          "v_1024_25": {
+            "different_elements": 885,
+            "max_abs": 0.0546875
+          },
+          "k_1024_26": {
+            "different_elements": 831,
+            "max_abs": 0.0625
+          },
+          "v_1024_26": {
+            "different_elements": 846,
+            "max_abs": 0.0390625
+          },
+          "k_1024_27": {
+            "different_elements": 799,
+            "max_abs": 0.0625
+          },
+          "v_1024_27": {
+            "different_elements": 875,
+            "max_abs": 0.046875
+          }
+        },
+        "reference_status": "passed",
+        "anchor_status": "failed",
+        "failures": [
+          {
+            "kind": "bound",
+            "tensor": "v_128_15",
+            "group": "cache",
+            "metric": "max_abs",
+            "actual": 0.619870662689209,
+            "upper": 0.5564613342285156,
+            "source": "tensor"
+          },
+          {
+            "kind": "bound",
+            "tensor": "logits_128",
+            "group": "logits",
+            "metric": "max_abs",
+            "actual": 1.8235387802124023,
+            "upper": 1.756739616394043,
+            "source": "tensor"
+          }
+        ]
+      },
+      {
+        "name": "promoted-song-negative",
+        "production_equal": false,
+        "changed_tensors": {
+          "logits_1024": {
+            "different_elements": 69612,
+            "max_abs": 0.125
+          },
+          "k_1024_1": {
+            "different_elements": 316,
+            "max_abs": 0.03125
+          },
+          "v_1024_1": {
+            "different_elements": 457,
+            "max_abs": 0.001953125
+          },
+          "k_1024_2": {
+            "different_elements": 488,
+            "max_abs": 0.046875
+          },
+          "v_1024_2": {
+            "different_elements": 601,
+            "max_abs": 0.001953125
+          },
+          "k_1024_3": {
+            "different_elements": 443,
+            "max_abs": 0.03125
+          },
+          "v_1024_3": {
+            "different_elements": 571,
+            "max_abs": 0.00390625
+          },
+          "k_1024_4": {
+            "different_elements": 433,
+            "max_abs": 0.03125
+          },
+          "v_1024_4": {
+            "different_elements": 622,
+            "max_abs": 0.00390625
+          },
+          "k_1024_5": {
+            "different_elements": 555,
+            "max_abs": 0.03125
+          },
+          "v_1024_5": {
+            "different_elements": 691,
+            "max_abs": 0.00390625
+          },
+          "k_1024_6": {
+            "different_elements": 631,
+            "max_abs": 0.0625
+          },
+          "v_1024_6": {
+            "different_elements": 711,
+            "max_abs": 0.0048828125
+          },
+          "k_1024_7": {
+            "different_elements": 609,
+            "max_abs": 0.0625
+          },
+          "v_1024_7": {
+            "different_elements": 742,
+            "max_abs": 0.005859375
+          },
+          "k_1024_8": {
+            "different_elements": 598,
+            "max_abs": 0.0390625
+          },
+          "v_1024_8": {
+            "different_elements": 780,
+            "max_abs": 0.009765625
+          },
+          "k_1024_9": {
+            "different_elements": 673,
+            "max_abs": 0.0390625
+          },
+          "v_1024_9": {
+            "different_elements": 787,
+            "max_abs": 0.01171875
+          },
+          "k_1024_10": {
+            "different_elements": 636,
+            "max_abs": 0.125
+          },
+          "v_1024_10": {
+            "different_elements": 800,
+            "max_abs": 0.015625
+          },
+          "k_1024_11": {
+            "different_elements": 759,
+            "max_abs": 0.0625
+          },
+          "v_1024_11": {
+            "different_elements": 854,
+            "max_abs": 0.017578125
+          },
+          "k_1024_12": {
+            "different_elements": 771,
+            "max_abs": 0.0625
+          },
+          "v_1024_12": {
+            "different_elements": 865,
+            "max_abs": 0.03125
+          },
+          "k_1024_13": {
+            "different_elements": 735,
+            "max_abs": 0.046875
+          },
+          "v_1024_13": {
+            "different_elements": 860,
+            "max_abs": 0.0390625
+          },
+          "k_1024_14": {
+            "different_elements": 795,
+            "max_abs": 0.0625
+          },
+          "v_1024_14": {
+            "different_elements": 908,
+            "max_abs": 0.046875
+          },
+          "k_1024_15": {
+            "different_elements": 795,
+            "max_abs": 0.0625
+          },
+          "v_1024_15": {
+            "different_elements": 858,
+            "max_abs": 0.04296875
+          },
+          "k_1024_16": {
+            "different_elements": 798,
+            "max_abs": 0.0625
+          },
+          "v_1024_16": {
+            "different_elements": 921,
+            "max_abs": 0.046875
+          },
+          "k_1024_17": {
+            "different_elements": 825,
+            "max_abs": 0.078125
+          },
+          "v_1024_17": {
+            "different_elements": 904,
+            "max_abs": 0.0546875
+          },
+          "k_1024_18": {
+            "different_elements": 816,
+            "max_abs": 0.0625
+          },
+          "v_1024_18": {
+            "different_elements": 904,
+            "max_abs": 0.0546875
+          },
+          "k_1024_19": {
+            "different_elements": 834,
+            "max_abs": 0.078125
+          },
+          "v_1024_19": {
+            "different_elements": 882,
+            "max_abs": 0.05859375
+          },
+          "k_1024_20": {
+            "different_elements": 812,
+            "max_abs": 0.0625
+          },
+          "v_1024_20": {
+            "different_elements": 916,
+            "max_abs": 0.078125
+          },
+          "k_1024_21": {
+            "different_elements": 829,
+            "max_abs": 0.0625
+          },
+          "v_1024_21": {
+            "different_elements": 886,
+            "max_abs": 0.078125
+          },
+          "k_1024_22": {
+            "different_elements": 830,
+            "max_abs": 0.09375
+          },
+          "v_1024_22": {
+            "different_elements": 899,
+            "max_abs": 0.09375
+          },
+          "k_1024_23": {
+            "different_elements": 794,
+            "max_abs": 0.0625
+          },
+          "v_1024_23": {
+            "different_elements": 857,
+            "max_abs": 0.08203125
+          },
+          "k_1024_24": {
+            "different_elements": 776,
+            "max_abs": 0.0625
+          },
+          "v_1024_24": {
+            "different_elements": 898,
+            "max_abs": 0.078125
+          },
+          "k_1024_25": {
+            "different_elements": 795,
+            "max_abs": 0.0625
+          },
+          "v_1024_25": {
+            "different_elements": 872,
+            "max_abs": 0.078125
+          },
+          "k_1024_26": {
+            "different_elements": 796,
+            "max_abs": 0.078125
+          },
+          "v_1024_26": {
+            "different_elements": 862,
+            "max_abs": 0.0625
+          },
+          "k_1024_27": {
+            "different_elements": 803,
+            "max_abs": 0.046875
+          },
+          "v_1024_27": {
+            "different_elements": 867,
+            "max_abs": 0.046875
+          },
+          "logits_6144": {
+            "different_elements": 422160,
+            "max_abs": 0.1875
+          },
+          "k_6144_1": {
+            "different_elements": 1070,
+            "max_abs": 0.03125
+          },
+          "v_6144_1": {
+            "different_elements": 1616,
+            "max_abs": 0.001953125
+          },
+          "k_6144_2": {
+            "different_elements": 1894,
+            "max_abs": 0.0625
+          },
+          "v_6144_2": {
+            "different_elements": 2509,
+            "max_abs": 0.0078125
+          },
+          "k_6144_3": {
+            "different_elements": 1967,
+            "max_abs": 0.046875
+          },
+          "v_6144_3": {
+            "different_elements": 2657,
+            "max_abs": 0.00439453125
+          },
+          "k_6144_4": {
+            "different_elements": 2345,
+            "max_abs": 0.0390625
+          },
+          "v_6144_4": {
+            "different_elements": 2979,
+            "max_abs": 0.0078125
+          },
+          "k_6144_5": {
+            "different_elements": 2434,
+            "max_abs": 0.0625
+          },
+          "v_6144_5": {
+            "different_elements": 3064,
+            "max_abs": 0.0087890625
+          },
+          "k_6144_6": {
+            "different_elements": 2478,
+            "max_abs": 0.0625
+          },
+          "v_6144_6": {
+            "different_elements": 3121,
+            "max_abs": 0.015625
+          },
+          "k_6144_7": {
+            "different_elements": 2498,
+            "max_abs": 0.09375
+          },
+          "v_6144_7": {
+            "different_elements": 3196,
+            "max_abs": 0.0234375
+          },
+          "k_6144_8": {
+            "different_elements": 2461,
+            "max_abs": 0.0625
+          },
+          "v_6144_8": {
+            "different_elements": 3284,
+            "max_abs": 0.03125
+          },
+          "k_6144_9": {
+            "different_elements": 2712,
+            "max_abs": 0.0625
+          },
+          "v_6144_9": {
+            "different_elements": 3234,
+            "max_abs": 0.03515625
+          },
+          "k_6144_10": {
+            "different_elements": 2622,
+            "max_abs": 0.25
+          },
+          "v_6144_10": {
+            "different_elements": 3212,
+            "max_abs": 0.046875
+          },
+          "k_6144_11": {
+            "different_elements": 2862,
+            "max_abs": 0.0625
+          },
+          "v_6144_11": {
+            "different_elements": 3314,
+            "max_abs": 0.046875
+          },
+          "k_6144_12": {
+            "different_elements": 2956,
+            "max_abs": 0.078125
+          },
+          "v_6144_12": {
+            "different_elements": 3457,
+            "max_abs": 0.078125
+          },
+          "k_6144_13": {
+            "different_elements": 2940,
+            "max_abs": 0.09375
+          },
+          "v_6144_13": {
+            "different_elements": 3361,
+            "max_abs": 0.07421875
+          },
+          "k_6144_14": {
+            "different_elements": 2948,
+            "max_abs": 0.125
+          },
+          "v_6144_14": {
+            "different_elements": 3483,
+            "max_abs": 0.0703125
+          },
+          "k_6144_15": {
+            "different_elements": 2835,
+            "max_abs": 0.0625
+          },
+          "v_6144_15": {
+            "different_elements": 3401,
+            "max_abs": 0.0625
+          },
+          "k_6144_16": {
+            "different_elements": 2753,
+            "max_abs": 0.078125
+          },
+          "v_6144_16": {
+            "different_elements": 3335,
+            "max_abs": 0.0625
+          },
+          "k_6144_17": {
+            "different_elements": 2982,
+            "max_abs": 0.0625
+          },
+          "v_6144_17": {
+            "different_elements": 3463,
+            "max_abs": 0.080078125
+          },
+          "k_6144_18": {
+            "different_elements": 2893,
+            "max_abs": 0.078125
+          },
+          "v_6144_18": {
+            "different_elements": 3481,
+            "max_abs": 0.0703125
+          },
+          "k_6144_19": {
+            "different_elements": 3000,
+            "max_abs": 0.078125
+          },
+          "v_6144_19": {
+            "different_elements": 3431,
+            "max_abs": 0.078125
+          },
+          "k_6144_20": {
+            "different_elements": 2834,
+            "max_abs": 0.09375
+          },
+          "v_6144_20": {
+            "different_elements": 3391,
+            "max_abs": 0.07421875
+          },
+          "k_6144_21": {
+            "different_elements": 3104,
+            "max_abs": 0.0625
+          },
+          "v_6144_21": {
+            "different_elements": 3555,
+            "max_abs": 0.080322265625
+          },
+          "k_6144_22": {
+            "different_elements": 3029,
+            "max_abs": 0.0625
+          },
+          "v_6144_22": {
+            "different_elements": 3548,
+            "max_abs": 0.125
+          },
+          "k_6144_23": {
+            "different_elements": 3074,
+            "max_abs": 0.0625
+          },
+          "v_6144_23": {
+            "different_elements": 3511,
+            "max_abs": 0.09375
+          },
+          "k_6144_24": {
+            "different_elements": 3080,
+            "max_abs": 0.078125
+          },
+          "v_6144_24": {
+            "different_elements": 3552,
+            "max_abs": 0.114990234375
+          },
+          "k_6144_25": {
+            "different_elements": 3090,
+            "max_abs": 0.09375
+          },
+          "v_6144_25": {
+            "different_elements": 3519,
+            "max_abs": 0.109375
+          },
+          "k_6144_26": {
+            "different_elements": 2982,
+            "max_abs": 0.0625
+          },
+          "v_6144_26": {
+            "different_elements": 3439,
+            "max_abs": 0.078125
+          },
+          "k_6144_27": {
+            "different_elements": 3080,
+            "max_abs": 0.125
+          },
+          "v_6144_27": {
+            "different_elements": 3378,
+            "max_abs": 0.109375
+          }
+        },
+        "reference_status": "failed",
+        "anchor_status": "failed",
+        "failures": [
+          {
+            "kind": "bound",
+            "tensor": "v_1024_15",
+            "group": "cache",
+            "metric": "max_abs",
+            "actual": 0.16150283813476562,
+            "upper": 0.1568603515625,
+            "source": "tensor"
+          },
+          {
+            "kind": "bound",
+            "tensor": "v_6144_12",
+            "group": "cache",
+            "metric": "max_abs",
+            "actual": 0.17165660858154297,
+            "upper": 0.12234622240066528,
+            "source": "tensor"
+          },
+          {
+            "kind": "reference_comparison",
+            "status": "failed"
+          }
+        ]
+      },
+      {
+        "name": "promoted-nar",
+        "production_equal": true,
+        "changed_tensors": {},
+        "reference_status": "passed",
+        "anchor_status": "failed",
+        "failures": [
+          {
+            "kind": "bound",
+            "tensor": "fixed_velocity_15",
+            "group": "velocity",
+            "metric": "max_abs",
+            "actual": 0.14297056198120117,
+            "upper": 0.1415853500366211,
+            "source": "tensor"
+          }
+        ]
+      }
+    ]
+  },
+  "original_complete_songs": {
+    "english": {
+      "status": "pass_execution_listening_pending",
+      "backend": "original_torch_mps",
+      "request_sha256": "b3c6eb3f7e9e51676213dc1ab9ebde7b6ddaab828a98fb9ac7cd9657453af60d",
+      "script_sha256": "bf2b483067a462cf74005c06312edea34a7202f8e2ed5fab12b6bfa49793cc65",
+      "listening_status": "pending",
+      "comparison": "Independent natural generation; same seed does not imply same RNG trajectory",
+      "audio_seconds": 21.918666666666667,
+      "truncated": {
+        "abc": false,
+        "semantic": false
+      },
+      "timing": {
+        "abc": {
+          "seconds": 0.0,
+          "output_tokens": 0,
+          "external_prefix_tokens": 227
+        },
+        "semantic": {
+          "seconds": 22.00761162501294,
+          "prefill_seconds": 0.5502800410031341,
+          "ttft_seconds": 0.6017503329785541,
+          "output_tokens": 549,
+          "content_tokens": 548,
+          "output_tps": 24.945914593295953,
+          "prefix_tokens": 357,
+          "cfg_branches": 1,
+          "execution": "eager",
+          "attention": "sdpa"
+        },
+        "nar_seconds": 22.17884991603205,
+        "vae_seconds": 1.7233213749714196,
+        "load": {
+          "mot_load_seconds": 0.15900470805354416
+        },
+        "e2e_seconds": 48.510356042010244
+      },
+      "seconds": 52.59410670900252
+    },
+    "chinese": {
+      "status": "pass_execution_listening_pending",
+      "backend": "original_torch_mps",
+      "listening_status": "pending",
+      "request_sha256": "20cd41ea6486d43e0a1e5b66bf97406db906014c7b6d6beb381ab4840366ae8e",
+      "script_sha256": "cfd84ea24c04ec5038c512aa173c9ca2c6daa4ac0b5197e8b6d0bd2d44bdde4f",
+      "reference_helper_sha256": "9f54edb1e7037e722a31fc2eac87d3edf230e8b9439a7ef3cf044c0266d6aeb8",
+      "resumed_original_stage": "/Users/vanch/yue2-mlx/outputs/acceptance-completion/reference-full-song-bounded/semantic-stage",
+      "semantic_sha256": "dd91ff18f7e482b98a624d29903b22b27bc605ca6791d82389537b41f57df0fd",
+      "stage_receipt_sha256": "7ae461439a894c0a437dfee476ca7388d3851c3bed5d685ad9727b17e19b9827",
+      "source_reference_sha256": "27076befbdca789180bd2825bf40c30305c27e24d825c211e17a36d5aaad48db",
+      "staging_helper_sha256": "d6e900d8c20ea7a69810940eb3bc5a4b345b00a219d4c719d329e175bcd576e3",
+      "comparison": "Original AR output resumed with original BF16 modules; phase-specific weight residency; same pinned model, original chunks/noise, 32 midpoint steps; not a speed benchmark",
+      "weights": {
+        "mot": {
+          "files": {
+            "model.safetensors": {
+              "sha256": "1d55c42c1a9875c34f5d736e15078449992b044e807ce2a138e6cf289a1e59e9",
+              "bytes": 7261441640
+            }
+          },
+          "config_sha256": "ad3477bbef890bf98ae196c1e4b44779494a6231c4ab66f32708eabadf265329"
+        },
+        "vae": {
+          "files": {
+            "model.safetensors": {
+              "sha256": "807ce9d5149fa27c5ad3e6582058469852e908f6c5acc8c8aa338e7ab7751346",
+              "bytes": 530512720
+            }
+          },
+          "config_sha256": "f0191bb9694009956de44e0c361a6f1334760be4c8f848e599bde242a54a0970"
+        }
+      },
+      "audio_seconds": 226.51866666666666,
+      "truncated": {
+        "abc": false,
+        "semantic": false
+      },
+      "timing": {
+        "abc": {
+          "seconds": 104.93672241695458,
+          "prefill_seconds": 0.2774181249551475,
+          "ttft_seconds": 0.3091079999576323,
+          "output_tokens": 2317,
+          "content_tokens": 2316,
+          "output_tps": 22.07997302215762,
+          "prefix_tokens": 475,
+          "cfg_branches": 1,
+          "execution": "eager",
+          "attention": "sdpa"
+        },
+        "semantic": {
+          "seconds": 384.80374658398796,
+          "prefill_seconds": 1.5562562919803895,
+          "ttft_seconds": 1.5842629999970086,
+          "output_tokens": 5664,
+          "content_tokens": 5663,
+          "output_tps": 14.71919140673898,
+          "prefix_tokens": 2793,
+          "cfg_branches": 1,
+          "execution": "eager",
+          "attention": "sdpa"
+        },
+        "nar_seconds": 623.848695792025,
+        "vae_seconds": 8.463792165974155,
+        "load": {},
+        "e2e_seconds": 636.2333591670031,
+        "scope": "resumed acoustic/decode process only"
+      },
+      "seconds": 636.7146674999967
+    },
+    "chinese_source_stage_lineage": "Known pinned command and token hashes, but no contemporaneous source-stage weights receipt; not strict lineage approval"
+  },
+  "human_listening": {
+    "status": "pending",
+    "ratings_received": false,
+    "page": "/Users/vanch/yue2-mlx/outputs/acceptance-completion/listening/index.html",
+    "samples": {
+      "english": {
+        "A": {
+          "variant": "原版",
+          "source": "/Users/vanch/yue2-mlx/outputs/acceptance-completion/reference-fixed-score-bf16/song",
+          "audio_sha256": "9d2ff4898b853e89017c4881ef0a2097a0b084aaf107ea69e647517ac64143bd"
+        },
+        "B": {
+          "variant": "MLX 8bit",
+          "source": "/Users/vanch/yue2-mlx/outputs/precision-comparison/fixed-score-8bit",
+          "audio_sha256": "edc7c8016dc5858fa0fe73f79fc04382f1d2bc741b61f3dfcd11871a5f98cd60"
+        },
+        "C": {
+          "variant": "MLX BF16",
+          "source": "/Users/vanch/yue2-mlx/outputs/precision-comparison/fixed-score-bf16",
+          "audio_sha256": "11b952f2f21f0b51de4b6c9aa54a40a43adaa7fd5ecfbcc8ebe7dbdcd8f6a365"
+        }
+      },
+      "chinese": {
+        "A": {
+          "variant": "MLX BF16",
+          "source": "/Users/vanch/yue2-mlx/outputs/precision-comparison/full-song-bf16",
+          "audio_sha256": "dd5638b52904c35399b1cefbbd06100bd96bef691f2bbed109c18390b8142b4e"
+        },
+        "B": {
+          "variant": "原版",
+          "source": "/Users/vanch/yue2-mlx/outputs/acceptance-completion/reference-full-song-staged/song",
+          "audio_sha256": "a870c828af2db707ab7a016dfc6c4d8d7cb195699e285586b3477c653656fb55"
+        },
+        "C": {
+          "variant": "MLX 8bit",
+          "source": "/Users/vanch/yue2-mlx/outputs/precision-comparison/full-song-8bit",
+          "audio_sha256": "6e2f36c831c0d92fa0206bd038b68f0060b5388e1cab2e1b524fc1d90cc28929"
+        }
+      }
+    }
+  },
+  "open_acceptance_conditions": [
+    "strict negative-branch AR/NAR numerical failures",
+    "real-model transcription floating-point tolerance calibration",
+    "human musical-quality review",
+    "unchanged 180–240 second corpus duration gate"
+  ],
+  "scope": "Local M3 Max only; no universal quality equivalence, hardware maximum, or overall speedup claim"
+}

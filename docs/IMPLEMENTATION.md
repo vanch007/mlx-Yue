@@ -24,13 +24,13 @@ Pure MLX transcription is a separate model implementation from the YuE2-3B gener
 
 | Capability | Implementation | Evidence and limits |
 |---|---|---|
-| AR score planning and semantic generation | Native MLX Qwen3, BF16 and optional 8bit AR weights | Five real-checkpoint paths rendered in `outputs/native-five-modes` (intentional 400-token smoke caps); naturally ended English/Chinese recordings in `outputs/precision-comparison`; strict reference AR acceptance remains open |
+| AR score planning and semantic generation | Native MLX Qwen3, BF16 and optional 8bit AR weights | Five naturally ended modes in `outputs/acceptance-completion/complete-modes`; naturally ended English/Chinese precision pairs; strict AR acceptance remains open |
 | Acoustic synthesis | Native MLX BF16, original full attention and 32 midpoint steps | Saved tokens and full FP32 noise support exact-input replay; optimized full-song latents match the original local result element for element |
 | Audio decoder | Native MLX FP32, original Oobleck weights and halo cropping | Real default-checkpoint 40-frame comparison: RMSE 2.82e-7, SNR 115.4 dB (`reports/vae-real-parity.json`) |
 | Requests and stages | Inline/file controls, plan, render-plan, replay, cancellation | Existing API/CLI and artifact-integrity tests; resume verifies completed results and does not resume partial sampling |
 | Serial batches and diagnostics | JSONL batch, upfront validation, per-request receipts, offline doctor | CLI tests cover duplicate IDs, changed requests, hash tampering and completed-result reuse |
 | Score editing and listening | Official ABC inspection, chord removal, score comparison and listening-page helpers | 28 retained upstream helper subtests; score editing regenerates audio |
-| Transcription and cover | Native FP32 MLX MERT2 + LoRA + BART; whole-recording window stitching; ABC/MIDI/LAB export | 16-second real transcription produced 41 notes and six measures in 4.76 s; source-audio cover rendered through the complete native chain with an intentional 1,000-token/40-second smoke cap; independent tiny Torch fixtures cover MERT and cached/full BART |
+| Transcription and cover | Native FP32 MLX MERT2 + LoRA + BART; whole-recording window stitching; ABC/MIDI/LAB export | All three tasks complete two windows on 374.237 s of recorded music; full cover naturally ends at 44.879 s; original/MLX complete greedy decoding agrees on 183 tokens for the captured short input |
 | Offline installation | Torch-free runtime and optional native transcription dependencies | `reports/native-package.json` verifies wheel contents and absence of Torch from the runtime |
 
 The original generator's creation/cover/edit workflows are exposed locally. This
@@ -73,11 +73,44 @@ Apple M3 Max (`applegpu_g15s`); other generations are source-reviewed only.
 `tools/benchmark_nar.py` measures full 32-step solves from integrity-checked saved
 tokens/noise and records conditioning-cache hashes, latent differences and time.
 
-The earlier four strict AR failures inherited from the upstream port are not
-waived. The local 128/1024-token reference captures have high agreement but no
-separately calibrated acceptance limits, and remain `measured_not_accepted`.
+The earlier strict AR failures are not waived. New limits use independent original
+FP32 captures and matching weights/teacher-forced inputs. Positive 128/1024-token
+cases pass; negative-branch cases and one NAR velocity bound fail. The original
+incremental-cache MPS reference exceeds the 16 GiB budget at 12,000 tokens. A
+separately labeled original full-prefix reference with one layer resident at a
+time completes both 12,000-token traces: the normal cached MLX comparator passes
+against BF16 and independent FP32 anchors. FP32 anchor attention uses original
+Torch CPU arithmetic to avoid MPS temporary-workspace growth; no MLX production
+operations move to CPU. See the current completion report for exact bounds and
+failed attempts. Full FP32 attention operand promotion does not remove the other failures.
 
-## Latest regression evidence
+## Current acceptance completion
+
+`reports/acceptance-completion/REPORT.zh-CN.md` supersedes the initial audit status
+for fixed defects and newly exercised workflows. Cancellation/resource propagation,
+saved CLI generation configuration, reserved/case-insensitive batch IDs and the
+Torch dependency in VAE checkpoint export have been repaired. The original audit
+and failed captures remain available; they are not rewritten as passes.
+
+Final regression: 103 passed, 1 M5-only skip, 28 helper subtests passed; lint,
+build and fresh wheel installation passed. Actual save/reload/generation from
+`/tmp` succeeds without Torch and with network/DNS denied, preserving a saved
+nondefault configuration. Its short 17-step render tests configuration restoration
+only; complete-workflow recordings retain the normal 32 steps.
+
+Default and legacy VAE comparisons now cover 512 latent frames with full and
+64/256/1024-frame tiled decoding. Both pass budgets derived independently from the
+original FP32 decoder versus its CPU FP64 arithmetic, and the FP64 anchor check.
+The former tiling-only zero-error budgets are retained as failed attempts. This
+updates calibration evidence without changing production FP32 decoding.
+
+Three naturally ended sustained BF16 runs complete with zero new swap-outs on the
+successful retry. The unchanged 180–240-second corpus gate still fails because each
+song is 169.959 seconds. Human listening and full-model transcription floating-point
+tolerance acceptance remain pending; exact tokens on one fixture do not prove all
+transcription outputs or musical quality equivalent.
+
+## Earlier regression evidence (before acceptance completion)
 
 - `reports/final-tests.log`: 84 passed, 1 skipped (M5-only precision path on M3), 28 upstream helper subtests passed.
 - `reports/optimized-output-equivalence.json`: six BF16/8bit short runs preserve exact semantic tokens, noise, latents and decoded PCM audio.

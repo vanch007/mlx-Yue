@@ -1,0 +1,680 @@
+{
+  "git_head": "8aa09f5f08bbdfd8d9a391afff0bd28d280df3fd",
+  "songs": [
+    {
+      "path": "outputs/native-batch/batch-0",
+      "status": "pass",
+      "frames": 64,
+      "audio_seconds": 2.558666666666667,
+      "truncated": {
+        "abc": false,
+        "semantic": true
+      },
+      "finite": true,
+      "peak": 0.3548237085342407,
+      "rms": 0.05980352589335615,
+      "zero_fraction": 0.0,
+      "ode_steps": 32,
+      "attention_inputs": "native_steel_bfloat16",
+      "precision": "bf16",
+      "identity": "1d74b480ad1d9c1c72549b4002a38ba5e3ecab2626d0f5a83a2d0d8593529fc0",
+      "score_parse": "pass"
+    },
+    {
+      "path": "outputs/native-batch/batch-1",
+      "status": "pass",
+      "frames": 64,
+      "audio_seconds": 2.558666666666667,
+      "truncated": {
+        "abc": false,
+        "semantic": true
+      },
+      "finite": true,
+      "peak": 0.2239152193069458,
+      "rms": 0.030303633182757254,
+      "zero_fraction": 0.0,
+      "ode_steps": 32,
+      "attention_inputs": "native_steel_bfloat16",
+      "precision": "bf16",
+      "identity": "95798d5a3680d9bef45acd31ccc9c427c3a2951e330b08b6afcc1f317f09567e",
+      "score_parse": "pass"
+    },
+    {
+      "path": "outputs/native-cover/song",
+      "status": "pass",
+      "frames": 1000,
+      "audio_seconds": 39.998666666666665,
+      "truncated": {
+        "abc": false,
+        "semantic": true
+      },
+      "finite": true,
+      "peak": 1.0,
+      "rms": 0.15780242378108478,
+      "zero_fraction": 2.604253475115837e-07,
+      "ode_steps": 32,
+      "attention_inputs": "native_steel_bfloat16",
+      "precision": "bf16",
+      "identity": "c1353e1234f68d87fc402c5b9d704be7b5b6f77daa322ca84dddac89c76467af",
+      "score_parse": "pass"
+    },
+    {
+      "path": "outputs/native-five-modes/full_generated",
+      "status": "pass",
+      "frames": 400,
+      "audio_seconds": 15.998666666666667,
+      "truncated": {
+        "abc": false,
+        "semantic": true
+      },
+      "finite": true,
+      "peak": 0.9531421661376953,
+      "rms": 0.17033252460565648,
+      "zero_fraction": 1.237082256854738e-05,
+      "ode_steps": 32,
+      "attention_inputs": "native_steel_bfloat16",
+      "precision": "bf16",
+      "identity": "d2856a626a91bf0116059cce34f9fc41fa78199868513495d12fc0c2bfc431e0",
+      "score_parse": "pass"
+    },
+    {
+      "path": "outputs/native-five-modes/full_supplied",
+      "status": "pass",
+      "frames": 400,
+      "audio_seconds": 15.998666666666667,
+      "truncated": {
+        "abc": false,
+        "semantic": true
+      },
+      "finite": true,
+      "peak": 1.0,
+      "rms": 0.19582096168089957,
+      "zero_fraction": 0.0,
+      "ode_steps": 32,
+      "attention_inputs": "native_steel_bfloat16",
+      "precision": "bf16",
+      "identity": "8773e2ae4c1b093e3aa5e20bb5efbd031f0caf6b367a7499ec2b91caa703cc0e",
+      "score_parse": "pass"
+    },
+    {
+      "path": "outputs/native-five-modes/melody_generated",
+      "status": "pass",
+      "frames": 400,
+      "audio_seconds": 15.998666666666667,
+      "truncated": {
+        "abc": false,
+        "semantic": true
+      },
+      "finite": true,
+      "peak": 0.5562905073165894,
+      "rms": 0.10475269625654825,
+      "zero_fraction": 6.510959246603883e-07,
+      "ode_steps": 32,
+      "attention_inputs": "native_steel_bfloat16",
+      "precision": "bf16",
+      "identity": "9b1eccd1cef465e6f99a94809c7dcc97642a2b8e596f8e2671ad87ba363984d7",
+      "score_parse": "pass"
+    },
+    {
+      "path": "outputs/native-five-modes/melody_supplied",
+      "status": "pass",
+      "frames": 400,
+      "audio_seconds": 15.998666666666667,
+      "truncated": {
+        "abc": false,
+        "semantic": true
+      },
+      "finite": true,
+      "peak": 1.0,
+      "rms": 0.20633759911104643,
+      "zero_fraction": 0.0,
+      "ode_steps": 32,
+      "attention_inputs": "native_steel_bfloat16",
+      "precision": "bf16",
+      "identity": "5105544feedd0189d0e606cc06e9116adeb31005926c097052db66f768af221a",
+      "score_parse": "pass"
+    },
+    {
+      "path": "outputs/native-five-modes/off_none",
+      "status": "pass",
+      "frames": 400,
+      "audio_seconds": 15.998666666666667,
+      "truncated": {
+        "abc": false,
+        "semantic": true
+      },
+      "finite": true,
+      "peak": 0.4793522357940674,
+      "rms": 0.07953185621800488,
+      "zero_fraction": 6.510959246603883e-07,
+      "ode_steps": 32,
+      "attention_inputs": "native_steel_bfloat16",
+      "precision": "bf16",
+      "identity": "3bf50b7ef01ddc9b7b29cf7ccbd010505dc26d1491045d9f74e55d48c99afbbf"
+    },
+    {
+      "path": "outputs/native-quickstart",
+      "status": "pass",
+      "frames": 400,
+      "audio_seconds": 15.998666666666667,
+      "truncated": {
+        "abc": false,
+        "semantic": true
+      },
+      "finite": true,
+      "peak": 1.0,
+      "rms": 0.1723187782743766,
+      "zero_fraction": 0.0,
+      "ode_steps": 32,
+      "attention_inputs": "original",
+      "precision": "bf16",
+      "identity": "d28141e5e7105f7e2cf65e95969885e492492f40c551785905ef8a03fc142455",
+      "score_parse": "pass"
+    },
+    {
+      "path": "outputs/native-render-plan",
+      "status": "pass",
+      "frames": 64,
+      "audio_seconds": 2.558666666666667,
+      "truncated": {
+        "abc": false,
+        "semantic": true
+      },
+      "finite": true,
+      "peak": 0.7276356220245361,
+      "rms": 0.14746825566059757,
+      "zero_fraction": 0.0,
+      "ode_steps": 32,
+      "attention_inputs": "native_steel_bfloat16",
+      "precision": "bf16",
+      "identity": "6d9eb18200a77eaa20ed24c958dfb80a7a8465d75e5bfb621cb9213760bd09c1",
+      "score_parse": "pass"
+    },
+    {
+      "path": "outputs/native-replay",
+      "status": "pass",
+      "frames": 64,
+      "audio_seconds": 2.558666666666667,
+      "truncated": {
+        "abc": false,
+        "semantic": true
+      },
+      "finite": true,
+      "peak": 0.7276356220245361,
+      "rms": 0.14746825566059757,
+      "zero_fraction": 0.0,
+      "ode_steps": 32,
+      "attention_inputs": "native_steel_bfloat16",
+      "precision": "bf16",
+      "identity": "36f745c98ec04d2c3c52d93a0eac47ee3a90075ee4f715be796a8a156038f2e6",
+      "score_parse": "pass"
+    },
+    {
+      "path": "outputs/precision-comparison/fixed-score-8bit",
+      "status": "pass",
+      "frames": 564,
+      "audio_seconds": 22.558666666666667,
+      "truncated": {
+        "abc": false,
+        "semantic": false
+      },
+      "finite": true,
+      "peak": 0.9999998807907104,
+      "rms": 0.20061598585843093,
+      "zero_fraction": 9.235179384124357e-07,
+      "ode_steps": 32,
+      "attention_inputs": "original",
+      "precision": "8bit",
+      "identity": "9bb9fcf673542dff2fc3423f9ae8cde40eab2e11dc1429b9373d0e92216f55d5",
+      "score_parse": "pass"
+    },
+    {
+      "path": "outputs/precision-comparison/fixed-score-bf16",
+      "status": "pass",
+      "frames": 1380,
+      "audio_seconds": 55.19866666666667,
+      "truncated": {
+        "abc": false,
+        "semantic": false
+      },
+      "finite": true,
+      "peak": 0.9999998807907104,
+      "rms": 0.17690540053023943,
+      "zero_fraction": 6.0387932075654006e-06,
+      "ode_steps": 32,
+      "attention_inputs": "original",
+      "precision": "bf16",
+      "identity": "95b5df2488dbe3f9c62b55e134a454ef83c4815a8c79215f33bc55569c392941",
+      "score_parse": "pass"
+    },
+    {
+      "path": "outputs/precision-comparison/full-song-8bit",
+      "status": "pass",
+      "frames": 5107,
+      "audio_seconds": 204.27866666666668,
+      "truncated": {
+        "abc": false,
+        "semantic": false
+      },
+      "finite": true,
+      "peak": 1.0,
+      "rms": 0.1529420623072574,
+      "zero_fraction": 4.8952737763447315e-06,
+      "ode_steps": 32,
+      "attention_inputs": "original",
+      "precision": "8bit",
+      "identity": "caef475e3a0759bd3e6f75cd64794ffeeb3ffbbaf6d07d70726d0e5e2a8fed43",
+      "score_parse": "pass"
+    },
+    {
+      "path": "outputs/precision-comparison/full-song-bf16",
+      "status": "pass",
+      "frames": 4249,
+      "audio_seconds": 169.95866666666666,
+      "truncated": {
+        "abc": false,
+        "semantic": false
+      },
+      "finite": true,
+      "peak": 1.0,
+      "rms": 0.1694573343573147,
+      "zero_fraction": 1.1644988193207761e-06,
+      "ode_steps": 32,
+      "attention_inputs": "original",
+      "precision": "bf16",
+      "identity": "94635a4c3038d6964d72aedfffabd4bb1b2fcb181a6c2aa73de207fb4eb80c4f",
+      "score_parse": "pass"
+    },
+    {
+      "path": "outputs/precision-controlled-baseline/fixed-budget-1-8bit",
+      "status": "pass",
+      "frames": 400,
+      "audio_seconds": 15.998666666666667,
+      "truncated": {
+        "abc": false,
+        "semantic": true
+      },
+      "finite": true,
+      "peak": 1.0,
+      "rms": 0.2097214675880759,
+      "zero_fraction": 0.0,
+      "ode_steps": 32,
+      "attention_inputs": "original",
+      "precision": "8bit",
+      "identity": "4576e28a93a59b05fa21262487a3036cf526ae2a09918bb35fa18f2571f801ab",
+      "score_parse": "pass"
+    },
+    {
+      "path": "outputs/precision-controlled-baseline/fixed-budget-1-bf16",
+      "status": "pass",
+      "frames": 400,
+      "audio_seconds": 15.998666666666667,
+      "truncated": {
+        "abc": false,
+        "semantic": true
+      },
+      "finite": true,
+      "peak": 1.0,
+      "rms": 0.1723187782743766,
+      "zero_fraction": 0.0,
+      "ode_steps": 32,
+      "attention_inputs": "original",
+      "precision": "bf16",
+      "identity": "3a223e84807e29614fe2dd63aeaa04e61432a879e613be94b8bc0d431552f6b5",
+      "score_parse": "pass"
+    },
+    {
+      "path": "outputs/precision-controlled-baseline/fixed-budget-2-8bit",
+      "status": "pass",
+      "frames": 400,
+      "audio_seconds": 15.998666666666667,
+      "truncated": {
+        "abc": false,
+        "semantic": true
+      },
+      "finite": true,
+      "peak": 1.0,
+      "rms": 0.2097214675880759,
+      "zero_fraction": 0.0,
+      "ode_steps": 32,
+      "attention_inputs": "original",
+      "precision": "8bit",
+      "identity": "d570a93ab25e4e6ddc4f05d828564218f774b478e2ca2455dcfd6ce6922d5274",
+      "score_parse": "pass"
+    },
+    {
+      "path": "outputs/precision-controlled-baseline/fixed-budget-2-bf16",
+      "status": "pass",
+      "frames": 400,
+      "audio_seconds": 15.998666666666667,
+      "truncated": {
+        "abc": false,
+        "semantic": true
+      },
+      "finite": true,
+      "peak": 1.0,
+      "rms": 0.1723187782743766,
+      "zero_fraction": 0.0,
+      "ode_steps": 32,
+      "attention_inputs": "original",
+      "precision": "bf16",
+      "identity": "c89c71c0f20def9d1633540deb483815ff83b67ee69946bac8e26572558969ba",
+      "score_parse": "pass"
+    },
+    {
+      "path": "outputs/precision-controlled-baseline/fixed-budget-3-8bit",
+      "status": "pass",
+      "frames": 400,
+      "audio_seconds": 15.998666666666667,
+      "truncated": {
+        "abc": false,
+        "semantic": true
+      },
+      "finite": true,
+      "peak": 1.0,
+      "rms": 0.2097214675880759,
+      "zero_fraction": 0.0,
+      "ode_steps": 32,
+      "attention_inputs": "original",
+      "precision": "8bit",
+      "identity": "fc290bea9cdaaa9ca972d41c835805ae78f4b9283bb2711e2c312d0cafebc8c7",
+      "score_parse": "pass"
+    },
+    {
+      "path": "outputs/precision-controlled-baseline/fixed-budget-3-bf16",
+      "status": "pass",
+      "frames": 400,
+      "audio_seconds": 15.998666666666667,
+      "truncated": {
+        "abc": false,
+        "semantic": true
+      },
+      "finite": true,
+      "peak": 1.0,
+      "rms": 0.1723187782743766,
+      "zero_fraction": 0.0,
+      "ode_steps": 32,
+      "attention_inputs": "original",
+      "precision": "bf16",
+      "identity": "4edcc3228f12f56dfe4597056de6d9e7d482b0c4cbc752de4a1c90df1fff78d4",
+      "score_parse": "pass"
+    },
+    {
+      "path": "outputs/precision-controlled-optimized/fixed-budget-1-8bit",
+      "status": "pass",
+      "frames": 400,
+      "audio_seconds": 15.998666666666667,
+      "truncated": {
+        "abc": false,
+        "semantic": true
+      },
+      "finite": true,
+      "peak": 1.0,
+      "rms": 0.2097214675880759,
+      "zero_fraction": 0.0,
+      "ode_steps": 32,
+      "attention_inputs": "native_steel_bfloat16",
+      "precision": "8bit",
+      "identity": "e968acc9afdf4db8f3bbac5f96637462deb91098ea967e15d172a9e268fc7432",
+      "score_parse": "pass"
+    },
+    {
+      "path": "outputs/precision-controlled-optimized/fixed-budget-1-bf16",
+      "status": "pass",
+      "frames": 400,
+      "audio_seconds": 15.998666666666667,
+      "truncated": {
+        "abc": false,
+        "semantic": true
+      },
+      "finite": true,
+      "peak": 1.0,
+      "rms": 0.1723187782743766,
+      "zero_fraction": 0.0,
+      "ode_steps": 32,
+      "attention_inputs": "native_steel_bfloat16",
+      "precision": "bf16",
+      "identity": "8190b0a373e1d1cb3075e18fbc280be3e642ebd85707f0b8ac884f946989b32b",
+      "score_parse": "pass"
+    },
+    {
+      "path": "outputs/precision-controlled-optimized/fixed-budget-2-8bit",
+      "status": "pass",
+      "frames": 400,
+      "audio_seconds": 15.998666666666667,
+      "truncated": {
+        "abc": false,
+        "semantic": true
+      },
+      "finite": true,
+      "peak": 1.0,
+      "rms": 0.2097214675880759,
+      "zero_fraction": 0.0,
+      "ode_steps": 32,
+      "attention_inputs": "native_steel_bfloat16",
+      "precision": "8bit",
+      "identity": "9b24d160f7f53b78c490cb6ab4d9f09c4efd583962115036710393bf1fba004e",
+      "score_parse": "pass"
+    },
+    {
+      "path": "outputs/precision-controlled-optimized/fixed-budget-2-bf16",
+      "status": "pass",
+      "frames": 400,
+      "audio_seconds": 15.998666666666667,
+      "truncated": {
+        "abc": false,
+        "semantic": true
+      },
+      "finite": true,
+      "peak": 1.0,
+      "rms": 0.1723187782743766,
+      "zero_fraction": 0.0,
+      "ode_steps": 32,
+      "attention_inputs": "native_steel_bfloat16",
+      "precision": "bf16",
+      "identity": "0c8bc8bb744f7d6abdd8568771bf0bb6073720f0401df1909d173ec10d696572",
+      "score_parse": "pass"
+    },
+    {
+      "path": "outputs/precision-controlled-optimized/fixed-budget-3-8bit",
+      "status": "pass",
+      "frames": 400,
+      "audio_seconds": 15.998666666666667,
+      "truncated": {
+        "abc": false,
+        "semantic": true
+      },
+      "finite": true,
+      "peak": 1.0,
+      "rms": 0.2097214675880759,
+      "zero_fraction": 0.0,
+      "ode_steps": 32,
+      "attention_inputs": "native_steel_bfloat16",
+      "precision": "8bit",
+      "identity": "527e0838edf3c3637d68fd90922472ca1b22f4ee6b26448697c506a8e86cefaf",
+      "score_parse": "pass"
+    },
+    {
+      "path": "outputs/precision-controlled-optimized/fixed-budget-3-bf16",
+      "status": "pass",
+      "frames": 400,
+      "audio_seconds": 15.998666666666667,
+      "truncated": {
+        "abc": false,
+        "semantic": true
+      },
+      "finite": true,
+      "peak": 1.0,
+      "rms": 0.1723187782743766,
+      "zero_fraction": 0.0,
+      "ode_steps": 32,
+      "attention_inputs": "native_steel_bfloat16",
+      "precision": "bf16",
+      "identity": "e8ac712128520d605762a46b77626b6b596790ee91bb07c05ef3da89cf96c44f",
+      "score_parse": "pass"
+    }
+  ],
+  "resources": [
+    {
+      "path": "outputs/native-cover.resources.json",
+      "monitor_error": null,
+      "exception": null,
+      "peak_gib": 11.610862120985985
+    },
+    {
+      "path": "outputs/native-five-modes/full_generated.resources.json",
+      "monitor_error": null,
+      "exception": null,
+      "peak_gib": 8.839346624910831
+    },
+    {
+      "path": "outputs/native-five-modes/full_supplied.resources.json",
+      "monitor_error": null,
+      "exception": null,
+      "peak_gib": 10.139288641512394
+    },
+    {
+      "path": "outputs/native-five-modes/melody_generated.resources.json",
+      "monitor_error": null,
+      "exception": null,
+      "peak_gib": 10.023092962801456
+    },
+    {
+      "path": "outputs/native-five-modes/melody_supplied.resources.json",
+      "monitor_error": null,
+      "exception": null,
+      "peak_gib": 9.232748746871948
+    },
+    {
+      "path": "outputs/native-five-modes/off_none.resources.json",
+      "monitor_error": null,
+      "exception": null,
+      "peak_gib": 9.969687223434448
+    },
+    {
+      "path": "outputs/native-plan.resources.json",
+      "monitor_error": null,
+      "exception": null,
+      "peak_gib": 0.31358426809310913
+    },
+    {
+      "path": "outputs/native-quickstart.resources.json",
+      "monitor_error": null,
+      "exception": null,
+      "peak_gib": 8.464514449238777
+    },
+    {
+      "path": "outputs/native-render-plan.resources.json",
+      "monitor_error": null,
+      "exception": null,
+      "peak_gib": 7.347997844219208
+    },
+    {
+      "path": "outputs/native-replay.resources.json",
+      "monitor_error": null,
+      "exception": null,
+      "peak_gib": 7.298376239836216
+    },
+    {
+      "path": "outputs/precision-comparison/fixed-score-8bit.resources.json",
+      "monitor_error": null,
+      "exception": null,
+      "peak_gib": 9.812460571527481
+    },
+    {
+      "path": "outputs/precision-comparison/fixed-score-bf16.resources.json",
+      "monitor_error": null,
+      "exception": null,
+      "peak_gib": 9.314367964863777
+    },
+    {
+      "path": "outputs/precision-comparison/full-song-8bit.resources.json",
+      "monitor_error": null,
+      "exception": null,
+      "peak_gib": 11.151755027472973
+    },
+    {
+      "path": "outputs/precision-comparison/full-song-bf16.resources.json",
+      "monitor_error": null,
+      "exception": null,
+      "peak_gib": 10.939383290708065
+    },
+    {
+      "path": "outputs/precision-controlled-baseline/fixed-budget-1-8bit.resources.json",
+      "monitor_error": null,
+      "exception": null,
+      "peak_gib": 8.723227173089981
+    },
+    {
+      "path": "outputs/precision-controlled-baseline/fixed-budget-1-bf16.resources.json",
+      "monitor_error": null,
+      "exception": null,
+      "peak_gib": 9.237951949238777
+    },
+    {
+      "path": "outputs/precision-controlled-baseline/fixed-budget-2-8bit.resources.json",
+      "monitor_error": null,
+      "exception": null,
+      "peak_gib": 8.652334928512573
+    },
+    {
+      "path": "outputs/precision-controlled-baseline/fixed-budget-2-bf16.resources.json",
+      "monitor_error": null,
+      "exception": null,
+      "peak_gib": 8.644797019660473
+    },
+    {
+      "path": "outputs/precision-controlled-baseline/fixed-budget-3-8bit.resources.json",
+      "monitor_error": null,
+      "exception": null,
+      "peak_gib": 8.962027221918106
+    },
+    {
+      "path": "outputs/precision-controlled-baseline/fixed-budget-3-bf16.resources.json",
+      "monitor_error": null,
+      "exception": null,
+      "peak_gib": 8.720251776278019
+    },
+    {
+      "path": "outputs/precision-controlled-optimized/fixed-budget-1-8bit.resources.json",
+      "monitor_error": null,
+      "exception": null,
+      "peak_gib": 10.226629972457886
+    },
+    {
+      "path": "outputs/precision-controlled-optimized/fixed-budget-1-bf16.resources.json",
+      "monitor_error": null,
+      "exception": null,
+      "peak_gib": 10.25348537415266
+    },
+    {
+      "path": "outputs/precision-controlled-optimized/fixed-budget-2-8bit.resources.json",
+      "monitor_error": null,
+      "exception": null,
+      "peak_gib": 9.81951017677784
+    },
+    {
+      "path": "outputs/precision-controlled-optimized/fixed-budget-2-bf16.resources.json",
+      "monitor_error": null,
+      "exception": null,
+      "peak_gib": 9.367315962910652
+    },
+    {
+      "path": "outputs/precision-controlled-optimized/fixed-budget-3-8bit.resources.json",
+      "monitor_error": null,
+      "exception": null,
+      "peak_gib": 9.674383789300919
+    },
+    {
+      "path": "outputs/precision-controlled-optimized/fixed-budget-3-bf16.resources.json",
+      "monitor_error": null,
+      "exception": null,
+      "peak_gib": 8.89433927834034
+    }
+  ],
+  "summary": {
+    "verified": 27,
+    "failed": 0,
+    "naturally_ended": 4
+  }
+}

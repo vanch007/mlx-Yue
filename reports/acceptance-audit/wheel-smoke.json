@@ -1,0 +1,21 @@
+{
+  "status": "pass",
+  "installed_import": {
+    "lyra_file": "/Users/vanch/yue2-mlx/outputs/acceptance-audit-env/lib/python3.12/site-packages/lyra/__init__.py",
+    "torch_installed": false,
+    "cwd": "/private/tmp",
+    "python": "3.12.10 (main, Apr  9 2025, 03:49:38) [Clang 20.1.0 ]"
+  },
+  "network_test": "Python audit hook denied socket.connect and socket.getaddrinfo during real CLI generation; command exited 0",
+  "torch_imported_after_generation": false,
+  "artifact_integrity": "pass",
+  "finite": true,
+  "rms": 0.1474682556605976,
+  "sample_rate": 48000,
+  "audio_seconds": 2.558666666666667,
+  "truncated": {
+    "abc": false,
+    "semantic": true
+  },
+  "scope": "Real 64-token BF16 smoke from installed wheel; intentional cap, not full-song quality acceptance"
+}

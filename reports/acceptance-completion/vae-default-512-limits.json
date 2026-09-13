@@ -1,0 +1,28 @@
+{
+  "vae": {
+    "tensors": {},
+    "audio": {
+      "rms_error": 0.0,
+      "max_abs": 0.0
+    }
+  },
+  "calibration": {
+    "method": "two_equal_reference_precision_error_radii",
+    "reference_npz_sha256": "68efd2c1020a887b0bbe1fb93607387f903a6875910f3a8f98aa55e2e68b2440",
+    "anchor_npz_sha256": "68efd2c1020a887b0bbe1fb93607387f903a6875910f3a8f98aa55e2e68b2440",
+    "anchor_invocation_sha256": "634035ac11d6cf15f46d5b1a4d7df990724b90af7daff4eb2c05186345f855ef",
+    "reference_error_radii": {
+      "upstream_fp32_tiling": {
+        "max_abs": 0.0,
+        "rms_error": 0.0,
+        "reference_rms": 0.14838409508953115,
+        "relative_rms_error": 0.0,
+        "cosine": 1.0,
+        "p99_abs": 0.0
+      }
+    },
+    "uses_port_outputs": false,
+    "metric_rationale": "RMS and maximum absolute error satisfy the triangle inequality",
+    "scope": "FP32 tiling sensitivity"
+  }
+}

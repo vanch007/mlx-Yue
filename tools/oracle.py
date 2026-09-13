@@ -284,6 +284,22 @@ def capture_ar(args, guard):
     weights = model_identity(args.model)
     guard.check()
     model = make_model(args.model)
+    # AR capture never calls the acoustic branch. Release its unused weights so
+    # long-context reference traces fit the same budget without changing AR math.
+    for layer in model.model.layers:
+        for name in ("nar_input_layernorm", "nar_self_attn", "nar_pre_mlp_layernorm", "nar_mlp"):
+            getattr(layer, name).to_empty(device="meta")
+    for name in ("vae2llm", "llm2vae", "time_embedder", "latent_pos_embed"):
+        getattr(model, name).to_empty(device="meta")
+    torch.mps.synchronize()
+    torch.mps.empty_cache()
+    def clear_layer_workspace(_module, _inputs, _output):
+        torch.mps.synchronize()
+        torch.mps.empty_cache()
+
+    # Long original-MPS captures accumulate unused workspaces within a single
+    # prefill across 28 layers. Reclaim them without changing tensor arithmetic.
+    cache_hooks = [layer.register_forward_hook(clear_layer_workspace) for layer in model.model.layers]
     outputs, metadata = {}, []
     partial_npz = args.output / "ar.partial.npz"
     partial_json = args.output / "ar.partial.json"
@@ -327,6 +343,8 @@ def capture_ar(args, guard):
                             logits_to_keep=1,
                         ).logits[0, -1]
                         guard.check()
+                        torch.mps.synchronize()
+                        torch.mps.empty_cache()
                     if logits is None:
                         raise RuntimeError("AR fixture requires a nonempty prefill")
                     captured_logits = [logits.float().cpu().numpy()]
@@ -393,6 +411,7 @@ def capture_ar(args, guard):
             "cases": metadata,
             "model": weights,
             "dtype": "bfloat16",
+            "storage_policy": "unused acoustic weights released; unused MPS buffers cleared after each AR layer and prefill chunk",
             "input_sequence": input_sequence,
             "prefill": {
                 "chunk_size": args.prefill_chunk_size,
@@ -405,6 +424,8 @@ def capture_ar(args, guard):
         partial_json.unlink(missing_ok=True)
         return {"cases": metadata, "dtype": "bfloat16", "input_sequence": input_sequence}
     finally:
+        for hook in cache_hooks:
+            hook.remove()
         del model
         torch.mps.empty_cache()
 

@@ -1,0 +1,12 @@
+{
+  "status": "pass",
+  "wheel_sha256": "003eb4d28ef7e912e24f8169e925f53a4ccca6187045efd54539c6cd15df4285",
+  "native_python_files": 35,
+  "source_equals_wheel_equals_isolated_install": true,
+  "tested_wheel_sha256": "d0d36246e18cdd07c2e5c646544a15b6ff0ac19ea495392f44aced1f6d568d00",
+  "changes_since_runtime_test": [
+    "lyra_yue2-0.1.0.dist-info/METADATA",
+    "lyra_yue2-0.1.0.dist-info/RECORD"
+  ],
+  "note": "Final README metadata updated after generation test; all package code remains identical to the tested wheel/install"
+}

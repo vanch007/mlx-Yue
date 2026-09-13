@@ -8,11 +8,16 @@ import sys
 def run(args):
     from ..measure import GPUExecution
     from ..transcription.pipeline import transcribe
-    with GPUExecution(memory_budget_gib=args.memory_budget_gib):
+    with GPUExecution(memory_budget_gib=args.memory_budget_gib) as guard:
+        def cancelled():
+            guard.check()
+            return False
+
         result = transcribe(args.audio, args.output, model_path=args.model, base_model=args.base_model,
                             offline=args.offline, cache_dir=args.cache_dir, task=args.task,
-                            preset=args.preset, max_seconds=args.max_seconds,
+                            preset=args.preset, max_seconds=args.max_seconds, cancelled=cancelled,
                             progress=None if args.quiet else lambda value: print(json.dumps(value), file=sys.stderr))
+        guard.check()
     print(json.dumps({k: result[k] for k in ('status', 'backend', 'duration_seconds', 'truncated', 'elapsed_seconds')}, indent=2))
     if result['status'] != 'complete':
         raise RuntimeError(f"Transcription produced no usable ABC: {result.get('abc_error')}")

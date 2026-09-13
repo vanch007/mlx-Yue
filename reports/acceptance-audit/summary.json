@@ -1,0 +1,45 @@
+{
+  "status": "fail",
+  "verdict": "request_changes",
+  "git_head": "8aa09f5f08bbdfd8d9a391afff0bd28d280df3fd",
+  "blocking_findings": [
+    {
+      "id": "A1",
+      "priority": "P1",
+      "status": "reproduced",
+      "title": "Transcription cancellation and resource failures not promptly propagated"
+    },
+    {
+      "id": "A2",
+      "priority": "P2",
+      "status": "reproduced",
+      "title": "Saved generation config lost on CLI reload"
+    },
+    {
+      "id": "A3",
+      "priority": "P2",
+      "status": "reproduced",
+      "title": "Batch request id collides with batch.json manifest"
+    }
+  ],
+  "fresh_checks": {
+    "pytest": {
+      "passed": 84,
+      "skipped": 1,
+      "subtests_passed": 28
+    },
+    "lint": "pass",
+    "build": "pass",
+    "isolated_wheel_offline_smoke": "pass",
+    "historical_artifacts_verified": 27,
+    "naturally_ended_artifacts": 4
+  },
+  "open_acceptance": [
+    "matched_reference_numerical_gates",
+    "complete_mode_and_cover_workflows",
+    "real_multiwindow_transcription",
+    "current_runtime_sustained_generation",
+    "complete_song_quality_comparison"
+  ],
+  "production_code_changed": false
+}

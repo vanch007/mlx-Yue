@@ -1,0 +1,174 @@
+[
+  {
+    "name": "transcribe-full",
+    "command": [
+      ".runtime/bin/python",
+      "-m",
+      "lyra.music_tools.transcribe",
+      "outputs/acceptance-completion/fixtures/multiwindow.flac",
+      "--output",
+      "outputs/acceptance-completion/transcribe-full",
+      "--model",
+      "/Users/vanch/yue2-mlx/models/hf-cache/models--m-a-p--SheetSage2/snapshots/eab522a8168e8b8b8c4856bf8609cd86198f01fe",
+      "--base-model",
+      "/Users/vanch/yue2-mlx/models/hf-cache/models--m-a-p--MERT-v2-FullSong/snapshots/d8ba1c745e733b3908ce6ad16ebeb17ac7600a42",
+      "--offline",
+      "--task",
+      "full"
+    ],
+    "status": "pass",
+    "start": 1789300278.6370182,
+    "exit_code": 0,
+    "seconds": 22.890397787094116
+  },
+  {
+    "name": "transcribe-melody-full",
+    "command": [
+      ".runtime/bin/python",
+      "-m",
+      "lyra.music_tools.transcribe",
+      "outputs/acceptance-completion/fixtures/multiwindow.flac",
+      "--output",
+      "outputs/acceptance-completion/transcribe-melody-full",
+      "--model",
+      "/Users/vanch/yue2-mlx/models/hf-cache/models--m-a-p--SheetSage2/snapshots/eab522a8168e8b8b8c4856bf8609cd86198f01fe",
+      "--base-model",
+      "/Users/vanch/yue2-mlx/models/hf-cache/models--m-a-p--MERT-v2-FullSong/snapshots/d8ba1c745e733b3908ce6ad16ebeb17ac7600a42",
+      "--offline",
+      "--task",
+      "melody-full"
+    ],
+    "status": "pass",
+    "start": 1789300301.527807,
+    "exit_code": 0,
+    "seconds": 21.879110097885132
+  },
+  {
+    "name": "transcribe-melody-vocal",
+    "command": [
+      ".runtime/bin/python",
+      "-m",
+      "lyra.music_tools.transcribe",
+      "outputs/acceptance-completion/fixtures/multiwindow.flac",
+      "--output",
+      "outputs/acceptance-completion/transcribe-melody-vocal",
+      "--model",
+      "/Users/vanch/yue2-mlx/models/hf-cache/models--m-a-p--SheetSage2/snapshots/eab522a8168e8b8b8c4856bf8609cd86198f01fe",
+      "--base-model",
+      "/Users/vanch/yue2-mlx/models/hf-cache/models--m-a-p--MERT-v2-FullSong/snapshots/d8ba1c745e733b3908ce6ad16ebeb17ac7600a42",
+      "--offline",
+      "--task",
+      "melody-vocal"
+    ],
+    "status": "pass",
+    "start": 1789300323.4073322,
+    "exit_code": 0,
+    "seconds": 19.42368483543396
+  },
+  {
+    "name": "complete-modes",
+    "command": [
+      ".runtime/bin/python",
+      "tools/acceptance.py",
+      "modes",
+      "--complete-modes",
+      "--model",
+      "/Users/vanch/yue2-mlx/models/converted",
+      "--vae",
+      "/Users/vanch/yue2-mlx/models/hf-cache/models--m-a-p--YuE2-Vae/snapshots/95535e72a97bc0f09b8ada125d26b4009428c0e8",
+      "--require-ac",
+      "--output",
+      "outputs/acceptance-completion/complete-modes"
+    ],
+    "status": "pass",
+    "start": 1789300342.83147,
+    "exit_code": 0,
+    "seconds": 379.3297760486603
+  },
+  {
+    "name": "complete-cover",
+    "command": [
+      ".runtime/bin/yue2-mlx",
+      "cover",
+      "--request",
+      "outputs/acceptance-completion/fixtures/cover-request.json",
+      "--audio",
+      "outputs/precision-comparison/fixed-score-bf16/audio.flac",
+      "--task",
+      "full",
+      "--transcription-model",
+      "/Users/vanch/yue2-mlx/models/hf-cache/models--m-a-p--SheetSage2/snapshots/eab522a8168e8b8b8c4856bf8609cd86198f01fe",
+      "--base-model",
+      "/Users/vanch/yue2-mlx/models/hf-cache/models--m-a-p--MERT-v2-FullSong/snapshots/d8ba1c745e733b3908ce6ad16ebeb17ac7600a42",
+      "--model",
+      "/Users/vanch/yue2-mlx/models/converted",
+      "--vae",
+      "/Users/vanch/yue2-mlx/models/hf-cache/models--m-a-p--YuE2-Vae/snapshots/95535e72a97bc0f09b8ada125d26b4009428c0e8",
+      "--offline",
+      "--require-ac",
+      "--output",
+      "outputs/acceptance-completion/complete-cover"
+    ],
+    "status": "pass",
+    "start": 1789300722.16162,
+    "exit_code": 0,
+    "seconds": 76.79296612739563
+  },
+  {
+    "name": "reference-fixed-score-bf16",
+    "command": [
+      ".oracle/bin/python",
+      "tools/reference_song.py",
+      "--request",
+      "outputs/precision-comparison/fixed-score-bf16/request.json",
+      "--model",
+      "models/hf-cache/models--m-a-p--YuE2-3B/snapshots/1a96eca688d6ae5d7f0feb88573fec89920fcd19",
+      "--vae",
+      "/Users/vanch/yue2-mlx/models/hf-cache/models--m-a-p--YuE2-Vae/snapshots/95535e72a97bc0f09b8ada125d26b4009428c0e8",
+      "--output",
+      "outputs/acceptance-completion/reference-fixed-score-bf16"
+    ],
+    "status": "pass",
+    "start": 1789300798.954999,
+    "exit_code": 0,
+    "seconds": 53.509257078170776
+  },
+  {
+    "name": "reference-full-song-bf16",
+    "command": [
+      ".oracle/bin/python",
+      "tools/reference_song.py",
+      "--request",
+      "outputs/precision-comparison/full-song-bf16/request.json",
+      "--model",
+      "models/hf-cache/models--m-a-p--YuE2-3B/snapshots/1a96eca688d6ae5d7f0feb88573fec89920fcd19",
+      "--vae",
+      "/Users/vanch/yue2-mlx/models/hf-cache/models--m-a-p--YuE2-Vae/snapshots/95535e72a97bc0f09b8ada125d26b4009428c0e8",
+      "--output",
+      "outputs/acceptance-completion/reference-full-song-bf16"
+    ],
+    "status": "fail",
+    "start": 1789300852.464778,
+    "exit_code": 1,
+    "seconds": 77.2498140335083
+  },
+  {
+    "name": "sustain-retry",
+    "command": [
+      ".runtime/bin/python",
+      "tools/acceptance.py",
+      "sustain",
+      "--model",
+      "/Users/vanch/yue2-mlx/models/converted",
+      "--vae",
+      "/Users/vanch/yue2-mlx/models/hf-cache/models--m-a-p--YuE2-Vae/snapshots/95535e72a97bc0f09b8ada125d26b4009428c0e8",
+      "--require-ac",
+      "--output",
+      "outputs/acceptance-completion/sustain-bf16-retry"
+    ],
+    "status": "fail",
+    "start": 1789300929.715019,
+    "exit_code": 1,
+    "seconds": 956.732194185257
+  }
+]

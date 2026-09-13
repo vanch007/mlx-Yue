@@ -3,9 +3,9 @@ requires = ["hatchling==1.29.0"]
 build-backend = "hatchling.build"
 
 [project]
-name = "lyra-yue2"
+name = "mlx-yue"
 version = "0.1.0"
-description = "Native MLX YuE2 music generation and transcription on Apple Silicon"
+description = "Native Apple Silicon MLX Port for YuE2 Music Generation and Transcription"
 readme = "README.md"
 requires-python = ">=3.12,<3.13"
 license = "Apache-2.0"
@@ -34,14 +34,16 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/daig/yue2-mlx"
-Source = "https://github.com/daig/yue2-mlx"
-Issues = "https://github.com/daig/yue2-mlx/issues"
+Homepage = "https://github.com/vanch007/mlx-Yue"
+Source = "https://github.com/vanch007/mlx-Yue"
+Issues = "https://github.com/vanch007/mlx-Yue/issues"
+Models = "https://huggingface.co/vanch007/mlx-Yue2-3B"
 
 [dependency-groups]
 dev = ["pytest==9.0.3", "ruff==0.15.7", "torch==2.10.0"]
 
 [project.scripts]
+mlx-yue = "lyra.cli:main"
 lyra = "lyra.cli:main"
 yue2-mlx = "lyra.cli:main"
 

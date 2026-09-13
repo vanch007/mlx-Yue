@@ -1,0 +1,125 @@
+{
+  "status": "pass",
+  "scope": "Exact complete greedy token trajectory on the recorded input/task only",
+  "reference_tokens": 183,
+  "actual_tokens": 183,
+  "first_mismatch": null,
+  "token_dtype": "int64",
+  "float_metrics": {
+    "memory": {
+      "max_abs": 0.00017011165618896484,
+      "rms_error": 2.4504643868129766e-06,
+      "reference_rms": 0.18983459417275633,
+      "relative_rms_error": 1.2908418497120527e-05,
+      "cosine": 0.9999999999166932,
+      "p99_abs": 8.054077625274658e-06
+    },
+    "logits": {
+      "max_abs": 0.00012683868408203125,
+      "rms_error": 8.826909455402839e-06,
+      "reference_rms": 2.5567606062406028,
+      "relative_rms_error": 3.452380107022107e-06,
+      "cosine": 0.9999999999940541,
+      "p99_abs": 2.956390380859375e-05
+    },
+    "cached": {
+      "max_abs": 2.7418136596679688e-05,
+      "rms_error": 6.913305208080455e-06,
+      "reference_rms": 2.526645359008704,
+      "relative_rms_error": 2.7361597002251237e-06,
+      "cosine": 0.9999999999962631,
+      "p99_abs": 1.7881393432617188e-05
+    }
+  },
+  "float_numerical_acceptance": "measured_not_accepted",
+  "identities": [
+    {
+      "backend": "torch",
+      "elapsed_seconds": 23.084763708000537,
+      "shapes": {
+        "memory": [
+          1,
+          7500,
+          512
+        ],
+        "logits": [
+          1,
+          20,
+          31678
+        ],
+        "cached": [
+          1,
+          1,
+          31678
+        ],
+        "generated": [
+          183
+        ]
+      },
+      "dtypes": {
+        "memory": "float32",
+        "logits": "float32",
+        "cached": "float32",
+        "generated": "int64"
+      },
+      "encoder_context_seconds": 300,
+      "input_audio_seconds": 15.998666666666667,
+      "status": "captured_not_accepted",
+      "input_sha256": "6d0370ad931bf8a860d133dcc736594dc383b3a3c9e4555872223f7243f110f6",
+      "script_sha256": "3df3ed1331a4b0c67f13a24c00adf48e8ee659df6614a630d021ee062e5000c5",
+      "complete_generation": true,
+      "task": "melody-full",
+      "weights_sha256": {
+        "adapter": "b235f68091a5f5b644000f2b5acb57d1e70432aca2b34ab1b9cf27236e1f4274",
+        "parent": "e6dd2ab187d6dd62b6521cd7d8f932e237acf0c5757745a7232082e28391350d",
+        "config": "a986e63f5d831ecb823c11d19cfb371d763f25ae2e614ec9acd714c0b8bb87fd"
+      },
+      "values_sha256": "958bd352af879bc5fd660f5a966e599962a54ed302e9aaa0607c024155276cdc"
+    },
+    {
+      "backend": "mlx",
+      "elapsed_seconds": 9.070263542002067,
+      "shapes": {
+        "memory": [
+          1,
+          7500,
+          512
+        ],
+        "logits": [
+          1,
+          20,
+          31678
+        ],
+        "cached": [
+          1,
+          1,
+          31678
+        ],
+        "generated": [
+          183
+        ]
+      },
+      "dtypes": {
+        "memory": "float32",
+        "logits": "float32",
+        "cached": "float32",
+        "generated": "int64"
+      },
+      "encoder_context_seconds": 300,
+      "input_audio_seconds": 15.998666666666667,
+      "status": "captured_not_accepted",
+      "input_sha256": "6d0370ad931bf8a860d133dcc736594dc383b3a3c9e4555872223f7243f110f6",
+      "script_sha256": "3df3ed1331a4b0c67f13a24c00adf48e8ee659df6614a630d021ee062e5000c5",
+      "complete_generation": true,
+      "task": "melody-full",
+      "weights_sha256": {
+        "adapter": "b235f68091a5f5b644000f2b5acb57d1e70432aca2b34ab1b9cf27236e1f4274",
+        "parent": "e6dd2ab187d6dd62b6521cd7d8f932e237acf0c5757745a7232082e28391350d",
+        "config": "a986e63f5d831ecb823c11d19cfb371d763f25ae2e614ec9acd714c0b8bb87fd"
+      },
+      "values_sha256": "a1bbec7b653d3d802e078802affd35b53ef3b1b7903bbbdff6177dceaf08a0d6"
+    }
+  ],
+  "reference_report_sha256": "6cb8b32b3868a15fa2a662d307ce7996d585deb007ade86138d0f1fd7492055d",
+  "actual_report_sha256": "fa9e4978978d07739439b5d48ac7545a327924b8d145cf48c7c9d544563b6340"
+}

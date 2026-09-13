@@ -197,7 +197,8 @@ class YuE2Pipeline(ReferencePipeline):
             model = parent / metadata["model"]
             if vae == VAE_REPO:
                 vae = parent / metadata["vae"]
-            kwargs.setdefault("generation_config", GenerationConfig.from_dict(metadata["generation_config"]))
+            if kwargs.get("generation_config") is None:
+                kwargs["generation_config"] = GenerationConfig.from_dict(metadata["generation_config"])
         with Progress(enabled=progress).stage("Resolving model files"):
             if (Path(model) / "conversion.json").is_file():
                 model_path = Path(model)
@@ -448,8 +449,8 @@ class YuE2Pipeline(ReferencePipeline):
         model_identity(self.vae_dir)
         directory.mkdir(parents=True, exist_ok=True)
         shutil.copytree(self.model_dir, directory / "generator")
-        from yue2.storage import copy_model_files
-        copy_model_files(self.vae_dir, directory / "vae")
+        from .checkpoints import copy_vae_checkpoint
+        copy_vae_checkpoint(self.vae_dir, directory / "vae")
         write_json(directory / "pipeline.json", {
             "model": "generator", "vae": "vae", "generation_config": self.generation_config.to_dict(),
             "source_weights": self.weights,

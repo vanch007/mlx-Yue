@@ -1,0 +1,128 @@
+[
+  {
+    "name": "ar-long-layerwise-limits",
+    "command": [
+      ".runtime/bin/python",
+      "tools/limits.py",
+      "ar",
+      "--oracle",
+      "outputs/acceptance-completion/ar-long-layerwise-bf16",
+      "--calibration",
+      "outputs/acceptance-completion/ar-long-layerwise-fp32-cpu-attention",
+      "--output",
+      "reports/acceptance-completion/ar-long-layerwise-limits.json"
+    ],
+    "status": "pass",
+    "start": 1789304408.477491,
+    "exit_code": 0,
+    "seconds": 1.0148251056671143
+  },
+  {
+    "name": "ar-long-layerwise-fidelity",
+    "command": [
+      ".runtime/bin/python",
+      "tools/fidelity.py",
+      "ar",
+      "--oracle",
+      "outputs/acceptance-completion/ar-long-layerwise-bf16",
+      "--model",
+      "models/converted",
+      "--limits",
+      "reports/acceptance-completion/ar-long-layerwise-limits.json",
+      "--output",
+      "outputs/acceptance-completion/ar-long-layerwise-mlx",
+      "--require-ac",
+      "--prefill-chunk-size",
+      "256"
+    ],
+    "status": "pass",
+    "start": 1789304409.492613,
+    "exit_code": 0,
+    "seconds": 11.69362497329712
+  },
+  {
+    "name": "ar-long-layerwise-anchor",
+    "command": [
+      ".runtime/bin/python",
+      "tools/limits.py",
+      "ar",
+      "--oracle",
+      "outputs/acceptance-completion/ar-long-layerwise-bf16",
+      "--calibration",
+      "outputs/acceptance-completion/ar-long-layerwise-fp32-cpu-attention",
+      "--actual",
+      "outputs/acceptance-completion/ar-long-layerwise-mlx/ar-actual.npz",
+      "--limits",
+      "reports/acceptance-completion/ar-long-layerwise-limits.json",
+      "--output",
+      "reports/acceptance-completion/ar-long-layerwise-anchor.json"
+    ],
+    "status": "pass",
+    "start": 1789304421.186569,
+    "exit_code": 0,
+    "seconds": 0.7116711139678955
+  },
+  {
+    "name": "ar-valid-prefix-layerwise-limits",
+    "command": [
+      ".runtime/bin/python",
+      "tools/limits.py",
+      "ar",
+      "--oracle",
+      "outputs/acceptance-completion/ar-valid-prefix-layerwise-bf16",
+      "--calibration",
+      "outputs/acceptance-completion/ar-valid-prefix-layerwise-fp32-cpu-attention",
+      "--output",
+      "reports/acceptance-completion/ar-valid-prefix-layerwise-limits.json"
+    ],
+    "status": "pass",
+    "start": 1789304447.908889,
+    "exit_code": 0,
+    "seconds": 0.7093157768249512
+  },
+  {
+    "name": "ar-valid-prefix-layerwise-fidelity",
+    "command": [
+      ".runtime/bin/python",
+      "tools/fidelity.py",
+      "ar",
+      "--oracle",
+      "outputs/acceptance-completion/ar-valid-prefix-layerwise-bf16",
+      "--model",
+      "models/converted",
+      "--limits",
+      "reports/acceptance-completion/ar-valid-prefix-layerwise-limits.json",
+      "--output",
+      "outputs/acceptance-completion/ar-valid-prefix-layerwise-mlx",
+      "--require-ac",
+      "--prefill-chunk-size",
+      "256"
+    ],
+    "status": "pass",
+    "start": 1789304448.618508,
+    "exit_code": 0,
+    "seconds": 11.214595079421997
+  },
+  {
+    "name": "ar-valid-prefix-layerwise-anchor",
+    "command": [
+      ".runtime/bin/python",
+      "tools/limits.py",
+      "ar",
+      "--oracle",
+      "outputs/acceptance-completion/ar-valid-prefix-layerwise-bf16",
+      "--calibration",
+      "outputs/acceptance-completion/ar-valid-prefix-layerwise-fp32-cpu-attention",
+      "--actual",
+      "outputs/acceptance-completion/ar-valid-prefix-layerwise-mlx/ar-actual.npz",
+      "--limits",
+      "reports/acceptance-completion/ar-valid-prefix-layerwise-limits.json",
+      "--output",
+      "reports/acceptance-completion/ar-valid-prefix-layerwise-anchor.json"
+    ],
+    "status": "pass",
+    "start": 1789304459.8334668,
+    "exit_code": 0,
+    "seconds": 0.7091841697692871
+  }
+]

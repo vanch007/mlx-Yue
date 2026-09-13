@@ -1,0 +1,96 @@
+[
+  {
+    "name": "final-build",
+    "command": [
+      "/Users/vanch/.local/bin/uv",
+      "build",
+      "--offline"
+    ],
+    "status": "pass",
+    "exit_code": 0,
+    "seconds": 0.5847322940826416
+  },
+  {
+    "name": "final-install",
+    "command": [
+      "/Users/vanch/.local/bin/uv",
+      "pip",
+      "install",
+      "--python",
+      "outputs/acceptance-audit-env/bin/python",
+      "--offline",
+      "--no-deps",
+      "--reinstall-package",
+      "lyra-yue2",
+      "dist/lyra_yue2-0.1.0-py3-none-any.whl"
+    ],
+    "status": "pass",
+    "exit_code": 0,
+    "seconds": 0.055268049240112305
+  },
+  {
+    "name": "installed-wheel-native",
+    "command": [
+      "/Users/vanch/yue2-mlx/outputs/acceptance-audit-env/bin/python",
+      "-I",
+      "/Users/vanch/yue2-mlx/reports/acceptance-completion/test_installed_pipeline.py"
+    ],
+    "status": "pass",
+    "exit_code": 0,
+    "seconds": 24.058949947357178
+  },
+  {
+    "name": "final-tests",
+    "command": [
+      ".venv/bin/pytest",
+      "-q"
+    ],
+    "status": "pass",
+    "exit_code": 0,
+    "seconds": 7.302125930786133
+  },
+  {
+    "name": "final-lint",
+    "command": [
+      ".venv/bin/ruff",
+      "check",
+      "src",
+      "tests",
+      "tools"
+    ],
+    "status": "pass",
+    "exit_code": 0,
+    "seconds": 0.011268138885498047
+  },
+  {
+    "name": "final-artifacts",
+    "command": [
+      ".venv/bin/python",
+      "/Users/vanch/yue2-mlx/reports/acceptance-completion/verify_outputs.py"
+    ],
+    "status": "pass",
+    "exit_code": 0,
+    "seconds": 1.326711893081665
+  },
+  {
+    "name": "final-listening",
+    "command": [
+      ".runtime/bin/python",
+      "/Users/vanch/yue2-mlx/reports/acceptance-completion/build_listening.py"
+    ],
+    "status": "pass",
+    "exit_code": 0,
+    "seconds": 0.07417488098144531
+  },
+  {
+    "name": "final-diff-check",
+    "command": [
+      "git",
+      "diff",
+      "--check"
+    ],
+    "status": "pass",
+    "exit_code": 0,
+    "seconds": 0.00988316535949707
+  }
+]

@@ -45,4 +45,5 @@ htmlcov/
 /reports/upstream-sheetsage2/
 /reports/mlx-source/
 /reports/*-fixture/
-/reports/*.log
+*.log
+reports/**/*.log

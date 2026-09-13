@@ -1,4 +1,10 @@
-# Validation status — BF16 MVP
+# Historical validation status — upstream BF16 MVP
+
+This page records the upstream hybrid M5 runtime before the local native MLX
+port. Its PyTorch decoder, hardware, timings and acceptance outcomes are
+historical, not claims about the current implementation. Current evidence and
+remaining gates are tracked in [the local implementation](../docs/IMPLEMENTATION.md)
+and [the acceptance audit](../reports/acceptance-audit/REPORT.zh-CN.md).
 
 This release exposes the working generation pipeline with explicit open acceptance gates. It does not claim that all reference-equivalence or listening checks pass. No numerical threshold was relaxed to publish the MVP.
 

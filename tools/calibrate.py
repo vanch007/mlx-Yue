@@ -8,6 +8,7 @@ accuracy calibration with explicit weight transfers, not a speed benchmark.
 from __future__ import annotations
 
 import argparse
+from contextlib import ExitStack
 from importlib.metadata import version
 import json
 from pathlib import Path
@@ -82,7 +83,13 @@ def capture_ar(args, guard, model, checkpoint):
     load_ar(model, checkpoint, guard, output_head=True)
     arrays = {}
     cases = []
-    with np.load(args.oracle / "ar.npz", allow_pickle=False) as reference:
+    with np.load(args.oracle / "ar.npz", allow_pickle=False) as reference, ExitStack() as workspace_hooks:
+        def clear_workspace(_module, _inputs, _output):
+            torch.mps.synchronize()
+            torch.mps.empty_cache()
+
+        for layer in model.model.layers:
+            workspace_hooks.callback(layer.register_forward_hook(clear_workspace).remove)
         available = sorted(int(key.removeprefix("ids_")) for key in reference.files if key.startswith("ids_"))
         lengths = available if args.lengths is None else args.lengths
         if any(length not in available for length in lengths):
@@ -129,7 +136,8 @@ def capture_ar(args, guard, model, checkpoint):
                 torch.mps.synchronize()
                 torch.mps.empty_cache()
     checkpoint_arrays(args.output, "ar", arrays, complete=True)
-    return {"lengths": cases, "prefill_chunk_size": args.prefill_chunk_size}
+    return {"lengths": cases, "prefill_chunk_size": args.prefill_chunk_size,
+            "storage_policy": "unused MPS workspaces cleared after each AR layer"}
 
 
 def raw_time(t):

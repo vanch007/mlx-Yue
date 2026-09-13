@@ -7,6 +7,7 @@ import mlx.core as mx
 import numpy as np
 
 from .model import SheetSage2
+from .control import check_cancelled
 from .upstream.tokenization_sheetsage2 import SheetSage2Tokenizer
 from .upstream.generation_sheetsage2 import (
     PromptGrammarState, build_overlap_prefix_tokens, decode_generated_tokens,
@@ -17,8 +18,35 @@ from .upstream.exports_sheetsage2 import export_result
 from yue2.storage import sha256_file, write_json
 
 
+def decode_audio(command, cancelled=None, timeout=600):
+    """Drain both pipes while polling cancellation, and always reap FFmpeg."""
+    check_cancelled(cancelled)
+    deadline = time.monotonic() + timeout
+    with subprocess.Popen(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE) as process:
+        try:
+            while True:
+                check_cancelled(cancelled)
+                remaining = deadline - time.monotonic()
+                if remaining <= 0:
+                    raise subprocess.TimeoutExpired(command, timeout)
+                try:
+                    stdout, stderr = process.communicate(timeout=min(0.2, remaining))
+                    break
+                except subprocess.TimeoutExpired:
+                    continue
+            check_cancelled(cancelled)
+            if process.returncode:
+                raise subprocess.CalledProcessError(process.returncode, command, stdout, stderr)
+            return np.frombuffer(stdout, dtype="<f4")
+        except BaseException:
+            process.kill()
+            process.communicate()
+            raise
+
+
 def generate_tokens(model, tokenizer, waveform, prompts, prefix=None, stop_time=None,
                     cancelled=None, progress=None):
+    check_cancelled(cancelled)
     prefix = list(prefix) if prefix is not None else tokenizer.prompt_prefix(prompts)
     if prefix[-1] == tokenizer.eos_token:
         prefix = prefix[:-1]
@@ -32,8 +60,7 @@ def generate_tokens(model, tokenizer, waveform, prompts, prefix=None, stop_time=
     cache, ids, tokens = None, prefix, list(prefix)
     ended = False
     while len(tokens) < model.config["max_output_seq_len"]:
-        if cancelled is not None and cancelled():
-            raise InterruptedError("Cancelled during transcription decoding")
+        check_cancelled(cancelled)
         logits, cache = model.decode(memory, ids, cache)
         allowed = mx.array(state.allowed(None))
         token = int(mx.argmax(mx.where(allowed, logits[0, -1], -mx.inf)).item())
@@ -68,17 +95,20 @@ def transcribe(audio, output, *, model=None, model_path="m-a-p/SheetSage2",
         raise ValueError("Invalid transcription task or window preset")
     if max_seconds is not None and (not np.isfinite(max_seconds) or max_seconds <= 0):
         raise ValueError("max_seconds must be positive; omit to process the complete recording")
+    check_cancelled(cancelled)
     command = ["ffmpeg", "-v", "error", "-nostdin", "-i", str(source.resolve()), "-vn"]
     if max_seconds is not None:
         command += ["-t", str(max_seconds)]
     command += ["-ac", "1", "-ar", "24000", "-f", "f32le", "pipe:1"]
-    decoded_audio = subprocess.run(command, capture_output=True, timeout=600, check=True)
-    waveform = np.frombuffer(decoded_audio.stdout, dtype="<f4")
+    waveform = decode_audio(command, cancelled)
     if len(waveform) < 1025 or not np.isfinite(waveform).all():
         raise ValueError("Audio must contain at least 1025 finite samples at 24 kHz")
     start = time.perf_counter()
+    check_cancelled(cancelled)
     if model is None:
-        model = SheetSage2.from_pretrained(model_path, base_model, offline=offline, cache_dir=cache_dir)
+        model = SheetSage2.from_pretrained(model_path, base_model, offline=offline,
+                                         cache_dir=cache_dir, cancelled=cancelled)
+    check_cancelled(cancelled)
     cfg = model.config
     tokenizer = SheetSage2Tokenizer(cfg["input_audio_length"], cfg["time_hz"], cfg["tokenizer_schema_version"],
                                     expected_fingerprint=cfg["tokenizer_fingerprint"])
@@ -93,6 +123,7 @@ def transcribe(audio, output, *, model=None, model_path="m-a-p/SheetSage2",
         warnings.append("Paper window/export preset with FFmpeg resampling; not a reproduction of the torchaudio paper frontend")
     output.mkdir(parents=True, exist_ok=True)
     for index, window in enumerate(windows):
+        check_cancelled(cancelled)
         if progress:
             progress({"stage": "encoding", "window": index + 1, "windows": len(windows)})
         prefix, base = None, 0
@@ -111,17 +142,19 @@ def transcribe(audio, output, *, model=None, model_path="m-a-p/SheetSage2",
         tokens, truncated = generate_tokens(model, tokenizer, segment, prompts, prefix, stop_time, cancelled, progress)
         decoded, warning = decode_generated_tokens(tokenizer, tokens, source.stem, index)
         if warning:
-            warnings.append(warning)
+            warnings.append(warning["error"])
         stitched.extend(stitched_window_events(decoded, event_time_map(decoded, length), window["start"],
                         window["accept_start"], window["accept_end"], duration, index, base or 0))
         if preset == "paper":
             stitched.sort(key=lambda e: (float(e.get("time", 0)), int(e.get("window_index", 0)),
                                         int(e.get("source_subbeat", e["subbeat"]))))
         records.append({**window, "tokens": tokens.tolist(), "truncated": truncated})
+        check_cancelled(cancelled)
         write_json(output / "windows.json", records)
     if preset != "paper":
         stitched.sort(key=lambda e: (e["time"], e["global_subbeat"]))
     decoded = dict(schema_version=tokenizer.schema_version, prompts=list(prompts), events=stitched, has_eos=True)
+    check_cancelled(cancelled)
     exported = export_result(decoded, tokenizer, output, duration, paper=preset == "paper", melody_only=task != "full")
     payload = exported.pop("payload")
     result = {**exported, "backend": "mlx", "dtype": "float32", "model": model.identity,
@@ -130,5 +163,6 @@ def transcribe(audio, output, *, model=None, model_path="m-a-p/SheetSage2",
               "warnings": warnings, "truncated": any(r["truncated"] for r in records),
               "elapsed_seconds": time.perf_counter() - start}
     result["status"] = "complete" if payload.get("abc") and not result.get("abc_error") else "failed"
+    check_cancelled(cancelled)
     write_json(output / "result.json", result)
     return {**result, **payload}

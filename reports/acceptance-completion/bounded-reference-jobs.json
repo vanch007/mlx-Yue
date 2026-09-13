@@ -1,0 +1,50 @@
+[
+  {
+    "name": "ar-long-layer-cleanup-reference",
+    "command": [
+      ".oracle/bin/python",
+      "tools/oracle.py",
+      "ar",
+      "--model",
+      "models/hf-cache/models--m-a-p--YuE2-3B/snapshots/1a96eca688d6ae5d7f0feb88573fec89920fcd19",
+      "--vae",
+      "/Users/vanch/yue2-mlx/models/hf-cache/models--m-a-p--YuE2-Vae/snapshots/95535e72a97bc0f09b8ada125d26b4009428c0e8",
+      "--lengths",
+      "12000",
+      "--prefill-chunk-size",
+      "256",
+      "--output",
+      "outputs/acceptance-completion/ar-long-layer-cleanup-torch",
+      "--require-ac"
+    ],
+    "status": "fail",
+    "start": 1789302825.008363,
+    "exit_code": 1,
+    "seconds": 18.99101996421814
+  },
+  {
+    "name": "ar-valid-prefix-layer-cleanup-reference",
+    "command": [
+      ".oracle/bin/python",
+      "tools/oracle.py",
+      "ar",
+      "--model",
+      "models/hf-cache/models--m-a-p--YuE2-3B/snapshots/1a96eca688d6ae5d7f0feb88573fec89920fcd19",
+      "--vae",
+      "/Users/vanch/yue2-mlx/models/hf-cache/models--m-a-p--YuE2-Vae/snapshots/95535e72a97bc0f09b8ada125d26b4009428c0e8",
+      "--lengths",
+      "12000",
+      "--source",
+      "outputs/acceptance-completion/fixtures/long-plan",
+      "--prefill-chunk-size",
+      "256",
+      "--output",
+      "outputs/acceptance-completion/ar-valid-prefix-layer-cleanup-torch",
+      "--require-ac"
+    ],
+    "status": "fail",
+    "start": 1789302843.999852,
+    "exit_code": 1,
+    "seconds": 19.096549034118652
+  }
+]

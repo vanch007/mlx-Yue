@@ -10,6 +10,7 @@ from safetensors.numpy import load_file
 from ..bart import BartDecoder
 from ..mert import MERT2, convert_mert_weights
 from yue2.storage import sha256_file
+from .control import check_cancelled
 
 MODEL_REPO = "m-a-p/SheetSage2"
 MODEL_REVISION = "eab522a8168e8b8b8c4856bf8609cd86198f01fe"
@@ -42,13 +43,16 @@ class SheetSage2(nn.Module):
         object.__setattr__(self, "config", config)
 
     @classmethod
-    def from_pretrained(cls, model=MODEL_REPO, base_model=MERT_REPO, **kwargs):
+    def from_pretrained(cls, model=MODEL_REPO, base_model=MERT_REPO, *, cancelled=None, **kwargs):
+        check_cancelled(cancelled)
         directory, parent = resolve_models(model, base_model, **kwargs)
+        check_cancelled(cancelled)
         config = json.loads((directory / "config.json").read_text())
         if config["weights_format"] != "adapter":
             raise ValueError("Expected the pinned SheetSage2 adapter checkpoint")
         parent_file = parent / "model.safetensors"
         parent_hash = sha256_file(parent_file)
+        check_cancelled(cancelled)
         if parent_hash != config["base_model_sha256"]:
             raise ValueError("MERT2 checkpoint does not match SheetSage2's pinned parent")
         parent_config = json.loads((parent / "config.json").read_text())
@@ -59,9 +63,11 @@ class SheetSage2(nn.Module):
             if config["backbone_config"][key] != parent_config[key]:
                 raise ValueError(f"MERT2 architecture mismatch: {key}")
         adapter, weights = load_file(directory / "model.safetensors"), load_file(parent_file)
+        check_cancelled(cancelled)
         scale = config["lora_alpha"] / config["lora_rank"]
         # The official loader merges LoRA on CPU in FP32 before inference.
         for key in list(adapter):
+            check_cancelled(cancelled)
             if key.startswith("adapter.") and key.endswith("lora_A.weight"):
                 target = key.removeprefix("adapter.").removesuffix("lora_A.weight") + "weight"
                 bkey = key.replace("lora_A.weight", "lora_B.weight")
@@ -74,6 +80,7 @@ class SheetSage2(nn.Module):
         own += [("encoder." + key, value) for key, value in tree_flatten(instance.encoder.parameters())]
         instance.load_weights(own, strict=True)
         mx.eval(instance.parameters())
+        check_cancelled(cancelled)
         object.__setattr__(instance, "identity", {
             "model": MODEL_REPO, "revision": MODEL_REVISION,
             "model_sha256": sha256_file(directory / "model.safetensors"),
@@ -82,12 +89,14 @@ class SheetSage2(nn.Module):
             "backend": "mlx", "dtype": "float32", "lora_merge": "numpy_cpu_fp32",
             "implementation_sha256": {str(p.relative_to(Path(__file__).parent.parent)): sha256_file(p)
                                       for p in [Path(__file__), Path(__file__).with_name("pipeline.py"),
+                                                Path(__file__).with_name("control.py"),
                                                 Path(__file__).parent.parent / "mert.py",
                                                 Path(__file__).parent.parent / "bart.py"]},
         })
         return instance
 
     def encode(self, waveform, cancelled=None):
+        check_cancelled(cancelled)
         window = round(self.config["input_audio_length"] * self.config["sampling_rate"])
         waveform = np.asarray(waveform, dtype=np.float32)
         if waveform.ndim != 1 or not 1025 <= len(waveform) <= window or not np.isfinite(waveform).all():

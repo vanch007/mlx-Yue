@@ -1,0 +1,28 @@
+{
+  "vae": {
+    "tensors": {},
+    "audio": {
+      "rms_error": 5.16932633216375e-07,
+      "max_abs": 1.804350281203737e-05
+    }
+  },
+  "calibration": {
+    "method": "two_equal_reference_precision_error_radii",
+    "reference_npz_sha256": "68efd2c1020a887b0bbe1fb93607387f903a6875910f3a8f98aa55e2e68b2440",
+    "anchor_npz_sha256": "6329538c1a327f603304eae79aeda0a8f514ee8f148c753592cef49f5788a432",
+    "anchor_invocation_sha256": "2556e9ff98dbb418246d73d4363f5c1652087a11842ffe6e0f2ee72bfbeb5447",
+    "reference_error_radii": {
+      "upstream_fp32_vs_fp64": {
+        "max_abs": 9.021751406018685e-06,
+        "rms_error": 2.584663166081875e-07,
+        "reference_rms": 0.14838409720073711,
+        "relative_rms_error": 1.7418734317500941e-06,
+        "cosine": 0.9999999999984706,
+        "p99_abs": 8.998462272176429e-07
+      }
+    },
+    "uses_port_outputs": false,
+    "metric_rationale": "RMS and maximum absolute error satisfy the triangle inequality",
+    "scope": "FP32 versus FP64 decoder arithmetic"
+  }
+}

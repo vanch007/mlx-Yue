@@ -55,6 +55,8 @@ def main():
     parser.add_argument("--require-ac", action="store_true")
     parser.add_argument("--memory-budget-gib", type=float, default=16)
     parser.add_argument("--vae-core-frames", type=int, default=256)
+    parser.add_argument("--complete-modes", action="store_true",
+                        help="Use normal generation budgets and require natural endings for all modes")
     args = parser.parse_args()
     if args.vae_core_frames < 1:
         parser.error("--vae-core-frames must be a positive integer")
@@ -83,11 +85,12 @@ def main():
                 ).read_bytes().decode("utf-8")
             if mode == "melody" and source == "supplied":
                 value["cfg_scale"] = 1.2
-            value["semantic_sampling"] = {
-                "max_tokens": 400,
-                "min_tokens": 200,
-                "top_k": 80,
-            }
+            if not args.complete_modes:
+                value["semantic_sampling"] = {
+                    "max_tokens": 400,
+                    "min_tokens": 200,
+                    "top_k": 80,
+                }
             workloads.append(value)
     else:
         for index in range(3 if args.workload == "sustain" else 1):
@@ -146,6 +149,7 @@ def main():
         "memory_budget_gib": args.memory_budget_gib,
         "effective_vae_core_frames": args.vae_core_frames,
         "full_song_gate_applicable": args.workload != "modes",
+        "complete_modes": args.complete_modes,
     }
     write_json(args.output / "workload.json", plan)
 
@@ -247,7 +251,7 @@ def main():
                             or not np.isfinite(song.audio).all()
                         ):
                             raise AssertionError("Invalid decoded audio")
-                        if args.workload != "modes" and (
+                        if (args.workload != "modes" or args.complete_modes) and (
                             song.truncated["abc"] or song.truncated["semantic"]
                         ):
                             raise AssertionError(
@@ -313,7 +317,10 @@ def main():
     report["resource_evidence"] = _resource_evidence(args.output)
     if args.workload == "modes":
         report["full_duration_gate"] = None
-        report["full_duration_gate_status"] = "not_applicable_to_short_mode_fixtures"
+        report["full_duration_gate_status"] = (
+            "not_applicable_to_mode_coverage" if args.complete_modes
+            else "not_applicable_to_short_mode_fixtures"
+        )
     else:
         report["full_duration_gate"] = any(
             180 <= row["audio_seconds"] <= 240 for row in reports

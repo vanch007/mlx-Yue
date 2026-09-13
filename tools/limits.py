@@ -18,7 +18,7 @@ from fidelity import _metric_group, apply_limits, metrics
 from yue2.storage import sha256_file, write_json
 
 
-def derive(stage, reference_dir, calibration_dir):
+def derive(stage, reference_dir, calibration_dir, *, vae_fp64=False):
     reference_path = reference_dir / f"{stage}.npz"
     calibration_path = calibration_dir / f"{stage}.npz"
     limits, radii = {"tensors": {}}, {}
@@ -28,8 +28,18 @@ def derive(stage, reference_dir, calibration_dir):
         if stage == "vae":
             if "full" not in reference.files or "core_64" not in reference.files:
                 raise ValueError("VAE calibration needs full and 64-frame tiled FP32 audio")
-            values = metrics(reference["full"], reference["core_64"])
-            radii["upstream_fp32_tiling"] = values
+            if vae_fp64:
+                provenance = json.loads((calibration_dir / "invocation.json").read_text())
+                expected = json.loads((reference_dir / "vae.json").read_text())["weights"]
+                reference_input = json.loads((reference_dir / "invocation.json").read_text())["input_sha256"]["latents"]
+                if (provenance["precision"] != "float64" or provenance["weights"] != expected
+                        or provenance["latents_sha256"] != reference_input):
+                    raise ValueError("VAE FP64 calibration must match weights and latent inputs")
+                values = metrics(anchor["full"], reference["full"])
+                radii["upstream_fp32_vs_fp64"] = values
+            else:
+                values = metrics(reference["full"], reference["core_64"])
+                radii["upstream_fp32_tiling"] = values
             limits["audio"] = {key: 2 * values[key] for key in ("rms_error", "max_abs")}
         else:
             expected_identity = json.loads((reference_dir / f"{stage}.json").read_text())["model"]
@@ -70,7 +80,8 @@ def derive(stage, reference_dir, calibration_dir):
             "reference_error_radii": radii,
             "uses_port_outputs": False,
             "metric_rationale": "RMS and maximum absolute error satisfy the triangle inequality",
-            "scope": "FP32 tiling sensitivity" if stage == "vae" else "BF16 versus FP32 arithmetic",
+            "scope": ("FP32 versus FP64 decoder arithmetic" if vae_fp64 else
+                      "FP32 tiling sensitivity" if stage == "vae" else "BF16 versus FP32 arithmetic"),
         },
     }
 
@@ -127,12 +138,16 @@ def main():
     parser.add_argument("--output", type=Path, required=True)
     parser.add_argument("--actual", type=Path, help="Check saved port tensors against the FP32 anchor")
     parser.add_argument("--limits", type=Path, help="Previously derived, immutable error budget")
+    parser.add_argument("--vae-fp64", action="store_true",
+                        help="Calibrate FP32 VAE roundoff against a matching original CPU FP64 decoder")
     args = parser.parse_args()
     if (args.actual is None) != (args.limits is None):
         parser.error("--actual and --limits must be provided together")
     if args.output.exists():
         raise FileExistsError("Derived acceptance limits are never silently overwritten")
-    result = (derive(args.stage, args.oracle, args.calibration) if args.actual is None else
+    if args.vae_fp64 and (args.stage != "vae" or args.actual is not None):
+        parser.error("--vae-fp64 applies only to deriving VAE limits")
+    result = (derive(args.stage, args.oracle, args.calibration, vae_fp64=args.vae_fp64) if args.actual is None else
               check_actual(args.stage, args.oracle, args.calibration, args.actual, args.limits))
     args.output.parent.mkdir(parents=True, exist_ok=True)
     write_json(args.output, result)

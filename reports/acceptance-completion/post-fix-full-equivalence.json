@@ -1,0 +1,23 @@
+{
+  "abc_tokens.npy": {
+    "same_shape": true,
+    "exact": true,
+    "max_abs": 0.0
+  },
+  "semantic.npy": {
+    "same_shape": true,
+    "exact": true,
+    "max_abs": 0.0
+  },
+  "noise.npy": {
+    "same_shape": true,
+    "exact": true,
+    "max_abs": 0.0
+  },
+  "latent.npy": {
+    "same_shape": true,
+    "exact": true,
+    "max_abs": 0.0
+  },
+  "decoded_pcm_exact": true
+}

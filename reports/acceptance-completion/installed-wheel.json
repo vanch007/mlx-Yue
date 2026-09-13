@@ -1,0 +1,36 @@
+{
+  "status": "pass",
+  "import_path": "/Users/vanch/yue2-mlx/outputs/acceptance-audit-env/lib/python3.12/site-packages/lyra/__init__.py",
+  "torch_installed": false,
+  "network": "denied connect and DNS",
+  "restored_generation_config": {
+    "abc": {
+      "temperature": 0.7,
+      "top_p": 0.9,
+      "top_k": 30,
+      "repetition_penalty": 1.005,
+      "penalty_window": 100,
+      "min_tokens": 32,
+      "max_tokens": 4096
+    },
+    "semantic": {
+      "temperature": 1.0,
+      "top_p": 0.95,
+      "top_k": 100,
+      "repetition_penalty": 1.2,
+      "penalty_window": 50,
+      "min_tokens": 0,
+      "max_tokens": 64
+    },
+    "ode_steps": 17,
+    "ode_method": "midpoint",
+    "context": 24576,
+    "version": "yue2-native-v1"
+  },
+  "audio_seconds": 2.558666666666667,
+  "truncated": {
+    "abc": false,
+    "semantic": true
+  },
+  "scope": "Actual save_pretrained, installed CLI reload and real capped generation; nondefault 17 steps are a configuration test only"
+}

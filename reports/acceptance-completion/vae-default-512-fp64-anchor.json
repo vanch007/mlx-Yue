@@ -1,0 +1,47 @@
+{
+  "stage": "vae",
+  "status": "passed",
+  "comparison": "Port against the independent FP32 anchor, using the existing error budget",
+  "reference_comparison_status": "passed",
+  "input_sha256": {
+    "anchor": "6329538c1a327f603304eae79aeda0a8f514ee8f148c753592cef49f5788a432",
+    "actual": "4359b6ef4b38c2a164221b13d93b1a1c489b967393e5d011603a0ecb29c77742",
+    "limits": "7fc52103dae143ad1118a682a20ec8e70645cb338fa4f6d43ec7f28e0d0eccd6",
+    "fidelity_report": "9361246c34d1d534d5fd6e2b71dd0be7593976ffd709268cffe120249046e68b"
+  },
+  "metrics": {
+    "core_64": {
+      "max_abs": 6.099740530118858e-06,
+      "rms_error": 2.4150478153005926e-07,
+      "reference_rms": 0.14838409720073711,
+      "relative_rms_error": 1.6275651237972392e-06,
+      "cosine": 0.9999999999986638,
+      "p99_abs": 8.279409713875252e-07
+    },
+    "core_1024": {
+      "max_abs": 7.018210758547028e-06,
+      "rms_error": 2.4468669360850685e-07,
+      "reference_rms": 0.14838409720073711,
+      "relative_rms_error": 1.6490088778010326e-06,
+      "cosine": 0.9999999999986281,
+      "p99_abs": 8.36901832934056e-07
+    },
+    "full": {
+      "max_abs": 7.018210758547028e-06,
+      "rms_error": 2.4468669360850685e-07,
+      "reference_rms": 0.14838409720073711,
+      "relative_rms_error": 1.6490088778010326e-06,
+      "cosine": 0.9999999999986281,
+      "p99_abs": 8.36901832934056e-07
+    },
+    "core_256": {
+      "max_abs": 7.018210758547028e-06,
+      "rms_error": 2.4468669360850685e-07,
+      "reference_rms": 0.14838409720073711,
+      "relative_rms_error": 1.6490088778010326e-06,
+      "cosine": 0.9999999999986281,
+      "p99_abs": 8.36901832934056e-07
+    }
+  },
+  "failures": []
+}

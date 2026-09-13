@@ -1,0 +1,27 @@
+{
+  "execution_status": "pass",
+  "runs": [
+    {
+      "id": "tonight_awake_1",
+      "audio_seconds": 169.95866666666666,
+      "e2e_seconds": 301.21143216703786
+    },
+    {
+      "id": "tonight_awake_2",
+      "audio_seconds": 169.95866666666666,
+      "e2e_seconds": 334.58663437503856
+    },
+    {
+      "id": "tonight_awake_3",
+      "audio_seconds": 169.95866666666666,
+      "e2e_seconds": 313.10574099997757
+    }
+  ],
+  "sampled_peak_footprint_gib": 10.976614691317081,
+  "new_swap_out_bytes": 0,
+  "monitor_error": null,
+  "historical_duration_gate": "failed",
+  "historical_workload_status": "failed_full_duration_gate",
+  "first_attempt": "outputs/acceptance-completion/sustain-bf16/report.json",
+  "scope": "Three natural-ending serial BF16 runs in one process; historical duration benchmark evaluated separately, not waived"
+}
