@@ -1,0 +1,31 @@
+{
+  "recommended_threshold": 0.48,
+  "should_trigger": [
+    "用 YuE2 生成中文民谣整曲",
+    "mlx-Yue 做 8 步快速模式",
+    "YuE2 把音频转 ABC 再翻唱",
+    "YuE2 原曲旋律保留并换和声",
+    "YuE2 32 步和 8 步试听对比，给出 RTF",
+    "用 YuE2 写歌词先不生成",
+    "YuE2 用 supplied melody score 生成",
+    "YuE2 直接 off 生成有人声的歌",
+    "YuE2 调参优化内存和速度",
+    "YuE2 batch 三个种子并断点复用",
+    "YuE2 重放 saved latents",
+    "YuE2 使用完整和弦谱改编"
+  ],
+  "should_not_trigger": [
+    "用 ACE-Step 生成音乐",
+    "Suno 帮我生成一首歌",
+    "修改 Python 的单元测试",
+    "写一篇音乐史论文",
+    "只帮我发一条 X 推广帖子"
+  ],
+  "near_neighbor": [
+    "用 YuE2 做 waveform inpainting",
+    "YuE2 voice cloning 克隆歌手音色",
+    "YuE2 guaranteed exact melody replacement",
+    "帮我审查 YuE2 仓库代码",
+    "用 RVC 替换音色"
+  ]
+}

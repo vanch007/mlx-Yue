@@ -1,0 +1,789 @@
+{
+  "threshold": 0.48,
+  "threshold_explanation": "Prompts at or above the threshold are treated as trigger matches. Scores are driven primarily by semantic intent coverage: packaging intent, workflow-to-skill transformation intent, reuse/distribution intent, and eval intent. Explicit exclusions such as summary-only, translation-only, one-off, document-only, or do-not-build directives apply direct penalties and can override otherwise similar wording.",
+  "false_positives": 0,
+  "false_negatives": 0,
+  "precision": 1.0,
+  "recall": 1.0,
+  "bucket_stats": {
+    "should_trigger": {
+      "total": 12,
+      "passed": 12,
+      "pass_rate": 1.0
+    },
+    "should_not_trigger": {
+      "total": 5,
+      "passed": 5,
+      "pass_rate": 1.0
+    },
+    "near_neighbor": {
+      "total": 5,
+      "passed": 5,
+      "pass_rate": 1.0
+    }
+  },
+  "family_stats": {
+    "default": {
+      "total": 22,
+      "passed": 22,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "misfires": [],
+  "results": {
+    "should_trigger": [
+      {
+        "prompt": "用 YuE2 生成中文民谣整曲",
+        "family": "default",
+        "score": 0.973,
+        "predicted_trigger": true,
+        "expected_trigger": true,
+        "passed": true,
+        "score_detail": {
+          "mode": "semantic-intent",
+          "desired_positive_concepts": [
+            "yue2"
+          ],
+          "matched_desired_concepts": [
+            "yue2"
+          ],
+          "extra_positive_concepts": [],
+          "matched_negative_concepts": [],
+          "exclusive_negative_concepts": [],
+          "semantic_coverage": 1.0,
+          "support_score": 0,
+          "lexical_support": 0.667,
+          "negative_penalty": 0,
+          "coverage_boost": 0.0,
+          "concept_evidence": {
+            "positive": {
+              "yue2": [
+                "YuE2"
+              ]
+            },
+            "negative": {}
+          }
+        }
+      },
+      {
+        "prompt": "mlx-Yue 做 8 步快速模式",
+        "family": "default",
+        "score": 0.968,
+        "predicted_trigger": true,
+        "expected_trigger": true,
+        "passed": true,
+        "score_detail": {
+          "mode": "semantic-intent",
+          "desired_positive_concepts": [
+            "yue2"
+          ],
+          "matched_desired_concepts": [
+            "yue2"
+          ],
+          "extra_positive_concepts": [],
+          "matched_negative_concepts": [],
+          "exclusive_negative_concepts": [],
+          "semantic_coverage": 1.0,
+          "support_score": 0,
+          "lexical_support": 0.6,
+          "negative_penalty": 0,
+          "coverage_boost": 0.0,
+          "concept_evidence": {
+            "positive": {
+              "yue2": [
+                "mlx-Yue"
+              ]
+            },
+            "negative": {}
+          }
+        }
+      },
+      {
+        "prompt": "YuE2 把音频转 ABC 再翻唱",
+        "family": "default",
+        "score": 0.96,
+        "predicted_trigger": true,
+        "expected_trigger": true,
+        "passed": true,
+        "score_detail": {
+          "mode": "semantic-intent",
+          "desired_positive_concepts": [
+            "yue2"
+          ],
+          "matched_desired_concepts": [
+            "yue2"
+          ],
+          "extra_positive_concepts": [],
+          "matched_negative_concepts": [],
+          "exclusive_negative_concepts": [],
+          "semantic_coverage": 1.0,
+          "support_score": 0,
+          "lexical_support": 0.5,
+          "negative_penalty": 0,
+          "coverage_boost": 0.0,
+          "concept_evidence": {
+            "positive": {
+              "yue2": [
+                "YuE2"
+              ]
+            },
+            "negative": {}
+          }
+        }
+      },
+      {
+        "prompt": "YuE2 原曲旋律保留并换和声",
+        "family": "default",
+        "score": 0.96,
+        "predicted_trigger": true,
+        "expected_trigger": true,
+        "passed": true,
+        "score_detail": {
+          "mode": "semantic-intent",
+          "desired_positive_concepts": [
+            "yue2"
+          ],
+          "matched_desired_concepts": [
+            "yue2"
+          ],
+          "extra_positive_concepts": [],
+          "matched_negative_concepts": [],
+          "exclusive_negative_concepts": [],
+          "semantic_coverage": 1.0,
+          "support_score": 0,
+          "lexical_support": 0.5,
+          "negative_penalty": 0,
+          "coverage_boost": 0.0,
+          "concept_evidence": {
+            "positive": {
+              "yue2": [
+                "YuE2"
+              ]
+            },
+            "negative": {}
+          }
+        }
+      },
+      {
+        "prompt": "YuE2 32 步和 8 步试听对比，给出 RTF",
+        "family": "default",
+        "score": 0.966,
+        "predicted_trigger": true,
+        "expected_trigger": true,
+        "passed": true,
+        "score_detail": {
+          "mode": "semantic-intent",
+          "desired_positive_concepts": [
+            "yue2"
+          ],
+          "matched_desired_concepts": [
+            "yue2"
+          ],
+          "extra_positive_concepts": [],
+          "matched_negative_concepts": [],
+          "exclusive_negative_concepts": [],
+          "semantic_coverage": 1.0,
+          "support_score": 0,
+          "lexical_support": 0.571,
+          "negative_penalty": 0,
+          "coverage_boost": 0.0,
+          "concept_evidence": {
+            "positive": {
+              "yue2": [
+                "YuE2"
+              ]
+            },
+            "negative": {}
+          }
+        }
+      },
+      {
+        "prompt": "用 YuE2 写歌词先不生成",
+        "family": "default",
+        "score": 0.973,
+        "predicted_trigger": true,
+        "expected_trigger": true,
+        "passed": true,
+        "score_detail": {
+          "mode": "semantic-intent",
+          "desired_positive_concepts": [
+            "yue2"
+          ],
+          "matched_desired_concepts": [
+            "yue2"
+          ],
+          "extra_positive_concepts": [],
+          "matched_negative_concepts": [],
+          "exclusive_negative_concepts": [],
+          "semantic_coverage": 1.0,
+          "support_score": 0,
+          "lexical_support": 0.667,
+          "negative_penalty": 0,
+          "coverage_boost": 0.0,
+          "concept_evidence": {
+            "positive": {
+              "yue2": [
+                "YuE2"
+              ]
+            },
+            "negative": {}
+          }
+        }
+      },
+      {
+        "prompt": "YuE2 用 supplied melody score 生成",
+        "family": "default",
+        "score": 0.96,
+        "predicted_trigger": true,
+        "expected_trigger": true,
+        "passed": true,
+        "score_detail": {
+          "mode": "semantic-intent",
+          "desired_positive_concepts": [
+            "yue2"
+          ],
+          "matched_desired_concepts": [
+            "yue2"
+          ],
+          "extra_positive_concepts": [],
+          "matched_negative_concepts": [],
+          "exclusive_negative_concepts": [],
+          "semantic_coverage": 1.0,
+          "support_score": 0,
+          "lexical_support": 0.5,
+          "negative_penalty": 0,
+          "coverage_boost": 0.0,
+          "concept_evidence": {
+            "positive": {
+              "yue2": [
+                "YuE2"
+              ]
+            },
+            "negative": {}
+          }
+        }
+      },
+      {
+        "prompt": "YuE2 直接 off 生成有人声的歌",
+        "family": "default",
+        "score": 0.94,
+        "predicted_trigger": true,
+        "expected_trigger": true,
+        "passed": true,
+        "score_detail": {
+          "mode": "semantic-intent",
+          "desired_positive_concepts": [
+            "yue2"
+          ],
+          "matched_desired_concepts": [
+            "yue2"
+          ],
+          "extra_positive_concepts": [],
+          "matched_negative_concepts": [],
+          "exclusive_negative_concepts": [],
+          "semantic_coverage": 1.0,
+          "support_score": 0,
+          "lexical_support": 0.25,
+          "negative_penalty": 0,
+          "coverage_boost": 0.0,
+          "concept_evidence": {
+            "positive": {
+              "yue2": [
+                "YuE2"
+              ]
+            },
+            "negative": {}
+          }
+        }
+      },
+      {
+        "prompt": "YuE2 调参优化内存和速度",
+        "family": "default",
+        "score": 0.96,
+        "predicted_trigger": true,
+        "expected_trigger": true,
+        "passed": true,
+        "score_detail": {
+          "mode": "semantic-intent",
+          "desired_positive_concepts": [
+            "yue2"
+          ],
+          "matched_desired_concepts": [
+            "yue2"
+          ],
+          "extra_positive_concepts": [],
+          "matched_negative_concepts": [],
+          "exclusive_negative_concepts": [],
+          "semantic_coverage": 1.0,
+          "support_score": 0,
+          "lexical_support": 0.5,
+          "negative_penalty": 0,
+          "coverage_boost": 0.0,
+          "concept_evidence": {
+            "positive": {
+              "yue2": [
+                "YuE2"
+              ]
+            },
+            "negative": {}
+          }
+        }
+      },
+      {
+        "prompt": "YuE2 batch 三个种子并断点复用",
+        "family": "default",
+        "score": 0.973,
+        "predicted_trigger": true,
+        "expected_trigger": true,
+        "passed": true,
+        "score_detail": {
+          "mode": "semantic-intent",
+          "desired_positive_concepts": [
+            "yue2"
+          ],
+          "matched_desired_concepts": [
+            "yue2"
+          ],
+          "extra_positive_concepts": [],
+          "matched_negative_concepts": [],
+          "exclusive_negative_concepts": [],
+          "semantic_coverage": 1.0,
+          "support_score": 0,
+          "lexical_support": 0.667,
+          "negative_penalty": 0,
+          "coverage_boost": 0.0,
+          "concept_evidence": {
+            "positive": {
+              "yue2": [
+                "YuE2"
+              ]
+            },
+            "negative": {}
+          }
+        }
+      },
+      {
+        "prompt": "YuE2 重放 saved latents",
+        "family": "default",
+        "score": 0.96,
+        "predicted_trigger": true,
+        "expected_trigger": true,
+        "passed": true,
+        "score_detail": {
+          "mode": "semantic-intent",
+          "desired_positive_concepts": [
+            "yue2"
+          ],
+          "matched_desired_concepts": [
+            "yue2"
+          ],
+          "extra_positive_concepts": [],
+          "matched_negative_concepts": [],
+          "exclusive_negative_concepts": [],
+          "semantic_coverage": 1.0,
+          "support_score": 0,
+          "lexical_support": 0.5,
+          "negative_penalty": 0,
+          "coverage_boost": 0.0,
+          "concept_evidence": {
+            "positive": {
+              "yue2": [
+                "YuE2"
+              ]
+            },
+            "negative": {}
+          }
+        }
+      },
+      {
+        "prompt": "YuE2 使用完整和弦谱改编",
+        "family": "default",
+        "score": 0.96,
+        "predicted_trigger": true,
+        "expected_trigger": true,
+        "passed": true,
+        "score_detail": {
+          "mode": "semantic-intent",
+          "desired_positive_concepts": [
+            "yue2"
+          ],
+          "matched_desired_concepts": [
+            "yue2"
+          ],
+          "extra_positive_concepts": [],
+          "matched_negative_concepts": [],
+          "exclusive_negative_concepts": [],
+          "semantic_coverage": 1.0,
+          "support_score": 0,
+          "lexical_support": 0.5,
+          "negative_penalty": 0,
+          "coverage_boost": 0.0,
+          "concept_evidence": {
+            "positive": {
+              "yue2": [
+                "YuE2"
+              ]
+            },
+            "negative": {}
+          }
+        }
+      }
+    ],
+    "should_not_trigger": [
+      {
+        "prompt": "用 ACE-Step 生成音乐",
+        "family": "default",
+        "score": 0.0,
+        "predicted_trigger": false,
+        "expected_trigger": false,
+        "passed": true,
+        "score_detail": {
+          "mode": "semantic-intent",
+          "desired_positive_concepts": [
+            "yue2"
+          ],
+          "matched_desired_concepts": [],
+          "extra_positive_concepts": [],
+          "matched_negative_concepts": [
+            "foreign_or_unsupported"
+          ],
+          "exclusive_negative_concepts": [
+            "foreign_or_unsupported"
+          ],
+          "semantic_coverage": 0.0,
+          "support_score": 0,
+          "lexical_support": 0.75,
+          "negative_penalty": 1,
+          "coverage_boost": 0.0,
+          "concept_evidence": {
+            "positive": {},
+            "negative": {
+              "foreign_or_unsupported": [
+                "ACE-Step"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "prompt": "Suno 帮我生成一首歌",
+        "family": "default",
+        "score": 0.0,
+        "predicted_trigger": false,
+        "expected_trigger": false,
+        "passed": true,
+        "score_detail": {
+          "mode": "semantic-intent",
+          "desired_positive_concepts": [
+            "yue2"
+          ],
+          "matched_desired_concepts": [],
+          "extra_positive_concepts": [],
+          "matched_negative_concepts": [
+            "foreign_or_unsupported"
+          ],
+          "exclusive_negative_concepts": [
+            "foreign_or_unsupported"
+          ],
+          "semantic_coverage": 0.0,
+          "support_score": 0,
+          "lexical_support": 0.5,
+          "negative_penalty": 1,
+          "coverage_boost": 0.0,
+          "concept_evidence": {
+            "positive": {},
+            "negative": {
+              "foreign_or_unsupported": [
+                "Suno"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "prompt": "修改 Python 的单元测试",
+        "family": "default",
+        "score": 0.0,
+        "predicted_trigger": false,
+        "expected_trigger": false,
+        "passed": true,
+        "score_detail": {
+          "mode": "semantic-intent",
+          "desired_positive_concepts": [
+            "yue2"
+          ],
+          "matched_desired_concepts": [],
+          "extra_positive_concepts": [],
+          "matched_negative_concepts": [],
+          "exclusive_negative_concepts": [],
+          "semantic_coverage": 0.0,
+          "support_score": 0,
+          "lexical_support": 0.0,
+          "negative_penalty": 0,
+          "coverage_boost": 0.0,
+          "concept_evidence": {
+            "positive": {},
+            "negative": {}
+          }
+        }
+      },
+      {
+        "prompt": "写一篇音乐史论文",
+        "family": "default",
+        "score": 0.0,
+        "predicted_trigger": false,
+        "expected_trigger": false,
+        "passed": true,
+        "score_detail": {
+          "mode": "semantic-intent",
+          "desired_positive_concepts": [
+            "yue2"
+          ],
+          "matched_desired_concepts": [],
+          "extra_positive_concepts": [],
+          "matched_negative_concepts": [],
+          "exclusive_negative_concepts": [],
+          "semantic_coverage": 0.0,
+          "support_score": 0,
+          "lexical_support": 0.0,
+          "negative_penalty": 0,
+          "coverage_boost": 0.0,
+          "concept_evidence": {
+            "positive": {},
+            "negative": {}
+          }
+        }
+      },
+      {
+        "prompt": "只帮我发一条 X 推广帖子",
+        "family": "default",
+        "score": 0.0,
+        "predicted_trigger": false,
+        "expected_trigger": false,
+        "passed": true,
+        "score_detail": {
+          "mode": "semantic-intent",
+          "desired_positive_concepts": [
+            "yue2"
+          ],
+          "matched_desired_concepts": [],
+          "extra_positive_concepts": [],
+          "matched_negative_concepts": [],
+          "exclusive_negative_concepts": [],
+          "semantic_coverage": 0.0,
+          "support_score": 0,
+          "lexical_support": 0.0,
+          "negative_penalty": 0,
+          "coverage_boost": 0.0,
+          "concept_evidence": {
+            "positive": {},
+            "negative": {}
+          }
+        }
+      }
+    ],
+    "near_neighbor": [
+      {
+        "prompt": "用 YuE2 做 waveform inpainting",
+        "family": "default",
+        "score": 0.0,
+        "predicted_trigger": false,
+        "expected_trigger": false,
+        "passed": true,
+        "score_detail": {
+          "mode": "semantic-intent",
+          "desired_positive_concepts": [
+            "yue2"
+          ],
+          "matched_desired_concepts": [
+            "yue2"
+          ],
+          "extra_positive_concepts": [],
+          "matched_negative_concepts": [
+            "foreign_or_unsupported"
+          ],
+          "exclusive_negative_concepts": [
+            "foreign_or_unsupported"
+          ],
+          "semantic_coverage": 1.0,
+          "support_score": 0,
+          "lexical_support": 0.8,
+          "negative_penalty": 1,
+          "coverage_boost": 0.0,
+          "concept_evidence": {
+            "positive": {
+              "yue2": [
+                "YuE2"
+              ]
+            },
+            "negative": {
+              "foreign_or_unsupported": [
+                "waveform inpainting"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "prompt": "YuE2 voice cloning 克隆歌手音色",
+        "family": "default",
+        "score": 0.0,
+        "predicted_trigger": false,
+        "expected_trigger": false,
+        "passed": true,
+        "score_detail": {
+          "mode": "semantic-intent",
+          "desired_positive_concepts": [
+            "yue2"
+          ],
+          "matched_desired_concepts": [
+            "yue2"
+          ],
+          "extra_positive_concepts": [],
+          "matched_negative_concepts": [
+            "foreign_or_unsupported"
+          ],
+          "exclusive_negative_concepts": [
+            "foreign_or_unsupported"
+          ],
+          "semantic_coverage": 1.0,
+          "support_score": 0,
+          "lexical_support": 0.75,
+          "negative_penalty": 1,
+          "coverage_boost": 0.0,
+          "concept_evidence": {
+            "positive": {
+              "yue2": [
+                "YuE2"
+              ]
+            },
+            "negative": {
+              "foreign_or_unsupported": [
+                "voice cloning"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "prompt": "YuE2 guaranteed exact melody replacement",
+        "family": "default",
+        "score": 0.0,
+        "predicted_trigger": false,
+        "expected_trigger": false,
+        "passed": true,
+        "score_detail": {
+          "mode": "semantic-intent",
+          "desired_positive_concepts": [
+            "yue2"
+          ],
+          "matched_desired_concepts": [
+            "yue2"
+          ],
+          "extra_positive_concepts": [],
+          "matched_negative_concepts": [
+            "foreign_or_unsupported"
+          ],
+          "exclusive_negative_concepts": [
+            "foreign_or_unsupported"
+          ],
+          "semantic_coverage": 1.0,
+          "support_score": 0,
+          "lexical_support": 1.0,
+          "negative_penalty": 1,
+          "coverage_boost": 0.0,
+          "concept_evidence": {
+            "positive": {
+              "yue2": [
+                "YuE2"
+              ]
+            },
+            "negative": {
+              "foreign_or_unsupported": [
+                "guaranteed exact melody replacement"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "prompt": "帮我审查 YuE2 仓库代码",
+        "family": "default",
+        "score": 0.0,
+        "predicted_trigger": false,
+        "expected_trigger": false,
+        "passed": true,
+        "score_detail": {
+          "mode": "semantic-intent",
+          "desired_positive_concepts": [
+            "yue2"
+          ],
+          "matched_desired_concepts": [
+            "yue2"
+          ],
+          "extra_positive_concepts": [],
+          "matched_negative_concepts": [
+            "foreign_or_unsupported"
+          ],
+          "exclusive_negative_concepts": [
+            "foreign_or_unsupported"
+          ],
+          "semantic_coverage": 1.0,
+          "support_score": 0,
+          "lexical_support": 0.333,
+          "negative_penalty": 1,
+          "coverage_boost": 0.0,
+          "concept_evidence": {
+            "positive": {
+              "yue2": [
+                "YuE2"
+              ]
+            },
+            "negative": {
+              "foreign_or_unsupported": [
+                "审查"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "prompt": "用 RVC 替换音色",
+        "family": "default",
+        "score": 0.0,
+        "predicted_trigger": false,
+        "expected_trigger": false,
+        "passed": true,
+        "score_detail": {
+          "mode": "semantic-intent",
+          "desired_positive_concepts": [
+            "yue2"
+          ],
+          "matched_desired_concepts": [],
+          "extra_positive_concepts": [],
+          "matched_negative_concepts": [
+            "foreign_or_unsupported"
+          ],
+          "exclusive_negative_concepts": [
+            "foreign_or_unsupported"
+          ],
+          "semantic_coverage": 0.0,
+          "support_score": 0,
+          "lexical_support": 0.333,
+          "negative_penalty": 1,
+          "coverage_boost": 0.0,
+          "concept_evidence": {
+            "positive": {},
+            "negative": {
+              "foreign_or_unsupported": [
+                "RVC"
+              ]
+            }
+          }
+        }
+      }
+    ]
+  }
+}

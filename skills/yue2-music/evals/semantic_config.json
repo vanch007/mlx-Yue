@@ -1,0 +1,29 @@
+{
+  "positive_concepts": {
+    "yue2": {
+      "weight": 1,
+      "phrases": [
+        "YuE2",
+        "mlx-Yue"
+      ]
+    }
+  },
+  "negative_concepts": {
+    "foreign_or_unsupported": {
+      "weight": 1,
+      "exclusive": true,
+      "phrases": [
+        "ACE-Step",
+        "Suno",
+        "waveform inpainting",
+        "voice cloning",
+        "guaranteed exact melody replacement",
+        "审查",
+        "RVC"
+      ]
+    }
+  },
+  "fallback_positive_concepts": [
+    "yue2"
+  ]
+}

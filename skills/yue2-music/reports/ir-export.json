@@ -1,0 +1,16 @@
+{
+  "ok": true,
+  "schema": "/Users/vanch/.skills-manager/skills/yao-meta-skill/skill-ir/schema.json",
+  "skill_dir": "/Users/vanch/yue2-mlx/skills/yue2-music",
+  "artifacts": {
+    "json": "/Users/vanch/yue2-mlx/skills/yue2-music/reports/skill-ir.json"
+  },
+  "summary": {
+    "name": "yue2-music",
+    "maturity": "scaffold",
+    "target_count": 1,
+    "trigger_samples": 8,
+    "resource_count": 19
+  },
+  "failures": []
+}

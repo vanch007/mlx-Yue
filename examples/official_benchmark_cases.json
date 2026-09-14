@@ -1,0 +1,35 @@
+[
+  {
+    "id": "baikal_lake_jazz",
+    "title": "贝加尔湖畔 · 中文爵士抒情 (Lake Baikal · Chinese Jazz)",
+    "official_id": "baikal-lake-jazz",
+    "official_url": "https://map-yue2.github.io/#cover",
+    "genre": "Jazz Ballad · 60 BPM",
+    "style": "Jazz ballad, brushed drums, upright bass, warm piano, muted trumpet, intimate Mandarin male vocal, 60 BPM",
+    "lyrics": "[Verse]\n在我的怀里\n在你的眼里\n那里春风沉醉\n那里绿草如茵\n月光把爱恋\n洒满了湖面\n两个人的篝火\n照亮整个夜晚\n\n[Chorus]\n多少年以后\n如云般游走\n那变换的脚步\n让我们难牵手\n这一生一世\n有多少你我\n被吞没在月光\n如水的夜里\n",
+    "seed": 2026,
+    "cot": "melody"
+  },
+  {
+    "id": "thanksgiving_pop",
+    "title": "感恩节狂欢 · 欢快流行 (Thanksgiving · Upbeat Pop)",
+    "official_id": "2998556d4b082ca29c856652",
+    "official_url": "https://map-yue2.github.io/#abc-cot-gen",
+    "genre": "Upbeat Pop",
+    "style": "Pop genre, Happy mood, Live vocal style, Upbeat production, acoustic guitar, punchy drums, bright synthesizer, cheerful melody",
+    "lyrics": "[Verse 1]\nThanksgiving morning, sun begins to gleam\nThe family's gathering, living out a dream\nTurkey in the oven, pies all lined up neat\nSmiles on every face, tapping to the beat\n\n[Chorus]\nOh, Thanksgiving day, a feast for all to see\nLaughter in the room, happy as can be\nMusic in the air, dancing all the way\nIt's a joyful holiday, in every single way!\n",
+    "seed": 42,
+    "cot": "melody"
+  },
+  {
+    "id": "heavy_metal_birthday",
+    "title": "重金属狂吼 · 生日快乐 (Happy Birthday · Heavy Metal Scream)",
+    "official_id": "happy-birthday-heavy-metal",
+    "official_url": "https://map-yue2.github.io/#cover",
+    "genre": "Heavy Metal · 160 BPM",
+    "style": "heavy metal, harsh screamed vocals, distorted guitars, double-kick drums, high energy, 160 BPM",
+    "lyrics": "[Intro: Distorted Guitars & Double-Kick Drums]\n\n[Chorus]\nHAPPY BIRTHDAY TO YOU!\nHAPPY BIRTHDAY TO YOU!\nHAPPY BIRTHDAY DEAR FRIEND!\nROCK YOUR WORLD ALL NIGHT THROUGH!\n\n[Guitar Solo]\n\n[Chorus]\nHAPPY BIRTHDAY TO YOU!\nHAPPY BIRTHDAY TO YOU!\nSHOUT IT LOUD TO THE SKY!\nHEAVY METAL WILL NEVER DIE!\n",
+    "seed": 666,
+    "cot": "melody"
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "style": "Pop genre, Happy mood, Live vocal style, Upbeat production, acoustic guitar, punchy drums, bright synthesizer, cheerful melody",
+  "lyrics": "[Verse 1]\nThanksgiving morning, sun begins to gleam\nThe family's gathering, living out a dream\nTurkey in the oven, pies all lined up neat\nSmiles on every face, tapping to the beat\n\n[Chorus]\nOh, Thanksgiving day, a feast for all to see\nLaughter in the room, happy as can be\nMusic in the air, dancing all the way\nIt's a joyful holiday, in every single way!\n",
+  "seed": 42,
+  "cot": "melody",
+  "semantic_sampling": {
+    "max_tokens": 1000,
+    "min_tokens": 500,
+    "top_k": 80
+  }
+}

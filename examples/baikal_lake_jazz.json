@@ -1,0 +1,11 @@
+{
+  "style": "Jazz ballad, brushed drums, upright bass, warm piano, muted trumpet, intimate Mandarin male vocal, 60 BPM",
+  "lyrics": "[Verse]\n在我的怀里\n在你的眼里\n那里春风沉醉\n那里绿草如茵\n月光把爱恋\n洒满了湖面\n两个人的篝火\n照亮整个夜晚\n\n[Chorus]\n多少年以后\n如云般游走\n那变换的脚步\n让我们难牵手\n这一生一世\n有多少你我\n被吞没在月光\n如水的夜里\n",
+  "seed": 2026,
+  "cot": "melody",
+  "semantic_sampling": {
+    "max_tokens": 1000,
+    "min_tokens": 500,
+    "top_k": 80
+  }
+}

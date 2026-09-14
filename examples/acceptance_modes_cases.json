@@ -1,0 +1,72 @@
+[
+  {
+    "mode_key": "full_generated",
+    "mode_name": "Full + Generated Score (全自动乐谱规划)",
+    "cot": "full",
+    "title": "Thanksgiving Comedy · 欢快流行叙事",
+    "genre": "Comedy / Upbeat Pop",
+    "official_id": "2998556d4b082ca29c856652",
+    "official_audio": "official_audios/full_generated_official.mp3",
+    "official_url": "https://map-yue2.github.io/",
+    "style": "Pop genre, Happy mood, Live vocal style, Upbeat production",
+    "lyrics": "[Verse 1]\nThanksgiving morning, sun begins to gleam\nThe family's gathering, living out a dream\nTurkey in the oven, pies all lined up neat\nBut something's brewing, can't be beat\nSierra Zemke's got a story, whispers in the hall\nAbout a Jedi master, standing proud and tall\nObi-Wan in jail, the news has spread so far\nWhile Kirk Cameron's preaching, playing his guitar\n\n[Chorus]\nOh, Thanksgiving day, a feast for all to see\nWith secret farts on YouTube, for the world to agree\nJar Jar Binks is laughing, from a galaxy away\nIt's a bizarre holiday, in every single way\n\n[Verse 2]\nDinner's on the table, laughter fills the air\nGravy on the mashed potatoes, without a care\nUncle Bob tells stories, of birds that fly in jail\nAnd a gun that shot no bullets, an unbelievable tale\nWe're watching viral videos, a screen aglow and bright\nSomeone caught a moment, a comedic sight\nOf gas escaping quickly, a sound both deep and low\nAnd everyone's just giggling, because they know, they know\n\n[Chorus]\nOh, Thanksgiving day, a feast for all to see\nWith secret farts on YouTube, for the world to agree\nJar Jar Binks is laughing, from a galaxy away\nIt's a bizarre holiday, in every single way\n\n[Bridge]\nFrom Hollywood to kitchens, the strange tales intertwine\nOf movie stars and flatulence, a truly wild design\nWho knew that these odd pieces, would fit into one day?\nBut on Thanksgiving, anything can go astray\n\n[Chorus]\nOh, Thanksgiving day, a feast for all to see\nWith secret farts on YouTube, for the world to agree\nJar Jar Binks is laughing, from a galaxy away\nIt's a bizarre holiday, in every single way\n\n[Outro]\nSo pass the cranberry sauce, and don't forget the pie\nAnother year of weirdness, as the hours fly by\nHappy Thanksgiving, everyone, let the good times roll\nWith YouTube farts and Jedi tales, reaching every soul.",
+    "abc": null,
+    "seed": 2026
+  },
+  {
+    "mode_key": "full_supplied",
+    "mode_name": "Full + Supplied Score (外部指定完整多声部谱)",
+    "cot": "full",
+    "title": "Easy Listening · 治愈系长笛钢琴日文歌",
+    "genre": "Easy Listening",
+    "official_id": "1b91eef30046ca2f0cf5633e",
+    "official_audio": "official_audios/full_supplied_official.mp3",
+    "official_url": "https://map-yue2.github.io/",
+    "style": "A gentle and melancholic piece beginning with a delicate piano melody and a breathy, expressive flute line. A soft, clear female vocal enters, singing in a gentle, almost lullaby-like style. The arrangement gradually builds, introducing a subtle, downtempo lo-fi hip-hop beat with a soft kick and snare, complemented by a warm bassline and atmospheric synth pads. The track maintains a tranquil and introspective mood throughout, with the piano and flute weaving in and out, creating a serene soundscape perfect for relaxation or contemplation. The song concludes with a beautiful instrumental outro featuring the piano and flute, fading into silence.",
+    "lyrics": "[Intro: Piano & Flute]\n\n[Verse 1]\n静かな森 歩み寄る\n木々のざわめき 聞こえる音\n陽射しが揺れて 影踊る\n心は軽く 自由になる\n\n[Verse 2]\n風が通り 抱きしめるように\n葉は止ま 語る古い物語\n小鳥の歌が 空を仰ぎ\nその音色だけ 生きている\n\n[Chorus]\n森の中で 消えてゆく\n小さな悩み 風に乗る\n心地良い緑 包まれて\n私は癒され 生まれ変わる\n\n[Instrumental Break: Piano, Flute, Drums]\n\n[Verse 3]\n土の匂いが 深く染みる\n地球の鼓動 感じている\n目を閉じ夜明けを 夢見て\n自然と溶ける 虚無する\n\n[Verse 4]\n月の光が ゆっくりと\n静けさ抱え 手ら知ってる\n心がささやく 小さな声\n森のリズムで 調和化する\n\n[Chorus]\n森の中で 消えてゆく\n小さな悩み 風に乗る\n心地良い緑 包まれて\n私は癒され 生まれ変わる\n\n[Outro: Piano & Flute]",
+    "abc": "X:1\nT:\nM:4/4\nL:1/16\nQ:1/4=85\nV: Vocal clef=treble name=\"Vocal Melody\" snm=\"Vocal\"\nV: Ins clef=treble name=\"Ins Melody\" snm=\"Inst.\"\nK:D#m\n% intro\nV: Vocal\nz8\"Bmaj7\"z8|\"Bmaj7\"z16|\"C#\"z16|\"D#m7\"z16|\nV: Ins\nz12z3a|a3c'3g6f2a2|g3c'3e8z2|e3f3c8Ac|\nV: Vocal\n\"D#m7\"z16|\"Bmaj7\"z16|\"C#\"z16|\"D#m7\"z16|\nV: Ins\ne3f3c4f2e2c2|a3c'3g6f2a2|g3c'3e4f2e2c2|e3f3c8Ac|\nV: Vocal\n\"D#m7\"z8z2d2f2g2|\nV: Ins\ne3f3c4z6|\n% verse\nV: Vocal\n\"Bmaj7\"a2dd3z4d2f2a2|\"C#\"g3c3z4c2d2e2|\"D#m7\"e2fe2c2cc2AA3GA-|\"D#m7\"A2z8d2f2g2|\nV: Ins\nZ4|\nV: Vocal\n\"Bmaj7\"a3d3cd3d2f2a2|\"C#\"g3c3z4c2d2e2|\"D#m7\"e2fe2c2cc2AA3GA-|\"D#m7\"A2z8d2f2g2|\nV: Ins\nZ4|\nV: Vocal\n\"Bmaj7\"a3d3cd3d2f2a2|\"C#\"g3c3z4c2d2e2|\"D#m7\"e2fe2c2cc2A2A2G2|\"D#m7\"G3c3A2z2d2f2g2|\nV: Ins\nZ4|\nV: Vocal\n\"Bmaj7\"a3d3cd3d2f2a2|\"C#\"g3c3e4z4c2|\"D#m7\"d3e3f2g3f3e2|\"D#m7\"e3f3e4d2d4|\nV: Ins\nZ4|\nV: Vocal\n\"D#m7\"z8z2d2a2g2|\nV: Ins\nZ|\n% chorus\nV: Vocal\n\"Bmaj7\"a3c'3g2-\"C#\"g2a2g2f2|\"D#m7\"e3c4z3d2a2g2|\"Bmaj7\"a3c'3g2-\"C#\"g2a2g2f2|\"D#m7\"g3a4z3d2a2g2|\nV: Ins\nZ4|\nV: Vocal\n\"Bmaj7\"a3c'3g2-\"C#\"g2a2g2f2|\"D#m7\"g3c'3a4z4de|\"Bmaj7\"f2f2f2a2\"C#\"g3f3e2|\"D#m7\"e3f3e4d2d4|\nV: Ins\nZ4|\n% interlude\nV: Vocal\n\"Bmaj7\"z16|\"C#\"z16|\"D#m7\"z16|\"D#m7\"z16|\nV: Ins\nz2d'c'c'aaggffeeddc|cddccAAGGFFEEDEC|D3A3A8-A2-|A6z8z2|\nV: Vocal\n\"Bmaj7\"z16|\"C#\"z16|\"D#m7\"z16|\"D#m7\"z8z2d2f2g2|\nV: Ins\nz2d'c'c'aaggffeeddc|cddccAAGGFFEEDEC|D3A3A8-A2-|A6z8z2|\n% verse\nV: Vocal\n\"Bmaj7\"a2dd2c3z2d2f2a2|\"C#\"g3c3e2z2c2d2e2|\"D#m7\"e2fe2c3c2AA3GA-|\"D#m7\"A2z8d2f2g2|\nV: Ins\nZ4|\nV: Vocal\n\"Bmaj7\"a3d3cd3d2f2a2|\"C#\"g3c4z4zd2e2|\"D#m7\"e3f3e4d4c2|\"D#m7\"e3f3e4d4z2|\nV: Ins\nZ4|\nV: Vocal\n\"Bmaj7\"z2aaa2gg2ff2z4|\"C#\"z2a2a2gg2c'4z3|\"D#m7\"z2aaa2gg2ff2z2e2|\"D#m7\"e3f3e4d4z2|\nV: Ins\nZ4|\nV: Vocal\n\"Bmaj7\"z2aaa2gggff4z2|\"C#\"z2a2a2gg2c'c'z4z|\"D#m7\"z2aaa2gggff4e2|\"D#m7\"e3f3e4d2d4|\nV: Ins\nZ4|\nV: Vocal\n\"D#m\"z8z2d2a2g2|\nV: Ins\nZ|\n% chorus\nV: Vocal\n\"Bmaj7\"a3c'3g2-\"C#\"g2a2g2f2|\"D#m7\"g3c4z3d2a2g2|\"Bmaj7\"a3c'3g2-\"C#\"g2a2g2f2|\"D#m7\"g3a4z3d2a2g2|\nV: Ins\nZ4|\nV: Vocal\n\"Bmaj7\"a3c'3g2-\"C#\"g2a2g2f2|\"D#m7\"g3c'3a4z4de|\"Bmaj7\"f2f2f2a2\"C#\"g3f3e2|\"D#m7\"e3f3e4d2d4|\nV: Ins\nZ4|\n% outro\nV: Vocal\n\"Bmaj7\"z8\"C#\"z8|\"D#m7\"z16|\"Bmaj7\"z8\"C#\"z8|\"D#m7\"z16|\nV: Ins\nz2d'c'c'aaggffeeddc|cddccAAGGFFEEDEC|D3A3A8-A2-|A6z8z2|\nV: Vocal\n\"Bmaj7\"z8\"C#\"z8|\"D#m7\"z16|\"Bmaj7\"z8\"C#\"z8|\"D#m7\"z16|\nV: Ins\nz2d'c'c'aaggffeeddc|cddccAAGGFFEEDEC|D3A3A8-A2-|A6z8z2|\nV: Vocal\n\"Bmaj7\"z16|\"C#\"z16|\"D#m7\"z16|\"D#m7\"z16|\nV: Ins\na3c'3g6f2a2|g3c'3e8z2|e3f3c8Ac|e3f3c8z2|\nV: Vocal\n\"D#m7\"z16|\nV: Ins\nZ|\n",
+    "seed": 2026
+  },
+  {
+    "mode_key": "melody_generated",
+    "mode_name": "Melody + Generated Score (自动主旋律规划)",
+    "cot": "melody",
+    "title": "当代都市 R&B · 律动合成器流行",
+    "genre": "Modern R&B",
+    "official_id": "115abed0e655f5fa9b1409b3",
+    "official_audio": "official_audios/melody_generated_official.mp3",
+    "official_url": "https://map-yue2.github.io/",
+    "style": "Modern Chinese pop R&B with synth-pop influence, emotional and intimate atmosphere, Intro starts with a clear and emotional lead synth melody, simple and memorable, soft and slightly fragile, close-mic, expressive and melodic, Clean pop drum groove, tight punchy kick, natural snare with soft room reverb, minimal hi-hat pattern, smooth R&B bounce, Warm melodic synth bass with smooth movement, Analog-style synths with slight detune, warm tone, gentle filter movement, soft low-pass, subtle chorus width, Lead synth is smooth and rounded, emotional and expressive, High-frequency bell-like pluck synth in the background, soft and bright, short notes with light delay and reverb, adding sparkle and rhythmic detail, Wide atmospheric pads with slow attack and breathing movement, Minimal and clean arrangement, layered but spacious, focusing on melody and texture, Wide stereo image, airy reverb and delay, polished and warm, Pop music, Well-defined rhythm , Well-defined rhythm",
+    "lyrics": "[Intro]\n\n[Verse 1]\n交易命运的改变 源头在起心动念\n这是改变的关键 但很多人视而不见\n大赚大亏踏空卖飞 内在秩序不要乱\n保持平和的心念 净值弹指间改变\n当你大赚庆幸时 请你安静想想看\n这笔盈利隐含多少潜在代价来交换\n当你清楚知晓每次交易对应的代价\n策略的赔率带给你先胜后战的心安\n\n[Pre-Chorus]\n当你选择策略保守会避开一些风险\n模式内机会出现时进攻必然受限\n当你选择激进策略博弈猛干一段\n大赚的概率提升 大面概率也提升\n\n[Chorus]\n当你大亏懊悔时 请你冷静想想看\n当下的首要任务是稳住还是继续猛干\n如果内心秩序混乱还想力挽狂澜\n连续重仓猛干会让你连续吃大面\n此时赶紧降低期待调整心中的不甘\n要警惕出其不意博弈小概率事件\n\n[Verse 2]\n因为赌性会在不顺之时出来作乱\n回头发现 努力回血反而不如摆烂\n当你交易卖飞时\n请你转念想想看 后续行情是否出现一个更好的答案\n其实时间拉长看 每条净值的曲线\n那是模式画的图\n更是心性的变现\n\n[Bridge]\n世间 一切都是万物因缘合和的结果\n很多事\n都不是我们想怎样就怎样的\n走势无常才是交易基本的常态\n于是先要接纳它 否则痛苦一直在\n所有绊脚石\n换个角度也是垫脚石\n在你主动站上去看更高的风景时\n\n[Verse 3]\n当你后悔当初时 请你转念想想看\n难道当初不那样 做现在真的会更棒 不那样现在会怎样\n都是你的想象\n况且日子还很长 不要过早下判",
+    "abc": null,
+    "seed": 2026
+  },
+  {
+    "mode_key": "melody_supplied",
+    "mode_name": "Melody + Supplied Score (外部指定主旋律谱)",
+    "cot": "melody",
+    "title": "Jazz-Funk · 律动放克与人声旋律线",
+    "genre": "Jazz-Funk",
+    "official_id": "e3d76e66a92637ebb46e61ed",
+    "official_audio": "official_audios/melody_supplied_official.mp3",
+    "official_url": "https://map-yue2.github.io/",
+    "style": "funk",
+    "lyrics": "[Verse]\n姉が玉子焼き用の四角いフライパンで\n目玉焼きを焼いている\n合う蓋はないので\n横から湯気は洩れるが\n面白い発想に見えた\n\n僕は丸い小さめの普通のフライパンで\n目玉焼きを焼く\n\n[Pre-Chorus]\nかように遠くで暮らしていると\n癖やメソッドや好みが違う\n\n[Chorus]\n当たり前、当たり前、当たり前\nこれはAが優れてBが劣るというような\n問題ではないのだ\n\n[Bridge]\n君の一本道の進歩観を\n多々野辺のどこへともない道に\n考え直してみてはどうだろう",
+    "abc": "X:1\nT:\nM:4/4\nL:1/32\nQ:1/4=116\nV: Vocal clef=treble name=\"Vocal Melody\" snm=\"Vocal\"\nV: Ins clef=treble name=\"Ins Melody\" snm=\"Inst.\"\nK:Em\n% intro\nV: Vocal\nz24z4\"Em\"z4|\"Em\"z32|\"Em\"z32|\"Em\"z32|\nV: Ins\nz24z4E4|E8G6A6^A4B4d2e2|E8G6A6^A4B4d2e2|E8G6A6^A4B4d2e2|\nV: Vocal\n\"Em\"z32|\"Em\"z16\"G6\"z16|\"Am7\"z16\"C\"z8\"B7\"z8|\"Em\"z16\"G6\"z16|\nV: Ins\ne4d4^A2=A2G4E4D4E8|E8z4D4G6G2z8|A6A2z8c4c4B2B6|E8z4D4G6G2z8|\nV: Vocal\n\"Am7\"z16\"C\"z8\"B7\"z8|\"Em\"z16\"G6\"z16|\"Am7\"z16\"C\"z8\"B7\"z8|\"Em\"z16\"G6\"z16|\nV: Ins\nA6A2z8c4c4B2B6|e8e2d2B2d4e12z2|A6A2z8c4c4B2B6|E8e2d2B2d4e12z2|\nV: Vocal\n\"Am7\"z16\"C\"z8\"B7\"z8|\nV: Ins\nA6A2z8c4c4B2B6|\n% verse\nV: Vocal\n\"Em\"e4d4B4A4\"G6\"A4G4E4D4|\"Am7\"E4D4E4D4\"C\"E4G4-\"B7\"G4E4|\"Em\"z4e4d4B4\"G6\"A4G4E4A4-|\"Am7\"A8G2G2B4-\"C\"B8\"B7\"z8|\nV: Ins\nZ4|\nV: Vocal\n\"Em\"e8B2B2B2A2-\"G6\"A2G2G8E2D2|\"Am7\"E2D2E2D2E4D2E2-\"C\"E2E2G4-\"B7\"G4z4|\"Em\"E4D4E4D4\"G6\"E4z4G8|\"Am7\"A4G4A4G4\"C\"B8\"B7\"z8|\nV: Ins\nZ4|\n% pre-chorus\nV: Vocal\n\"Cmaj7\"z8e8g8a8|\"B7\"z8e8g8a8|\"Em7\"b8a4g4a8g4a4-|\"A7\"a8g4e12z4B4|\nV: Ins\nZ4|\nV: Vocal\n\"Cmaj7\"c8d8e8g8|\"B7\"f16^d16|\"Em\"e8z24|\"Em\"z32|\nV: Ins\nZ2|z8G6A6^A4B4d2e2|E8G6A6^A4B4d2e2|\n% chorus\nV: Vocal\n\"Cmaj7\"b16a4g4g4a4-|\"B7\"a8g4b12z8|\"Em7\"a16a4g4g4a4-|\"A7\"a8g4e8z8d4|\nV: Ins\nZ4|\nV: Vocal\n\"Cmaj7\"e8g8f8g8|\"B7\"f8^d8B8A8|\"Em7\"B16d16|\"Em7\"e16g16|\nV: Ins\nZ4|\nV: Vocal\n\"Cmaj7\"z4b4a2g2g2a6b4a2g2g2a2-|\"B7\"a4b4a2g2g2a6b4a4g4|\"Em7\"a4g4a4g4a4g4a4g4|\"A7\"a2g2a2g2a2g2b8e8z4|\nV: Ins\nZ4|\nV: Vocal\n\"Cmaj7\"e16g16|\"B7\"f8^d8B8A8|\"Em7\"B16d16|\"Em7\"e16g16|\nV: Ins\nZ4|\nV: Vocal\n\"Cmaj7\"z4e4e4e4e8b8|\"B7\"a4g4a4g4a2g2a8b4|\"Em7\"z4e4e4e4e4e4b8|\"A7\"a2g2a2g2a4g2a4g2b8z4|\nV: Ins\nZ4|\nV: Vocal\n\"Cmaj7\"e16g16|\"B7\"f16^d16|\"Em7\"e16d16|\"Em7\"B8A8G8A6G2|\nV: Ins\nZ4|\nV: Vocal\n\"Em\"E16z16|\nV: Ins\nz16e4e4e4z4|\n% outro\nV: Vocal\n\"Em\"z16\"G6\"z16|\"A7\"z16\"C\"z8\"B7\"z8|\"Em\"z16\"G6\"z16|\"A7\"z16\"C\"z8\"B7\"z8|\nV: Ins\ne8e2d2B2d4e6z8|A6A2z8c4c4B8|E8e2d2B2d4e6z8|A6A2z8c4c4B8|\nV: Vocal\n\"Em\"z16\"G6\"z16|\"A7\"z16\"C\"z8\"B7\"z8|\"Em\"z16\"G6\"z16|\"A7\"z16\"C\"z8\"B7\"z8|\nV: Ins\nE8e2d2B2d4e6z8|A6A2z8c4c4B8|E8e2d2B2d4e6z8|A6A2z8c4c4B8|\nV: Vocal\n\"Em\"z32|\"Em\"z32|\nV: Ins\nE8G6A6^A4B4d2e2|e8z24|\n",
+    "seed": 2026
+  },
+  {
+    "mode_key": "off_direct",
+    "mode_name": "Off / Direct Generation (直接端到端生成 / 无乐谱)",
+    "cot": "off",
+    "title": "Enka · 经典复古演歌 (Direct Generation)",
+    "genre": "Enka / Retro Pop",
+    "official_id": "bdfc142ef136070839953ffa",
+    "official_audio": "official_audios/off_direct_official.mp3",
+    "official_url": "https://map-yue2.github.io/",
+    "style": "retro,city pop,中森明菜,Japanese",
+    "lyrics": "风が麦浪をなびかせ 稲の花が香る\n黒い土地が われらの父母を育てる\n毎年冬には 大雪が舞い散る\n暖かい炬燵の上で 世間話をする\n\n青い空に 白い雲がゆらゆら\n清らかな小川が せせらぎながら流れる\n東北の人は ザワーキャベツと血腸が好き\nヤンコ踊りを踊れば 人々は喜びそう\n\n大東北は わたしの故郷だ\nソナが奏でる 素敵な姿\n仲間が集まれば 必ずお酒を二杯飲む\n月を酔わせ わたしの心を温める\n\n大東北は わたしの故郷だ\nわたしはこの地で 生まれ育った\n東北人の情 東北人の愛\nこの故郷を 心から愛してる\n\n风が麦浪をなびかせ 稲の花が香る\n黒い土地が われらの父母を育てる\n毎年冬には 大雪が舞い散る\n暖かい炬燵の上で 世間話をする\n\n青い空に 白い雲がゆらゆら\n清らかな小川が せせらぎながら流れる\n東北の人は ザワーキャベツと血腸が好き\nヤンコ踊りを踊れば 人々は喜びそう\n\n大東北は わたしの故郷だ\nソナが奏でる 素敵な姿\n仲間が集まれば 必ずお酒を二杯飲む\n月を酔わせ わたしの心を温める\n\n大東北は わたしの故郷だ\nわたしはこの地で 生まれ育った\n東北人の情 東北人の愛\nこの故郷を 心から愛してる\n\n大東北は わたしの故郷だ\nソナが奏でる 素敵な姿\n仲間が集まれば 必ずお酒を二杯飲む\n月を酔わせ わたしの心を温める\n\n大東北は わたしの故郷だ\nわたしはこの地で 生まれ育った\n東北人の情 東北人の愛\nこの故郷を 心から愛してる\nこの故郷を 心から愛してる",
+    "abc": null,
+    "seed": 2026
+  }
+]

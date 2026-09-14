@@ -1,0 +1,23 @@
+{
+  "name": "yue2-music",
+  "version": "0.2.0",
+  "owner": "vanch (project owner; inferred from request)",
+  "updated_at": "2026-09-14",
+  "status": "experimental",
+  "maturity_tier": "scaffold",
+  "skill_archetype": "personal local music workflow",
+  "review_cadence": "On mlx-Yue API/model changes; review proposed every 90 days",
+  "review_due": "2026-12-13",
+  "target_platforms": [
+    "openai"
+  ],
+  "context_budget_tier": "production",
+  "skill_ir_source": "reports/skill-ir.json",
+  "factory_components": [
+    "references",
+    "scripts",
+    "assets",
+    "evals",
+    "reports"
+  ]
+}

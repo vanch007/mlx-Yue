@@ -1,4 +1,4 @@
 interface:
-  display_name: "YuE2 Music"
-  short_description: "Generate, cover, and edit songs with the YuE2 family"
-  default_prompt: "Use $yue2-music to generate a song, edit its score, and render an audible comparison."
+  display_name: "YuE2-music"
+  short_description: "本机生成、翻唱、改谱与按需求调参的 YuE2 音乐工作流"
+  default_prompt: "Use $yue2-music to turn my brief into a full song with suitable settings and verified audio."

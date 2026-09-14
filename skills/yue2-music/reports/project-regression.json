@@ -1,0 +1,9 @@
+{
+  "command": ".venv/bin/pytest -q",
+  "passed": 107,
+  "skipped": 1,
+  "subtests_passed": 28,
+  "seconds": 7.67,
+  "warnings": 3,
+  "scope": "project regression; separately 11 skill contract tests passed"
+}

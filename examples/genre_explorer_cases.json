@@ -1,0 +1,80 @@
+[
+  {
+    "id": "ja_easy_listening",
+    "case_id": "1b91eef30046ca2f0cf5633e",
+    "language": "ja",
+    "language_name": "Japanese",
+    "genre": "Easy Listening",
+    "title": "Easy Listening",
+    "style": "A gentle and melancholic piece beginning with a delicate piano melody and a breathy, expressive flute line. A soft, clear female vocal enters, singing in a gentle, almost lullaby-like style. The arrangement gradually builds, introducing a subtle, downtempo lo-fi hip-hop beat with a soft kick and snare, complemented by a warm bassline and atmospheric synth pads. The track maintains a tranquil and introspective mood throughout, with the piano and flute weaving in and out, creating a serene soundscape perfect for relaxation or contemplation. The song concludes with a beautiful instrumental outro featuring the piano and flute, fading into silence.",
+    "lyrics": "[Intro: Piano & Flute]\n\n[Verse 1]\n静かな森 歩み寄る\n木々のざわめき 聞こえる音\n陽射しが揺れて 影踊る\n心は軽く 自由になる\n\n[Verse 2]\n風が通り 抱きしめるように\n葉は止ま 語る古い物語\n小鳥の歌が 空を仰ぎ\nその音色だけ 生きている\n\n[Chorus]\n森の中で 消えてゆく\n小さな悩み 風に乗る\n心地良い緑 包まれて\n私は癒され 生まれ変わる\n\n[Instrumental Break: Piano, Flute, Drums]\n\n[Verse 3]\n土の匂いが 深く染みる\n地球の鼓動 感じている\n目を閉じ夜明けを 夢見て\n自然と溶ける 虚無する\n\n[Verse 4]\n月の光が ゆっくりと\n静けさ抱え 手ら知ってる\n心がささやく 小さな声\n森のリズムで 調和化する\n\n[Chorus]\n森の中で 消えてゆく\n小さな悩み 風に乗る\n心地良い緑 包まれて\n私は癒され 生まれ変わる\n\n[Outro: Piano & Flute]",
+    "audio_url": "https://map-yue2.github.io/assets/genre/1b91eef30046ca2f0cf5633e/1b91eef30046ca2f0cf5633e_music.mp3",
+    "seed": 1000,
+    "cot": "melody"
+  },
+  {
+    "id": "ru_folktronica",
+    "case_id": "43fc3aa38700252b8d63982b",
+    "language": "ru",
+    "language_name": "Russian",
+    "genre": "Folktronica",
+    "title": "Folktronica",
+    "style": "Dance Pop, Storytelling, Groovy, Anthemic, Dance, Folk, Melodic, Danceable, Electronic, female vocals",
+    "lyrics": "Ах вы, сени мои, сени\nСени новые мои\nСени новые, кленовые\nРешетчатые!\nВыходила молода\nЗа новые ворота\nВыпускала сокола\nИз правого рукава\nНа полетике соколику наказывала\n«Ты лети, лети, соколик\nвысоко и далеко».\nИ высоко и далеко\nНа родиму сторону\nНа родимой на сторонке\nГрозен батюшка живёт.\nОн и грозен, сударь, грозен\nДа не милостив\nНе пускает молоду\nПоздно вечером одну.\nНе велит поздно ходить\nС молодцами говорить.\nНе послушаю отца\nЭх, потешу молодца.\nАх вы, сени мои, сени\nСени новые мои\nСени новые, кленовые\nРешетчатые!",
+    "audio_url": "https://map-yue2.github.io/assets/genre/43fc3aa38700252b8d63982b/43fc3aa38700252b8d63982b_music.mp3",
+    "seed": 1111,
+    "cot": "melody"
+  },
+  {
+    "id": "es_flamenco",
+    "case_id": "0792ba06ebe2fd7cdd6c3e7b",
+    "language": "es",
+    "language_name": "Spanish",
+    "genre": "Flamenco",
+    "title": "Flamenco",
+    "style": "flamenco gipsy female vocals, deep male spanish rap voice, hip hop beat with cajón and bass, flamenco guitar, palmas, 95 bpm, joyful energy, andalusian accent, fusion, bright tone, no melancholy, festive rhythm, call and response vocals, uplifting and emotional, warm analog texture, street spirit, modern flamenco rap fusion, mediterranean vibe, vibrant and organic production.",
+    "lyrics": "[Intro – female flamenco vocals, slow compás, soft palmas, flamenco guitar intro]\nAy, Jaén, tierra de fuego\ndonde el sol besa el suelo\nentre olivos se levanta\ntu corazón verdadero.\n\n\n\n[Beat drops – male rap enters, groovy hip-hop rhythm, cajón + bass, 95 BPM]\nJaén despierta, con fuerza y con arte\nla gente sonríe, la vida reparte\nen cada calle hay historia que late\norgullo en el alma, raíces que arden.\n\nSubo la cuesta, la brisa me guía\nSanta Catalina me da compañía\nel barrio murmura con algarabía\nla tapa, la risa, la buena energía.\n\n\n\n[Chorus – female flamenco vocals, upbeat rhythm with hand claps and guitar strums]\nAy, Jaén, qué bonito suena\ntu cante vuela, tu luz me llena\ndel valle al monte, la voz resuena\nJaén se alegra, Jaén resuena.\n\n\n\n[Verse 2 – male rap with female ad-libs, syncopated rhythm]\nTierra sincera, mirada clara\ntrabajo y coraje, palabra rara\ndesde el casco viejo hasta la Almenara\nJaén no espera, Jaén dispara.\n\n[Female ad-libs – flamenco “jaleos” style]\n¡Ole mi gente buena! ¡Ay qué alegría más sana!\n\n[Male rap continues]\nPor el Paseo de la Estación suena el alma\nni el tiempo ni el miedo aquí tienen calma\nJaén respira verdad y palma\ncada esquina suena a jarana.\n\n\n\n[Bridge – vocal duel, flamenco and rap call & response, energetic palmas]\nTierra bendita, no hay quien te iguale\nAquí el corazón se mide en el vale.\nDeja que el cante reviente la calle\nQue en cada compás la vida estalle.\n\n\n\n[Final Chorus – both voices together, full festive energy, strong compás]\nAy, Jaén, qué bonito suena\ntu cante vuela, tu luz me llena\ndel valle al monte, la voz resuena\nJaén se alegra, Jaén resuena.\n\n\n\n[Outro – female flamenco vocals, slow fade with guitar and cajón]\nAy, mi Jaén, mi tierra buena\nmi gente canta, la vida suena\nJaén resuena, Jaén resuena...",
+    "audio_url": "https://map-yue2.github.io/assets/genre/0792ba06ebe2fd7cdd6c3e7b/0792ba06ebe2fd7cdd6c3e7b_music.mp3",
+    "seed": 1222,
+    "cot": "melody"
+  },
+  {
+    "id": "zh_randb",
+    "case_id": "115abed0e655f5fa9b1409b3",
+    "language": "zh",
+    "language_name": "Chinese",
+    "genre": "R&B",
+    "title": "R&B",
+    "style": "Modern Chinese pop R&B with synth-pop influence, emotional and intimate atmosphere, Intro starts with a clear and emotional lead synth melody, simple and memorable, soft and slightly fragile, close-mic, expressive and melodic, Clean pop drum groove, tight punchy kick, natural snare with soft room reverb, minimal hi-hat pattern, smooth R&B bounce, Warm melodic synth bass with smooth movement, Analog-style synths with slight detune, warm tone, gentle filter movement, soft low-pass, subtle chorus width, Lead synth is smooth and rounded, emotional and expressive, High-frequency bell-like pluck synth in the background, soft and bright, short notes with light delay and reverb, adding sparkle and rhythmic detail, Wide atmospheric pads with slow attack and breathing movement, Minimal and clean arrangement, layered but spacious, focusing on melody and texture, Wide stereo image, airy reverb and delay, polished and warm, Pop music, Well-defined rhythm , Well-defined rhythm",
+    "lyrics": "[Intro]\n\n[Verse 1]\n交易命运的改变 源头在起心动念\n这是改变的关键 但很多人视而不见\n大赚大亏踏空卖飞 内在秩序不要乱\n保持平和的心念 净值弹指间改变\n当你大赚庆幸时 请你安静想想看\n这笔盈利隐含多少潜在代价来交换\n当你清楚知晓每次交易对应的代价\n策略的赔率带给你先胜后战的心安\n\n[Pre-Chorus]\n当你选择策略保守会避开一些风险\n模式内机会出现时进攻必然受限\n当你选择激进策略博弈猛干一段\n大赚的概率提升 大面概率也提升\n\n[Chorus]\n当你大亏懊悔时 请你冷静想想看\n当下的首要任务是稳住还是继续猛干\n如果内心秩序混乱还想力挽狂澜\n连续重仓猛干会让你连续吃大面\n此时赶紧降低期待调整心中的不甘\n要警惕出其不意博弈小概率事件\n\n[Verse 2]\n因为赌性会在不顺之时出来作乱\n回头发现 努力回血反而不如摆烂\n当你交易卖飞时\n请你转念想想看 后续行情是否出现一个更好的答案\n其实时间拉长看 每条净值的曲线\n那是模式画的图\n更是心性的变现\n\n[Bridge]\n世间 一切都是万物因缘合和的结果\n很多事\n都不是我们想怎样就怎样的\n走势无常才是交易基本的常态\n于是先要接纳它 否则痛苦一直在\n所有绊脚石\n换个角度也是垫脚石\n在你主动站上去看更高的风景时\n\n[Verse 3]\n当你后悔当初时 请你转念想想看\n难道当初不那样 做现在真的会更棒 不那样现在会怎样\n都是你的想象\n况且日子还很长 不要过早下判",
+    "audio_url": "https://map-yue2.github.io/assets/genre/115abed0e655f5fa9b1409b3/115abed0e655f5fa9b1409b3_music.mp3",
+    "seed": 1333,
+    "cot": "melody"
+  },
+  {
+    "id": "ko_emo",
+    "case_id": "df64fef4d0ba5a18670f6c19",
+    "language": "ko",
+    "language_name": "Korean",
+    "genre": "Emo",
+    "title": "Emo",
+    "style": "A melancholic yet energetic Emo Hip-hop track with Pop Punk influences. Heavy distorted electric guitar riffs combined with fast-paced trap drum beats (808 bass, crisp snare). Dark, emotional, and cinematic atmosphere. Melodic Rap beat featuring a lonely acoustic guitar intro transitioning into an explosive chorus with heavy rock guitars. Deep, distorted 808 bass and sharp hi-hats. Sad, longing melody. Fast-paced Emo Rock and Hip-hop fusion. High-energy electric guitar loops, upbeat but sad melody, 140 BPM ~ 160 BPM, driving drum rhythm. A female vocal with a husky, raspy tone and heavy auto-tune. The singing style is emotional melodic rap. Add high reverb to create a lonely, atmospheric vibe. The voice should sound raw yet polished with metallic pitch correction.",
+    "lyrics": "[Verse 1]\n늦은 밤 텅 빈 버스 안\n창문에 비친 너와 내 얼굴\n목적지는 아직 안 정해도\n너만 있으면 되는 것 같아\n\n[Pre-Chorus]\n사실 난 겁이 많아서\n길을 잃을까 봐 두려워\n근데 네 손 한 번만 잡으면\n지도 따윈 필요 없을 것 같아 (알잖아)\n\n[Chorus]\n나랑 어디든 간다고 해줘\n길 끝이 어딘지 몰라도\n나와 어디든 좋다고 해줘\n창문 밖 풍경은 변해도\n나만 있으면 그 어디든 괜찮다고\n작게라도 말해줘\n그 한마디면 돼\n\n[Verse 2]\n비 오는 빨래 냄새 나는 골목\n우산 하나 나눠 쓰는 우리\n비틀비틀 맞지 않는 보폭도\n웃으면서 맞춰 가는 게 좋아\n\n[Pre-Chorus]\n가끔은 말이 안 통해도\n표정만 봐도 다 알잖아\n서툰 얘길 이어 붙이다가\n그냥 네 이름만 부르게 돼 (왜 이렇게)\n\n[Chorus]\n나랑 어디든 간다고 해줘\n길 끝이 어딘지 몰라도\n나와 어디든 좋다고 해줘\n창문 밖 풍경은 변해도\n나만 있으면 그 어디든 괜찮다고\n조용하게 말해줘\n그 한마디면 돼\n내일도 난 버틸 수 있어\n\n[Bridge]\n약속 같은 건 없어도\n네 옆에 서 있는 지금이\n나에게는 다야\n멀리 안 가도 좋아\n편의점 앞 구석자리라도\n너면 돼 너면 돼 (너면 돼)\n\n[Chorus]\n나랑 어디든 간다고 해줘\n잠깐 밖에 못 나가도\n나와 어디든 좋다고 해줘\n네 방 안 좁은 소파여도\n나만 있으면 그 어디든 괜찮다고\n다시 한 번 말해줘\n그 한마디 듣고\n영원까지 걸어가 볼래",
+    "audio_url": "https://map-yue2.github.io/assets/genre/df64fef4d0ba5a18670f6c19/df64fef4d0ba5a18670f6c19_music.mp3",
+    "seed": 1444,
+    "cot": "melody"
+  },
+  {
+    "id": "en_rock_and_roll",
+    "case_id": "ad4ec0a4f236082a2933b48d",
+    "language": "en",
+    "language_name": "English",
+    "genre": "Rock & Roll",
+    "title": "Rock & Roll",
+    "style": "Joyful happy 50s male powerful",
+    "lyrics": "[Verse]\nSnow is falling thick and bright\nReindeer footprints in the night\nCookies vanish\nMilk is gone\nWho's that laughing till the dawn\n\n[Prechorus]\nChimneys whisper\nMagic flows\nCandy canes in secret rows\n\n[Chorus]\nChristmas time with Santa Claus\nSliding rooftops\nNo time to pause\nHo ho ho\nHe’s on his way\nBringing joy to Christmas Day\n\n[Verse 2]\nStockings hang by the fire’s glow\nToys and dreams in a sack to go\nElves are dancing\nWrapping fast\nEvery wish will make it past\n\n[Prechorus]\nMidnight sparkles\nSleigh bells sing\nFeel the joy that he will bring\n\n[Chorus]\nChristmas time with Santa Claus\nSliding rooftops\nNo time to pause\nHo ho ho\nHe’s on his way\nBringing joy to Christmas Day",
+    "audio_url": "https://map-yue2.github.io/assets/genre/ad4ec0a4f236082a2933b48d/ad4ec0a4f236082a2933b48d_music.mp3",
+    "seed": 1555,
+    "cot": "melody"
+  }
+]

@@ -1,96 +1,36 @@
-# Listening delivery and reproducible evaluation
+# 试听与性能证据
 
-Finish with audio the user can play and the exact conditions that produced it. A score, a metric or a successful process exit is not an audible result.
+原生产物验收：verify_result 检验哈希；分别看 truncated.abc/semantic；FLAC 能解码、
+48k stereo、有限样本、时长、RMS/peak/clipping。非零 RMS 和自然 EOS 仅证明技术
+条件，不证明旋律/歌词/音乐质量。损坏、空声、截短或不完整批次不能报 pass。
 
-## Keep listening and scoring versions separate
+生成助手 summary.json 的 wall_seconds/RTF 是 CLI 进程总时间（含加载、运行、保存，
+cover 含转谱）；result timing.e2e_seconds 为 pipeline 内部时间，通常不含加载。
+内存使用 sampled_maxima.physical_footprint_bytes；MLX peak 另算，不能相加。
+guard 采样并不是绝对内存上限。无法读取就 null/unknown，不填 0。
 
-Use `m-a-p/YuE2-Vae` for native listening previews. Use `m-a-p/YuE2-Vae-legacy` when reproducing the supplied benchmark-decoder protocol. Keep full model names, revisions and hashes in the record; the word “legacy” does not establish which decoder a score used.
+compare_steps.py 测量同 semantic/noise 的 NAR+VAE 重合成；单次共享模型 load_seconds
+单列，不加历史 AR 冒充新实测。已有 tools/run_fast_8step_benchmark.py 的历史结果
+e2e 是旧 AR/load/transcription 加新 NAR/VAE 的估算。保留其来源，不说所有端到端
+请求都更快于实时。跨模型种子相同不能保证生成相同歌曲。
 
-Generate the acoustic latents once for a given song and decode that same saved `latent.npy` for each requested decoder. A musical or lyric edit requires new generation; changing only the decoder does not. The helper produces a new native result directory for cached decoding:
-
-```bash
-python scripts/run_yue2.py decode --source outputs/jazz \
-  --output outputs/jazz-evaluation \
-  --model "$YUE2_MODEL_DIR" --vae "$YUE2_EVAL_VAE_DIR" --offline
-```
-
-Use a verified local model matching the source result. For Hub models, pass the verified `--revision` and `--vae-revision` as well. Keep the source untouched. The new result must retain the original request, exact plan/semantic tokens and latents, with the new decoder's identity, configuration and audio hashes. Record the source latent hash and the decode-only operation; do not report decoder runtime as full generation speed.
-
-A bare FLAC plus a custom decoder manifest is useful for listening, but is not sufficient input to the complete kit's frozen evaluator. Its adapter verifies a full native `SongResult.save_artifacts` directory, including `result.json`, request/config, token arrays, latents and audio hashes. Never copy an old manifest over new audio or keep the listening decoder's identity on the evaluation audio.
-
-## Build the listening comparison
+要对齐官方 demo：冻结同一案例的 style/lyrics/cot/ABC 和输入哈希、源音频时长、
+官方参考 URL；完整预算生成，保留失败与重试；引用官方参考和本机实测分别标注。
+本机精度对比不要求与 PyTorch 随机采样生成完全一样的声音。
 
 ```bash
-python scripts/listen.py outputs/pop outputs/jazz --output outputs/comparison
+"$PY" -m lyra.cli listen /absolute/song-a /absolute/song-b --output /absolute/new-listening-page
 ```
 
-The helper creates a local HTML listening page with copied audio and exact requests. It does not upload or publish. Use fresh output directories and deliver the generated page alongside direct audio links when the interface supports playback.
+输入必须指向真实 native song 目录（cover/song 或 helper/generate），不是父目录。
+该页复制 FLAC、native 请求和 metadata；独立 summary/comparison.json 需一并交付，
+不可假装内置页面已展示任意 sidecar 指标。只有用户要公开试听时再处理发布授权，
+不会自动上传音频或账号信息。
 
-Include the full songs and useful excerpts for long edits. Start excerpts before the edited passage and include its exit; a few isolated notes hide transition problems. For a vocal rewrite, include enough verse and chorus to assess words and phrasing. For a theme/solo edit, include both complete theme statements and their continuation, not just the opening motive.
+人工/工具实际试听按任务评估：风格/配器、歌词可辨/遗漏重复、段落发展与 hook、
+自然结尾、人声瑕疵、指定旋律/节奏遵循。若没有音频理解工具可用，提供播放器与
+检查点请用户试听；不用“我听到”掩盖只做数值检查。ASR 用于辅助咬字检查，不能
+替代听感；转谱误差也不能直接当生成音准错误。歌词字幕时间轴非原生产物。
 
-Each listening entry should identify:
-
-- Version and intended change, full style prompt, full lyrics and source/edited ABC.
-- Actual model and decoder identity, seed, mode and any parameter overrides.
-- Duration, truncation flags, structural/invariant checks and relevant change records.
-- The complete audio, any excerpt's start/end times and whether it was normalized or otherwise processed.
-
-Retain lossless generated audio even if making MP3 previews. Never replace or normalize the audio underlying recorded scores when refreshing listening links. A listening-page conversion is a delivery artifact; the frozen evaluation adapter applies its own recorded preprocessing.
-
-Listen specifically for melody realization, chord clashes at sustained notes, instrument choices, lyric omissions/repetitions, pacing, section transitions and the ending. If no audio audition capability was available, say which checks were actually performed rather than claiming to have heard the song.
-
-## Separate the evidence
-
-| Check | What it supports | What it does not establish |
-|---|---|---|
-| Native ABC inspection | Accepted structure, time grid and supported symbols | Pleasant harmony or audible adherence |
-| Sounding-note comparison | Specified symbolic pitches/onsets/durations preserved | Identical generated performance or waveform |
-| SheetSage2 transcription of generated audio | A diagnostic estimate of realized musical events | Error-free ground truth |
-| ASR and phoneme error rate | Recognized lyric/phoneme agreement under that protocol | Measured syllable-to-note synchronization |
-| Audio forced alignment | Estimated word/phoneme timing, when checked | Perfect melody or arrangement quality |
-| SongBench and other quality/control metrics | Their named metric under the recorded evaluator | Proof of a specific instrument, jazz authenticity or universal quality |
-| Listening | The reported audible observations | An automatic benchmark result or an unperformed preference study |
-
-Keep a designed lyric–phoneme–note sidecar separate from measured audio alignment. For claims of synchronized pronunciation, retain the aligner's output and review difficult words, melismas and instrumental sections. A lower PER alone does not prove correct note timing.
-
-## Use a separate, complete benchmark package
-
-The public YuE2 runtime and this skill do not distribute the complete scoring
-code, evaluator weights or benchmark inputs. They do not expose `yue2 eval`,
-`bench` or `verify` commands. When a separate evaluation package is available,
-follow that package's documented entrypoints and frozen asset manifest.
-
-Require the package's exact dataset/split definitions, preprocessing, decoder
-identity, scorer revisions and hashes before reproducing a published result.
-Use benchmark-decoded native result directories from `SongResult.save_artifacts`;
-keep the reference lyric language and all attempted modes in the input record.
-A prepare-only validation is not a measured score.
-
-If scoring assets are unavailable, deliver the listening and symbolic checks
-and report evaluation as unavailable. Do not substitute a similarly named
-metric or fabricate a score. Evaluator GPU requirements are separate from the
-24 GB YuE2 generation baseline.
-
-## Prepare public listening artifacts deliberately
-
-The listening helper creates a local bundle. It withholds credential-like
-metadata and excludes weights and latents, but exact requests, local model
-paths and failure messages can still be present in copied files. Review the
-bundle before sharing it publicly. Share only the intended audio, scores,
-prompts, lyrics and public model identifiers; omit private paths, account
-identifiers, raw logs and unrelated sidecars.
-
-Keep the original native result directory unchanged. If preparing a sanitized
-public metadata export, give it its own manifest and hashes; do not present
-modified metadata as the original generation receipt. Do not alter or replace
-the preserved benchmark audio when updating listening previews.
-
-## Report actual outcomes and preserve failed attempts
-
-Retain the expected request list before running anything. For each requested mode/version, record success or failure, the failure reason, both truncation flags, decoder identity and every completed metric. Report sample counts and denominators. Keep partial/missing scores visible; do not silently discard an unsuccessful mode or choose a favorable seed after seeing the scores.
-
-For SongBench, retain its seven dimensions and the reported global average: Melody, Arrangement, Musicality, Vocal, Instrumental, Mixing and Structure. Identify the exact version and decoder associated with each result. Do not reinterpret the global average as a dedicated jazz or harmony-consistency score.
-
-The checked PER protocol runs four ASR passes. Preserve their transcripts, selected result and first-pass result; state the protocol when reporting the score. Do not replace it with a single transcription while retaining the same protocol label. For revised English lyrics, check the reference language and actual new lyric text, and inspect residual errors rather than treating the scalar as complete verification.
-
-Report small sanity checks as small sanity checks. An average from a few self-written prompts is not the full benchmark, and a personal edit comparison is not an independent quality ranking. `complete:true` in an evaluation summary means the requested metrics were produced; it does not by itself mean quality acceptance passed. Keep model generation, benchmark measurement and musical judgment traceable as separate claims.
+最终返回绝对音频路径、试听页（如有）、模式/实际步数/种子/精度、duration/
+wall time/RTF/内存及其 scope、必要的结果或问题。保留所有尝试，但突出推荐版本。

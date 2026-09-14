@@ -100,7 +100,7 @@ def run(args):
     loader = options(args)
     write_json(output / "invocation.json", {
         "action": args.action, "loader": loader,
-        "package_version": importlib.metadata.version("lyra-yue2"),
+        "package_version": importlib.metadata.version("mlx-yue"),
         "requests": [r.to_dict() for r in requests],
     })
     try:

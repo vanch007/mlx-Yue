@@ -1,0 +1,11 @@
+{
+  "style": "heavy metal, harsh screamed vocals, distorted guitars, double-kick drums, high energy, 160 BPM",
+  "lyrics": "[Intro: Distorted Guitars & Double-Kick Drums]\n\n[Chorus]\nHAPPY BIRTHDAY TO YOU!\nHAPPY BIRTHDAY TO YOU!\nHAPPY BIRTHDAY DEAR FRIEND!\nROCK YOUR WORLD ALL NIGHT THROUGH!\n\n[Guitar Solo]\n\n[Chorus]\nHAPPY BIRTHDAY TO YOU!\nHAPPY BIRTHDAY TO YOU!\nSHOUT IT LOUD TO THE SKY!\nHEAVY METAL WILL NEVER DIE!\n",
+  "seed": 666,
+  "cot": "melody",
+  "semantic_sampling": {
+    "max_tokens": 1000,
+    "min_tokens": 500,
+    "top_k": 80
+  }
+}

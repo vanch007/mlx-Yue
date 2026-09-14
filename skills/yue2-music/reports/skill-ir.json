@@ -1,0 +1,123 @@
+{
+  "schema_version": "2.0.0",
+  "name": "yue2-music",
+  "title": "YuE2-music",
+  "job_to_be_done": "Turn recurring local music briefs into suitable native YuE2 modes, reproducible full songs, constrained score edits, and measured listening comparisons.",
+  "trigger_surface": {
+    "description": "Use YuE2 / mlx-Yue on Apple Silicon to generate music, optimize generation settings, transcribe audio to ABC/MIDI, cover songs, edit scores or lyrics, render saved plans, replay audio, batch variants, and compare 8/32-step audio and RTF. 用 YuE2 本机作曲、翻唱、改谱、换词、转谱、调参和试听对比。Do not route explicit ACE-Step/Suno jobs, waveform inpainting, voice cloning, or guaranteed exact melody replacement here.",
+    "should_trigger": [
+      "用 YuE2 生成中文民谣整曲",
+      "mlx-Yue 做 8 步快速模式",
+      "YuE2 把音频转 ABC 再翻唱",
+      "YuE2 原曲旋律保留并换和声",
+      "YuE2 32 步和 8 步试听对比，给出 RTF",
+      "用 YuE2 写歌词先不生成",
+      "YuE2 用 supplied melody score 生成",
+      "YuE2 直接 off 生成有人声的歌"
+    ],
+    "should_not_trigger": [
+      "用 ACE-Step 生成音乐",
+      "Suno 帮我生成一首歌",
+      "修改 Python 的单元测试",
+      "写一篇音乐史论文",
+      "只帮我发一条 X 推广帖子"
+    ],
+    "edge_cases": [
+      "用 YuE2 做 waveform inpainting",
+      "YuE2 voice cloning 克隆歌手音色",
+      "YuE2 guaranteed exact melody replacement",
+      "帮我审查 YuE2 仓库代码",
+      "用 RVC 替换音色"
+    ]
+  },
+  "workflow": {
+    "steps": [
+      "Resolve local project, runtime, models and resource constraints.",
+      "Interpret brief, preserve hard constraints, write singable lyrics/style.",
+      "Choose full/melody/off and generated/supplied ABC or transcribe source.",
+      "Preflight effective native request, then run sequentially with suitable profile.",
+      "Retain artifacts, validate technical checks, measure wall time/RTF/memory.",
+      "Refine bounded candidates using actual listening criteria and controlled step comparisons."
+    ],
+    "decision_points": [
+      "Lyrics-only versus generation.",
+      "Source audio versus supplied ABC versus original composition.",
+      "Full harmony control versus melody condition versus direct synthesis.",
+      "Fast 8-step versus standard 32-step versus BF16 reference.",
+      "New semantic generation for musical edits versus same-input acoustic resynthesis."
+    ],
+    "failure_modes": [
+      "Foreign unsupported parameters.",
+      "Token budget exhaustion presented as full song.",
+      "Implicitly overwritten user settings or artifacts.",
+      "Estimated stage-summed time presented as actual end-to-end timing.",
+      "Incorrect metadata distribution after project rename.",
+      "Unsupported claim of best music quality or exact acoustic melody preservation."
+    ]
+  },
+  "resources": {
+    "references": [
+      "references/abc-editing.md",
+      "references/capabilities.md",
+      "references/editing-workflows.md",
+      "references/generation-and-covers.md",
+      "references/listening-and-evaluation.md",
+      "references/models-and-setup.md",
+      "references/optimization.md"
+    ],
+    "scripts": [
+      "scripts/abc_tools.py",
+      "scripts/common.py",
+      "scripts/compare_steps.py",
+      "scripts/generate_music.py",
+      "scripts/listen.py",
+      "scripts/run_yue2.py",
+      "scripts/transcribe.py"
+    ],
+    "assets": [
+      "assets/edit-brief.md",
+      "assets/prompt.json"
+    ],
+    "reports": [
+      "reports/output-risk-profile.md",
+      "reports/artifact-design-profile.md",
+      "reports/prompt-quality-profile.md"
+    ]
+  },
+  "eval_plan": {
+    "trigger": [
+      "evals/README.md",
+      "evals/semantic_config.json",
+      "evals/trigger_cases.json"
+    ],
+    "output": [
+      "evals/test_contract.py",
+      "reports/validation.md",
+      "reports/output_quality_scorecard.md"
+    ],
+    "adversarial": [
+      "evals/trigger_cases.json: foreign engines, voice cloning and waveform inpainting",
+      "evals/test_contract.py: invalid counts, mismatched mode/ABC, existing output preservation"
+    ],
+    "baseline": "Existing project skill and native protocol defaults; no blind human listening baseline."
+  },
+  "risk": {
+    "output_risk": "low",
+    "execution_risk": "medium",
+    "trust_boundary": "personal"
+  },
+  "governance": {
+    "owner": "vanch (project owner; inferred from request)",
+    "maturity": "scaffold",
+    "review_cadence": "On mlx-Yue API/model changes; review proposed every 90 days",
+    "review_due": "2026-12-13"
+  },
+  "targets": [
+    "openai"
+  ],
+  "source_files": [
+    "SKILL.md",
+    "manifest.json",
+    "agents/interface.yaml"
+  ]
+}

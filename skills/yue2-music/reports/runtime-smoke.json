@@ -1,0 +1,214 @@
+{
+  "full_generation": {
+    "song": "/Users/vanch/yue2-mlx/outputs/yue2-skill-smoke-20260914/generate",
+    "checks": {
+      "artifacts_verified": true,
+      "finite_audio": true,
+      "48khz_stereo": true,
+      "duration_matches_receipt": true,
+      "non_silent": true,
+      "natural_end": true
+    },
+    "technical_status": "pass",
+    "audio_seconds": 69.95866666666667,
+    "wall_seconds": 54.67954804201145,
+    "timing_scope": "full_cli_including_load_and_save",
+    "rtf": 0.7815979155598274,
+    "sampled_peak_footprint_gib": 9.55174894630909,
+    "resource_report": "/Users/vanch/yue2-mlx/outputs/yue2-skill-smoke-20260914/generate.resources.json",
+    "rms": 0.10723701406386194,
+    "peak": 0.720240592956543,
+    "clipping_fraction": 0.0,
+    "timing": {
+      "abc": {
+        "seconds": 10.096022791985888,
+        "prefill_seconds": 0.09460945799946785,
+        "ttft_seconds": 0.1035265420214273,
+        "output_tokens": 796,
+        "content_tokens": 795,
+        "output_tps": 78.84292819067882,
+        "prefix_tokens": 128,
+        "cfg_branches": 1,
+        "execution": "eager",
+        "attention": "sdpa",
+        "backend": "mlx"
+      },
+      "semantic": {
+        "seconds": 21.18907170800958,
+        "prefill_seconds": 0.29214666597545147,
+        "ttft_seconds": 0.295615374983754,
+        "output_tokens": 1750,
+        "content_tokens": 1749,
+        "output_tps": 82.58974362423301,
+        "prefix_tokens": 925,
+        "cfg_branches": 1,
+        "execution": "eager",
+        "attention": "sdpa",
+        "backend": "mlx"
+      },
+      "nar_seconds": 12.709802916971967,
+      "vae_seconds": 2.9052979159750976,
+      "load": {
+        "resolve_conversion_integrity_seconds": 5.884628625004552,
+        "ar_load_events_seconds": [
+          0.2529201660072431
+        ],
+        "ar_load_seconds": 0.2529201660072431,
+        "conditioning_load_events_seconds": [
+          0.2675038329907693
+        ],
+        "conditioning_load_seconds": 0.2675038329907693,
+        "nar_load_events_seconds": [
+          0.22385429101996124
+        ],
+        "nar_load_seconds": 0.22385429101996124,
+        "vae_load_events_seconds": [
+          0.39019725000252947
+        ],
+        "vae_load_seconds": 0.39019725000252947
+      },
+      "e2e_seconds": 47.22418900002958
+    },
+    "truncated": {
+      "abc": false,
+      "semantic": false
+    },
+    "identity": "50e445bb62d2d44ada904a016a831bf21db4b09e6111717d5070c667704e62c0"
+  },
+  "step_comparison": {
+    "scope": "controlled resynthesis; not full generation RTF",
+    "results": [
+      {
+        "song": "/Users/vanch/yue2-mlx/outputs/yue2-skill-steps-20260914-attempt2/steps-8",
+        "checks": {
+          "artifacts_verified": true,
+          "finite_audio": true,
+          "48khz_stereo": true,
+          "duration_matches_receipt": true,
+          "non_silent": true,
+          "natural_end": true
+        },
+        "technical_status": "pass",
+        "audio_seconds": 69.95866666666667,
+        "wall_seconds": 15.900554042018484,
+        "timing_scope": "NAR + VAE; excludes reused AR, shared model load and saving",
+        "rtf": 0.22728497839703182,
+        "sampled_peak_footprint_gib": 9.121069625020027,
+        "resource_report": "/Users/vanch/yue2-mlx/outputs/yue2-skill-steps-20260914-attempt2/steps-8.resources.json",
+        "rms": 0.10723701406386194,
+        "peak": 0.720240592956543,
+        "clipping_fraction": 0.0,
+        "timing": {
+          "abc": {
+            "seconds": 10.096022791985888,
+            "prefill_seconds": 0.09460945799946785,
+            "ttft_seconds": 0.1035265420214273,
+            "output_tokens": 796,
+            "content_tokens": 795,
+            "output_tps": 78.84292819067882,
+            "prefix_tokens": 128,
+            "cfg_branches": 1,
+            "execution": "eager",
+            "attention": "sdpa",
+            "backend": "mlx"
+          },
+          "semantic": {
+            "seconds": 21.18907170800958,
+            "prefill_seconds": 0.29214666597545147,
+            "ttft_seconds": 0.295615374983754,
+            "output_tokens": 1750,
+            "content_tokens": 1749,
+            "output_tps": 82.58974362423301,
+            "prefix_tokens": 925,
+            "cfg_branches": 1,
+            "execution": "eager",
+            "attention": "sdpa",
+            "backend": "mlx"
+          },
+          "nar_seconds": 13.404891583020799,
+          "vae_seconds": 2.495661334018223,
+          "e2e_seconds": 15.900554042018484,
+          "scope": "resynthesis_only",
+          "reused_stages": [
+            "abc",
+            "semantic"
+          ],
+          "shared_load_seconds": 5.438773542002309
+        },
+        "truncated": {
+          "abc": false,
+          "semantic": false
+        },
+        "identity": "747b5e668c33f631ca8962407670d1332763fc43468ad91ad6d7b64f41509408",
+        "ode_steps": 8,
+        "shared_load_seconds": 5.438773542002309
+      },
+      {
+        "song": "/Users/vanch/yue2-mlx/outputs/yue2-skill-steps-20260914-attempt2/steps-32",
+        "checks": {
+          "artifacts_verified": true,
+          "finite_audio": true,
+          "48khz_stereo": true,
+          "duration_matches_receipt": true,
+          "non_silent": true,
+          "natural_end": true
+        },
+        "technical_status": "pass",
+        "audio_seconds": 69.95866666666667,
+        "wall_seconds": 61.737936874968,
+        "timing_scope": "NAR + VAE; excludes reused AR, shared model load and saving",
+        "rtf": 0.8824916170734337,
+        "sampled_peak_footprint_gib": 10.942587569355965,
+        "resource_report": "/Users/vanch/yue2-mlx/outputs/yue2-skill-steps-20260914-attempt2/steps-32.resources.json",
+        "rms": 0.10776352401748393,
+        "peak": 0.7296817302703857,
+        "clipping_fraction": 0.0,
+        "timing": {
+          "abc": {
+            "seconds": 10.096022791985888,
+            "prefill_seconds": 0.09460945799946785,
+            "ttft_seconds": 0.1035265420214273,
+            "output_tokens": 796,
+            "content_tokens": 795,
+            "output_tps": 78.84292819067882,
+            "prefix_tokens": 128,
+            "cfg_branches": 1,
+            "execution": "eager",
+            "attention": "sdpa",
+            "backend": "mlx"
+          },
+          "semantic": {
+            "seconds": 21.18907170800958,
+            "prefill_seconds": 0.29214666597545147,
+            "ttft_seconds": 0.295615374983754,
+            "output_tokens": 1750,
+            "content_tokens": 1749,
+            "output_tps": 82.58974362423301,
+            "prefix_tokens": 925,
+            "cfg_branches": 1,
+            "execution": "eager",
+            "attention": "sdpa",
+            "backend": "mlx"
+          },
+          "nar_seconds": 58.588873374974355,
+          "vae_seconds": 3.1490595409995876,
+          "e2e_seconds": 61.737936874968,
+          "scope": "resynthesis_only",
+          "reused_stages": [
+            "abc",
+            "semantic"
+          ],
+          "shared_load_seconds": 5.438773542002309
+        },
+        "truncated": {
+          "abc": false,
+          "semantic": false
+        },
+        "identity": "af13e1b23e1f9cf8ccd484a80c63fdce6c1b918ca0b7154f918a9e7904a1286d",
+        "ode_steps": 32,
+        "shared_load_seconds": 5.438773542002309
+      }
+    ]
+  },
+  "repeated_8step_audio_sha256_equal": true
+}

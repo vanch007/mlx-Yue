@@ -28,7 +28,7 @@ def doctor(args):
     checks = {"macos": platform.system() == "Darwin", "metal": mx.metal.is_available()}
     report = {"platform": platform.platform(), "memory_gib": psutil.virtual_memory().total / 2**30,
               "backend": "mlx", "vae_backend": "mlx", "torch_required": False,
-              "versions": {n: importlib.metadata.version(n) for n in ("lyra-yue2", "mlx", "mlx-lm")},
+              "versions": {n: importlib.metadata.version(n) for n in ("mlx-yue", "mlx", "mlx-lm")},
               "checks": checks}
     for kind in ("model", "vae"):
         path = getattr(args, kind)

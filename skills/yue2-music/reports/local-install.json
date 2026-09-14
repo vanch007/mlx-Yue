@@ -1,0 +1,15 @@
+{
+  "canonical": "/Users/vanch/yue2-mlx/skills/yue2-music",
+  "links": [
+    {
+      "path": "/Users/vanch/.skills-manager/skills/yue2-music",
+      "target": "/Users/vanch/yue2-mlx/skills/yue2-music",
+      "readable": true
+    },
+    {
+      "path": "/Users/vanch/.codex/skills/yue2-music",
+      "target": "/Users/vanch/yue2-mlx/skills/yue2-music",
+      "readable": true
+    }
+  ]
+}

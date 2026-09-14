@@ -1,0 +1,142 @@
+{
+  "platform": "macOS-27.0-arm64-arm-64bit",
+  "memory_gib": 128.0,
+  "backend": "mlx",
+  "vae_backend": "mlx",
+  "torch_required": false,
+  "versions": {
+    "mlx-yue": "0.1.0",
+    "mlx": "0.32.2",
+    "mlx-lm": "0.31.3"
+  },
+  "checks": {
+    "macos": true,
+    "metal": true,
+    "model": true
+  },
+  "model": {
+    "path": "/Users/vanch/yue2-mlx/models/converted",
+    "identity_checked": false,
+    "metadata": {
+      "conversion": {
+        "ar_extraction": "yue2.fast.ar_keys",
+        "generator_dtype": "bfloat16",
+        "nar_partition": "all source tensors not selected by ar_keys",
+        "positional_buffer_dtype": "bfloat16",
+        "quantization": {
+          "embedding_dtype": "bfloat16",
+          "group_size": 64,
+          "linear_only": true,
+          "mode": "affine",
+          "modules": "mlx.nn.Linear"
+        },
+        "versions": {
+          "mlx": "0.32.2",
+          "mlx_lm": "0.31.3",
+          "safetensors": "0.7.0"
+        }
+      },
+      "files": {
+        "LICENSE": {
+          "bytes": 20309,
+          "sha256": "060985741d20e70613b4c189c7de106cabd3fb2109fbbfb6d705c9d619417dd0"
+        },
+        "THIRD_PARTY_NOTICES.md": {
+          "bytes": 793,
+          "sha256": "14d3fd9f6fee86b4260b69b0979735b99ffec8c6b4db254567047a4215cd9af3"
+        },
+        "ar-8bit.safetensors": {
+          "bytes": 2656158264,
+          "sha256": "7b7d7796d348e6f2abce0a28e116557f41e16c00c0e03ee47f540e3f3c3e1e45"
+        },
+        "ar-bf16.safetensors": {
+          "bytes": 4331951136,
+          "sha256": "67275a875e7c717a4ea63c4e7f6a8b5ea2704d04768049f87a6b9e5ecfe16dca"
+        },
+        "config.json": {
+          "bytes": 959,
+          "sha256": "ad3477bbef890bf98ae196c1e4b44779494a6231c4ab66f32708eabadf265329"
+        },
+        "licenses/SnakeBeta-NVIDIA-MIT.txt": {
+          "bytes": 1076,
+          "sha256": "da9858d516047d82096d01c112a61bd67f26d289039464d668a1d45f91738ecc"
+        },
+        "licenses/stable-audio-tools-MIT.txt": {
+          "bytes": 1069,
+          "sha256": "a1fac33b7bcd791b74fb33aeb439f825e7277e239fc119fb7d2ab6f084a0c101"
+        },
+        "nar-bf16.safetensors": {
+          "bytes": 2929490456,
+          "sha256": "e6dbc167e15241447708068ed5efc612aba1934878d04278583ec54d5dc10869"
+        },
+        "qwen.tiktoken": {
+          "bytes": 2561218,
+          "sha256": "b2b1b8dfb5cc5f024bafc373121c6aba3f66f9a5a0269e243470a1de16a33186"
+        }
+      },
+      "format": "lyra-yue2-mlx",
+      "precisions": {
+        "8bit": {
+          "ar": "ar-8bit.safetensors",
+          "bits": 8,
+          "embedding_dtype": "bfloat16",
+          "group_size": 64,
+          "linear_only": true,
+          "mode": "affine"
+        },
+        "bf16": {
+          "ar": "ar-bf16.safetensors",
+          "dtype": "bfloat16",
+          "nar": "nar-bf16.safetensors"
+        }
+      },
+      "schema": 1,
+      "source": {
+        "identity": {
+          "files": {
+            "LICENSE": {
+              "bytes": 20309,
+              "sha256": "060985741d20e70613b4c189c7de106cabd3fb2109fbbfb6d705c9d619417dd0"
+            },
+            "THIRD_PARTY_NOTICES.md": {
+              "bytes": 793,
+              "sha256": "14d3fd9f6fee86b4260b69b0979735b99ffec8c6b4db254567047a4215cd9af3"
+            },
+            "config.json": {
+              "bytes": 959,
+              "sha256": "ad3477bbef890bf98ae196c1e4b44779494a6231c4ab66f32708eabadf265329"
+            },
+            "licenses/SnakeBeta-NVIDIA-MIT.txt": {
+              "bytes": 1076,
+              "sha256": "da9858d516047d82096d01c112a61bd67f26d289039464d668a1d45f91738ecc"
+            },
+            "licenses/stable-audio-tools-MIT.txt": {
+              "bytes": 1069,
+              "sha256": "a1fac33b7bcd791b74fb33aeb439f825e7277e239fc119fb7d2ab6f084a0c101"
+            },
+            "model.safetensors": {
+              "bytes": 7261441640,
+              "sha256": "1d55c42c1a9875c34f5d736e15078449992b044e807ce2a138e6cf289a1e59e9"
+            },
+            "qwen.tiktoken": {
+              "bytes": 2561218,
+              "sha256": "b2b1b8dfb5cc5f024bafc373121c6aba3f66f9a5a0269e243470a1de16a33186"
+            },
+            "weights_manifest.json": {
+              "bytes": 179,
+              "sha256": "2296f82c29dcb11aeefde07e216403a32fc86c8f6da2ec15a70102abfd936a93"
+            }
+          }
+        },
+        "repository": "m-a-p/YuE2-3B",
+        "revision": "1a96eca688d6ae5d7f0feb88573fec89920fcd19",
+        "revision_proof": "verified-pinned-content"
+      },
+      "upstream": {
+        "commit": "92a73cc7652fcc1f937855e4b765e0a0edd7ff2e",
+        "repository": "https://github.com/multimodal-art-projection/YuE"
+      }
+    }
+  },
+  "status": "pass"
+}

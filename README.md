@@ -160,12 +160,24 @@ mlx-yue transcribe input_song.wav \
 
 #### D. End-to-End Cover (Style Transfer / Re-arrangement)
 ```bash
-mlx-yue cover input_song.wav \
+mlx-yue cover examples/full-song.json --audio input_song.wav \
   --style "r&b, soulful female vocal, warm rhodes piano" \
   --output outputs/cover
 ```
 
 ---
+
+## Local agent skill
+
+[YuE2-music](skills/yue2-music/SKILL.md) covers all five generation modes, transcription,
+audio covers, score editing, saved plans, replay and serial batches. It selects settings
+from the musical brief and provides 8-step fast, 32-step standard and BF16 reference
+profiles, with full-song budgets, verified artifacts and measured timing.
+
+The [skill guide](skills/yue2-music/references/generation-and-covers.md) includes a
+request validator/generator and a controlled 8/32-step listening comparison helper.
+Invoke it in a skill-enabled local agent with `$yue2-music`, followed by your brief.
+Keep the project skill as the canonical source when linking it into your agent's skill directory.
 
 ## Python API
 

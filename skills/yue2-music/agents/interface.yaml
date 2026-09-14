@@ -1,0 +1,18 @@
+interface:
+  display_name: "YuE2-music"
+  short_description: "本机生成、翻唱、改谱与按需求调参的 YuE2 音乐工作流"
+  default_prompt: "Use $yue2-music to turn my brief into a full song with suitable settings, verified artifacts and a listening comparison when useful."
+compatibility:
+  canonical_format: SKILL.md
+  adapter_targets: [openai]
+  activation:
+    mode: explicit_or_semantic
+  execution:
+    context: inline
+    shell: bash
+  trust:
+    source_tier: local
+    remote_inline_execution: forbid
+    remote_metadata_policy: data_only
+  degradation:
+    openai: "Requires local Apple Silicon mlx-Yue checkout and Python runtime; no remote generation fallback."

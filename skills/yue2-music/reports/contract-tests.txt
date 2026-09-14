@@ -1,0 +1,16 @@
+test_abc_path_preserves_bytes (test_contract.Contract.test_abc_path_preserves_bytes) ... ok
+test_cover_task_matching (test_contract.Contract.test_cover_task_matching) ... ok
+test_dry_run_writes_nothing_and_rejects_existing_output (test_contract.Contract.test_dry_run_writes_nothing_and_rejects_existing_output) ... ok
+test_explicit_preview_is_labelled_by_call_and_bounded (test_contract.Contract.test_explicit_preview_is_labelled_by_call_and_bounded) ... ok
+test_five_modes (test_contract.Contract.test_five_modes) ... ok
+test_incompatible_modes_fail (test_contract.Contract.test_incompatible_modes_fail) ... ok
+test_native_cli_accepts_covered_commands (test_contract.Contract.test_native_cli_accepts_covered_commands) ... ok
+test_profiles_preserve_full_song_budget (test_contract.Contract.test_profiles_preserve_full_song_budget) ... ok
+test_reject_foreign_controls (test_contract.Contract.test_reject_foreign_controls) ... ok
+test_sampling_bounds (test_contract.Contract.test_sampling_bounds) ... ok
+test_user_overrides_win_and_input_not_mutated (test_contract.Contract.test_user_overrides_win_and_input_not_mutated) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.089s
+
+OK

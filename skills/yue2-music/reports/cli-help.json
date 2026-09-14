@@ -1,0 +1,32 @@
+[
+  {
+    "script": "generate_music",
+    "returncode": 0,
+    "help_displayed": true
+  },
+  {
+    "script": "compare_steps",
+    "returncode": 0,
+    "help_displayed": true
+  },
+  {
+    "script": "run_yue2",
+    "returncode": 0,
+    "help_displayed": true
+  },
+  {
+    "script": "abc_tools",
+    "returncode": 0,
+    "help_displayed": true
+  },
+  {
+    "script": "transcribe",
+    "returncode": 0,
+    "help_displayed": true
+  },
+  {
+    "script": "listen",
+    "returncode": 0,
+    "help_displayed": true
+  }
+]
