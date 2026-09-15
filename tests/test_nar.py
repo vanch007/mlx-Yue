@@ -67,18 +67,21 @@ def test_attention_preserves_fp32_probabilities_before_bf16_output():
     value = np.broadcast_to(
         np.tile([1, 1, -0.5], 4)[None, None, :, None], key.shape
     ).astype(np.float32).copy()
-    source = [
-        torch.from_numpy(array).to(device="mps", dtype=torch.bfloat16)
-        for array in (query, key, value)
-    ]
-    expected = torch.nn.functional.scaled_dot_product_attention(*source)
+    # Each of the three scores occurs four times. Derive the reference with
+    # NumPy FP64, then round only the final output to BF16. Torch 2.13 MPS SDPA
+    # changes this cancellation case, so it cannot define the precision contract.
+    probabilities = np.exp(np.array([0, 11.3125, 22.625]) / np.sqrt(128))
+    probabilities /= probabilities.sum()
+    expected = torch.tensor(float(probabilities @ [1, 1, -0.5])).bfloat16().float().item()
+    rounded_probabilities = torch.from_numpy(probabilities).bfloat16().double().numpy()
+    assert abs(float(rounded_probabilities @ [1, 1, -0.5]) - expected) > 1e-4
     actual = _attention(
         *(mx.array(array, dtype=mx.bfloat16) for array in (query, key, value)),
         causal=False,
         query_chunk_size=256,
     )
     np.testing.assert_array_equal(
-        np.asarray(actual.astype(mx.float32)), expected.float().cpu().numpy()
+        np.asarray(actual.astype(mx.float32)), np.full(query.shape, expected, dtype=np.float32)
     )
 
 

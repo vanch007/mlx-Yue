@@ -1,0 +1,6 @@
+{
+  "status": "pass",
+  "torch_installed": false,
+  "midi_note_roundtrip": true,
+  "pretty_midi": "0.2.11.post0"
+}

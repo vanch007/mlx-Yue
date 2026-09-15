@@ -44,7 +44,7 @@ Featuring 15 complete songs evaluated across 6 languages and 5 generation modes.
 ## Requirements
 
 - **Apple Silicon Mac** (M1/M2/M3/M4/M5 series). Tested on M3 Max (128 GB) & M5 Air (32 GB).
-- **macOS 14.2+** (macOS 15/26+ recommended).
+- **macOS 14.2+** for M1–M4; **macOS 26.2+** for M5. Use native arm64 Python, not Rosetta. The macOS 15.7.7 / M3 Ultra platform gate has regression coverage; physical tests by this project used M3 Max and M5 Air.
 - **Python 3.12** and [uv](https://docs.astral.sh/uv/) package manager.
 - `ffmpeg` (required if running audio transcription / cover features).
 
@@ -61,12 +61,35 @@ git clone https://github.com/vanch007/mlx-Yue.git
 cd mlx-Yue
 
 # Install dependencies (frozen lockfile, Torch-free native runtime)
-uv sync --frozen --no-dev --extra transcription
+uv sync --frozen --no-dev
 source .venv/bin/activate
 export MLX_ENABLE_TF32=0
 ```
 
-> Note: PyTorch is only kept in an isolated reference sandbox for numerical audits; the production runtime does not import or depend on PyTorch.
+For transcription and cover, add the optional audio tools:
+
+```bash
+uv sync --frozen --no-dev --extra transcription
+```
+
+PyTorch is only used by development/reference tests. Generation and transcription
+installations above are Torch-free. Avoid plain `uv sync` for production: it also
+installs the development group. After updating the checkout, repeat the same sync
+command and run `mlx-yue doctor`.
+
+Dependency pins and platform fixes responding to the M3 Ultra community benchmark
+are documented in [the verification report](reports/x-feedback-20260915/REPORT.md).
+To repeat the known-vulnerability check (network access required):
+
+```bash
+python tools/audit_dependencies.py --profile runtime --output outputs/dependency-audit
+# Other profiles: transcription, dev (includes transcription and test dependencies)
+```
+
+This checks the selected locked dependency graph on your platform against the
+current PyPI advisory database. It is not a malware scan or a guarantee against
+unknown vulnerabilities. Historical `oracle/requirements.txt` pins preserve old
+numerical experiments and are not the recommended installation environment.
 
 ---
 

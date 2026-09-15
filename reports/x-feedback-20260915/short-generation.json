@@ -1,0 +1,15 @@
+{
+  "same_input": true,
+  "ode_steps": 32,
+  "torch_installed": false,
+  "torch_imported": false,
+  "bit_identical": {
+    "semantic.npy": true,
+    "latent.npy": true,
+    "noise.npy": true
+  },
+  "before": 15.998666666666667,
+  "after": 15.998666666666667,
+  "flac_bit_identical": true,
+  "after_audio_sha256": "9cd6d58fad47a23e2d681bfc925bc983e8410a54fc6a8d97e62670f23530a8cd"
+}

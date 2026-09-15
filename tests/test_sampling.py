@@ -53,7 +53,10 @@ def test_off_nucleus_compares_against_unrounded_python_threshold():
     logits = np.full((1, VOCAB_SIZE), -np.inf, dtype=np.float32)
     logits[0, CODEC_OFFSET:CODEC_OFFSET + 4] = 0
     config = Sampling(top_k=4, top_p=.749, min_tokens=0, repetition_penalty=1)
-    source = torch.from_numpy(logits).to("mps", torch.bfloat16)
+    # All four probabilities are exactly 0.25 in both BF16 and FP32. Use the
+    # CPU FP32 oracle so .749 stays below .75; Torch 2.13 MPS BF16 comparison
+    # rounds the Python scalar to .75, changing the historical boundary.
+    source = torch.from_numpy(logits)
     expected = reference_distribution(source, config, [], 0, "semantic", True)
     actual = distribution(mx.array(projected(logits, "semantic"), dtype=mx.bfloat16),
                           config, [], 0, "semantic", True)

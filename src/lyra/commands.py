@@ -21,12 +21,15 @@ def resume_result(pipe, request, output):
 
 
 def doctor(args):
-    import mlx.core as mx
     import psutil
     from .conversion import verify_conversion
+    from .runtime import runtime_status
 
-    checks = {"macos": platform.system() == "Darwin", "metal": mx.metal.is_available()}
+    runtime = runtime_status()
+    checks = {"macos": runtime["system"] == "Darwin", "metal": runtime["metal"],
+              "supported_runtime": runtime["supported"]}
     report = {"platform": platform.platform(), "memory_gib": psutil.virtual_memory().total / 2**30,
+              "runtime": runtime,
               "backend": "mlx", "vae_backend": "mlx", "torch_required": False,
               "versions": {n: importlib.metadata.version(n) for n in ("mlx-yue", "mlx", "mlx-lm")},
               "checks": checks}

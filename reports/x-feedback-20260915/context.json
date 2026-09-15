@@ -1,0 +1,18 @@
+{
+  "date": "2026-09-15",
+  "feedback_url": "https://x.com/C_of_Creativity/status/2099534049991921704",
+  "base_commit": "1a7c4ca604a0bb4e8b0562dd0b5906a6c36927e4",
+  "audit_tool": "pip-audit 2.10.1",
+  "database": "PyPI advisory API",
+  "platform": "macOS 27.0 arm64",
+  "python": "3.12.10",
+  "scope": "runtime, transcription, dev profiles; historical oracle separately reported",
+  "reporter_environment": "Apple M3 Ultra 512 GB; macOS 15.7.7; modified installation",
+  "reporter_benchmark": {
+    "audio_seconds": 220,
+    "standard32_wall_seconds": 206,
+    "fast8_wall_seconds": 130,
+    "runs": 1,
+    "timing_scope": "including load/save; reported by PIYO, not independently reproduced"
+  }
+}

@@ -25,7 +25,7 @@ classifiers = [
 dependencies = [
   "mlx==0.32.2",
   "mlx-lm==0.31.3",
-  "transformers==5.0.0",
+  "transformers==5.10.4",
   "safetensors==0.7.0",
   "tiktoken==0.12.0",
   "numpy==2.2.6",
@@ -40,7 +40,7 @@ Issues = "https://github.com/vanch007/mlx-Yue/issues"
 Models = "https://huggingface.co/vanch007/mlx-Yue2-3B"
 
 [dependency-groups]
-dev = ["pytest==9.0.3", "ruff==0.15.7", "torch==2.10.0"]
+dev = ["pytest==9.0.3", "ruff==0.15.7", "torch==2.13.0", "setuptools==83.0.0"]
 
 [project.scripts]
 mlx-yue = "lyra.cli:main"
@@ -51,9 +51,8 @@ yue2-mlx = "lyra.cli:main"
 transcription = [
     "mido==1.3.3",
     "mir-eval==0.8.2",
-    "pretty-midi==0.2.10",
+    "pretty-midi==0.2.11.post0",
     "scipy>=1.13,<2",
-    "setuptools==78.1.1",
 ]
 
 [tool.hatch.build.targets.sdist]

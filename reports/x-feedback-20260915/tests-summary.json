@@ -1,0 +1,16 @@
+{
+  "tests": "148",
+  "failures": "0",
+  "errors": "0",
+  "skipped": "1",
+  "time": "5.590",
+  "skips": [
+    {
+      "test": "test_late_environment_change_cannot_hide_cached_tf32",
+      "reason": "This GPU does not expose the M5 reduced-precision path"
+    }
+  ],
+  "result": "119 passed, 1 skipped, 28 subtests passed",
+  "lint": "pass",
+  "scope": "Published baseline plus feedback fixes; excludes pre-existing uncommitted RealAudio work"
+}

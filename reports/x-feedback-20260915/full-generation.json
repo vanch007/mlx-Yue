@@ -1,0 +1,26 @@
+{
+  "status": "pass",
+  "precision": "8bit",
+  "ode_steps": 8,
+  "audio_seconds": 204.27866666666668,
+  "wall_seconds_including_import_load_save": 235.88693295797566,
+  "rtf": 1.154731117091566,
+  "truncated": {
+    "abc": false,
+    "semantic": false
+  },
+  "rms": 0.15308983623981476,
+  "finite": true,
+  "torch_installed": false,
+  "torch_imported": false,
+  "sample_rate": 48000,
+  "channels": 2,
+  "peak_physical_footprint_gib": 11.178930886089802,
+  "lifetime_peak_physical_footprint_gib": 11.34433613717556,
+  "mlx_peak_gib": 10.48310681246221,
+  "power_ac_at_start": true,
+  "power_ac_at_end": true,
+  "hardware": "Apple M3 Max 128 GiB; macOS 27.0",
+  "scope": "Functional regression; single run, not a controlled benchmark",
+  "audio_sha256": "e2d0b1a9baba59fafd2f9c4fb4cea356edd8ebdc824109752461cf8d198b4b6f"
+}

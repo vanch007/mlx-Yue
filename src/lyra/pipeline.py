@@ -29,6 +29,7 @@ from .conversion import (
     _VAE_SOURCE_FILES, prepare, verify_conversion,
 )
 from .measure import DEFAULT_MEMORY_BUDGET_GIB, GPUExecution
+from .runtime import require_supported_runtime
 
 
 def initial_noise(frames: int, seed: int) -> np.ndarray:
@@ -112,10 +113,7 @@ class YuE2Pipeline(ReferencePipeline):
         memory_budget_gib=DEFAULT_MEMORY_BUDGET_GIB, vae_core_frames=256,
         query_chunk_size=256, progress=True, resource_path=None, require_ac=False,
     ):
-        if platform.system() != "Darwin" or tuple(map(int, platform.mac_ver()[0].split(".")[:2])) < (26, 2):
-            raise RuntimeError("The supported MLX M5 runtime requires macOS >=26.2")
-        if not mx.metal.is_available():
-            raise RuntimeError("MLX Metal is required")
+        require_supported_runtime()
         for name in ("PYTORCH_ENABLE_MPS_FALLBACK", "PYTORCH_MPS_FAST_MATH"):
             if os.environ.get(name) == "1":
                 raise RuntimeError(f"Unset {name}; fallback/fast-math is not a validated execution path")
@@ -162,7 +160,7 @@ class YuE2Pipeline(ReferencePipeline):
             "lyra": {p.name: sha256_file(p) for p in sorted(Path(__file__).parent.glob("*.py"))},
             "upstream": {p.name: sha256_file(p) for p in sorted(Path(__import__("yue2").__file__).parent.glob("*.py"))},
         })
-        self.runtime = {name: version(name) for name in ("lyra-yue2", "mlx", "mlx-lm", "transformers", "numpy")}
+        self.runtime = {name: version(name) for name in ("mlx-yue", "mlx", "mlx-lm", "transformers", "numpy")}
         self.runtime.update(python=platform.python_version(), macos=platform.mac_ver()[0])
         self._closed = True
         self._gpu_execution = None

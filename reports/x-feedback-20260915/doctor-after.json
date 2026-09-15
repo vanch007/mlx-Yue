@@ -1,0 +1,34 @@
+{
+  "platform": "macOS-27.0-arm64-arm-64bit",
+  "memory_gib": 128.0,
+  "runtime": {
+    "supported": true,
+    "error": null,
+    "system": "Darwin",
+    "machine": "arm64",
+    "macos": "27.0",
+    "metal": true,
+    "device": {
+      "device_name": "Apple M3 Max",
+      "max_recommended_working_set_size": 115448725504,
+      "memory_size": 137438953472,
+      "architecture": "applegpu_g15s",
+      "max_buffer_length": 86586540032,
+      "resource_limit": 499000
+    }
+  },
+  "backend": "mlx",
+  "vae_backend": "mlx",
+  "torch_required": false,
+  "versions": {
+    "mlx-yue": "0.1.0",
+    "mlx": "0.32.2",
+    "mlx-lm": "0.31.3"
+  },
+  "checks": {
+    "macos": true,
+    "metal": true,
+    "supported_runtime": true
+  },
+  "status": "pass"
+}
